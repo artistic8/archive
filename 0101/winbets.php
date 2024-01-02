@@ -52,6 +52,7 @@ return [
 		Race 8
 		*/
 		'Favorite'    =>  '4',
+		'Place' =>  '11',
 	],
 	'9' => [
 		/**
@@ -64,5 +65,6 @@ return [
 		Race 10
 		*/
 		'Favorite'    =>  '9',
+		'Place' =>  '11',
 	],
 ];
