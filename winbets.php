@@ -77,6 +77,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $allTrioValues3 = array_keys($qplsOdds);
         $qin3 = array_slice($allTrioValues3, 0, 6);
         $inter = array_intersect($qin1, $qin2, $qin3);
+        $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
         $place = array_intersect($inter,$blacks);
         if(!empty($place)){
             $racetext .= "\t\t'Place' =>  '" . implode(", ", $place) . "',\n";
