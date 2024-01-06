@@ -37,51 +37,55 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $trio1 = $raceData1['trio'];
     $trio2 = $raceData2['trio'];
     $trio3 = $raceData3['trio'];
-    if(!empty($trio1) && !empty($trio2) && !empty($trio3)){
-        $allTrioValues1 = [];
-        foreach($trio1 as $trioItem){
-            $allTrioValues1 = array_values(array_unique(array_merge($allTrioValues1, $trioItem)));
-        }
-        //Sort  allTrioValues1 by odds
-        $qplsOdds = [];
-        foreach($allTrioValues1 as $iIndex){
-            if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
-        }
-        asort($qplsOdds);
-        $allTrioValues1 = array_keys($qplsOdds);
-        $qin1 = array_slice($allTrioValues1, 0, 6);
-        
-        $allTrioValues2 = [];
-        foreach($trio2 as $trioItem2){
-            $allTrioValues2 = array_values(array_unique(array_merge($allTrioValues2, $trioItem2)));
-        }
-        //Sort  allTrioValues2 by odds
-        $qplsOdds = [];
-        foreach($allTrioValues2 as $iIndex){
-            if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
-        }
-        asort($qplsOdds);
-        $allTrioValues2 = array_keys($qplsOdds);
-        $qin2 = array_slice($allTrioValues2, 0, 6);
-        
-        $allTrioValues3 = [];
-        foreach($trio3 as $trioItem3){
-            $allTrioValues3 = array_values(array_unique(array_merge($allTrioValues3, $trioItem3)));
-        }
-        //Sort  allTrioValues3 by odds
-        $qplsOdds = [];
-        foreach($allTrioValues3 as $iIndex){
-            if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
-        }
-        asort($qplsOdds);
-        $allTrioValues3 = array_keys($qplsOdds);
-        $qin3 = array_slice($allTrioValues3, 0, 6);
-        $inter = array_intersect($qin1, $qin2, $qin3);
+    $allTrioValues1 = [];
+    foreach($trio1 as $trioItem){
+        $allTrioValues1 = array_values(array_unique(array_merge($allTrioValues1, $trioItem)));
+    }
+    //Sort  allTrioValues1 by odds
+    $qplsOdds = [];
+    foreach($allTrioValues1 as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $allTrioValues1 = array_keys($qplsOdds);
+    $qin1 = array_slice($allTrioValues1, 0, 6);
+    
+    $allTrioValues2 = [];
+    foreach($trio2 as $trioItem2){
+        $allTrioValues2 = array_values(array_unique(array_merge($allTrioValues2, $trioItem2)));
+    }
+    //Sort  allTrioValues2 by odds
+    $qplsOdds = [];
+    foreach($allTrioValues2 as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $allTrioValues2 = array_keys($qplsOdds);
+    $qin2 = array_slice($allTrioValues2, 0, 6);
+    
+    $allTrioValues3 = [];
+    foreach($trio3 as $trioItem3){
+        $allTrioValues3 = array_values(array_unique(array_merge($allTrioValues3, $trioItem3)));
+    }
+    //Sort  allTrioValues3 by odds
+    $qplsOdds = [];
+    foreach($allTrioValues3 as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $allTrioValues3 = array_keys($qplsOdds);
+    $qin3 = array_slice($allTrioValues3, 0, 6);
+    $inter23 = array_intersect($qin2, $qin3);
+    if(!empty($inter23)){
+        $racetext .= "\t\t'inter23' =>  '" . implode(", ", $inter23) . "',\n";
+    }
+    $inter = array_intersect($qin1, $qin2, $qin3);
+    if(!empty($inter)){
         $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
-        $place = array_intersect($inter,$blacks);
-        if(!empty($place)){
-            $racetext .= "\t\t'Place' =>  '" . implode(", ", $place) . "',\n";
-        }
+    }
+    $place = array_intersect($inter,$blacks);
+    if(!empty($place)){
+        $racetext .= "\t\t'Place' =>  '" . implode(", ", $place) . "',\n";
     }
     $racetext .= "\t],\n";
     $outtext .= $racetext;
