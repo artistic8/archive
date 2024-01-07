@@ -1,7 +1,5 @@
 <?php
 
-$blacks = [2, 4, 6, 8, 10, 11,13];
-
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $step = "winbets";
@@ -75,18 +73,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     asort($qplsOdds);
     $allTrioValues3 = array_keys($qplsOdds);
     $qin3 = array_slice($allTrioValues3, 0, 6);
-    $inter23 = array_intersect($qin2, $qin3);
-    if(!empty($inter23)){
-        $racetext .= "\t\t'inter23' =>  '" . implode(", ", $inter23) . "',\n";
-    }
     $inter = array_intersect($qin1, $qin2, $qin3);
     if(!empty($inter)){
         $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
+        if(count($inter) >1){
+            $racetext .= "\t\t'Place' =>  '" . $inter[0] . "',\n";
+        }
     }
-    $place = array_intersect($inter,$blacks);
-    if(!empty($place)){
-        $racetext .= "\t\t'Place' =>  '" . implode(", ", $place) . "',\n";
-    }
+
     $racetext .= "\t],\n";
     $outtext .= $racetext;
 }
