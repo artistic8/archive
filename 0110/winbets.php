@@ -22,23 +22,21 @@ return [
 		Race 3
 		*/
 		'Favorite'    =>  '4',
-		'inter' =>  '2, 10, 11',
-		'Place' =>  '2',
+		'inter' =>  '4, 2, 10',
+		'Place' =>  '4',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'Favorite'    =>  '4',
-		'inter' =>  '6',
+		'inter' =>  '9',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'Favorite'    =>  '4',
-		'inter' =>  '6, 5, 2, 1',
-		'Place' =>  '6',
+		'Favorite'    =>  '6',
 	],
 	'6' => [
 		/**
@@ -53,13 +51,14 @@ return [
 		Race 7
 		*/
 		'Favorite'    =>  '5',
-		'inter' =>  '3, 2',
-		'Place' =>  '3',
+		'inter' =>  '6, 2, 3',
+		'Place' =>  '6',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'Favorite'    =>  '9',
+		'inter' =>  '11',
 	],
 ];
