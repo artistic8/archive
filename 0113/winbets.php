@@ -18,7 +18,6 @@ return [
 		Race 3
 		*/
 		'Favorite'    =>  '3',
-		'inter' =>  '3',
 	],
 	'4' => [
 		/**
@@ -33,7 +32,7 @@ return [
 		Race 5
 		*/
 		'Favorite'    =>  '2',
-		'inter' =>  '7, 8, 5, 4',
+		'inter' =>  '7, 8, 5',
 		'Place' =>  '7',
 	],
 	'6' => [
