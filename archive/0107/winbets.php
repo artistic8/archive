@@ -20,15 +20,12 @@ return [
 		Race 3
 		*/
 		'Favorite'    =>  '4',
-		'inter' =>  '4, 3, 2',
-		'Place' =>  '4',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'Favorite'    =>  '2',
-		'inter' =>  '10',
 	],
 	'5' => [
 		/**
@@ -41,15 +38,13 @@ return [
 		Race 6
 		*/
 		'Favorite'    =>  '4',
-		'inter' =>  '3, 10',
-		'Place' =>  '3',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'Favorite'    =>  '8',
-		'inter' =>  '8, 2, 7',
+		'inter' =>  '8, 2, 7, 4',
 		'Place' =>  '8',
 	],
 	'8' => [
