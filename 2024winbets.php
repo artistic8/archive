@@ -73,6 +73,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     asort($qplsOdds);
     $allTrioValues3 = array_keys($qplsOdds);
     $qin3 = array_slice($allTrioValues3, 0, 6);
+    $inter12 = array_values(array_intersect($qin1, $qin2));
+    if(!empty($inter12)){
+        $racetext .= "\t\t'inter12' =>  '" . implode(", ", $inter12) . "',\n";
+    }
     $inter = array_values(array_intersect($qin1, $qin2, $qin3));
     if(!empty($inter)){
         $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
