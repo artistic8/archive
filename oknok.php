@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'all races' => [
+        'Ok numbers' => [7, 8, 10],
+        'Nok numbers' => [1, 2, 3, 4, 5, 6, 9],
+        'Ok jockeys' => ['A Atzeni', 'A Badel', 'Y L Chung', 'J McDonald', 'K Teetan', 'E C W Wong'],
+        'Nok jockeys' => ['H Bentley', 'H Bowman', 'L Ferraris', 'L Hewitson', 'C Y Ho', 'K De Melo', 'Z Purton'],
+    ],
     1 => [
         'Ok numbers' => [2, 3, 5, 7],
         'Nok numbers' => [],
