@@ -44,7 +44,7 @@ return [
 		Race 5
 		*/
 		'Favorite'    =>  '5',
-		'inter12' =>  '5, 12, 2, 3',
+		'inter12' =>  '5, 12, 2, 3, 6',
 		'inter' =>  '5, 12, 2',
 		'Place' =>  '5',
 		// count > 2
