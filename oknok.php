@@ -62,9 +62,9 @@ return [
     ],
     10 => [
         'Ok numbers' => [11],
-        'Nok numbers' => [4],
+        'Nok numbers' => [4, 7],
         'Ok jockeys' => ['C L Chau'],
-        'Nok jockeys' => ['K C Leung'],
+        'Nok jockeys' => ['K C Leung', 'A Hamelin'],
     ],
     11 => [
         'Ok numbers' => [],
