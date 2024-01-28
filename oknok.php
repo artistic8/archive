@@ -2,22 +2,22 @@
 
 return [
     'all races' => [
-        'Ok numbers' => [7, 8, 10],
-        'Nok numbers' => [1, 2, 3, 4, 5, 6, 9],
+        'Ok numbers' => [7, 10],
+        'Nok numbers' => [1, 2, 3, 4, 5, 6, 8, 9],
         'Ok jockeys' => ['A Atzeni', 'A Badel', 'Y L Chung', 'J McDonald', 'K Teetan', 'E C W Wong'],
-        'Nok jockeys' => ['H Bentley', 'H Bowman', 'L Ferraris', 'L Hewitson', 'C Y Ho', 'K De Melo', 'Z Purton'],
+        'Nok jockeys' => ['H Bentley', 'H Bowman', 'M Chadwick', 'L Ferraris', 'L Hewitson', 'C Y Ho', 'K De Melo', 'Z Purton'],
     ],
     1 => [
-        'Ok numbers' => [2, 3, 5, 7],
-        'Nok numbers' => [],
+        'Ok numbers' => [2, 5, 7],
+        'Nok numbers' => [3],
         'Ok jockeys' => ['K Teetan', 'Y L Chung', 'Z Purton'],
-        'Nok jockeys' => [],
+        'Nok jockeys' => ['H Bowman'],
     ],
     2 => [
         'Ok numbers' => [5, 7, 10],
-        'Nok numbers' => [1],
+        'Nok numbers' => [1, 8],
         'Ok jockeys' => ['K Teetan', 'Z Purton'],
-        'Nok jockeys' => ['H Bowman'],
+        'Nok jockeys' => ['H Bowman', 'M Chadwick'],
     ],
     3 => [
         'Ok numbers' => [3, 4],
