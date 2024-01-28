@@ -20,10 +20,10 @@ return [
         'Nok jockeys' => ['H Bowman', 'M Chadwick'],
     ],
     3 => [
-        'Ok numbers' => [3, 4],
-        'Nok numbers' => [1, 9],
+        'Ok numbers' => [3],
+        'Nok numbers' => [1, 4, 9],
         'Ok jockeys' => ['K Teetan', 'Z Purton'],
-        'Nok jockeys' => ['C Y Ho', 'H Bentley'],
+        'Nok jockeys' => ['H Bowman', 'C Y Ho', 'H Bentley'],
     ],
     4 => [
         'Ok numbers' => [1, 5, 7],
