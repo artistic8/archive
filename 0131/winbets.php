@@ -35,14 +35,15 @@ return [
 		*/
 		'Favorite'    =>  '7',
 		'inter12' =>  '7, 9, 1',
-		'inter' =>  '7',
+		'inter' =>  '7, 9, 1',
+		'Place' =>  '7',
 		// count < 2
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'Favorite'    =>  '5',
+		'Favorite'    =>  '8',
 		'inter12' =>  '8, 5, 2, 1, 12, 10, 9',
 		'inter' =>  '8, 5, 2, 12, 10, 9',
 		'Place' =>  '8',
