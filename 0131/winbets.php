@@ -1,0 +1,87 @@
+<?php
+
+return [
+	'1' => [
+		/**
+		Race 1
+		*/
+		'Favorite'    =>  '8',
+		'inter12' =>  '8, 10, 6',
+		// count < 2
+	],
+	'2' => [
+		/**
+		Race 2
+		*/
+		'Favorite'    =>  '3',
+		'inter12' =>  '5, 7, 4',
+		'inter' =>  '5',
+		// count < 2
+	],
+	'3' => [
+		/**
+		Race 3
+		*/
+		'Favorite'    =>  '4',
+		'inter12' =>  '4, 3, 5, 12',
+		'inter' =>  '3, 5',
+		'Place' =>  '3',
+		// count > 2
+	],
+	'4' => [
+		/**
+		Race 4
+		*/
+		'Favorite'    =>  '7',
+		'inter12' =>  '7, 9',
+		'inter' =>  '7, 9',
+		'Place' =>  '7',
+		// count < 2
+	],
+	'5' => [
+		/**
+		Race 5
+		*/
+		'Favorite'    =>  '5',
+		'inter12' =>  '5, 8, 2, 1, 10',
+		'inter' =>  '5, 8, 2, 10',
+		'Place' =>  '5',
+		// count > 2
+	],
+	'6' => [
+		/**
+		Race 6
+		*/
+		'Favorite'    =>  '3',
+		'inter12' =>  '5, 10',
+		'inter' =>  '5, 10',
+		'Place' =>  '5',
+		// count < 2
+	],
+	'7' => [
+		/**
+		Race 7
+		*/
+		'Favorite'    =>  '12',
+		'inter12' =>  '3, 6, 4',
+		'inter' =>  '3, 6',
+		'Place' =>  '3',
+		// count < 2
+	],
+	'8' => [
+		/**
+		Race 8
+		*/
+		'Favorite'    =>  '7',
+		'inter12' =>  '7, 5',
+		// count > 2
+	],
+	'9' => [
+		/**
+		Race 9
+		*/
+		'Favorite'    =>  '8',
+		'inter12' =>  '8, 10',
+		// count < 2
+	],
+];
