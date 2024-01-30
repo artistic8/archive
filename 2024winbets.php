@@ -46,7 +46,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     asort($qplsOdds);
     $allTrioValues1 = array_keys($qplsOdds);
-    $qin1 = array_slice($allTrioValues1, 0, 6);
+    // $qin1 = array_slice($allTrioValues1, 0, 6);
+    $qin1 = $allTrioValues1;
     
     $allTrioValues2 = [];
     foreach($trio2 as $trioItem2){
@@ -59,7 +60,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     asort($qplsOdds);
     $allTrioValues2 = array_keys($qplsOdds);
-    $qin2 = array_slice($allTrioValues2, 0, 6);
+    // $qin2 = array_slice($allTrioValues2, 0, 6);
+    $qin2 = $allTrioValues2;
     
     $allTrioValues3 = [];
     foreach($trio3 as $trioItem3){
@@ -72,7 +74,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     asort($qplsOdds);
     $allTrioValues3 = array_keys($qplsOdds);
-    $qin3 = array_slice($allTrioValues3, 0, 6);
+    // $qin3 = array_slice($allTrioValues3, 0, 6);
+    $qin3 = $allTrioValues3;
     $inter12 = array_values(array_intersect($qin1, $qin2));
     if(!empty($inter12)){
         $racetext .= "\t\t'inter12' =>  '" . implode(", ", $inter12) . "',\n";
