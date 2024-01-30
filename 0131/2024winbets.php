@@ -42,7 +42,6 @@ return [
 		Race 6
 		*/
 		'Favorite'    =>  '3',
-		'inter12' =>  '5',
 		// count < 2
 	],
 	'7' => [
