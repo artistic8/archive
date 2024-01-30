@@ -2,9 +2,10 @@
 
 return [
     'all races' => [
-        'Ok jockeys' => ['B Avdulla', 'A Badel', 'Y L Chung', 'J McDonald', 'E C W Wong', 'M L Yeung', 'C L Chau'],
-        'Nok jockeys' => ['A Atzeni', 'H Bentley', 'H Bowman', 'M Chadwick', 'L Ferraris', 'L Hewitson', 'C Y Ho', 
-            'K C Leung', 'K De Melo', 'K Teetan', 'M F Poon', 'Z Purton', 'A Hamelin'],
+        'Ok jockeys' => ['B Avdulla', 'A Badel', 'C L Chau', 'Y L Chung', 'J McDonald', 'E C W Wong', 'M L Yeung'],
+        'Nok jockeys' => ['A Atzeni', 'H Bentley', 'H Bowman', 'M Chadwick', 'K De Melo',
+        'L Ferraris', 'A Hamelin', 'L Hewitson', 'K C Leung', 'M F Poon',
+        'K Teetan', 'Z Purton', 'C Y Ho'],
     ],
     1 => [
         'Ok numbers' => [2, 5, 7],
