@@ -15,7 +15,7 @@ return [
 		*/
 		'Favorite'    =>  '3',
 		'inter12' =>  '5, 7, 10',
-		'inter' =>  '5, 10',
+		'inter' =>  '5, 7',
 		'Place' =>  '5',
 		// count < 2
 	],
@@ -35,8 +35,7 @@ return [
 		*/
 		'Favorite'    =>  '7',
 		'inter12' =>  '7, 9',
-		'inter' =>  '7, 9',
-		'Place' =>  '7',
+		'inter' =>  '7',
 		// count < 2
 	],
 	'5' => [
