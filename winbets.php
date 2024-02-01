@@ -83,9 +83,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_values(array_intersect($qin1, $qin2, $qin3));
     if(!empty($inter)){
         $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
-        if(count($inter) >1){
-            $racetext .= "\t\t'Place' =>  '" . $inter[0] . "',\n";
-        }
+        $racetext .= "\t\t'Place' =>  '" . $inter[0] . "',\n";
     }
     if(count($trio1) > 2 && count($trio2) >  2 && count($trio3) > 2){
         $racetext .= "\t\t// count > 2\n";

@@ -56,6 +56,7 @@ return [
 		'Favorite'    =>  '3',
 		'inter12' =>  '5, 10, 11',
 		'inter' =>  '10',
+		'Place' =>  '10',
 		// count < 2
 	],
 	'7' => [
@@ -83,7 +84,7 @@ return [
 		Race 9
 		*/
 		'Favorite'    =>  '8',
-		'inter12' =>  '8, 10',
+		'inter12' =>  '8, 10, 1, 11',
 		// count < 2
 	],
 ];
