@@ -27,7 +27,7 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'    =>  '8',
+		'Favorite'    =>  '9',
 		// count < 2
 	],
 	'5' => [
@@ -41,7 +41,7 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'    =>  '12',
+		'Favorite'    =>  '4',
 		// count < 2
 	],
 	'7' => [
@@ -63,7 +63,7 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'    =>  '4',
+		'Favorite'    =>  '11',
 		// count < 2
 	],
 	'10' => [
