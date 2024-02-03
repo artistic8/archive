@@ -1,0 +1,5 @@
+php getodds.php 0204 ST 10;
+php sortodds.php 0204;
+php plabets.php 0204;
+php 2024plabets.php 0204;
+php arrangebets.php 0204
