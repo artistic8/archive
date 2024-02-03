@@ -5,11 +5,11 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'    =>  '8',
-		'inter12' =>  '8, 3, 10, 2, 9, 1, 6',
-		'inter' =>  '3, 2, 1',
-		'Place' =>  '3',
-		// count < 2
+		'Favorite'    =>  '10',
+		'inter12' =>  '10, 8, 3, 9, 6',
+		'inter' =>  '10, 8, 3, 9, 6',
+		'Place' =>  '10',
+		// count > 2
 	],
 	'2' => [
 		/**
@@ -17,6 +17,8 @@ return [
 		*/
 		'Favorite'    =>  '3',
 		'inter12' =>  '3, 11, 5, 10, 8',
+		'inter' =>  '5, 8',
+		'Place' =>  '5',
 		// count < 2
 	],
 	'3' => [
@@ -25,17 +27,17 @@ return [
 		*/
 		'Favorite'    =>  '1',
 		'inter12' =>  '1, 3, 4, 5, 9',
-		'inter' =>  '1, 3, 4, 5',
-		'Place' =>  '1',
-		// count > 2
+		'inter' =>  '9',
+		'Place' =>  '9',
+		// count < 2
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'Favorite'    =>  '8',
-		'inter12' =>  '8, 9, 2, 1, 10, 7, 12, 6',
-		'inter' =>  '8, 2, 10, 7, 12, 6',
+		'inter12' =>  '8, 9, 1, 2, 10, 7, 12, 6',
+		'inter' =>  '8, 9, 1, 2, 10, 7, 12, 6',
 		'Place' =>  '8',
 		// count > 2
 	],
@@ -44,7 +46,7 @@ return [
 		Race 5
 		*/
 		'Favorite'    =>  '3',
-		'inter12' =>  '9, 4, 1, 8, 6',
+		'inter12' =>  '9, 1, 4, 8, 6',
 		'inter' =>  '9, 1, 8, 6',
 		'Place' =>  '9',
 		// count > 2
@@ -74,16 +76,16 @@ return [
 		Race 8
 		*/
 		'Favorite'    =>  '6',
-		'inter12' =>  '6, 11',
-		'inter' =>  '6, 11',
-		'Place' =>  '6',
 		// count < 2
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'Favorite'    =>  '11',
+		'Favorite'    =>  '5',
+		'inter12' =>  '10, 3, 11, 1',
+		'inter' =>  '10, 11, 1',
+		'Place' =>  '10',
 		// count < 2
 	],
 	'10' => [
@@ -91,7 +93,7 @@ return [
 		Race 10
 		*/
 		'Favorite'    =>  '10',
-		'inter12' =>  '5, 8',
+		'inter12' =>  '4',
 		// count < 2
 	],
 ];
