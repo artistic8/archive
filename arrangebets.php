@@ -20,7 +20,7 @@ foreach ($bets as $raceNumber => $raceBets) {
     $selected = $raceBets['Place'];
     if(!isset($allRacesOdds[$raceNumber][$selected])) continue;
     $sOdds = $allRacesOdds[$raceNumber][$selected];
-    $selectedOdds["Race $raceNumber- Selected $selected"] = $sOdds;
+    $selectedOdds["Race $raceNumber- Selected $selected(odds: $sOdds)"] = $sOdds;
 }
 asort($selectedOdds);
 
