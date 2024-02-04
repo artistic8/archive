@@ -46,8 +46,8 @@ return [
     7 => [
         'Ok numbers' => [6, 8, 11],
         'Nok numbers' => [2, 3],
-        'Ok jockeys' => ['A Atzeni', 'A Badel', 'K Teetan', 'J McDonald', 'C L Chau'],
-        'Nok jockeys' => ['H Bentley','C Y Ho'],
+        'Ok jockeys' => ['A Atzeni', 'A Badel', 'K Teetan', 'C L Chau'],
+        'Nok jockeys' => ['H Bentley', 'J McDonald','C Y Ho'],
     ],
     8 => [
         'Ok numbers' => [5, 6, 11],
