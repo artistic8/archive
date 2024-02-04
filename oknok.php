@@ -33,9 +33,9 @@ return [
     ],
     5 => [
         'Ok numbers' => [7],
-        'Nok numbers' => [4, 5, 8],
+        'Nok numbers' => [4, 5, 8, 9],
         'Ok jockeys' => ['K Teetan'],
-        'Nok jockeys' => ['K De Melo', 'Z Purton', 'L Hewitson'],
+        'Nok jockeys' => ['A Badel', 'K De Melo', 'L Hewitson', 'Z Purton'],
     ],
     6 => [
         'Ok numbers' => [7, 10],
