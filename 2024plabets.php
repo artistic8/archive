@@ -2,13 +2,14 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-$step = "winbets";
+$step = "2024plabets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesRunners = include($currentDir . DIRECTORY_SEPARATOR . "1.php");
-$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "getodds.php");
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory.php");
+$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "2024triohistory.php");
+
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 $totalRaces = count($allRacesRunners);

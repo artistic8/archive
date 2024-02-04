@@ -23,7 +23,7 @@ if (!file_exists($outDir)) {
     mkdir($outDir, 0777, true);
 }
 
-$outFile =$outDir . DIRECTORY_SEPARATOR . "getodds.php";
+$outFile =$outDir . DIRECTORY_SEPARATOR . "plaodds.php";
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
@@ -42,7 +42,7 @@ for($r = 1; $r <= $totalRaces; $r++){
     $odds = $odds["OUT"];
 
     $pos = strpos($odds, "#PLA");
-    $odds = substr($odds, 0, $pos);
+    $odds = substr($odds, $pos, strlen($odds));
 
     $odds = explode(";",$odds);
 
