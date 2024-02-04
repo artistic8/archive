@@ -39,7 +39,7 @@ return [
     ],
     6 => [
         'Ok numbers' => [7, 10],
-        'Nok numbers' => [3, 6, 12],
+        'Nok numbers' => [3, 6, 9, 11, 12],
         'Ok jockeys' => ['A Badel', 'H Bowman', 'K De Melo', 'C Y Ho'],
         'Nok jockeys' => ['Z Purton', 'L Ferraris', 'A Hamelin'],
     ],
