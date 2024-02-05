@@ -11,6 +11,10 @@ $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
+if(file_exists($outFile)){
+    $oldData = include($outFile);
+}
+
 $totalRaces = count($allRacesRunners);
 
 $outtext = "<?php\n\n";
@@ -18,8 +22,18 @@ $outtext .= "return [\n";
 
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesRunners[$raceNumber])) continue;
+    if(isset($oldData)){
+        if(isset($oldData[$raceNumber]['places'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places']);
+        if(isset($oldData[$raceNumber]['places'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
+    }
+    if(isset($oldPlaces)) $places = $oldPlaces;
+    else $places = [];
+    if(isset($oldFavorites)) $favorites = $oldFavorites;
+    else $favorites = [];
+    
     $runners = explode(", ", $allRacesRunners[$raceNumber]['Runners']);
     $favorite = $runners[0];
+    if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $secondFavorite = $runners[1];
     $thirdFavorite = $runners[2];
     $raceData1 = $history[$raceNumber][$favorite];
@@ -31,7 +45,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    $racetext .= "\t\t'Favorite'    =>  '$favorite',\n";   
+    $racetext .= "\t\t'Favorite'  =>  '$favorite',\n";   
+    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n";
     $trio1 = $raceData1['trio'];
     $trio2 = $raceData2['trio'];
     $trio3 = $raceData3['trio'];
@@ -83,7 +98,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_values(array_intersect($qin1, $qin2, $qin3));
     if(!empty($inter)){
         $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
-        $racetext .= "\t\t'Place' =>  '" . $inter[0] . "',\n";
+        $racetext .= "\t\t'Place'  =>  '" . $inter[0] . "',\n";
+        if(!in_array($inter[0], $places)) $places[] = $inter[0];
+    }
+    
+    if(!empty($places)){
+        $racetext .= "\t\t'places' => '" . implode(", ", $places) . "',\n";
     }
     if(count($trio1) > 2 && count($trio2) >  2 && count($trio3) > 2){
         $racetext .= "\t\t// count > 2\n";
@@ -92,6 +112,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t// count < 2\n";
     }
     $racetext .= "\t],\n";
+    unset($oldData);
+    unset($oldPlaces);
+    unset($oldFavorites);
+    unset($places);
+    unset($favorites);
     $outtext .= $racetext;
 }
 
