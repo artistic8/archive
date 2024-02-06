@@ -6,7 +6,7 @@ return [
 		Race 1
 		*/
 		'Favorite'  =>  '6',
-		'favorites' => '6',
+		'favorites' => '6, 1',
 		// count < 2
 	],
 	'2' => [
@@ -39,7 +39,7 @@ return [
 		Race 5
 		*/
 		'Favorite'  =>  '1',
-		'favorites' => '1',
+		'favorites' => '7, 1',
 		// count < 2
 	],
 	'6' => [
@@ -54,9 +54,8 @@ return [
 		/**
 		Race 7
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2',
-		'inter12' =>  '6',
+		'Favorite'  =>  '3',
+		'favorites' => '2, 3',
 		// count < 2
 	],
 	'8' => [
@@ -64,7 +63,7 @@ return [
 		Race 8
 		*/
 		'Favorite'  =>  '4',
-		'favorites' => '4',
+		'favorites' => '11, 4',
 		// count < 2
 	],
 	'9' => [
