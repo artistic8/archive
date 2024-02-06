@@ -40,6 +40,7 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
+		'inter12' =>  '7, 9',
 		// count < 2
 	],
 	'6' => [

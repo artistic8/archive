@@ -19,10 +19,7 @@ return [
 		*/
 		'Favorite'  =>  '4',
 		'favorites' => '4',
-		'inter12' =>  '1',
-		'inter' =>  '1',
-		'Place'  =>  '1',
-		'places' => '1',
+		'inter12' =>  '3',
 		// count < 2
 	],
 	'3' => [
@@ -55,6 +52,7 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
+		'inter12' =>  '7, 10, 2, 4, 5, 8, 9',
 		// count < 2
 	],
 	'6' => [
