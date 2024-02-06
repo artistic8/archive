@@ -24,7 +24,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesRunners[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['places'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places']);
-        if(isset($oldData[$raceNumber]['places'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
+        if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
     }
     if(isset($oldPlaces)) $places = $oldPlaces;
     else $places = [];
@@ -112,7 +112,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t// count < 2\n";
     }
     $racetext .= "\t],\n";
-    unset($oldData);
     unset($oldPlaces);
     unset($oldFavorites);
     unset($places);

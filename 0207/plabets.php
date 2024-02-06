@@ -38,12 +38,12 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '3',
-		'favorites' => '3',
-		'inter12' =>  '9, 1, 11, 12, 10, 2, 7, 4, 5',
-		'inter' =>  '9, 1, 12, 10, 2, 7, 4, 5',
-		'Place'  =>  '9',
-		'places' => '9',
+		'Favorite'  =>  '1',
+		'favorites' => '3, 1',
+		'inter12' =>  '1, 3, 9, 12, 10, 2, 7, 4, 5',
+		'inter' =>  '1, 9, 12, 10, 2, 7, 4, 5',
+		'Place'  =>  '1',
+		'places' => '9, 1',
 		// count > 2
 	],
 	'5' => [
@@ -72,7 +72,7 @@ return [
 		*/
 		'Favorite'  =>  '2',
 		'favorites' => '2',
-		'inter12' =>  '2, 5, 3, 8, 6, 1',
+		'inter12' =>  '2, 5, 3, 8, 1, 6',
 		'inter' =>  '2, 3, 1',
 		'Place'  =>  '2',
 		'places' => '2',
