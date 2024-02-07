@@ -2,7 +2,7 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-$step = "2024plabets";
+$step = "plabets2024";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
