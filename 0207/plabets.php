@@ -101,7 +101,7 @@ return [
 		*/
 		'Favorite'  =>  '3',
 		'favorites' => '5, 1, 3',
-		'inter12' =>  '2, 1, 11, 10',
+		'inter12' =>  '11',
 		'inter' =>  '11',
 		'Place'  =>  '11',
 		'places' => '11, 3, 1',
