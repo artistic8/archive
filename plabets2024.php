@@ -63,7 +63,27 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allTrioValues1 = array_keys($qplsOdds);
     // $qin1 = array_slice($allTrioValues1, 0, 6);
     $qin1 = $allTrioValues1;
-    
+    $interF = $qin1;
+    foreach($favorites as $F){
+        $raceDataF = $history[$raceNumber][$F];
+        $trioF = $raceDataF['trio'];
+        $allTrioValuesF = [];
+        foreach($trioF as $trioItemF){
+           $allTrioValuesF = array_values(array_unique(array_merge($allTrioValuesF, $trioItemF)));
+        }
+        //Sort  allTrioValuesF by odds
+        $qplsOdds = [];
+        foreach($allTrioValuesF as $iIndex){
+           if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+        }
+        asort($qplsOdds);
+        $allTrioValuesF = array_keys($qplsOdds);
+        $interF = array_intersect($interF, $allTrioValuesF);
+    }
+    if(!empty($interF)){
+        $racetext .= "\t\t'interF' =>  '" . implode(", ", $interF) . "',\n";
+    }
+
     $allTrioValues2 = [];
     foreach($trio2 as $trioItem2){
         $allTrioValues2 = array_values(array_unique(array_merge($allTrioValues2, $trioItem2)));
