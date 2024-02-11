@@ -31,7 +31,10 @@ return [
 		*/
 		'Favorite'  =>  '2',
 		'favorites' => '2',
-		'inter12' =>  '10',
+		'inter12' =>  '10, 11, 12',
+		'inter' =>  '10',
+		'Place'  =>  '10',
+		'places' => '10',
 		// count < 2
 	],
 	'5' => [
@@ -80,8 +83,8 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '13',
-		'favorites' => '13',
+		'Favorite'  =>  '5',
+		'favorites' => '13, 5',
 		// count < 2
 	],
 	'11' => [
