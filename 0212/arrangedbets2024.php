@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'Race 6- Selected 12(odds: 3)',
-	'Race 4- Selected 12(odds: 9)',
+	'Race 6- Selected 12(odds: 2.8)',
+	'Race 4- Selected 12(odds: 8.6)',
 ];

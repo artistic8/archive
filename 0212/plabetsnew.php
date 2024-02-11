@@ -63,6 +63,7 @@ return [
 		*/
 		'Favorite'  =>  '6',
 		'favorites' => '6',
+		'interF' =>  '1',
 		// count < 2
 	],
 	'9' => [
@@ -85,8 +86,8 @@ return [
 		/**
 		Race 11
 		*/
-		'Favorite'  =>  '5',
-		'favorites' => '4, 5',
+		'Favorite'  =>  '6',
+		'favorites' => '4, 5, 6',
 		// count < 2
 	],
 ];
