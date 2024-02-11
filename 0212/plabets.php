@@ -21,9 +21,12 @@ return [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '6',
-		'favorites' => '6',
+		'Favorite'  =>  '3',
+		'favorites' => '6, 3',
 		'inter12' =>  '3, 12, 1, 4, 5',
+		'inter' =>  '5',
+		'Place'  =>  '5',
+		'places' => '5',
 		// count < 2
 	],
 	'4' => [
@@ -68,8 +71,8 @@ return [
 		*/
 		'Favorite'  =>  '4',
 		'favorites' => '4',
-		'inter12' =>  '4, 8, 11, 2, 9, 7, 5',
-		'inter' =>  '4, 2, 9',
+		'inter12' =>  '4, 8, 11, 9, 2, 7, 5',
+		'inter' =>  '4, 9, 2',
 		'Place'  =>  '4',
 		'places' => '4',
 		// count < 2
