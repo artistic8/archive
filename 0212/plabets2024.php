@@ -50,10 +50,10 @@ return [
 		'Favorite'  =>  '3',
 		'favorites' => '7, 3',
 		'interF' =>  '7, 11, 2',
-		'inter12' =>  '12, 11, 2',
-		'inter' =>  '12',
-		'Place'  =>  '12',
-		'places' => '12',
+		'inter12' =>  '7, 11, 2',
+		'inter' =>  '11, 2',
+		'Place'  =>  '11',
+		'places' => '12, 11',
 		// count < 2
 	],
 	'7' => [
@@ -78,9 +78,8 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '8',
-		'favorites' => '8',
-		'interF' =>  '8, 12, 1, 11, 13, 2',
+		'Favorite'  =>  '12',
+		'favorites' => '8, 12',
 		// count < 2
 	],
 	'10' => [
