@@ -15,6 +15,9 @@ return [
 		*/
 		'Favorite'  =>  '12',
 		'favorites' => '12, 13, 2',
+		'inter12' =>  '2, 10',
+		'inter' =>  '2, 10',
+		'Place'  =>  '2',
 		'places' => '2',
 		// count < 2
 	],
@@ -26,6 +29,8 @@ return [
 		'favorites' => '6, 3',
 		'interF' =>  '3, 12, 1, 4, 5',
 		'inter12' =>  '3, 12, 1, 4, 5',
+		'inter' =>  '5',
+		'Place'  =>  '5',
 		'places' => '5, 3',
 		// count < 2
 	],
@@ -36,7 +41,7 @@ return [
 		'Favorite'  =>  '2',
 		'favorites' => '2, 10',
 		'interF' =>  '10, 7',
-		'inter12' =>  '10, 7',
+		'inter12' =>  '2, 3, 10, 1, 7, 6, 11, 12, 9',
 		'inter' =>  '10, 7',
 		'Place'  =>  '10',
 		'places' => '7, 2, 10',
@@ -50,10 +55,8 @@ return [
 		'favorites' => '12, 4',
 		'interF' =>  '4, 12, 2, 6, 5',
 		'inter12' =>  '4, 12, 2, 6, 5',
-		'inter' =>  '4, 12, 2, 5',
-		'Place'  =>  '4',
 		'places' => '12, 4',
-		// count > 2
+		// count < 2
 	],
 	'6' => [
 		/**

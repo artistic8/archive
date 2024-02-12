@@ -31,6 +31,7 @@ return [
 		*/
 		'Favorite'  =>  '2',
 		'favorites' => '2, 10',
+		'inter12' =>  '10, 11, 12',
 		'places' => '10, 12',
 		// count < 2
 	],
