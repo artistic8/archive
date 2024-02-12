@@ -99,8 +99,9 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '12',
+		'Favorite'  =>  '8',
 		'favorites' => '8, 12',
+		'inter12' =>  '8, 1, 12, 5, 13, 2, 10',
 		// count < 2
 	],
 	'10' => [
