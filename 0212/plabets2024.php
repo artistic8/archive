@@ -50,7 +50,7 @@ return [
 		'Favorite'  =>  '3',
 		'favorites' => '7, 3',
 		'interF' =>  '7, 11, 2',
-		'inter12' =>  '3, 4, 12',
+		'inter12' =>  '12, 11, 2',
 		'inter' =>  '12',
 		'Place'  =>  '12',
 		'places' => '12',
@@ -80,7 +80,7 @@ return [
 		*/
 		'Favorite'  =>  '8',
 		'favorites' => '8',
-		'interF' =>  '8, 12, 11, 1, 13, 2',
+		'interF' =>  '8, 12, 1, 11, 13, 2',
 		// count < 2
 	],
 	'10' => [
