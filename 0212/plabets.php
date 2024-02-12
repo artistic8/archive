@@ -99,10 +99,13 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '8',
-		'favorites' => '8, 12',
-		'inter12' =>  '8, 1, 12, 5, 13, 2, 10',
-		// count < 2
+		'Favorite'  =>  '1',
+		'favorites' => '8, 12, 1',
+		'inter12' =>  '1, 8, 5, 12, 13, 2, 10',
+		'inter' =>  '1, 8, 5, 10',
+		'Place'  =>  '1',
+		'places' => '1',
+		// count > 2
 	],
 	'10' => [
 		/**
@@ -110,14 +113,15 @@ return [
 		*/
 		'Favorite'  =>  '5',
 		'favorites' => '13, 5',
+		'inter12' =>  '5, 2',
 		// count < 2
 	],
 	'11' => [
 		/**
 		Race 11
 		*/
-		'Favorite'  =>  '6',
-		'favorites' => '4, 5, 6',
+		'Favorite'  =>  '13',
+		'favorites' => '4, 5, 6, 13',
 		// count < 2
 	],
 ];
