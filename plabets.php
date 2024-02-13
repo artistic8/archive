@@ -64,7 +64,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     // $qin1 = array_slice($allTrioValues1, 0, 6);
     $qin1 = $allTrioValues1;
 
-    $interF = $qin1;
+    $unionF = $qin1;
     foreach($favorites as $F){
         $raceDataF = $history[$raceNumber][$F];
         $trioF = $raceDataF['trio'];
@@ -81,11 +81,16 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $allTrioValuesF = array_keys($qplsOdds);
         $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
         $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
-        $interF = array_intersect($interF, $allTrioValuesF);
+        $unionF = array_values(array_unique(array_merge($unionF, $allTrioValuesF)));
     }
-    if(!empty($interF)){
-        $racetext .= "\t\t'interF' =>  '" . implode(", ", $interF) . "',\n";
+    //Sort  unionF by odds
+    $qplsOdds = [];
+    foreach($unionF as $iIndex){
+       if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
     }
+    asort($qplsOdds);
+    $unionF = array_keys($qplsOdds);
+    $racetext .= "\t\t'unionF' =>  '" . implode(", ", $unionF) . "',\n";
     $allTrioValues2 = [];
     foreach($trio2 as $trioItem2){
         $allTrioValues2 = array_values(array_unique(array_merge($allTrioValues2, $trioItem2)));
@@ -113,25 +118,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allTrioValues3 = array_keys($qplsOdds);
     // $qin3 = array_slice($allTrioValues3, 0, 6);
     $qin3 = $allTrioValues3;
-    $inter12 = array_values(array_intersect($qin1, $qin2));
-    if(!empty($inter12)){
-        $racetext .= "\t\t'inter12' =>  '" . implode(", ", $inter12) . "',\n";
-    }
     $inter = array_values(array_intersect($qin1, $qin2, $qin3));
     if(!empty($inter)){
-        $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
         $racetext .= "\t\t'Place'  =>  '" . $inter[0] . "',\n";
         if(!in_array($inter[0], $places)) $places[] = $inter[0];
     }
     
     if(!empty($places)){
         $racetext .= "\t\t'places' => '" . implode(", ", $places) . "',\n";
-    }
-    if(count($trio1) > 2 && count($trio2) >  2 && count($trio3) > 2){
-        $racetext .= "\t\t// count > 2\n";
-    }
-    else{
-        $racetext .= "\t\t// count < 2\n";
     }
     $racetext .= "\t],\n";
     unset($oldPlaces);
