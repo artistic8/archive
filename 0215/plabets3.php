@@ -86,16 +86,18 @@ return [
 		'Trio values(Fav: 10)' =>  '',
 		'interF' =>  '',
 		'unionF' =>  '',
+		'WPs'    => '3',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '5',
-		'favorites' => '5',
-		'Trio values(Fav: 5)' =>  '5, 11, 4, 8, 9, 3',
-		'interF' =>  '5, 11, 4, 8, 9, 3',
-		'unionF' =>  '5, 11, 4, 8, 9, 3',
-		'WPs'    => '5',
+		'Favorite'  =>  '1',
+		'favorites' => '5, 1',
+		'Trio values(Fav: 5)' =>  '11, 5, 8, 4, 9, 3',
+		'Trio values(Fav: 1)' =>  '1, 5, 8, 6, 9',
+		'interF' =>  '1, 5, 8, 6, 9',
+		'unionF' =>  '1, 11, 5, 8, 4, 6, 9, 3',
+		'WPs'    => '5, 1',
 	],
 ];
