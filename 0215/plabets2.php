@@ -7,10 +7,10 @@ return [
 		*/
 		'Favorite'  =>  '9',
 		'favorites' => '2, 9',
-		'Trio values(Fav: 2)' =>  '9, 2, 5, 1, 4, 10',
+		'Trio values(Fav: 2)' =>  '9, 2, 5, 10, 4, 1',
 		'Trio values(Fav: 9)' =>  '',
 		'interF' =>  '',
-		'unionF' =>  '9, 2, 5, 1, 4, 10',
+		'unionF' =>  '9, 2, 5, 10, 4, 1',
 		'WPs'    => '2',
 	],
 	'2' => [
@@ -45,7 +45,7 @@ return [
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
 		'Trio values(Fav: 4)' =>  '4, 3',
 		'interF' =>  '4, 3',
-		'unionF' =>  '4, 1, 6, 12, 3',
+		'unionF' =>  '4, 1, 6, 3, 12',
 		'WPs'    => '1, 4',
 	],
 	'5' => [
@@ -54,9 +54,9 @@ return [
 		*/
 		'Favorite'  =>  '4',
 		'favorites' => '4',
-		'Trio values(Fav: 4)' =>  '4, 11, 9, 6, 2',
-		'interF' =>  '4, 11, 9, 6, 2',
-		'unionF' =>  '4, 11, 9, 6, 2',
+		'Trio values(Fav: 4)' =>  '4, 11, 6, 9, 2',
+		'interF' =>  '4, 11, 6, 9, 2',
+		'unionF' =>  '4, 11, 6, 9, 2',
 		'WPs'    => '4',
 	],
 	'6' => [
@@ -65,10 +65,10 @@ return [
 		*/
 		'Favorite'  =>  '8',
 		'favorites' => '3, 8',
-		'Trio values(Fav: 3)' =>  '9, 7, 1, 3, 12, 10',
+		'Trio values(Fav: 3)' =>  '7, 9, 12, 3, 1, 10',
 		'Trio values(Fav: 8)' =>  '12, 2, 11',
 		'interF' =>  '12, 2, 11',
-		'unionF' =>  '9, 7, 1, 3, 12, 10, 2, 11',
+		'unionF' =>  '7, 9, 12, 3, 1, 10, 2, 11',
 		'places' => '12',
 		'WPs'    => '3, 12',
 	],
@@ -89,10 +89,10 @@ return [
 		*/
 		'Favorite'  =>  '8',
 		'favorites' => '10, 8',
-		'Trio values(Fav: 10)' =>  '10, 5, 4, 2, 9',
+		'Trio values(Fav: 10)' =>  '5, 4, 10, 2, 9',
 		'Trio values(Fav: 8)' =>  '',
 		'interF' =>  '',
-		'unionF' =>  '10, 5, 4, 2, 9',
+		'unionF' =>  '5, 4, 10, 2, 9',
 		'WPs'    => '10',
 	],
 	'9' => [
@@ -101,12 +101,15 @@ return [
 		*/
 		'Favorite'  =>  '1',
 		'favorites' => '5, 1, 11, 9',
-		'Trio values(Fav: 5)' =>  '9, 8, 5',
-		'Trio values(Fav: 1)' =>  '1, 9, 8, 6, 5, 7',
+		'Trio values(Fav: 5)' =>  '8, 9, 5',
+		'Trio values(Fav: 1)' =>  '1, 8, 6, 9, 5, 7',
 		'Trio values(Fav: 11)' =>  '4, 11, 3',
 		'Trio values(Fav: 9)' =>  '',
 		'interF' =>  '',
-		'unionF' =>  '1, 4, 9, 11, 8, 6, 3, 5, 7',
+		'unionF' =>  '1, 8, 4, 6, 9, 11, 3, 5, 7',
+		'inter' =>  '1',
+		'Place'  =>  '1',
+		'places' => '1',
 		'WPs'    => '5, 1, 11',
 	],
 ];
