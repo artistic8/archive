@@ -37,10 +37,11 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
+		'Favorite'  =>  '4',
+		'favorites' => '11, 4',
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
-		'interF' =>  '1, 6, 12',
+		'Trio values(Fav: 4)' =>  '',
+		'interF' =>  '',
 		'unionF' =>  '1, 6, 12',
 		'WPs'    => '1',
 	],
@@ -92,12 +93,13 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '1',
-		'favorites' => '5, 1',
+		'Favorite'  =>  '11',
+		'favorites' => '5, 1, 11',
 		'Trio values(Fav: 5)' =>  '11, 5, 8, 4, 9, 3',
 		'Trio values(Fav: 1)' =>  '1, 5, 8, 6, 9',
-		'interF' =>  '1, 5, 8, 6, 9',
-		'unionF' =>  '1, 11, 5, 8, 4, 6, 9, 3',
-		'WPs'    => '5, 1',
+		'Trio values(Fav: 11)' =>  '11, 4, 3',
+		'interF' =>  '11, 4, 3',
+		'unionF' =>  '11, 5, 1, 8, 4, 9, 6, 3',
+		'WPs'    => '5, 1, 11',
 	],
 ];
