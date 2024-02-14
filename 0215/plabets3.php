@@ -37,7 +37,7 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '11',
 		'favorites' => '11, 4',
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
 		'Trio values(Fav: 4)' =>  '',
@@ -99,7 +99,7 @@ return [
 		'Trio values(Fav: 1)' =>  '1, 5, 8, 6, 9',
 		'Trio values(Fav: 11)' =>  '11, 4, 3',
 		'interF' =>  '11, 4, 3',
-		'unionF' =>  '11, 5, 1, 8, 4, 9, 6, 3',
+		'unionF' =>  '11, 1, 5, 8, 4, 6, 9, 3',
 		'WPs'    => '5, 1, 11',
 	],
 ];
