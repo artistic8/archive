@@ -2,12 +2,15 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-$step = "arrangedbets";
+if(isset($argv[2])) $stage = trim($argv[2]);
+else $stage = 1;
+
+$step = "arrangedbets$stage";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
-$bets = include($currentDir . DIRECTORY_SEPARATOR . "plabets.php");
+$bets = include($currentDir . DIRECTORY_SEPARATOR . "plabets$stage.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 $outtext = "<?php\n\n";
