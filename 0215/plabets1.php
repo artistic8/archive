@@ -56,9 +56,9 @@ return [
 		*/
 		'Favorite'  =>  '4',
 		'favorites' => '4',
-		'Trio values(Fav: 4)' =>  '4, 6, 11, 9, 10, 1',
-		'unionF(count: 8)' =>  '4, 6, 11, 9, 10, 1, 2, 5',
-		'Place' =>  '9, 10',
+		'Trio values(Fav: 4)' =>  '4, 11, 6, 9, 1, 10',
+		'unionF(count: 8)' =>  '4, 11, 6, 9, 1, 10, 2, 5',
+		'Place' =>  '9, 1',
 		'places' => '9, 1, 10',
 	],
 	'6' => [
@@ -80,9 +80,9 @@ return [
 		*/
 		'Favorite'  =>  '5',
 		'favorites' => '3, 5',
-		'Trio values(Fav: 3)' =>  '5, 3, 9, 10, 11, 2',
+		'Trio values(Fav: 3)' =>  '5, 3, 9, 11, 10, 2',
 		'Trio values(Fav: 5)' =>  '5, 3, 6, 8, 10, 2',
-		'unionF(count: 9)' =>  '5, 3, 6, 9, 8, 10, 11, 2, 1',
+		'unionF(count: 9)' =>  '5, 3, 6, 9, 8, 11, 10, 2, 1',
 		'Place' =>  '9, 8',
 		'places' => '9, 11, 10, 8',
 	],
