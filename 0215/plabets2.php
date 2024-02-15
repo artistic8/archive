@@ -112,6 +112,6 @@ return [
 		'Trio values(Fav: 12)' =>  '1, 6, 5',
 		'unionF(count: 9)' =>  '9, 1, 4, 11, 8, 6, 3, 5, 7',
 		'Place' =>  '11, 8',
-		'places' => '1, 11, 8',
+		'places' => '11, 8',
 	],
 ];
