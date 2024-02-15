@@ -27,7 +27,7 @@ return [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '1',
+		'Favorite'  =>  '7',
 		'favorites' => '1, 7',
 		'Trio values(Fav: 1)' =>  '3, 2, 5',
 		'Trio values(Fav: 7)' =>  '7, 11, 2',
