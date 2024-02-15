@@ -19,7 +19,7 @@ return [
 		'favorites' => '8, 3',
 		'Trio values(Fav: 8)' =>  '8, 3, 4',
 		'Trio values(Fav: 3)' =>  '11, 1, 5, 12',
-		'unionF(count: 7)' =>  '8, 3, 11, 4, 1, 5, 12',
+		'unionF(count: 7)' =>  '8, 11, 3, 4, 1, 5, 12',
 		'Place' =>  '4, 1',
 		'places' => '4, 1',
 	],
