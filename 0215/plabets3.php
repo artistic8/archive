@@ -42,9 +42,9 @@ return [
 		'favorites' => '11, 4, 1',
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
 		'Trio values(Fav: 4)' =>  '',
-		'Trio values(Fav: 1)' =>  '4, 1, 6, 3, 10, 12',
-		'unionF(count: 6)' =>  '4, 1, 6, 3, 10, 12',
-		'Place' =>  '3, 10',
+		'Trio values(Fav: 1)' =>  '4, 1, 6, 10, 3, 12',
+		'unionF(count: 6)' =>  '4, 1, 6, 10, 3, 12',
+		'Place' =>  '10, 3',
 		'places' => '10, 3',
 	],
 	'5' => [
