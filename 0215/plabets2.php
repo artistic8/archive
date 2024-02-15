@@ -31,10 +31,10 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '1, 7',
-		'Trio values(Fav: 1)' =>  '3, 2, 5',
+		'Trio values(Fav: 1)' =>  '3, 5, 2',
 		'Trio values(Fav: 7)' =>  '7, 11, 2',
-		'unionF(count: 5)' =>  '7, 11, 3, 2, 5',
-		'Place' =>  '2, 5',
+		'unionF(count: 5)' =>  '7, 11, 3, 5, 2',
+		'Place' =>  '5, 2',
 		'places' => '2, 5',
 	],
 	'4' => [
