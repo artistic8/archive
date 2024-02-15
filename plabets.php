@@ -87,7 +87,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         asort($qplsOdds);
         $allTrioValuesF = array_keys($qplsOdds);
         $unionF = array_values(array_unique(array_merge($unionF, $allTrioValuesF)));
-        $interF = array_intersect($unionF, $allTrioValuesF);
+        $interF = array_intersect($interF, $allTrioValuesF);
         $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
         $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
     }
@@ -102,8 +102,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     asort($qplsOdds);
     $unionF = array_keys($qplsOdds);
-    $racetext .= "\t\t'interF' =>  '" . implode(", ", $interF) . "',\n";
-    $racetext .= "\t\t'unionF' =>  '" . implode(", ", $unionF) . "',\n";
+    $racetext .= "\t\t'interF(count: " . count($interF) . ")' =>  '" . implode(", ", $interF) . "',\n";
+    $racetext .= "\t\t'unionF(count: " . count($unionF) . ")' =>  '" . implode(", ", $unionF) . "',\n";
     $allTrioValues2 = [];
     foreach($trio2 as $trioItem2){
         $allTrioValues2 = array_values(array_unique(array_merge($allTrioValues2, $trioItem2)));
