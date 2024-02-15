@@ -28,13 +28,13 @@ return [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '1',
 		'favorites' => '1, 7',
 		'Trio values(Fav: 1)' =>  '3, 2, 5',
 		'Trio values(Fav: 7)' =>  '7, 11, 2',
-		'interF' =>  '7, 11, 2',
+		'interF' =>  '2, 7, 11',
 		'unionF' =>  '7, 11, 3, 2, 5',
-		'WPs'    => '3, 7',
+		'WPs'    => '3, 7, 2',
 	],
 	'4' => [
 		/**
@@ -101,7 +101,7 @@ return [
 		*/
 		'Favorite'  =>  '1',
 		'favorites' => '5, 1, 11, 9',
-		'Trio values(Fav: 5)' =>  '8, 4, 9, 11, 3, 5',
+		'Trio values(Fav: 5)' =>  '4, 8, 9, 11, 3, 5',
 		'Trio values(Fav: 1)' =>  '1, 8, 6, 9, 5',
 		'Trio values(Fav: 11)' =>  '4, 11, 3',
 		'Trio values(Fav: 9)' =>  '',
