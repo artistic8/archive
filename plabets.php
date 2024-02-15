@@ -76,7 +76,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         asort($qplsOdds);
         $allTrioValuesF = array_keys($qplsOdds);
-        $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
+        //$allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
         $unionF = array_values(array_unique(array_merge($unionF, $allTrioValuesF)));
         $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
     }
