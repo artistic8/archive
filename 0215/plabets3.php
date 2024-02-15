@@ -61,7 +61,7 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '3',
+		'Favorite'  =>  '7',
 		'favorites' => '3, 8, 1, 7',
 		'Trio values(Fav: 3)' =>  '9, 6, 11',
 		'Trio values(Fav: 8)' =>  '12, 2, 11',
