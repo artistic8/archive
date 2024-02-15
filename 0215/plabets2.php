@@ -41,12 +41,12 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '1',
 		'favorites' => '11, 4, 1',
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
 		'Trio values(Fav: 4)' =>  '4, 3',
-		'Trio values(Fav: 1)' =>  '4, 1, 6, 9, 3, 10',
-		'unionF(count: 7)' =>  '4, 1, 6, 9, 3, 10, 12',
+		'Trio values(Fav: 1)' =>  '1, 4, 6, 9, 3, 10',
+		'unionF(count: 7)' =>  '1, 4, 6, 9, 3, 10, 12',
 		'Place' =>  '9, 3',
 		'places' => '9, 10, 3',
 	],
@@ -65,13 +65,13 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '3',
 		'favorites' => '3, 8, 1, 7',
-		'Trio values(Fav: 3)' =>  '7, 3, 1, 12, 9, 5',
+		'Trio values(Fav: 3)' =>  '3, 7, 1, 12, 9, 5',
 		'Trio values(Fav: 8)' =>  '12, 2, 11',
 		'Trio values(Fav: 1)' =>  '',
 		'Trio values(Fav: 7)' =>  '7, 9, 2, 6, 11',
-		'unionF(count: 9)' =>  '7, 3, 1, 12, 9, 5, 2, 6, 11',
+		'unionF(count: 11)' =>  '3, 7, 1, 12, 9, 5, 2, 10, 4, 6, 11',
 		'Place' =>  '12, 9',
 		'places' => '12, 9, 5',
 	],
