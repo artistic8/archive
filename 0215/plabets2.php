@@ -92,11 +92,11 @@ return [
 		*/
 		'Favorite'  =>  '8',
 		'favorites' => '10, 8, 5',
-		'Trio values(Fav: 10)' =>  '4, 5, 2, 10, 9',
+		'Trio values(Fav: 10)' =>  '4, 5, 10, 2, 9',
 		'Trio values(Fav: 8)' =>  '',
 		'Trio values(Fav: 5)' =>  '8, 4, 5, 10, 11, 6',
-		'unionF(count: 8)' =>  '8, 4, 5, 2, 10, 11, 9, 6',
-		'Place' =>  '2, 10',
+		'unionF(count: 8)' =>  '8, 4, 5, 10, 2, 11, 9, 6',
+		'Place' =>  '10, 2',
 		'places' => '10, 11, 2',
 	],
 	'9' => [
