@@ -40,13 +40,13 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '1',
 		'favorites' => '11, 4, 1',
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
 		'Trio values(Fav: 4)' =>  '',
-		'Trio values(Fav: 1)' =>  '4, 1, 6, 3, 10, 12',
-		'interF' =>  '1, 6, 12, 4, 3, 10',
-		'unionF' =>  '4, 1, 6, 3, 10, 12',
+		'Trio values(Fav: 1)' =>  '1, 4, 6, 3, 10, 12',
+		'interF' =>  '1, 4, 6, 3, 10, 12',
+		'unionF' =>  '1, 4, 6, 3, 10, 12',
 		'WPs'    => '1',
 	],
 	'5' => [
