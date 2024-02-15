@@ -16,12 +16,13 @@ return [
 		/**
 		Race 2
 		*/
-		'Favorite'  =>  '8',
-		'favorites' => '8',
-		'Trio values(Fav: 8)' =>  '8, 3, 4',
-		'interF' =>  '8, 3, 4',
-		'unionF' =>  '8, 3, 4',
-		'WPs'    => '8',
+		'Favorite'  =>  '3',
+		'favorites' => '8, 3',
+		'Trio values(Fav: 8)' =>  '3, 8, 4',
+		'Trio values(Fav: 3)' =>  '11, 5, 1, 12',
+		'interF' =>  '11, 5, 1, 12',
+		'unionF' =>  '3, 8, 11, 4, 5, 1, 12',
+		'WPs'    => '8, 11',
 	],
 	'3' => [
 		/**
@@ -62,11 +63,12 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '8',
-		'favorites' => '3, 8',
+		'Favorite'  =>  '1',
+		'favorites' => '3, 8, 1',
 		'Trio values(Fav: 3)' =>  '9, 6, 11',
 		'Trio values(Fav: 8)' =>  '12, 2, 11',
-		'interF' =>  '12, 2, 11',
+		'Trio values(Fav: 1)' =>  '',
+		'interF' =>  '',
 		'unionF' =>  '9, 12, 2, 6, 11',
 		'WPs'    => '9, 12',
 	],
