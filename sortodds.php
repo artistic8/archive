@@ -6,7 +6,7 @@ $step = 1;
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
-$allWinOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
+$allWinOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 $totalRaces = count($allWinOdds);
