@@ -98,13 +98,13 @@ return [
 		*/
 		'Favorite'  =>  '12',
 		'favorites' => '5, 1, 11, 9, 12',
-		'Trio values(Fav: 5)' =>  '9, 4, 11, 8, 3, 5',
+		'Trio values(Fav: 5)' =>  '9, 11, 4, 8, 3, 5',
 		'Trio values(Fav: 1)' =>  '9, 1, 6, 8, 5',
-		'Trio values(Fav: 11)' =>  '4, 11, 3',
+		'Trio values(Fav: 11)' =>  '11, 4, 3',
 		'Trio values(Fav: 9)' =>  '',
 		'Trio values(Fav: 12)' =>  '1, 6, 5',
-		'unionF(count: 8)' =>  '9, 4, 11, 1, 6, 8, 3, 5',
-		'Place' =>  '1, 6',
+		'unionF(count: 8)' =>  '9, 11, 1, 4, 6, 8, 3, 5',
+		'Place' =>  '4, 6',
 		'places' => '11, 8, 4, 6, 1',
 	],
 ];
