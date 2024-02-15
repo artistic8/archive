@@ -86,10 +86,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         asort($qplsOdds);
         $allTrioValuesF = array_keys($qplsOdds);
-        $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
-        $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
         $unionF = array_values(array_unique(array_merge($unionF, $allTrioValuesF)));
         $interF = array_intersect($unionF, $allTrioValuesF);
+        $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
+        $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
     }
     if(!empty($interF)){
         $wp = array_values($interF)[0];
