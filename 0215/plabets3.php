@@ -104,7 +104,7 @@ return [
 		*/
 		'Favorite'  =>  '1',
 		'favorites' => '5, 1, 11, 9',
-		'Trio values(Fav: 5)' =>  '4, 8, 9, 11, 3, 5',
+		'Trio values(Fav: 5)' =>  '8, 4, 9, 11, 3, 5',
 		'Trio values(Fav: 1)' =>  '1, 8, 6, 9, 5',
 		'Trio values(Fav: 11)' =>  '4, 11, 3',
 		'Trio values(Fav: 9)' =>  '',
