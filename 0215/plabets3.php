@@ -40,7 +40,7 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '11',
+		'Favorite'  =>  '4',
 		'favorites' => '11, 4',
 		'Trio values(Fav: 11)' =>  '1, 6, 12',
 		'Trio values(Fav: 4)' =>  '',
