@@ -10,6 +10,7 @@ return [
 		'Trio values(Fav: 2)' =>  '',
 		'Trio values(Fav: 9)' =>  '',
 		'unionF(count: 0)' =>  '',
+		'interF(count: 0)' =>  '',
 	],
 	'2' => [
 		/**
@@ -20,6 +21,7 @@ return [
 		'Trio values(Fav: 8)' =>  '8, 3, 4',
 		'Trio values(Fav: 3)' =>  '11, 1, 5, 12',
 		'unionF(count: 7)' =>  '8, 3, 11, 4, 1, 5, 12',
+		'interF(count: 0)' =>  '',
 		'Place' =>  '4, 1',
 		'places' => '4, 1',
 	],
@@ -32,6 +34,7 @@ return [
 		'Trio values(Fav: 1)' =>  '3, 2',
 		'Trio values(Fav: 7)' =>  '11, 7, 2',
 		'unionF(count: 4)' =>  '11, 7, 3, 2',
+		'interF(count: 1)' =>  '2',
 		'places' => '2, 5',
 	],
 	'4' => [
@@ -44,6 +47,7 @@ return [
 		'Trio values(Fav: 4)' =>  '',
 		'Trio values(Fav: 1)' =>  '4, 1, 6, 10, 3, 12',
 		'unionF(count: 6)' =>  '4, 1, 6, 10, 3, 12',
+		'interF(count: 0)' =>  '',
 		'Place' =>  '10, 3',
 		'places' => '10, 3',
 	],
@@ -55,6 +59,7 @@ return [
 		'favorites' => '4',
 		'Trio values(Fav: 4)' =>  '11, 2',
 		'unionF(count: 2)' =>  '11, 2',
+		'interF(count: 2)' =>  '11, 2',
 	],
 	'6' => [
 		/**
@@ -67,6 +72,7 @@ return [
 		'Trio values(Fav: 1)' =>  '',
 		'Trio values(Fav: 7)' =>  '9, 6, 11',
 		'unionF(count: 5)' =>  '12, 9, 2, 6, 11',
+		'interF(count: 0)' =>  '',
 		'Place' =>  '6, 11',
 		'places' => '6, 11',
 	],
@@ -79,6 +85,7 @@ return [
 		'Trio values(Fav: 3)' =>  '5, 3, 9',
 		'Trio values(Fav: 5)' =>  '',
 		'unionF(count: 3)' =>  '5, 3, 9',
+		'interF(count: 0)' =>  '',
 	],
 	'8' => [
 		/**
@@ -90,6 +97,7 @@ return [
 		'Trio values(Fav: 8)' =>  '',
 		'Trio values(Fav: 5)' =>  '',
 		'unionF(count: 0)' =>  '',
+		'interF(count: 0)' =>  '',
 	],
 	'9' => [
 		/**
@@ -103,6 +111,7 @@ return [
 		'Trio values(Fav: 9)' =>  '',
 		'Trio values(Fav: 12)' =>  '1, 6, 5',
 		'unionF(count: 8)' =>  '4, 11, 9, 1, 8, 6, 3, 5',
+		'interF(count: 0)' =>  '',
 		'Place' =>  '1, 8',
 		'places' => '11, 8, 4, 6, 1',
 	],
