@@ -62,6 +62,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $qin1 = $allTrioValues1;
 
     $unionF = $qin1;
+    $interF = $qin1;
     foreach($favorites as $F){
         $raceDataF = $history[$raceNumber][$F];
         $trioF = $raceDataF['trio'];
@@ -78,6 +79,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $allTrioValuesF = array_keys($qplsOdds);
         //$allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
         $unionF = array_values(array_unique(array_merge($unionF, $allTrioValuesF)));
+        $interF = array_intersect($interF, $allTrioValuesF);
         $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
     }
     //Sort  unionF by odds
@@ -88,6 +90,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     asort($qplsOdds);
     $unionF = array_keys($qplsOdds);
     $racetext .= "\t\t'unionF(count: " . count($unionF) . ")' =>  '" . implode(", ", $unionF) . "',\n";
+    $racetext .= "\t\t'interF(count: " . count($interF) . ")' =>  '" . implode(", ", $interF) . "',\n";
     if(count($unionF) >= 5){
         $place1 = $unionF[3];
         $place2 = $unionF[4];
