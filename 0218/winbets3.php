@@ -95,9 +95,10 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2',
+		'Favorite'  =>  '4',
+		'favorites' => '2, 4',
 		'Win values(Fav: 2)' =>  '',
+		'Win values(Fav: 4)' =>  '',
 		'interW' =>  '',
 		'unionW(count: 0)' =>  '',
 	],

@@ -31,9 +31,9 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
-		'Trio values(Fav: 7)' =>  '7, 2, 8, 4, 3, 11, 1, 6, 5, 9, 14, 12',
-		'unionF(count: 12)' =>  '7, 2, 8, 4, 3, 11, 1, 6, 5, 9, 14, 12',
-		'interF(count: 12)' =>  '7, 2, 8, 4, 3, 11, 1, 6, 5, 9, 14, 12',
+		'Trio values(Fav: 7)' =>  '7, 2, 8, 4, 3, 1, 11, 6, 5, 9, 14, 12',
+		'unionF(count: 12)' =>  '7, 2, 8, 4, 3, 1, 11, 6, 5, 9, 14, 12',
+		'interF(count: 12)' =>  '7, 2, 8, 4, 3, 1, 11, 6, 5, 9, 14, 12',
 		'Place' =>  '4, 3',
 		'places' => '4, 3',
 	],
@@ -111,10 +111,13 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2',
+		'Favorite'  =>  '4',
+		'favorites' => '2, 4',
 		'Trio values(Fav: 2)' =>  '2, 3, 10, 13',
-		'unionF(count: 4)' =>  '2, 3, 10, 13',
-		'interF(count: 4)' =>  '2, 3, 10, 13',
+		'Trio values(Fav: 4)' =>  '4, 2, 11, 8, 10, 6, 1',
+		'unionF(count: 9)' =>  '4, 2, 3, 11, 8, 10, 6, 13, 1',
+		'interF(count: 2)' =>  '2, 10',
+		'Place' =>  '11, 8',
+		'places' => '11, 8',
 	],
 ];

@@ -99,10 +99,11 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2',
+		'Favorite'  =>  '4',
+		'favorites' => '2, 4',
 		'qin values(Fav: 2)' =>  '2, 13',
+		'qin values(Fav: 4)' =>  '',
 		'unionF(count: 2)' =>  '2, 13',
-		'interF(count: 2)' =>  '2, 13',
+		'interF(count: 0)' =>  '',
 	],
 ];

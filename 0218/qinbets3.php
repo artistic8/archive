@@ -97,9 +97,10 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2',
+		'Favorite'  =>  '4',
+		'favorites' => '2, 4',
 		'qin values(Fav: 2)' =>  '',
+		'qin values(Fav: 4)' =>  '',
 		'unionF(count: 0)' =>  '',
 		'interF(count: 0)' =>  '',
 	],
