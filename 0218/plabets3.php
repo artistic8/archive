@@ -28,9 +28,9 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
-		'Trio values(Fav: 7)' =>  '7, 2, 11, 4',
-		'unionF(count: 4)' =>  '7, 2, 11, 4',
-		'interF(count: 4)' =>  '7, 2, 11, 4',
+		'Trio values(Fav: 7)' =>  '7, 11, 2, 4',
+		'unionF(count: 4)' =>  '7, 11, 2, 4',
+		'interF(count: 4)' =>  '7, 11, 2, 4',
 	],
 	'4' => [
 		/**
