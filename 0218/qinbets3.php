@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '5',
+		'Favorite'  =>  '6',
 		'favorites' => '6, 5',
 		'qin values(Fav: 6)' =>  '9, 7',
 		'qin values(Fav: 5)' =>  '',
@@ -28,9 +28,9 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
-		'qin values(Fav: 7)' =>  '7, 4, 11',
-		'unionF(count: 3)' =>  '7, 4, 11',
-		'interF(count: 3)' =>  '7, 4, 11',
+		'qin values(Fav: 7)' =>  '7, 11, 4',
+		'unionF(count: 3)' =>  '7, 11, 4',
+		'interF(count: 3)' =>  '7, 11, 4',
 	],
 	'4' => [
 		/**
@@ -58,11 +58,14 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '7',
-		'favorites' => '7',
+		'Favorite'  =>  '12',
+		'favorites' => '7, 12',
 		'qin values(Fav: 7)' =>  '11, 9, 2, 3',
-		'unionF(count: 4)' =>  '11, 9, 2, 3',
-		'interF(count: 4)' =>  '11, 9, 2, 3',
+		'qin values(Fav: 12)' =>  '12, 4',
+		'unionF(count: 6)' =>  '12, 11, 9, 2, 3, 4',
+		'interF(count: 0)' =>  '',
+		'Place' =>  '2, 3',
+		'places' => '2, 3',
 	],
 	'7' => [
 		/**

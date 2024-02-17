@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '5',
+		'Favorite'  =>  '6',
 		'favorites' => '6, 5',
 		'Win values(Fav: 6)' =>  '7',
 		'Win values(Fav: 5)' =>  '7',
@@ -56,11 +56,12 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '7',
-		'favorites' => '7',
+		'Favorite'  =>  '12',
+		'favorites' => '7, 12',
 		'Win values(Fav: 7)' =>  '3, 9, 13',
-		'interW' =>  '3, 9, 13',
-		'unionW(count: 2)' =>  '9, 3',
+		'Win values(Fav: 12)' =>  '12',
+		'interW' =>  '',
+		'unionW(count: 3)' =>  '12, 9, 3',
 	],
 	'7' => [
 		/**
