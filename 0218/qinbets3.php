@@ -5,11 +5,12 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '6',
-		'favorites' => '6',
+		'Favorite'  =>  '5',
+		'favorites' => '6, 5',
 		'qin values(Fav: 6)' =>  '9, 7',
+		'qin values(Fav: 5)' =>  '',
 		'unionF(count: 2)' =>  '9, 7',
-		'interF(count: 2)' =>  '9, 7',
+		'interF(count: 0)' =>  '',
 	],
 	'2' => [
 		/**
@@ -97,7 +98,7 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '2',
 		'favorites' => '2, 4',
 		'qin values(Fav: 2)' =>  '',
 		'qin values(Fav: 4)' =>  '',

@@ -5,11 +5,12 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '6',
-		'favorites' => '6',
+		'Favorite'  =>  '5',
+		'favorites' => '6, 5',
 		'Trio values(Fav: 6)' =>  '9, 7, 4',
+		'Trio values(Fav: 5)' =>  '',
 		'unionF(count: 3)' =>  '9, 7, 4',
-		'interF(count: 3)' =>  '9, 7, 4',
+		'interF(count: 0)' =>  '',
 	],
 	'2' => [
 		/**
@@ -81,9 +82,9 @@ return [
 		*/
 		'Favorite'  =>  '11',
 		'favorites' => '11',
-		'Trio values(Fav: 11)' =>  '5, 9, 4',
-		'unionF(count: 3)' =>  '5, 9, 4',
-		'interF(count: 3)' =>  '5, 9, 4',
+		'Trio values(Fav: 11)' =>  '9, 5, 4',
+		'unionF(count: 3)' =>  '9, 5, 4',
+		'interF(count: 3)' =>  '9, 5, 4',
 	],
 	'9' => [
 		/**
@@ -99,7 +100,7 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '2',
 		'favorites' => '2, 4',
 		'Trio values(Fav: 2)' =>  '',
 		'Trio values(Fav: 4)' =>  '',

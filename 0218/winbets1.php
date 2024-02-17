@@ -5,11 +5,12 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '6',
-		'favorites' => '6',
+		'Favorite'  =>  '5',
+		'favorites' => '6, 5',
 		'Win values(Fav: 6)' =>  '6, 7, 9',
-		'interW' =>  '6, 7, 9',
-		'unionW(count: 3)' =>  '6, 9, 7',
+		'Win values(Fav: 5)' =>  '7, 8, 9, 12',
+		'interW' =>  '7, 9',
+		'unionW(count: 4)' =>  '6, 9, 7, 8',
 	],
 	'2' => [
 		/**
@@ -29,7 +30,7 @@ return [
 		'favorites' => '7',
 		'Win values(Fav: 7)' =>  '3, 5, 6, 7, 11, 12',
 		'interW' =>  '3, 5, 6, 7, 11, 12',
-		'unionW(count: 6)' =>  '7, 3, 11, 6, 5, 12',
+		'unionW(count: 6)' =>  '7, 3, 5, 11, 6, 12',
 	],
 	'4' => [
 		/**
@@ -95,11 +96,11 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '2',
 		'favorites' => '2, 4',
 		'Win values(Fav: 2)' =>  '2, 13',
 		'Win values(Fav: 4)' =>  '4, 11',
 		'interW' =>  '',
-		'unionW(count: 4)' =>  '4, 2, 11, 13',
+		'unionW(count: 4)' =>  '2, 4, 11, 13',
 	],
 ];
