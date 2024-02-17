@@ -36,13 +36,14 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '1',
-		'favorites' => '1',
+		'Favorite'  =>  '8',
+		'favorites' => '1, 8',
 		'Trio values(Fav: 1)' =>  '1, 11, 6, 10, 12, 4, 3',
-		'unionF(count: 7)' =>  '1, 11, 6, 10, 12, 4, 3',
-		'interF(count: 7)' =>  '1, 11, 6, 10, 12, 4, 3',
-		'Place' =>  '10, 12',
-		'places' => '10, 12',
+		'Trio values(Fav: 8)' =>  '11, 2, 4',
+		'unionF(count: 8)' =>  '1, 11, 6, 10, 2, 12, 4, 3',
+		'interF(count: 2)' =>  '11, 4',
+		'Place' =>  '10, 2',
+		'places' => '10, 12, 2',
 	],
 	'5' => [
 		/**

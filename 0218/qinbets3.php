@@ -36,13 +36,14 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '1',
-		'favorites' => '1',
+		'Favorite'  =>  '8',
+		'favorites' => '1, 8',
 		'qin values(Fav: 1)' =>  '1, 11, 6, 10, 4',
-		'unionF(count: 5)' =>  '1, 11, 6, 10, 4',
-		'interF(count: 5)' =>  '1, 11, 6, 10, 4',
-		'Place' =>  '10, 4',
-		'places' => '10, 4',
+		'qin values(Fav: 8)' =>  '11, 2',
+		'unionF(count: 6)' =>  '1, 11, 6, 10, 2, 4',
+		'interF(count: 1)' =>  '11',
+		'Place' =>  '10, 2',
+		'places' => '10, 4, 2',
 	],
 	'5' => [
 		/**

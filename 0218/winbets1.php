@@ -36,11 +36,12 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '1',
-		'favorites' => '1',
+		'Favorite'  =>  '8',
+		'favorites' => '1, 8',
 		'Win values(Fav: 1)' =>  '2, 3, 5, 6, 10, 11',
-		'interW' =>  '2, 3, 5, 6, 10, 11',
-		'unionW(count: 6)' =>  '11, 6, 10, 2, 3, 5',
+		'Win values(Fav: 8)' =>  '1, 3, 8, 11',
+		'interW' =>  '3, 11',
+		'unionW(count: 8)' =>  '8, 1, 11, 6, 10, 2, 3, 5',
 	],
 	'5' => [
 		/**
