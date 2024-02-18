@@ -9,7 +9,7 @@ return [
 		'favorites' => '6, 5',
 		'Trio values(Fav: 6)' =>  '9, 7, 4',
 		'Trio values(Fav: 5)' =>  '5, 7',
-		'unionF(count: 4)' =>  '5, 9, 7, 4',
+		'unionF(count: 4)' =>  '9, 5, 7, 4',
 		'interF(count: 1)' =>  '7',
 	],
 	'2' => [
@@ -28,9 +28,9 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
-		'Trio values(Fav: 7)' =>  '7, 11, 4, 2',
-		'unionF(count: 4)' =>  '7, 11, 4, 2',
-		'interF(count: 4)' =>  '7, 11, 4, 2',
+		'Trio values(Fav: 7)' =>  '7, 11, 2, 4',
+		'unionF(count: 4)' =>  '7, 11, 2, 4',
+		'interF(count: 4)' =>  '7, 11, 2, 4',
 	],
 	'4' => [
 		/**
@@ -38,11 +38,11 @@ return [
 		*/
 		'Favorite'  =>  '1',
 		'favorites' => '1, 8',
-		'Trio values(Fav: 1)' =>  '1, 11, 10, 6, 9, 12, 3, 4, 5',
+		'Trio values(Fav: 1)' =>  '1, 11, 10, 6, 12, 3, 9, 4, 5',
 		'Trio values(Fav: 8)' =>  '11, 2, 4',
-		'unionF(count: 10)' =>  '1, 11, 10, 6, 9, 12, 3, 2, 4, 5',
+		'unionF(count: 10)' =>  '1, 11, 10, 6, 12, 3, 9, 2, 4, 5',
 		'interF(count: 2)' =>  '11, 4',
-		'Place' =>  '6, 9',
+		'Place' =>  '6, 12',
 		'places' => '10, 12, 2, 6, 9',
 	],
 	'5' => [
@@ -64,12 +64,12 @@ return [
 		*/
 		'Favorite'  =>  '6',
 		'favorites' => '7, 12, 6',
-		'Trio values(Fav: 7)' =>  '6, 7, 9, 11, 2, 3',
+		'Trio values(Fav: 7)' =>  '6, 7, 9, 2, 11, 3',
 		'Trio values(Fav: 12)' =>  '12, 4',
 		'Trio values(Fav: 6)' =>  '12, 5, 8',
-		'unionF(count: 10)' =>  '6, 12, 7, 9, 11, 2, 3, 5, 4, 8',
+		'unionF(count: 10)' =>  '6, 12, 7, 9, 2, 11, 3, 5, 4, 8',
 		'interF(count: 0)' =>  '',
-		'Place' =>  '9, 11',
+		'Place' =>  '9, 2',
 		'places' => '9, 2, 11',
 	],
 	'7' => [
@@ -87,17 +87,18 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
+		'Favorite'  =>  '9',
+		'favorites' => '11, 9',
 		'Trio values(Fav: 11)' =>  '9, 5, 4',
-		'unionF(count: 3)' =>  '9, 5, 4',
-		'interF(count: 3)' =>  '9, 5, 4',
+		'Trio values(Fav: 9)' =>  '5, 4, 8',
+		'unionF(count: 4)' =>  '9, 5, 4, 8',
+		'interF(count: 2)' =>  '5, 4',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '4',
 		'favorites' => '4, 7',
 		'Trio values(Fav: 4)' =>  '4, 1, 11',
 		'Trio values(Fav: 7)' =>  '6, 11',

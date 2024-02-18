@@ -64,7 +64,7 @@ return [
 		'Win values(Fav: 12)' =>  '11, 12',
 		'Win values(Fav: 6)' =>  '4, 6, 10, 11, 12',
 		'interW' =>  '11',
-		'unionW(count: 7)' =>  '6, 12, 10, 9, 11, 3, 4',
+		'unionW(count: 7)' =>  '6, 10, 12, 9, 11, 3, 4',
 	],
 	'7' => [
 		/**
@@ -81,22 +81,23 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
+		'Favorite'  =>  '9',
+		'favorites' => '11, 9',
 		'Win values(Fav: 11)' =>  '4, 9',
-		'interW' =>  '4, 9',
-		'unionW(count: 2)' =>  '9, 4',
+		'Win values(Fav: 9)' =>  '4, 5, 10, 13',
+		'interW' =>  '4',
+		'unionW(count: 4)' =>  '9, 5, 4, 10',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '4',
 		'favorites' => '4, 7',
 		'Win values(Fav: 4)' =>  '4, 7, 9',
 		'Win values(Fav: 7)' =>  '12',
 		'interW' =>  '',
-		'unionW(count: 3)' =>  '7, 4, 9',
+		'unionW(count: 3)' =>  '4, 7, 9',
 	],
 	'10' => [
 		/**

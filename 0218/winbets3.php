@@ -81,21 +81,22 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
+		'Favorite'  =>  '9',
+		'favorites' => '11, 9',
 		'Win values(Fav: 11)' =>  '4',
-		'interW' =>  '4',
+		'Win values(Fav: 9)' =>  '',
+		'interW' =>  '',
 		'unionW(count: 1)' =>  '4',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '4',
 		'favorites' => '4, 7',
 		'Win values(Fav: 4)' =>  '11',
 		'Win values(Fav: 7)' =>  '',
-		'interW' =>  '',
+		'interW' =>  '11',
 		'unionW(count: 1)' =>  '11',
 	],
 	'10' => [

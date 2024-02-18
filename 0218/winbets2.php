@@ -81,9 +81,10 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
+		'Favorite'  =>  '9',
+		'favorites' => '11, 9',
 		'Win values(Fav: 11)' =>  '4',
+		'Win values(Fav: 9)' =>  '4',
 		'interW' =>  '4',
 		'unionW(count: 1)' =>  '4',
 	],
@@ -91,7 +92,7 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '4',
 		'favorites' => '4, 7',
 		'Win values(Fav: 4)' =>  '4',
 		'Win values(Fav: 7)' =>  '12',
