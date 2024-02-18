@@ -57,12 +57,12 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '3, 7',
-		'qin values(Fav: 3)' =>  '7, 1, 3, 10, 4, 6',
-		'qin values(Fav: 7)' =>  '7, 1, 3, 10, 8, 2, 5, 4',
-		'unionF(count: 9)' =>  '7, 1, 3, 10, 8, 2, 5, 4, 6',
-		'interF(count: 5)' =>  '7, 1, 3, 10, 4',
-		'Place' =>  '10, 8',
-		'places' => '10, 4, 2, 8',
+		'qin values(Fav: 3)' =>  '7, 1, 10, 3, 4, 6',
+		'qin values(Fav: 7)' =>  '7, 1, 10, 3, 8, 2, 5, 4',
+		'unionF(count: 9)' =>  '7, 1, 10, 3, 8, 2, 5, 4, 6',
+		'interF(count: 5)' =>  '7, 1, 10, 3, 4',
+		'Place' =>  '3, 8',
+		'places' => '10, 4, 2, 8, 3',
 	],
 	'6' => [
 		/**
@@ -126,7 +126,7 @@ return [
 		'qin values(Fav: 2)' =>  '2, 13, 10',
 		'qin values(Fav: 4)' =>  '4, 11, 6, 10',
 		'qin values(Fav: 12)' =>  '',
-		'unionF(count: 6)' =>  '2, 4, 13, 11, 6, 10',
+		'unionF(count: 6)' =>  '2, 13, 4, 11, 6, 10',
 		'interF(count: 0)' =>  '',
 		'Place' =>  '11, 6',
 		'places' => '6, 10, 13, 11',

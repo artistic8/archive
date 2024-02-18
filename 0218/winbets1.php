@@ -52,7 +52,7 @@ return [
 		'Win values(Fav: 3)' =>  '1, 3, 4, 7, 10',
 		'Win values(Fav: 7)' =>  '1, 4, 5, 7, 8',
 		'interW' =>  '1, 4, 7',
-		'unionW(count: 7)' =>  '7, 1, 3, 10, 8, 5, 4',
+		'unionW(count: 7)' =>  '7, 1, 10, 3, 8, 5, 4',
 	],
 	'6' => [
 		/**
@@ -109,6 +109,6 @@ return [
 		'Win values(Fav: 4)' =>  '4, 11',
 		'Win values(Fav: 12)' =>  '',
 		'interW' =>  '',
-		'unionW(count: 4)' =>  '2, 4, 13, 11',
+		'unionW(count: 4)' =>  '2, 13, 4, 11',
 	],
 ];

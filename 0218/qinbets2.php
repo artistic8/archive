@@ -53,10 +53,10 @@ return [
 		'favorites' => '3, 7',
 		'qin values(Fav: 3)' =>  '3, 4',
 		'qin values(Fav: 7)' =>  '7, 1, 10, 2',
-		'unionF(count: 6)' =>  '7, 1, 3, 10, 2, 4',
+		'unionF(count: 6)' =>  '7, 1, 10, 3, 2, 4',
 		'interF(count: 0)' =>  '',
-		'Place' =>  '10, 2',
-		'places' => '10, 2',
+		'Place' =>  '3, 2',
+		'places' => '10, 2, 3',
 	],
 	'6' => [
 		/**

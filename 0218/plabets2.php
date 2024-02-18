@@ -38,12 +38,12 @@ return [
 		*/
 		'Favorite'  =>  '1',
 		'favorites' => '1, 8',
-		'Trio values(Fav: 1)' =>  '1, 11, 10, 6, 12, 3, 9, 4, 5',
+		'Trio values(Fav: 1)' =>  '1, 11, 10, 6, 3, 9, 12, 4, 5',
 		'Trio values(Fav: 8)' =>  '11, 2, 4',
-		'unionF(count: 10)' =>  '1, 11, 10, 6, 12, 3, 9, 2, 4, 5',
+		'unionF(count: 10)' =>  '1, 11, 10, 6, 3, 9, 12, 2, 4, 5',
 		'interF(count: 2)' =>  '11, 4',
-		'Place' =>  '6, 12',
-		'places' => '10, 12, 2, 6, 9',
+		'Place' =>  '6, 3',
+		'places' => '10, 12, 2, 6, 9, 3',
 	],
 	'5' => [
 		/**
@@ -53,10 +53,10 @@ return [
 		'favorites' => '3, 7',
 		'Trio values(Fav: 3)' =>  '7, 3, 4',
 		'Trio values(Fav: 7)' =>  '7, 1, 10, 2, 4, 9',
-		'unionF(count: 7)' =>  '7, 1, 3, 10, 2, 4, 9',
+		'unionF(count: 7)' =>  '7, 1, 10, 3, 2, 4, 9',
 		'interF(count: 2)' =>  '7, 4',
-		'Place' =>  '10, 2',
-		'places' => '10, 2',
+		'Place' =>  '3, 2',
+		'places' => '10, 2, 3',
 	],
 	'6' => [
 		/**
