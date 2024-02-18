@@ -36,7 +36,7 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '8',
+		'Favorite'  =>  '1',
 		'favorites' => '1, 8',
 		'qin values(Fav: 1)' =>  '1, 11, 10, 6, 4',
 		'qin values(Fav: 8)' =>  '11, 2',
