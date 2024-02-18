@@ -70,9 +70,10 @@ return [
 		/**
 		Race 7
 		*/
-		'Favorite'  =>  '10',
-		'favorites' => '10',
+		'Favorite'  =>  '7',
+		'favorites' => '10, 7',
 		'Win values(Fav: 10)' =>  '',
+		'Win values(Fav: 7)' =>  '',
 		'interW' =>  '',
 		'unionW(count: 0)' =>  '',
 	],
@@ -90,20 +91,22 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '4',
-		'favorites' => '4',
+		'Favorite'  =>  '7',
+		'favorites' => '4, 7',
 		'Win values(Fav: 4)' =>  '11',
-		'interW' =>  '11',
+		'Win values(Fav: 7)' =>  '',
+		'interW' =>  '',
 		'unionW(count: 1)' =>  '11',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2, 4',
+		'Favorite'  =>  '12',
+		'favorites' => '2, 4, 12',
 		'Win values(Fav: 2)' =>  '',
 		'Win values(Fav: 4)' =>  '',
+		'Win values(Fav: 12)' =>  '',
 		'interW' =>  '',
 		'unionW(count: 0)' =>  '',
 	],

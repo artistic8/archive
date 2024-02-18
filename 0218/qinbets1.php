@@ -32,9 +32,9 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
-		'qin values(Fav: 7)' =>  '7, 11, 4, 2, 8, 5, 9, 6, 1, 3, 12',
-		'unionF(count: 11)' =>  '7, 11, 4, 2, 8, 5, 9, 6, 1, 3, 12',
-		'interF(count: 11)' =>  '7, 11, 4, 2, 8, 5, 9, 6, 1, 3, 12',
+		'qin values(Fav: 7)' =>  '7, 11, 4, 2, 8, 6, 5, 9, 1, 3, 12',
+		'unionF(count: 11)' =>  '7, 11, 4, 2, 8, 6, 5, 9, 1, 3, 12',
+		'interF(count: 11)' =>  '7, 11, 4, 2, 8, 6, 5, 9, 1, 3, 12',
 		'Place' =>  '2, 8',
 		'places' => '4, 3, 11, 2, 8',
 	],
@@ -44,10 +44,10 @@ return [
 		*/
 		'Favorite'  =>  '1',
 		'favorites' => '1, 8',
-		'qin values(Fav: 1)' =>  '1, 11, 10, 6, 9, 12, 7, 2, 3, 4, 5',
-		'qin values(Fav: 8)' =>  '1, 8, 11, 10, 6, 7, 2, 3',
-		'unionF(count: 12)' =>  '1, 8, 11, 10, 6, 9, 12, 7, 2, 3, 4, 5',
-		'interF(count: 7)' =>  '1, 11, 10, 6, 7, 2, 3',
+		'qin values(Fav: 1)' =>  '1, 11, 10, 6, 9, 12, 3, 7, 2, 4, 5',
+		'qin values(Fav: 8)' =>  '1, 8, 11, 10, 6, 3, 7, 2',
+		'unionF(count: 12)' =>  '1, 8, 11, 10, 6, 9, 12, 3, 7, 2, 4, 5',
+		'interF(count: 7)' =>  '1, 11, 10, 6, 3, 7, 2',
 		'Place' =>  '10, 6',
 		'places' => '10, 2, 6',
 	],
@@ -57,12 +57,12 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '3, 7',
-		'qin values(Fav: 3)' =>  '7, 3, 1, 10, 4, 6',
-		'qin values(Fav: 7)' =>  '7, 3, 1, 10, 2, 4, 8, 5',
-		'unionF(count: 9)' =>  '7, 3, 1, 10, 2, 4, 8, 5, 6',
-		'interF(count: 5)' =>  '7, 3, 1, 10, 4',
-		'Place' =>  '10, 2',
-		'places' => '10, 4, 2',
+		'qin values(Fav: 3)' =>  '7, 1, 3, 10, 4, 6',
+		'qin values(Fav: 7)' =>  '7, 1, 3, 10, 8, 2, 5, 4',
+		'unionF(count: 9)' =>  '7, 1, 3, 10, 8, 2, 5, 4, 6',
+		'interF(count: 5)' =>  '7, 1, 3, 10, 4',
+		'Place' =>  '10, 8',
+		'places' => '10, 4, 2, 8',
 	],
 	'6' => [
 		/**
@@ -70,10 +70,10 @@ return [
 		*/
 		'Favorite'  =>  '6',
 		'favorites' => '7, 12, 6',
-		'qin values(Fav: 7)' =>  '6, 7, 9, 11, 3, 2, 4',
+		'qin values(Fav: 7)' =>  '6, 7, 9, 11, 2, 3, 4',
 		'qin values(Fav: 12)' =>  '6, 12, 11, 4',
 		'qin values(Fav: 6)' =>  '6, 12, 7, 10, 9, 11, 4, 8',
-		'unionF(count: 10)' =>  '6, 12, 7, 10, 9, 11, 3, 2, 4, 8',
+		'unionF(count: 10)' =>  '6, 12, 7, 10, 9, 11, 2, 3, 4, 8',
 		'interF(count: 3)' =>  '6, 11, 4',
 		'Place' =>  '10, 9',
 		'places' => '9, 2, 11, 10',
@@ -82,11 +82,14 @@ return [
 		/**
 		Race 7
 		*/
-		'Favorite'  =>  '10',
-		'favorites' => '10',
+		'Favorite'  =>  '7',
+		'favorites' => '10, 7',
 		'qin values(Fav: 10)' =>  '10, 3, 4, 2',
-		'unionF(count: 4)' =>  '10, 3, 4, 2',
-		'interF(count: 4)' =>  '10, 3, 4, 2',
+		'qin values(Fav: 7)' =>  '7, 4, 6, 2, 9',
+		'unionF(count: 7)' =>  '7, 10, 3, 4, 6, 2, 9',
+		'interF(count: 2)' =>  '4, 2',
+		'Place' =>  '4, 6',
+		'places' => '4, 6',
 	],
 	'8' => [
 		/**
@@ -102,23 +105,27 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '4',
-		'favorites' => '4',
-		'qin values(Fav: 4)' =>  '4, 7, 1, 9',
-		'unionF(count: 4)' =>  '4, 7, 1, 9',
-		'interF(count: 4)' =>  '4, 7, 1, 9',
+		'Favorite'  =>  '7',
+		'favorites' => '4, 7',
+		'qin values(Fav: 4)' =>  '7, 4, 1, 9',
+		'qin values(Fav: 7)' =>  '11',
+		'unionF(count: 5)' =>  '7, 4, 1, 9, 11',
+		'interF(count: 0)' =>  '',
+		'Place' =>  '9, 11',
+		'places' => '9, 11',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2, 4',
+		'Favorite'  =>  '12',
+		'favorites' => '2, 4, 12',
 		'qin values(Fav: 2)' =>  '2, 13, 10',
 		'qin values(Fav: 4)' =>  '4, 11, 6, 10',
-		'unionF(count: 6)' =>  '2, 4, 11, 13, 6, 10',
-		'interF(count: 1)' =>  '10',
-		'Place' =>  '13, 6',
-		'places' => '6, 10, 13',
+		'qin values(Fav: 12)' =>  '',
+		'unionF(count: 6)' =>  '2, 4, 13, 11, 6, 10',
+		'interF(count: 0)' =>  '',
+		'Place' =>  '11, 6',
+		'places' => '6, 10, 13, 11',
 	],
 ];

@@ -30,7 +30,7 @@ return [
 		'favorites' => '7',
 		'Win values(Fav: 7)' =>  '3, 5, 6, 7, 11, 12',
 		'interW' =>  '3, 5, 6, 7, 11, 12',
-		'unionW(count: 6)' =>  '7, 11, 5, 6, 3, 12',
+		'unionW(count: 6)' =>  '7, 11, 6, 5, 3, 12',
 	],
 	'4' => [
 		/**
@@ -41,7 +41,7 @@ return [
 		'Win values(Fav: 1)' =>  '2, 3, 5, 6, 10, 11',
 		'Win values(Fav: 8)' =>  '1, 3, 8, 11',
 		'interW' =>  '3, 11',
-		'unionW(count: 8)' =>  '1, 8, 11, 10, 6, 2, 3, 5',
+		'unionW(count: 8)' =>  '1, 8, 11, 10, 6, 3, 2, 5',
 	],
 	'5' => [
 		/**
@@ -52,7 +52,7 @@ return [
 		'Win values(Fav: 3)' =>  '1, 3, 4, 7, 10',
 		'Win values(Fav: 7)' =>  '1, 4, 5, 7, 8',
 		'interW' =>  '1, 4, 7',
-		'unionW(count: 7)' =>  '7, 3, 1, 10, 4, 8, 5',
+		'unionW(count: 7)' =>  '7, 1, 3, 10, 8, 5, 4',
 	],
 	'6' => [
 		/**
@@ -70,11 +70,12 @@ return [
 		/**
 		Race 7
 		*/
-		'Favorite'  =>  '10',
-		'favorites' => '10',
+		'Favorite'  =>  '7',
+		'favorites' => '10, 7',
 		'Win values(Fav: 10)' =>  '3, 10',
-		'interW' =>  '3, 10',
-		'unionW(count: 2)' =>  '10, 3',
+		'Win values(Fav: 7)' =>  '2, 4, 7',
+		'interW' =>  '',
+		'unionW(count: 5)' =>  '7, 10, 3, 4, 2',
 	],
 	'8' => [
 		/**
@@ -90,21 +91,23 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '4',
-		'favorites' => '4',
+		'Favorite'  =>  '7',
+		'favorites' => '4, 7',
 		'Win values(Fav: 4)' =>  '4, 7, 9',
-		'interW' =>  '4, 7, 9',
-		'unionW(count: 3)' =>  '4, 7, 9',
+		'Win values(Fav: 7)' =>  '12',
+		'interW' =>  '',
+		'unionW(count: 3)' =>  '7, 4, 9',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2, 4',
+		'Favorite'  =>  '12',
+		'favorites' => '2, 4, 12',
 		'Win values(Fav: 2)' =>  '2, 13',
 		'Win values(Fav: 4)' =>  '4, 11',
+		'Win values(Fav: 12)' =>  '',
 		'interW' =>  '',
-		'unionW(count: 4)' =>  '2, 4, 11, 13',
+		'unionW(count: 4)' =>  '2, 4, 13, 11',
 	],
 ];
