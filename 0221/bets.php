@@ -7,8 +7,9 @@ return [
 		*/
 		'Favorite'  =>  '9',
 		'favorites' => '9',
-		'Win values(Fav: 9)' =>  '1, 6, 8',
-		'unionW(count: 3)' =>  '1, 8, 6',
+		'Win values(Fav: 9)' =>  '8, 1, 6',
+		'missing values(Fav: 9)' =>  '9, 10, 12, 11, 5, 7, 4, 2, 3',
+		'unionW(count: 3)' =>  '8, 1, 6',
 		'missing(count: 9)' =>  '9, 10, 12, 11, 5, 7, 4, 2, 3',
 	],
 	'2' => [
@@ -17,7 +18,8 @@ return [
 		*/
 		'Favorite'  =>  '2',
 		'favorites' => '2',
-		'Win values(Fav: 2)' =>  '2, 5, 6, 7, 8, 9, 12, 13',
+		'Win values(Fav: 2)' =>  '2, 7, 6, 5',
+		'missing values(Fav: 2)' =>  '4, 3, 1',
 		'unionW(count: 4)' =>  '2, 7, 6, 5',
 		'missing(count: 3)' =>  '4, 3, 1',
 	],
@@ -27,7 +29,8 @@ return [
 		*/
 		'Favorite'  =>  '4',
 		'favorites' => '4',
-		'Win values(Fav: 4)' =>  '2, 4, 6, 8, 11',
+		'Win values(Fav: 4)' =>  '4, 8, 11, 2, 6',
+		'missing values(Fav: 4)' =>  '3, 9, 12, 5, 10, 1, 7',
 		'unionW(count: 5)' =>  '4, 8, 11, 2, 6',
 		'missing(count: 7)' =>  '3, 9, 12, 5, 10, 1, 7',
 	],
@@ -37,7 +40,8 @@ return [
 		*/
 		'Favorite'  =>  '3',
 		'favorites' => '3',
-		'Win values(Fav: 3)' =>  '3, 4, 5, 6, 11',
+		'Win values(Fav: 3)' =>  '3, 5, 6, 4',
+		'missing values(Fav: 3)' =>  '7, 8, 1, 2',
 		'unionW(count: 4)' =>  '3, 5, 6, 4',
 		'missing(count: 4)' =>  '7, 8, 1, 2',
 	],
@@ -47,9 +51,10 @@ return [
 		*/
 		'Favorite'  =>  '4',
 		'favorites' => '4',
-		'Win values(Fav: 4)' =>  '1, 2, 3, 4, 6',
+		'Win values(Fav: 4)' =>  '4, 2, 6, 3, 1',
+		'missing values(Fav: 4)' =>  '10, 12, 11, 7, 5, 9, 8',
 		'unionW(count: 5)' =>  '4, 2, 6, 3, 1',
-		'missing(count: 7)' =>  '10, 12, 7, 11, 5, 9, 8',
+		'missing(count: 7)' =>  '10, 12, 11, 7, 5, 9, 8',
 	],
 	'6' => [
 		/**
@@ -57,7 +62,8 @@ return [
 		*/
 		'Favorite'  =>  '7',
 		'favorites' => '7',
-		'Win values(Fav: 7)' =>  '1, 3, 6, 9, 11, 13',
+		'Win values(Fav: 7)' =>  '3, 6, 1, 11, 9',
+		'missing values(Fav: 7)' =>  '7, 2, 10, 12, 5, 4, 8',
 		'unionW(count: 5)' =>  '3, 6, 1, 11, 9',
 		'missing(count: 7)' =>  '7, 2, 10, 12, 5, 4, 8',
 	],
@@ -67,7 +73,8 @@ return [
 		*/
 		'Favorite'  =>  '12',
 		'favorites' => '12',
-		'Win values(Fav: 12)' =>  '10, 12',
+		'Win values(Fav: 12)' =>  '12, 10',
+		'missing values(Fav: 12)' =>  '1, 5, 4, 8, 9, 6, 3, 11, 2, 7',
 		'unionW(count: 2)' =>  '12, 10',
 		'missing(count: 10)' =>  '1, 5, 4, 8, 9, 6, 3, 11, 2, 7',
 	],
@@ -77,9 +84,10 @@ return [
 		*/
 		'Favorite'  =>  '3',
 		'favorites' => '3',
-		'Win values(Fav: 3)' =>  '5, 6, 12',
+		'Win values(Fav: 3)' =>  '6, 5, 12',
+		'missing values(Fav: 3)' =>  '3, 1, 7, 9, 10, 4, 11, 2, 8',
 		'unionW(count: 3)' =>  '6, 5, 12',
-		'missing(count: 9)' =>  '3, 1, 7, 10, 9, 11, 4, 2, 8',
+		'missing(count: 9)' =>  '3, 1, 7, 9, 10, 4, 11, 2, 8',
 	],
 	'9' => [
 		/**
@@ -87,8 +95,9 @@ return [
 		*/
 		'Favorite'  =>  '5',
 		'favorites' => '5',
-		'Win values(Fav: 5)' =>  '3, 5, 8, 11, 12',
+		'Win values(Fav: 5)' =>  '5, 3, 12, 11, 8',
+		'missing values(Fav: 5)' =>  '9, 4, 10, 1, 7, 6, 2',
 		'unionW(count: 5)' =>  '5, 3, 12, 11, 8',
-		'missing(count: 7)' =>  '9, 4, 10, 1, 2, 6, 7',
+		'missing(count: 7)' =>  '9, 4, 10, 1, 7, 6, 2',
 	],
 ];

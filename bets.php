@@ -46,7 +46,23 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($favorites as $F){
         $raceDataF = $history[$raceNumber][$F];
         $winF = $raceDataF['win'];
+        //Sort  winF by odds
+        $qplsOdds = [];
+        foreach($winF as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+        }
+        asort($qplsOdds);
+        $winF = array_keys($qplsOdds);
         $racetext .= "\t\t'Win values(Fav: $F)' =>  '" . implode(", ", $winF) . "',\n";
+        $missing = array_diff($runners, $winF);
+        //Sort  missing by odds
+        $qplsOdds = [];
+        foreach($missing as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+        }
+        asort($qplsOdds);
+        $missing = array_keys($qplsOdds);
+        $racetext .= "\t\t'missing values(Fav: $F)' =>  '" . implode(", ", $missing) . "',\n";
         $unionW = array_values(array_unique(array_merge($unionW, $winF)));
     }
     //Sort  unionW by odds
