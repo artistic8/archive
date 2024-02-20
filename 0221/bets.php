@@ -7,8 +7,8 @@ return [
 		*/
 		'Favorite'  =>  '9',
 		'favorites' => '9',
-		'Win values(Fav: 9)' =>  '8, 1, 6',
-		'unionW(count: 3)' =>  '8, 1, 6',
+		'Win values(Fav: 9)' =>  '1, 8, 6',
+		'unionW(count: 3)' =>  '1, 8, 6',
 		'missing(count: 9)' =>  '9, 12, 10, 11, 5, 7, 2, 4, 3',
 		'winners' =>  '1, 6, 8, 9, 10, 12',
 	],
@@ -87,7 +87,7 @@ return [
 		'favorites' => '3',
 		'Win values(Fav: 3)' =>  '6, 5, 12',
 		'unionW(count: 3)' =>  '6, 5, 12',
-		'missing(count: 9)' =>  '3, 1, 7, 9, 11, 10, 4, 2, 8',
+		'missing(count: 9)' =>  '3, 1, 7, 9, 11, 10, 4, 8, 2',
 		'winners' =>  '1, 3, 5, 6, 7, 12',
 	],
 	'9' => [
