@@ -2,16 +2,13 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-if(isset($argv[2])) $stage = trim($argv[2]);
-else $stage = 1;
-
-$step = "winbets$stage";
+$step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesRunners = include($currentDir . DIRECTORY_SEPARATOR . "1.php");
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory$stage.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -51,7 +48,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $raceDataF = $history[$raceNumber][$F];
         $winF = $raceDataF['win'];
         $racetext .= "\t\t'Win values(Fav: $F)' =>  '" . implode(", ", $winF) . "',\n";
-        if(!empty($winF)) $interW = array_intersect($interW, $winF);
+        $interW = array_intersect($interW, $winF);
         $unionW = array_values(array_unique(array_merge($unionW, $winF)));
     }
     //Sort  unionW by odds
