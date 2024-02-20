@@ -24,9 +24,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesRunners[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
+        if(isset($oldData[$raceNumber]['winners'])) $oldWinners = explode(", ", $oldData[$raceNumber]['winners']);
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
+
+    if(isset($oldWinners)) $winners = $oldWinners;
+    else $winners = [];
     
     $runners = explode(", ", $allRacesRunners[$raceNumber]['Runners']);
     $favorite = $runners[0];
@@ -73,6 +77,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $missing = array_keys($qplsOdds);
     $racetext .= "\t\t'unionW(count: " . count($unionW) . ")' =>  '" . implode(", ", $unionW) . "',\n";
     $racetext .= "\t\t'missing(count: " . count($missing) . ")' =>  '" . implode(", ", $missing) . "',\n";
+    $newWinners = array_unique(array_values(array_merge(
+        array_slice($unionW, 0, 3),
+        array_slice($missing, 0, 3)
+    )));
+    $winners = array_unique(array_values(array_merge($winners, $newWinners)));
+    sort($winners);
+    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
