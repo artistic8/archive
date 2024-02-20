@@ -5,12 +5,13 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '9',
-		'favorites' => '9',
+		'Favorite'  =>  '10',
+		'favorites' => '9, 10',
 		'Win values(Fav: 9)' =>  '1, 8, 6',
-		'unionW(count: 3)' =>  '1, 8, 6',
-		'missing(count: 9)' =>  '9, 12, 10, 4, 11, 5, 7, 2, 3',
-		'winners' =>  '1, 6, 8, 9, 10, 12',
+		'Win values(Fav: 10)' =>  '10, 9, 11, 4, 5',
+		'unionW(count: 8)' =>  '10, 9, 1, 11, 8, 4, 5, 6',
+		'missing(count: 4)' =>  '12, 7, 2, 3',
+		'winners' =>  '1, 2, 6, 7, 8, 9, 10, 12',
 	],
 	'2' => [
 		/**
@@ -31,7 +32,7 @@ return [
 		'favorites' => '4',
 		'Win values(Fav: 4)' =>  '4, 8, 11, 2, 6',
 		'unionW(count: 5)' =>  '4, 8, 11, 2, 6',
-		'missing(count: 7)' =>  '5, 3, 9, 12, 10, 7, 1',
+		'missing(count: 7)' =>  '5, 3, 9, 10, 12, 7, 1',
 		'winners' =>  '3, 4, 5, 8, 9, 11',
 	],
 	'4' => [
@@ -42,7 +43,7 @@ return [
 		'favorites' => '3',
 		'Win values(Fav: 3)' =>  '3, 6, 5, 4',
 		'unionW(count: 4)' =>  '3, 6, 5, 4',
-		'missing(count: 4)' =>  '8, 7, 1, 2',
+		'missing(count: 4)' =>  '7, 8, 1, 2',
 		'winners' =>  '1, 3, 5, 6, 7, 8',
 	],
 	'5' => [
@@ -53,7 +54,7 @@ return [
 		'favorites' => '4',
 		'Win values(Fav: 4)' =>  '4, 2, 6, 3, 1',
 		'unionW(count: 5)' =>  '4, 2, 6, 3, 1',
-		'missing(count: 7)' =>  '10, 5, 12, 11, 7, 9, 8',
+		'missing(count: 7)' =>  '10, 12, 5, 7, 11, 9, 8',
 		'winners' =>  '2, 4, 5, 6, 10, 11, 12',
 	],
 	'6' => [
@@ -74,8 +75,8 @@ return [
 		'Favorite'  =>  '1',
 		'favorites' => '12, 1',
 		'Win values(Fav: 12)' =>  '12, 10',
-		'Win values(Fav: 1)' =>  '1, 4, 5, 9, 8, 7, 2',
-		'unionW(count: 9)' =>  '1, 12, 4, 5, 9, 8, 10, 7, 2',
+		'Win values(Fav: 1)' =>  '1, 4, 5, 9, 8, 2, 7',
+		'unionW(count: 9)' =>  '1, 12, 4, 5, 9, 8, 10, 2, 7',
 		'missing(count: 3)' =>  '6, 3, 11',
 		'winners' =>  '1, 3, 4, 5, 6, 11, 12',
 	],
@@ -87,7 +88,7 @@ return [
 		'favorites' => '3',
 		'Win values(Fav: 3)' =>  '6, 5, 12',
 		'unionW(count: 3)' =>  '6, 5, 12',
-		'missing(count: 9)' =>  '3, 1, 7, 9, 11, 10, 4, 8, 2',
+		'missing(count: 9)' =>  '3, 1, 7, 9, 11, 10, 4, 2, 8',
 		'winners' =>  '1, 3, 5, 6, 7, 12',
 	],
 	'9' => [
@@ -98,7 +99,7 @@ return [
 		'favorites' => '5',
 		'Win values(Fav: 5)' =>  '5, 3, 11, 12, 8',
 		'unionW(count: 5)' =>  '5, 3, 11, 12, 8',
-		'missing(count: 7)' =>  '9, 10, 4, 1, 2, 6, 7',
+		'missing(count: 7)' =>  '9, 10, 4, 1, 6, 2, 7',
 		'winners' =>  '3, 4, 5, 9, 10, 11',
 	],
 ];
