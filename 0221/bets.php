@@ -9,7 +9,7 @@ return [
 		'favorites' => '9',
 		'Win values(Fav: 9)' =>  '1, 6, 8',
 		'unionW(count: 3)' =>  '1, 8, 6',
-		'missing(count: 9)' =>  '9, 12, 11, 10, 5, 7, 4, 2, 3',
+		'missing(count: 9)' =>  '9, 10, 12, 11, 5, 7, 4, 2, 3',
 	],
 	'2' => [
 		/**
@@ -29,7 +29,7 @@ return [
 		'favorites' => '4',
 		'Win values(Fav: 4)' =>  '2, 4, 6, 8, 11',
 		'unionW(count: 5)' =>  '4, 8, 11, 2, 6',
-		'missing(count: 7)' =>  '3, 9, 12, 5, 1, 10, 7',
+		'missing(count: 7)' =>  '3, 9, 12, 5, 10, 1, 7',
 	],
 	'4' => [
 		/**
@@ -39,7 +39,7 @@ return [
 		'favorites' => '3',
 		'Win values(Fav: 3)' =>  '3, 4, 5, 6, 11',
 		'unionW(count: 4)' =>  '3, 5, 6, 4',
-		'missing(count: 4)' =>  '8, 7, 1, 2',
+		'missing(count: 4)' =>  '7, 8, 1, 2',
 	],
 	'5' => [
 		/**
@@ -49,7 +49,7 @@ return [
 		'favorites' => '4',
 		'Win values(Fav: 4)' =>  '1, 2, 3, 4, 6',
 		'unionW(count: 5)' =>  '4, 2, 6, 3, 1',
-		'missing(count: 7)' =>  '12, 7, 10, 11, 5, 9, 8',
+		'missing(count: 7)' =>  '10, 12, 7, 11, 5, 9, 8',
 	],
 	'6' => [
 		/**
@@ -58,7 +58,7 @@ return [
 		'Favorite'  =>  '7',
 		'favorites' => '7',
 		'Win values(Fav: 7)' =>  '1, 3, 6, 9, 11, 13',
-		'unionW(count: 5)' =>  '6, 3, 1, 11, 9',
+		'unionW(count: 5)' =>  '3, 6, 1, 11, 9',
 		'missing(count: 7)' =>  '7, 2, 10, 12, 5, 4, 8',
 	],
 	'7' => [
@@ -69,7 +69,7 @@ return [
 		'favorites' => '12',
 		'Win values(Fav: 12)' =>  '10, 12',
 		'unionW(count: 2)' =>  '12, 10',
-		'missing(count: 10)' =>  '1, 4, 5, 8, 6, 9, 11, 3, 2, 7',
+		'missing(count: 10)' =>  '1, 5, 4, 8, 9, 6, 3, 11, 2, 7',
 	],
 	'8' => [
 		/**
@@ -79,7 +79,7 @@ return [
 		'favorites' => '3',
 		'Win values(Fav: 3)' =>  '5, 6, 12',
 		'unionW(count: 3)' =>  '6, 5, 12',
-		'missing(count: 9)' =>  '3, 1, 7, 10, 11, 4, 9, 2, 8',
+		'missing(count: 9)' =>  '3, 1, 7, 10, 9, 11, 4, 2, 8',
 	],
 	'9' => [
 		/**
@@ -89,6 +89,6 @@ return [
 		'favorites' => '5',
 		'Win values(Fav: 5)' =>  '3, 5, 8, 11, 12',
 		'unionW(count: 5)' =>  '5, 3, 12, 11, 8',
-		'missing(count: 7)' =>  '9, 4, 10, 1, 6, 2, 7',
+		'missing(count: 7)' =>  '9, 4, 10, 1, 2, 6, 7',
 	],
 ];
