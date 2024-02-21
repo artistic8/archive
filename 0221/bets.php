@@ -45,7 +45,7 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '2',
+		'Favorite'  =>  '7',
 		'favorites' => '7, 2',
 		'winners' =>  '1, 2, 3, 4, 5, 6, 7, 10, 12',//count: 9
 	],
