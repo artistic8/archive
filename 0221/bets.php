@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '1',
+		'Favorite'  =>  '9',
 		'favorites' => '9, 10, 1, 12',
 		'winners' =>  '1, 2, 3, 6, 7, 8, 9, 10, 11, 12',//count: 10
 	],
@@ -61,9 +61,9 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '3',
-		'favorites' => '3',
-		'winners' =>  '1, 3, 5, 6, 7, 12',//count: 6
+		'Favorite'  =>  '1',
+		'favorites' => '3, 1',
+		'winners' =>  '1, 3, 4, 5, 6, 7, 12',//count: 7
 	],
 	'9' => [
 		/**
@@ -73,5 +73,5 @@ return [
 		'favorites' => '5',
 		'winners' =>  '2, 3, 4, 5, 9, 10, 11',//count: 7
 	],
-	//Total bets = 680 HKD
+	//Total bets = 690 HKD
 ];
