@@ -83,7 +83,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     )));
     $winners = array_unique(array_values(array_merge($winners, $newWinners)));
     sort($winners);
-    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',\n";
+    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',//count: " . count($winners) . "\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
