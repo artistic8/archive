@@ -59,7 +59,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         asort($qplsOdds);
         $winF = array_keys($qplsOdds);
-        $racetext .= "\t\t'Win values(Fav: $F)' =>  '" . implode(", ", $winF) . "',\n";
+        //$racetext .= "\t\t'Win values(Fav: $F)' =>  '" . implode(", ", $winF) . "',\n";
         $unionW = array_values(array_unique(array_merge($unionW, $winF)));
     }
     //Sort  unionW by odds
@@ -77,8 +77,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     asort($qplsOdds);
     $missing = array_keys($qplsOdds);
-    $racetext .= "\t\t'unionW(count: " . count($unionW) . ")' =>  '" . implode(", ", $unionW) . "',\n";
-    $racetext .= "\t\t'missing(count: " . count($missing) . ")' =>  '" . implode(", ", $missing) . "',\n";
+    //$racetext .= "\t\t'unionW(count: " . count($unionW) . ")' =>  '" . implode(", ", $unionW) . "',\n";
+    //$racetext .= "\t\t'missing(count: " . count($missing) . ")' =>  '" . implode(", ", $missing) . "',\n";
     $newWinners = array_unique(array_values(array_merge(
         array_slice($unionW, 0, 3),
         array_slice($missing, 0, 3)
