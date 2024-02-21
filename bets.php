@@ -20,6 +20,8 @@ $totalRaces = count($allRacesRunners);
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
 
+$totalBets = 0;
+
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesRunners[$raceNumber])) continue;
     if(isset($oldData)){
@@ -83,13 +85,15 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     )));
     $winners = array_unique(array_values(array_merge($winners, $newWinners)));
     sort($winners);
+    $totalBets += count($winners);
     $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',//count: " . count($winners) . "\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
     $outtext .= $racetext;
 }
-
+$totalBets = 10 * $totalBets;
+$outtext .= "\t//Total bets = $totalBets HKD\n";
 $outtext .= "];\n";
 
 file_put_contents($outFile, $outtext);

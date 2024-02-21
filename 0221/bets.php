@@ -107,4 +107,5 @@ return [
 		'missing(count: 7)' =>  '10, 9, 2, 4, 6, 1, 7',
 		'winners' =>  '2, 3, 4, 5, 9, 10, 11',//count: 7
 	],
+	//Total bets = 680 HKD
 ];
