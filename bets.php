@@ -46,7 +46,7 @@ if(file_exists($winOddsFile)){
     $winOdds = include($winOddsFile);
 }
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
-$outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
+$outFile = $currentDir . DIRECTORY_SEPARATOR . "$type$step.php";
 
 if(file_exists($outFile)){
     $oldData = include($outFile);
