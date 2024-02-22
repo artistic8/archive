@@ -33,11 +33,14 @@ function getWeights($odds, $profit = 0, $precision = 10){
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
+if(isset($argv[2])) $type = trim($argv[2]);
+else $type = "pla";
+
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
-$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
+$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . $type . "odds.php");
 $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
 if(file_exists($winOddsFile)){
     $winOdds = include($winOddsFile);
