@@ -37,7 +37,6 @@ $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
-$allRacesRunners = include($currentDir . DIRECTORY_SEPARATOR . "1.php");
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
 $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
 if(file_exists($winOddsFile)){
@@ -50,7 +49,7 @@ if(file_exists($outFile)){
     $oldData = include($outFile);
 }
 
-$totalRaces = count($allRacesRunners);
+$totalRaces = count($allRacesOdds);
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
@@ -58,7 +57,7 @@ $outtext .= "return [\n";
 $totalBets = 0;
 
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
-    if(!isset($allRacesRunners[$raceNumber])) continue;
+    if(!isset($allRacesOdds[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['winners'])) $oldWinners = explode(", ", $oldData[$raceNumber]['winners']);
@@ -69,7 +68,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($oldWinners)) $winners = $oldWinners;
     else $winners = [];
     
-    $runners = explode(", ", $allRacesRunners[$raceNumber]['Runners']);
+    $winsArray = $allRacesOdds[$raceNumber];
+    asort($winsArray);
+    $runners = array_keys($winsArray);
     $favorite = $runners[0];
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $raceData1 = $history[$raceNumber][$favorite];
