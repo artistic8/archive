@@ -128,15 +128,15 @@ return [
 		'favorites' => '4, 12',
 		'winners' =>  '3, 4, 6, 8, 10, 11, 12',//count: 7
 		'Win Bets'  =>  [
-			'12' => '40 HKD',
+			'12' => '50 HKD',
+			'8' => '30 HKD',
 			'3' => '20 HKD',
 			'4' => '20 HKD',
 			'6' => '20 HKD',
-			'8' => '20 HKD',
-			'10' => '10 HKD',
-			'11' => '10 HKD',
+			'10' => '20 HKD',
+			'11' => '20 HKD',
 		],
-		'Total Bets Race 8'  =>  '140 HKD',
+		'Total Bets Race 8'  =>  '180 HKD',
 	],
 	'9' => [
 		/**
