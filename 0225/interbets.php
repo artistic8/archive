@@ -122,11 +122,11 @@ return [
 		*/
 		'winners' =>  '2, 3, 14',//count: 3
 		'Win Bets'  =>  [
-			'3' => '30 HKD',
+			'3' => '20 HKD',
 			'2' => '10 HKD',
 			'14' => '10 HKD',
 		],
-		'Total Bets Race 9'  =>  '50 HKD',
+		'Total Bets Race 9'  =>  '40 HKD',
 	],
 	'10' => [
 		/**
