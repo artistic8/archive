@@ -10,13 +10,13 @@ return [
 		'winners' =>  '1, 2, 3, 8, 10, 12',//count: 6
 		'Win Bets'  =>  [
 			'2' => '60 HKD',
-			'3' => '60 HKD',
+			'3' => '50 HKD',
 			'8' => '50 HKD',
 			'10' => '50 HKD',
 			'1' => '40 HKD',
 			'12' => '40 HKD',
 		],
-		'Total Bets Race 1'  =>  '300 HKD',
+		'Total Bets Race 1'  =>  '290 HKD',
 	],
 	'2' => [
 		/**
@@ -44,12 +44,12 @@ return [
 		'Win Bets'  =>  [
 			'3' => '60 HKD',
 			'8' => '50 HKD',
-			'11' => '50 HKD',
 			'12' => '50 HKD',
 			'2' => '40 HKD',
 			'4' => '40 HKD',
+			'11' => '40 HKD',
 		],
-		'Total Bets Race 3'  =>  '290 HKD',
+		'Total Bets Race 3'  =>  '280 HKD',
 	],
 	'4' => [
 		/**
