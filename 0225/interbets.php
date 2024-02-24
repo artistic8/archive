@@ -35,28 +35,29 @@ return [
 		*/
 		'winners' =>  '2, 3, 4, 8, 11, 12',//count: 6
 		'Win Bets'  =>  [
-			'3' => '50 HKD',
-			'12' => '50 HKD',
-			'8' => '40 HKD',
+			'3' => '40 HKD',
+			'12' => '40 HKD',
 			'2' => '30 HKD',
 			'4' => '30 HKD',
+			'8' => '30 HKD',
 			'11' => '30 HKD',
 		],
-		'Total Bets Race 3'  =>  '230 HKD',
+		'Total Bets Race 3'  =>  '200 HKD',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'winners' =>  '3, 4, 6, 10, 13',//count: 5
+		'winners' =>  '2, 3, 4, 6, 10, 13',//count: 6
 		'Win Bets'  =>  [
-			'10' => '90 HKD',
-			'3' => '50 HKD',
-			'6' => '50 HKD',
-			'4' => '30 HKD',
-			'13' => '30 HKD',
+			'2' => '0 HKD',
+			'3' => '0 HKD',
+			'4' => '0 HKD',
+			'6' => '0 HKD',
+			'10' => '0 HKD',
+			'13' => '0 HKD',
 		],
-		'Total Bets Race 4'  =>  '250 HKD',
+		'Total Bets Race 4'  =>  '0 HKD',
 	],
 	'5' => [
 		/**
@@ -78,15 +79,16 @@ return [
 		/**
 		Race 6
 		*/
-		'winners' =>  '1, 3, 4, 10, 12',//count: 5
+		'winners' =>  '1, 3, 4, 6, 10, 12',//count: 6
 		'Win Bets'  =>  [
-			'10' => '90 HKD',
-			'3' => '50 HKD',
-			'1' => '40 HKD',
-			'4' => '30 HKD',
-			'12' => '30 HKD',
+			'1' => '0 HKD',
+			'3' => '0 HKD',
+			'4' => '0 HKD',
+			'6' => '0 HKD',
+			'10' => '0 HKD',
+			'12' => '0 HKD',
 		],
-		'Total Bets Race 6'  =>  '240 HKD',
+		'Total Bets Race 6'  =>  '0 HKD',
 	],
 	'7' => [
 		/**
@@ -122,10 +124,11 @@ return [
 		/**
 		Race 9
 		*/
-		'winners' =>  '2, 3, 14',//count: 3
+		'winners' =>  '2, 3, 10, 14',//count: 4
 		'Win Bets'  =>  [
 			'2' => '0 HKD',
 			'3' => '0 HKD',
+			'10' => '0 HKD',
 			'14' => '0 HKD',
 		],
 		'Total Bets Race 9'  =>  '0 HKD',
@@ -134,7 +137,7 @@ return [
 		/**
 		Race 10
 		*/
-		'winners' =>  '3, 4, 5, 6, 7, 8, 11, 12, 13',//count: 9
+		'winners' =>  '3, 4, 5, 6, 7, 8, 9, 11, 12, 13',//count: 10
 		'Win Bets'  =>  [
 			'3' => '0 HKD',
 			'4' => '0 HKD',
@@ -142,11 +145,12 @@ return [
 			'6' => '0 HKD',
 			'7' => '0 HKD',
 			'8' => '0 HKD',
+			'9' => '0 HKD',
 			'11' => '0 HKD',
 			'12' => '0 HKD',
 			'13' => '0 HKD',
 		],
 		'Total Bets Race 10'  =>  '0 HKD',
 	],
-	//Total bets = 570 HKD
+	//Total bets = 610 HKD
 ];
