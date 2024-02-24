@@ -46,13 +46,13 @@ return [
 		'Win Bets'  =>  [
 			'3' => '90 HKD',
 			'8' => '70 HKD',
-			'11' => '70 HKD',
 			'12' => '70 HKD',
 			'2' => '60 HKD',
 			'4' => '60 HKD',
+			'11' => '60 HKD',
 			'13' => '50 HKD',
 		],
-		'Total Bets Race 3'  =>  '470 HKD',
+		'Total Bets Race 3'  =>  '460 HKD',
 	],
 	'4' => [
 		/**
