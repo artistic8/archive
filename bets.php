@@ -136,6 +136,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $weights[$winner] = $winOdds[$raceNumber][$winner];
         }
         $bets = getWeights($weights, 1);
+        arsort($bets);
         $racetext .= "\t\t'Win Bets'  =>  [\n";
         $total = 0;
         foreach($bets as $horse => $bet){
