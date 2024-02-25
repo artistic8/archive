@@ -7,6 +7,7 @@ return [
 		*/
 		'winners' =>  '1, 2, 3, 6, 8, 10',//count: 6
 		'place' =>  '4, 7',
+		'place2' =>  '12',
 		'Win Bets'  =>  [
 			'1' => '20 HKD',
 			'2' => '20 HKD',
@@ -23,6 +24,7 @@ return [
 		*/
 		'winners' =>  '2, 3, 4, 5, 6',//count: 5
 		'place' =>  '',
+		'place2' =>  '',
 		'Win Bets'  =>  [
 			'2' => '0 HKD',
 			'3' => '0 HKD',
@@ -38,6 +40,7 @@ return [
 		*/
 		'winners' =>  '2, 3, 4, 5, 8, 11, 12',//count: 7
 		'place' =>  '1, 9, 13',
+		'place2' =>  '',
 		'Win Bets'  =>  [
 			'3' => '100 HKD',
 			'4' => '100 HKD',
@@ -55,6 +58,7 @@ return [
 		*/
 		'winners' =>  '2, 3, 4, 6, 10, 13',//count: 6
 		'place' =>  '8, 12',
+		'place2' =>  '11',
 		'Win Bets'  =>  [
 			'2' => '0 HKD',
 			'3' => '0 HKD',
@@ -71,6 +75,7 @@ return [
 		*/
 		'winners' =>  '2, 4, 5, 6, 7, 10, 13',//count: 7
 		'place' =>  '',
+		'place2' =>  '',
 		'Win Bets'  =>  [
 			'2' => '0 HKD',
 			'4' => '0 HKD',
@@ -88,6 +93,7 @@ return [
 		*/
 		'winners' =>  '1, 3, 4, 6, 10, 12, 13',//count: 7
 		'place' =>  '5',
+		'place2' =>  '',
 		'Win Bets'  =>  [
 			'1' => '0 HKD',
 			'3' => '0 HKD',
@@ -105,6 +111,7 @@ return [
 		*/
 		'winners' =>  '1, 2, 3, 6, 8, 10',//count: 6
 		'place' =>  '11',
+		'place2' =>  '4',
 		'Win Bets'  =>  [
 			'1' => '0 HKD',
 			'2' => '0 HKD',
@@ -121,6 +128,7 @@ return [
 		*/
 		'winners' =>  '3, 4, 5, 8, 9, 10, 11, 12',//count: 8
 		'place' =>  '2',
+		'place2' =>  '6',
 		'Win Bets'  =>  [
 			'3' => '0 HKD',
 			'4' => '0 HKD',
@@ -139,6 +147,7 @@ return [
 		*/
 		'winners' =>  '2, 3, 7, 10, 12, 14',//count: 6
 		'place' =>  '',
+		'place2' =>  '4, 6, 8',
 		'Win Bets'  =>  [
 			'2' => '0 HKD',
 			'3' => '0 HKD',
@@ -155,6 +164,7 @@ return [
 		*/
 		'winners' =>  '1, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13',//count: 11
 		'place' =>  '',
+		'place2' =>  '',
 		'Win Bets'  =>  [
 			'1' => '0 HKD',
 			'3' => '0 HKD',
