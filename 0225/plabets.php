@@ -59,14 +59,15 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '6',
+		'Favorite'  =>  '10',
 		'favorites' => '10, 6',
-		'winners' =>  '2, 3, 4, 6, 10, 12, 13',//count: 7
+		'winners' =>  '2, 3, 4, 6, 8, 10, 12, 13',//count: 8
 		'Win Bets'  =>  [
 			'2' => '0 HKD',
 			'3' => '0 HKD',
 			'4' => '0 HKD',
 			'6' => '0 HKD',
+			'8' => '0 HKD',
 			'10' => '0 HKD',
 			'12' => '0 HKD',
 			'13' => '0 HKD',
@@ -186,5 +187,5 @@ return [
 		],
 		'Total Bets Race 10'  =>  '0 HKD',
 	],
-	//Total bets = 750 HKD
+	//Total bets = 760 HKD
 ];
