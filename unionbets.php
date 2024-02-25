@@ -42,7 +42,7 @@ $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
 
 if(!file_exists($plaBetsFile) || !file_exists($winBetsFile) || !file_exists($winOddsFile)) exit("No bets files!!");
 
-$outFile = $currentDir . DIRECTORY_SEPARATOR . "interbets.php";
+$outFile = $currentDir . DIRECTORY_SEPARATOR . "unionbets.php";
 
 $plaBets = include($plaBetsFile);
 $winBets = include($winBetsFile);
@@ -56,7 +56,7 @@ $totalBets = 0;
 foreach($plaBets as $raceNumber => $racePlaBets) {
     $plaWinners = explode(", ", $racePlaBets['winners']);
     $winWinners = explode(", ", $winBets[$raceNumber]['winners']);
-    $winners = array_intersect($plaWinners, $winWinners);
+    $winners = array_unique(array_values(array_merge($plaWinners, $winWinners)));
     $totalBets += count($winners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
