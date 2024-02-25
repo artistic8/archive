@@ -40,7 +40,7 @@ return [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '2',
+		'Favorite'  =>  '12',
 		'favorites' => '8, 13, 12, 2',
 		'winners' =>  '1, 2, 3, 4, 5, 8, 9, 11, 12, 13',//count: 10
 		'Win Bets'  =>  [
@@ -172,7 +172,7 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '1',
+		'Favorite'  =>  '3',
 		'favorites' => '3, 4, 5, 1',
 		'winners' =>  '1, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13',//count: 11
 		'Win Bets'  =>  [
