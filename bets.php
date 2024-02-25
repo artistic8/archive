@@ -105,6 +105,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         array_slice($set3, 0, 4)
     )));
     $set5 = array_intersect($set3, $set4);
+    sort($set5);
     $totalBets += count($set5);
     $racetext .= "\t\t'bet' =>  '" . implode(", ", $set5) . "',//count: " . count($set5) . "\n";
 
