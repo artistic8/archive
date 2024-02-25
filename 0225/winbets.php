@@ -5,19 +5,19 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '12, 3, 2, 8',
+		'Favorite'  =>  '1',
+		'favorites' => '12, 3, 2, 8, 1',
 		'winners' =>  '1, 2, 3, 6, 8, 10, 12',//count: 7
 		'Win Bets'  =>  [
-			'1' => '0 HKD',
-			'2' => '0 HKD',
-			'3' => '0 HKD',
-			'6' => '0 HKD',
-			'8' => '0 HKD',
-			'10' => '0 HKD',
-			'12' => '0 HKD',
+			'1' => '70 HKD',
+			'2' => '70 HKD',
+			'6' => '70 HKD',
+			'8' => '60 HKD',
+			'12' => '50 HKD',
+			'3' => '40 HKD',
+			'10' => '30 HKD',
 		],
-		'Total Bets Race 1'  =>  '0 HKD',
+		'Total Bets Race 1'  =>  '390 HKD',
 	],
 	'2' => [
 		/**
@@ -168,7 +168,7 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '3',
+		'Favorite'  =>  '4',
 		'favorites' => '3, 4, 5',
 		'winners' =>  '1, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13',//count: 11
 		'Win Bets'  =>  [

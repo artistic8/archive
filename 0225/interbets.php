@@ -7,14 +7,14 @@ return [
 		*/
 		'winners' =>  '1, 2, 3, 6, 8, 10',//count: 6
 		'Win Bets'  =>  [
-			'2' => '70 HKD',
-			'6' => '50 HKD',
-			'8' => '50 HKD',
 			'1' => '40 HKD',
-			'3' => '40 HKD',
-			'10' => '30 HKD',
+			'2' => '40 HKD',
+			'6' => '40 HKD',
+			'8' => '40 HKD',
+			'3' => '30 HKD',
+			'10' => '20 HKD',
 		],
-		'Total Bets Race 1'  =>  '280 HKD',
+		'Total Bets Race 1'  =>  '210 HKD',
 	],
 	'2' => [
 		/**

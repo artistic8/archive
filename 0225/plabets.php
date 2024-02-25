@@ -5,8 +5,8 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '10, 8, 3, 2',
+		'Favorite'  =>  '1',
+		'favorites' => '10, 8, 3, 2, 1',
 		'winners' =>  '1, 2, 3, 4, 6, 7, 8, 10',//count: 8
 		'Win Bets'  =>  [
 			'1' => '0 HKD',
