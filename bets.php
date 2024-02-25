@@ -88,9 +88,25 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($winners as $keyX => $horse){
         if(!isset($allRacesOdds[$raceNumber][$horse])) unset($winners[$keyX]);
     }
+    //sort $winners by odds
+    $qplsOdds = [];
+    foreach($winners as $iIndex){
+       if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $winners = array_keys($qplsOdds);
+    $set1 = array_slice($winners, 0, 7);
     sort($winners);
-    $totalBets += count($winners);
-    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',//count: " . count($winners) . "\n";
+    $set2 = array_slice($winners, 0, 7);
+    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',\n";
+    $set3 = array_intersect($set1, $set2);
+    $set4 = array_unique(array_values(array_merge(
+        array_slice($set2, 0, 4),
+        array_slice($set3, 0, 4)
+    )));
+    $set5 = array_intersect($set3, $set4);
+    $totalBets += count($set5);
+    $racetext .= "\t\t'bet' =>  '" . implode(", ", $set5) . "',//count: " . count($set5) . "\n";
 
     $racetext .= "\t],\n";
     unset($oldFavorites);
