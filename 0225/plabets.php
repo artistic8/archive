@@ -135,7 +135,7 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '9',
+		'Favorite'  =>  '12',
 		'favorites' => '8, 12, 4, 9',
 		'winners' =>  '2, 3, 4, 5, 8, 9, 10, 11, 12',//count: 9
 		'Win Bets'  =>  [
