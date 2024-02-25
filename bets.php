@@ -1,52 +1,14 @@
 <?php
 
-function getWeights($odds, $profit = 0, $precision = 10){
-    $weights = [];
-    $totalWeights = 0;
-    foreach($odds as $key => $value){
-        $weights[$key] = 1;
-        $totalWeights += $weights[$key];
-    }
-    $criterion = true;
-    foreach($odds as $key => $value){
-        $criterion = $criterion && ($weights[$key] * $odds[$key] >= $totalWeights + $profit);
-    }
-    $iterations = 0;
-    while($criterion === false){
-        $criterion = true;
-        foreach($odds as $key => $value){
-            if($weights[$key] * $odds[$key] < $totalWeights + $profit){
-                $weights[$key] +=1;
-                $totalWeights += 1;
-            }
-            $criterion = $criterion && ($weights[$key] * $odds[$key] >= $totalWeights + $profit);
-        }
-        $iterations ++;
-        if($iterations == $precision) {
-            $failed = [];
-            foreach($odds as $key => $value) $failed[$key] = 0;
-            return $failed;
-        }
-    }
-    return $weights;
-}
-
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
-
-if(isset($argv[2])) $type = trim($argv[2]);
-else $type = "pla";
 
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
-$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . $type . "odds.php");
-$winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
-if(file_exists($winOddsFile)){
-    $winOdds = include($winOddsFile);
-}
+$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
-$outFile = $currentDir . DIRECTORY_SEPARATOR . "$type$step.php";
+$outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
     $oldData = include($outFile);
@@ -123,8 +85,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         array_slice($missing, 0, 3)
     )));
     $winners = array_unique(array_values(array_merge($winners, $newWinners)));
-    $fixed = [1, 2,3,4,5,6,7,8];
-    $winners = array_intersect($winners, $fixed);
     foreach($winners as $keyX => $horse){
         if(!isset($allRacesOdds[$raceNumber][$horse])) unset($winners[$keyX]);
     }
@@ -132,22 +92,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $totalBets += count($winners);
     $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',//count: " . count($winners) . "\n";
 
-    if(isset($winOdds)){
-        $weights = [];
-        foreach($winners as $winner){
-            $weights[$winner] = $winOdds[$raceNumber][$winner];
-        }
-        $bets = getWeights($weights, 5);
-        arsort($bets);
-        $racetext .= "\t\t'Win Bets'  =>  [\n";
-        $total = 0;
-        foreach($bets as $horse => $bet){
-            $racetext .= "\t\t\t'$horse' => '" . 10 * $bet . " HKD',\n"  ;
-            $total += 10 * $bet;
-        }
-        $racetext .= "\t\t],\n";
-        $racetext .= "\t\t'Total Bets Race $raceNumber'  =>  '$total HKD',\n";
-    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
