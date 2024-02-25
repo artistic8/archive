@@ -57,6 +57,7 @@ foreach($plaBets as $raceNumber => $racePlaBets) {
     $plaWinners = explode(", ", $racePlaBets['winners']);
     $winWinners = explode(", ", $winBets[$raceNumber]['winners']);
     $winners = array_intersect($plaWinners, $winWinners);
+    $place = array_diff($plaWinners, $winWinners);
     $totalBets += count($winners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
@@ -64,7 +65,7 @@ foreach($plaBets as $raceNumber => $racePlaBets) {
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',//count: " . count($winners) . "\n";
-
+    $racetext .= "\t\t'place' =>  '" . implode(", ", $place) . "',\n";
     $weights = [];
     foreach($winners as $winner){
         $weights[$winner] = $winOdds[$raceNumber][$winner];
