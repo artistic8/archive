@@ -123,6 +123,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         array_slice($missing, 0, 3)
     )));
     $winners = array_unique(array_values(array_merge($winners, $newWinners)));
+    $fixed = [1, 2,3,4,5,6,7,8];
+    $winners = array_intersect($winners, $fixed);
     foreach($winners as $keyX => $horse){
         if(!isset($allRacesOdds[$raceNumber][$horse])) unset($winners[$keyX]);
     }
