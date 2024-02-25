@@ -5,18 +5,18 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '8',
+		'Favorite'  =>  '2',
 		'favorites' => '12, 3, 2, 8',
 		'winners' =>  '1, 2, 3, 8, 10, 12',//count: 6
 		'Win Bets'  =>  [
-			'2' => '50 HKD',
+			'2' => '70 HKD',
 			'8' => '50 HKD',
 			'1' => '40 HKD',
 			'3' => '40 HKD',
 			'10' => '40 HKD',
-			'12' => '30 HKD',
+			'12' => '40 HKD',
 		],
-		'Total Bets Race 1'  =>  '250 HKD',
+		'Total Bets Race 1'  =>  '280 HKD',
 	],
 	'2' => [
 		/**
@@ -42,14 +42,14 @@ return [
 		'favorites' => '3',
 		'winners' =>  '2, 3, 4, 8, 11, 12',//count: 6
 		'Win Bets'  =>  [
-			'3' => '40 HKD',
-			'12' => '40 HKD',
-			'2' => '30 HKD',
-			'4' => '30 HKD',
-			'8' => '30 HKD',
+			'3' => '50 HKD',
+			'12' => '50 HKD',
+			'2' => '40 HKD',
+			'4' => '40 HKD',
+			'8' => '40 HKD',
 			'11' => '30 HKD',
 		],
-		'Total Bets Race 3'  =>  '200 HKD',
+		'Total Bets Race 3'  =>  '250 HKD',
 	],
 	'4' => [
 		/**
@@ -93,7 +93,7 @@ return [
 		*/
 		'Favorite'  =>  '10',
 		'favorites' => '10',
-		'winners' =>  '1, 3, 4, 6, 10, 12',//count: 6
+		'winners' =>  '1, 3, 4, 6, 10, 12, 13',//count: 7
 		'Win Bets'  =>  [
 			'1' => '0 HKD',
 			'3' => '0 HKD',
@@ -101,6 +101,7 @@ return [
 			'6' => '0 HKD',
 			'10' => '0 HKD',
 			'12' => '0 HKD',
+			'13' => '0 HKD',
 		],
 		'Total Bets Race 6'  =>  '0 HKD',
 	],
@@ -128,12 +129,13 @@ return [
 		*/
 		'Favorite'  =>  '12',
 		'favorites' => '4, 12',
-		'winners' =>  '3, 4, 6, 8, 10, 11, 12',//count: 7
+		'winners' =>  '3, 4, 6, 8, 9, 10, 11, 12',//count: 8
 		'Win Bets'  =>  [
 			'3' => '0 HKD',
 			'4' => '0 HKD',
 			'6' => '0 HKD',
 			'8' => '0 HKD',
+			'9' => '0 HKD',
 			'10' => '0 HKD',
 			'11' => '0 HKD',
 			'12' => '0 HKD',
@@ -164,7 +166,7 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '5',
+		'Favorite'  =>  '3',
 		'favorites' => '3, 4, 5',
 		'winners' =>  '3, 4, 5, 6, 7, 8, 9, 11, 12, 13',//count: 10
 		'Win Bets'  =>  [
@@ -181,5 +183,5 @@ return [
 		],
 		'Total Bets Race 10'  =>  '0 HKD',
 	],
-	//Total bets = 700 HKD
+	//Total bets = 720 HKD
 ];
