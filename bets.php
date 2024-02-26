@@ -102,7 +102,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $set1 = array_slice($winners, 0, 7);
     sort($winners);
     $set2 = array_slice($winners, 0, 7);
-    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',\n";
+    $racetext .= "\t\t'winners' =>  '" . implode(", ", $winners) . "',//count: " . count($winners) . "\n";
     $set3 = array_intersect($set1, $set2);
     $set4 = array_unique(array_values(array_merge(
         array_slice($set2, 0, 4),
@@ -114,7 +114,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t'bet' =>  '" . implode(", ", $set5) . "',//count: " . count($set5) . "\n";
     $historic = array_unique(array_values(array_merge($historic, $set5)));
     sort($historic);
-    $racetext .= "\t\t'historic' =>  '" . implode(", ", $historic) . "',\n";
+    $racetext .= "\t\t'historic' =>  '" . implode(", ", $historic) . "',//count: " . count($historic) . "\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
