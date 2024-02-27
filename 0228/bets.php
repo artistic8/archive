@@ -7,9 +7,9 @@ return [
 		*/
 		'Favorite'  =>  '9',
 		'favorites' => '9',
-		'winners' =>  '1, 3, 5, 6, 8, 9',//count: 6
-		'bet' =>  '1, 3, 5, 6, 8, 9',//count: 6
-		'historic' =>  '1, 3, 5, 6, 8, 9',//count: 6
+		'winners' =>  '1, 3, 5, 6, 8, 9, 11',//count: 7
+		'bet' =>  '1, 3, 5, 6, 9, 11',//count: 6
+		'historic' =>  '1, 3, 5, 6, 8, 9, 11',//count: 7
 	],
 	'2' => [
 		/**
@@ -17,19 +17,19 @@ return [
 		*/
 		'Favorite'  =>  '12',
 		'favorites' => '12',
-		'winners' =>  '3, 6, 10, 12',//count: 4
-		'bet' =>  '3, 6, 10, 12',//count: 4
-		'historic' =>  '3, 6, 10, 12',//count: 4
+		'winners' =>  '1, 3, 6, 10, 12',//count: 5
+		'bet' =>  '1, 3, 6, 10, 12',//count: 5
+		'historic' =>  '1, 3, 6, 10, 12',//count: 5
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '9',
-		'favorites' => '9',
-		'winners' =>  '3, 6, 7, 8, 9, 12',//count: 6
-		'bet' =>  '3, 6, 7, 8, 9, 12',//count: 6
-		'historic' =>  '3, 6, 7, 8, 9, 12',//count: 6
+		'Favorite'  =>  '6',
+		'favorites' => '9, 6',
+		'winners' =>  '1, 3, 6, 7, 8, 9, 12',//count: 7
+		'bet' =>  '1, 3, 6, 7, 8, 9, 12',//count: 7
+		'historic' =>  '1, 3, 6, 7, 8, 9, 12',//count: 7
 	],
 	'4' => [
 		/**
@@ -68,14 +68,14 @@ return [
 		'Favorite'  =>  '4',
 		'favorites' => '4',
 		'winners' =>  '1, 2, 4, 5, 9, 10',//count: 6
-		'bet' =>  '1, 2, 4, 5',//count: 4
+		'bet' =>  '1, 2, 4, 5, 9',//count: 5
 		'historic' =>  '1, 2, 4, 5, 9',//count: 5
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '2',
+		'Favorite'  =>  '5',
 		'favorites' => '5, 2',
 		'winners' =>  '1, 2, 3, 4, 5, 7, 9',//count: 7
 		'bet' =>  '1, 2, 3, 4, 5, 7',//count: 6
@@ -91,5 +91,5 @@ return [
 		'bet' =>  '1, 3, 5, 8',//count: 4
 		'historic' =>  '1, 3, 5, 8',//count: 4
 	],
-	//Total bets = 460 HKD
+	//Total bets = 490 HKD
 ];
