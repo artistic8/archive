@@ -92,6 +92,6 @@ return [
 		'historic' =>  '1, 2, 3, 5, 6, 7, 8, 11',//count: 8
 	],
 	//Total bets = 470 HKD
-	//Total historic = 62 HKD
-	//Total winners = 70 HKD
+	//Total historic = 620 HKD
+	//Total winners = 700 HKD
 ];
