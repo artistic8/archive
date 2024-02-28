@@ -55,8 +55,8 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '2',
-		'favorites' => '2',
+		'Favorite'  =>  '9',
+		'favorites' => '2, 9',
 		'winners' =>  '1, 2, 3, 5, 7, 9, 10, 12',//count: 8
 		'bet' =>  '1, 2, 3, 5, 9',//count: 5
 		'historic' =>  '1, 2, 3, 5, 7, 9, 10, 12',//count: 8
@@ -65,7 +65,7 @@ return [
 		/**
 		Race 7
 		*/
-		'Favorite'  =>  '3',
+		'Favorite'  =>  '4',
 		'favorites' => '4, 3',
 		'winners' =>  '1, 2, 3, 4, 5, 6, 7, 9, 10',//count: 9
 		'bet' =>  '1, 2, 3, 4, 7',//count: 5
