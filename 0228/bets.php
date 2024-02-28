@@ -78,7 +78,7 @@ return [
 		'Favorite'  =>  '2',
 		'favorites' => '5, 2',
 		'winners' =>  '1, 2, 3, 4, 5, 7, 8, 9',//count: 8
-		'bet' =>  '2, 3, 4, 5, 7',//count: 5
+		'bet' =>  '2, 3, 4, 5, 7, 8',//count: 6
 		'historic' =>  '1, 2, 3, 4, 5, 7, 8',//count: 7
 	],
 	'9' => [
@@ -91,5 +91,5 @@ return [
 		'bet' =>  '1, 2, 3, 5, 7',//count: 5
 		'historic' =>  '1, 2, 3, 5, 6, 7, 8, 11',//count: 8
 	],
-	//Total bets = 460 HKD
+	//Total bets = 470 HKD
 ];
