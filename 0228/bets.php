@@ -15,7 +15,7 @@ return [
 		/**
 		Race 2
 		*/
-		'Favorite'  =>  '6',
+		'Favorite'  =>  '1',
 		'favorites' => '12, 3, 1, 6',
 		'winners' =>  '1, 2, 3, 5, 6, 7, 10, 11, 12',//count: 9
 		'bet' =>  '1, 2, 3, 6, 7',//count: 5
