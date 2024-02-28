@@ -8,7 +8,7 @@ return [
 		'Favorite'  =>  '9',
 		'favorites' => '9',
 		'winners' =>  '1, 3, 5, 6, 8, 9, 11',//count: 7
-		'bet' =>  '1, 3, 5, 6, 9, 11',//count: 6
+		'bet' =>  '1, 3, 5, 6, 8, 9',//count: 6
 		'historic' =>  '1, 3, 5, 6, 8, 9, 11',//count: 7
 	],
 	'2' => [
