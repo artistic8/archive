@@ -15,11 +15,11 @@ return [
 		/**
 		Race 2
 		*/
-		'Favorite'  =>  '1',
+		'Favorite'  =>  '6',
 		'favorites' => '12, 3, 1, 6',
-		'winners' =>  '1, 2, 3, 5, 6, 7, 10, 11, 12',//count: 9
-		'bet' =>  '1, 2, 3, 6, 7',//count: 5
-		'historic' =>  '1, 2, 3, 6, 7, 10, 12',//count: 7
+		'winners' =>  '1, 2, 3, 5, 6, 7, 9, 10, 11, 12',//count: 10
+		'bet' =>  '1, 2, 3, 6, 7, 9',//count: 6
+		'historic' =>  '1, 2, 3, 6, 7, 9, 10, 12',//count: 8
 	],
 	'3' => [
 		/**
@@ -91,7 +91,7 @@ return [
 		'bet' =>  '1, 2, 3, 5, 7',//count: 5
 		'historic' =>  '1, 2, 3, 5, 6, 7, 8, 11',//count: 8
 	],
-	//Total bets     = 460 HKD
-	//Total historic = 630 HKD
-	//Total winners  = 720 HKD
+	//Total bets     = 470 HKD
+	//Total historic = 640 HKD
+	//Total winners  = 730 HKD
 ];
