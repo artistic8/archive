@@ -127,9 +127,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 $totalBets = 10 * $totalBets;
 $totalHistoric = 10 * $totalHistoric;
 $totalWinners = 10 * $totalWinners;
-$outtext .= "\t//Total bets = $totalBets HKD\n";
+$outtext .= "\t//Total bets     = $totalBets HKD\n";
 $outtext .= "\t//Total historic = $totalHistoric HKD\n";
-$outtext .= "\t//Total winners = $totalWinners HKD\n";
+$outtext .= "\t//Total winners  = $totalWinners HKD\n";
 $outtext .= "];\n";
 
 file_put_contents($outFile, $outtext);

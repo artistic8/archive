@@ -91,7 +91,7 @@ return [
 		'bet' =>  '1, 2, 3, 5, 7',//count: 5
 		'historic' =>  '1, 2, 3, 5, 6, 7, 8, 11',//count: 8
 	],
-	//Total bets = 470 HKD
+	//Total bets     = 470 HKD
 	//Total historic = 620 HKD
-	//Total winners = 700 HKD
+	//Total winners  = 700 HKD
 ];
