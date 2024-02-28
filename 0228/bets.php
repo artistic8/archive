@@ -57,7 +57,7 @@ return [
 		*/
 		'Favorite'  =>  '2',
 		'favorites' => '2, 9',
-		'winners' =>  '1, 2, 3, 5, 7, 9, 10, 12',//count: 8
+		'winners' =>  '1, 2, 3, 5, 7, 9, 12',//count: 7
 		'bet' =>  '1, 2, 3, 5, 9',//count: 5
 		'historic' =>  '1, 2, 3, 5, 7, 9, 10, 12',//count: 8
 	],
@@ -65,7 +65,7 @@ return [
 		/**
 		Race 7
 		*/
-		'Favorite'  =>  '4',
+		'Favorite'  =>  '3',
 		'favorites' => '4, 3',
 		'winners' =>  '1, 2, 3, 4, 5, 6, 7, 9, 10',//count: 9
 		'bet' =>  '1, 2, 3, 4, 7',//count: 5
@@ -75,7 +75,7 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '2',
 		'favorites' => '5, 2, 7',
 		'winners' =>  '1, 2, 3, 4, 5, 7, 8, 9',//count: 8
 		'bet' =>  '1, 2, 3, 4, 5, 7, 8',//count: 7
@@ -93,5 +93,5 @@ return [
 	],
 	//Total bets     = 510 HKD
 	//Total historic = 650 HKD
-	//Total winners  = 760 HKD
+	//Total winners  = 750 HKD
 ];
