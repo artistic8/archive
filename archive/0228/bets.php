@@ -10,6 +10,7 @@ return [
 		'winners' =>  '1, 3, 5, 6, 8, 9, 11',//count: 7
 		'bet' =>  '1, 3, 5, 6, 8, 9',//count: 6
 		'historic' =>  '1, 3, 5, 6, 8, 9, 11',//count: 7
+		'WP' => '',
 	],
 	'2' => [
 		/**
@@ -20,6 +21,7 @@ return [
 		'winners' =>  '1, 2, 3, 5, 6, 7, 9, 10, 11, 12',//count: 10
 		'bet' =>  '1, 2, 3, 6, 7, 9, 12',//count: 7
 		'historic' =>  '1, 2, 3, 6, 7, 9, 10, 12',//count: 8
+		'WP' => '6',
 	],
 	'3' => [
 		/**
@@ -30,6 +32,7 @@ return [
 		'winners' =>  '1, 3, 5, 6, 7, 8, 9, 10, 12',//count: 9
 		'bet' =>  '1, 3, 6, 8, 9, 12',//count: 6
 		'historic' =>  '1, 3, 5, 6, 7, 8, 9, 12',//count: 8
+		'WP' => '12',
 	],
 	'4' => [
 		/**
@@ -40,6 +43,7 @@ return [
 		'winners' =>  '2, 3, 4, 5, 6, 7, 9, 10, 12',//count: 9
 		'bet' =>  '2, 3, 4, 5, 7, 9',//count: 6
 		'historic' =>  '2, 3, 4, 5, 6, 7, 9',//count: 7
+		'WP' => '',
 	],
 	'5' => [
 		/**
@@ -50,6 +54,7 @@ return [
 		'winners' =>  '1, 2, 3, 5, 6, 7, 8',//count: 7
 		'bet' =>  '1, 2, 3, 5',//count: 4
 		'historic' =>  '1, 2, 3, 5, 6',//count: 5
+		'WP' => '5',
 	],
 	'6' => [
 		/**
@@ -59,7 +64,8 @@ return [
 		'favorites' => '2, 9',
 		'winners' =>  '1, 2, 3, 5, 7, 9, 12',//count: 7
 		'bet' =>  '1, 2, 3, 5, 9',//count: 5
-		'historic' =>  '1, 2, 3, 5, 7, 9, 10, 12',//count: 8
+		'historic' =>  '1, 2, 3, 5, 7, 9, 12',//count: 7
+		'WP' => '2',
 	],
 	'7' => [
 		/**
@@ -70,6 +76,7 @@ return [
 		'winners' =>  '1, 2, 3, 4, 5, 6, 7, 9, 10',//count: 9
 		'bet' =>  '1, 2, 3, 4, 7',//count: 5
 		'historic' =>  '1, 2, 3, 4, 5, 7, 9',//count: 7
+		'WP' => '3',
 	],
 	'8' => [
 		/**
@@ -80,6 +87,7 @@ return [
 		'winners' =>  '1, 2, 3, 4, 5, 7, 8, 9',//count: 8
 		'bet' =>  '1, 2, 3, 4, 5, 7, 8',//count: 7
 		'historic' =>  '1, 2, 3, 4, 5, 7, 8',//count: 7
+		'WP' => '5',
 	],
 	'9' => [
 		/**
@@ -90,8 +98,9 @@ return [
 		'winners' =>  '1, 2, 3, 5, 6, 7, 8, 9, 11',//count: 9
 		'bet' =>  '1, 2, 3, 5, 7',//count: 5
 		'historic' =>  '1, 2, 3, 5, 6, 7, 8, 11',//count: 8
+		'WP' => '1',
 	],
 	//Total bets     = 510 HKD
-	//Total historic = 650 HKD
+	//Total historic = 640 HKD
 	//Total winners  = 750 HKD
 ];

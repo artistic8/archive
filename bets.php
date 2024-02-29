@@ -56,6 +56,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $win1 = $raceData1['win'];
     $allTrioValues1 = [];
     $unionW = $win1;
+    $interW = $win1;
     foreach($favorites as $F){
         $raceDataF = $history[$raceNumber][$F];
         $winF = $raceDataF['win'];
@@ -68,7 +69,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $winF = array_keys($qplsOdds);
         //$racetext .= "\t\t'Win values(Fav: $F)' =>  '" . implode(", ", $winF) . "',\n";
         $unionW = array_values(array_unique(array_merge($unionW, $winF)));
+        $interW = array_intersect($interW, $winF);
     }
+    $interW = array_intersect($interW, $favorites);
     //Sort  unionW by odds
     $qplsOdds = [];
     foreach($unionW as $iIndex){
@@ -119,6 +122,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $historic = array_unique(array_values(array_merge($historic, $set5)));
     sort($historic);
     $racetext .= "\t\t'historic' =>  '" . implode(", ", $historic) . "',//count: " . count($historic) . "\n";
+    $racetext .= "\t\t'WP' => '" . implode(", ", $interW) . "',\n";
     $totalHistoric += count($historic);
     $racetext .= "\t],\n";
     unset($oldFavorites);
