@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '5',
 		'favorites' => '5, 7, 9',
 		'inter' => '',
 		'WP' => '',
@@ -35,10 +35,10 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11, 9',
-		'inter' => '11',
-		'WP' => '11',
+		'Favorite'  =>  '12',
+		'favorites' => '11, 9, 12',
+		'inter' => '',
+		'WP' => '',
 		'WPs' => '11',
 	],
 	'5' => [
@@ -85,7 +85,7 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '2',
+		'Favorite'  =>  '6',
 		'favorites' => '6, 2',
 		'inter' => '2, 4, 6',
 		'WP' => '2, 6',
