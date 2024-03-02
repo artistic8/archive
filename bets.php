@@ -126,11 +126,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $historic = array_unique(array_values(array_merge($historic, $set5)));
     sort($historic);
     $racetext .= "\t\t'historic' =>  '" . implode(", ", $historic) . "',//count: " . count($historic) . "\n";
-    $place = array_diff($winners, $historic);
     $racetext .= "\t\t'WP' => '" . implode(", ", $interW) . "',\n";
-    if(!empty($interW) && !empty($place)){
-        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
-    }
     $WPs = array_unique(array_values(array_merge($WPs, $interW)));
     $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
     $totalHistoric += count($historic);
@@ -140,7 +136,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     unset($oldHistoric);
     unset($oldWPs);
     unset($favorites);
-    unset($place);
     unset($winners);
     unset($historic);
     unset($WPs);

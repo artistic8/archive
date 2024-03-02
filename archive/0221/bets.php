@@ -35,7 +35,6 @@ return [
 		'bet' =>  '3, 4, 5, 8',//count: 4
 		'historic' =>  '3, 4, 5, 8',//count: 4
 		'WP' => '3, 8',
-		'place' => '9, 11',
 		'WPs' => '3, 8',
 	],
 	'4' => [
@@ -48,7 +47,6 @@ return [
 		'bet' =>  '1, 2, 3, 5, 6, 8',//count: 6
 		'historic' =>  '1, 2, 3, 5, 6, 8',//count: 6
 		'WP' => '3',
-		'place' => '7',
 		'WPs' => '3',
 	],
 	'5' => [
@@ -61,7 +59,6 @@ return [
 		'bet' =>  '4, 5, 6, 10',//count: 4
 		'historic' =>  '4, 5, 6, 10',//count: 4
 		'WP' => '4',
-		'place' => '3, 7, 11, 12',
 		'WPs' => '4',
 	],
 	'6' => [
@@ -110,7 +107,6 @@ return [
 		'bet' =>  '2, 3, 4, 5, 9',//count: 5
 		'historic' =>  '2, 3, 4, 5, 9',//count: 5
 		'WP' => '5',
-		'place' => '10, 11',
 		'WPs' => '5',
 	],
 	//Total bets     = 450 HKD
