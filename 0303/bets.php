@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '9',
 		'favorites' => '5, 7, 9',
 		'winners' =>  '1, 2, 5, 6, 7, 8, 9, 10, 11',//count: 9
 		'bet' =>  '1, 5, 6, 7, 9',//count: 5
@@ -31,7 +31,7 @@ return [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '7',
+		'Favorite'  =>  '6',
 		'favorites' => '6, 9, 7',
 		'winners' =>  '1, 2, 3, 4, 6, 7, 8, 9',//count: 8
 		'bet' =>  '1, 2, 3, 6, 7, 9',//count: 6
@@ -57,7 +57,7 @@ return [
 		/**
 		Race 5
 		*/
-		'Favorite'  =>  '10',
+		'Favorite'  =>  '6',
 		'favorites' => '6, 10',
 		'winners' =>  '1, 2, 4, 5, 6, 7, 9, 10',//count: 8
 		'bet' =>  '1, 2, 4, 5, 6, 10',//count: 6
@@ -96,7 +96,7 @@ return [
 		/**
 		Race 8
 		*/
-		'Favorite'  =>  '5',
+		'Favorite'  =>  '4',
 		'favorites' => '4, 5',
 		'winners' =>  '1, 3, 4, 5, 7, 10',//count: 6
 		'bet' =>  '1, 3, 4, 5, 10',//count: 5
