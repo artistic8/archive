@@ -66,10 +66,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     
     $racetext .= "\t\t'inter' => '" . implode(", ", $interW) . "',\n";
-    $WP = array_intersect($interW, $favorites);
-    $racetext .= "\t\t'WP' => '" . implode(", ", $WP) . "',\n";
-    $WPs = array_unique(array_values(array_merge($WPs, $WP)));
-    $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
+    if(count($favorites) > 1){
+       $WP = array_intersect($interW, $favorites);
+       $racetext .= "\t\t'WP' => '" . implode(", ", $WP) . "',\n";
+       $WPs = array_unique(array_values(array_merge($WPs, $WP)));
+       $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($oldWPs);
