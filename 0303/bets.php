@@ -83,7 +83,7 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '6',
+		'Favorite'  =>  '2',
 		'favorites' => '6, 2',
 		'inter' => '2, 4, 6',
 		'WP' => '2, 6',
