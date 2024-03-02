@@ -75,7 +75,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $unionW = array_values(array_unique(array_merge($unionW, $winF)));
         $interW = array_intersect($interW, $winF);
     }
-    $interW = array_intersect($interW, $favorites);
+    
     //Sort  unionW by odds
     $qplsOdds = [];
     foreach($unionW as $iIndex){
@@ -126,7 +126,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $historic = array_unique(array_values(array_merge($historic, $set5)));
     sort($historic);
     $racetext .= "\t\t'historic' =>  '" . implode(", ", $historic) . "',//count: " . count($historic) . "\n";
-    $racetext .= "\t\t'WP' => '" . implode(", ", $interW) . "',\n";
+    $racetext .= "\t\t'inter' => '" . implode(", ", $interW) . "',\n";
+    $WP = array_intersect($interW, $favorites);
+    $racetext .= "\t\t'WP' => '" . implode(", ", $WP) . "',\n";
     $WPs = array_unique(array_values(array_merge($WPs, $interW)));
     $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
     $totalHistoric += count($historic);
