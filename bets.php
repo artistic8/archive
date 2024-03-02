@@ -29,6 +29,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['winners'])) $oldWinners = explode(", ", $oldData[$raceNumber]['winners']);
         if(isset($oldData[$raceNumber]['historic'])) $oldHistoric = explode(", ", $oldData[$raceNumber]['historic']);
+        if(isset($oldData[$raceNumber]['WPs'])) $oldWPs = explode(", ", $oldData[$raceNumber]['WPs']);
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
@@ -38,6 +39,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 
     if(isset($oldHistoric)) $historic = $oldHistoric;
     else $historic = [];
+    
+    if(isset($oldWPs)) $WPs = $oldWPs;
+    else $WPs = [];
     
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
@@ -123,9 +127,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($historic);
     $racetext .= "\t\t'historic' =>  '" . implode(", ", $historic) . "',//count: " . count($historic) . "\n";
     $racetext .= "\t\t'WP' => '" . implode(", ", $interW) . "',\n";
+    $WPs = array_unique(array_values(array_merge($WPs, $interW)));
     $totalHistoric += count($historic);
     $racetext .= "\t],\n";
     unset($oldFavorites);
+    unset($oldWinners);
+    unset($oldHistoric);
+    unset($oldWPs);
     unset($favorites);
     $outtext .= $racetext;
 }
