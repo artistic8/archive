@@ -58,8 +58,6 @@ return [
 		'Favorite'  =>  '6',
 		'favorites' => '6',
 		'inter' => '1, 4, 6, 10, 11, 12',
-		'WP' => '6',
-		'WPs' => '6',
 	],
 	'7' => [
 		/**
@@ -98,7 +96,5 @@ return [
 		'Favorite'  =>  '11',
 		'favorites' => '11',
 		'inter' => '',
-		'WP' => '',
-		'WPs' => '',
 	],
 ];
