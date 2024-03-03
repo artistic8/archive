@@ -23,7 +23,7 @@ return [
 		/**
 		Race 3
 		*/
-		'Favorite'  =>  '6',
+		'Favorite'  =>  '9',
 		'favorites' => '9, 6',
 		'inter' => '',
 		'WP' => '',
@@ -33,9 +33,11 @@ return [
 		/**
 		Race 4
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
-		'inter' => '6, 11',
+		'Favorite'  =>  '4',
+		'favorites' => '11, 4',
+		'inter' => '11',
+		'WP' => '11',
+		'WPs' => '11',
 	],
 	'5' => [
 		/**
@@ -49,7 +51,7 @@ return [
 		/**
 		Race 6
 		*/
-		'Favorite'  =>  '10',
+		'Favorite'  =>  '6',
 		'favorites' => '6, 10',
 		'inter' => '10, 12',
 		'WP' => '10',
@@ -77,7 +79,7 @@ return [
 		/**
 		Race 9
 		*/
-		'Favorite'  =>  '2',
+		'Favorite'  =>  '6',
 		'favorites' => '2, 6',
 		'inter' => '2, 4, 6',
 		'WP' => '2, 6',
@@ -87,8 +89,10 @@ return [
 		/**
 		Race 10
 		*/
-		'Favorite'  =>  '11',
-		'favorites' => '11',
+		'Favorite'  =>  '6',
+		'favorites' => '11, 6',
 		'inter' => '',
+		'WP' => '',
+		'WPs' => '',
 	],
 ];
