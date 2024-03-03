@@ -15,9 +15,11 @@ return [
 		/**
 		Race 2
 		*/
-		'Favorite'  =>  '3',
-		'favorites' => '3',
-		'inter' => '2, 4, 6, 7, 10, 11, 12, 13',
+		'Favorite'  =>  '2',
+		'favorites' => '3, 2',
+		'inter' => '2, 6, 7, 12, 13',
+		'WP' => '2',
+		'WPs' => '2',
 	],
 	'3' => [
 		/**
