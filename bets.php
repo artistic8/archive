@@ -1,5 +1,25 @@
 <?php
 
+/**
+ * Returns true if array $needle is contained in array of arrays $haystack 
+ */
+function in_my_array($needle, $haystack){
+    foreach($haystack as $comparedTo){
+        $shit1 = array_values($needle);
+        $shit2 = array_values($comparedTo);
+        $count1 = count($shit1);
+        $count2 = count($shit2);
+        if($count1 == $count2){
+            $coincidences = 0;
+            for($compt = 0; $compt < $count1; $compt++) {
+                if($shit1[$compt] == $shit2[$compt]) $coincidences++;
+            }
+            if($coincidences == $count1) return true;
+        }
+    }
+    return false;
+}
+
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $step = "bets";
@@ -50,7 +70,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t'Favorite'  =>  '$favorite',\n";   
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n";
     $win1 = $raceData1['win'];
-    $interW = $win1;
+    $inter = $win1;
     foreach($favorites as $F){
         $raceDataF = $history[$raceNumber][$F];
         $winF = $raceDataF['win'];
@@ -62,12 +82,34 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         asort($qplsOdds);
         $winF = array_keys($qplsOdds);
         //$racetext .= "\t\t'Win values(Fav: $F)' =>  '" . implode(", ", $winF) . "',\n";
-        $interW = array_intersect($interW, $winF);
+        $inter = array_intersect($inter, $winF);
     }
-    
-    $racetext .= "\t\t'inter' => '" . implode(", ", $interW) . "',\n";
+    $inters = [];
     if(count($favorites) > 1){
-       $WP = array_intersect($interW, $favorites);
+        foreach($favorites as $one){
+            $win1 = $history[$raceNumber][$one]['win'];
+            foreach($favorites as $two){
+                if($one != $two){
+                    $win2 = $history[$raceNumber][$two]['win'];
+                    $three = array_intersect($win1, $win2);
+                    if(!empty($three) && !in_my_array($three, $inters)) $inters["F$one-F$two"] = $three;
+                }
+            }
+        }
+    }
+    $intersText = "[";
+    $someCounter = 0;
+    $someLength = count($inters);
+    foreach($inters as $intersItem){
+        $intersText .= "[" . implode(", ", $intersItem) . "]";
+        $someCounter ++;
+        if($someCounter < $someLength) $intersText .= ", ";
+    }
+    $intersText .= "]";
+    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    $racetext .= "\t\t'inters' =>  $intersText ,\n";
+    if(count($favorites) > 1){
+       $WP = array_intersect($inter, $favorites);
        $racetext .= "\t\t'WP' => '" . implode(", ", $WP) . "',\n";
        $WPs = array_unique(array_values(array_merge($WPs, $WP)));
        $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
@@ -77,7 +119,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     unset($oldWPs);
     unset($favorites);
     unset($WPs);
-    unset($interW);
+    unset($inter);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
