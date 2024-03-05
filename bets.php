@@ -71,7 +71,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(isset($threes[$raceNumber][$index])){
                     $threeSet = $threes[$raceNumber][$index];
                     $union = array_values(array_unique(array_merge($union, explode(", ", $threeSet))));
-                    $racetext .= "\t\t'$index' => '" . $threeSet . "',\n";
                 }
         }
     }
