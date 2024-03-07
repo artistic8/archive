@@ -7,7 +7,6 @@ $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
 $threes = include(__DIR__ . DIRECTORY_SEPARATOR . "threes.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
@@ -19,10 +18,6 @@ $totalRaces = count($allRacesOdds);
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
-
-$totalBets = 0;
-$totalWinners = 0;
-$totalHistoric = 0;
 
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesOdds[$raceNumber])) continue;
@@ -38,7 +33,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorite = $runners[0];
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     sort($favorites);
-    $raceData1 = $history[$raceNumber][$favorite];
     $racetext = "";
    
     $racetext .= "\t'$raceNumber' => [\n";
@@ -46,57 +40,44 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'Favorite'  =>  '$favorite',\n";   
-    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n";
-    
-    $bet = [];
-    $union = [];
+    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n";   
+    $place = [];
     foreach($favorites as $one){
-        foreach($favorites as $two){
-            if($two > $one){
-                $index = "f$one-f$two";
+        $racetext .= "\t\t/*** Fav $one **/\n"; 
+        $union = []; 
+        $firstSet1 = true; 
+        foreach($runners as $two){
+            if($two !== $one){
+                if($one < $two) $index = "f$one-f$two";
+                else $index = "f$two-f$one";
                 if(isset($threes[$raceNumber][$index])){
-                    $bet[] = $one;
-                    $bet[] = $two;
-                    $threeSet = $threes[$raceNumber][$index];
-                    $bet = array_values(array_unique(array_merge($bet, explode(", ", $threeSet))));
-                    $racetext .= "\t\t'$index' => '" . $threeSet . "',\n";
+                    $threeSet = explode(", ", $threes[$raceNumber][$index]);
+                    $racetext .= "\t\t'$index' => '" . implode(", ", $threeSet) . "',\n";
+                    if($firstSet1) {
+                        $firstSet1 = false;
+                        $union = $threeSet;
+                    }
+                    else {
+                        $union = array_values(array_unique(array_merge($union, $threeSet)));
+                    }
                 }
             }
         }
-        foreach($runners as $horse){
-            if($one == $horse) continue;
-            if($one < $horse) 
-              $index = "f$one-f$horse";
-            else $index = "f$horse-f$one";
-            if(isset($threes[$raceNumber][$index])){
-                    $threeSet = $threes[$raceNumber][$index];
-                    $union = array_values(array_unique(array_merge($union, explode(", ", $threeSet))));
-                }
-        }
-    }
-    if(!empty($bet)){
-        sort($bet);
-        $racetext .= "\t\t'bet' => '" . implode(", ", $bet) . "',\n";
-    }
-    if(!empty($union)){
         sort($union);
-        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+        if(!empty($union)){
+            sort($union);
+            $racetext .= "\t\t'union $one' => '" . implode(", ", $union) . "',\n";
+            $inter = array_intersect($favorites, $union);
+            if(in_array($one, $inter)){
+                $racetext .= "\t\t'Sure Place' => '" . $one . "',\n";
+            }
+            $place = array_values(array_unique(array_merge($place, $inter)));
+        } 
     }
-    $unionCF = [];
-    foreach($runners as $horse){
-            if($favorite == $horse) continue;
-            if($favorite < $horse) 
-              $index = "f$favorite-f$horse";
-            else $index = "f$horse-f$favorite";
-            if(isset($threes[$raceNumber][$index])){
-                    $threeSet = $threes[$raceNumber][$index];
-                    $unionCF = array_values(array_unique(array_merge($unionCF, explode(", ", $threeSet))));
-                }
+    if(!empty($place)){
+        $racetext .= "\t\t'Place' => '" . implode(", ", $place) . "',\n";
     }
-    if(!empty($unionCF)){
-        sort($unionCF);
-        $racetext .= "\t\t'union current favorite' => '" . implode(", ", $unionCF) . "',\n";
-    }
+    
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
