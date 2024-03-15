@@ -50,12 +50,16 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         } 
     }
     if(count($sets) >= 1){
+        $union = [];
         foreach($sets as $f => $s){
+            $union = array_values(array_unique(array_merge($union, $s)));
             $racetext .= "\t\t'Fav $f' => '" . implode(", ", $s) . "',//count: " . count($s) . "\n";
             if(count($s) == 6 && in_array($f, $s)){
                 $racetext .= "\t\t'WP' => '" . $f . "',\n"; 
             }
         }
+        sort($union);
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
