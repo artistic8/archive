@@ -53,7 +53,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $union = [];
         foreach($sets as $f => $s){
             $union = array_values(array_unique(array_merge($union, $s)));
-            $racetext .= "\t\t'Fav $f' => '" . implode(", ", $s) . "',//count: " . count($s) . "\n";
+            $racetext .= "\t\t'Fav $f' => '" . implode(", ", $s) . "',\n";
             if(count($s) == 6 && in_array($f, $s)){
                 $racetext .= "\t\t'WP' => '" . $f . "',\n"; 
             }
