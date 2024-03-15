@@ -45,11 +45,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($favorites as $one){
         if(isset($history[$raceNumber][$one]['win'])){
             $winners = $history[$raceNumber][$one]['win'];
-            if(count($winners) > 6) continue;
+            if(count($winners) > 6 || count($winners) < 2) continue;
             $sets[$one] = $winners;
         } 
     }
-    if(count($sets) === 1){
+    if(count($sets) >= 1){
         foreach($sets as $f => $s){
             $racetext .= "\t\t'Fav $f' => '" . implode(", ", $s) . "',//count: " . count($s) . "\n";
             if(count($s) == 6 && in_array($f, $s)){
