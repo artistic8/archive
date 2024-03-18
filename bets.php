@@ -32,6 +32,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     else $addedFavorites = [];
 
     $sets = [];
+    $setsAbove6 = [];
 
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
@@ -57,6 +58,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($favorites as $one){
         if(isset($history[$raceNumber][$one]['win'])){
             $winners = $history[$raceNumber][$one]['win'];
+            if(count($winners) > 6) $setsAbove6[] = $winners;
             if(count($winners) > 6 || count($winners) < 2) continue;
             $sets[$one] = $winners;
         } 
@@ -72,7 +74,20 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         if(count($union) > 7 && count($favorites) < 6){
             $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
         }
+        if(count($setsAbove6) >= 1){
+            $union6 = [];
+            foreach($setsAbove6 as $set6){
+                $inter = $union6 = array_values(array_unique(array_merge($union6, $set6)));
+            }
+            $inter = array_intersect($union, $union6);
+            $racetext .= "\t\t'inter6' => '" . implode(", ", $inter) . "',\n";
+            $diff = array_diff($union, $inter);
+            $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+            $place = array_intersect($diff, $favorites);
+            $racetext .= "\t\t'place?' => '" . implode(", ", $place) . "',\n";
+        }
     }
+    
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
