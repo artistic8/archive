@@ -55,10 +55,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
     }
     //$favorites = array_merge($favorites, $addedFavorites);
+    $sures = [];
     foreach($favorites as $one){
         if($raceNumber - $one + 4 > 0){
             $secret = $raceNumber - $one + 4;
-           $racetext .= "\t\t'wp' => '" . $secret . ", " . ($secret + 1) ."',\n";
+            $racetext .= "\t\t'wp' => '" . $secret . ", " . ($secret + 1) ."',\n";
+            $sures[] = $secret;
+            $sures[] = $secret + 1;
         }
         if(isset($history[$raceNumber][$one]['win'])){
             $winners = $history[$raceNumber][$one]['win'];
@@ -79,12 +82,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
         }
     }
-    
+    $place = array_intersect($sures, $favorites);
+    $racetext .= "\t\t'place' => '". implode(", ", $place) . "'\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
     unset($oldAddedFavorites);
     unset($addedFavorites);
+    unset($sures);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
