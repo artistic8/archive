@@ -56,7 +56,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     //$favorites = array_merge($favorites, $addedFavorites);
     foreach($favorites as $one){
-        if($raceNumber - $favorite > 0){
+        if($raceNumber - $favorite + 4 > 0){
             $secret = $raceNumber - $favorite + 4;
            $racetext .= "\t\t'wp' => '" . $secret . ", " . ($secret + 1) ."',\n";
         }
