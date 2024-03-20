@@ -56,6 +56,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     //$favorites = array_merge($favorites, $addedFavorites);
     foreach($favorites as $one){
+        if($raceNumber - $favorite > 0){
+           $racetext .= "\t\t'wp' => '" . $raceNumber . ", " . ($raceNumber + 1) ."',\n";
+        }
         if(isset($history[$raceNumber][$one]['win'])){
             $winners = $history[$raceNumber][$one]['win'];
             if(count($winners) > 6) $setsAbove6[] = $winners;
