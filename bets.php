@@ -59,7 +59,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         if(isset($history[$raceNumber][$one]['win'])){
             $winners = $history[$raceNumber][$one]['win'];
             if(count($winners) > 6) $setsAbove6[] = $winners;
-            if(count($winners) > 7 || count($winners) < 4) continue;
+            if(count($winners) > 7 || count($winners) < 2) continue;
             $sets[$one] = $winners;
         } 
     }
