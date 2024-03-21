@@ -6,7 +6,7 @@ return [
 		Race 1
 		*/
 		'favorites' => '6, 10',
-		'Fav 10' => '1, 4, 5, 9, 8, 10, 11',
+		'Fav 10(win)' => '1, 4, 5, 9, 8, 10, 11',
 		'wp' => '6, 10',
 		'union' => '1, 4, 5, 6, 7, 8, 9, 10, 11',//count: 9
 		'sures' => '',
@@ -17,7 +17,6 @@ return [
 		*/
 		'favorites' => '5, 2, 7',
 		'additional favorites' => '4, 6',
-		'Fav 7' => '2, 7',
 		'wp' => '5, 2, 7',
 		'union' => '2, 5, 6, 7, 8, 9, 10, 12, 13',//count: 9
 		'sures' => '1, 2, 4, 5',
@@ -27,7 +26,6 @@ return [
 		Race 3
 		*/
 		'favorites' => '3, 8, 10',
-		'Fav 10' => '9',
 		'wp' => '3, 8, 10',
 		'union' => '1, 2, 3, 7, 8, 9, 10, 11, 12',//count: 9
 		'sures' => '4, 5',
@@ -37,7 +35,6 @@ return [
 		Race 4
 		*/
 		'favorites' => '4, 11',
-		'Fav 11' => '6, 11',
 		'wp' => '4, 11',
 		'union' => '3, 4, 6, 9, 11',//count: 5
 		'sures' => '4, 5',
@@ -47,7 +44,6 @@ return [
 		Race 5
 		*/
 		'favorites' => '10',
-		'Fav 10' => '2, 4',
 		'wp' => '10',
 		'union' => '2, 4',//count: 2
 		'sures' => '',
@@ -57,7 +53,6 @@ return [
 		Race 6
 		*/
 		'favorites' => '3, 12',
-		'Fav 12' => '1, 11, 12',
 		'wp' => '3, 12',
 		'union' => '1, 3, 5, 9, 11, 12',//count: 6
 		'sures' => '7, 8',
@@ -67,7 +62,6 @@ return [
 		Race 7
 		*/
 		'favorites' => '6, 11',
-		'Fav 11' => '5, 6',
 		'place' => '5, 6',
 		'union' => '5, 6, 10',//count: 3
 		'sures' => '5, 6',
@@ -77,7 +71,7 @@ return [
 		Race 8
 		*/
 		'favorites' => '5, 6',
-		'Fav 6' => '4, 6, 11, 12',
+		'Fav 6(win)' => '4, 6, 11, 12',
 		'wp' => '5, 6',
 		'union' => '3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 9
 		'sures' => '6, 7, 8',
@@ -88,7 +82,6 @@ return [
 		*/
 		'favorites' => '7, 5, 11',
 		'additional favorites' => '3, 10',
-		'Fav 11' => '12',
 		'wp' => '7, 5, 11',
 		'union' => '3, 4, 5, 6, 8, 11, 12',//count: 7
 		'sures' => '2, 3, 6, 7, 8, 9',
