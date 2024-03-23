@@ -23,6 +23,7 @@ $outtext = "<?php\n\n";
 $outtext .= "return [\n";
 
 $shit = [];
+$sures = [];
 
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesOdds[$raceNumber])) continue;
@@ -68,10 +69,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         } 
     }
     foreach($sets as $f => $s){
-        if(in_array(3, $s) && in_array(4, $s) && in_array(5, $s)){
+        if(in_array(3, $s) && in_array(5, $s)){
             $racetext .= "\t\t'Fav $f(win)' => '" . implode(", ", $s) . "',//count: " . count($s) . "\n";
             $globals[$raceNumber]['win'] = $s;
             if(!in_array($f, $shit)) $shit[] = $f;
+            if(!in_array(4, $s) && !in_array($f, $sures)) $sures[] = $f;
         }
     }
     $racetext .= "\t],\n";
@@ -82,21 +84,28 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 sort($shit);
+sort($sures);
 $outtext .= "\t\t//'shit' => '" . implode(", ", $shit) . "',\n"; 
+$outtext .= "\t\t//'sures' => '" . implode(", ", $sures) . "',\n"; 
 $outtext .= "];\n";
 file_put_contents($outFile, $outtext);
 
 $newtext = "<?php\n\n";
 $newtext .= "return [\n";
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
+    if(!isset($globals[$raceNumber]['win'])) continue;
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    $place = array_intersect($globals[$raceNumber]['favorites'], $shit);
+    $wp = array_intersect($globals[$raceNumber]['favorites'], $shit);
+    $place = array_intersect($globals[$raceNumber]['favorites'], $sures);
+    if(!empty($wp)){
+        $racetext .= "\t\t'wp' => '" . implode(", ", $wp) . "',\n"; 
+    }
     if(!empty($place)){
-        $racetext .= "\t\t'wp' => '" . implode(", ", $place) . "',\n"; 
+        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n"; 
     }
     if(isset($globals[$raceNumber]['win'])){
         $racetext .= "\t\t'win' => '" . implode(", ", $globals[$raceNumber]['win']) . "',\n"; 

@@ -59,4 +59,5 @@ return [
 		'favorites' => '3, 7, 11',
 	],
 		//'shit' => '3, 4',
+		//'sures' => '',
 ];

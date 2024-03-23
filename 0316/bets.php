@@ -27,6 +27,7 @@ return [
 		*/
 		'favorites' => '11, 1, 6',
 		'additional favorites' => '8',
+		'Fav 1(win)' => '1, 2, 3, 5, 6, 10, 11',//count: 7
 	],
 	'5' => [
 		/**
@@ -69,5 +70,6 @@ return [
 		*/
 		'favorites' => '9, 7, 14',
 	],
-		//'shit' => '2, 3, 4, 5, 7',
+		//'shit' => '1, 2, 3, 4, 5, 7',
+		//'sures' => '1',
 ];
