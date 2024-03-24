@@ -6,6 +6,8 @@ return [
 		Race 1
 		*/
 		'favorites' => '5, 7, 8',
+		'win hist(Fav 8)' => '1, 2, 3, 10',//count: 4
+		'fibo seq(Fav 8)' => '1, 2, 3',//count: 3
 	],
 	'2' => [
 		/**
@@ -13,7 +15,7 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'win hist(Fav 2)' => '2, 5, 6, 7, 8, 9, 12, 13',//count: 8
-		'fibo seq(Fav 2)' => '5, 8, 13',//count: 3
+		'fibo seq(Fav 2)' => '2, 5, 8, 13',//count: 4
 	],
 	'3' => [
 		/**
@@ -39,7 +41,7 @@ return [
 		*/
 		'favorites' => '6, 7, 10',
 		'win hist(Fav 7)' => '1, 3, 5, 6, 9, 11, 13',//count: 7
-		'fibo seq(Fav 7)' => '3, 5, 13',//count: 3
+		'fibo seq(Fav 7)' => '1, 3, 5, 13',//count: 4
 	],
 	'7' => [
 		/**
@@ -47,7 +49,7 @@ return [
 		*/
 		'favorites' => '1',
 		'win hist(Fav 1)' => '1, 2, 4, 5, 7, 8, 9',//count: 7
-		'fibo seq(Fav 1)' => '5, 8',//count: 2
+		'fibo seq(Fav 1)' => '1, 2, 5, 8',//count: 4
 	],
 	'8' => [
 		/**
@@ -69,5 +71,5 @@ return [
 		*/
 		'favorites' => '6, 11',
 	],
-		//'shit' => '1, 2, 5, 7',
+		//'shit' => '1, 2, 5, 7, 8',
 ];
