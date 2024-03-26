@@ -7,7 +7,8 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'win hist(Fav 10)' => '1, 4, 5, 9, 8, 10, 11',//count: 7
-		'fibo seq(Fav 10)' => '1, 5, 8',
+		'win' =>   '1, 4, 5, 8, 9, 10, 11',//count: 7
+		'inter' =>   '1, 4, 5, 9, 8, 10, 11',
 	],
 	'2' => [
 		/**
@@ -16,9 +17,9 @@ return [
 		'favorites' => '5, 2, 7',
 		'additional favorites' => '4, 6',
 		'win hist(Fav 2)' => '2, 5, 6, 7, 8, 9, 12',//count: 7
-		'fibo seq(Fav 2)' => '2, 5, 8',
 		'win hist(Fav 6)' => '1, 2, 4, 5, 6, 8',//count: 6
-		'fibo seq(Fav 6)' => '1, 2, 5, 8',
+		'inter' =>   '2, 5, 6, 8',
+		'SURE WIN' => '2, 4, 5, 6, 7',
 	],
 	'3' => [
 		/**
@@ -26,9 +27,9 @@ return [
 		*/
 		'favorites' => '3, 8, 10',
 		'win hist(Fav 3)' => '1, 3, 7, 8, 12',//count: 5
-		'fibo seq(Fav 3)' => '1, 3, 8',
 		'win hist(Fav 8)' => '1, 2, 3, 8, 10, 11, 12',//count: 7
-		'fibo seq(Fav 8)' => '1, 2, 3, 8',
+		'win' =>   '1, 2, 3, 7, 8, 10, 11, 12',//count: 8
+		'inter' =>   '1, 3, 8, 12',
 	],
 	'4' => [
 		/**
@@ -48,7 +49,8 @@ return [
 		*/
 		'favorites' => '3, 12',
 		'win hist(Fav 3)' => '1, 3, 5, 9, 11',//count: 5
-		'fibo seq(Fav 3)' => '1, 3, 5',
+		'win' =>   '1, 3, 5, 9, 11',//count: 5
+		'inter' =>   '1, 3, 5, 9, 11',
 	],
 	'7' => [
 		/**
@@ -62,7 +64,8 @@ return [
 		*/
 		'favorites' => '5, 6',
 		'win hist(Fav 5)' => '3, 4, 5, 7, 8, 10, 11',//count: 7
-		'fibo seq(Fav 5)' => '3, 5, 8',
+		'win' =>   '3, 4, 5, 7, 8, 10, 11',//count: 7
+		'inter' =>   '3, 4, 5, 7, 8, 10, 11',
 	],
 	'9' => [
 		/**
@@ -70,10 +73,8 @@ return [
 		*/
 		'favorites' => '7, 5, 11',
 		'additional favorites' => '3, 10',
-		'win hist(Fav 5)' => '3, 4, 5, 8, 11, 12',//count: 6
-		'fibo seq(Fav 5)' => '3, 5, 8',
 		'win hist(Fav 3)' => '2, 3, 8, 9, 10, 11',//count: 6
-		'fibo seq(Fav 3)' => '2, 3, 8',
+		'win hist(Fav 5)' => '3, 4, 5, 8, 11, 12',//count: 6
+		'inter' =>   '3, 8, 11',
 	],
-		//'shit' => '2, 3, 5, 6, 8, 10',
 ];
