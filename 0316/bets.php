@@ -9,7 +9,6 @@ return [
 		'win hist(Fav 1)' => '1, 5, 7, 8, 11',//count: 5
 		'win hist(Fav 3)' => '1, 3, 4, 5, 6, 7',//count: 6
 		'win hist(Fav 10)' => '1, 4, 5, 9, 8, 10, 11',//count: 7
-		'inter' =>   '1, 5',
 	],
 	'2' => [
 		/**
@@ -24,7 +23,6 @@ return [
 		'favorites' => '3, 1',
 		'win hist(Fav 1)' => '1, 2, 4, 5, 8, 10, 11',//count: 7
 		'win hist(Fav 3)' => '1, 3, 7, 8, 12',//count: 5
-		'inter' =>   '1, 8',
 	],
 	'4' => [
 		/**
@@ -35,7 +33,6 @@ return [
 		'win hist(Fav 1)' => '1, 2, 3, 5, 6, 10, 11',//count: 7
 		'win hist(Fav 8)' => '1, 3, 8, 11',//count: 4
 		'win' =>   '1, 2, 3, 5, 6, 8, 10, 11',//count: 8
-		'inter' =>   '1, 3, 11',
 	],
 	'5' => [
 		/**
@@ -44,7 +41,6 @@ return [
 		'favorites' => '10, 4',
 		'win hist(Fav 4)' => '1, 2, 3, 4, 6, 7',//count: 6
 		'win' =>   '1, 2, 3, 4, 6, 7',//count: 6
-		'inter' =>   '1, 2, 3, 4, 6, 7',
 	],
 	'6' => [
 		/**
@@ -53,8 +49,7 @@ return [
 		'favorites' => '12, 2, 6',
 		'win hist(Fav 2)' => '2, 3, 4, 5, 8, 10',//count: 6
 		'win' =>   '2, 3, 4, 5, 8, 10',//count: 6
-		'inter' =>   '2, 3, 4, 5, 8, 10',
-		'SURE WIN' => '2, 6, 12',
+		'SURE WIN(&qin)' => '2, 6, 12',
 	],
 	'7' => [
 		/**
@@ -63,7 +58,6 @@ return [
 		'favorites' => '6, 4, 7',
 		'win hist(Fav 4)' => '1, 3, 4, 5, 7, 8, 10',//count: 7
 		'win' =>   '1, 3, 4, 5, 7, 8, 10',//count: 7
-		'inter' =>   '1, 3, 4, 5, 7, 8, 10',
 	],
 	'8' => [
 		/**
@@ -73,7 +67,6 @@ return [
 		'win hist(Fav 5)' => '3, 4, 5, 7, 8, 10, 11',//count: 7
 		'win hist(Fav 7)' => '1, 3, 4, 5',//count: 4
 		'win' =>   '1, 3, 4, 5, 7, 8, 10, 11',//count: 8
-		'inter' =>   '3, 4, 5',
 	],
 	'9' => [
 		/**
@@ -82,7 +75,6 @@ return [
 		'favorites' => '5, 10',
 		'win hist(Fav 5)' => '3, 4, 5, 8, 11',//count: 5
 		'win' =>   '3, 4, 5, 8, 11',//count: 5
-		'inter' =>   '3, 4, 5, 8, 11',
 	],
 	'10' => [
 		/**
