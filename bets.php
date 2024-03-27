@@ -74,7 +74,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'win' =>   '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
         }
         if(in_array(2, $favorites)){
-             $racetext .= "\t\t'SURE WIN(&qin)' => '" . implode(", ", $favorites) . "',\n"; 
+            $racetext .= "\t\t'SURE WIN(&qin)' => '" . implode(", ", $favorites) . "',\n"; 
         }
     }
     $racetext .= "\t],\n";
