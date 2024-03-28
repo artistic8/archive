@@ -13,10 +13,8 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'inter(fav 2, fav 3)' => '2, 6, 7, 12, 13',
-		'union' => '2, 6, 7, 12, 13',//count: 5
-		'all' => '2, 3, 6, 7, 12, 13',//count: 6
-		//Sure favorites win?
-		'wp' => '2, 3',
+		'win' => '2, 6, 7, 12, 13',//count: 5
+		'hedge' => '2',
 	],
 	'3' => [
 		/**
@@ -42,10 +40,8 @@ return [
 		*/
 		'favorites' => '6, 7, 10',
 		'inter(fav 6, fav 7)' => '1, 6, 11',
-		'union' => '1, 6, 11',//count: 3
-		'all' => '1, 6, 7, 10, 11',//count: 5
-		//Sure favorites win?
-		'wp' => '6, 7',
+		'win' => '1, 6, 11',//count: 3
+		'hedge' => '6',
 	],
 	'7' => [
 		/**
@@ -65,9 +61,8 @@ return [
 		*/
 		'favorites' => '2, 6',
 		'inter(fav 2, fav 6)' => '2, 4, 6',
-		'union' => '2, 4, 6',//count: 3
-		'all' => '2, 4, 6',//count: 3
-		'wp' => '2, 6',
+		'win' => '2, 4, 6',//count: 3
+		'hedge' => '2, 6',
 	],
 	'10' => [
 		/**
