@@ -11,6 +11,7 @@ return [
 		'inter(fav 3, fav 10)' => '1, 4, 5',
 		'union' => '1, 4, 5, 7, 8, 11',//count: 6
 		'all' => '1, 3, 4, 5, 7, 8, 10, 11',//count: 8
+		//Sure favorites win?
 		'wp' => '1, 3, 10',
 	],
 	'2' => [
@@ -35,6 +36,7 @@ return [
 		'inter(fav 1, fav 8)' => '1, 3, 11',
 		'union' => '1, 3, 6, 10, 11',//count: 5
 		'all' => '1, 3, 6, 8, 10, 11',//count: 6
+		//Sure favorites win?
 		'wp' => '1, 6, 8',
 	],
 	'5' => [
@@ -51,6 +53,7 @@ return [
 		'inter(fav 6, fav 12)' => '1, 11, 12',
 		'union' => '1, 11, 12',//count: 3
 		'all' => '1, 2, 6, 11, 12',//count: 5
+		//Sure favorites win?
 		'wp' => '6, 12',
 	],
 	'7' => [
@@ -72,6 +75,7 @@ return [
 		'inter(fav 5, fav 7)' => '3, 4, 5',
 		'union' => '3, 4, 5, 7, 11',//count: 5
 		'all' => '1, 3, 4, 5, 7, 11',//count: 6
+		//Sure favorites win?
 		'wp' => '1, 5, 7',
 	],
 	'9' => [

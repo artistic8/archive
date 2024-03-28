@@ -17,6 +17,7 @@ return [
 		'inter(fav 2, fav 6)' => '2, 5, 6, 8',
 		'union' => '2, 5, 6, 7, 8, 12',//count: 6
 		'all' => '2, 4, 5, 6, 7, 8, 12',//count: 7
+		//Sure favorites win?
 		'wp' => '2, 4, 6',
 	],
 	'3' => [
@@ -27,6 +28,7 @@ return [
 		'inter(fav 3, fav 8)' => '1, 3, 8, 12',
 		'union' => '1, 3, 8, 12',//count: 4
 		'all' => '1, 3, 8, 10, 12',//count: 5
+		//Sure favorites win?
 		'wp' => '3, 8',
 	],
 	'4' => [
@@ -68,6 +70,7 @@ return [
 		'inter(fav 3, fav 5)' => '3, 8, 11',
 		'union' => '3, 8, 11',//count: 3
 		'all' => '3, 5, 7, 8, 10, 11',//count: 6
+		//Sure favorites win?
 		'wp' => '3, 5',
 	],
 ];

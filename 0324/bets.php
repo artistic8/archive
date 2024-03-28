@@ -15,6 +15,7 @@ return [
 		'inter(fav 1, fav 2)' => '2, 6, 7, 9',
 		'union' => '2, 6, 7, 9',//count: 4
 		'all' => '1, 2, 6, 7, 9, 14',//count: 6
+		//Sure favorites win?
 		'wp' => '1, 2',
 	],
 	'3' => [

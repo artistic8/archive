@@ -88,6 +88,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $all = array_values(array_unique(array_merge($favorites, $union)));
         sort($all);
         $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n";
+        if(count($all) >= 5) $racetext .= "\t\t//Sure favorites win?\n";
     }
     if(!empty($place)){
         sort($place);
