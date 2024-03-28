@@ -73,6 +73,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                     $win1 = array_intersect($history[$R][$one]['win'], $runners);
                     $win2 = array_intersect($history[$R][$two]['win'], $runners);
                     $inter = array_intersect($win1, $win2);
+                    $racetext .= "\t\t'inter(fav $one, fav $two, R$R' => '" . implode(", ", $inter) . "',\n"; 
                     if(count($inter) === 1) $union1 = array_values(array_unique(array_merge($union1, $inter)));
                     elseif(count($inter) === 2)  $union2 = array_values(array_unique(array_merge($union2, $inter)));
                     elseif(count($inter) === 3)  $union3 = array_values(array_unique(array_merge($union3, $inter)));
