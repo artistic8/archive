@@ -60,35 +60,44 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($addedFavorites))  {
         $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
     }
-    // $favorites = array_merge($favorites, $addedFavorites);
+    $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
+    $place = [];
     foreach($favorites as $one){
         foreach($favorites as $two){
             if(!isset($history[$raceNumber][$one]['win']) || !isset($history[$raceNumber][$two]['win'])) continue;
             if($two > $one){
-                $R = $raceNumber;
-                // for ($R = 1; $R <= 11; $R++) {
-                    $win1 = array_intersect($history[$R][$one]['win'], $runners);
-                    $win2 = array_intersect($history[$R][$two]['win'], $runners);
-                    $inter = array_intersect($win1, $win2);
-                    if(count($inter) === 3){
-                        $union = array_values(array_unique(array_merge($union, $inter)));
-                        $racetext .= "\t\t'inter(fav $one, fav $two, R$R)' => '" . implode(", ", $inter) . "',\n"; 
-                    }
-                // }
+                $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
+                $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
+                $inter = array_intersect($win1, $win2);
+                if(count($inter) >= 3){
+                    // $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
+                    // $racetext .= "\t\t'win hist(fav $two)' => '" . implode(", ", $win2) . "',\n"; 
+                    $union = array_values(array_unique(array_merge($union, $inter)));
+                    $racetext .= "\t\t'inter(fav $one, fav $two)' => '" . implode(", ", $inter) . "',\n"; 
+                    if(in_array($one, $inter) && !in_array($one, $place)) $place[] = $one;
+                    if(in_array($two, $inter) && !in_array($two, $place)) $place[] = $two;
+                }
             }
         }
     }
-    $place = array_intersect($favorites, $union);
-    $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
-    sort($union);
-    $racetext .= "\t\t'win' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
+    if(!empty($union)){
+        sort($union);
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
+    }
+    if(!empty($place)){
+        sort($place);
+        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
+    }
+    
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
     unset($oldAddedFavorites);
     unset($addedFavorites);
+    unset($union);
+    unset($place);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
