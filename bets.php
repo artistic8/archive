@@ -62,9 +62,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     // $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
-    $union1 = [];
-    $union2 = [];
-    $union3 = [];
+    $union = [];
     foreach($favorites as $one){
         foreach($favorites as $two){
             if(!isset($history[$raceNumber][$one]['win']) || !isset($history[$raceNumber][$two]['win'])) continue;
@@ -73,25 +71,18 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                     $win1 = array_intersect($history[$R][$one]['win'], $runners);
                     $win2 = array_intersect($history[$R][$two]['win'], $runners);
                     $inter = array_intersect($win1, $win2);
-                    if(!empty($inter)){
+                    if(count($inter) === 3){
+                        $union = array_values(array_unique(array_merge($union, $inter)));
                         $racetext .= "\t\t'inter(fav $one, fav $two, R$R)' => '" . implode(", ", $inter) . "',\n"; 
                     }
-                    if(count($inter) === 1) $union1 = array_values(array_unique(array_merge($union1, $inter)));
-                    elseif(count($inter) === 2)  $union2 = array_values(array_unique(array_merge($union2, $inter)));
-                    elseif(count($inter) === 3)  $union3 = array_values(array_unique(array_merge($union3, $inter)));
                 }
             }
         }
     }
-    sort($union1);
-    sort($union2);
-    sort($union3);
-    $union = [];
-    if(inArray($favorites, $union1)) $union = array_values(array_unique(array_merge($union, $union1)));
-    if(inArray($favorites, $union2)) $union = array_values(array_unique(array_merge($union, $union2))); 
-    if(inArray($favorites, $union3)) $union = array_values(array_unique(array_merge($union, $union3))); 
     sort($union);
-    if(count($union) < 7) $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
+    $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
+    $place = array_intersect($favorites, $union);
+    $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
