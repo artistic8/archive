@@ -12,9 +12,8 @@ return [
 		Race 2
 		*/
 		'favorites' => '2, 1, 14',
-		'win hist(Fav 2)' => '2, 5, 6, 7, 8, 9, 12, 13',//count: 8
-		'win' =>   '2, 5, 6, 7, 8, 9, 12, 13',//count: 8
-		'SURE WIN(&qin)' => '1, 2, 14',
+		'union2' => '1, 2, 7, 10',
+		'union3' => '5, 6, 11',
 	],
 	'3' => [
 		/**
@@ -27,38 +26,42 @@ return [
 		Race 4
 		*/
 		'favorites' => '4, 10, 12',
+		'union2' => '2, 4, 5, 6, 10',
+		'union3' => '3, 4, 7, 8, 9, 10',
+		'candidate' => '4, 10',//count: 2
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
 		'favorites' => '1, 2, 10',
-		'win hist(Fav 2)' => '1, 2, 7, 8, 9',//count: 5
-		'win' =>   '1, 2, 7, 8, 9',//count: 5
-		'SURE WIN(&qin)' => '1, 2, 10',
+		'union2' => '1, 2, 6, 7, 10, 11',
+		'union3' => '1, 5, 6, 10, 11',
+		'candidate' => '1, 6, 10, 11',//count: 4
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
 		'favorites' => '1, 12',
-		'win hist(Fav 1)' => '1, 3, 7, 9, 12, 13',//count: 6
-		'win' =>   '1, 3, 7, 9, 12, 13',//count: 6
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '7, 2, 5',
-		'win hist(Fav 2)' => '2, 3, 4, 5, 6, 7, 9',//count: 7
-		'win' =>   '2, 3, 4, 5, 6, 7, 9',//count: 7
-		'SURE WIN(&qin)' => '2, 5, 7',
+		'union2' => '2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'union3' => '1, 2, 3, 4, 5, 7, 8, 9, 11, 12',
+		'candidate' => '2, 3, 4, 5, 7, 8, 11',//count: 7
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '2, 6',
+		'union2' => '1, 4, 7, 9, 10',
+		'union3' => '2, 4, 6, 11',
+		'candidate' => '4',//count: 1
 	],
 	'9' => [
 		/**
@@ -66,17 +69,17 @@ return [
 		*/
 		'favorites' => '11, 1, 2',
 		'additional favorites' => '4',
-		'win hist(Fav 1)' => '1, 5, 6, 7, 8, 10, 12',//count: 7
-		'win' =>   '1, 5, 6, 7, 8, 10, 12',//count: 7
-		'SURE WIN(&qin)' => '1, 2, 4, 11',
+		'union2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'union3' => '1, 2, 4, 5, 6, 7, 8, 11, 12',
+		'candidate' => '1, 2, 4, 5, 6, 7, 8, 11',//count: 8
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '2, 8',
-		'win hist(Fav 2)' => '2, 3, 13',//count: 3
-		'win' =>   '2, 3, 13',//count: 3
-		'SURE WIN(&qin)' => '2, 8',
+		'union2' => '2, 3, 8, 9',
+		'union3' => '1, 2, 3',
+		'candidate' => '2, 3',//count: 2
 	],
 ];

@@ -2,8 +2,6 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-$fibonacci = [1, 2, 3, 5, 8, 13, 21];
-
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
@@ -33,8 +31,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($oldAddedFavorites)) $addedFavorites = $oldAddedFavorites;
     else $addedFavorites = [];
 
-    $sets = [];
-
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
@@ -57,33 +53,35 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
-    $union = [];
+    $union2 = [];
+    $union3 = [];
     foreach($favorites as $one){
-        if(!isset($history[$raceNumber][$one]['win'])) continue;
-        $winners = $history[$raceNumber][$one]['win'];
-        $fibo = array_intersect($winners,$fibonacci);
-        if(count($fibo) >= 3){
-            $selected = array_intersect($winners, $runners);
-            $racetext .= "\t\t'win hist(Fav $one)' => '" . implode(", ", $selected) . "',//count: " . count($selected) . "\n";
-            $union = array_values(array_unique(array_merge($union, $selected)));
+        foreach($favorites as $two){
+            if(!isset($history[$raceNumber][$one]['win']) || !isset($history[$raceNumber][$two]['win'])) continue;
+            if($two > $one){
+                for ($R = 1; $R <= 11; $R++) {
+                    $win1 = array_intersect($history[$R][$one]['win'], $runners);
+                    $win2 = array_intersect($history[$R][$two]['win'], $runners);
+                    $inter = array_intersect($win1, $win2);
+                    if(count($inter) === 2)  $union2 = array_values(array_unique(array_merge($union2, $inter)));
+                    elseif(count($inter) === 3)  $union3 = array_values(array_unique(array_merge($union3, $inter)));
+                }
+            }
         }
     }
-    if(!empty($union)){
-        sort($union);
-        if(count($union) < 9){
-            $racetext .= "\t\t'win' =>   '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
-        }
-        if(in_array(2, $favorites)){
-            $racetext .= "\t\t'SURE WIN(&qin)' => '" . implode(", ", $favorites) . "',\n"; 
-        }
-    }
+    sort($union2);
+    sort($union3);
+    if(!empty($union2) && !empty($union3)){
+        $racetext .= "\t\t'union2' => '" . implode(", ", $union2) . "',\n"; 
+        $racetext .= "\t\t'union3' => '" . implode(", ", $union3) . "',\n"; 
+        $candidate = array_intersect($union2, $union3);
+        if(!empty($candidate)) $racetext .= "\t\t'candidate' => '" . implode(", ", $candidate) . "',//count: " . count($candidate) . "\n"; 
+    } 
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
     unset($oldAddedFavorites);
     unset($addedFavorites);
-    unset($union);
-    unset($inter);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";

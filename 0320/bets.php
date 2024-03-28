@@ -6,8 +6,6 @@ return [
 		Race 1
 		*/
 		'favorites' => '6, 10',
-		'win hist(Fav 10)' => '1, 4, 5, 9, 8, 10, 11',//count: 7
-		'win' =>   '1, 4, 5, 8, 9, 10, 11',//count: 7
 	],
 	'2' => [
 		/**
@@ -15,18 +13,18 @@ return [
 		*/
 		'favorites' => '5, 2, 7',
 		'additional favorites' => '4, 6',
-		'win hist(Fav 2)' => '2, 5, 6, 7, 8, 9, 12',//count: 7
-		'win hist(Fav 6)' => '1, 2, 4, 5, 6, 8',//count: 6
-		'SURE WIN(&qin)' => '2, 4, 5, 6, 7',
+		'union2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'union3' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'candidate' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '3, 8, 10',
-		'win hist(Fav 3)' => '1, 3, 7, 8, 12',//count: 5
-		'win hist(Fav 8)' => '1, 2, 3, 8, 10, 11, 12',//count: 7
-		'win' =>   '1, 2, 3, 7, 8, 10, 11, 12',//count: 8
+		'union2' => '1, 2, 3, 9, 10, 11',
+		'union3' => '1, 3, 4, 5, 7, 8, 11, 12',
+		'candidate' => '1, 3, 11',//count: 3
 	],
 	'4' => [
 		/**
@@ -45,8 +43,6 @@ return [
 		Race 6
 		*/
 		'favorites' => '3, 12',
-		'win hist(Fav 3)' => '1, 3, 5, 9, 11',//count: 5
-		'win' =>   '1, 3, 5, 9, 11',//count: 5
 	],
 	'7' => [
 		/**
@@ -59,8 +55,9 @@ return [
 		Race 8
 		*/
 		'favorites' => '5, 6',
-		'win hist(Fav 5)' => '3, 4, 5, 7, 8, 10, 11',//count: 7
-		'win' =>   '3, 4, 5, 7, 8, 10, 11',//count: 7
+		'union2' => '3, 4, 6, 11',
+		'union3' => '1, 4, 7, 9, 10, 12',
+		'candidate' => '4',//count: 1
 	],
 	'9' => [
 		/**
@@ -68,7 +65,8 @@ return [
 		*/
 		'favorites' => '7, 5, 11',
 		'additional favorites' => '3, 10',
-		'win hist(Fav 3)' => '2, 3, 8, 9, 10, 11',//count: 6
-		'win hist(Fav 5)' => '3, 4, 5, 8, 11, 12',//count: 6
+		'union2' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'union3' => '1, 3, 4, 5, 7, 8, 9, 11, 12',
+		'candidate' => '1, 3, 4, 5, 7, 8, 11',//count: 7
 	],
 ];
