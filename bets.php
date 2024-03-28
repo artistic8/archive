@@ -85,10 +85,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($union)){
         sort($union);
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
+        $all = array_values(array_unique(array_merge($favorites, $union)));
+        sort($all);
+        $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n";
     }
     if(!empty($place)){
         sort($place);
-        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
+        $racetext .= "\t\t'wp' => '" . implode(", ", $place) . "',\n";
     }
     
     $racetext .= "\t],\n";
