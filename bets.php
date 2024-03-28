@@ -60,7 +60,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($addedFavorites))  {
         $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
     }
-    $favorites = array_merge($favorites, $addedFavorites);
+    // $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union1 = [];
     $union2 = [];
@@ -83,9 +83,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($union1);
     sort($union2);
     sort($union3);
-    if(inArray($favorites, $union1)) $racetext .= "\t\t'union1' => '" . implode(", ", $union1) . "',\n"; 
-    if(inArray($favorites, $union2)) $racetext .= "\t\t'union2' => '" . implode(", ", $union2) . "',\n"; 
-    if(inArray($favorites, $union3)) $racetext .= "\t\t'union3' => '" . implode(", ", $union3) . "',\n"; 
+    $union = [];
+    if(inArray($favorites, $union1)) $union = array_values(array_unique(array_merge($union, $union1)));
+    if(inArray($favorites, $union2)) $union = array_values(array_unique(array_merge($union, $union2))); 
+    if(inArray($favorites, $union3)) $union = array_values(array_unique(array_merge($union, $union3))); 
+    sort($union);
+    if(count($union) < 7) $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
