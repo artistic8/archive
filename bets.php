@@ -1,4 +1,13 @@
 <?php
+/**
+ * returns true if array1 is cotnained in array2
+ */
+function inArray($array1, $array2){
+    foreach($array1 as $val){
+        if(!in_array($val, $array2)) return false;
+    }
+    return true;
+}
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
@@ -72,10 +81,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($union2);
     sort($union3);
     if(!empty($union2) && !empty($union3)){
-        $racetext .= "\t\t'union2' => '" . implode(", ", $union2) . "',\n"; 
-        $racetext .= "\t\t'union3' => '" . implode(", ", $union3) . "',\n"; 
-        $candidate = array_intersect($union2, $union3);
-        if(!empty($candidate)) $racetext .= "\t\t'candidate' => '" . implode(", ", $candidate) . "',//count: " . count($candidate) . "\n"; 
+        if(inArray($favorites, $union2)) $racetext .= "\t\t'union2' => '" . implode(", ", $union2) . "',\n"; 
+        if(inArray($favorites, $union3)) $racetext .= "\t\t'union3' => '" . implode(", ", $union3) . "',\n"; 
+        if(inArray($favorites, $union2) || inArray($favorites, $union3)){
+            $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n"; 
+        }
     } 
     $racetext .= "\t],\n";
     unset($oldFavorites);
