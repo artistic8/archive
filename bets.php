@@ -76,8 +76,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                     // $racetext .= "\t\t'win hist(fav $two)' => '" . implode(", ", $win2) . "',\n"; 
                     $union = array_values(array_unique(array_merge($union, $inter)));
                     $racetext .= "\t\t'inter(fav $one, fav $two)' => '" . implode(", ", $inter) . "',\n"; 
-                    if(in_array($one, $inter) && !in_array($one, $place)) $place[] = $one;
-                    if(in_array($two, $inter) && !in_array($two, $place)) $place[] = $two;
+                    if(!in_array($one, $place)) $place[] = $one;
+                    if(!in_array($two, $place)) $place[] = $two;
                 }
             }
         }

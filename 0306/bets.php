@@ -8,6 +8,7 @@ return [
 		'favorites' => '3, 7, 8, 10',
 		'inter(fav 3, fav 10)' => '1, 4, 5',
 		'union' => '1, 4, 5',//count: 3
+		'place' => '3, 10',
 	],
 	'2' => [
 		/**
@@ -16,7 +17,7 @@ return [
 		'favorites' => '3, 4',
 		'inter(fav 3, fav 4)' => '4, 7, 12',
 		'union' => '4, 7, 12',//count: 3
-		'place' => '4',
+		'place' => '3, 4',
 	],
 	'3' => [
 		/**
@@ -26,7 +27,7 @@ return [
 		'inter(fav 1, fav 4)' => '2, 4, 8, 11',
 		'inter(fav 1, fav 5)' => '5, 8, 10',
 		'union' => '2, 4, 5, 8, 10, 11',//count: 6
-		'place' => '4, 5',
+		'place' => '1, 4, 5',
 	],
 	'4' => [
 		/**
