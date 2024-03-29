@@ -34,7 +34,7 @@ return [
 		'inter(fav 1, fav 4)' => '1, 3, 4, 7',
 		'inter(fav 3, fav 4)' => '1, 3, 4, 7',
 		'win' => '1, 3, 4, 7, 10, 12',//count: 6
-		'place' => '4',
+		'place' => '4, 10, 12',
 	],
 	'6' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'additional favorites' => '9',
 		'inter(fav 9, fav 10)' => '3, 4, 10',
 		'win' => '3, 4, 10',//count: 3
-		'place' => '10',
+		'place' => '4, 10',
 	],
 	'9' => [
 		/**
