@@ -14,7 +14,7 @@ return [
 		'favorites' => '2, 3',
 		'inter(fav 2, fav 3)' => '2, 6, 7, 12, 13',
 		'win' => '2, 6, 7, 12, 13',//count: 5
-		'place' => '2, 6, 12',
+		'place' => '2',
 	],
 	'3' => [
 		/**
@@ -62,7 +62,7 @@ return [
 		'favorites' => '2, 6',
 		'inter(fav 2, fav 6)' => '2, 4, 6',
 		'win' => '2, 4, 6',//count: 3
-		'place' => '2, 4, 6',
+		'place' => '2, 6',
 	],
 	'10' => [
 		/**
