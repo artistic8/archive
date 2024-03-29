@@ -86,7 +86,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         foreach($union as $bum){
             if($bum % 2 === 0) $place[] = $bum;
         }
-        $place = array_intersect($place, $favorites);
+        //$place = array_intersect($place, $favorites);
         $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     }
     
