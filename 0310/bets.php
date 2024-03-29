@@ -8,7 +8,7 @@ return [
 		'favorites' => '1, 6, 11',
 		'inter(fav 1, fav 11)' => '7, 8, 11',
 		'win' => '7, 8, 11',//count: 3
-		'hedge' => '11',
+		'place' => '8',
 	],
 	'2' => [
 		/**
@@ -17,7 +17,7 @@ return [
 		'favorites' => '2, 4, 5',
 		'inter(fav 2, fav 4)' => '5, 7, 12',
 		'win' => '5, 7, 12',//count: 3
-		'hedge' => '5',
+		'place' => '12',
 	],
 	'3' => [
 		/**
@@ -26,7 +26,7 @@ return [
 		'favorites' => '2, 3',
 		'inter(fav 2, fav 3)' => '1, 8, 12',
 		'win' => '1, 8, 12',//count: 3
-		'hedge' => '',
+		'place' => '8, 12',
 	],
 	'4' => [
 		/**
@@ -47,7 +47,7 @@ return [
 		'favorites' => '3, 7',
 		'inter(fav 3, fav 7)' => '1, 3, 5, 9, 11',
 		'win' => '1, 3, 5, 9, 11',//count: 5
-		'hedge' => '3',
+		'place' => '',
 	],
 	'7' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'favorites' => '1, 3',
 		'inter(fav 1, fav 3)' => '1, 2, 9',
 		'win' => '1, 2, 9',//count: 3
-		'hedge' => '1',
+		'place' => '2',
 	],
 	'8' => [
 		/**
@@ -66,7 +66,7 @@ return [
 		'inter(fav 4, fav 6)' => '4, 6, 12',
 		'inter(fav 4, fav 8)' => '1, 2, 12',
 		'win' => '1, 2, 4, 6, 12',//count: 5
-		'hedge' => '4, 6',
+		'place' => '2, 4, 6, 12',
 	],
 	'9' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'favorites' => '2, 3, 5, 10, 11',
 		'inter(fav 3, fav 5)' => '3, 8, 11',
 		'win' => '3, 8, 11',//count: 3
-		'hedge' => '3, 11',
+		'place' => '8',
 	],
 	'10' => [
 		/**
