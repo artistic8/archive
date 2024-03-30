@@ -83,9 +83,16 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         sort($union);
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
         $shit = array_values(array_unique(array_merge($union, $favorites)));
-        sort($shit);
+        $sortedShit = $shit;
         $shit = array_slice($shit, 0, 4);
+        sort($shit);
         $racetext .= "\t\t'win' => '" . implode(", ", $shit) . "',\n";
+        sort($sortedShit);
+        $sortedShit = array_slice($sortedShit, 0, 4);
+        $racetext .= "\t\t'win' => '" . implode(", ", $sortedShit) . "',\n";
+        $diff = array_merge(array_diff($shit, $sortedShit), array_diff($sortedShit, $shit));
+        sort($diff);
+        $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
         // $place = array_intersect($favorites, $candidates);
         // $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     }
