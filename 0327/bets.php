@@ -56,7 +56,7 @@ return [
 		'additional favorites' => '9',
 		'inter(fav 9, fav 10)' => '3, 4, 10',
 		'union' => '3, 4, 10',//count: 3
-		'win' => '3, 4, 10, 1',
+		'win' => '1, 3, 4, 9',
 	],
 	'9' => [
 		/**
