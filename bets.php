@@ -82,12 +82,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($union)){
         sort($union);
         $racetext .= "\t\t'win' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
-        $place = [];
-        foreach($union as $bum){
-            if($bum % 2 === 0) $place[] = $bum;
+        if(count($union) > 3){
+            $candidates = array_slice($union, 1, 3);
+            $racetext .= "\t\t'candidates' => '" . implode(", ", $candidates) . "',\n";
+            $place = array_intersect($favorites, $candidates);
+            $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
         }
-        //$place = array_intersect($place, $favorites);
-        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     }
     
     $racetext .= "\t],\n";
