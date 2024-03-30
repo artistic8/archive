@@ -12,10 +12,10 @@ return [
 		Race 2
 		*/
 		'favorites' => '2, 3',
+		'win hist(fav 2)' => '2, 5, 6, 7, 8, 9, 12, 13',
 		'inter(fav 2, fav 3)' => '2, 6, 7, 12, 13',
+		'win hist(fav 3)' => '2, 4, 6, 7, 10, 11, 12, 13',
 		'union' => '2, 6, 7, 12, 13',
-		'win' => '2, 3',
-		'place' => '2, 3',
 	],
 	'3' => [
 		/**
@@ -40,27 +40,28 @@ return [
 		Race 6
 		*/
 		'favorites' => '6, 7, 10',
+		'win hist(fav 6)' => '1, 4, 6, 10, 11, 12',
 		'inter(fav 6, fav 7)' => '1, 6, 11',
+		'win hist(fav 7)' => '1, 3, 5, 6, 9, 11, 13',
 		'union' => '1, 6, 11',
 		'win' => '6, 7, 10',
-		'place' => '6, 7',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '1',
-		'place' => '1',
+		'win hist(fav 1)' => '1, 2, 4, 5, 7, 8, 9',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '4, 5',
+		'win hist(fav 4)' => '1, 2, 4, 6, 7, 9, 12',
 		'inter(fav 4, fav 5)' => '4, 7',
+		'win hist(fav 5)' => '3, 4, 5, 7, 8, 10, 11',
 		'union' => '4, 7',
-		'win' => '4, 5',
-		'place' => '4, 5',
 	],
 	'9' => [
 		/**
