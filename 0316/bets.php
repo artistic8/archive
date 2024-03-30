@@ -9,6 +9,7 @@ return [
 		'inter(fav 3, fav 10)' => '1, 4, 5',
 		'union' => '1, 4, 5',
 		'win' => '1, 3, 10',
+		'place' => '3, 10',
 	],
 	'2' => [
 		/**
@@ -21,6 +22,7 @@ return [
 		Race 3
 		*/
 		'favorites' => '3, 1',
+		'place' => '1',
 	],
 	'4' => [
 		/**
@@ -28,12 +30,14 @@ return [
 		*/
 		'favorites' => '11, 1, 6',
 		'additional favorites' => '8',
+		'place' => '1',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
 		'favorites' => '10, 4',
+		'place' => '4',
 	],
 	'6' => [
 		/**
@@ -43,18 +47,21 @@ return [
 		'inter(fav 2, fav 6)' => '4, 10',
 		'union' => '4, 10',
 		'win' => '2, 6, 12',
+		'place' => '2, 6',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '6, 4, 7',
+		'place' => '4',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '7, 1, 5',
+		'place' => '5',
 	],
 	'9' => [
 		/**

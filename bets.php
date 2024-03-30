@@ -53,12 +53,15 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
+    $place = [];
     foreach($favorites as $one){
         $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
+        if(count($win1) < 6) continue;
+        if(!in_array($one, $place)) $place[] = $one;
         foreach($favorites as $two){
             if($two > $one){
                 $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
-                if(count($win1) < 6 || count($win2) < 6) continue;
+                if(count($win2) < 6) continue;
                 $inter = array_intersect($win1, $win2);
                 if(!empty($inter)){
                     $union = array_values(array_unique(array_merge($union, $inter)));
@@ -70,6 +73,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($union)){
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
         $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
+    }
+    if(!empty($place)){
+        sort($place);
+        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
