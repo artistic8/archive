@@ -1,13 +1,4 @@
 <?php
-/**
- * returns true if array1 is cotnained in array2
- */
-function inArray($array1, $array2){
-    foreach($array1 as $val){
-        if(!in_array($val, $array2)) return false;
-    }
-    return true;
-}
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
@@ -63,15 +54,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($favorites);
     $union = [];
     foreach($favorites as $one){
+        $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
         foreach($favorites as $two){
-            if(!isset($history[$raceNumber][$one]['win']) || !isset($history[$raceNumber][$two]['win'])) continue;
             if($two > $one){
-                $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
                 $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
+                if(count($win1) < 6 || count($win2) < 6) continue;
                 $inter = array_intersect($win1, $win2);
-                if(count($inter) >= 3){
-                    // $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
-                    // $racetext .= "\t\t'win hist(fav $two)' => '" . implode(", ", $win2) . "',\n"; 
+                if(!empty($inter)){
                     $union = array_values(array_unique(array_merge($union, $inter)));
                     $racetext .= "\t\t'inter(fav $one, fav $two)' => '" . implode(", ", $inter) . "',\n"; 
                 }
@@ -79,9 +68,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
     }
     if(!empty($union)){
-        $candidates = [2, 3, 4, 5, 6 ];
-        $place = array_intersect($favorites, $candidates);
-        $racetext .= "\t\t'win' => '" . implode(", ", $place) . "',\n";
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+        $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
@@ -89,7 +77,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     unset($oldAddedFavorites);
     unset($addedFavorites);
     unset($union);
-    unset($place);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";

@@ -13,17 +13,15 @@ return [
 		*/
 		'favorites' => '5, 2, 7',
 		'additional favorites' => '4, 6',
-		'inter(fav 2, fav 4)' => '5, 7, 12',
 		'inter(fav 2, fav 6)' => '2, 5, 6, 8',
-		'win' => '2, 4, 5, 6',
+		'union' => '2, 5, 6, 8',
+		'win' => '2, 4, 5, 6, 7',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '3, 8, 10',
-		'inter(fav 3, fav 8)' => '1, 3, 8, 12',
-		'win' => '3',
 	],
 	'4' => [
 		/**
@@ -62,6 +60,7 @@ return [
 		'favorites' => '7, 5, 11',
 		'additional favorites' => '3, 10',
 		'inter(fav 3, fav 5)' => '3, 8, 11',
-		'win' => '3, 5',
+		'union' => '3, 8, 11',
+		'win' => '3, 5, 7, 10, 11',
 	],
 ];

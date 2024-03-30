@@ -12,8 +12,6 @@ return [
 		Race 2
 		*/
 		'favorites' => '2, 1, 14',
-		'inter(fav 1, fav 2)' => '2, 6, 7, 9',
-		'win' => '2',
 	],
 	'3' => [
 		/**
@@ -44,16 +42,12 @@ return [
 		Race 7
 		*/
 		'favorites' => '7, 2, 5',
-		'inter(fav 2, fav 7)' => '2, 4, 7',
-		'win' => '2, 5',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '2, 6',
-		'inter(fav 2, fav 6)' => '4, 6, 11',
-		'win' => '2, 6',
 	],
 	'9' => [
 		/**
