@@ -27,7 +27,6 @@ $totalRaces = count($allRacesOdds);
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
-
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesOdds[$raceNumber])) continue;
     if(isset($oldData)){
@@ -80,12 +79,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
     }
     if(!empty($union)){
-        $candidates = [2, 3, 4, 5,6 ];
-        $racetext .= "\t\t'win' => '" . implode(", ", $candidates) . "',\n";
+        $candidates = [2, 3, 4, 5, 6 ];
         $place = array_intersect($favorites, $candidates);
-        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
+        $racetext .= "\t\t'win' => '" . implode(", ", $place) . "',\n";
     }
-    
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
