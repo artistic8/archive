@@ -13,9 +13,8 @@ return [
 		*/
 		'favorites' => '2, 1, 14',
 		'inter(fav 1, fav 2)' => '2, 6, 7, 9',
-		'win' => '2, 6, 7, 9',//count: 4
-		'candidates' => '6, 7, 9',
-		'place' => '',
+		'union' => '2, 6, 7, 9',//count: 4
+		'win' => '2, 6, 7, 9',
 	],
 	'3' => [
 		/**
@@ -47,7 +46,8 @@ return [
 		*/
 		'favorites' => '7, 2, 5',
 		'inter(fav 2, fav 7)' => '2, 4, 7',
-		'win' => '2, 4, 7',//count: 3
+		'union' => '2, 4, 7',//count: 3
+		'win' => '2, 4, 7, 5',
 	],
 	'8' => [
 		/**
@@ -55,7 +55,8 @@ return [
 		*/
 		'favorites' => '2, 6',
 		'inter(fav 2, fav 6)' => '4, 6, 11',
-		'win' => '4, 6, 11',//count: 3
+		'union' => '4, 6, 11',//count: 3
+		'win' => '4, 6, 11, 2',
 	],
 	'9' => [
 		/**
