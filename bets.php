@@ -86,13 +86,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $sortedShit = $shit;
         $shit = array_slice($shit, 0, 4);
         sort($shit);
-        $racetext .= "\t\t'win' => '" . implode(", ", $shit) . "',\n";
         sort($sortedShit);
         $sortedShit = array_slice($sortedShit, 0, 4);
-        $racetext .= "\t\t'win' => '" . implode(", ", $sortedShit) . "',\n";
-        $diff = array_merge(array_diff($shit, $sortedShit), array_diff($sortedShit, $shit));
-        sort($diff);
-        $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+        $what = array_intersect($shit, $sortedShit);
+        sort($what);
+        $racetext .= "\t\t'wp' => '" . implode(", ", $what) . "',\n";
         // $place = array_intersect($favorites, $candidates);
         // $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     }
