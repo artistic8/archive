@@ -6,24 +6,24 @@ return [
 		Race 1
 		*/
 		'favorites' => '3, 1, 10',
-		'win hist(fav 3)' => '1, 3, 4, 5, 6, 7',
+		'inter(fav 1, fav 3)' => '1, 5, 7',
+		'inter(fav 1, fav 10)' => '1, 5, 8, 11',
 		'inter(fav 3, fav 10)' => '1, 4, 5',
-		'win hist(fav 10)' => '1, 4, 5, 9, 8, 10, 11',
-		'union' => '1, 4, 5',
-		'win' => '1, 3, 10',
+		'union' => '1, 4, 5, 7, 8, 11',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
 		'favorites' => '9, 4',
+		'inter(fav 4, fav 9)' => '3',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '3, 1',
-		'win hist(fav 1)' => '1, 2, 4, 5, 8, 10, 11',
+		'inter(fav 1, fav 3)' => '1, 8',
 	],
 	'4' => [
 		/**
@@ -31,50 +31,62 @@ return [
 		*/
 		'favorites' => '11, 1, 6',
 		'additional favorites' => '8',
-		'win hist(fav 1)' => '1, 2, 3, 5, 6, 10, 11',
+		'inter(fav 1, fav 6)' => '6, 10, 11',
+		'inter(fav 1, fav 8)' => '1, 3, 11',
+		'inter(fav 1, fav 11)' => '6, 11',
+		'inter(fav 6, fav 8)' => '11',
+		'inter(fav 6, fav 11)' => '6, 11',
+		'inter(fav 8, fav 11)' => '11',
+		'union' => '1, 3, 6, 10, 11',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
 		'favorites' => '10, 4',
-		'win hist(fav 4)' => '1, 2, 3, 4, 6, 7',
+		'inter(fav 4, fav 10)' => '2, 4',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
 		'favorites' => '12, 2, 6',
-		'win hist(fav 2)' => '2, 3, 4, 5, 8, 10',
 		'inter(fav 2, fav 6)' => '4, 10',
-		'win hist(fav 6)' => '1, 4, 6, 10, 11, 12',
-		'union' => '4, 10',
-		'win' => '2, 6, 12',
+		'inter(fav 6, fav 12)' => '1, 11, 12',
+		'union' => '1, 4, 10, 11, 12',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '6, 4, 7',
-		'win hist(fav 4)' => '1, 3, 4, 5, 7, 8, 10',
+		'inter(fav 4, fav 6)' => '10',
+		'inter(fav 4, fav 7)' => '4, 7, 8',
+		'union' => '4, 7, 8, 10',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '7, 1, 5',
-		'win hist(fav 5)' => '3, 4, 5, 7, 8, 10, 11',
+		'inter(fav 1, fav 5)' => '5, 7, 11',
+		'inter(fav 1, fav 7)' => '1, 5',
+		'inter(fav 5, fav 7)' => '3, 4, 5',
+		'union' => '1, 3, 4, 5, 7, 11',
+		'win' => '1, 5, 7',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
 		'favorites' => '5, 10',
+		'inter(fav 5, fav 10)' => '11',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '9, 7, 14',
+		'inter(fav 7, fav 9)' => '11',
 	],
 ];
