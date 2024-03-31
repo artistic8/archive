@@ -29,7 +29,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
-    $newFavorites = array_slice($runners, 0, 4);
+    $newFavorites = array_slice($runners, 0, 3);
     $favorites = array_values(array_unique(array_merge($favorites, $newFavorites)));
     sort($favorites);
     $racetext = "";
