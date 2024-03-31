@@ -11,6 +11,7 @@ return [
 		'inter(fav 3, fav 10)' => '1, 4, 5',
 		'inter(fav 7, fav 8)' => '3',
 		'inter(fav 8, fav 10)' => '1, 10',
+		'good ones' => '3, 7',
 		'union' => '1, 3, 4, 5, 7, 10',
 	],
 	'2' => [
@@ -52,6 +53,7 @@ return [
 		'inter(fav 1, fav 3)' => '1, 3, 4, 7',
 		'inter(fav 1, fav 7)' => '1, 4, 7',
 		'inter(fav 3, fav 7)' => '1, 4, 7',
+		'good ones' => '1, 3, 7',
 		'union' => '1, 3, 4, 7',
 		'win' => '1, 3, 7',
 	],

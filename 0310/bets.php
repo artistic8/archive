@@ -67,6 +67,7 @@ return [
 		'inter(fav 4, fav 6)' => '4, 6, 12',
 		'inter(fav 4, fav 8)' => '1, 2, 12',
 		'inter(fav 6, fav 8)' => '12',
+		'good ones' => '4, 6',
 		'union' => '1, 2, 4, 6, 12',
 		'win' => '4, 6, 8',
 	],
