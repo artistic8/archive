@@ -46,7 +46,6 @@ return [
 		*/
 		'favorites' => '1, 12',
 		'inter(fav 1, fav 12)' => '1, 12',
-		'good ones' => '1, 12',
 	],
 	'7' => [
 		/**
@@ -56,7 +55,6 @@ return [
 		'inter(fav 2, fav 5)' => '2, 5',
 		'inter(fav 2, fav 7)' => '2, 4, 7',
 		'inter(fav 5, fav 7)' => '2',
-		'good ones' => '2, 5, 7',
 		'union' => '2, 4, 5, 7',
 		'win' => '2, 5, 7',
 	],

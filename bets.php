@@ -53,7 +53,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
-    $goodOnes = [];
     foreach($favorites as $one){
         $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
         // if(count($win1) < 6) continue;
@@ -65,17 +64,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 $inter = array_intersect($win1, $win2);
                 if(!empty($inter)){
                     $union = array_values(array_unique(array_merge($union, $inter)));
-                    if(in_array($one, $inter) && in_array($two, $inter)){
-                        if(!in_array($one, $goodOnes)) $goodOnes[] = $one;
-                        if(!in_array($two, $goodOnes)) $goodOnes[] = $two;
-                    }
                     $racetext .= "\t\t'inter(fav $one, fav $two)' => '" . implode(", ", $inter) . "',\n"; 
                 }
             }
         }
-    }
-    if(!empty($goodOnes)){
-        $racetext .= "\t\t'good ones' => '" . implode(", ", $goodOnes) . "',\n";
     }
     if(count($union) >= 3){
         sort($union);

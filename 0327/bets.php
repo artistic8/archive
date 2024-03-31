@@ -36,7 +36,6 @@ return [
 		'inter(fav 1, fav 3)' => '1, 3, 4, 7, 10, 12',
 		'inter(fav 1, fav 4)' => '1, 3, 4, 7',
 		'inter(fav 3, fav 4)' => '1, 3, 4, 7',
-		'good ones' => '1, 3, 4',
 		'union' => '1, 3, 4, 7, 10, 12',
 	],
 	'6' => [
