@@ -59,9 +59,6 @@ return [
 		'inter(fav 1, fav 4)' => '1, 6, 7',
 		'inter(fav 1, fav 10)' => '7',
 		'inter(fav 4, fav 10)' => '4, 7, 9',
-		'union' => '1, 4, 6, 7, 9',
-		'win/qin/trio' => '1, 4, 10, 13, 14',
-		'win' => '6, 7, 9',
 	],
 	'9' => [
 		/**

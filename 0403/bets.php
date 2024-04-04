@@ -29,9 +29,6 @@ return [
 		'inter(fav 1, fav 10)' => '10',
 		'inter(fav 1, fav 12)' => '3',
 		'inter(fav 2, fav 10)' => '10',
-		'union' => '2, 3, 10',
-		'win/qin/trio' => '1, 2, 10, 12',
-		'win' => '3',
 	],
 	'5' => [
 		/**
@@ -58,9 +55,6 @@ return [
 		'inter(fav 5, fav 10)' => '10',
 		'inter(fav 6, fav 10)' => '10',
 		'inter(fav 8, fav 10)' => '8',
-		'union' => '2, 8, 10',
-		'win/qin/trio' => '5, 6, 8, 10, 13',
-		'win' => '2',
 	],
 	'8' => [
 		/**
