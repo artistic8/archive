@@ -11,7 +11,7 @@ return [
 		'inter(fav 6, fav 9)' => '1, 6',
 		'union' => '1, 6, 7, 8, 9',
 		'win/qqpl/trio' => '5, 6, 9',
-		'sums' => '1, 3, 4, 11',
+		'sums' => '11',
 	],
 	'2' => [
 		/**
@@ -51,8 +51,7 @@ return [
 		'inter(fav 7, fav 12)' => '1, 11',
 		'union' => '1, 6, 11, 12',
 		'win/qqpl/trio' => '6, 7, 12',
-		'sums' => '1, 5, 6',
-		'X' => '6',
+		'sums' => '',
 	],
 	'7' => [
 		/**
@@ -83,7 +82,6 @@ return [
 		'inter(fav 2, fav 4)' => '3',
 		'inter(fav 2, fav 12)' => '3',
 		'inter(fav 4, fav 12)' => '3',
-		'sums' => '2, 6, 8, 10',
-		'X' => '2',
+		'sums' => '6',
 	],
 ];

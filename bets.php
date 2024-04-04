@@ -50,7 +50,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($addedFavorites))  {
         $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
     }
-    $favorites = array_merge($favorites, $addedFavorites);
+    // $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
     foreach($favorites as $one){
@@ -82,7 +82,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             foreach($favorites as $two){
                 if($two > $one){
                     if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
-                    if(!in_array($two - $one, $sums)) $sums[] = $two - $one;
                 }
             }
         }
