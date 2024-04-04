@@ -29,6 +29,7 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'inter(fav 2, fav 3)' => '1, 8, 12',
+		'sums' => '1, 5',
 	],
 	'4' => [
 		/**
@@ -48,6 +49,7 @@ return [
 		*/
 		'favorites' => '3, 7',
 		'inter(fav 3, fav 7)' => '1, 3, 5, 9, 11',
+		'sums' => '4, 10',
 	],
 	'7' => [
 		/**
@@ -55,6 +57,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'inter(fav 1, fav 3)' => '1, 2, 9',
+		'sums' => '2, 4',
 	],
 	'8' => [
 		/**

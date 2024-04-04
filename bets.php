@@ -69,7 +69,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         }
     }
-    if(count($favorites) >= 3){
+    if(count($favorites) >= 2){
         $sums = [];
         foreach($favorites as $one){
             foreach($favorites as $two){

@@ -17,12 +17,14 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'inter(fav 2, fav 3)' => '2, 6, 7, 12, 13',
+		'sums' => '1, 5',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '6, 9',
+		'sums' => '3',
 	],
 	'4' => [
 		/**
@@ -30,6 +32,7 @@ return [
 		*/
 		'favorites' => '4, 11',
 		'inter(fav 4, fav 11)' => '11',
+		'sums' => '7',
 	],
 	'5' => [
 		/**
@@ -58,6 +61,7 @@ return [
 		*/
 		'favorites' => '4, 5',
 		'inter(fav 4, fav 5)' => '4, 7',
+		'sums' => '1, 9',
 	],
 	'9' => [
 		/**
@@ -65,11 +69,13 @@ return [
 		*/
 		'favorites' => '2, 6',
 		'inter(fav 2, fav 6)' => '2, 4, 6',
+		'sums' => '4, 8',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '6, 11',
+		'sums' => '5',
 	],
 ];

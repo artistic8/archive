@@ -20,6 +20,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'inter(fav 3, fav 4)' => '4, 7, 12',
+		'sums' => '1, 7',
 	],
 	'3' => [
 		/**
@@ -67,6 +68,7 @@ return [
 		Race 7
 		*/
 		'favorites' => '4, 9',
+		'sums' => '5',
 	],
 	'8' => [
 		/**
@@ -74,6 +76,7 @@ return [
 		*/
 		'favorites' => '3, 8',
 		'inter(fav 3, fav 8)' => '12',
+		'sums' => '5, 11',
 	],
 	'9' => [
 		/**
