@@ -95,7 +95,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'sums' => '" . implode(", ", $sums) . "',\n";
         $X = array_intersect($sums, $favorites, $union);
         if(!empty($X)) $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
-        $Y = array_intersect($sums, $favorites, $union);
+        $Y = array_intersect($diffs, $favorites, $union);
         if(!empty($Y)) $racetext .= "\t\t'Y' => '" . implode(", ", $Y) . "',\n";
     }
     $racetext .= "\t],\n";
