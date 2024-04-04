@@ -87,8 +87,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
             if(count($favorites) < 6 && !in_array(10, $favorites)) {
                 $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
-                $hedge = array_diff($sums, $favorites);
-                $racetext .= "\t\t'wp(hedge)' => '" . implode(", ", $hedge) . "',\n";
             }
         }
     }
