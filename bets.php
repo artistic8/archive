@@ -86,12 +86,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 }
             }
         }
-        $sums = array_intersect($sums, $runners);
-        $all = array_values(array_unique(array_merge($union, $favorites, $sums)));
         sort($sums);
-        sort($all);
+        $sums = array_intersect($sums, $runners);
+        $X = array_intersect($sums, $favorites);
+        sort($X);
         $racetext .= "\t\t'sums' => '" . implode(", ", $sums) . "',\n";
-        $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',\n";
+        $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
