@@ -69,26 +69,26 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         }
     }
+    if(count($union) >= 3 && count($favorites) < 6 && !in_array(10, $favorites)){
+        sort($union);
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+        // if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites) && !in_array(10, $union)) {
+        if(count($favorites) >= 3) {
+            $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
+        }
+    }
     if(count($favorites) >= 2){
         $sums = [];
         foreach($favorites as $one){
             foreach($favorites as $two){
                 if($two > $one){
                     if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
-                    if(!in_array($two - $one, $sums)) $sums[] = $two - $one;
                 }
             }
         }
         sort($sums);
         $sums = array_intersect($sums, $runners);
         $racetext .= "\t\t'sums' => '" . implode(", ", $sums) . "',\n";
-        if(!empty(array_intersect($favorites, $sums))){
-            sort($union);
-            $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
-            if(count($favorites) < 6 && !in_array(10, $favorites)) {
-                $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
-            }
-        }
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
