@@ -11,7 +11,7 @@ return [
 		'inter(fav 6, fav 9)' => '1, 6',
 		'union' => '1, 6, 7, 8, 9',
 		'win/qqpl/trio' => '5, 6, 9',
-		'sums' => '11',
+		'place' => '9',
 	],
 	'2' => [
 		/**
@@ -32,7 +32,6 @@ return [
 		'favorites' => '1, 8',
 		'inter(fav 1, fav 8)' => '1, 3, 11',
 		'union' => '1, 3, 11',
-		'sums' => '9',
 	],
 	'5' => [
 		/**
@@ -41,7 +40,6 @@ return [
 		'favorites' => '3, 7',
 		'inter(fav 3, fav 7)' => '1, 4, 7, 12',
 		'union' => '1, 4, 7, 12',
-		'sums' => '10',
 	],
 	'6' => [
 		/**
@@ -53,8 +51,7 @@ return [
 		'inter(fav 7, fav 12)' => '1, 11',
 		'union' => '1, 6, 11, 12',
 		'win/qqpl/trio' => '6, 7, 12',
-		'sums' => '',
-		'Y' => '6',
+		'place' => '12',
 	],
 	'7' => [
 		/**
@@ -62,7 +59,6 @@ return [
 		*/
 		'favorites' => '7, 10',
 		'inter(fav 7, fav 10)' => '8',
-		'sums' => '',
 	],
 	'8' => [
 		/**
@@ -70,7 +66,6 @@ return [
 		*/
 		'favorites' => '9, 11',
 		'inter(fav 9, fav 11)' => '3, 4',
-		'sums' => '',
 	],
 	'9' => [
 		/**
@@ -78,7 +73,6 @@ return [
 		*/
 		'favorites' => '4, 7',
 		'inter(fav 4, fav 7)' => '6',
-		'sums' => '11',
 	],
 	'10' => [
 		/**
@@ -88,6 +82,5 @@ return [
 		'inter(fav 2, fav 4)' => '3',
 		'inter(fav 2, fav 12)' => '3',
 		'inter(fav 4, fav 12)' => '3',
-		'sums' => '6',
 	],
 ];
