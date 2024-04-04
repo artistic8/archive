@@ -74,7 +74,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         foreach($favorites as $one){
             foreach($favorites as $two){
                 if($two > $one){
-                    // if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
+                    if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
                     if(!in_array($two - $one, $sums)) $sums[] = $two - $one;
                 }
             }
