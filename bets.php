@@ -69,7 +69,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         }
     }
-    if(count($union) >= 3){
+    if(count($union) >= 3 && count($favorites) < 6){
         sort($union);
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
         // if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites) && !in_array(10, $union)) {
