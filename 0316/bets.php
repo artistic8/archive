@@ -9,8 +9,7 @@ return [
 		'inter(fav 1, fav 3)' => '1, 5, 7',
 		'inter(fav 1, fav 10)' => '1, 5, 8, 11',
 		'inter(fav 3, fav 10)' => '1, 4, 5',
-		'union' => '1, 4, 5, 7, 8, 11',
-		'sums' => '4, 11',
+		'sums' => '2, 4, 7, 9, 11',
 	],
 	'2' => [
 		/**
@@ -33,11 +32,12 @@ return [
 		'favorites' => '11, 1, 6',
 		'additional favorites' => '8',
 		'inter(fav 1, fav 6)' => '6, 10, 11',
+		'inter(fav 1, fav 8)' => '1, 3, 11',
 		'inter(fav 1, fav 11)' => '6, 11',
+		'inter(fav 6, fav 8)' => '11',
 		'inter(fav 6, fav 11)' => '6, 11',
-		'union' => '6, 10, 11',
-		'win/qqpl/trio' => '1, 6, 11',
-		'sums' => '7, 12',
+		'inter(fav 8, fav 11)' => '11',
+		'sums' => '2, 3, 5, 7, 9, 10, 12, 14',
 	],
 	'5' => [
 		/**
@@ -53,9 +53,10 @@ return [
 		'favorites' => '12, 2, 6',
 		'inter(fav 2, fav 6)' => '4, 10',
 		'inter(fav 6, fav 12)' => '1, 11, 12',
+		'sums' => '4, 6, 8, 10',
 		'union' => '1, 4, 10, 11, 12',
 		'win/qqpl/trio' => '2, 6, 12',
-		'sums' => '8',
+		'wp(hedge)' => '4, 6, 8, 10',
 	],
 	'7' => [
 		/**
@@ -64,9 +65,7 @@ return [
 		'favorites' => '6, 4, 7',
 		'inter(fav 4, fav 6)' => '10',
 		'inter(fav 4, fav 7)' => '4, 7, 8',
-		'union' => '4, 7, 8, 10',
-		'win/qqpl/trio' => '4, 6, 7',
-		'sums' => '10, 11',
+		'sums' => '1, 2, 3, 10, 11',
 	],
 	'8' => [
 		/**
@@ -76,9 +75,7 @@ return [
 		'inter(fav 1, fav 5)' => '5, 7, 11',
 		'inter(fav 1, fav 7)' => '1, 5',
 		'inter(fav 5, fav 7)' => '3, 4, 5',
-		'union' => '1, 3, 4, 5, 7, 11',
-		'win/qqpl/trio' => '1, 5, 7',
-		'sums' => '6, 8, 12',
+		'sums' => '2, 4, 6, 8, 12',
 	],
 	'9' => [
 		/**
@@ -93,6 +90,9 @@ return [
 		*/
 		'favorites' => '9, 7, 14',
 		'inter(fav 7, fav 9)' => '11',
-		'sums' => '',
+		'sums' => '2, 5, 7',
+		'union' => '11',
+		'win/qqpl/trio' => '7, 9, 14',
+		'wp(hedge)' => '2, 5, 7',
 	],
 ];
