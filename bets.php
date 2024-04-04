@@ -74,9 +74,24 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
         if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites)) {
             $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
-            $diff = array_diff($union, $favorites);
-            $racetext .= "\t\t'win' => '" . implode(", ", $diff) . "',\n";
         }
+    }
+    if(count($favorites) >= 3){
+        $sums = [];
+        foreach($favorites as $one){
+            foreach($favorites as $two){
+                if($two > $one){
+                    if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
+                    if(!in_array($two - $one, $sums)) $sums[] = $two - $one;
+                }
+            }
+        }
+        $sums = array_intersect($sums, $runners);
+        $all = array_values(array_unique(array_merge($union, $favorites, $sums)));
+        sort($sums);
+        sort($all);
+        $racetext .= "\t\t'sums' => '" . implode(", ", $sums) . "',\n";
+        $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
