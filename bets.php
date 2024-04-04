@@ -79,18 +79,24 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(count($favorites) >= 2){
         $sums = [];
+        $diffs = [];
         foreach($favorites as $one){
             foreach($favorites as $two){
                 if($two > $one){
                     if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
+                    if(!in_array($two - $one, $diffs)) $diffs[] = $two - $one;
                 }
             }
         }
         sort($sums);
+        sort($diffs);
         $sums = array_intersect($sums, $runners);
+        $diffs = array_intersect($diffs, $runners);
         $racetext .= "\t\t'sums' => '" . implode(", ", $sums) . "',\n";
         $X = array_intersect($sums, $favorites, $union);
         if(!empty($X)) $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
+        $Y = array_intersect($sums, $favorites, $union);
+        if(!empty($Y)) $racetext .= "\t\t'Y' => '" . implode(", ", $Y) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
