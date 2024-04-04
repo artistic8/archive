@@ -79,5 +79,6 @@ return [
 		'favorites' => '8, 7, 1',
 		'inter(fav 7, fav 8)' => '7, 8',
 		'sums' => '8, 9',
+		'X' => '8',
 	],
 ];

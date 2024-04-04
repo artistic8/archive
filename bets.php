@@ -89,6 +89,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         sort($sums);
         $sums = array_intersect($sums, $runners);
         $racetext .= "\t\t'sums' => '" . implode(", ", $sums) . "',\n";
+        $X = array_intersect($sums, $favorites, $union);
+        if(!empty($X)) $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);

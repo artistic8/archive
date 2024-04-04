@@ -10,6 +10,7 @@ return [
 		'inter(fav 1, fav 7)' => '7',
 		'inter(fav 6, fav 7)' => '7',
 		'sums' => '7, 8',
+		'X' => '7',
 	],
 	'2' => [
 		/**

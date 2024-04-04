@@ -8,9 +8,12 @@ return [
 		'favorites' => '1, 9, 10, 12',
 		'inter(fav 1, fav 9)' => '1, 8',
 		'inter(fav 1, fav 10)' => '1, 5, 8, 11',
+		'inter(fav 1, fav 12)' => '8',
 		'inter(fav 9, fav 10)' => '1, 8',
-		'inter(fav 10, fav 12)' => '10',
+		'inter(fav 9, fav 12)' => '8',
+		'inter(fav 10, fav 12)' => '8, 10',
 		'sums' => '10, 11',
+		'X' => '10',
 	],
 	'2' => [
 		/**

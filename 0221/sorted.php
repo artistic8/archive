@@ -7,6 +7,8 @@ return [
 		*/
 		'favorites' => '1, 9, 12',
 		'inter(fav 1, fav 9)' => '1, 8',
+		'inter(fav 1, fav 12)' => '8',
+		'inter(fav 9, fav 12)' => '8',
 	],
 	'2' => [
 		/**
