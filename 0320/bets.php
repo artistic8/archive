@@ -33,6 +33,7 @@ return [
 		*/
 		'favorites' => '3, 8, 10',
 		'inter(fav 3, fav 8)' => '1, 3, 8, 12',
+		'union' => '1, 3, 8, 12',
 	],
 	'4' => [
 		/**
@@ -81,5 +82,6 @@ return [
 		'inter(fav 5, fav 11)' => '12',
 		'inter(fav 7, fav 10)' => '6',
 		'inter(fav 7, fav 11)' => '12',
+		'union' => '3, 6, 8, 10, 11, 12',
 	],
 ];

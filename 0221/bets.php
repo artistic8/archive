@@ -10,6 +10,7 @@ return [
 		'inter(fav 1, fav 10)' => '1, 5, 8, 11',
 		'inter(fav 9, fav 10)' => '1, 8',
 		'inter(fav 10, fav 12)' => '10',
+		'union' => '1, 5, 8, 10, 11',
 	],
 	'2' => [
 		/**

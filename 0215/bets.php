@@ -71,6 +71,7 @@ return [
 		'inter(fav 5, fav 8)' => '3, 8',
 		'inter(fav 5, fav 10)' => '3, 4, 7, 10',
 		'inter(fav 8, fav 10)' => '3',
+		'union' => '3, 4, 7, 8, 10',
 	],
 	'9' => [
 		/**
