@@ -10,7 +10,8 @@ return [
 		'inter(fav 5, fav 8)' => '1',
 		'inter(fav 7, fav 8)' => '3',
 		'union' => '1, 3, 7',
-		'win' => '5, 7, 8',
+		'win/qin/trio' => '5, 7, 8',
+		'win' => '1, 3',
 	],
 	'2' => [
 		/**
@@ -47,6 +48,8 @@ return [
 		'inter(fav 6, fav 7)' => '1, 6, 11',
 		'inter(fav 6, fav 10)' => '10, 12',
 		'union' => '1, 6, 10, 11, 12',
+		'win/qin/trio' => '6, 7, 10',
+		'win' => '1, 11, 12',
 	],
 	'7' => [
 		/**
