@@ -69,7 +69,7 @@ return [
 		'inter(fav 5, fav 7)' => '3, 4, 5',
 		'inter(fav 6, fav 7)' => '4',
 		'union' => '1, 3, 4, 5, 6, 7, 11, 12',
-		'win/qin/trio' => '4, 5, 6, 7',
+		'win/qqpl/trio' => '4, 5, 6, 7',
 		'win' => '1, 3, 11, 12',
 	],
 ];

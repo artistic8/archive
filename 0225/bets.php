@@ -37,7 +37,7 @@ return [
 		'inter(fav 8, fav 13)' => '2',
 		'inter(fav 12, fav 13)' => '2',
 		'union' => '1, 2, 8, 10, 12',
-		'win/qin/trio' => '2, 8, 12, 13',
+		'win/qqpl/trio' => '2, 8, 12, 13',
 		'win' => '1, 10',
 	],
 	'4' => [
@@ -81,7 +81,7 @@ return [
 		'inter(fav 8, fav 12)' => '2',
 		'inter(fav 9, fav 12)' => '2',
 		'union' => '1, 2, 3, 4, 6, 12, 13',
-		'win/qin/trio' => '4, 8, 9, 12',
+		'win/qqpl/trio' => '4, 8, 9, 12',
 		'win' => '1, 2, 3, 6, 13',
 	],
 	'9' => [
@@ -103,7 +103,7 @@ return [
 		'inter(fav 3, fav 5)' => '3, 4',
 		'inter(fav 4, fav 5)' => '3, 4',
 		'union' => '3, 4, 11',
-		'win/qin/trio' => '1, 3, 4, 5',
+		'win/qqpl/trio' => '1, 3, 4, 5',
 		'win' => '11',
 	],
 ];

@@ -10,7 +10,7 @@ return [
 		'inter(fav 5, fav 8)' => '1',
 		'inter(fav 7, fav 8)' => '3',
 		'union' => '1, 3, 7',
-		'win/qin/trio' => '5, 7, 8',
+		'win/qqpl/trio' => '5, 7, 8',
 		'win' => '1, 3',
 	],
 	'2' => [

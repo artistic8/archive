@@ -24,7 +24,7 @@ return [
 		'inter(fav 5, fav 6)' => '5',
 		'inter(fav 6, fav 7)' => '2',
 		'union' => '2, 4, 5, 6, 7, 8, 12',
-		'win/qin/trio' => '2, 4, 5, 6, 7',
+		'win/qqpl/trio' => '2, 4, 5, 6, 7',
 		'win' => '8, 12',
 	],
 	'3' => [
