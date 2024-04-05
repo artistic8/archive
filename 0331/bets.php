@@ -6,7 +6,7 @@ return [
 		Race 1
 		*/
 		'favorites' => '8, 14',
-		'win hist(fav 14)' => '14',
+		'win hist(fav 14)' => '14',//count: 1
 	],
 	'2' => [
 		/**
@@ -18,8 +18,7 @@ return [
 		'inter(fav 2, fav 6)' => '2, 5, 6, 8',
 		'union' => '2, 5, 6, 7, 8, 9',
 		'win/qqpl/trio' => '1, 2, 6',
-		'win hist(fav 6)' => '1, 2, 4, 5, 6, 8, 14',
-		'place' => '1',
+		'win hist(fav 6)' => '1, 2, 4, 5, 6, 8, 14',//count: 7
 	],
 	'3' => [
 		/**
@@ -32,7 +31,7 @@ return [
 		Race 4
 		*/
 		'favorites' => '14, 3',
-		'win hist(fav 14)' => '1',
+		'win hist(fav 14)' => '1',//count: 1
 	],
 	'5' => [
 		/**
@@ -40,7 +39,7 @@ return [
 		*/
 		'favorites' => '3, 2',
 		'inter(fav 2, fav 3)' => '1, 7',
-		'win hist(fav 3)' => '1, 3, 4, 7, 10, 12',
+		'win hist(fav 3)' => '1, 3, 4, 7, 10, 12',//count: 6
 	],
 	'6' => [
 		/**
@@ -63,7 +62,7 @@ return [
 		'inter(fav 1, fav 4)' => '1, 6, 7',
 		'inter(fav 1, fav 10)' => '7',
 		'inter(fav 4, fav 10)' => '4, 7, 9',
-		'win hist(fav 14)' => '',
+		'win hist(fav 14)' => '',//count: 0
 	],
 	'9' => [
 		/**
@@ -71,7 +70,7 @@ return [
 		*/
 		'favorites' => '13, 8, 10',
 		'inter(fav 8, fav 10)' => '1',
-		'win hist(fav 13)' => '',
+		'win hist(fav 13)' => '',//count: 0
 	],
 	'10' => [
 		/**
@@ -79,6 +78,6 @@ return [
 		*/
 		'favorites' => '8, 7, 1',
 		'inter(fav 7, fav 8)' => '7, 8',
-		'win hist(fav 8)' => '7, 8',
+		'win hist(fav 8)' => '7, 8',//count: 2
 	],
 ];

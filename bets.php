@@ -81,10 +81,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $max = max($favorites);
         $min = min($favorites);
         $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
-        $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',\n"; 
-        if(in_array($min, $win)){
-            $racetext .= "\t\t'place' => '" . $min . "',\n"; 
-        }
+        $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
+        // if(in_array($min, $win)){
+        //     $racetext .= "\t\t'place' => '" . $min . "',\n"; 
+        // }
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
