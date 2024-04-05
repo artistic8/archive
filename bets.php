@@ -75,11 +75,17 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         // if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites) && !in_array(10, $union)) {
         if(count($favorites) >= 3) {
             $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
-            $place = max($favorites);
-              $racetext .= "\t\t'place' => '" . $place . "',\n";
         }
     }
-   
+    if(count($favorites) >= 2){
+        $max = max($favorites);
+        $min = min($favorites);
+        $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
+        $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',\n"; 
+        if(in_array($min, $win)){
+            $racetext .= "\t\t'place' => '" . $min . "',\n"; 
+        }
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);

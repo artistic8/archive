@@ -15,7 +15,7 @@ return [
 		'inter(fav 1, fav 2)' => '2, 6, 7, 9',
 		'union' => '2, 6, 7, 9',
 		'win/qqpl/trio' => '1, 2, 14',
-		'place' => '14',
+		'win hist(fav 14)' => '',
 	],
 	'3' => [
 		/**
@@ -30,6 +30,7 @@ return [
 		'favorites' => '4, 10, 12',
 		'inter(fav 4, fav 10)' => '4',
 		'inter(fav 4, fav 12)' => '3',
+		'win hist(fav 12)' => '3',
 	],
 	'5' => [
 		/**
@@ -39,6 +40,7 @@ return [
 		'inter(fav 1, fav 2)' => '1, 7',
 		'inter(fav 1, fav 10)' => '4',
 		'inter(fav 2, fav 10)' => '2',
+		'win hist(fav 10)' => '2, 4',
 	],
 	'6' => [
 		/**
@@ -46,6 +48,8 @@ return [
 		*/
 		'favorites' => '1, 12',
 		'inter(fav 1, fav 12)' => '1, 12',
+		'win hist(fav 12)' => '1, 11, 12',
+		'place' => '1',
 	],
 	'7' => [
 		/**
@@ -57,7 +61,8 @@ return [
 		'inter(fav 5, fav 7)' => '2',
 		'union' => '2, 4, 5, 7',
 		'win/qqpl/trio' => '2, 5, 7',
-		'place' => '7',
+		'win hist(fav 7)' => '2, 4, 7, 8',
+		'place' => '2',
 	],
 	'8' => [
 		/**
@@ -66,6 +71,7 @@ return [
 		'favorites' => '2, 6',
 		'inter(fav 2, fav 6)' => '4, 6, 11',
 		'union' => '4, 6, 11',
+		'win hist(fav 6)' => '4, 6, 11',
 	],
 	'9' => [
 		/**
@@ -79,12 +85,13 @@ return [
 		'inter(fav 2, fav 4)' => '4, 6',
 		'union' => '4, 6, 7, 12',
 		'win/qqpl/trio' => '1, 2, 4, 11',
-		'place' => '11',
+		'win hist(fav 11)' => '12',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '2, 8',
+		'win hist(fav 8)' => '7, 8',
 	],
 ];
