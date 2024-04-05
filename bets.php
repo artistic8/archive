@@ -52,46 +52,18 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
-    $union = [];
-    foreach($favorites as $one){
-        $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
-        // if(count($win1) < 6) continue;
-        // $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
-        foreach($favorites as $two){
-            if($two > $one){
-                $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
-                // if(count($win2) < 6) continue;
-                $inter = array_intersect($win1, $win2);
-                if(!empty($inter)){
-                    $union = array_values(array_unique(array_merge($union, $inter)));
-                    $racetext .= "\t\t'inter(fav $one, fav $two)' => '" . implode(", ", $inter) . "',\n"; 
-                }
-            }
-        }
-    }
-    if(count($union) >= 3 && count($favorites) < 6 && !in_array(10, $favorites)){
-        sort($union);
-        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
-        // if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites) && !in_array(10, $union)) {
-        if(count($favorites) >= 3) {
-            $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
-        }
-    }
-    if(count($favorites) >= 2){
-        $max = max($favorites);
-        $min = min($favorites);
-        $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
-        $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
-        // if(in_array($min, $win)){
-        //     $racetext .= "\t\t'place' => '" . $min . "',\n"; 
-        // }
+    $max = max($favorites);
+    $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
+    $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
+   
+    if(count($favorites) >= 3){
+        $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
     unset($oldAddedFavorites);
     unset($addedFavorites);
-    unset($union);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
