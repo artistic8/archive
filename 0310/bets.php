@@ -8,6 +8,7 @@ return [
 		'favorites' => '1, 6, 11',
 		'win hist(fav 11)' => '4, 7, 8, 11',//count: 4
 		'qin/trio' => '1, 6, 11',
+		'all' => '1, 4, 6, 7, 8, 11',//count: 6
 	],
 	'2' => [
 		/**
@@ -16,6 +17,7 @@ return [
 		'favorites' => '2, 4, 5',
 		'win hist(fav 5)' => '5, 10',//count: 2
 		'qin/trio' => '2, 4, 5',
+		'all' => '2, 4, 5, 10',//count: 4
 	],
 	'3' => [
 		/**
@@ -23,6 +25,7 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'win hist(fav 3)' => '1, 3, 7, 8, 12',//count: 5
+		'all' => '1, 2, 3, 7, 8, 12',//count: 6
 	],
 	'4' => [
 		/**
@@ -30,6 +33,7 @@ return [
 		*/
 		'favorites' => '5',
 		'win hist(fav 5)' => '2, 4, 7, 10, 12',//count: 5
+		'all' => '2, 4, 5, 7, 10, 12',//count: 6
 	],
 	'5' => [
 		/**
@@ -37,6 +41,7 @@ return [
 		*/
 		'favorites' => '1',
 		'win hist(fav 1)' => '1, 3, 4, 7, 10, 12',//count: 6
+		'all' => '1, 3, 4, 7, 10, 12',//count: 6
 	],
 	'6' => [
 		/**
@@ -44,6 +49,7 @@ return [
 		*/
 		'favorites' => '3, 7',
 		'win hist(fav 7)' => '1, 3, 5, 6, 9, 11, 13',//count: 7
+		'all' => '1, 3, 5, 6, 7, 9, 11, 13',//count: 8
 	],
 	'7' => [
 		/**
@@ -51,6 +57,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'win hist(fav 3)' => '1, 2, 3, 9, 10',//count: 5
+		'all' => '1, 2, 3, 9, 10',//count: 5
 	],
 	'8' => [
 		/**
@@ -59,6 +66,7 @@ return [
 		'favorites' => '4, 6, 8',
 		'win hist(fav 8)' => '1, 2, 3, 8, 12, 13',//count: 6
 		'qin/trio' => '4, 6, 8',
+		'all' => '1, 2, 3, 4, 6, 8, 12, 13',//count: 8
 	],
 	'9' => [
 		/**
@@ -67,6 +75,7 @@ return [
 		'favorites' => '2, 3, 5',
 		'win hist(fav 5)' => '3, 4, 5, 8, 11, 12',//count: 6
 		'qin/trio' => '2, 3, 5',
+		'all' => '2, 3, 4, 5, 8, 11, 12',//count: 7
 	],
 	'10' => [
 		/**
@@ -75,5 +84,6 @@ return [
 		'favorites' => '3, 5, 11',
 		'win hist(fav 11)' => '',//count: 0
 		'qin/trio' => '3, 5, 11',
+		'all' => '3, 5, 11',//count: 3
 	],
 ];
