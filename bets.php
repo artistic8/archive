@@ -74,7 +74,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_keys($qplsOdds);
     $max = max($favorites);
     $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
-    if(count($win) > 6) continue;
     $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
     if(count($favorites) >= 3){
         $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";

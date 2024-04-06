@@ -1,6 +1,15 @@
 <?php
 
 return [
+	'1' => [
+		/**
+		Race 1
+		*/
+		'favorites' => '6',
+		'win hist(fav 6)' => '1, 6, 7, 9',//count: 4
+		'all' => '6, 1, 7, 9',//count: 4
+		'win' => '1, 6, 7, 9',
+	],
 	'2' => [
 		/**
 		Race 2
