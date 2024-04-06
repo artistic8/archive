@@ -23,6 +23,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['additional favorites'])) $oldAddedFavorites = explode(", ", $oldData[$raceNumber]['additional favorites']);
+        if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
@@ -63,6 +64,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     if(!empty($addedFavorites))  {
         $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
+    }
+    if(!empty($officialWin))  {
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $favorites = array_merge($favorites, $addedFavorites);
     //Sort  favorites by odds
