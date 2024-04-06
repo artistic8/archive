@@ -40,6 +40,20 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     else{
         if(!in_array($favorite, $addedFavorites) && !in_array($favorite, $favorites)) $addedFavorites[] = $favorite;
     }
+    //Sort  favorites by odds
+    $qplsOdds = [];
+    foreach($favorites as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $favorites = array_keys($qplsOdds);
+    //Sort  addedFavorites by odds
+    $qplsOdds = [];
+    foreach($addedFavorites as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $addedFavorites = array_keys($qplsOdds);
     sort($runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
@@ -51,17 +65,32 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
     }
     $favorites = array_merge($favorites, $addedFavorites);
-    sort($favorites);
+    //Sort  favorites by odds
+    $qplsOdds = [];
+    foreach($favorites as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $favorites = array_keys($qplsOdds);
     $max = max($favorites);
     $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
+    if(count($win) > 6) continue;
     $racetext .= "\t\t'win hist(fav $max)' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
-   
     if(count($favorites) >= 3){
         $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";
     }
     $all = array_values(array_unique(array_merge($favorites, $win)));
-    sort($all);
+    //Sort  all by odds
+    $qplsOdds = [];
+    foreach($all as $iIndex){
+        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+    }
+    asort($qplsOdds);
+    $all = array_keys($qplsOdds);
+    $winners = array_slice($all, 0, 4);
+    sort($winners);
     $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n"; 
+    $racetext .= "\t\t'win' => '" . implode(", ", $winners) . "',\n"; 
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
