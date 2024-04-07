@@ -8,6 +8,7 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
+$matrix = include(__DIR__ . DIRECTORY_SEPARATOR . "matrix.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -64,6 +65,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($winners);
     $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n"; 
     $racetext .= "\t\t'win' => '" . implode(", ", $winners) . "',\n"; 
+    foreach($win as $candidate){
+        foreach($favorites as $X){
+            if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
+                $racetext .= "\t\t'place' => '" . $candidate . "',\n"; 
+            }
+        }
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);

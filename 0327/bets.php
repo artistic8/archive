@@ -72,6 +72,7 @@ return [
 		'win hist' => '6, 10',//count: 2
 		'all' => '6, 10',//count: 2
 		'win' => '6, 10',
+		'place' => '6',
 	],
 	'8' => [
 		/**
