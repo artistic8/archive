@@ -54,17 +54,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";
     }
     $all = array_values(array_unique(array_merge($favorites, $win)));
-    //Sort  all by odds
-    $qplsOdds = [];
-    foreach($all as $iIndex){
-        if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
-    }
-    asort($qplsOdds);
-    $all = array_keys($qplsOdds);
-    $winners = array_slice($all, 0, 4);
-    sort($winners);
+    sort($all);
     $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n"; 
-    $racetext .= "\t\t'win' => '" . implode(", ", $winners) . "',\n"; 
     foreach($win as $candidate){
         foreach($favorites as $X){
             if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
