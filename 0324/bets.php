@@ -15,7 +15,7 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '1, 14, 2',
+		'favorites' => '1, 2, 14',
 		'official win' => '2, 14, 11',
 		'win hist' => '',//count: 0
 		'qin/trio' => '1, 2, 14',
@@ -36,7 +36,7 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '12, 4, 10',
+		'favorites' => '4, 10, 12',
 		'official win' => '12, 1, 10',
 		'win hist' => '3',//count: 1
 		'qin/trio' => '4, 10, 12',
@@ -47,7 +47,7 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '2, 10, 1',
+		'favorites' => '1, 2, 10',
 		'official win' => '2, 10, 6',
 		'win hist' => '2, 4',//count: 2
 		'qin/trio' => '1, 2, 10',
@@ -68,7 +68,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '2, 7, 5',
+		'favorites' => '2, 5, 7',
 		'official win' => '7, 1, 11',
 		'win hist' => '2, 4, 7, 8',//count: 4
 		'qin/trio' => '2, 5, 7',
@@ -89,8 +89,7 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '11, 1, 2',
-		'additional favorites' => '4',
+		'favorites' => '1, 2, 4, 11',
 		'official win' => '1, 2, 11',
 		'win hist' => '12',//count: 1
 		'qin/trio' => '1, 2, 4, 11',
@@ -101,7 +100,7 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '8, 2',
+		'favorites' => '2, 8',
 		'official win' => '8, 2, 5',
 		'win hist' => '7, 8',//count: 2
 		'all' => '8, 2, 7',//count: 3

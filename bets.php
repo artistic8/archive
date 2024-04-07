@@ -27,35 +27,25 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
-
-    if(isset($oldAddedFavorites)) $addedFavorites = $oldAddedFavorites;
-    else $addedFavorites = [];
-
+    if(isset($oldAddedFavorites)) $favorites = array_merge($favorites, $oldAddedFavorites);
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
     $favorite = $runners[0];
-    if(count($favorites) < 3){
-        if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
-    }
-    else{
-        if(!in_array($favorite, $addedFavorites) && !in_array($favorite, $favorites)) $addedFavorites[] = $favorite;
-    }
+    if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     sort($runners);
+    sort($favorites);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
-    if(!empty($addedFavorites))  {
-        $racetext .= "\t\t'additional favorites' => '" . implode(", ", $addedFavorites) . "',\n"; 
-    }
+   
     if(!empty($officialWin))  {
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
-    $favorites = array_merge($favorites, $addedFavorites);
-    sort($favorites);
+   
     $max = max($favorites);
     $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
     $racetext .= "\t\t'win hist' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
