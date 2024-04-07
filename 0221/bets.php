@@ -8,7 +8,7 @@ return [
 		'favorites' => '9, 12, 1, 10',
 		'official win' => '8, 9, 12',
 		'win hist' => '8, 10',//count: 2
-		'qin/trio' => '9, 12, 1, 10',
+		'qin/trio' => '1, 9, 10, 12',
 		'all' => '9, 12, 1, 10, 8',//count: 5
 		'win' => '1, 9, 10, 12',
 	],

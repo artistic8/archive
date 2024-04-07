@@ -8,7 +8,7 @@ return [
 		'favorites' => '7, 5, 8',
 		'official win' => '5, 2, 7',
 		'win hist' => '1, 2, 3, 10',//count: 4
-		'qin/trio' => '7, 5, 8',
+		'qin/trio' => '5, 7, 8',
 		'all' => '7, 5, 1, 8, 2, 10, 3',//count: 7
 		'win' => '1, 5, 7, 8',
 	],
@@ -59,7 +59,7 @@ return [
 		'favorites' => '6, 10, 7',
 		'official win' => '7, 3, 6',
 		'win hist' => '10, 12',//count: 2
-		'qin/trio' => '6, 10, 7',
+		'qin/trio' => '6, 7, 10',
 		'all' => '6, 10, 7, 12',//count: 4
 		'win' => '6, 7, 10, 12',
 	],

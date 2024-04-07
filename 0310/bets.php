@@ -19,7 +19,7 @@ return [
 		'favorites' => '2, 5, 4',
 		'official win' => '5, 10, 14',
 		'win hist' => '5, 10',//count: 2
-		'qin/trio' => '2, 5, 4',
+		'qin/trio' => '2, 4, 5',
 		'all' => '2, 5, 4, 10',//count: 4
 		'win' => '2, 4, 5, 10',
 	],
@@ -102,7 +102,7 @@ return [
 		'favorites' => '11, 3, 5',
 		'official win' => '12, 3, 11',
 		'win hist' => '',//count: 0
-		'qin/trio' => '11, 3, 5',
+		'qin/trio' => '3, 5, 11',
 		'all' => '11, 3, 5',//count: 3
 		'win' => '3, 5, 11',
 	],

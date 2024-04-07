@@ -8,7 +8,7 @@ return [
 		'favorites' => '9, 6, 5',
 		'official win' => '1, 6, 7',
 		'win hist' => '1, 3, 6, 8',//count: 4
-		'qin/trio' => '9, 6, 5',
+		'qin/trio' => '5, 6, 9',
 		'all' => '9, 6, 5, 1, 3, 8',//count: 6
 		'win' => '1, 5, 6, 9',
 	],
@@ -59,7 +59,7 @@ return [
 		'favorites' => '6, 12, 7',
 		'official win' => '1, 8, 5',
 		'win hist' => '1, 11, 12',//count: 3
-		'qin/trio' => '6, 12, 7',
+		'qin/trio' => '6, 7, 12',
 		'all' => '6, 12, 7, 1, 11',//count: 5
 		'win' => '1, 6, 7, 12',
 	],
@@ -100,7 +100,7 @@ return [
 		'favorites' => '12, 2, 4',
 		'official win' => '3, 10, 2',
 		'win hist' => '3',//count: 1
-		'qin/trio' => '12, 2, 4',
+		'qin/trio' => '2, 4, 12',
 		'all' => '12, 3, 2, 4',//count: 4
 		'win' => '2, 3, 4, 12',
 	],
