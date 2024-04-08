@@ -62,7 +62,6 @@ return [
 		'qin/trio' => '2, 6, 12',
 		'all' => '1, 2, 6, 11, 12',//count: 5
 		'place' => '2',
-		'place' => '12',
 	],
 	'7' => [
 		/**
@@ -107,7 +106,6 @@ return [
 		'win hist' => '2',//count: 1
 		'qin/trio' => '7, 9, 14',
 		'all' => '2, 7, 9, 14',//count: 4
-		'place' => '2',
 		'place' => '2',
 		'place' => '2',
 	],

@@ -40,7 +40,6 @@ return [
 		'all' => '2, 4, 5, 6, 7, 11, 12',//count: 7
 		'place' => '5',
 		'place' => '5',
-		'place' => '5',
 		'place' => '12',
 		'place' => '12',
 	],

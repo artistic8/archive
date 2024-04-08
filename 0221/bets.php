@@ -12,7 +12,6 @@ return [
 		'all' => '1, 8, 9, 10, 12',//count: 5
 		'place' => '12',
 		'place' => '12',
-		'place' => '12',
 	],
 	'2' => [
 		/**
@@ -83,7 +82,6 @@ return [
 		'official win' => '7, 3, 5',
 		'win hist' => '1, 5, 6, 7, 8, 12',//count: 6
 		'all' => '1, 3, 5, 6, 7, 8, 12',//count: 7
-		'place' => '5',
 		'place' => '5',
 		'place' => '7',
 		'place' => '7',

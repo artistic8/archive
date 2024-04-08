@@ -9,7 +9,6 @@ return [
 		'official win' => '12, 4, 6',
 		'win hist' => '8, 10, 12',//count: 3
 		'all' => '3, 8, 10, 12',//count: 4
-		'place' => '12',
 	],
 	'2' => [
 		/**

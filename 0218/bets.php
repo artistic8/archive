@@ -39,7 +39,6 @@ return [
 		'official win' => '1, 2, 7',
 		'win hist' => '1, 3, 8, 11',//count: 4
 		'all' => '1, 3, 8, 11',//count: 4
-		'place' => '1',
 	],
 	'5' => [
 		/**
@@ -92,7 +91,6 @@ return [
 		'official win' => '6, 7, 1',
 		'win hist' => '5, 6, 9',//count: 3
 		'all' => '4, 5, 6, 7, 9',//count: 5
-		'place' => '6',
 	],
 	'10' => [
 		/**
