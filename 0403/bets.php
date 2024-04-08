@@ -24,7 +24,7 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '3, 11',
+		'favorites' => '3, 10, 11',
 		'official win' => '3, 5, 1',
 		'win hist' => '11',//count: 1
 		'all' => '3, 11',//count: 2

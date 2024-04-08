@@ -18,7 +18,7 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '3',
+		'favorites' => '2, 3',
 		'official win' => '2, 3, 14',
 		'win hist' => '2, 4, 6, 7, 10, 11, 12, 13',//count: 8
 		'all' => '2, 3, 4, 6, 7, 10, 11, 12, 13',//count: 9
@@ -78,7 +78,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '5',
+		'favorites' => '4, 5',
 		'official win' => '8, 5, 10',
 		'win hist' => '3, 4, 5, 7, 8, 10, 11',//count: 7
 		'all' => '3, 4, 5, 7, 8, 10, 11',//count: 7
