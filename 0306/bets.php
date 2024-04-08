@@ -17,8 +17,8 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '5, 6, 4',
-		'win hist' => '3, 4, 5, 7, 8, 12',//count: 6
-		'all' => '3, 4, 5, 7, 8, 12',//count: 6
+		'win hist' => '3, 4, 5, 7, 8, 10, 12',//count: 7
+		'all' => '3, 4, 5, 7, 8, 10, 12',//count: 7
 	],
 	'3' => [
 		/**

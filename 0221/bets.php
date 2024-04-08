@@ -7,9 +7,9 @@ return [
 		*/
 		'favorites' => '1, 9, 10, 12',
 		'official win' => '8, 9, 12',
-		'win hist' => '8, 10, 12',//count: 3
+		'win hist' => '7, 8, 10, 12',//count: 4
 		'qin/trio' => '1, 9, 10, 12',
-		'all' => '1, 8, 9, 10, 12',//count: 5
+		'all' => '1, 7, 8, 9, 10, 12',//count: 6
 		'place' => '12',
 		'place' => '12',
 	],
@@ -80,7 +80,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '7, 3, 5',
-		'win hist' => '1, 5, 6, 7, 8, 12',//count: 6
+		'win hist' => '1, 3, 5, 6, 7, 8, 12',//count: 7
 		'all' => '1, 3, 5, 6, 7, 8, 12',//count: 7
 		'place' => '5',
 		'place' => '7',

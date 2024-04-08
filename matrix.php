@@ -43,6 +43,7 @@ return [
 			12 => false,
 		],
 		4 => [
+			7 => false,
 			8 => false,
 			10 => true,
 			12 => false,
@@ -50,7 +51,6 @@ return [
 			2 => true,
 			4 => true,
 			6 => true,
-			7 => false,
 			9 => false,
 			11 => false,
 		],
@@ -111,10 +111,12 @@ return [
 			5 => false,
 			6 => false,
 			8 => false,
+			7 => false,
 			10 => false,
 			12 => true,
 		],
 		10 => [
+			7 => false,
 			8 => false,
 			10 => false,
 			12 => true,
@@ -133,6 +135,7 @@ return [
 			12 => false,
 		],
 		12 => [
+			7 => false,
 			8 => false,
 			10 => false,
 			12 => false,
@@ -192,8 +195,8 @@ return [
 			5 => false,
 			7 => false,
 			8 => false,
+			10 => false,
 			12 => false,
-			10 => true,
 			6 => false,
 			9 => false,
 		],
@@ -385,6 +388,7 @@ return [
 			12 => false,
 			1 => false,
 			4 => false,
+			2 => true,
 			3 => false,
 			8 => false,
 			5 => false,
@@ -419,6 +423,7 @@ return [
 			12 => false,
 			1 => false,
 			3 => false,
+			2 => true,
 			8 => true,
 		],
 		5 => [
@@ -443,6 +448,7 @@ return [
 		],
 		8 => [
 			1 => false,
+			2 => true,
 			3 => false,
 			8 => false,
 			11 => false,
@@ -538,6 +544,7 @@ return [
 			11 => true,
 		],
 		6 => [
+			1 => false,
 			3 => false,
 			4 => false,
 			6 => false,
@@ -596,6 +603,7 @@ return [
 			7 => false,
 			9 => false,
 			11 => false,
+			4 => true,
 			6 => false,
 			13 => false,
 		],
@@ -609,6 +617,7 @@ return [
 			11 => false,
 			2 => true,
 			12 => false,
+			4 => true,
 			8 => false,
 			13 => false,
 		],
@@ -627,6 +636,7 @@ return [
 		],
 		4 => [
 			3 => false,
+			4 => true,
 			6 => false,
 			7 => false,
 			8 => false,
@@ -807,13 +817,13 @@ return [
 	8 => [
 		1 => [
 			1 => false,
+			3 => false,
 			5 => true,
 			6 => false,
 			7 => true,
 			8 => false,
 			12 => false,
 			2 => false,
-			3 => false,
 			4 => true,
 		],
 		2 => [
@@ -830,13 +840,13 @@ return [
 		],
 		3 => [
 			1 => false,
+			3 => false,
 			5 => false,
 			6 => false,
 			7 => true,
 			8 => false,
 			12 => false,
 			2 => false,
-			3 => false,
 			4 => false,
 		],
 		4 => [
@@ -979,11 +989,11 @@ return [
 		4 => [
 			5 => false,
 			6 => false,
+			7 => false,
 			9 => false,
 			2 => false,
 			3 => false,
 			4 => true,
-			7 => false,
 			1 => false,
 			12 => false,
 		],
@@ -1012,6 +1022,7 @@ return [
 		7 => [
 			5 => false,
 			6 => false,
+			7 => true,
 			9 => false,
 			1 => false,
 			3 => false,
@@ -1063,6 +1074,7 @@ return [
 			12 => false,
 			7 => true,
 			2 => false,
+			10 => true,
 			11 => false,
 		],
 		2 => [
@@ -1078,6 +1090,7 @@ return [
 			12 => false,
 			1 => false,
 			2 => false,
+			10 => true,
 			11 => false,
 		],
 		4 => [
@@ -1110,6 +1123,7 @@ return [
 		],
 		9 => [
 			2 => false,
+			10 => true,
 			11 => false,
 		],
 		10 => [
