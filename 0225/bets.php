@@ -7,9 +7,10 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 8, 10',
 		'official win' => '1, 4, 12',
-		'win hist' => '1, 5, 7, 8, 11',//count: 5
-		'all' => '1, 5, 7, 8, 11',//count: 5
-		'place' => '1',
+		'win hist' => '1, 3, 4, 5, 9, 8, 10, 11',//count: 8
+		'qin/trio' => '1, 2, 3, 8, 10',
+		'all' => '1, 2, 3, 4, 5, 8, 9, 10, 11',//count: 9
+		'place' => '4',
 	],
 	'2' => [
 		/**
@@ -32,7 +33,6 @@ return [
 		'qin/trio' => '2, 8, 12, 13',
 		'all' => '2, 8, 12, 13',//count: 4
 		'place' => '2',
-		'place' => '2',
 	],
 	'4' => [
 		/**
@@ -40,8 +40,8 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'official win' => '10, 4, 6',
-		'win hist' => '4, 10',//count: 2
-		'all' => '4, 6, 10',//count: 3
+		'win hist' => '1, 4, 10, 12',//count: 4
+		'all' => '1, 4, 6, 10, 12',//count: 5
 		'place' => '4',
 		'place' => '10',
 		'place' => '10',
@@ -52,8 +52,8 @@ return [
 		*/
 		'favorites' => '4, 6',
 		'official win' => '7, 6, 10',
-		'win hist' => '3, 4, 6, 7, 9',//count: 5
-		'all' => '3, 4, 6, 7, 9',//count: 5
+		'win hist' => '3, 4, 6, 7, 9, 11',//count: 6
+		'all' => '3, 4, 6, 7, 9, 11',//count: 6
 	],
 	'6' => [
 		/**
@@ -61,8 +61,8 @@ return [
 		*/
 		'favorites' => '10',
 		'official win' => '12, 6, 3',
-		'win hist' => '10, 12',//count: 2
-		'all' => '10, 12',//count: 2
+		'win hist' => '7, 10, 12',//count: 3
+		'all' => '7, 10, 12',//count: 3
 	],
 	'7' => [
 		/**
@@ -99,9 +99,9 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5',
 		'official win' => '4, 5, 3',
-		'win hist' => '3, 4, 5, 8',//count: 4
+		'win hist' => '3, 4, 5, 8, 12',//count: 5
 		'qin/trio' => '1, 3, 4, 5',
-		'all' => '1, 3, 4, 5, 8',//count: 5
+		'all' => '1, 3, 4, 5, 8, 12',//count: 6
 		'place' => '3',
 		'place' => '3',
 		'place' => '3',
