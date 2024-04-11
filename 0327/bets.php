@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '6, 11',
 		'official win' => '1, 4, 6',
+		'Fav11' => 'true',
 		'win hist' => '1, 2, 4, 6, 7, 8, 9, 11, 12',//count: 9
 		'place' => '6',
 	],
@@ -16,6 +17,7 @@ return [
 		*/
 		'favorites' => '5, 8',
 		'official win' => '5, 4, 6',
+		'Fav8' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 10',//count: 6
 	],
 	'3' => [
@@ -32,6 +34,8 @@ return [
 		*/
 		'favorites' => '2, 8, 11',
 		'official win' => '11, 7, 1',
+		'Fav8' => 'true',
+		'Fav11' => 'true',
 		'win hist' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',//count: 11
 		'place' => '1',
 		'place' => '7',
@@ -51,6 +55,7 @@ return [
 		*/
 		'favorites' => '3, 5',
 		'official win' => '5, 1, 10',
+		'Fav5' => 'true',
 		'win hist' => '1, 2, 3, 5, 6, 7, 9, 11',//count: 8
 		'place' => '1',
 	],
@@ -60,6 +65,7 @@ return [
 		*/
 		'favorites' => '6',
 		'official win' => '6, 7, 4',
+		'Fav6' => 'true',
 		'win hist' => '6, 10, 11, 12',//count: 4
 	],
 	'8' => [
@@ -68,6 +74,8 @@ return [
 		*/
 		'favorites' => '1, 9, 10, 12',
 		'official win' => '10, 12, 3',
+		'Fav9' => 'true',
+		'Fav12' => 'true',
 		'win hist' => '1, 2, 3, 4, 6, 7, 9, 10, 11',//count: 9
 		'place' => '3',
 		'place' => '3',
@@ -78,6 +86,7 @@ return [
 		*/
 		'favorites' => '4, 11',
 		'official win' => '2, 4, 11',
+		'Fav11' => 'true',
 		'win hist' => '1, 3, 4, 5, 6, 7, 9, 12',//count: 8
 	],
 ];
