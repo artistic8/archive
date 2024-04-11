@@ -52,6 +52,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $win = array_intersect($history[$raceNumber][$F]['win'], $runners);
         $union = array_values(array_unique(array_merge($union, $win)));
     }
+    sort($union);
     $racetext .= "\t\t'win hist' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
     if(count($favorites) >= 3){
         $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";
