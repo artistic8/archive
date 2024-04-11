@@ -49,13 +49,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($favorites as $F){
         $win = array_intersect($history[$raceNumber][$F]['win'], $runners);
         $union = array_values(array_unique(array_merge($union, $win)));
-        $sum = false;
         for($bo =1; $bo <= 14; $bo++){
             if(isset($matrix[$raceNumber][$F][$bo])){
-                $sum += $matrix[$raceNumber][$F][$bo];
+                if($matrix[$raceNumber][$F][$bo] === true){
+                  $racetext .= "\t\t'Favs $F, $bo' => 'true',\n"; 
+                }
             }
         }
-        if($sum)    $racetext .= "\t\t'Fav$F' => 'true',\n"; 
     }
     sort($union);
     $racetext .= "\t\t'win hist' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
