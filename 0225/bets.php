@@ -25,7 +25,7 @@ return [
 		*/
 		'favorites' => '2, 8, 12, 13',
 		'official win' => '2, 13, 11',
-		'win hist' => '1, 2, 5, 8, 10, 12, 3, 11',//count: 8
+		'win hist' => '1, 2, 3, 5, 8, 10, 12, 11',//count: 8
 		'qin/trio' => '2, 8, 12, 13',
 		'place' => '2',
 	],

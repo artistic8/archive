@@ -52,7 +52,7 @@ return [
 		*/
 		'favorites' => '2, 9',
 		'official win' => '2, 11, 3',
-		'win hist' => '2, 3, 4, 5, 8, 1, 7',//count: 7
+		'win hist' => '2, 3, 4, 5, 8, 9, 1, 7',//count: 8
 	],
 	'7' => [
 		/**
@@ -68,7 +68,7 @@ return [
 		*/
 		'favorites' => '2, 5, 7',
 		'official win' => '4, 9, 3',
-		'win hist' => '2, 3, 4, 5, 6, 9, 7, 8, 10, 1',//count: 10
+		'win hist' => '2, 3, 4, 5, 6, 8, 9, 7, 10, 1',//count: 10
 		'qin/trio' => '2, 5, 7',
 	],
 	'9' => [
