@@ -47,15 +47,15 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
    
-    $max = max($favorites);
-    $win = array_intersect($history[$raceNumber][$max]['win'], $runners);
-    $racetext .= "\t\t'win hist' => '" . implode(", ", $win) . "',//count: " . count($win) . "\n"; 
+    $union = [];
+    foreach($favorites as $F){
+        $win = array_intersect($history[$raceNumber][$F]['win'], $runners);
+        $union = array_values(array_unique(array_merge($union, $win)));
+    }
+    $racetext .= "\t\t'win hist' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
     if(count($favorites) >= 3){
         $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";
     }
-    $all = array_values(array_unique(array_merge($favorites, $win)));
-    sort($all);
-    $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n"; 
     foreach($win as $candidate){
         foreach($favorites as $X){
             if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
