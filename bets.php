@@ -52,7 +52,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     sort($union);
     $racetext .= "\t\t'win hist' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
-    foreach($win as $candidate){
+    foreach($union as $candidate){
         foreach($favorites as $X){
             if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
                 $racetext .= "\t\t'place' => '" . $candidate . "',\n"; 

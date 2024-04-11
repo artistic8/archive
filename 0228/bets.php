@@ -25,6 +25,7 @@ return [
 		'official win' => '12, 8, 2',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'place' => '2',
+		'place' => '8',
 		'place' => '12',
 	],
 	'4' => [

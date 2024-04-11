@@ -48,6 +48,8 @@ return [
 		'favorites' => '6, 7, 10',
 		'official win' => '7, 3, 6',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13',//count: 12
+		'place' => '3',
+		'place' => '6',
 	],
 	'7' => [
 		/**

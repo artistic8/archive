@@ -8,6 +8,7 @@ return [
 		'favorites' => '1, 9, 10, 12',
 		'official win' => '8, 9, 12',
 		'win hist' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 11
+		'place' => '9',
 		'place' => '12',
 	],
 	'2' => [
@@ -58,6 +59,7 @@ return [
 		'official win' => '5, 9, 12',
 		'win hist' => '1, 2, 4, 5, 7, 8, 9, 10, 12',//count: 9
 		'place' => '5',
+		'place' => '9',
 		'place' => '12',
 		'place' => '12',
 	],

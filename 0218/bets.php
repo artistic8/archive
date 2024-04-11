@@ -82,6 +82,9 @@ return [
 		'favorites' => '2, 4, 12',
 		'official win' => '3, 10, 2',
 		'win hist' => '2, 3, 4, 8, 11, 13',//count: 6
+		'place' => '2',
+		'place' => '2',
+		'place' => '2',
 		'place' => '3',
 		'place' => '3',
 	],
