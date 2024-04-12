@@ -20,6 +20,7 @@ return [
 		'official win' => '5, 4, 6',
 		'Favs 8, 8' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 10',//count: 6
+		'bet' => '8',
 	],
 	'3' => [
 		/**
@@ -91,5 +92,6 @@ return [
 		'official win' => '2, 4, 11',
 		'Favs 11, 11' => 'true',
 		'win hist' => '1, 3, 4, 5, 6, 7, 9, 12',//count: 8
+		'bet' => '11',
 	],
 ];

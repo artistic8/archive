@@ -51,6 +51,7 @@ return [
 		'official win' => '1, 5, 10',
 		'Favs 10, 10' => 'true',
 		'win hist' => '1, 2, 3, 4, 11',//count: 5
+		'bet' => '10',
 	],
 	'6' => [
 		/**
@@ -72,6 +73,7 @@ return [
 		'win hist' => '5, 6, 10, 11, 12',//count: 5
 		'place' => '6',
 		'place' => '12',
+		'bet' => '6',
 	],
 	'8' => [
 		/**
@@ -94,5 +96,6 @@ return [
 		'place' => '7',
 		'place' => '11',
 		'place' => '11',
+		'bet' => '7, 11',
 	],
 ];

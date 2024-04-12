@@ -97,5 +97,6 @@ return [
 		'Favs 11, 11' => 'true',
 		'win hist' => '1, 4, 12, 13',//count: 4
 		'place' => '1',
+		'bet' => '11, 11',
 	],
 ];
