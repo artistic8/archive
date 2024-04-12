@@ -20,8 +20,8 @@ for ($raceNumber = 1; $raceNumber <= 11; $raceNumber++) {
       for($bo =1; $bo <= 14; $bo++){
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
-                  if(!in_array($F, $L) $L[] = $F;
-                  if(!in_array($bo, $R) $R[] = $bo;
+                  if(!in_array($F, $L)) $L[] = $F;
+                  if(!in_array($bo, $R)) $R[] = $bo;
                 }
             }
         }
