@@ -42,7 +42,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 
     $L = [];
     $R = [];
-    for($F = 1; $F <= count($rumners); $F++){
+    for($F = 1; $F <= count($runners); $F++){
       for($bo =1; $bo <= count($runners); $bo++){
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
