@@ -1,49 +1,23 @@
 <?php
 
-if(!isset($argv[1])) die("Race Date Not Entered!!\n");
+$outFile = "general.php";
+$currentDir = __DIR__ ;
 
-$step = "general";
-$raceDate = trim($argv[1]);
-$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
-
-$allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $matrix = include(__DIR__ . DIRECTORY_SEPARATOR . "matrix.php");$outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
-
-if(file_exists($outFile)){
-    $oldData = include($outFile);
-}
-
-$totalRaces = count($allRacesOdds);
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
-for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
-    if(!isset($allRacesOdds[$raceNumber])) continue;
-    if(isset($oldData)){
-         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
-    }
-   
-    $winsArray = $allRacesOdds[$raceNumber];
-    asort($winsArray);
-    $runners = array_keys($winsArray);
-    
-    sort($runners);
-    
+for ($raceNumber = 1; $raceNumber <= 11; $raceNumber++) {
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    
-    if(!empty($officialWin))  {
-        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-    }
-   
 
     $L = [];
     $R = [];
-    for($F = 1; $F <= count($runners); $F++){
-      for($bo =1; $bo <= count($runners); $bo++){
+    for($F = 1; $F <= 14; $F++){
+      for($bo =1; $bo <= 14; $bo++){
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
                   $L[] = $F;
