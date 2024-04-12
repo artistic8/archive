@@ -3,7 +3,7 @@
 $outFile = "general.php";
 $currentDir = __DIR__ ;
 
-$matrix = include(__DIR__ . DIRECTORY_SEPARATOR . "matrix.php");$outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
+$matrix = include(__DIR__ . DIRECTORY_SEPARATOR . "matrix.php");
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
