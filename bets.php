@@ -46,6 +46,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
    
     $union = [];
+    $L = [];
+    $R = [];
     foreach($favorites as $F){
         $win = array_intersect($history[$raceNumber][$F]['win'], $runners);
         $union = array_values(array_unique(array_merge($union, $win)));
@@ -53,6 +55,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
                   $racetext .= "\t\t'Favs $F, $bo' => 'true',\n"; 
+                  $L[] = $F;
+                  $R[] = $bo;
                 }
             }
         }
@@ -65,6 +69,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 $racetext .= "\t\t'place' => '" . $candidate . "',\n"; 
             }
         }
+    }
+    $inter = array_intersect($L, $R);
+    if(!empty($inter)){
+          $racetext .= "\t\t'bet' => '" . implode(", ", $inter) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
