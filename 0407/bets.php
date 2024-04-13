@@ -57,6 +57,7 @@ return [
 		Race 6
 		*/
 		'favorites' => '1, 2, 4',
+		'official win' => '4, 1, 2',
 		'Favs 4, 1' => 'true',
 		'Favs 4, 2' => 'true',
 		'Favs 4, 4' => 'true',
