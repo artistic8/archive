@@ -11,10 +11,9 @@ return [
 		'Favs 4, 4' => 'true',
 		'Favs 4, 6' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'place' => '4',
-		'place' => '4',
-		'place' => '6',
-		'bet' => '4, 4',
+		'place' => '4, 6',
+		'bet' => '4',
+		'sure place' => '4',
 	],
 	'2' => [
 		/**
@@ -33,8 +32,7 @@ return [
 		'Favs 11, 1' => 'true',
 		'Favs 11, 5' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12',//count: 10
-		'place' => '1',
-		'place' => '5',
+		'place' => '1, 5',
 	],
 	'4' => [
 		/**
@@ -58,9 +56,7 @@ return [
 		'Favs 8, 11' => 'true',
 		'Favs 10, 10' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 11, 12',//count: 10
-		'place' => '4',
-		'place' => '11',
-		'place' => '11',
+		'place' => '4, 11',
 		'bet' => '10',
 	],
 	'6' => [

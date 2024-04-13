@@ -55,25 +55,33 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
                   $racetext .= "\t\t'Favs $F, $bo' => 'true',\n"; 
-                  $L[] = $F;
-                  $R[] = $bo;
+                  if(!in_array($F, $L)) $L[] = $F;
+                  if(!in_array($bo, $R)) $R[] = $bo;
                 }
             }
         }
     }
     sort($union);
     $racetext .= "\t\t'win hist' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n"; 
+    $place = [];
     foreach($union as $candidate){
         foreach($favorites as $X){
             if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
-                $racetext .= "\t\t'place' => '" . $candidate . "',\n"; 
+                if(!in_array($candidate, $place)) $place[] = $candidate; 
             }
         }
+    }
+    if(!empty($place)){
+        $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n"; 
     }
     $inter = array_intersect($L, $R);
     if(!empty($inter)){
           $racetext .= "\t\t'bet' => '" . implode(", ", $inter) . "',\n"; 
     }
+    $sure = array_intersect($place, $inter);
+    if(!empty($sure)){
+        $racetext .= "\t\t'sure place' => '" . implode(", ", $sure) . "',\n"; 
+  }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
