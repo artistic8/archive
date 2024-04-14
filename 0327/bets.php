@@ -11,7 +11,6 @@ return [
 		'Favs 11, 6' => 'true',
 		'win hist' => '1, 2, 4, 6, 7, 8, 9, 11, 12',//count: 9
 		'place 1' => '6',
-		'fav place' => '6',
 	],
 	'2' => [
 		/**

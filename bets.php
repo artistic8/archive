@@ -41,7 +41,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
    
-    if(isset($officialWin))  {
+    if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
    
@@ -78,10 +78,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($inter)){
           $racetext .= "\t\t'place 2' => '" . implode(", ", $inter) . "',\n"; 
     }
-    $favPlace = array_intersect($place, $favorites);
-    if(!empty($favPlace)){
-        $racetext .= "\t\t'fav place' => '" . implode(", ", $favPlace) . "',\n"; 
-    }
+   
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);

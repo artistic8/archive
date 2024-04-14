@@ -11,7 +11,6 @@ return [
 		'Favs 14, 10' => 'true',
 		'win hist' => '1, 2, 3, 5, 8, 10, 12, 14',//count: 8
 		'place 1' => '8, 10',
-		'fav place' => '8',
 	],
 	'2' => [
 		/**
@@ -41,7 +40,6 @@ return [
 		'win hist' => '1, 3, 4, 5, 6, 8, 11, 14',//count: 8
 		'place 1' => '4, 14',
 		'place 2' => '14',
-		'fav place' => '14',
 	],
 	'5' => [
 		/**
@@ -96,7 +94,6 @@ return [
 		'win hist' => '1, 3, 5, 6, 8, 10, 11',//count: 7
 		'place 1' => '3, 5, 8',
 		'place 2' => '8',
-		'fav place' => '8',
 	],
 	'10' => [
 		/**
@@ -112,6 +109,5 @@ return [
 		'win hist' => '1, 2, 4, 7, 8, 10, 11, 12, 14',//count: 9
 		'place 1' => '2, 8',
 		'place 2' => '8',
-		'fav place' => '8',
 	],
 ];
