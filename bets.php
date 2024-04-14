@@ -9,7 +9,6 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
 $matrix = include(__DIR__ . DIRECTORY_SEPARATOR . "matrix.php");
-$general = include(__DIR__ . DIRECTORY_SEPARATOR . "general.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
