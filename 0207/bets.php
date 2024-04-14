@@ -34,7 +34,6 @@ return [
 		*/
 		'favorites' => '1, 3, 11',
 		'official win' => '6, 1, 12',
-		'Favs 3, 9' => 'true',
 		'Favs 3, 14' => 'true',
 		'Favs 11, 1' => 'true',
 		'Favs 11, 7' => 'true',

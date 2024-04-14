@@ -35,7 +35,6 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '8, 6, 7',
-		'Favs 3, 9' => 'true',
 		'Favs 3, 14' => 'true',
 		'win hist' => '3, 4, 5, 6, 8',//count: 5
 	],
