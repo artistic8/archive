@@ -69,9 +69,8 @@ return [
 		'Favs 9, 3' => 'true',
 		'Favs 11, 9' => 'true',
 		'win hist' => '2, 3, 4, 5, 9, 10',//count: 6
-		'place' => '3, 9',
-		'bet' => '9',
-		'sure place' => '9',
+		'place 1' => '3, 9',
+		'place 2' => '9',
 	],
 	'9' => [
 		/**
@@ -95,8 +94,7 @@ return [
 		'Favs 12, 2' => 'true',
 		'Favs 12, 3' => 'true',
 		'win hist' => '2, 3, 4, 8, 11, 13',//count: 6
-		'place' => '2, 3',
-		'bet' => '2',
-		'sure place' => '2',
+		'place 1' => '2, 3',
+		'place 2' => '2',
 	],
 ];
