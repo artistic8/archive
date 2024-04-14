@@ -56,7 +56,7 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '3, 8, 10',
-		'win hist' => '1, 2, 3, 5, 7, 9, 11',//count: 7
+		'win hist' => '1, 2, 3, 5, 6, 7, 9, 11',//count: 8
 	],
 	'7' => [
 		/**

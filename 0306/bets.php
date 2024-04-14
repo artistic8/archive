@@ -59,10 +59,9 @@ return [
 		*/
 		'favorites' => '1, 5, 9',
 		'official win' => '1, 12, 9',
-		'Favs 5, 1' => 'true',
 		'Favs 5, 12' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 9, 11, 12',//count: 10
-		'place 1' => '1, 12',
+		'place 1' => '12',
 	],
 	'7' => [
 		/**
