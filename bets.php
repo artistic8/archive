@@ -48,12 +48,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $union = [];
     $L = [];
     $R = [];
+    $golden = [];
     foreach($favorites as $F){
         $win = array_intersect($history[$raceNumber][$F]['win'], $runners);
         $union = array_values(array_unique(array_merge($union, $win)));
         for($bo =1; $bo <= 14; $bo++){
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
+                    if($F % 2 === 0 && $bo % 2 === 0) $golden = min($F, $bo);
                   $racetext .= "\t\t'Favs $F, $bo' => 'true',\n"; 
                   if(!in_array($F, $L)) $L[] = $F;
                   if(!in_array($bo, $R)) $R[] = $bo;
@@ -78,7 +80,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($inter)){
           $racetext .= "\t\t'place 2' => '" . implode(", ", $inter) . "',\n"; 
     }
-   
+   if(!empty($golden)){
+        $racetext .= "\t\t'gold' => '" . implode(", ", $golden) . "',\n"; 
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
