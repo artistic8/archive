@@ -18,10 +18,8 @@ return [
 		'official win' => '10, 14, 7',
 		'Favs 10, 1' => 'true',
 		'Favs 10, 7' => 'true',
-		'Favs 10, 10' => 'true',
 		'win hist' => '3, 4, 5, 7, 10, 12',//count: 6
-		'place 1' => '7, 10',
-		'place 2' => '10',
+		'place 1' => '7',
 	],
 	'3' => [
 		/**

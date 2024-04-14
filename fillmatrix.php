@@ -17,6 +17,7 @@ foreach ($dir as $fileinfo) {
         $bets = include($betsFile);
         foreach($bets as $raceNumber => $data){
             $favorites = explode(", ", $data['favorites']);
+            if(!isset($data['official win']) || empty($data['official win'])) continue;
             $result = explode(", ", $data['official win']);
             $history = explode(", ", $data['win hist']);
             foreach($history as $candidate){

@@ -17,10 +17,10 @@ return [
 		'official win' => '7, 1, 5',
 		'Favs 10, 1' => 'true',
 		'Favs 10, 7' => 'true',
-		'Favs 10, 10' => 'true',
+		'Favs 11, 5' => 'true',
+		'Favs 11, 7' => 'true',
 		'win hist' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 11
-		'place 1' => '7, 10',
-		'place 2' => '10',
+		'place 1' => '5, 7',
 	],
 	'3' => [
 		/**
@@ -28,13 +28,9 @@ return [
 		*/
 		'favorites' => '9, 13',
 		'official win' => '9, 10, 13',
-		'Favs 9, 2' => 'true',
 		'Favs 9, 8' => 'true',
-		'Favs 9, 12' => 'true',
-		'Favs 13, 2' => 'true',
 		'Favs 13, 11' => 'true',
 		'win hist' => '2, 3, 7, 12',//count: 4
-		'place 1' => '2, 12',
 	],
 	'4' => [
 		/**
