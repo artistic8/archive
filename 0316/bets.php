@@ -63,12 +63,8 @@ return [
 		*/
 		'favorites' => '4, 6, 7',
 		'official win' => '11, 3, 6',
-		'Favs 4, 6' => 'true',
 		'Favs 6, 9' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 11
-		'place 1' => '6',
-		'place 2' => '6',
-		'watch' => '6',
 	],
 	'8' => [
 		/**

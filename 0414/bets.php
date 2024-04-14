@@ -69,13 +69,10 @@ return [
 		Race 7
 		*/
 		'favorites' => '3, 7, 9',
-		'official win' => '',
-		'Favs 9, 2' => 'true',
+		'official win' => '6, 9, 3',
 		'Favs 9, 3' => 'true',
-		'Favs 9, 4' => 'true',
-		'win hist' => '1, 2, 3, 4, 7, 8, 9, 10, 11, 12',//count: 10
-		'place 1' => '2, 3, 4',
-		'watch' => '2, 4',
+		'win hist' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',//count: 11
+		'place 1' => '3',
 	],
 	'8' => [
 		/**
