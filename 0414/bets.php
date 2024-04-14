@@ -46,7 +46,7 @@ return [
 		Race 5
 		*/
 		'favorites' => '5',
-		'official win' => '',
+		'official win' => '5, 6, 12',
 		'Favs 5, 11' => 'true',
 		'win hist' => '1, 3, 4, 5, 12',//count: 5
 	],
