@@ -77,7 +77,7 @@ return [
 		Race 8
 		*/
 		'favorites' => '2, 3, 4, 6, 7, 8',
-		'official win' => '',
+		'official win' => '6, 8, 3',
 		'win hist' => '1, 2, 3, 5, 6, 7, 8',//count: 7
 	],
 	'9' => [
