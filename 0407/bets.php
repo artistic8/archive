@@ -8,7 +8,7 @@ return [
 		'favorites' => '7, 12',
 		'official win' => '7, 13, 2',
 		'Favs 12, 9' => 'true',
-		'win hist' => '2, 3, 5, 7, 8, 10, 12',//count: 7
+		'win hist' => '2, 3, 5, 6, 7, 8, 10, 12',//count: 8
 	],
 	'2' => [
 		/**

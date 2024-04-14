@@ -30,7 +30,7 @@ return [
 		'official win' => '9, 10, 13',
 		'Favs 9, 8' => 'true',
 		'Favs 13, 11' => 'true',
-		'win hist' => '2, 3, 7, 12',//count: 4
+		'win hist' => '2, 3, 7, 9, 12',//count: 5
 	],
 	'4' => [
 		/**
