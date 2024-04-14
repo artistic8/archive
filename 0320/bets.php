@@ -49,6 +49,7 @@ return [
 		'Favs 10, 10' => 'true',
 		'win hist' => '1, 2, 3, 4, 11',//count: 5
 		'place 2' => '10',
+		'gold' => '10',
 	],
 	'6' => [
 		/**
