@@ -9,6 +9,7 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
 $matrix = include(__DIR__ . DIRECTORY_SEPARATOR . "matrix.php");
+$general = include(__DIR__ . DIRECTORY_SEPARATOR . "general.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -78,7 +79,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($inter)){
           $racetext .= "\t\t'place 2' => '" . implode(", ", $inter) . "',\n"; 
     }
-   
+    $watch = array_intersect(array_values(array_unique(array_merge($place, $inter))), explode(", ", $general[$raceNumber]['bet']));
+    if(!empty($watch)){
+        $racetext .= "\t\t'watch' => '" . implode(", ", $watch) . "',\n"; 
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);

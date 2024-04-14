@@ -94,5 +94,6 @@ return [
 		'win hist' => '1, 4, 12, 13',//count: 4
 		'place 1' => '1',
 		'place 2' => '11',
+		'watch' => '1, 11',
 	],
 ];

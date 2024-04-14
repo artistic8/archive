@@ -28,9 +28,7 @@ for ($raceNumber = 1; $raceNumber <= 11; $raceNumber++) {
     }
    
     $inter = array_intersect($L, $R);
-    if(!empty($inter)){
-          $racetext .= "\t\t'bet' => '" . implode(", ", $inter) . "',\n"; 
-    }
+    $racetext .= "\t\t'bet' => '" . implode(", ", $inter) . "',\n"; 
     $racetext .= "\t],\n";
    
     $outtext .= $racetext;

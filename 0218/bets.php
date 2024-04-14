@@ -71,6 +71,7 @@ return [
 		'win hist' => '2, 3, 4, 5, 9, 10',//count: 6
 		'place 1' => '3, 9',
 		'place 2' => '9',
+		'watch' => '9',
 	],
 	'9' => [
 		/**
@@ -96,5 +97,6 @@ return [
 		'win hist' => '2, 3, 4, 8, 11, 13',//count: 6
 		'place 1' => '2, 3',
 		'place 2' => '2',
+		'watch' => '2, 3',
 	],
 ];
