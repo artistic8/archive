@@ -79,9 +79,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($inter)){
           $racetext .= "\t\t'place 2' => '" . implode(", ", $inter) . "',\n"; 
     }
-    $watch = array_intersect(array_values(array_unique(array_merge($place, $inter))), explode(", ", $general[$raceNumber]['bet']));
-    if(!empty($watch)){
-        $racetext .= "\t\t'watch' => '" . implode(", ", $watch) . "',\n"; 
+    $favPlace = array_intersect($place, $favorites);
+    if(!empty($favPlace)){
+        $racetext .= "\t\t'fav place' => '" . implode(", ", $favPlace) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
