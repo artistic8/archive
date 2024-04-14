@@ -55,7 +55,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         for($bo =1; $bo <= 14; $bo++){
             if(isset($matrix[$raceNumber][$F][$bo])){
                 if($matrix[$raceNumber][$F][$bo] === true){
-                    if($F % 2 === 0 && $bo % 2 === 0) $golden = min($F, $bo);
+                    if($F % 2 === 0 && $bo % 2 === 0) $golden[] = min($F, $bo);
                   $racetext .= "\t\t'Favs $F, $bo' => 'true',\n"; 
                   if(!in_array($F, $L)) $L[] = $F;
                   if(!in_array($bo, $R)) $R[] = $bo;
