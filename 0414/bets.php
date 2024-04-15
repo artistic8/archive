@@ -94,24 +94,30 @@ return [
 		Race 10
 		*/
 		'favorites' => '1, 6, 10, 14',
-		'official win' => '',
+		'official win' => '10, 2, 8',
 		'Favs 1, 3' => 'true',
-		'Favs 1, 5' => 'true',
-		'Favs 6, 1' => 'true',
+		'Favs 6, 2' => 'true',
+		'Favs 10, 2' => 'true',
+		'Favs 10, 10' => 'true',
 		'Favs 14, 2' => 'true',
 		'win hist' => '1, 2, 4, 5, 7, 9, 10, 13, 14',//count: 9
-		'place 1' => '1, 2, 5',
-		'place 2' => '1',
-		'gold' => '2',
+		'place 1' => '2, 10',
+		'place 2' => '10',
+		'gold' => '2, 2, 2',
 	],
 	'11' => [
 		/**
 		Race 11
 		*/
 		'favorites' => '2, 5, 9',
-		'official win' => '',
-		'Favs 5, 12' => 'true',
-		'win hist' => '1, 2, 12',//count: 3
-		'place 1' => '12',
+		'official win' => '5, 6, 1',
+		'Favs 2, 1' => 'true',
+		'Favs 2, 5' => 'true',
+		'Favs 5, 1' => 'true',
+		'Favs 9, 1' => 'true',
+		'Favs 9, 5' => 'true',
+		'win hist' => '1, 2, 5, 12',//count: 4
+		'place 1' => '1, 5',
+		'place 2' => '5',
 	],
 ];

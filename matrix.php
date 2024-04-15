@@ -1603,7 +1603,7 @@ return [
 			1 => false,
 			3 => true,
 			4 => false,
-			5 => true,
+			5 => false,
 			6 => false,
 			7 => false,
 			8 => false,
@@ -1612,6 +1612,8 @@ return [
 			12 => false,
 			14 => false,
 			2 => false,
+			9 => false,
+			13 => false,
 		],
 		2 => [
 			2 => true,
@@ -1665,10 +1667,16 @@ return [
 			14 => false,
 		],
 		6 => [
-			1 => true,
+			1 => false,
 			4 => false,
+			10 => false,
 			12 => false,
 			13 => false,
+			2 => true,
+			5 => false,
+			7 => false,
+			9 => false,
+			14 => false,
 		],
 		7 => [
 			2 => true,
@@ -1707,17 +1715,26 @@ return [
 			6 => false,
 		],
 		10 => [
+			1 => false,
+			2 => true,
+			4 => false,
+			5 => false,
+			7 => false,
+			9 => false,
+			10 => true,
+			13 => false,
+			14 => false,
 		],
 		11 => [
 			1 => false,
 			4 => false,
+			10 => false,
 			12 => false,
 			13 => false,
 			3 => true,
 			5 => false,
 			6 => false,
 			8 => false,
-			10 => false,
 			11 => true,
 		],
 		12 => [
@@ -1742,25 +1759,40 @@ return [
 			10 => false,
 			11 => false,
 			12 => false,
+			1 => false,
+			4 => false,
+			5 => false,
+			9 => false,
+			13 => false,
+			14 => false,
 		],
 	],
 	11 => [
 		1 => [
 		],
 		2 => [
+			1 => true,
+			2 => false,
+			5 => true,
+			12 => false,
 		],
 		3 => [
 		],
 		4 => [
 			4 => false,
+			5 => false,
 			12 => true,
 		],
 		5 => [
 			4 => false,
-			12 => true,
+			5 => false,
+			12 => false,
+			1 => true,
+			2 => false,
 		],
 		6 => [
 			4 => false,
+			5 => false,
 			12 => true,
 		],
 		7 => [
@@ -1768,6 +1800,10 @@ return [
 		8 => [
 		],
 		9 => [
+			1 => true,
+			2 => false,
+			5 => true,
+			12 => false,
 		],
 		10 => [
 		],
@@ -1777,6 +1813,7 @@ return [
 		],
 		13 => [
 			4 => false,
+			5 => false,
 			12 => true,
 		],
 		14 => [

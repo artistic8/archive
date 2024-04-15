@@ -90,11 +90,11 @@ return [
 		*/
 		'favorites' => '6, 11',
 		'official win' => '1, 11, 2',
-		'Favs 6, 1' => 'true',
+		'Favs 6, 2' => 'true',
 		'Favs 11, 3' => 'true',
 		'Favs 11, 11' => 'true',
-		'win hist' => '1, 4, 12, 13',//count: 4
-		'place 1' => '1',
+		'win hist' => '1, 4, 10, 12, 13',//count: 5
 		'place 2' => '11',
+		'gold' => '2',
 	],
 ];

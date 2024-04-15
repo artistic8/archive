@@ -58,7 +58,7 @@ return [
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',//count: 12
 		'place 1' => '1, 2, 4',
 		'place 2' => '4',
-		'gold' => '2, 4',
+		'gold' => '2',
 	],
 	'7' => [
 		/**
@@ -93,7 +93,6 @@ return [
 		'favorites' => '1, 3, 9',
 		'official win' => '10, 1, 3',
 		'Favs 1, 3' => 'true',
-		'Favs 1, 5' => 'true',
 		'Favs 3, 3' => 'true',
 		'Favs 9, 1' => 'true',
 		'Favs 9, 3' => 'true',
