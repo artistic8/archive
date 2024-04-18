@@ -71,7 +71,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($shit)){
         $racetext .= "\t\t'shit' => '" . implode(", ", $shit) . "',\n"; 
     }
-    if(!empty($golden)){
+    if(!empty($golden) && count($favorites) >= 2){
         $racetext .= "\t\t'gold' => '" . implode(", ", $golden) . "',\n"; 
     }
     $racetext .= "\t],\n";
