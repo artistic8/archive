@@ -8,11 +8,8 @@ return [
 		'favorites' => '4, 12',
 		'official win' => '10, 12, 4',
 		'Favs 4, 4' => 'true',
-		'Favs 4, 6' => 'true',
-		'Favs 12, 9' => 'true',
 		'win hist' => '1, 2, 4, 5, 7, 8, 10, 12',//count: 8
-		'shit' => '4, 6, 9, 12',
-		'gold' => '9',
+		'shit' => '4',
 	],
 	'2' => [
 		/**
@@ -48,11 +45,10 @@ return [
 		*/
 		'favorites' => '4, 10, 12',
 		'official win' => '2, 11, 13',
-		'Favs 10, 10' => 'true',
 		'Favs 12, 2' => 'true',
 		'Favs 12, 11' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 11, 12',//count: 9
-		'shit' => '2, 10, 11, 12',
+		'shit' => '2, 11, 12',
 		'gold' => '2',
 	],
 	'6' => [
@@ -86,9 +82,8 @@ return [
 		'favorites' => '1, 8, 12',
 		'official win' => '5, 1, 6',
 		'Favs 8, 5' => 'true',
-		'Favs 12, 11' => 'true',
 		'win hist' => '1, 3, 5, 6, 7, 8, 10, 12',//count: 8
-		'shit' => '5, 8, 11, 12',
+		'shit' => '5, 8',
 	],
 	'10' => [
 		/**
@@ -109,10 +104,9 @@ return [
 		'favorites' => '4, 5, 6, 13',
 		'official win' => '12, 11, 1',
 		'Favs 4, 12' => 'true',
-		'Favs 5, 1' => 'true',
 		'Favs 6, 12' => 'true',
 		'Favs 13, 12' => 'true',
 		'win hist' => '4, 5, 12',//count: 3
-		'shit' => '1, 4, 5, 6, 12, 13',
+		'shit' => '4, 6, 12, 13',
 	],
 ];

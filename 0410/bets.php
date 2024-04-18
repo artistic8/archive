@@ -41,10 +41,9 @@ return [
 		*/
 		'favorites' => '5, 11',
 		'official win' => '1, 9, 11',
-		'Favs 5, 11' => 'true',
 		'Favs 11, 1' => 'true',
 		'win hist' => '1, 3, 4, 5, 12',//count: 5
-		'shit' => '1, 5, 11',
+		'shit' => '1, 11',
 	],
 	'6' => [
 		/**
@@ -60,10 +59,9 @@ return [
 		*/
 		'favorites' => '2, 10',
 		'official win' => '2, 9, 4',
-		'Favs 2, 11' => 'true',
 		'Favs 10, 9' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count: 11
-		'shit' => '2, 9, 10, 11',
+		'shit' => '9, 10',
 	],
 	'8' => [
 		/**
