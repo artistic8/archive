@@ -61,7 +61,7 @@ return [
 		'official win' => '12, 6, 1',
 		'Favs 11, 6' => 'true',
 		'Favs 11, 12' => 'true',
-		'win hist' => '5, 6, 10, 11, 12',//count: 5
+		'win hist' => '2, 5, 6, 10, 11, 12',//count: 6
 		'shit' => '6, 11, 12',
 	],
 	'8' => [
@@ -78,7 +78,6 @@ return [
 		*/
 		'favorites' => '3, 5, 7, 10, 11',
 		'official win' => '5, 11, 7',
-		'Favs 7, 11' => 'true',
 		'Favs 10, 7' => 'true',
 		'Favs 11, 11' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
