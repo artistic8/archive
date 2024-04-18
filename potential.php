@@ -12,7 +12,14 @@ foreach($matrix as $raceNumber => $data){
         if($favorite % 2 === 0){
             foreach($candidates as $candidate => $bool){
                 if($candidate === 2 && $bool === true){
-                    $outtext .= "\t'Race $raceNumber, Fav $favorite',\n";
+                    $outtext .= "\t'Race $raceNumber, Fav $favorite, place 2',\n";
+                }
+            }
+        }
+        if($favorite % 3 === 0){
+            foreach($candidates as $candidate => $bool){
+                if($candidate === 3 && $bool === true){
+                    $outtext .= "\t'Race $raceNumber, Fav $favorite, place 3',\n";
                 }
             }
         }
