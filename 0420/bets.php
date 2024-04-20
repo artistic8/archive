@@ -43,21 +43,22 @@ return [
 		Race 5
 		*/
 		'favorites' => '1, 2, 6, 8',
-		'official win' => '',
-		'Favs 8, 4' => 'true',
-		'Favs 8, 11' => 'true',
+		'official win' => '1, 10, 8',
+		'Favs 6, 10' => 'true',
+		'Favs 6, 8' => 'true',
+		'Favs 8, 10' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'shit' => '4, 8, 11',
+		'shit' => '6, 8, 10',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '2, 8',
+		'favorites' => '1, 2, 8',
 		'official win' => '',
-		'Favs 8, 2' => 'true',
 		'Favs 8, 9' => 'true',
-		'win hist' => '2, 3, 4, 5, 8, 9, 10, 12',//count: 8
+		'Favs 8, 2' => 'true',
+		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',//count: 10
 		'shit' => '2, 8, 9',
 		'gold' => '2',
 	],
