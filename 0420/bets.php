@@ -7,7 +7,6 @@ return [
 		*/
 		'favorites' => '1, 4, 10',
 		'official win' => '10, 13, 7',
-		'2, 4' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',//count: 10
 	],
 	'2' => [
@@ -16,7 +15,6 @@ return [
 		*/
 		'favorites' => '2, 5, 12',
 		'official win' => '12, 2, 5',
-		'13, 12' => 'true',
 		'win hist' => '2, 4, 5, 6, 7, 8, 9, 10, 12, 13',//count: 10
 	],
 	'3' => [
@@ -34,13 +32,12 @@ return [
 		'favorites' => '3, 5, 9, 12',
 		'official win' => '6, 5, 1',
 		'Favs 5, 5' => 'true',
-		'5, 5' => 'true',
 		'Favs 9, 5' => 'true',
 		'Favs 9, 6' => 'true',
-		'7, 9' => 'true',
 		'Favs 9, 1' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count: 13
 		'shit' => '1, 5, 6, 9',
+		'place' => '5, 9',
 	],
 	'5' => [
 		/**
@@ -48,13 +45,12 @@ return [
 		*/
 		'favorites' => '1, 2, 6, 8',
 		'official win' => '1, 10, 8',
-		'12, 2' => 'true',
 		'Favs 6, 10' => 'true',
 		'Favs 6, 8' => 'true',
 		'Favs 8, 10' => 'true',
-		'6, 8' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'shit' => '6, 8, 10',
+		'place' => '8',
 	],
 	'6' => [
 		/**
@@ -62,8 +58,6 @@ return [
 		*/
 		'favorites' => '1, 2, 8',
 		'official win' => '11, 8, 3',
-		'4, 1' => 'true',
-		'4, 2' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count: 11
 	],
 	'7' => [
@@ -72,8 +66,6 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5, 14',
 		'official win' => '',
-		'9, 3' => 'true',
-		'12, 5' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 	],
 	'8' => [
@@ -90,7 +82,6 @@ return [
 		*/
 		'favorites' => '5, 6',
 		'official win' => '',
-		'8, 5' => 'true',
 		'Favs 6, 4' => 'true',
 		'win hist' => '2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 10
 		'shit' => '4, 6',
@@ -102,16 +93,12 @@ return [
 		'favorites' => '3, 4, 11',
 		'official win' => '',
 		'Favs 3, 3' => 'true',
-		'3, 3' => 'true',
-		'4, 3' => 'true',
-		'11, 3' => 'true',
-		'12, 3' => 'true',
 		'Favs 4, 3' => 'true',
 		'Favs 11, 3' => 'true',
 		'Favs 11, 11' => 'true',
-		'11, 11' => 'true',
 		'win hist' => '1, 3, 4, 6, 10, 11, 12',//count: 7
 		'shit' => '3, 4, 11',
+		'place' => '3, 11',
 		'gold' => '3',
 	],
 ];
