@@ -78,10 +78,10 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '6',
+		'favorites' => '5, 6',
 		'official win' => '',
 		'Favs 6, 4' => 'true',
-		'win hist' => '2, 3, 4, 5, 6, 7',//count: 6
+		'win hist' => '2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 10
 		'shit' => '4, 6',
 	],
 	'10' => [
