@@ -55,12 +55,8 @@ return [
 		Race 6
 		*/
 		'favorites' => '1, 2, 8',
-		'official win' => '',
-		'Favs 8, 9' => 'true',
-		'Favs 8, 2' => 'true',
-		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',//count: 10
-		'shit' => '2, 8, 9',
-		'gold' => '2',
+		'official win' => '11, 8, 3',
+		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count: 11
 	],
 	'7' => [
 		/**
