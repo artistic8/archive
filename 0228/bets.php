@@ -32,7 +32,7 @@ return [
 		'favorites' => '5',
 		'official win' => '2, 5, 9',
 		'Favs 5, 5' => 'true',
-		'win hist' => '2, 4, 5, 7, 10, 12',//count: 6
+		'win hist' => '2, 4, 5, 6, 7, 10, 12',//count: 7
 		'shit' => '5',
 	],
 	'5' => [
