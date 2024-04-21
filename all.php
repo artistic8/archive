@@ -50,7 +50,7 @@ for($i = 1; $i <= 11; $i++){
     $outtext .= "\t$i => [\n";
     for($j = 1; $j <= 14; $j++){
         if(isset($placers[$i][$j]) && !empty($placers[$i][$j])){
-            $outtext .= "\t\t'Fav $j' => '" . implode(", ", $placers[$i][$j]) . "',\n";
+            $outtext .= "\t\t$j => '" . implode(", ", $placers[$i][$j]) . "',\n";
         }
     }
     $outtext .= "\t],\n";
