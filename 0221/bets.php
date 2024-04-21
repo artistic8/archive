@@ -49,8 +49,8 @@ return [
 		*/
 		'favorites' => '1, 12',
 		'official win' => '5, 9, 12',
-		'placers(Fav 12)' => '5, 12',
-		'place' => '5, 12',
+		'placers(Fav 12)' => '5, 9, 12',
+		'place' => '5, 9, 12',
 	],
 	'8' => [
 		/**

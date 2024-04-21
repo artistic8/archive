@@ -75,7 +75,7 @@ return [
 		'official win' => '3, 10, 2',
 		'placers(Fav 2)' => '2',
 		'placers(Fav 4)' => '3',
-		'placers(Fav 12)' => '3',
-		'place' => '2, 3',
+		'placers(Fav 12)' => '2, 3, 10',
+		'place' => '2, 3, 10',
 	],
 ];

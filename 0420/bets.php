@@ -29,7 +29,7 @@ return [
 		'favorites' => '3, 5, 9, 12',
 		'official win' => '6, 5, 1',
 		'placers(Fav 5)' => '5',
-		'placers(Fav 9)' => '1, 6',
+		'placers(Fav 9)' => '1, 5, 6',
 		'place' => '5, 1, 6',
 	],
 	'5' => [
@@ -38,6 +38,8 @@ return [
 		*/
 		'favorites' => '1, 2, 6, 8',
 		'official win' => '1, 10, 8',
+		'placers(Fav 8)' => '10',
+		'place' => '10',
 	],
 	'6' => [
 		/**
@@ -52,8 +54,8 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5, 14',
 		'official win' => '10, 11, 12',
-		'placers(Fav 14)' => '10',
-		'place' => '10',
+		'placers(Fav 14)' => '10, 11, 12',
+		'place' => '10, 11, 12',
 	],
 	'8' => [
 		/**

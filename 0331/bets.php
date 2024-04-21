@@ -7,8 +7,8 @@ return [
 		*/
 		'favorites' => '8, 14',
 		'official win' => '8, 10, 13',
-		'placers(Fav 14)' => '8',
-		'place' => '8',
+		'placers(Fav 14)' => '8, 10, 13',
+		'place' => '8, 10, 13',
 	],
 	'2' => [
 		/**
@@ -30,8 +30,8 @@ return [
 		*/
 		'favorites' => '3, 14',
 		'official win' => '14, 4, 9',
-		'placers(Fav 14)' => '14',
-		'place' => '14',
+		'placers(Fav 14)' => '4, 9, 14',
+		'place' => '4, 9, 14',
 	],
 	'5' => [
 		/**
@@ -60,9 +60,9 @@ return [
 		*/
 		'favorites' => '1, 4, 10, 13, 14',
 		'official win' => '3, 9, 6',
-		'placers(Fav 13)' => '3',
-		'placers(Fav 14)' => '3',
-		'place' => '3',
+		'placers(Fav 13)' => '3, 6, 9',
+		'placers(Fav 14)' => '3, 6, 9',
+		'place' => '3, 6, 9',
 	],
 	'9' => [
 		/**
@@ -71,8 +71,8 @@ return [
 		'favorites' => '8, 10, 13',
 		'official win' => '3, 5, 8',
 		'placers(Fav 8)' => '5',
-		'placers(Fav 13)' => '3',
-		'place' => '5, 3',
+		'placers(Fav 13)' => '3, 5, 8',
+		'place' => '5, 3, 8',
 	],
 	'10' => [
 		/**
@@ -81,7 +81,7 @@ return [
 		'favorites' => '1, 7, 8',
 		'official win' => '7, 2, 8',
 		'placers(Fav 7)' => '2',
-		'placers(Fav 8)' => '8',
+		'placers(Fav 8)' => '2, 8',
 		'place' => '2, 8',
 	],
 ];
