@@ -8,6 +8,7 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
+$goodOnes = include(__DIR__ . DIRECTORY_SEPARATOR . "goodOnes.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -53,8 +54,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         else $inter = array_intersect($inter, $candidates);
     }
    
-    if(!empty($inter) && count($favorites) >= 2){
-        $racetext .= "\t\t'place' => '" . implode(", ", $inter) . "',\n"; 
+    if(isset($goodOnes[$raceNumber]) && !empty($inter) && count($favorites) >= 2){
+        $goods = explode(", ", $goodOnes[$raceNumber]);
+        $inter = array_intersect($inter, $goods);
+        if(!empty($inter)) $racetext .= "\t\t'place' => '" . implode(", ", $inter) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
