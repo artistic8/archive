@@ -7,7 +7,7 @@ $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "odds.php");
-$placers = include(__DIR__ . DIRECTORY_SEPARATOR . "placers.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -43,17 +43,18 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
-    $union = [];
+    $firstSet = true;
     foreach($favorites as $F){
-        if(isset($placers[$raceNumber][$F])){
-            $candidates = array_intersect(explode(", ", $placers[$raceNumber][$F]), $runners);
-            $racetext .= "\t\t'placers(Fav $F)' => '" . implode(", ", $candidates) . "',\n"; 
-            $union = array_values(array_unique(array_merge($union, $candidates)));
+        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        if($firstSet) {
+            $inter = $candidates;
+            $firstSet = false;
         }
+        else $inter = array_intersect($inter, $candidates);
     }
    
-    if(!empty($union)){
-        $racetext .= "\t\t'place' => '" . implode(", ", $union) . "',\n"; 
+    if(!empty($inter)){
+        $racetext .= "\t\t'place' => '" . implode(", ", $inter) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
