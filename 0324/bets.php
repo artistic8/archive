@@ -7,7 +7,6 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '7, 11, 5',
-		'win hist' => '1, 2, 5, 7, 8, 9, 12',//count: 7
 	],
 	'2' => [
 		/**
@@ -15,10 +14,8 @@ return [
 		*/
 		'favorites' => '1, 2, 14',
 		'official win' => '2, 14, 11',
-		'Favs 14, 2' => 'true',
-		'win hist' => '1, 2, 4, 5, 6, 7, 8, 9, 12, 13',//count: 10
-		'shit' => '2, 14',
-		'gold' => '2',
+		'placers(Fav 14)' => '2',
+		'place' => '2',
 	],
 	'3' => [
 		/**
@@ -26,7 +23,6 @@ return [
 		*/
 		'favorites' => '6',
 		'official win' => '6, 5, 7',
-		'win hist' => '1, 3, 4, 5, 6, 12',//count: 6
 	],
 	'4' => [
 		/**
@@ -34,7 +30,6 @@ return [
 		*/
 		'favorites' => '4, 10, 12',
 		'official win' => '12, 1, 10',
-		'win hist' => '1, 2, 3, 4, 6, 9, 10, 11, 12',//count: 9
 	],
 	'5' => [
 		/**
@@ -42,10 +37,6 @@ return [
 		*/
 		'favorites' => '1, 2, 10',
 		'official win' => '2, 10, 6',
-		'Favs 10, 10' => 'true',
-		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',//count: 10
-		'shit' => '10',
-		'place' => '10',
 	],
 	'6' => [
 		/**
@@ -53,7 +44,6 @@ return [
 		*/
 		'favorites' => '1, 12',
 		'official win' => '1, 2, 3',
-		'win hist' => '1, 2, 3, 4, 7, 9, 11, 12, 13',//count: 9
 	],
 	'7' => [
 		/**
@@ -61,7 +51,6 @@ return [
 		*/
 		'favorites' => '2, 5, 7',
 		'official win' => '7, 1, 11',
-		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 	],
 	'8' => [
 		/**
@@ -69,7 +58,6 @@ return [
 		*/
 		'favorites' => '2, 6',
 		'official win' => '9, 2, 8',
-		'win hist' => '2, 3, 4, 5, 6, 8, 9, 11',//count: 8
 	],
 	'9' => [
 		/**
@@ -77,10 +65,6 @@ return [
 		*/
 		'favorites' => '1, 2, 4, 11',
 		'official win' => '1, 2, 11',
-		'Favs 11, 11' => 'true',
-		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'shit' => '11',
-		'place' => '11',
 	],
 	'10' => [
 		/**
@@ -88,12 +72,8 @@ return [
 		*/
 		'favorites' => '2, 8',
 		'official win' => '8, 2, 5',
-		'Favs 2, 2' => 'true',
-		'Favs 8, 2' => 'true',
-		'Favs 8, 8' => 'true',
-		'win hist' => '2, 3, 7, 8, 13',//count: 5
-		'shit' => '2, 8',
+		'placers(Fav 2)' => '2',
+		'placers(Fav 8)' => '8',
 		'place' => '2, 8',
-		'gold' => '2, 2',
 	],
 ];
