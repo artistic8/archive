@@ -80,10 +80,9 @@ return [
 		*/
 		'favorites' => '3, 5, 7, 10, 11',
 		'official win' => '5, 11, 7',
-		'Favs 10, 7' => 'true',
 		'Favs 11, 11' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'shit' => '7, 10, 11',
-		'place' => '7, 11',
+		'shit' => '11',
+		'place' => '11',
 	],
 ];

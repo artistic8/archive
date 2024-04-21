@@ -65,15 +65,19 @@ return [
 		Race 7
 		*/
 		'favorites' => '1, 3, 4, 5, 14',
-		'official win' => '',
+		'official win' => '10, 11, 12',
+		'Favs 14, 10' => 'true',
+		'Favs 14, 11' => 'true',
+		'Favs 14, 12' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
+		'shit' => '10, 11, 12, 14',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '7',
-		'official win' => '',
+		'official win' => '4, 6, 1',
 		'win hist' => '1, 2, 3, 4, 5, 6, 8, 12',//count: 8
 	],
 	'9' => [
@@ -81,24 +85,21 @@ return [
 		Race 9
 		*/
 		'favorites' => '5, 6',
-		'official win' => '',
-		'Favs 6, 4' => 'true',
+		'official win' => '7, 8, 2',
 		'win hist' => '2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 10
-		'shit' => '4, 6',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '3, 4, 11',
-		'official win' => '',
+		'official win' => '14, 1, 3',
 		'Favs 3, 3' => 'true',
 		'Favs 4, 3' => 'true',
 		'Favs 11, 3' => 'true',
-		'Favs 11, 11' => 'true',
-		'win hist' => '1, 3, 4, 6, 10, 11, 12',//count: 7
+		'win hist' => '1, 3, 4, 6, 10, 11, 12, 14',//count: 8
 		'shit' => '3, 4, 11',
-		'place' => '3, 11',
+		'place' => '3',
 		'gold' => '3',
 	],
 ];

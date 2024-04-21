@@ -77,9 +77,6 @@ return [
 		*/
 		'favorites' => '2, 4, 5, 6',
 		'official win' => '5, 4, 8',
-		'Favs 6, 4' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
-		'shit' => '4, 6',
-		'place' => '4',
 	],
 ];
