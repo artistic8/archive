@@ -28,8 +28,8 @@ return [
 		*/
 		'favorites' => '2, 6, 7, 11, 12',
 		'official win' => '11, 9, 10',
-		'placers(Fav 7)' => '9, 10, 11',
-		'place' => '9, 10, 11',
+		'placers(Fav 7)' => '10, 11',
+		'place' => '10, 11',
 	],
 	'5' => [
 		/**

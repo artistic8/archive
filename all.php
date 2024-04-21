@@ -1,6 +1,7 @@
 <?php
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "placers.php";
+$historyData = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
@@ -21,7 +22,9 @@ foreach ($dir as $fileinfo) {
             $favorites = explode(", ", $data['favorites']);
             $result = explode(", ", $data['official win']);
             foreach($favorites as $favorite){
-                for($candidate = 1; $candidate <= 14; $candidate ++){
+                $history = $historyData[$raceNumber][$favorite]['win'];
+                foreach($history as $candidate){
+                    // for($candidate = 1; $candidate <= 14; $candidate ++){
                     if(in_array($candidate, $result)) {
                         if(!isset($matrix[$raceNumber][$favorite][$candidate])) $matrix[$raceNumber][$favorite][$candidate] = true;
                     }

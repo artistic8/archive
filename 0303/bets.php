@@ -72,7 +72,5 @@ return [
 		*/
 		'favorites' => '6, 11',
 		'official win' => '1, 11, 2',
-		'placers(Fav 6)' => '2',
-		'place' => '2',
 	],
 ];
