@@ -7,7 +7,6 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '5, 7, 6',
-		'place' => '1, 2, 5, 7, 8, 9, 12',
 	],
 	'2' => [
 		/**
@@ -15,7 +14,6 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '1, 8, 6',
-		'place' => '1, 2, 6, 7, 9',
 	],
 	'3' => [
 		/**
@@ -71,6 +69,5 @@ return [
 		*/
 		'favorites' => '4',
 		'official win' => '11, 4, 6',
-		'place' => '4, 5, 6, 7, 9, 11',
 	],
 ];

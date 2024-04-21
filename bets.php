@@ -53,7 +53,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         else $inter = array_intersect($inter, $candidates);
     }
    
-    if(!empty($inter)){
+    if(!empty($inter) && count($favorites) >= 2){
         $racetext .= "\t\t'place' => '" . implode(", ", $inter) . "',\n"; 
     }
     $racetext .= "\t],\n";
