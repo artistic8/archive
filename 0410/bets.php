@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '5, 6, 7',
 		'official win' => '2, 4, 3',
-		'inter' => '2, 7',
+		'inter' => '7',
 	],
 	'2' => [
 		/**
@@ -15,7 +15,7 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '5, 6, 10',
-		'inter' => '2, 4, 5, 6, 7, 8, 10, 11, 12',
+		'inter' => '',
 	],
 	'3' => [
 		/**
@@ -31,7 +31,7 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '1, 12, 7',
-		'inter' => '1, 2, 3, 5, 6, 10, 11',
+		'inter' => '1',
 	],
 	'5' => [
 		/**
@@ -39,7 +39,7 @@ return [
 		*/
 		'favorites' => '5, 11',
 		'official win' => '1, 9, 11',
-		'inter' => '1',
+		'inter' => '',
 	],
 	'6' => [
 		/**
@@ -55,7 +55,7 @@ return [
 		*/
 		'favorites' => '2, 10',
 		'official win' => '2, 9, 4',
-		'inter' => '2, 3',
+		'inter' => '2',
 	],
 	'8' => [
 		/**
@@ -63,7 +63,7 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 7',
 		'official win' => '8, 3, 12',
-		'inter' => '3, 6, 8',
+		'inter' => '3',
 	],
 	'9' => [
 		/**
@@ -71,6 +71,6 @@ return [
 		*/
 		'favorites' => '2, 9',
 		'official win' => '8, 2, 9',
-		'inter' => '8',
+		'inter' => '',
 	],
 ];
