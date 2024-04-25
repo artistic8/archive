@@ -55,14 +55,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($favorites, $inter);
     if(!empty($inter)) {
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n"; 
-        if(count($inter) >= 2){
-            if(count($favorites) == 2){
-                $racetext .= "\t\t'qin1' => '$favorites[0] X " . implode(", ", array_diff($runners, [$favorites[0]])) . "',\n"; 
-                $racetext .= "\t\t'qin2' => '$favorites[1] X " . implode(", ", array_diff($runners, $favorites)) . "',\n"; 
-            }
-            elseif(count($favorites) >= 2){
-                $racetext .= "\t\t'win/qin/trio' => '" . implode(", ", $favorites) . "',\n"; 
-            }
+        if(count($inter) >= 2 && count($favorites) >= 3){
+            $racetext .= "\t\t'win/qin/trio' => '" . implode(", ", $favorites) . "',\n"; 
         }
     }
     $racetext .= "\t],\n";
