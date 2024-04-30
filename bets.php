@@ -62,7 +62,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         }
     }
-    if(count($inter) === 1 && count($favorites) === 2){
+    if(count($inter) >= 1 && count($favorites) === 2){
         $potentialFavorites = array_diff($runners, $favorites);
         $countPotential = 0;
         $additionalText = "";
