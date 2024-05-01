@@ -21,6 +21,7 @@ return [
 		'potential inter(fav 6)' => '2, 4, 5, 6, 8',
 		'potential inter(fav 7)' => '2, 4, 7',
 		'potential inter(fav 12)' => '6, 12, 13',
+		'union' => '2, 4, 5, 6, 7, 8, 12, 13',
 	],
 	'3' => [
 		/**
@@ -82,6 +83,7 @@ return [
 		'potential inter(fav 3)' => '2, 3, 5',
 		'potential inter(fav 4)' => '4, 5, 6',
 		'potential inter(fav 5)' => '3, 4, 5',
+		'union' => '2, 3, 4, 5, 6',
 	],
 	'10' => [
 		/**
