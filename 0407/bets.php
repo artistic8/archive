@@ -39,10 +39,9 @@ return [
 		'favorites' => '3, 6',
 		'official win' => '1, 4, 3',
 		'inter' => '3',
-		'potential inter(fav 1)' => '1, 3, 4, 7',
-		'potential inter(fav 4)' => '1, 3, 4, 7',
-		'potential inter(fav 7)' => '1, 3, 4, 7',
-		'union' => '1, 3, 4, 7',
+		'potential inter(fav 1)' => '1, 3',
+		'potential inter(fav 4)' => '3, 4',
+		'potential inter(fav 7)' => '3, 7',
 	],
 	'6' => [
 		/**
@@ -59,10 +58,9 @@ return [
 		'favorites' => '1, 3',
 		'official win' => '1, 8, 5',
 		'inter' => '1, 3',
-		'potential inter(fav 2)' => '1, 2, 3, 9',
-		'potential inter(fav 9)' => '2, 9',
-		'potential inter(fav 10)' => '2, 3, 10',
-		'union' => '1, 2, 3, 9, 10',
+		'potential inter(fav 2)' => '1, 2, 3',
+		'potential inter(fav 4)' => '1, 3',
+		'potential inter(fav 10)' => '3, 10',
 	],
 	'8' => [
 		/**
@@ -79,10 +77,8 @@ return [
 		'favorites' => '4, 7',
 		'official win' => '7, 2, 14',
 		'inter' => '7',
-		'potential inter(fav 5)' => '5, 7, 12',
-		'potential inter(fav 6)' => '5, 6, 7',
-		'potential inter(fav 12)' => '5, 12',
-		'union' => '5, 6, 7, 12',
+		'potential inter(fav 5)' => '5, 7',
+		'potential inter(fav 6)' => '6, 7',
 	],
 	'10' => [
 		/**

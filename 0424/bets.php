@@ -8,6 +8,9 @@ return [
 		'favorites' => '1, 4',
 		'official win' => '1, 7, 5',
 		'inter' => '1, 4',
+		'potential inter(fav 3)' => '1, 4',
+		'potential inter(fav 5)' => '1, 5',
+		'potential inter(fav 6)' => '1, 4',
 	],
 	'2' => [
 		/**
