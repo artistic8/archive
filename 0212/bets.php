@@ -25,6 +25,7 @@ return [
 		'inter' => '3',
 		'potential inter(fav 1)' => '1, 3',
 		'potential inter(fav 4)' => '3, 4',
+		'potential inter(fav 7)' => '3, 7',
 	],
 	'4' => [
 		/**

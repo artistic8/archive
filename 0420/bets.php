@@ -33,6 +33,7 @@ return [
 		'potential inter(fav 1)' => '3, 4',
 		'potential inter(fav 5)' => '3, 4',
 		'potential inter(fav 6)' => '3, 4',
+		'potential inter(fav 7)' => '3, 7',
 		'potential inter(fav 8)' => '3, 8',
 		'potential inter(fav 9)' => '3, 4',
 	],
@@ -82,6 +83,7 @@ return [
 		'potential inter(fav 3)' => '3, 5',
 		'potential inter(fav 4)' => '4, 5',
 		'potential inter(fav 7)' => '5, 7',
+		'potential inter(fav 8)' => '5, 8',
 	],
 	'10' => [
 		/**
