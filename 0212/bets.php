@@ -48,6 +48,7 @@ return [
 		'official win' => '9, 11, 6',
 		'plain inter' => '1, 3, 5, 7',
 		'fav inter  ' => '3, 7',
+		'potential inter(fav 10)' => '3, 7',
 	],
 	'7' => [
 		/**

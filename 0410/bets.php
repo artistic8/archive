@@ -30,6 +30,11 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '1, 12, 7',
+		'potential inter(fav 3)' => '1, 3',
+		'potential inter(fav 4)' => '1, 4',
+		'potential inter(fav 5)' => '1, 5',
+		'potential inter(fav 10)' => '1, 10',
+		'potential inter(fav 11)' => '1, 11',
 	],
 	'5' => [
 		/**

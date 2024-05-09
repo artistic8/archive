@@ -30,6 +30,8 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '8, 6, 7',
+		'potential inter(fav 1)' => '1, 3',
+		'potential inter(fav 4)' => '3, 4',
 	],
 	'5' => [
 		/**
@@ -73,5 +75,10 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '4, 3, 9',
+		'potential inter(fav 3)' => '3, 5',
+		'potential inter(fav 7)' => '5, 7',
+		'potential inter(fav 8)' => '5, 8',
+		'potential inter(fav 10)' => '5, 10',
+		'potential inter(fav 12)' => '5, 12',
 	],
 ];

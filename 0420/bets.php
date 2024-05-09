@@ -12,6 +12,8 @@ return [
 		'win($20)' => '1, 4, 10',
 		'win($20)' => '4, 10',
 		'qin/trio($10)' => '1, 4, 10',
+		'potential inter(fav 3)' => '1, 4',
+		'potential inter(fav 6)' => '1, 4',
 	],
 	'2' => [
 		/**
@@ -30,6 +32,9 @@ return [
 		'official win' => '4, 9, 8',
 		'plain inter' => '3, 4, 7',
 		'fav inter  ' => '3, 4',
+		'potential inter(fav 1)' => '3, 4',
+		'potential inter(fav 5)' => '3, 4',
+		'potential inter(fav 9)' => '3, 4',
 	],
 	'4' => [
 		/**

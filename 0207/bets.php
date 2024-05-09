@@ -21,6 +21,7 @@ return [
 		*/
 		'favorites' => '7',
 		'official win' => '7, 11, 2',
+		'potential inter(fav 6)' => '6, 7',
 	],
 	'4' => [
 		/**
