@@ -79,8 +79,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                     $union1 = array_values(array_unique(array_merge($union1, $union2)));
                 }
             }
-            // if(count($union1) >= 3) 
-            $unions[$one] = $union1;
+            if(count($union1) >= 3) $unions[$one] = $union1;
         }
         $set1 = true;
         $IX = [];
