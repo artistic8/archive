@@ -76,5 +76,6 @@ return [
 		*/
 		'favorites' => '3, 7, 11',
 		'official win' => '9, 11, 1',
+		'inter' => '2, 3, 5',
 	],
 ];

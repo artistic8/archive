@@ -29,7 +29,7 @@ return [
 		*/
 		'favorites' => '1, 8',
 		'official win' => '1, 2, 7',
-		'inter' => '1, 2, 3, 11',
+		'inter' => '1, 2, 3, 10, 11',
 	],
 	'5' => [
 		/**
@@ -67,7 +67,7 @@ return [
 		*/
 		'favorites' => '4, 7',
 		'official win' => '6, 7, 1',
-		'inter' => '5, 6, 7',
+		'inter' => '1, 5, 6, 7',
 	],
 	'10' => [
 		/**
