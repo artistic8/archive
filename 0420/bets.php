@@ -29,6 +29,8 @@ return [
 		'potential inter(fav 9)' => '3, 4',
 		'union' => '3, 4',
 		'inter' => '3, 4',
+		'history(3)' => '1, 3, 4, 7, 8, 9, 10, 12',
+		'history(4)' => '3, 4, 5, 7',
 	],
 	'4' => [
 		/**
@@ -53,6 +55,7 @@ return [
 		'potential inter(fav 3)' => '1, 3',
 		'union' => '1, 3',
 		'inter' => '1',
+		'history(1)' => '1, 3, 4',
 	],
 	'7' => [
 		/**
@@ -77,6 +80,7 @@ return [
 		'potential inter(fav 8)' => '5, 8',
 		'union' => '5, 8',
 		'inter' => '5',
+		'history(5)' => '3, 4, 5, 8, 10, 12',
 	],
 	'10' => [
 		/**

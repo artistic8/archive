@@ -32,6 +32,7 @@ return [
 		'potential inter(fav 12)' => '11, 12',
 		'union' => '1, 11, 12',
 		'inter' => '11',
+		'history(11)' => '1, 5, 6, 10, 11, 12',
 	],
 	'5' => [
 		/**

@@ -17,6 +17,7 @@ return [
 		'potential inter(fav 2)' => '2, 6',
 		'union' => '2, 6',
 		'inter' => '6',
+		'history(6)' => '2, 4, 5, 6, 8, 10',
 	],
 	'3' => [
 		/**

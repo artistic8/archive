@@ -73,7 +73,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         if(!empty($union)) $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
         $X = array_intersect($union, $favorites);
-        if(!empty($X)) $racetext .= "\t\t'inter' => '" . implode(", ", $X) . "',\n"; 
+        if(!empty($X)) {
+            $racetext .= "\t\t'inter' => '" . implode(", ", $X) . "',\n"; 
+            foreach($X as $ix){
+                $racetext .= "\t\t'history($ix)' => '" . implode(", ", $history[$raceNumber][$ix]["win"]) . "',\n";
+            }
+        }
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
