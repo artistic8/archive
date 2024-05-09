@@ -52,8 +52,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         else $inter = array_intersect($inter, $candidates);
     }
-    if(count($favorites) >= 2 && !empty($inter)) $racetext .= "\t\t'plain inter' => '" . implode(", ", $inter) . "',\n"; 
-    $inter = array_intersect($favorites, $inter);
+    if(count($favorites) >= 2 && !empty($inter)) {
+        $racetext .= "\t\t'plain inter' => '" . implode(", ", $inter) . "',\n"; 
+        $inter = array_intersect($favorites, $inter);
+        $racetext .= "\t\t'fav inter  ' => '" . implode(", ", $inter) . "',\n"; 
+    }
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
