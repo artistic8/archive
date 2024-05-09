@@ -32,7 +32,6 @@ return [
 		'favorites' => '2, 8, 11',
 		'official win' => '11, 7, 1',
 		'plain inter' => '1, 10',
-		'inter 2' => '1, 5, 10, 11',
 	],
 	'5' => [
 		/**
@@ -41,8 +40,6 @@ return [
 		'favorites' => '1, 3, 4',
 		'official win' => '5, 3, 7',
 		'plain inter' => '5, 7',
-		'inter 1' => '1, 5, 7',
-		'inter 2' => '1, 2, 5, 7',
 	],
 	'6' => [
 		/**
@@ -73,6 +70,5 @@ return [
 		'favorites' => '4, 11',
 		'official win' => '2, 4, 11',
 		'plain inter' => '1, 5, 9, 12',
-		'inter 2' => '1, 5, 12',
 	],
 ];
