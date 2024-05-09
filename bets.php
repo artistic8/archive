@@ -52,7 +52,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         else $inter = array_intersect($inter, $candidates);
     }
-    if(count($favorites) >= 2) $racetext .= "\t\t'plain inter' => '" . implode(", ", $inter) . "',\n"; 
+    if(count($favorites) >= 2 && !empty($inter)) $racetext .= "\t\t'plain inter' => '" . implode(", ", $inter) . "',\n"; 
     $copyInter = $inter;
     $inter = array_intersect($favorites, $inter);
     if(!empty($inter)) {
