@@ -58,15 +58,22 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
-    $potentialFavorites = array_diff($runners, $favorites);
-    foreach($potentialFavorites as $potentialFavorite){
-        $potentialCandidates = array_intersect($history[$raceNumber][$potentialFavorite]["win"], $runners);
-        $potentialInter = array_intersect($inter, $potentialCandidates);
-        $newFavs = array_merge($favorites, [$potentialFavorite]);
-        $potentialInter = array_intersect($potentialInter, $newFavs);
-        if(count($potentialInter) >= 2){
-            $racetext .= "\t\t'potential inter(fav $potentialFavorite)' => '" . implode(", ", $potentialInter) . "',\n"; 
+    else{
+        $potentialFavorites = array_diff($runners, $favorites);
+        $union = [];
+        foreach($potentialFavorites as $potentialFavorite){
+            $potentialCandidates = array_intersect($history[$raceNumber][$potentialFavorite]["win"], $runners);
+            $potentialInter = array_intersect($inter, $potentialCandidates);
+            $newFavs = array_merge($favorites, [$potentialFavorite]);
+            $potentialInter = array_intersect($potentialInter, $newFavs);
+            if(count($potentialInter) >= 2){
+                $racetext .= "\t\t'potential inter(fav $potentialFavorite)' => '" . implode(", ", $potentialInter) . "',\n"; 
+                $union = array_values(array_unique(array_merge($union, $potentialInter)));
+            }
         }
+        if(!empty($union)) $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+        $X = array_intersect($union, $favorites);
+        if(!empty($X)) $racetext .= "\t\t'inter' => '" . implode(", ", $X) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);

@@ -33,6 +33,8 @@ return [
 		'potential inter(fav 5)' => '1, 5',
 		'potential inter(fav 10)' => '1, 10',
 		'potential inter(fav 11)' => '1, 11',
+		'union' => '1, 3, 4, 5, 10, 11',
+		'inter' => '1',
 	],
 	'5' => [
 		/**
