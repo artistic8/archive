@@ -59,15 +59,20 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
     else{
+        $union = [];
         foreach($favorites as $one){
             foreach($favorites as $two){
                 if($two > $one){
                     $his1 = array_intersect($history[$raceNumber][$one]["win"], $runners);
                     $his2 = array_intersect($history[$raceNumber][$two]["win"], $runners);
                     $I = array_intersect($his1, $his2);
-                    $racetext .= "\t\t'inter($one, $two)' => '" . implode(", ", $I) . "',\n"; 
+                    $union = array_values(array_unique(array_merge($union, $I)));
                 }
             }
+        }
+        if(!empty($union)){
+            sort($union);
+            $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
         }
     }
     $racetext .= "\t],\n";
