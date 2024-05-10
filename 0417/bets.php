@@ -8,8 +8,7 @@ return [
 		'favorites' => '5',
 		'official win' => '5, 7, 6',
 		'potential inter(fav 7)' => '5, 7',
-		'potential inter(fav 8)' => '5, 8',
-		'union' => '5, 7, 8',
+		'union' => '5, 7',
 		'inter' => '5',
 		'history(5)' => '1, 2, 5, 7, 8',
 	],
@@ -64,14 +63,10 @@ return [
 		*/
 		'favorites' => '6, 8',
 		'official win' => '8, 3, 7',
-		'potential inter(fav 2)' => '6, 8',
-		'potential inter(fav 3)' => '6, 8',
-		'potential inter(fav 4)' => '4, 6, 8',
-		'potential inter(fav 7)' => '6, 8',
-		'union' => '6, 8, 4',
-		'inter' => '6, 8',
+		'potential inter(fav 4)' => '4, 6',
+		'union' => '4, 6',
+		'inter' => '6',
 		'history(6)' => '4, 6, 8, 9, 10, 12',
-		'history(8)' => '1, 2, 3, 4, 6, 8',
 	],
 	'9' => [
 		/**

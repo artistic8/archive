@@ -28,11 +28,6 @@ return [
 		*/
 		'favorites' => '4, 11',
 		'official win' => '11, 10, 3',
-		'potential inter(fav 1)' => '1, 11',
-		'potential inter(fav 12)' => '11, 12',
-		'union' => '1, 11, 12',
-		'inter' => '11',
-		'history(11)' => '1, 5, 6, 10, 11, 12',
 	],
 	'5' => [
 		/**

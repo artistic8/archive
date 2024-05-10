@@ -52,12 +52,6 @@ return [
 		*/
 		'favorites' => '2, 9',
 		'official win' => '2, 11, 3',
-		'potential inter(fav 3)' => '2, 9',
-		'potential inter(fav 6)' => '2, 9',
-		'union' => '2, 9',
-		'inter' => '2, 9',
-		'history(2)' => '1, 2, 3, 4, 5, 9, 11',
-		'history(9)' => '1, 2, 6, 9',
 	],
 	'7' => [
 		/**

@@ -67,9 +67,5 @@ return [
 		*/
 		'favorites' => '1, 3, 5',
 		'official win' => '8, 5, 9',
-		'potential inter(fav 12)' => '5, 12',
-		'union' => '5, 12',
-		'inter' => '5',
-		'history(5)' => '3, 4, 5, 7, 10, 12',
 	],
 ];
