@@ -5,58 +5,63 @@ return [
 		/**
 		Race 1
 		*/
-		'first3' => '1, 2, 4',
+		'favorites' => '1, 3, 4',
+		'official win' => '4, 3, 9',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
-		'first3' => '5, 6, 9',
+		'favorites' => '3, 5, 6, 12',
+		'official win' => '5, 9, 10',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'first3' => '5, 6, 11',
+		'favorites' => '5',
+		'official win' => '6, 5, 2',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'first3' => '3, 6, 11',
+		'favorites' => '3, 11',
+		'official win' => '1, 4, 11',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'first3' => '3, 4, 10',
+		'favorites' => '3, 6',
+		'official win' => '10, 3, 9',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'first3' => '4, 6, 10',
+		'favorites' => '4, 6, 10, 12',
+		'official win' => '4, 10, 7',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
-		'first3' => '3, 6, 11',
+		'favorites' => '3, 6, 11',
+		'official win' => '6, 5, 11',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'first3' => '3, 4, 7',
-		'potential inter(fav 8)' => '3, 8',
-		'union' => '3, 8',
-		'inter' => '3',
-		'history(3)' => '3, 6, 7, 8',
+		'favorites' => '1, 2, 3, 4',
+		'official win' => '3, 10, 1',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'first3' => '1, 2, 6',
+		'favorites' => '1, 7',
+		'official win' => '1, 3, 6',
 	],
 ];

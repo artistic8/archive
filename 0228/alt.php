@@ -5,67 +5,79 @@ return [
 		/**
 		Race 1
 		*/
-		'first3' => '3, 5, 9',
+		'favorites' => '9',
+		'official win' => '3, 10, 5',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
-		'first3' => '6, 7, 9',
+		'favorites' => '1, 3, 6, 9, 12',
+		'official win' => '6, 2, 9',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'first3' => '6, 8, 12',
+		'favorites' => '3, 6, 8, 9, 12',
+		'official win' => '12, 8, 2',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'first3' => '3, 5, 7',
+		'favorites' => '5',
+		'official win' => '2, 5, 9',
+		'potential inter(fav 1)' => '1, 5',
+		'potential inter(fav 4)' => '4, 5',
+		'union' => '1, 5, 4',
+		'inter' => '5',
+		'history(5)' => '1, 4, 5, 6',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'first3' => '1, 3, 5',
-		'win($20)' => '1, 3, 5',
-		'win($20)' => '3, 5',
-		'qin/trio($10)' => '1, 3, 5',
+		'favorites' => '5',
+		'official win' => '5, 2, 6',
+		'potential inter(fav 1)' => '1, 5',
+		'potential inter(fav 4)' => '4, 5',
+		'union' => '1, 5, 4',
+		'inter' => '5',
+		'history(5)' => '1, 4, 5',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'first3' => '1, 2, 9',
+		'favorites' => '2, 9',
+		'official win' => '2, 11, 3',
+		'potential inter(fav 3)' => '2, 9',
+		'potential inter(fav 6)' => '2, 9',
+		'union' => '2, 9',
+		'inter' => '2, 9',
+		'history(2)' => '1, 2, 3, 4, 5, 9, 11',
+		'history(9)' => '1, 2, 6, 9',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
-		'first3' => '1, 3, 4',
+		'favorites' => '3, 4',
+		'official win' => '10, 1, 4',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'first3' => '2, 7, 8',
-		'potential inter(fav 3)' => '3, 8',
-		'potential inter(fav 6)' => '6, 8',
-		'union' => '3, 8, 6',
-		'inter' => '8',
-		'history(8)' => '1, 2, 3, 4, 6, 8',
+		'favorites' => '2, 5, 7',
+		'official win' => '4, 9, 3',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'first3' => '1, 3, 5',
-		'potential inter(fav 8)' => '5, 8',
-		'potential inter(fav 12)' => '5, 12',
-		'union' => '5, 8, 12',
-		'inter' => '5',
-		'history(5)' => '3, 4, 5, 7, 8, 10, 12',
+		'favorites' => '1',
+		'official win' => '1, 6, 11',
 	],
 ];
