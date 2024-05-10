@@ -46,6 +46,7 @@ return [
 		'union' => '1, 4',
 		'inter' => '4',
 		'history(4)' => '1, 4',
+		'Place 1st or 2nd' => '4, 10',
 	],
 	'7' => [
 		/**

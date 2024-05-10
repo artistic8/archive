@@ -50,6 +50,7 @@ return [
 		'union' => '1, 4',
 		'inter' => '1',
 		'history(1)' => '1, 3, 4, 11',
+		'Place 1st or 2nd' => '1, 12',
 	],
 	'7' => [
 		/**
@@ -69,6 +70,7 @@ return [
 		'union' => '4, 6, 8',
 		'inter' => '6',
 		'history(6)' => '4, 6, 8, 10, 12',
+		'Place 1st or 2nd' => '2, 6',
 	],
 	'9' => [
 		/**

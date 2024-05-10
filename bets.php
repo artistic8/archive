@@ -77,6 +77,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'inter' => '" . implode(", ", $X) . "',\n"; 
             foreach($X as $ix){
                 $racetext .= "\t\t'history($ix)' => '" . implode(", ", $history[$raceNumber][$ix]["win"]) . "',\n";
+                if(count($favorites) > 1 && count(array_intersect($history[$raceNumber][$ix]["win"], $favorites)) === 1){
+                    $racetext .= "\t\t'Place 1st or 2nd' => '" . implode(", ", $favorites) . "',\n";
+                }
             }
         }
     }
