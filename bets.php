@@ -59,7 +59,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
     else{
-        $runners = array_slice($runners, 0, 7);
         $potentialFavorites = array_diff($runners, $favorites);
         $union = [];
         foreach($potentialFavorites as $potentialFavorite){

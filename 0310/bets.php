@@ -81,6 +81,10 @@ return [
 		*/
 		'favorites' => '2, 3, 5',
 		'official win' => '3, 5, 2',
+		'potential inter(fav 8)' => '5, 8',
+		'union' => '5, 8',
+		'inter' => '5',
+		'history(5)' => '4, 5, 7, 8, 10, 12',
 	],
 	'10' => [
 		/**

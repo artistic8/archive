@@ -32,6 +32,10 @@ return [
 		*/
 		'favorites' => '4, 11',
 		'official win' => '12, 4, 6',
+		'potential inter(fav 1)' => '1, 11',
+		'union' => '1, 11',
+		'inter' => '11',
+		'history(11)' => '1, 5, 6, 10, 11',
 	],
 	'5' => [
 		/**
@@ -64,6 +68,10 @@ return [
 		*/
 		'favorites' => '4, 5',
 		'official win' => '8, 5, 10',
+		'potential inter(fav 8)' => '4, 8',
+		'union' => '4, 8',
+		'inter' => '4',
+		'history(4)' => '2, 3, 4, 6, 7, 8, 12',
 	],
 	'9' => [
 		/**

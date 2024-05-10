@@ -7,6 +7,10 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '7, 11, 5',
+		'potential inter(fav 8)' => '5, 8',
+		'union' => '5, 8',
+		'inter' => '5',
+		'history(5)' => '1, 2, 5, 8',
 	],
 	'2' => [
 		/**
@@ -61,7 +65,8 @@ return [
 		'favorites' => '2, 6',
 		'official win' => '9, 2, 8',
 		'potential inter(fav 4)' => '4, 6',
-		'union' => '4, 6',
+		'potential inter(fav 8)' => '6, 8',
+		'union' => '4, 6, 8',
 		'inter' => '6',
 		'history(6)' => '4, 6, 8, 10, 12',
 	],
