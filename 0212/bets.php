@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '4, 12',
 		'official win' => '10, 12, 4',
+		'inter(4, 12)' => '',
 	],
 	'2' => [
 		/**
@@ -14,6 +15,12 @@ return [
 		*/
 		'favorites' => '2, 3, 12, 13',
 		'official win' => '13, 1, 12',
+		'inter(2, 3)' => '2, 5, 6',
+		'inter(2, 12)' => '5, 6, 12',
+		'inter(2, 13)' => '',
+		'inter(3, 12)' => '5, 6',
+		'inter(3, 13)' => '',
+		'inter(12, 13)' => '',
 	],
 	'3' => [
 		/**
@@ -21,6 +28,7 @@ return [
 		*/
 		'favorites' => '3, 6',
 		'official win' => '1, 3, 10',
+		'inter(3, 6)' => '3, 7, 12',
 	],
 	'4' => [
 		/**
@@ -28,10 +36,9 @@ return [
 		*/
 		'favorites' => '1, 2, 10',
 		'official win' => '10, 4, 3',
-		'potential inter(fav 5)' => '1, 5',
-		'union' => '1, 5',
-		'inter' => '1',
-		'history(1)' => '1, 3, 4, 5, 6, 10, 11',
+		'inter(1, 2)' => '1, 3, 4, 5, 11',
+		'inter(1, 10)' => '1, 5, 10',
+		'inter(2, 10)' => '1, 5',
 	],
 	'5' => [
 		/**
@@ -39,6 +46,9 @@ return [
 		*/
 		'favorites' => '4, 10, 12',
 		'official win' => '2, 11, 13',
+		'inter(4, 10)' => '3, 4',
+		'inter(4, 12)' => '5',
+		'inter(10, 12)' => '',
 	],
 	'6' => [
 		/**
@@ -46,12 +56,7 @@ return [
 		*/
 		'favorites' => '3, 7',
 		'official win' => '9, 11, 6',
-		'potential inter(fav 1)' => '1, 3',
-		'potential inter(fav 10)' => '3, 7',
-		'union' => '1, 3, 7',
-		'inter' => '3, 7',
-		'history(3)' => '1, 2, 3, 5, 6, 7',
-		'history(7)' => '1, 3, 5, 7',
+		'inter(3, 7)' => '1, 3, 5, 7',
 	],
 	'7' => [
 		/**
@@ -73,6 +78,9 @@ return [
 		*/
 		'favorites' => '1, 8, 12',
 		'official win' => '5, 1, 6',
+		'inter(1, 8)' => '8, 12',
+		'inter(1, 12)' => '12',
+		'inter(8, 12)' => '12',
 	],
 	'10' => [
 		/**
@@ -80,6 +88,7 @@ return [
 		*/
 		'favorites' => '5, 13',
 		'official win' => '3, 5, 11',
+		'inter(5, 13)' => '',
 	],
 	'11' => [
 		/**
@@ -87,5 +96,11 @@ return [
 		*/
 		'favorites' => '4, 5, 6, 13',
 		'official win' => '12, 11, 1',
+		'inter(4, 5)' => '',
+		'inter(4, 6)' => '',
+		'inter(4, 13)' => '',
+		'inter(5, 6)' => '',
+		'inter(5, 13)' => '',
+		'inter(6, 13)' => '',
 	],
 ];

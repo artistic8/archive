@@ -7,6 +7,12 @@ return [
 		*/
 		'favorites' => '3, 7, 8, 10',
 		'official win' => '3, 7, 10',
+		'inter(3, 7)' => '2',
+		'inter(3, 8)' => '1',
+		'inter(3, 10)' => '1, 4',
+		'inter(7, 8)' => '5',
+		'inter(7, 10)' => '6',
+		'inter(8, 10)' => '1, 8',
 	],
 	'2' => [
 		/**
@@ -14,6 +20,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '5, 6, 4',
+		'inter(3, 4)' => '5, 8',
 	],
 	'3' => [
 		/**
@@ -21,6 +28,16 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5, 10',
 		'official win' => '4, 3, 5',
+		'inter(1, 3)' => '1, 3, 9',
+		'inter(1, 4)' => '3',
+		'inter(1, 5)' => '3',
+		'inter(1, 10)' => '3, 11',
+		'inter(3, 4)' => '3, 4, 7',
+		'inter(3, 5)' => '3',
+		'inter(3, 10)' => '3, 4, 8',
+		'inter(4, 5)' => '3',
+		'inter(4, 10)' => '3, 4',
+		'inter(5, 10)' => '3',
 	],
 	'4' => [
 		/**
@@ -28,6 +45,9 @@ return [
 		*/
 		'favorites' => '2, 5, 6',
 		'official win' => '5, 6, 1',
+		'inter(2, 5)' => '1, 4',
+		'inter(2, 6)' => '4',
+		'inter(5, 6)' => '4',
 	],
 	'5' => [
 		/**
@@ -35,11 +55,9 @@ return [
 		*/
 		'favorites' => '1, 3, 7',
 		'official win' => '7, 2, 1',
-		'potential inter(fav 5)' => '1, 5',
-		'union' => '1, 5',
-		'inter' => '1',
-		'history(1)' => '1, 2, 5',
-		'Place 1st or 2nd' => '1, 3, 7',
+		'inter(1, 3)' => '1, 5',
+		'inter(1, 7)' => '1, 5',
+		'inter(3, 7)' => '1, 5',
 	],
 	'6' => [
 		/**
@@ -47,6 +65,9 @@ return [
 		*/
 		'favorites' => '1, 5, 9',
 		'official win' => '1, 12, 9',
+		'inter(1, 5)' => '',
+		'inter(1, 9)' => '',
+		'inter(5, 9)' => '2, 6',
 	],
 	'7' => [
 		/**
@@ -54,6 +75,7 @@ return [
 		*/
 		'favorites' => '4, 9',
 		'official win' => '2, 4, 3',
+		'inter(4, 9)' => '',
 	],
 	'8' => [
 		/**
@@ -61,15 +83,7 @@ return [
 		*/
 		'favorites' => '3, 8',
 		'official win' => '8, 4, 10',
-		'potential inter(fav 2)' => '3, 8',
-		'potential inter(fav 4)' => '3, 8',
-		'potential inter(fav 5)' => '3, 8',
-		'potential inter(fav 6)' => '6, 8',
-		'potential inter(fav 7)' => '3, 8',
-		'union' => '3, 8, 6',
-		'inter' => '3, 8',
-		'history(3)' => '3, 6, 7, 8',
-		'history(8)' => '1, 2, 3, 4, 6, 8',
+		'inter(3, 8)' => '3, 6, 8',
 	],
 	'9' => [
 		/**
@@ -77,5 +91,8 @@ return [
 		*/
 		'favorites' => '3, 7, 11',
 		'official win' => '9, 11, 1',
+		'inter(3, 7)' => '5',
+		'inter(3, 11)' => '5, 12',
+		'inter(7, 11)' => '1, 5',
 	],
 ];

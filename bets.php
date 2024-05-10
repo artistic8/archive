@@ -59,26 +59,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
     else{
-        $potentialFavorites = array_diff($runners, $favorites);
-        $union = [];
-        foreach($potentialFavorites as $potentialFavorite){
-            $potentialCandidates = array_intersect($history[$raceNumber][$potentialFavorite]["win"], $runners);
-            $potentialInter = array_intersect($inter, $potentialCandidates);
-            $newFavs = array_merge($favorites, [$potentialFavorite]);
-            $potentialInter = array_intersect($potentialInter, $newFavs);
-            if(count($potentialInter) >= 2){
-                $racetext .= "\t\t'potential inter(fav $potentialFavorite)' => '" . implode(", ", $potentialInter) . "',\n"; 
-                $union = array_values(array_unique(array_merge($union, $potentialInter)));
-            }
-        }
-        if(!empty($union)) $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
-        $X = array_intersect($union, $favorites);
-        if(!empty($X)) {
-            $racetext .= "\t\t'inter' => '" . implode(", ", $X) . "',\n"; 
-            foreach($X as $ix){
-                $racetext .= "\t\t'history($ix)' => '" . implode(", ", $history[$raceNumber][$ix]["win"]) . "',\n";
-                if(count($favorites) > 1 && count(array_intersect($history[$raceNumber][$ix]["win"], $favorites)) === 1){
-                    $racetext .= "\t\t'Place 1st or 2nd' => '" . implode(", ", $favorites) . "',\n";
+        foreach($favorites as $one){
+            foreach($favorites as $two){
+                if($two > $one){
+                    $his1 = array_intersect($history[$raceNumber][$one]["win"], $runners);
+                    $his2 = array_intersect($history[$raceNumber][$two]["win"], $runners);
+                    $I = array_intersect($his1, $his2);
+                    $racetext .= "\t\t'inter($one, $two)' => '" . implode(", ", $I) . "',\n"; 
                 }
             }
         }
