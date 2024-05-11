@@ -8,7 +8,7 @@ $history = [];
 for($r = 1; $r <= 11; $r++){
     $history[$r] = [];
     for($f = 1; $f <= 14; $f++){
-        $history[$r][$f] = [];
+        $history[$r][$f] = [$f];
     }
 }
 
