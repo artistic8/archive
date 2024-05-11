@@ -50,7 +50,7 @@ return [
 		*/
 		'favorites' => '2, 7',
 		'official win' => '5, 7, 1',
-		'union' => '1, 3, 9',
+		'union' => '1, 3, 9, 11',
 		'inter' => '',//count: 0
 	],
 	'7' => [

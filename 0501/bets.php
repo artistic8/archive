@@ -7,8 +7,9 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '4, 3, 9',
-		'union' => '1, 2, 4, 10',
-		'inter' => '1, 4',//count: 2
+		'win($20)' => '1, 3, 4',
+		'win($20)' => '3, 4',
+		'qin/trio($10)' => '1, 3, 4',
 	],
 	'2' => [
 		/**
@@ -32,7 +33,7 @@ return [
 		*/
 		'favorites' => '3, 11',
 		'official win' => '1, 4, 11',
-		'union' => '6',
+		'union' => '5, 6',
 		'inter' => '',//count: 0
 	],
 	'5' => [
