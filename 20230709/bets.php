@@ -7,11 +7,6 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '3, 10, 2',
-		'inter' => '3',
-		'Candidate(Favs 3, 1, 4)' => '1, 4',
-		'Candidate(Favs 3, 1, 5)' => '1, 5',
-		'Candidate(Favs 3, 2, 5)' => '2, 5',
-		'union' => '1, 2, 4, 5',//count: 4
 	],
 	'2' => [
 		/**
@@ -19,9 +14,6 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '6, 4, 1',
-		'inter' => '1',
-		'Candidate(Favs 1, 2, 6)' => '2, 6',
-		'union' => '2, 6',//count: 2
 	],
 	'3' => [
 		/**
@@ -29,9 +21,6 @@ return [
 		*/
 		'favorites' => '2',
 		'official win' => '10, 13, 4',
-		'inter' => '2',
-		'Candidate(Favs 2, 1, 3)' => '1, 3',
-		'union' => '1, 3',//count: 2
 	],
 	'4' => [
 		/**
@@ -39,10 +28,6 @@ return [
 		*/
 		'favorites' => '2',
 		'official win' => '9, 2, 1',
-		'inter' => '2',
-		'Candidate(Favs 2, 1, 4)' => '1, 2',
-		'Candidate(Favs 2, 1, 5)' => '1, 2, 5',
-		'union' => '1, 2, 5',//count: 3
 	],
 	'5' => [
 		/**
@@ -50,17 +35,6 @@ return [
 		*/
 		'favorites' => '7',
 		'official win' => '8, 3, 4',
-		'inter' => '7',
-		'Candidate(Favs 7, 1, 3)' => '1, 3, 7',
-		'Candidate(Favs 7, 1, 4)' => '1, 4, 7',
-		'Candidate(Favs 7, 1, 5)' => '1, 5',
-		'Candidate(Favs 7, 1, 6)' => '1, 7',
-		'Candidate(Favs 7, 3, 4)' => '3, 4, 7',
-		'Candidate(Favs 7, 3, 5)' => '3, 5',
-		'Candidate(Favs 7, 3, 6)' => '3, 7',
-		'Candidate(Favs 7, 4, 5)' => '4, 5',
-		'Candidate(Favs 7, 4, 6)' => '4, 7',
-		'union' => '1, 3, 4, 5, 7',//count: 5
 	],
 	'6' => [
 		/**
@@ -68,7 +42,6 @@ return [
 		*/
 		'favorites' => '2',
 		'official win' => '2, 6, 4',
-		'inter' => '2',
 	],
 	'7' => [
 		/**
@@ -76,12 +49,6 @@ return [
 		*/
 		'favorites' => '4',
 		'official win' => '4, 9, 1',
-		'inter' => '4',
-		'Candidate(Favs 4, 1, 2)' => '1, 2, 4',
-		'Candidate(Favs 4, 1, 7)' => '4, 7',
-		'Candidate(Favs 4, 2, 5)' => '2, 5',
-		'Candidate(Favs 4, 2, 7)' => '2, 4, 7',
-		'union' => '1, 2, 4, 5, 7',//count: 5
 	],
 	'8' => [
 		/**
@@ -89,9 +56,6 @@ return [
 		*/
 		'favorites' => '10',
 		'official win' => '10, 7, 2',
-		'inter' => '10',
-		'Candidate(Favs 10, 2, 4)' => '2, 4',
-		'union' => '2, 4',//count: 2
 	],
 	'9' => [
 		/**
@@ -99,11 +63,6 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '3, 11, 2',
-		'inter' => '3',
-		'Candidate(Favs 3, 2, 5)' => '3, 5',
-		'Candidate(Favs 3, 2, 6)' => '2, 3',
-		'Candidate(Favs 3, 5, 6)' => '3, 5',
-		'union' => '2, 3, 5',//count: 3
 	],
 	'10' => [
 		/**
@@ -111,7 +70,6 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '1, 3, 4',
-		'inter' => '1',
 	],
 	'11' => [
 		/**
@@ -119,6 +77,5 @@ return [
 		*/
 		'favorites' => '14',
 		'official win' => '14, 6, 11',
-		'inter' => '14',
 	],
 ];
