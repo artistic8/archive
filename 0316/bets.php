@@ -70,8 +70,8 @@ return [
 		*/
 		'favorites' => '1, 5, 7',
 		'official win' => '5, 4, 1',
-		'union' => '3, 4, 8, 10, 12',
-		'inter' => '',//count: 0
+		'union' => '3, 4, 7, 8, 10, 12',
+		'inter' => '7',//count: 1
 	],
 	'9' => [
 		/**
