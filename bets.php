@@ -31,7 +31,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $runners = array_keys($winsArray);
     $favorite = $runners[0];
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
-    sort($runners);
     sort($favorites);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
