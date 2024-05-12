@@ -6,28 +6,28 @@ return [
 		Race 1
 		*/
 		'favorites' => '2',
-		'official win' => '3,4,2',
+		'official win' => '3, 4, 2',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
 		'favorites' => '6',
-		'official win' => '1,3,4',
+		'official win' => '1, 3, 4',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '7',
-		'official win' => '5,3,7',
+		'official win' => '5, 3, 7',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'favorites' => '9',
-		'official win' => '9,8,10',
+		'official win' => '9, 8, 10',
 	],
 	'5' => [
 		/**
