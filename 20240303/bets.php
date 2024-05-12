@@ -25,7 +25,7 @@ return [
 		*/
 		'favorites' => '6, 9',
 		'official win' => '3, 1, 6',
-		'union' => '7',//count: 1
+		'union' => '4, 7',//count: 2
 		'inter' => '',
 	],
 	'4' => [
