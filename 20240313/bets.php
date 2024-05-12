@@ -7,8 +7,8 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 6',
 		'official win' => '2, 6, 4',
-		'union' => '1, 2, 3, 4',
-		'inter' => '2, 3, 4',//count: 3
+		'union' => '1, 2, 3, 4',//count: 4
+		'inter' => '2, 3, 4',
 	],
 	'2' => [
 		/**
@@ -16,8 +16,8 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '8, 4, 3',
-		'union' => '5',
-		'inter' => '',//count: 0
+		'union' => '5',//count: 1
+		'inter' => '',
 	],
 	'3' => [
 		/**
@@ -25,8 +25,8 @@ return [
 		*/
 		'favorites' => '2, 4, 6, 7, 11, 12',
 		'official win' => '5, 12, 1',
-		'union' => '1, 2, 3, 5, 6, 7, 11, 12',
-		'inter' => '2, 6, 7, 11, 12',//count: 5
+		'union' => '1, 2, 3, 5, 6, 7, 11, 12',//count: 8
+		'inter' => '2, 6, 7, 11, 12',
 	],
 	'4' => [
 		/**
@@ -34,8 +34,8 @@ return [
 		*/
 		'favorites' => '1, 2, 3',
 		'official win' => '3, 8, 9',
-		'union' => '1, 2, 4, 5, 6, 10, 11',
-		'inter' => '1, 2',//count: 2
+		'union' => '1, 2, 4, 5, 6, 10, 11',//count: 7
+		'inter' => '1, 2',
 	],
 	'5' => [
 		/**
@@ -43,8 +43,8 @@ return [
 		*/
 		'favorites' => '5, 8, 10',
 		'official win' => '4, 11, 10',
-		'union' => '1, 4',
-		'inter' => '',//count: 0
+		'union' => '1, 4',//count: 2
+		'inter' => '',
 	],
 	'6' => [
 		/**
@@ -52,8 +52,8 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '1, 7, 2',
-		'union' => '1, 3, 9',
-		'inter' => '1, 3',//count: 2
+		'union' => '1, 3, 9',//count: 3
+		'inter' => '1, 3',
 	],
 	'7' => [
 		/**
@@ -61,8 +61,8 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '3, 12, 5',
-		'union' => '2, 3, 10',
-		'inter' => '3',//count: 1
+		'union' => '2, 3, 10',//count: 3
+		'inter' => '3',
 	],
 	'8' => [
 		/**
@@ -70,8 +70,8 @@ return [
 		*/
 		'favorites' => '4, 7, 10',
 		'official win' => '2, 8, 9',
-		'union' => '3, 4, 6, 8, 12',
-		'inter' => '4',//count: 1
+		'union' => '3, 4, 6, 8, 12',//count: 5
+		'inter' => '4',
 	],
 	'9' => [
 		/**
@@ -79,7 +79,7 @@ return [
 		*/
 		'favorites' => '2, 4, 5, 6',
 		'official win' => '5, 4, 8',
-		'union' => '1, 3, 4, 6, 7, 8',
-		'inter' => '4, 6',//count: 2
+		'union' => '1, 3, 4, 6, 7, 8',//count: 6
+		'inter' => '4, 6',
 	],
 ];
