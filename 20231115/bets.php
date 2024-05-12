@@ -1,0 +1,105 @@
+<?php
+
+return [
+	'1' => [
+		/**
+		Race 1
+		*/
+		'favorites' => '10',
+		'official win' => '10, 12, 3',
+		'inter' => '10',
+		'Candidate(Favs 10, 1, 3)' => '1, 10',
+		'Candidate(Favs 10, 1, 4)' => '1, 4, 10',
+		'Candidate(Favs 10, 1, 5)' => '1, 5',
+		'Candidate(Favs 10, 3, 4)' => '4, 10',
+		'union' => '1, 4, 5, 10',//count: 4
+	],
+	'2' => [
+		/**
+		Race 2
+		*/
+		'favorites' => '4',
+		'official win' => '4, 6, 2',
+		'inter' => '4',
+		'Candidate(Favs 4, 2, 5)' => '4, 5',
+		'Candidate(Favs 4, 3, 5)' => '4, 5',
+		'Candidate(Favs 4, 5, 6)' => '4, 5',
+		'union' => '4, 5',//count: 2
+	],
+	'3' => [
+		/**
+		Race 3
+		*/
+		'favorites' => '11',
+		'official win' => '11, 3, 12',
+		'inter' => '11',
+	],
+	'4' => [
+		/**
+		Race 4
+		*/
+		'favorites' => '1',
+		'official win' => '11, 9, 2',
+		'inter' => '1',
+		'Candidate(Favs 1, 2, 4)' => '1, 2',
+		'Candidate(Favs 1, 2, 5)' => '1, 2, 5',
+		'Candidate(Favs 1, 5, 6)' => '5, 6',
+		'union' => '1, 2, 5, 6',//count: 4
+	],
+	'5' => [
+		/**
+		Race 5
+		*/
+		'favorites' => '2',
+		'official win' => '2, 4, 10',
+		'inter' => '2',
+		'Candidate(Favs 2, 1, 4)' => '1, 2',
+		'union' => '1, 2',//count: 2
+	],
+	'6' => [
+		/**
+		Race 6
+		*/
+		'favorites' => '1',
+		'official win' => '12, 1, 4',
+		'inter' => '1',
+	],
+	'7' => [
+		/**
+		Race 7
+		*/
+		'favorites' => '4',
+		'official win' => '1, 3, 9',
+		'inter' => '4',
+		'Candidate(Favs 4, 1, 2)' => '1, 2, 4',
+		'Candidate(Favs 4, 1, 3)' => '1, 3',
+		'Candidate(Favs 4, 2, 3)' => '2, 3',
+		'Candidate(Favs 4, 2, 5)' => '2, 5',
+		'union' => '1, 2, 3, 4, 5',//count: 5
+	],
+	'8' => [
+		/**
+		Race 8
+		*/
+		'favorites' => '3',
+		'official win' => '1, 4, 3',
+		'inter' => '3',
+		'Candidate(Favs 3, 1, 4)' => '1, 3',
+		'Candidate(Favs 3, 1, 5)' => '3, 5',
+		'Candidate(Favs 3, 2, 5)' => '3, 5',
+		'union' => '1, 3, 5',//count: 3
+	],
+	'9' => [
+		/**
+		Race 9
+		*/
+		'favorites' => '6',
+		'official win' => '6, 9, 4',
+		'inter' => '6',
+		'Candidate(Favs 6, 2, 3)' => '2, 3',
+		'Candidate(Favs 6, 2, 4)' => '4, 6',
+		'Candidate(Favs 6, 3, 5)' => '3, 5',
+		'Candidate(Favs 6, 4, 5)' => '4, 5',
+		'union' => '2, 3, 4, 5, 6',//count: 5
+	],
+];
