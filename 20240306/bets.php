@@ -43,6 +43,9 @@ return [
 		*/
 		'favorites' => '1, 3, 7',
 		'official win' => '7, 2, 1',
+		'win($20)' => '1, 3, 7',
+		'win($20)' => '3, 7',
+		'qin/trio($10)' => '1, 3, 7',
 		'union' => '1, 3, 4, 5',//count: 4
 		'inter' => '1, 3',
 	],
