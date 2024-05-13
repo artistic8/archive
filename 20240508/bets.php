@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'official win' => '6, 1, 8',
-		'union' => '1, 4, 11',//count: 3
+		'union' => '1, 4, 7, 9, 11',//count: 5
 		'inter' => '',
 	],
 	'2' => [
@@ -52,8 +52,8 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 6, 7, 8, 10',
 		'official win' => '1, 7, 5',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 9, 11, 12',//count: 10
-		'inter' => '2, 3, 4, 6, 7',
+		'union' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',//count: 11
+		'inter' => '2, 3, 4, 6, 7, 10',
 	],
 	'7' => [
 		/**
@@ -61,8 +61,8 @@ return [
 		*/
 		'favorites' => '2, 3, 10',
 		'official win' => '5, 7, 2',
-		'union' => '2, 3, 9',//count: 3
-		'inter' => '2, 3',
+		'union' => '2, 3, 9, 10',//count: 4
+		'inter' => '2, 3, 10',
 	],
 	'8' => [
 		/**
