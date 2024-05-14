@@ -26,21 +26,21 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '9',
+		'favorites' => '8, 9',
 		'official win' => '8, 1, 2',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'favorites' => '5',
+		'favorites' => '5, 6, 13',
 		'official win' => '3, 2, 6',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '9',
+		'favorites' => '7, 8, 9',
 		'official win' => '7, 6, 8',
 	],
 	'7' => [
