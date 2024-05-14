@@ -25,6 +25,9 @@ return [
 		*/
 		'favorites' => '3, 8, 10',
 		'official win' => '8, 5, 11',
+		'win($20)' => '3, 8, 10',
+		'win($20)' => '8, 10',
+		'qin/trio($10)' => '3, 8, 10',
 		'union' => '1, 3, 4, 8, 9, 10, 11, 12',//count: 8
 		'inter' => '3, 8, 10',
 	],
@@ -50,7 +53,7 @@ return [
 		*/
 		'favorites' => '3, 12',
 		'official win' => '2, 7, 12',
-		'union' => '1, 2, 11',//count: 3
+		'union' => '1, 2, 6, 11',//count: 4
 		'inter' => '',
 	],
 	'7' => [
