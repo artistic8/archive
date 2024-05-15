@@ -13,7 +13,7 @@ return [
 		Race 2
 		*/
 		'favorites' => '1',
-		'official win' => '7,12,1',
+		'official win' => '7, 12, 1',
 	],
 	'3' => [
 		/**
