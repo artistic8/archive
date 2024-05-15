@@ -1,3 +1,4 @@
+
 <?php
 
 return [
@@ -48,7 +49,7 @@ return [
 		Race 7
 		*/
 		'favorites' => '1, 6',
-		'official win' => '5, 8, 1',
+		'official win' => '5 8, 1',
 	],
 	'8' => [
 		/**
