@@ -21,8 +21,8 @@ else die('No input Files!');
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
+
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
-    if(!isset($allRacesOdds[$raceNumber]) || !isset($oldData[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
