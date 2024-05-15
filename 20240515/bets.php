@@ -73,7 +73,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '2, 3, 9',
-		'union' => '3, 4, 5, 8, 9, 12',//count: 6
-		'inter' => '3, 9',
+		'union' => '2, 3, 4, 5, 8, 9, 12',//count: 7
+		'inter' => '2, 3, 9',
 	],
 ];
