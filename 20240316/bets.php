@@ -61,8 +61,8 @@ return [
 		*/
 		'favorites' => '4, 6, 7',
 		'official win' => '11, 3, 6',
-		'union' => '2, 3, 4, 5, 6, 8',//count: 6
-		'inter' => '4, 6',
+		'union' => '2, 3, 4, 5, 6, 7, 8',//count: 7
+		'inter' => '4, 6, 7',
 	],
 	'8' => [
 		/**
