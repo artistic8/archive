@@ -41,7 +41,7 @@ return [
 		Race 5
 		*/
 		'favorites' => '2, 4, 11',
-		'union' => '1, 2, 5, 7, 9',//count: 5
+		'union' => '1, 2, 3, 5, 7, 9',//count: 6
 		'inter' => '2',
 	],
 	'6' => [
