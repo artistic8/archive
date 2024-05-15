@@ -19,6 +19,7 @@ foreach ($dir as $fileinfo) {
         $bets = include($betsFile);
         foreach($bets as $raceNumber => $data){
             $favorites = explode(", ", $data['favorites']);
+            if(!isset($data['official win'])) continue;
             $winners = explode(", ", $data['official win']);
             foreach($favorites as $favorite){
                 if(!in_array($winners[0], $history[$raceNumber][$favorite])) $history[$raceNumber][$favorite][] = $winners[0];
