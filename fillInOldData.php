@@ -27,7 +27,6 @@ foreach ($dir1 as $fileinfo1) {
                     $betsFile = $raceFolder . DIRECTORY_SEPARATOR . "bets.php";
                     $doNotskipFile = false;
                     if(file_exists($betsFile)){
-                        $skipFile = false;
                         $fileContents = include($betsFile);
                         foreach($fileContents as $theRace => $theData){
                             $favs = implode(", ", $dayInfo[$theRace]);
