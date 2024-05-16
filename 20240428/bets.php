@@ -92,9 +92,7 @@ return [
 		*/
 		'favorites' => '2, 7, 8, 13',
 		'official win' => '13, 2, 8',
-		'win($20)' => '2, 7, 8',
-		'win($20)' => '7, 8',
-		'qin/trio($10)' => '2, 7, 8',
+		'possible win' => '2, 7, 8',
 		'union' => '2, 3, 7, 8, 13',//count: 5
 		'inter' => '2, 7, 8, 13',
 	],
