@@ -74,9 +74,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                             $win3 = array_intersect($history[$raceNumber][$three]["win"], $runners);
                             $intersection = array_intersect($win1, $win2, $win3, [$one, $two, $three]);
                             if(count($intersection) >= 2){
-                                $racetext .= "\t\t'win($20)' => '" . implode(", ", [$one, $two, $three]) . "',\n"; 
-                                $racetext .= "\t\t'win($20)' => '" . $two . ", " . $three . "',\n"; 
-                                $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", [$one, $two, $three]) . "',\n"; 
+                                $racetext .= "\t\t'possible win' => '" . implode(", ", [$one, $two, $three]) . "',\n"; 
                             }
                         }
                     }
