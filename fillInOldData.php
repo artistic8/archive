@@ -21,25 +21,43 @@ foreach ($dir1 as $fileinfo1) {
                 $favsFile =  $repository . DIRECTORY_SEPARATOR . "favorites.php";
                 $favsData = include($favsFile);
                 foreach($favsData as $raceDate => $dayInfo){
+                    echo $raceDate . "\n";
+                    ksort($dayInfo);
+                    $raceDateFormat = substr($raceDate, 0, 4) . "/" . substr($raceDate, 4, 2) . "/" . substr($raceDate, 6, 2);
+                    $results =  $oddsJSON = file_get_contents("https://racing.hkjc.com/racing/information/English/Racing/ResultsAll.aspx?RaceDate=$raceDateFormat");
+                    $results = str_replace('<td class="f_fs14">', '', $results); 
+                    $results = str_replace(" ", '', $results); 
+                    $results = str_replace("\t", '', $results); 
+                    $results = str_ireplace("\x0D", "", $results); 
+                    $results = str_replace("</td>", '', $results); 
+                    $parts = explode("\n", $results);
+                    $tce = [];
+                    foreach($parts as $key => $part){
+                        if(strpos($part, "TIERCE")) $tce[] = str_replace(",", ", ", $parts[$key + 1]);
+                    }
+                    $tce = array_values($tce);
                     $raceFolder = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
                     if(!is_dir($raceDate)) exec("mkdir $raceFolder");
                     $betsFile = $raceFolder . DIRECTORY_SEPARATOR . "bets.php";  
-                    if(!file_exists($betsFile)){  
-                        $outtext = "<?php\n\n";
-                        $outtext .= "return [\n";
-                        foreach($dayInfo as $raceNumber => $favorites){
-                            $racetext = "";
-                            $racetext .= "\t'$raceNumber' => [\n";
-                            $racetext .= "\t\t/**\n";
-                            $racetext .= "\t\tRace $raceNumber\n";
-                            $racetext .= "\t\t*/\n";
-                            $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
-                            $racetext .= "\t\t'official win' => '',\n\t],\n"; 
-                            $outtext .= $racetext;
+                    $outtext = "<?php\n\n";
+                    $outtext .= "return [\n";
+                    foreach($dayInfo as $raceNumber => $favorites){
+                        $racetext = "";
+                        $racetext .= "\t'$raceNumber' => [\n";
+                        $racetext .= "\t\t/**\n";
+                        $racetext .= "\t\tRace $raceNumber\n";
+                        $racetext .= "\t\t*/\n";
+                        $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
+                        if(!isset($tce[$raceNumber - 1] )){
+                            var_dump($raceDate);
+                            var_dump($raceNumber);
+                            var_dump($tce); die();
                         }
-                        $outtext .= "];\n";
-                        file_put_contents($betsFile, $outtext);
+                        $racetext .= "\t\t'official win' => '" . $tce[$raceNumber - 1] ."',\n\t],\n"; 
+                        $outtext .= $racetext;
                     }
+                    $outtext .= "];\n";
+                    file_put_contents($betsFile, $outtext);
                 }
             }
         }

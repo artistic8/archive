@@ -6,55 +6,55 @@ return [
 		Race 1
 		*/
 		'favorites' => '2',
-		'official win' => '',
+		'official win' => '12, 7, 2',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
 		'favorites' => '2',
-		'official win' => '',
+		'official win' => '2, 6, 7',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
 		'favorites' => '4',
-		'official win' => '',
+		'official win' => '8, 4, 11',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'favorites' => '1, 7',
-		'official win' => '',
+		'official win' => '1, 11, 5',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
 		'favorites' => '9',
-		'official win' => '',
+		'official win' => '9, 3, 11',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
 		'favorites' => '3',
-		'official win' => '',
+		'official win' => '10, 11, 3',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '3, 9',
-		'official win' => '',
+		'official win' => '3, 11, 10',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '2',
-		'official win' => '',
+		'official win' => '2, 1, 5',
 	],
 ];
