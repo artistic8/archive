@@ -22,6 +22,21 @@ foreach ($dir1 as $fileinfo1) {
                 $favsData = include($favsFile);
                 foreach($favsData as $raceDate => $dayInfo){
                     echo $raceDate . "\n";
+                    $raceFolder = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
+                    if(!is_dir($raceFolder)) exec("mkdir $raceFolder");
+                    $betsFile = $raceFolder . DIRECTORY_SEPARATOR . "bets.php";
+                    $doNotskipFile = false;
+                    if(file_exists($betsFile)){
+                        $skipFile = false;
+                        $fileContents = include($betsFile);
+                        foreach($fileContents as $theRace => $theData){
+                            $favs = implode(", ", $dayInfo[$theRace]);
+                            if(isset($theData['favorites']) && strcmp($favs, $theData['favorites']) > 0){
+                                $doNotskipFile = true;
+                            }
+                        }
+                    }
+                    if(!$doNotskipFile) continue;
                     ksort($dayInfo);
                     $raceDateFormat = substr($raceDate, 0, 4) . "/" . substr($raceDate, 4, 2) . "/" . substr($raceDate, 6, 2);
                     $results =  $oddsJSON = file_get_contents("https://racing.hkjc.com/racing/information/English/Racing/ResultsAll.aspx?RaceDate=$raceDateFormat");
@@ -35,10 +50,7 @@ foreach ($dir1 as $fileinfo1) {
                     foreach($parts as $key => $part){
                         if(strpos($part, "TIERCE")) $tce[] = str_replace(",", ", ", $parts[$key + 1]);
                     }
-                    $tce = array_values($tce);
-                    $raceFolder = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
-                    if(!is_dir($raceDate)) exec("mkdir $raceFolder");
-                    $betsFile = $raceFolder . DIRECTORY_SEPARATOR . "bets.php";  
+                    $tce = array_values($tce);  
                     $outtext = "<?php\n\n";
                     $outtext .= "return [\n";
                     foreach($dayInfo as $raceNumber => $favorites){
