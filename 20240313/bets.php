@@ -33,8 +33,6 @@ return [
 		'possible win' => '2, 6, 7',
 		'possible win' => '2, 7, 12',
 		'possible win' => '4, 6, 7',
-		'possible win' => '4, 7, 12',
-		'possible win' => '6, 7, 12',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12',//count: 10
 		'inter' => '2, 4, 6, 7, 11, 12',
 	],
@@ -65,7 +63,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '1, 7, 2',
-		'union' => '1, 3, 5, 7, 9',//count: 5
+		'union' => '1, 3, 5, 9',//count: 4
 		'inter' => '1, 3',
 	],
 	'7' => [

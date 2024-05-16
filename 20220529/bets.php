@@ -39,7 +39,7 @@ return [
 		*/
 		'favorites' => '4, 7',
 		'official win' => '7, 10, 3',
-		'union' => '1, 3, 4, 5, 6, 7, 9, 10',//count: 8
+		'union' => '1, 3, 4, 5, 6, 7, 9',//count: 7
 		'inter' => '4, 7',
 	],
 	'6' => [
