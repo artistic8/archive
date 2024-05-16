@@ -28,6 +28,8 @@ return [
 		*/
 		'favorites' => '1, 7',
 		'official win' => '1, 11, 5',
+		'union' => '1, 3, 4, 5, 10, 11',//count: 6
+		'inter' => '1',
 	],
 	'5' => [
 		/**
@@ -49,6 +51,8 @@ return [
 		*/
 		'favorites' => '3, 9',
 		'official win' => '3, 11, 10',
+		'union' => '2, 3, 6, 7, 9',//count: 5
+		'inter' => '3, 9',
 	],
 	'8' => [
 		/**
