@@ -63,6 +63,27 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
+    // elseif(count($favorites) > 3){
+    //     foreach($favorites as $one){
+    //         $win1 = array_intersect($history[$raceNumber][$one]["win"], $runners);
+    //         foreach($favorites as $two){
+    //             if($two > $one){
+    //                 $win2 = array_intersect($history[$raceNumber][$two]["win"], $runners);
+    //                 foreach($favorites as $three){
+    //                     if($three > $two){
+    //                         $win3 = array_intersect($history[$raceNumber][$three]["win"], $runners);
+    //                         $intersection = array_intersect($win1, $win2, $win3, [$one, $two, $three]);
+    //                         if(count($intersection) >= 2){
+    //                             $racetext .= "\t\t'win($20)' => '" . implode(", ", [$one, $two, $three]) . "',\n"; 
+    //                             $racetext .= "\t\t'win($20)' => '" . $two . ", " . $three . "',\n"; 
+    //                             $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", [$one, $two, $three]) . "',\n"; 
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     $union = [];
     foreach($favorites as $one){
         foreach($favorites as $two){
