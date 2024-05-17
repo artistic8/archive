@@ -17,6 +17,7 @@ foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() && $fileinfo->isDir() && preg_match("/^[0-9]+$/", $fileinfo->getFilename())) {
         $betsFile = __DIR__ . DIRECTORY_SEPARATOR . $fileinfo->getFilename() . DIRECTORY_SEPARATOR . "bets.php";
         $bets = include($betsFile);
+        if($bets === false) {var_dump($fileinfo->getFilename()); die();}
         foreach($bets as $raceNumber => $data){
             $favorites = explode(", ", $data['favorites']);
             if(!isset($data['official win']) || empty($data['official win'])) continue;
