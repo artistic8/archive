@@ -12,7 +12,7 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '4',
+		'favorites' => '4, 13',
 		'official win' => '3, 13, 14',
 	],
 	'3' => [
@@ -70,7 +70,5 @@ return [
 		*/
 		'favorites' => '8, 13',
 		'official win' => '7, 1, 13',
-		'union' => '13',//count: 1
-		'inter' => '13',
 	],
 ];
