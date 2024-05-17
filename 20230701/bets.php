@@ -5,7 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 9',
 		'official win' => '1, 4, 8',
 	],
 	'2' => [
@@ -26,7 +26,7 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '3',
+		'favorites' => '3, 13',
 		'official win' => '3, 9, 2',
 	],
 	'5' => [
@@ -61,14 +61,14 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '2',
+		'favorites' => '2, 7',
 		'official win' => '4, 13, 6',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'favorites' => '8, 13',
+		'favorites' => '6, 8, 13',
 		'official win' => '7, 1, 13',
 	],
 ];
