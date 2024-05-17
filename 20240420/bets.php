@@ -7,41 +7,27 @@ return [
 		*/
 		'favorites' => '1, 4, 10',
 		'official win' => '10, 13, 7',
-		'win($20)' => '1, 4, 10',
-		'win($20)' => '4, 10',
-		'qin/trio($10)' => '1, 4, 10',
-		'union' => '1, 2, 4, 5, 6, 7, 8, 10, 11',//count: 9
-		'inter' => '1, 4, 10',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
-		'favorites' => '2, 5, 12',
+		'favorites' => '2, 5, 10, 12',
 		'official win' => '12, 2, 5',
-		'win($20)' => '2, 5, 12',
-		'win($20)' => '5, 12',
-		'qin/trio($10)' => '2, 5, 12',
-		'union' => '2, 3, 4, 5, 6, 9, 10, 12, 13',//count: 9
-		'inter' => '2, 5, 12',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'favorites' => '3, 4',
+		'favorites' => '3, 4, 5',
 		'official win' => '4, 9, 8',
-		'union' => '2, 3, 4, 6, 7, 8',//count: 6
-		'inter' => '3, 4',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'favorites' => '3, 5, 9, 12',
+		'favorites' => '1, 3, 5, 9, 12',
 		'official win' => '6, 5, 1',
-		'union' => '1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 14',//count: 11
-		'inter' => '3, 5, 9, 12',
 	],
 	'5' => [
 		/**
@@ -49,20 +35,13 @@ return [
 		*/
 		'favorites' => '1, 2, 6, 8',
 		'official win' => '1, 10, 8',
-		'win($20)' => '1, 2, 6, 8',
-		'win($20)' => '2, 6',
-		'qin/trio($10)' => '1, 2, 6, 8',
-		'union' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count: 11
-		'inter' => '1, 2, 8',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '1, 2, 8',
+		'favorites' => '2, 6, 8',
 		'official win' => '11, 8, 3',
-		'union' => '1, 3, 4, 5, 8, 9, 10, 12',//count: 8
-		'inter' => '1, 8',
 	],
 	'7' => [
 		/**
@@ -70,10 +49,6 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5, 14',
 		'official win' => '10, 11, 12',
-		'possible win' => '1, 3, 4',
-		'possible win' => '1, 4, 5',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count: 10
-		'inter' => '1, 3, 4, 5',
 	],
 	'8' => [
 		/**
@@ -86,10 +61,8 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '5, 6',
+		'favorites' => '6',
 		'official win' => '7, 8, 2',
-		'union' => '2, 3, 4, 5, 8, 12',//count: 6
-		'inter' => '5',
 	],
 	'10' => [
 		/**
@@ -97,7 +70,5 @@ return [
 		*/
 		'favorites' => '3, 4, 11',
 		'official win' => '14, 1, 3',
-		'union' => '3, 4, 8, 11, 12',//count: 5
-		'inter' => '3, 4, 11',
 	],
 ];
