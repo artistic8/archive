@@ -81,14 +81,11 @@ return [
 		*/
 		'favorites' => '2, 3, 5',
 		'official win' => '3, 5, 2',
-		'possible win' => '2, 3, 5',
-		'possible win' => '2, 3, 11',
-		'possible win' => '2, 5, 11',
-		'possible win' => '3, 5, 10',
-		'possible win' => '3, 5, 11',
-		'possible win' => '3, 10, 11',
-		'union' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',//count: 11
-		'inter' => '2, 3, 5, 10, 11',
+		'win($20)' => '2, 3, 5',
+		'win($20)' => '3, 5',
+		'qin/trio($10)' => '2, 3, 5',
+		'union' => '1, 2, 3, 4, 5, 8, 9, 10, 11, 12',//count: 10
+		'inter' => '2, 3, 5',
 	],
 	'10' => [
 		/**
