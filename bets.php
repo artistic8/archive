@@ -17,7 +17,7 @@ if(file_exists($outFile)){
 
 if(file_exists($oddsFile)) $totalRaces = count($allRacesOdds);
 elseif(file_exists($outFile)) $totalRaces = count($oldData);
-else die("No input Files: $raceDate");
+else die('No input Files!');
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
