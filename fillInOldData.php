@@ -30,7 +30,7 @@ foreach ($dir1 as $fileinfo1) {
                         $fileContents = include($betsFile);
                         foreach($fileContents as $theRace => $theData){
                             $favs = implode(", ", $dayInfo[$theRace]);
-                            if(isset($theData['favorites']) && strcmp($favs, $theData['favorites']) > 0){
+                            if(isset($theData['favorites']) && (strlen($favs) > strlen($theData['favorites']))){
                                 $doNotskipFile = true;
                             }
                         }
