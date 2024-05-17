@@ -9,9 +9,11 @@ return [
 		'official win' => '1, 4, 12',
 		'possible win' => '1, 2, 3',
 		'possible win' => '1, 2, 8',
+		'possible win' => '1, 3, 8',
 		'possible win' => '1, 8, 10',
 		'possible win' => '2, 3, 8',
 		'possible win' => '2, 8, 10',
+		'possible win' => '3, 8, 10',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'inter' => '1, 2, 3, 8, 10',
 	],
@@ -73,7 +75,7 @@ return [
 		*/
 		'favorites' => '4, 8, 9, 12',
 		'official win' => '2, 3, 9',
-		'union' => '1, 3, 4, 6, 7, 8, 9, 10, 12, 13',//count: 10
+		'union' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',//count: 11
 		'inter' => '4, 8, 9, 12',
 	],
 	'9' => [
