@@ -79,7 +79,7 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '2, 3, 5, 10, 11',
+		'favorites' => '2, 3, 5',
 		'official win' => '3, 5, 2',
 		'possible win' => '2, 3, 5',
 		'possible win' => '2, 3, 11',
