@@ -12,10 +12,8 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '2, 6',
+		'favorites' => '2',
 		'official win' => '9, 6, 2',
-		'union' => '2, 4, 5, 6, 8, 10',//count: 6
-		'inter' => '2, 6',
 	],
 	'3' => [
 		/**
@@ -28,46 +26,35 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '1, 2, 6',
+		'favorites' => '2',
 		'official win' => '2, 6, 9',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'inter' => '1, 2, 6',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'favorites' => '3, 6',
+		'favorites' => '3',
 		'official win' => '3, 6, 1',
-		'union' => '1, 4, 6, 7, 10, 11, 12',//count: 7
-		'inter' => '6',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '4, 5',
+		'favorites' => '4',
 		'official win' => '7, 12, 6',
-		'union' => '1, 2, 3, 5, 6',//count: 5
-		'inter' => '5',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
-		'favorites' => '3, 4',
+		'favorites' => '3',
 		'official win' => '3, 9, 4',
-		'union' => '1, 2, 3, 5, 7, 10',//count: 6
-		'inter' => '3',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'favorites' => '4, 5, 6, 11, 13',
+		'favorites' => '6',
 		'official win' => '6, 11, 3',
-		'possible win' => '4, 6, 11',
-		'union' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',//count: 11
-		'inter' => '4, 6, 11',
 	],
 ];
