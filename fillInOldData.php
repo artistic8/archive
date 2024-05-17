@@ -23,7 +23,6 @@ foreach ($dir1 as $fileinfo1) {
                 foreach($favsData as $raceDate => $dayInfo){
                     echo $raceDate . "\n";
                     $raceFolder = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
-                    if(!is_dir($raceFolder)) exec("mkdir $raceFolder");
                     $betsFile = $raceFolder . DIRECTORY_SEPARATOR . "bets.php";
                     $doNotskipFile = false;
                     if(file_exists($betsFile)){
@@ -36,6 +35,7 @@ foreach ($dir1 as $fileinfo1) {
                         }
                     }
                     if(!$doNotskipFile) continue;
+                    if(!is_dir($raceFolder)) exec("mkdir $raceFolder");
                     ksort($dayInfo);
                     $raceDateFormat = substr($raceDate, 0, 4) . "/" . substr($raceDate, 4, 2) . "/" . substr($raceDate, 6, 2);
                     $results =  $oddsJSON = file_get_contents("https://racing.hkjc.com/racing/information/English/Racing/ResultsAll.aspx?RaceDate=$raceDateFormat");
