@@ -101,7 +101,7 @@ return [
 		'favorites' => '2, 7, 8, 13',
 		'official win' => '13, 2, 8',
 		'possible win' => '2, 7, 8',
-		'union' => '2, 3, 7, 8, 11, 13',//count: 6
+		'union' => '2, 3, 7, 8, 11, 12, 13',//count: 7
 		'inter' => '2, 7, 8, 13',
 	],
 ];
