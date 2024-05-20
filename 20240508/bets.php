@@ -9,6 +9,7 @@ return [
 		'official win' => '6, 1, 8',
 		'union' => '1, 3, 4, 7, 9, 11, 12',//count: 7
 		'inter' => '',
+		'diff' => '6, 10',
 	],
 	'2' => [
 		/**
@@ -113,5 +114,6 @@ return [
 		'official win' => '4, 8, 10',
 		'union' => '1, 2, 3, 4, 5, 6, 8, 9',//count: 8
 		'inter' => '2, 9',
+		'diff' => '10',
 	],
 ];

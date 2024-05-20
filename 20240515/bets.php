@@ -75,6 +75,7 @@ return [
 		'official win' => '7, 4, 6',
 		'union' => '1, 2, 3, 5, 7, 8, 10',//count: 7
 		'inter' => '3',
+		'diff' => '4',
 	],
 	'8' => [
 		/**

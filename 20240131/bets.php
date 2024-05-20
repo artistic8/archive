@@ -39,6 +39,7 @@ return [
 		'official win' => '2, 7, 10',
 		'union' => '1, 4, 5',//count: 3
 		'inter' => '5',
+		'diff' => '8',
 	],
 	'6' => [
 		/**
