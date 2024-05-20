@@ -7,7 +7,8 @@ return [
 		*/
 		'favorites' => '6, 7',
 		'official win' => '6, 7, 4',
-		'union' => '1, 2, 3, 4, 6, 7',
+//All favs contained in Fav 6,
+//All favs contained in Fav 7,
 	],
 	'2' => [
 		/**
@@ -15,8 +16,6 @@ return [
 		*/
 		'favorites' => '2, 4, 10, 11',
 		'official win' => '7, 1, 5',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
-		'diff' => '11',//count: 1
 	],
 	'3' => [
 		/**
@@ -24,8 +23,6 @@ return [
 		*/
 		'favorites' => '9, 13',
 		'official win' => '9, 10, 13',
-		'union' => '2, 7',
-		'diff' => '9, 13',//count: 2
 	],
 	'4' => [
 		/**
@@ -33,7 +30,8 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '3, 4, 10',
-		'union' => '1, 3, 4, 5, 6, 8',
+//All favs contained in Fav 3,
+//All favs contained in Fav 4,
 	],
 	'5' => [
 		/**
@@ -41,6 +39,7 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '5, 6, 12',
+//All favs contained in Fav 5,
 	],
 	'6' => [
 		/**
@@ -48,8 +47,6 @@ return [
 		*/
 		'favorites' => '3, 5, 9, 14',
 		'official win' => '6, 11, 12',
-		'union' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 13',
-		'diff' => '14',//count: 1
 	],
 	'7' => [
 		/**
@@ -57,7 +54,8 @@ return [
 		*/
 		'favorites' => '3, 7, 9',
 		'official win' => '6, 9, 3',
-		'union' => '1, 2, 3, 7, 8, 9, 12',
+//All favs contained in Fav 3,
+//All favs contained in Fav 9,
 	],
 	'8' => [
 		/**
@@ -65,10 +63,10 @@ return [
 		*/
 		'favorites' => '2, 3, 6, 7, 8',
 		'official win' => '6, 8, 3',
+//All favs contained in Fav 8,
 		'win($20)' => '2, 3, 6, 7, 8',
 		'win($20)' => '3, 6',
 		'qin/trio($10)' => '2, 3, 6, 7, 8',
-		'union' => '1, 2, 3, 5, 6, 7, 8',
 	],
 	'9' => [
 		/**
@@ -76,7 +74,8 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'official win' => '8, 3, 9',
-		'union' => '2, 3, 4, 5, 8, 9, 11',
+//All favs contained in Fav 2,
+//All favs contained in Fav 3,
 	],
 	'10' => [
 		/**
@@ -84,8 +83,6 @@ return [
 		*/
 		'favorites' => '1, 6, 10, 13, 14',
 		'official win' => '10, 2, 8',
-		'union' => '1, 2, 3, 4, 7, 8, 9, 10, 13',
-		'diff' => '6, 14',//count: 2
 	],
 	'11' => [
 		/**

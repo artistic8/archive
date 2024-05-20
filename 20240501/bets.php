@@ -7,10 +7,11 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '4, 3, 9',
+//All favs contained in Fav 1,
+//All favs contained in Fav 3,
 		'win($20)' => '1, 3, 4',
 		'win($20)' => '3, 4',
 		'qin/trio($10)' => '1, 3, 4',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 	],
 	'2' => [
 		/**
@@ -18,7 +19,8 @@ return [
 		*/
 		'favorites' => '3, 5, 6, 12',
 		'official win' => '5, 9, 10',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
+//All favs contained in Fav 3,
+//All favs contained in Fav 5,
 	],
 	'3' => [
 		/**
@@ -26,6 +28,7 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '6, 5, 2',
+//All favs contained in Fav 5,
 	],
 	'4' => [
 		/**
@@ -33,8 +36,6 @@ return [
 		*/
 		'favorites' => '3, 11',
 		'official win' => '1, 4, 11',
-		'union' => '1, 4, 5, 6, 9, 10, 12',
-		'diff' => '3, 11',//count: 2
 	],
 	'5' => [
 		/**
@@ -42,10 +43,13 @@ return [
 		*/
 		'favorites' => '3, 4, 6',
 		'official win' => '10, 3, 9',
+//All favs contained in Fav 3,
+//All favs contained in Fav 4,
+//All favs contained in Fav 6,
 		'win($20)' => '3, 4, 6',
 		'win($20)' => '4, 6',
 		'qin/trio($10)' => '3, 4, 6',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+'sure bet' => true,
 	],
 	'6' => [
 		/**
@@ -56,7 +60,6 @@ return [
 		'win($20)' => '4, 6, 10, 12',
 		'win($20)' => '6, 10',
 		'qin/trio($10)' => '4, 6, 10, 12',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 	],
 	'7' => [
 		/**
@@ -64,7 +67,7 @@ return [
 		*/
 		'favorites' => '3, 6, 11',
 		'official win' => '6, 5, 11',
-		'union' => '2, 3, 4, 5, 6, 11',
+//All favs contained in Fav 6,
 	],
 	'8' => [
 		/**
@@ -72,10 +75,10 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 4',
 		'official win' => '3, 10, 1',
+//All favs contained in Fav 4,
 		'win($20)' => '1, 2, 3, 4',
 		'win($20)' => '2, 3',
 		'qin/trio($10)' => '1, 2, 3, 4',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 	],
 	'9' => [
 		/**
@@ -83,6 +86,7 @@ return [
 		*/
 		'favorites' => '1, 7',
 		'official win' => '1, 3, 6',
-		'union' => '1, 4, 5, 6, 7, 8, 9',
+//All favs contained in Fav 1,
+//All favs contained in Fav 7,
 	],
 ];

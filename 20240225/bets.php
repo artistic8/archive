@@ -7,10 +7,12 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 8, 10',
 		'official win' => '1, 4, 12',
+//All favs contained in Fav 1,
+//All favs contained in Fav 2,
+//All favs contained in Fav 8,
 		'win($20)' => '1, 2, 3, 8, 10',
 		'win($20)' => '2, 3',
 		'qin/trio($10)' => '1, 2, 3, 8, 10',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'2' => [
 		/**
@@ -18,8 +20,7 @@ return [
 		*/
 		'favorites' => '3, 6',
 		'official win' => '2, 6, 3',
-		'union' => '2, 4, 5, 6',
-		'diff' => '3',//count: 1
+//All favs contained in Fav 3,
 	],
 	'3' => [
 		/**
@@ -27,8 +28,6 @@ return [
 		*/
 		'favorites' => '2, 8, 12, 13',
 		'official win' => '2, 13, 11',
-		'union' => '1, 3, 5, 6, 7, 8, 10, 12',
-		'diff' => '2, 13',//count: 2
 	],
 	'4' => [
 		/**
@@ -36,8 +35,7 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'official win' => '10, 4, 6',
-		'union' => '5, 7, 9, 10, 12',
-		'diff' => '6',//count: 1
+//All favs contained in Fav 6,
 	],
 	'5' => [
 		/**
@@ -45,7 +43,8 @@ return [
 		*/
 		'favorites' => '4, 6',
 		'official win' => '7, 6, 10',
-		'union' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11',
+//All favs contained in Fav 4,
+//All favs contained in Fav 6,
 	],
 	'6' => [
 		/**
@@ -53,6 +52,7 @@ return [
 		*/
 		'favorites' => '10',
 		'official win' => '12, 6, 3',
+//All favs contained in Fav 10,
 	],
 	'7' => [
 		/**
@@ -60,7 +60,8 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '1, 2, 8',
-		'union' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+//All favs contained in Fav 1,
+//All favs contained in Fav 3,
 	],
 	'8' => [
 		/**
@@ -68,7 +69,7 @@ return [
 		*/
 		'favorites' => '4, 8, 9, 12',
 		'official win' => '2, 3, 9',
-		'union' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
+//All favs contained in Fav 4,
 	],
 	'9' => [
 		/**
@@ -76,8 +77,6 @@ return [
 		*/
 		'favorites' => '3, 14',
 		'official win' => '3, 12, 14',
-		'union' => '2',
-		'diff' => '3, 14',//count: 2
 	],
 	'10' => [
 		/**
@@ -85,7 +84,5 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5',
 		'official win' => '4, 5, 3',
-		'union' => '3, 4, 5, 7, 8, 9, 10, 11, 12, 14',
-		'diff' => '1',//count: 1
 	],
 ];
