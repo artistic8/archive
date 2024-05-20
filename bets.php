@@ -36,7 +36,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $favorite = $runners[0];
         if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     }
-    else $runners = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+    else {
+        $runners = [];
+        for($k = 1; $k < 31; $k++) $runners[] = $k;
+    }
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     $racetext = "";
