@@ -19,7 +19,7 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '3, 10, 11',
+		'favorites' => '3, 11',
 		'official win' => '3, 5, 1',
 	],
 	'4' => [
@@ -56,5 +56,8 @@ return [
 		*/
 		'favorites' => '4, 5, 6, 7',
 		'official win' => '12, 7, 4',
+		'win($20)' => '4, 5, 6, 7',
+		'win($20)' => '5, 6',
+		'qin/trio($10)' => '4, 5, 6, 7',
 	],
 ];
