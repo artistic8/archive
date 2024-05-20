@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '6, 10, 11',
 		'official win' => '12, 4, 6',
-//All favs contained in Fav 10,
+'hist(Fav 10)' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 	'2' => [
 		/**
@@ -29,8 +29,8 @@ return [
 		*/
 		'favorites' => '2, 8, 11',
 		'official win' => '11, 7, 1',
-//All favs contained in Fav 2,
-//All favs contained in Fav 8,
+'hist(Fav 2)' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',
+'hist(Fav 8)' => '1, 2, 3, 4, 5, 8, 10, 11',
 	],
 	'5' => [
 		/**
@@ -38,9 +38,9 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '5, 3, 7',
-//All favs contained in Fav 1,
-//All favs contained in Fav 3,
-//All favs contained in Fav 4,
+'hist(Fav 1)' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',
+'hist(Fav 3)' => '1, 3, 4, 5, 6, 7, 10, 11, 12',
+'hist(Fav 4)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'win($20)' => '1, 3, 4',
 		'win($20)' => '3, 4',
 		'qin/trio($10)' => '1, 3, 4',
@@ -66,7 +66,7 @@ return [
 		*/
 		'favorites' => '1, 9, 10, 12',
 		'official win' => '10, 12, 3',
-//All favs contained in Fav 10,
+'hist(Fav 10)' => '1, 2, 3, 4, 9, 10, 12',
 	],
 	'9' => [
 		/**

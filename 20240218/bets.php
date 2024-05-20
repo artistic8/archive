@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '5, 6, 9',
 		'official win' => '1, 6, 7',
-//All favs contained in Fav 9,
+'hist(Fav 9)' => '1, 3, 5, 6, 7, 8, 9',
 	],
 	'2' => [
 		/**
@@ -43,7 +43,7 @@ return [
 		*/
 		'favorites' => '6, 7, 12',
 		'official win' => '1, 8, 5',
-//All favs contained in Fav 6,
+'hist(Fav 6)' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'7' => [
 		/**

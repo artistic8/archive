@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '1, 9, 10, 12',
 		'official win' => '8, 9, 12',
-//All favs contained in Fav 10,
+'hist(Fav 10)' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'2' => [
 		/**
@@ -22,8 +22,8 @@ return [
 		*/
 		'favorites' => '3, 4, 8',
 		'official win' => '3, 8, 9',
-//All favs contained in Fav 3,
-//All favs contained in Fav 4,
+'hist(Fav 3)' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 12',
+'hist(Fav 4)' => '2, 3, 4, 5, 6, 7, 8, 10, 12',
 		'win($20)' => '3, 4, 8',
 		'win($20)' => '4, 8',
 		'qin/trio($10)' => '3, 4, 8',

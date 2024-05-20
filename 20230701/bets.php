@@ -70,6 +70,6 @@ return [
 		*/
 		'favorites' => '6, 8, 13',
 		'official win' => '7, 1, 13',
-//All favs contained in Fav 6,
+'hist(Fav 6)' => '1, 4, 6, 8, 10, 13',
 	],
 ];

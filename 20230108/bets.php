@@ -28,8 +28,8 @@ return [
 		*/
 		'favorites' => '1, 6, 12',
 		'official win' => '3, 12, 6',
-//All favs contained in Fav 1,
-//All favs contained in Fav 12,
+'hist(Fav 1)' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12, 14',
+'hist(Fav 12)' => '1, 6, 11, 12',
 		'win($20)' => '1, 6, 12',
 		'win($20)' => '6, 12',
 		'qin/trio($10)' => '1, 6, 12',

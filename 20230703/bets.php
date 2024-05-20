@@ -28,7 +28,7 @@ return [
 		*/
 		'favorites' => '1, 2, 6',
 		'official win' => '2, 6, 9',
-//All favs contained in Fav 1,
+'hist(Fav 1)' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**

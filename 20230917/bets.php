@@ -14,9 +14,9 @@ return [
 		*/
 		'favorites' => '1, 5, 6',
 		'official win' => '5, 8, 2',
-//All favs contained in Fav 1,
-//All favs contained in Fav 5,
-//All favs contained in Fav 6,
+'hist(Fav 1)' => '1, 2, 4, 5, 6, 7, 8, 9, 10',
+'hist(Fav 5)' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12',
+'hist(Fav 6)' => '1, 2, 4, 5, 6, 8, 9, 10, 14',
 		'win($20)' => '1, 5, 6',
 		'win($20)' => '5, 6',
 		'qin/trio($10)' => '1, 5, 6',

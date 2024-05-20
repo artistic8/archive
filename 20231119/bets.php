@@ -42,7 +42,7 @@ return [
 		*/
 		'favorites' => '7, 8, 9',
 		'official win' => '7, 6, 8',
-//All favs contained in Fav 9,
+'hist(Fav 9)' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 13',
 	],
 	'7' => [
 		/**
