@@ -70,5 +70,6 @@ return [
 		*/
 		'favorites' => '6, 8, 13',
 		'official win' => '7, 1, 13',
+//All favs contained in Fav 6,
 	],
 ];

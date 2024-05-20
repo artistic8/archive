@@ -28,9 +28,13 @@ return [
 		*/
 		'favorites' => '1, 4, 11',
 		'official win' => '11, 1, 10',
+//All favs contained in Fav 1,
+//All favs contained in Fav 4,
+//All favs contained in Fav 11,
 		'win($20)' => '1, 4, 11',
 		'win($20)' => '4, 11',
 		'qin/trio($10)' => '1, 4, 11',
+'sure bet' => true,
 	],
 	'5' => [
 		/**
@@ -45,6 +49,8 @@ return [
 		*/
 		'favorites' => '1, 3, 7, 8',
 		'official win' => '3, 2, 9',
+//All favs contained in Fav 3,
+//All favs contained in Fav 8,
 		'win($20)' => '1, 3, 7, 8',
 		'win($20)' => '3, 7',
 		'qin/trio($10)' => '1, 3, 7, 8',
@@ -62,6 +68,7 @@ return [
 		*/
 		'favorites' => '5, 8, 10',
 		'official win' => '3, 2, 4',
+//All favs contained in Fav 5,
 	],
 	'9' => [
 		/**

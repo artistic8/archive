@@ -14,6 +14,7 @@ return [
 		*/
 		'favorites' => '4, 5, 10',
 		'official win' => '10, 14, 7',
+//All favs contained in Fav 5,
 	],
 	'3' => [
 		/**
@@ -42,6 +43,7 @@ return [
 		*/
 		'favorites' => '1, 2, 4',
 		'official win' => '4, 1, 2',
+//All favs contained in Fav 4,
 	],
 	'7' => [
 		/**
@@ -56,6 +58,7 @@ return [
 		*/
 		'favorites' => '2, 3, 7',
 		'official win' => '3, 2, 6',
+//All favs contained in Fav 7,
 	],
 	'9' => [
 		/**
@@ -70,5 +73,6 @@ return [
 		*/
 		'favorites' => '1, 3, 9',
 		'official win' => '10, 1, 3',
+//All favs contained in Fav 1,
 	],
 ];

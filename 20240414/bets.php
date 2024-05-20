@@ -49,6 +49,8 @@ return [
 		*/
 		'favorites' => '3, 7, 9',
 		'official win' => '6, 9, 3',
+//All favs contained in Fav 3,
+//All favs contained in Fav 9,
 	],
 	'8' => [
 		/**
@@ -56,6 +58,7 @@ return [
 		*/
 		'favorites' => '2, 3, 6, 7, 8',
 		'official win' => '6, 8, 3',
+//All favs contained in Fav 8,
 		'win($20)' => '2, 3, 6, 7, 8',
 		'win($20)' => '3, 6',
 		'qin/trio($10)' => '2, 3, 6, 7, 8',

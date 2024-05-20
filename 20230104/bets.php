@@ -7,9 +7,13 @@ return [
 		*/
 		'favorites' => '2, 3, 5',
 		'official win' => '12, 5, 8',
+//All favs contained in Fav 2,
+//All favs contained in Fav 3,
+//All favs contained in Fav 5,
 		'win($20)' => '2, 3, 5',
 		'win($20)' => '3, 5',
 		'qin/trio($10)' => '2, 3, 5',
+'sure bet' => true,
 	],
 	'2' => [
 		/**
@@ -31,6 +35,7 @@ return [
 		*/
 		'favorites' => '7, 9, 10',
 		'official win' => '7, 5, 6',
+//All favs contained in Fav 10,
 	],
 	'5' => [
 		/**
