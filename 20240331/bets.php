@@ -69,7 +69,7 @@ return [
 		'official win' => '3, 9, 6',
 		'possible win' => '1, 4, 10',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12',
-		'inter' => '1, 4',//count: 2
+		'inter' => '1, 4, 10',//count: 3
 	],
 	'9' => [
 		/**

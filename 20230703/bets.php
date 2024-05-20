@@ -68,6 +68,6 @@ return [
 		'official win' => '6, 11, 3',
 		'possible win' => '4, 6, 11',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
-		'inter' => '4, 5, 6',//count: 3
+		'inter' => '4, 5, 6, 11, 13',//count: 5
 	],
 ];
