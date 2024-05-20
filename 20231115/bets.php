@@ -7,7 +7,6 @@ return [
 		*/
 		'favorites' => '10',
 		'official win' => '10, 12, 3',
-//All favs contained in Fav 10,
 	],
 	'2' => [
 		/**
@@ -15,7 +14,6 @@ return [
 		*/
 		'favorites' => '4',
 		'official win' => '4, 6, 2',
-//All favs contained in Fav 4,
 	],
 	'3' => [
 		/**
@@ -23,7 +21,6 @@ return [
 		*/
 		'favorites' => '11',
 		'official win' => '11, 3, 12',
-//All favs contained in Fav 11,
 	],
 	'4' => [
 		/**
@@ -31,7 +28,6 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '11, 9, 2',
-//All favs contained in Fav 1,
 	],
 	'5' => [
 		/**
@@ -39,7 +35,6 @@ return [
 		*/
 		'favorites' => '2',
 		'official win' => '2, 4, 10',
-//All favs contained in Fav 2,
 	],
 	'6' => [
 		/**
@@ -47,7 +42,6 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '12, 1, 4',
-//All favs contained in Fav 1,
 	],
 	'7' => [
 		/**
@@ -55,7 +49,6 @@ return [
 		*/
 		'favorites' => '4',
 		'official win' => '1, 3, 9',
-//All favs contained in Fav 4,
 	],
 	'8' => [
 		/**
@@ -63,7 +56,6 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '1, 4, 3',
-//All favs contained in Fav 3,
 	],
 	'9' => [
 		/**
@@ -71,6 +63,5 @@ return [
 		*/
 		'favorites' => '6',
 		'official win' => '6, 9, 4',
-//All favs contained in Fav 6,
 	],
 ];

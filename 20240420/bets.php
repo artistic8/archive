@@ -82,7 +82,6 @@ return [
 		*/
 		'favorites' => '7',
 		'official win' => '4, 6, 1',
-//All favs contained in Fav 7,
 	],
 	'9' => [
 		/**
@@ -90,7 +89,6 @@ return [
 		*/
 		'favorites' => '6',
 		'official win' => '7, 8, 2',
-//All favs contained in Fav 6,
 	],
 	'10' => [
 		/**
