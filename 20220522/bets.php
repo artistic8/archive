@@ -42,6 +42,7 @@ return [
 		*/
 		'favorites' => '1, 4',
 		'official win' => '1, 2, 9',
+		'union' => '1, 3, 4, 5, 7, 12, 13',//count: 7
 	],
 	'7' => [
 		/**
@@ -49,6 +50,7 @@ return [
 		*/
 		'favorites' => '1, 9',
 		'official win' => '13, 3, 14',
+		'union' => '2, 3, 6, 7, 8, 9',//count: 6
 	],
 	'8' => [
 		/**
