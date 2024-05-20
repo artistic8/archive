@@ -96,9 +96,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($union)){
         sort($union);
-        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
-        $X = array_intersect($favorites, $union);
-        $racetext .= "\t\t'inter' => '" . implode(", ", $X) . "',//count: " . count($X) ."\n";
+        $X1 = array_intersect($favorites, $union);
+        $union = array_slice($union, 0, 6);
+        $X2 = array_intersect($favorites, $union);
+        $diff = array_diff($X1, $X2);
+        if(!empty($diff)) $racetext .= "\t\t'wp' => '" . implode(", ", $diff) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
