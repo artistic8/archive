@@ -77,6 +77,5 @@ return [
 		'favorites' => '7, 8',
 		'official win' => '12, 9, 7',
 		'union' => '7, 8, 11, 13',
-		'diff' => '',//count: 0
 	],
 ];

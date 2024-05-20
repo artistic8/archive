@@ -15,7 +15,6 @@ return [
 		'favorites' => '2, 6',
 		'official win' => '9, 6, 2',
 		'union' => '2, 4, 5, 6, 8, 10',
-		'diff' => '',//count: 0
 	],
 	'3' => [
 		/**
@@ -31,7 +30,6 @@ return [
 		'favorites' => '1, 2, 6',
 		'official win' => '2, 6, 9',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'diff' => '',//count: 0
 	],
 	'5' => [
 		/**
@@ -67,6 +65,5 @@ return [
 		'favorites' => '4, 5, 6, 11, 13',
 		'official win' => '6, 11, 3',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
-		'diff' => '',//count: 0
 	],
 ];

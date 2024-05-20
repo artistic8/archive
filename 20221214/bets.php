@@ -8,7 +8,6 @@ return [
 		'favorites' => '1, 5',
 		'official win' => '2, 4, 10',
 		'union' => '1, 2, 3, 4, 5, 7, 8, 10',
-		'diff' => '',//count: 0
 	],
 	'2' => [
 		/**
@@ -17,7 +16,6 @@ return [
 		'favorites' => '2, 7',
 		'official win' => '7, 9, 6',
 		'union' => '2, 4, 6, 7, 8',
-		'diff' => '',//count: 0
 	],
 	'3' => [
 		/**

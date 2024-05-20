@@ -65,7 +65,6 @@ return [
 		'favorites' => '4, 7',
 		'official win' => '7, 8, 9',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'diff' => '',//count: 0
 	],
 	'9' => [
 		/**
