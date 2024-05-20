@@ -42,13 +42,9 @@ return [
 		*/
 		'favorites' => '1, 3, 5',
 		'official win' => '9, 5, 3',
-//All favs contained in Fav 1,
-//All favs contained in Fav 3,
-//All favs contained in Fav 5,
 		'win($20)' => '1, 3, 5',
 		'win($20)' => '3, 5',
 		'qin/trio($10)' => '1, 3, 5',
-'sure bet' => true,
 	],
 	'7' => [
 		/**
