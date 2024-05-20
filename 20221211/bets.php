@@ -30,7 +30,6 @@ return [
 		'official win' => '9, 5, 3',
 		'union' => '1, 5, 7, 9, 10, 12, 14',//count: 7
 		'inter' => '10',
-		'diff' => '3',
 	],
 	'5' => [
 		/**
@@ -75,6 +74,5 @@ return [
 		'official win' => '3, 10, 9',
 		'union' => '4, 7, 11, 14',//count: 4
 		'inter' => '4',
-		'diff' => '3',
 	],
 ];

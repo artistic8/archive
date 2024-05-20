@@ -9,7 +9,6 @@ return [
 		'official win' => '7, 5, 11',
 		'union' => '1, 2, 3, 4, 6, 7, 12',//count: 7
 		'inter' => '6',
-		'diff' => '8',
 	],
 	'2' => [
 		/**
@@ -40,7 +39,6 @@ return [
 		'official win' => '2, 10, 5',
 		'union' => '1, 2, 3, 4, 10',//count: 5
 		'inter' => '10',
-		'diff' => '5',
 	],
 	'6' => [
 		/**
@@ -64,7 +62,6 @@ return [
 		'official win' => '11, 8, 7',
 		'union' => '1, 3, 4, 6, 7, 10, 12, 14',//count: 8
 		'inter' => '1',
-		'diff' => '8',
 	],
 	'9' => [
 		/**
