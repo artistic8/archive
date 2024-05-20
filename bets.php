@@ -55,7 +55,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $firstSet = true;
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        if(count($favorites) > 2 && empty(array_diff($favorites, $candidates))) $racetext .= "//All favs contained in Fav $F,\n";
+        if(count($favorites) > 2 && empty(array_diff($favorites, $candidates))) $racetext .= "'hist(Fav $F)' => '" . implode(", ", $candidates) . "',\n";
         if($firstSet) {
             $inter = $candidates;
             $firstSet = false;
