@@ -78,7 +78,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($union)){
         sort($union);
-        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+        $diff = array_diff($favorites, $union);
+        $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',//count: " . count($diff) . "\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
