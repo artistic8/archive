@@ -22,7 +22,7 @@ return [
 		'favorites' => '4, 9, 10',
 		'official win' => '4, 1, 6',
 		'union' => '2, 3, 4, 6, 7, 8, 9, 10, 12',
-		'inter' => '4, 9',//count: 2
+		'inter' => '4',//count: 1
 	],
 	'4' => [
 		/**
@@ -33,7 +33,7 @@ return [
 		'possible win' => '6, 7, 11',
 		'possible win' => '6, 11, 12',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'inter' => '2, 6, 7',//count: 3
+		'inter' => '2, 6',//count: 2
 	],
 	'5' => [
 		/**

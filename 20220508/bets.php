@@ -30,7 +30,7 @@ return [
 		'official win' => '14, 8, 12',
 		'possible win' => '1, 8, 10',
 		'union' => '1, 2, 3, 4, 5, 8, 10, 11, 12, 14',
-		'inter' => '1, 8, 10',//count: 3
+		'inter' => '1, 8',//count: 2
 	],
 	'5' => [
 		/**

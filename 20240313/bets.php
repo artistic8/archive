@@ -36,7 +36,7 @@ return [
 		'possible win' => '4, 7, 12',
 		'possible win' => '6, 7, 12',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12',
-		'inter' => '2, 4, 6, 7',//count: 4
+		'inter' => '2, 4, 6',//count: 3
 	],
 	'4' => [
 		/**

@@ -39,7 +39,7 @@ return [
 		'possible win' => '1, 4, 7',
 		'possible win' => '1, 7, 10',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'inter' => '1, 4, 7',//count: 3
+		'inter' => '1, 4',//count: 2
 	],
 	'5' => [
 		/**
@@ -82,7 +82,7 @@ return [
 		'possible win' => '6, 7, 10',
 		'possible win' => '6, 8, 10',
 		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'inter' => '2, 3, 4, 6, 7',//count: 5
+		'inter' => '2, 3, 4, 6',//count: 4
 	],
 	'7' => [
 		/**
