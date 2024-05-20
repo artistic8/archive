@@ -64,25 +64,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
-    elseif(count($favorites) > 3){
-        foreach($favorites as $one){
-            $win1 = array_intersect($history[$raceNumber][$one]["win"], $runners);
-            foreach($favorites as $two){
-                if($two > $one){
-                    $win2 = array_intersect($history[$raceNumber][$two]["win"], $runners);
-                    foreach($favorites as $three){
-                        if($three > $two){
-                            $win3 = array_intersect($history[$raceNumber][$three]["win"], $runners);
-                            $intersection = array_intersect($win1, $win2, $win3, [$one, $two, $three]);
-                            if(count($intersection) >= 2){
-                                $racetext .= "\t\t'possible win' => '" . implode(", ", [$one, $two, $three]) . "',\n"; 
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
     $union = [];
     foreach($favorites as $one){
         foreach($favorites as $two){
@@ -96,11 +78,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($union)){
         sort($union);
-        $X1 = array_intersect($favorites, $union);
-        $union = array_slice($union, 0, 6);
-        $X2 = array_intersect($favorites, $union);
-        $diff = array_diff($X1, $X2);
-        if(!empty($diff)) $racetext .= "\t\t'wp' => '" . implode(", ", $diff) . "',\n";
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',//count: " . count($union) . "\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
