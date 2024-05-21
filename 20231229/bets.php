@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '5, 6',
 		'official win' => '9, 2, 3',
+		'I' => '1',
 	],
 	'2' => [
 		/**

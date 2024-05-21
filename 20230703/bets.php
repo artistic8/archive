@@ -45,6 +45,7 @@ return [
 		*/
 		'favorites' => '4, 5',
 		'official win' => '7, 12, 6',
+		'I' => '1',
 	],
 	'7' => [
 		/**
