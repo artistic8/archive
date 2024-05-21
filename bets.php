@@ -63,6 +63,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         else $inter = array_intersect($inter, $candidates);
     }
+    sort($union);
+    sort($inter);
     $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
     if(!empty($inter)) 
     $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
