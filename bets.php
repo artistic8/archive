@@ -52,19 +52,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
-    $firstRunnerSet = true;
-    foreach($runners as $R){
-        $candidates = array_intersect($history[$raceNumber][$R]["win"], $runners);
-        if(count($favorites) > 2 && empty(array_diff($favorites, $candidates))) {
-            $racetext .= "\t\t'hist(Runner $R)' => '" . implode(", ", $candidates) . "',\n";
-            if($firstRunnerSet) {
-                $interX = $candidates;
-                $firstRunnerSet = false;
-            }
-            else $interX = array_intersect($interX, $candidates);
-        }
-    }
-    if(count($favorites) > 1 && !empty($interX)) $racetext .= "\t\t'I' => '" . implode(", ", $interX) . "',\n"; 
     $firstSet = true;
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
@@ -79,14 +66,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        if(empty(array_diff($favorites, $inter))) $racetext .= "\t\t'sure bet' => true,\n";
     }
  
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
     unset($inter);
-    unset($interX);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
