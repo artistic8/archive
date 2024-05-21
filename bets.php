@@ -55,9 +55,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $firstRunnerSet = true;
     foreach($runners as $R){
         $candidates = array_intersect($history[$raceNumber][$R]["win"], $runners);
-        if($firstSet) {
+        if($firstRunnerSet) {
             $interX = $candidates;
-            $firstSet = false;
+            $firstRunnerSet = false;
         }
         else $interX = array_intersect($interX, $candidates);
         if(count($favorites) > 2 && empty(array_diff($favorites, $candidates))) $racetext .= "\t\t'hist(Runner $R)' => '" . implode(", ", $candidates) . "',\n";
