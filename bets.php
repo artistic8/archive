@@ -52,10 +52,17 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
+    $firstRunnerSet = true;
     foreach($runners as $R){
         $candidates = array_intersect($history[$raceNumber][$R]["win"], $runners);
+        if($firstSet) {
+            $interX = $candidates;
+            $firstSet = false;
+        }
+        else $interX = array_intersect($interX, $candidates);
         if(count($favorites) > 2 && empty(array_diff($favorites, $candidates))) $racetext .= "\t\t'hist(Runner $R)' => '" . implode(", ", $candidates) . "',\n";
     }
+    if(count($favorites) > 1 && !empty($interX)) $racetext .= "\t\t'I' => '" . implode(", ", $interX) . "',\n"; 
     $firstSet = true;
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
