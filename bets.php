@@ -53,14 +53,19 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $firstSet = true;
+    $union = [];
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        $union = array_values(array_unique(array_merge($union, $candidates)));
         if($firstSet) {
             $inter = $candidates;
             $firstSet = false;
         }
         else $inter = array_intersect($inter, $candidates);
     }
+    $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+    if(!empty($inter)) 
+    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
     $inter = array_intersect($favorites, $inter);
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
