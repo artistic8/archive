@@ -14,7 +14,7 @@ return [
 		*/
 		'favorites' => '3, 6',
 		'official win' => '2, 6, 3',
-		'ratio' => 1.67,
+		'ratio' => 1.5,
 	],
 	'3' => [
 		/**
@@ -29,7 +29,7 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'official win' => '10, 4, 6',
-		'ratio' => 4,
+		'ratio' => 1.67,
 	],
 	'5' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		*/
 		'favorites' => '4, 6',
 		'official win' => '7, 6, 10',
-		'ratio' => 3.33,
+		'ratio' => 1.44,
 	],
 	'6' => [
 		/**
@@ -53,7 +53,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '1, 2, 8',
-		'ratio' => 1.8,
+		'ratio' => 1.1,
 	],
 	'8' => [
 		/**

@@ -73,10 +73,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     sort($winInter);
     sort($trioInter);
-    if(!empty($winInter)) {
-        $ratio = round(count($trioUnion) / count($winUnion), 2);
-        $racetext .= "\t\t'ratio' => $ratio,\n";
-    }
+    $ratio = round(count($trioUnion) / count($winUnion), 2);
+    $racetext .= "\t\t'ratio' => $ratio,\n";
     $winInter = array_intersect($favorites, $winInter);
     $trioInter = array_intersect($favorites, $trioInter);
     if(count($winInter) >= 2 && count($favorites) >= 3){

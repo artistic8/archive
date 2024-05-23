@@ -14,7 +14,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '5, 6, 4',
-		'ratio' => 4.5,
+		'ratio' => 1.22,
 	],
 	'3' => [
 		/**
@@ -30,7 +30,7 @@ return [
 		*/
 		'favorites' => '2, 5, 6',
 		'official win' => '5, 6, 1',
-		'ratio' => 6,
+		'ratio' => 1.29,
 	],
 	'5' => [
 		/**
@@ -38,7 +38,7 @@ return [
 		*/
 		'favorites' => '1, 3, 7',
 		'official win' => '7, 2, 1',
-		'ratio' => 2.5,
+		'ratio' => 2.25,
 		'win/qin/trio' => '1, 3, 7',
 	],
 	'6' => [
@@ -62,7 +62,7 @@ return [
 		*/
 		'favorites' => '3, 8',
 		'official win' => '8, 4, 10',
-		'ratio' => 2.5,
+		'ratio' => 1.71,
 	],
 	'9' => [
 		/**
@@ -70,7 +70,7 @@ return [
 		*/
 		'favorites' => '3, 7, 11',
 		'official win' => '9, 11, 1',
-		'ratio' => 5,
+		'ratio' => 1.1,
 		'win/qin/trio' => '3, 7, 11',
 	],
 ];
