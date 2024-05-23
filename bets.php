@@ -60,7 +60,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $winCandidates = array_intersect($winHistory[$raceNumber][$F]["win"], $runners);
         $trioCandidates = array_intersect($trioHistory[$raceNumber][$F]["win"], $runners);
         $winUnion = array_values(array_unique(array_merge($winUnion, $winCandidates)));
-        $trioCandidates = array_values(array_unique(array_merge($winUnion, $trioCandidates)));
+        $trioUnion = array_values(array_unique(array_merge($trioUnion, $trioCandidates)));
         if($firstSet) {
             $winInter = $winCandidates;
             $trioInter = $trioCandidates;
