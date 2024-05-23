@@ -26,7 +26,6 @@ return [
 		'favorites' => '6, 7, 9',
 		'official win' => '3, 1, 6',
 		'diff inter' => '6',
-		'Place' => '6',
 		'win/qin/trio' => '6, 7, 9',
 	],
 	'4' => [
@@ -52,7 +51,6 @@ return [
 		'favorites' => '6, 7, 10',
 		'official win' => '7, 3, 6',
 		'diff inter' => '7',
-		'Place' => '7',
 	],
 	'7' => [
 		/**

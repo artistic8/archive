@@ -77,7 +77,6 @@ return [
 		'favorites' => '2, 3, 5',
 		'official win' => '3, 5, 2',
 		'diff inter' => '3',
-		'Place' => '3',
 		'win/qin/trio' => '2, 3, 5',
 	],
 	'10' => [
@@ -87,6 +86,5 @@ return [
 		'favorites' => '3, 5, 11',
 		'official win' => '12, 3, 11',
 		'diff inter' => '3',
-		'Place' => '3',
 	],
 ];

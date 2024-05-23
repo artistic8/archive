@@ -49,7 +49,6 @@ return [
 		'favorites' => '6, 7, 12',
 		'official win' => '1, 8, 5',
 		'diff inter' => '7',
-		'Place' => '7',
 	],
 	'7' => [
 		/**

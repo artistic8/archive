@@ -75,7 +75,6 @@ return [
 		'favorites' => '1, 3, 5',
 		'official win' => '8, 5, 9',
 		'diff inter' => '3',
-		'Place' => '3',
 		'win/qin/trio' => '1, 3, 5',
 	],
 ];

@@ -34,7 +34,6 @@ return [
 		'favorites' => '1, 5, 11',
 		'official win' => '5, 2, 9',
 		'diff inter' => '5',
-		'Place' => '5',
 		'win/qin/trio' => '1, 5, 11',
 	],
 	'5' => [
