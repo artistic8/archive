@@ -76,8 +76,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($winInter);
     sort($trioInter);
     $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
-    $racetext .= "\t\t'win union' => '" . implode(", ", $winUnion) . "',\n"; 
-    if(!empty($winInter)) $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    $racetext .= "\t\t'win union'  => '" . implode(", ", $winUnion) . "',\n"; 
+    if(!empty($winInter)) $racetext .= "\t\t'win inter'  => '" . implode(", ", $winInter) . "',\n";
     if(!empty($trioInter)) $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
     $winInter = array_intersect($favorites, $winInter);
     $trioInter = array_intersect($favorites, $trioInter);
