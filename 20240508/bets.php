@@ -76,6 +76,5 @@ return [
 		*/
 		'favorites' => '2, 9, 10',
 		'official win' => '4, 8, 10',
-		'diff inter' => '',
 	],
 ];
