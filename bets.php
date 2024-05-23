@@ -72,7 +72,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $diffInter = array_diff($trioInter, $winInter);
     $diffInter = array_intersect($diffInter, $favorites);
     $racetext .= "\t\t'diff inter' => '" . implode(", ", $diffInter) . "',\n"; 
-    if(empty($diffInter)) $racetext .= "\t\t//FAVORITES WIN OR AT LEAST PLACE???\n";
+    if(count($diffInter) === 1 && count($favorites) === 3) $racetext .= "\t\t'Place' => '" . implode(", ", $diffInter) . "',\n"; 
     $winInter = array_intersect($favorites, $winInter);
     $trioInter = array_intersect($favorites, $trioInter);
     if(count($winInter) >= 2 && count($favorites) >= 3){
