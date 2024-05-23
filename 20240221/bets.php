@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '1, 9, 10, 12',
 		'official win' => '8, 9, 12',
+		'ratio' => 1.2,
 		'win/qin/trio' => '1, 9, 10, 12',
 	],
 	'2' => [

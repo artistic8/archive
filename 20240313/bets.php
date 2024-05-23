@@ -23,6 +23,7 @@ return [
 		*/
 		'favorites' => '2, 4, 6, 7, 11, 12',
 		'official win' => '5, 12, 1',
+		'ratio' => 1.22,
 	],
 	'4' => [
 		/**

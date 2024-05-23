@@ -86,5 +86,6 @@ return [
 		*/
 		'favorites' => '7, 9, 14',
 		'official win' => '2, 9, 4',
+		'ratio' => 2.33,
 	],
 ];
