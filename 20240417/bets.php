@@ -8,7 +8,6 @@ return [
 		'favorites' => '5',
 		'official win' => '5, 7, 6',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 	'2' => [
 		/**
@@ -17,7 +16,6 @@ return [
 		'favorites' => '1',
 		'official win' => '1, 8, 6',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 	'3' => [
 		/**
@@ -26,6 +24,7 @@ return [
 		'favorites' => '4, 9, 10',
 		'official win' => '4, 1, 6',
 		'diff inter' => '4',
+		'Place' => '4',
 	],
 	'4' => [
 		/**
@@ -50,7 +49,6 @@ return [
 		'favorites' => '1, 2, 3, 10',
 		'official win' => '3, 1, 12',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 		'win($20)' => '1, 2, 3, 10',
 		'win($20)' => '2, 3',
 		'qin/trio($10)' => '1, 2, 3, 10',
@@ -63,6 +61,7 @@ return [
 		'favorites' => '3, 6, 8',
 		'official win' => '2, 6, 10',
 		'diff inter' => '8',
+		'Place' => '8',
 		'win/qin/trio' => '3, 6, 8',
 	],
 	'8' => [
@@ -72,7 +71,6 @@ return [
 		'favorites' => '6, 8',
 		'official win' => '8, 3, 7',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 	'9' => [
 		/**
@@ -81,6 +79,5 @@ return [
 		'favorites' => '4',
 		'official win' => '11, 4, 6',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 ];

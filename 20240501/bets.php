@@ -51,7 +51,6 @@ return [
 		'favorites' => '4, 6, 10, 12',
 		'official win' => '4, 10, 7',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 	'7' => [
 		/**
@@ -60,6 +59,7 @@ return [
 		'favorites' => '3, 6, 11',
 		'official win' => '6, 5, 11',
 		'diff inter' => '6',
+		'Place' => '6',
 	],
 	'8' => [
 		/**

@@ -26,6 +26,7 @@ return [
 		'favorites' => '6, 7, 9',
 		'official win' => '3, 1, 6',
 		'diff inter' => '6',
+		'Place' => '6',
 		'win/qin/trio' => '6, 7, 9',
 	],
 	'4' => [
@@ -35,7 +36,6 @@ return [
 		'favorites' => '4, 9, 11, 12',
 		'official win' => '12, 4, 6',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 	'5' => [
 		/**
@@ -52,6 +52,7 @@ return [
 		'favorites' => '6, 7, 10',
 		'official win' => '7, 3, 6',
 		'diff inter' => '7',
+		'Place' => '7',
 	],
 	'7' => [
 		/**
@@ -84,6 +85,5 @@ return [
 		'favorites' => '6, 11',
 		'official win' => '1, 11, 2',
 		'diff inter' => '',
-		//FAVORITES WIN OR AT LEAST PLACE???
 	],
 ];
