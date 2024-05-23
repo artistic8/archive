@@ -7,7 +7,8 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '4, 3, 9',
-		'diff inter' => '3, 4',
+		'diff inter 1' => '3, 4',
+		'diff inter 2' => '',
 		'win/qin/trio' => '1, 3, 4',
 	],
 	'2' => [
@@ -16,7 +17,8 @@ return [
 		*/
 		'favorites' => '3, 5, 6, 12',
 		'official win' => '5, 9, 10',
-		'diff inter' => '5, 6, 12',
+		'diff inter 1' => '5, 6, 12',
+		'diff inter 2' => '',
 		'win/qin/trio' => '3, 5, 6, 12',
 	],
 	'3' => [
@@ -25,7 +27,8 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '6, 5, 2',
-		'diff inter' => '5',
+		'diff inter 1' => '5',
+		'diff inter 2' => '',
 	],
 	'4' => [
 		/**
@@ -33,7 +36,8 @@ return [
 		*/
 		'favorites' => '3, 11',
 		'official win' => '1, 4, 11',
-		'diff inter' => '3',
+		'diff inter 1' => '3',
+		'diff inter 2' => '',
 	],
 	'5' => [
 		/**
@@ -41,7 +45,8 @@ return [
 		*/
 		'favorites' => '3, 4, 6',
 		'official win' => '10, 3, 9',
-		'diff inter' => '3, 4, 6',
+		'diff inter 1' => '3, 4, 6',
+		'diff inter 2' => '',
 		'win/qin/trio' => '3, 4, 6',
 	],
 	'6' => [
@@ -50,7 +55,8 @@ return [
 		*/
 		'favorites' => '4, 6, 10, 12',
 		'official win' => '4, 10, 7',
-		'diff inter' => '',
+		'diff inter 1' => '',
+		'diff inter 2' => '',
 	],
 	'7' => [
 		/**
@@ -58,7 +64,8 @@ return [
 		*/
 		'favorites' => '3, 6, 11',
 		'official win' => '6, 5, 11',
-		'diff inter' => '6',
+		'diff inter 1' => '6',
+		'diff inter 2' => '',
 	],
 	'8' => [
 		/**
@@ -66,7 +73,8 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 4',
 		'official win' => '3, 10, 1',
-		'diff inter' => '2',
+		'diff inter 1' => '2',
+		'diff inter 2' => '',
 		'win($20)' => '1, 2, 3, 4',
 		'win($20)' => '2, 3',
 		'qin/trio($10)' => '1, 2, 3, 4',
@@ -78,6 +86,7 @@ return [
 		*/
 		'favorites' => '1, 7',
 		'official win' => '1, 3, 6',
-		'diff inter' => '1',
+		'diff inter 1' => '1',
+		'diff inter 2' => '',
 	],
 ];

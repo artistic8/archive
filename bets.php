@@ -70,10 +70,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($winInter);
     sort($trioInter);
     $diffInter = array_diff($trioInter, $winInter);
-    $diffInter2 = array_diff($winInter, $trioInter);
     $diffInter = array_intersect($diffInter, $favorites);
-    $racetext .= "\t\t'diff inter 1' => '" . implode(", ", $diffInter) . "',\n"; 
-    $racetext .= "\t\t'diff inter 2' => '" . implode(", ", $diffInter2) . "',\n"; 
+    $racetext .= "\t\t'diff inter' => '" . implode(", ", $diffInter) . "',\n"; 
     $winInter = array_intersect($favorites, $winInter);
     $trioInter = array_intersect($favorites, $trioInter);
     if(count($winInter) >= 2 && count($favorites) >= 3){
