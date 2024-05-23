@@ -23,6 +23,7 @@ foreach ($dir as $fileinfo) {
             $winners = explode(", ", $data['official win']);
             foreach($favorites as $favorite){
                 $history[$raceNumber][$favorite] = array_values(array_unique(array_merge($history[$raceNumber][$favorite], $winners)));
+                sort($history[$raceNumber][$favorite]);
             }
         }
     }
