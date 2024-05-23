@@ -8,7 +8,8 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
+$winHistory = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
+$trioHistory = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -53,30 +54,43 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $firstSet = true;
-    $union = [];
+    $winUnion = [];
+    $trioUnion = [];
     foreach($favorites as $F){
-        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        $union = array_values(array_unique(array_merge($union, $candidates)));
+        $winCandidates = array_intersect($winHistory[$raceNumber][$F]["win"], $runners);
+        $trioCandidates = array_intersect($trioHistory[$raceNumber][$F]["win"], $runners);
+        $winUnion = array_values(array_unique(array_merge($winUnion, $winCandidates)));
+        $trioCandidates = array_values(array_unique(array_merge($winUnion, $trioCandidates)));
         if($firstSet) {
-            $inter = $candidates;
+            $winInter = $winCandidates;
+            $trioInter = $trioCandidates;
             $firstSet = false;
         }
-        else $inter = array_intersect($inter, $candidates);
+        else {
+            $winInter = array_intersect($winInter, $winCandidates);
+            $trioInter = array_intersect($trioInter, $trioCandidates);
+        }
     }
-    sort($union);
-    sort($inter);
-   // $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
-    if(!empty($inter)) 
-    //$racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
-    $inter = array_intersect($favorites, $inter);
-    //$racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
-    if(count($favorites) - count($inter) === 1)  $racetext .= "\t\t'Place' => '" . implode(", ", $inter) . "',\n"; 
-    if(count($inter) >= 2 && count($favorites) >= 3){
+    sort($winUnion);
+    sort($trioUnion);
+    sort($winInter);
+    sort($trioInter);
+    $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
+    $racetext .= "\t\t'win union' => '" . implode(", ", $winUnion) . "',\n"; 
+    if(!empty($winInter)) $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    if(!empty($trioInter)) $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
+    $winInter = array_intersect($favorites, $winInter);
+    $trioInter = array_intersect($favorites, $trioInter);
+    $racetext .= "\t\t'win fav inter' => '" . implode(", ", $winInter) . "',\n";
+    $racetext .= "\t\t'trio fav inter' => '" . implode(", ", $trioInter) . "',\n";
+    if(count($winInter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
-  
+    if(count($trioInter) >= 2 && count($favorites) >= 3){
+        $racetext .= "\t\t'win/qin/trio' => '" . implode(", ", $favorites) . "',\n"; 
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
