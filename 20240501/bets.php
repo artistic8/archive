@@ -50,6 +50,7 @@ return [
 		*/
 		'favorites' => '4, 6, 10, 12',
 		'official win' => '4, 10, 7',
+		'diff inter' => '',
 	],
 	'7' => [
 		/**

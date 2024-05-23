@@ -34,6 +34,7 @@ return [
 		*/
 		'favorites' => '4, 9, 11, 12',
 		'official win' => '12, 4, 6',
+		'diff inter' => '',
 	],
 	'5' => [
 		/**
@@ -81,5 +82,6 @@ return [
 		*/
 		'favorites' => '6, 11',
 		'official win' => '1, 11, 2',
+		'diff inter' => '',
 	],
 ];
