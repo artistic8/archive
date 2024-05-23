@@ -70,8 +70,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($winInter);
     sort($trioInter);
     if(!empty($winInter)) {
-        $racetext .= "\t\t'trioInter' => '" . implode(", ", $trioInter) . "',\n"; 
-        $racetext .= "\t\t'winInter' => '" . implode(", ", $winInter) . "',\n"; 
         $ratio = round(count($trioInter) / count($winInter), 2);
         $racetext .= "\t\t'ratio' => $ratio,\n";
     }
