@@ -22,7 +22,7 @@ foreach ($dir as $fileinfo) {
             if(!isset($data['official win']) || empty($data['official win'])) continue;
             $winners = explode(", ", $data['official win']);
             foreach($favorites as $favorite){
-                if(!in_array($winners[0], $history[$raceNumber][$favorite])) $history[$raceNumber][$favorite][] = $winners[0];
+                $history[$raceNumber][$favorite] = array_values(array_unique(array_merge($history[$raceNumber][$favorite], $winners)));
             }
         }
     }
