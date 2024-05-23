@@ -64,8 +64,8 @@ return [
 		*/
 		'favorites' => '1, 12',
 		'official win' => '1, 2, 3',
-		'diff union' => '5, 7, 8, 9, 10, 12',
-		'diff inter' => '2, 3, 7, 12',
+		'diff union' => '5, 7, 9, 10, 12',
+		'diff inter' => '2, 3, 7, 8, 12',
 		'win fav inter' => '1',
 		'trio fav inter' => '1, 12',
 	],

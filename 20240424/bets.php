@@ -18,7 +18,7 @@ return [
 		*/
 		'favorites' => '1, 6, 7',
 		'official win' => '2, 5, 8',
-		'diff union' => '3, 9, 11',
+		'diff union' => '3, 9, 11, 12',
 		'diff inter' => '1, 7, 10',
 		'win fav inter' => '6',
 		'trio fav inter' => '1, 6, 7',
@@ -100,7 +100,7 @@ return [
 		'favorites' => '1, 3, 4',
 		'official win' => '9, 2, 3',
 		'diff union' => '',
-		'diff inter' => '1, 2, 3, 6, 8, 11',
+		'diff inter' => '1, 2, 3, 6, 9, 11',
 		'win fav inter' => '',
 		'trio fav inter' => '1, 3',
 		'win/qin/trio' => '1, 3, 4',

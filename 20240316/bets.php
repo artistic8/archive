@@ -22,8 +22,8 @@ return [
 		*/
 		'favorites' => '4, 9',
 		'official win' => '4, 10, 3',
-		'diff union' => '1, 9',
-		'diff inter' => '1, 2, 3, 6, 10',
+		'diff union' => '1, 9, 12',
+		'diff inter' => '1, 2, 3, 5, 6',
 		'win fav inter' => '4',
 		'trio fav inter' => '4',
 	],

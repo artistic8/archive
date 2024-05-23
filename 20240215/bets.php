@@ -66,10 +66,10 @@ return [
 		*/
 		'favorites' => '1, 3, 7, 8',
 		'official win' => '3, 2, 9',
-		'diff union' => '8',
-		'diff inter' => '2, 3, 7, 11',
+		'diff union' => '',
+		'diff inter' => '2, 3, 7, 8, 11',
 		'win fav inter' => '1',
-		'trio fav inter' => '1, 3, 7',
+		'trio fav inter' => '1, 3, 7, 8',
 		'win/qin/trio' => '1, 3, 7, 8',
 	],
 	'7' => [

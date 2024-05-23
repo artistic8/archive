@@ -8,9 +8,9 @@ return [
 		'favorites' => '3, 12',
 		'official win' => '12, 4, 6',
 		'diff union' => '5, 6, 9, 12, 13',
-		'diff inter' => '2, 4, 7, 9, 10, 12',
+		'diff inter' => '2, 3, 4, 7, 9, 10, 12',
 		'win fav inter' => '',
-		'trio fav inter' => '12',
+		'trio fav inter' => '3, 12',
 	],
 	'2' => [
 		/**
@@ -19,8 +19,8 @@ return [
 		'favorites' => '6, 10',
 		'official win' => '10, 7, 1',
 		'diff union' => '1, 3, 9',
-		'diff inter' => '1, 2, 5, 8, 10',
-		'win fav inter' => '',
+		'diff inter' => '1, 2, 5, 8, 12',
+		'win fav inter' => '10',
 		'trio fav inter' => '10',
 	],
 	'3' => [
@@ -63,7 +63,7 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'official win' => '5, 2, 6',
-		'diff union' => '8',
+		'diff union' => '',
 		'diff inter' => '7, 8, 10',
 		'win fav inter' => '2, 3',
 		'trio fav inter' => '2, 3',
@@ -86,9 +86,12 @@ return [
 		'favorites' => '4, 5, 6, 7',
 		'official win' => '12, 7, 4',
 		'diff union' => '1, 11, 12, 13',
-		'diff inter' => '1, 2, 3, 6, 9',
-		'win fav inter' => '4',
+		'diff inter' => '1, 2, 3, 9',
+		'win fav inter' => '4, 6',
 		'trio fav inter' => '4, 6',
+		'win($20)' => '4, 5, 6, 7',
+		'win($20)' => '5, 6',
+		'qin/trio($10)' => '4, 5, 6, 7',
 		'win/qin/trio' => '4, 5, 6, 7',
 	],
 ];

@@ -100,8 +100,8 @@ return [
 		*/
 		'favorites' => '4',
 		'official win' => '11, 4, 6',
-		'diff union' => '3, 8, 11',
-		'diff inter' => '3, 8, 11',
+		'diff union' => '3, 11',
+		'diff inter' => '3, 11',
 		'win fav inter' => '4',
 		'trio fav inter' => '4',
 	],

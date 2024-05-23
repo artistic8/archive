@@ -86,8 +86,8 @@ return [
 		'favorites' => '5, 6',
 		'official win' => '8, 6, 1',
 		'diff union' => '1, 2, 7',
-		'diff inter' => '1, 2, 3, 6, 7, 9',
-		'win fav inter' => '',
+		'diff inter' => '1, 2, 3, 7, 9',
+		'win fav inter' => '6',
 		'trio fav inter' => '6',
 	],
 	'9' => [

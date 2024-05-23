@@ -8,7 +8,7 @@ return [
 		'favorites' => '7, 12',
 		'official win' => '7, 13, 2',
 		'diff union' => '1, 4, 9',
-		'diff inter' => '4, 6, 9, 10',
+		'diff inter' => '3, 4, 6, 9, 10',
 		'win fav inter' => '',
 		'trio fav inter' => '',
 	],
@@ -74,7 +74,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '1, 8, 5',
-		'diff union' => '4, 11',
+		'diff union' => '4',
 		'diff inter' => '4, 8, 9, 11',
 		'win fav inter' => '1, 3',
 		'trio fav inter' => '1, 3',
@@ -96,7 +96,7 @@ return [
 		*/
 		'favorites' => '4, 7',
 		'official win' => '7, 2, 14',
-		'diff union' => '3, 7, 8',
+		'diff union' => '3, 7',
 		'diff inter' => '3, 7, 11',
 		'win fav inter' => '',
 		'trio fav inter' => '7',
