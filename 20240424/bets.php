@@ -7,7 +7,6 @@ return [
 		*/
 		'favorites' => '1, 4',
 		'official win' => '1, 7, 5',
-		'Place' => '4',
 	],
 	'2' => [
 		/**
@@ -35,7 +34,6 @@ return [
 		*/
 		'favorites' => '1, 5, 11',
 		'official win' => '5, 2, 9',
-		'Place' => '1, 5',
 		'win($20)' => '1, 5, 11',
 		'win($20)' => '5, 11',
 		'qin/trio($10)' => '1, 5, 11',
@@ -77,7 +75,6 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '9, 2, 3',
-		'Place' => '1, 3',
 		'win($20)' => '1, 3, 4',
 		'win($20)' => '3, 4',
 		'qin/trio($10)' => '1, 3, 4',
