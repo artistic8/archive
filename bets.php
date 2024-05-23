@@ -69,7 +69,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     sort($winInter);
     sort($trioInter);
-    $diffInter = array_diff($trioInter, $winInter);
+    if(!empty($winInter)) {
+        $ratio = round(count($trioInter) / count($winInter), 2);
+        $racetext .= "\t\t'ratio' => $ratio,\n";
+    }
     $diffInter = array_intersect($diffInter, $favorites);
     $racetext .= "\t\t'diff inter' => '" . implode(", ", $diffInter) . "',//count: " . count($diffInter) . "\n"; 
     $winInter = array_intersect($favorites, $winInter);
