@@ -7,8 +7,7 @@ return [
 		*/
 		'favorites' => '6, 7, 9',
 		'official win' => '14, 2, 1',
-		'diff inter 1' => '6, 7, 9',
-		'diff inter 2' => '',
+		'diff inter' => '6, 7, 9',
 		'win/qin/trio' => '6, 7, 9',
 	],
 	'2' => [
@@ -17,8 +16,7 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 7',
 		'official win' => '6, 7, 10',
-		'diff inter 1' => '1',
-		'diff inter 2' => '',
+		'diff inter' => '1',
 		'win/qin/trio' => '1, 2, 3, 7',
 	],
 	'3' => [
@@ -27,8 +25,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '3, 8, 1',
-		'diff inter 1' => '3',
-		'diff inter 2' => '',
+		'diff inter' => '3',
 	],
 	'4' => [
 		/**
@@ -36,8 +33,7 @@ return [
 		*/
 		'favorites' => '1, 4, 5',
 		'official win' => '1, 4, 5',
-		'diff inter 1' => '1',
-		'diff inter 2' => '',
+		'diff inter' => '1',
 		'win($20)' => '1, 4, 5',
 		'win($20)' => '4, 5',
 		'qin/trio($10)' => '1, 4, 5',
@@ -49,8 +45,7 @@ return [
 		*/
 		'favorites' => '1, 3, 5',
 		'official win' => '5, 1, 9',
-		'diff inter 1' => '3',
-		'diff inter 2' => '',
+		'diff inter' => '3',
 		'win($20)' => '1, 3, 5',
 		'win($20)' => '3, 5',
 		'qin/trio($10)' => '1, 3, 5',
@@ -62,8 +57,7 @@ return [
 		*/
 		'favorites' => '2, 8, 10, 13',
 		'official win' => '3, 10, 14',
-		'diff inter 1' => '',
-		'diff inter 2' => '',
+		'diff inter' => '',
 	],
 	'7' => [
 		/**
@@ -71,8 +65,7 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '3, 10, 2',
-		'diff inter 1' => '',
-		'diff inter 2' => '',
+		'diff inter' => '',
 	],
 	'8' => [
 		/**
@@ -80,8 +73,7 @@ return [
 		*/
 		'favorites' => '1, 8, 11',
 		'official win' => '1, 4, 9',
-		'diff inter 1' => '11',
-		'diff inter 2' => '',
+		'diff inter' => '11',
 	],
 	'9' => [
 		/**
@@ -89,8 +81,7 @@ return [
 		*/
 		'favorites' => '3, 4, 8, 9',
 		'official win' => '12, 7, 8',
-		'diff inter 1' => '3, 4',
-		'diff inter 2' => '',
+		'diff inter' => '3, 4',
 		'win/qin/trio' => '3, 4, 8, 9',
 	],
 	'10' => [
@@ -99,8 +90,7 @@ return [
 		*/
 		'favorites' => '2, 7, 8, 13',
 		'official win' => '13, 2, 8',
-		'diff inter 1' => '2, 8',
-		'diff inter 2' => '',
+		'diff inter' => '2, 8',
 		'win/qin/trio' => '2, 7, 8, 13',
 	],
 ];
