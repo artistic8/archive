@@ -65,11 +65,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     sort($union);
     sort($inter);
-    $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+   // $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
     if(!empty($inter)) 
-    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    //$racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
     $inter = array_intersect($favorites, $inter);
-    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    //$racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
     if(count($favorites) - count($inter) === 1)  $racetext .= "\t\t'Place' => '" . implode(", ", $inter) . "',\n"; 
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
