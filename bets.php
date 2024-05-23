@@ -75,9 +75,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($trioUnion);
     sort($winInter);
     sort($trioInter);
-    $diffUnion = array_dif($trioUnion, $winUnion);
+    $diffUnion = array_diff($trioUnion, $winUnion);
     $racetext .= "\t\t'diff union' => '" . implode(", ", $diffUnion) . "',\n"; 
-    $diffInter = array_dif($trioInter, $winInter);
+    $diffInter = array_diff($trioInter, $winInter);
     $racetext .= "\t\t'diff inter' => '" . implode(", ", $diffInter) . "',\n"; 
     $winInter = array_intersect($favorites, $winInter);
     $trioInter = array_intersect($favorites, $trioInter);
