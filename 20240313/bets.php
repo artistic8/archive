@@ -7,10 +7,7 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 6',
 		'official win' => '2, 6, 4',
-		'diff union' => '5, 9',
-		'diff inter' => '4, 5, 9, 12',
-		'win fav inter' => '',
-		'trio fav inter' => '4',
+		'diff inter' => '4',
 	],
 	'2' => [
 		/**
@@ -18,10 +15,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '8, 4, 3',
-		'diff union' => '1, 8',
-		'diff inter' => '1, 2, 3, 4, 6, 7, 8',
-		'win fav inter' => '',
-		'trio fav inter' => '3, 4',
+		'diff inter' => '3, 4',
 	],
 	'3' => [
 		/**
@@ -29,10 +23,7 @@ return [
 		*/
 		'favorites' => '2, 4, 6, 7, 11, 12',
 		'official win' => '5, 12, 1',
-		'diff union' => '8, 9',
 		'diff inter' => '',
-		'win fav inter' => '',
-		'trio fav inter' => '',
 	],
 	'4' => [
 		/**
@@ -40,10 +31,7 @@ return [
 		*/
 		'favorites' => '1, 2, 3',
 		'official win' => '3, 8, 9',
-		'diff union' => '2, 7, 9, 12',
-		'diff inter' => '2, 3, 5, 6, 7, 9, 10, 11',
-		'win fav inter' => '1',
-		'trio fav inter' => '1, 2, 3',
+		'diff inter' => '2, 3',
 		'win/qin/trio' => '1, 2, 3',
 	],
 	'5' => [
@@ -52,10 +40,7 @@ return [
 		*/
 		'favorites' => '5, 8, 10',
 		'official win' => '4, 11, 10',
-		'diff union' => '7, 8, 9, 10, 12',
-		'diff inter' => '3, 6',
-		'win fav inter' => '',
-		'trio fav inter' => '',
+		'diff inter' => '',
 	],
 	'6' => [
 		/**
@@ -63,10 +48,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '1, 7, 2',
-		'diff union' => '',
-		'diff inter' => '2, 7, 8, 9',
-		'win fav inter' => '1, 3',
-		'trio fav inter' => '1, 3',
+		'diff inter' => '',
 	],
 	'7' => [
 		/**
@@ -74,10 +56,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '3, 12, 5',
-		'diff union' => '12',
-		'diff inter' => '1, 3, 4, 6, 8, 9, 11, 12',
-		'win fav inter' => '',
-		'trio fav inter' => '3, 4',
+		'diff inter' => '3, 4',
 	],
 	'8' => [
 		/**
@@ -85,10 +64,7 @@ return [
 		*/
 		'favorites' => '4, 7, 10',
 		'official win' => '2, 8, 9',
-		'diff union' => '1, 9, 11',
-		'diff inter' => '2, 4, 6, 9, 12',
-		'win fav inter' => '',
-		'trio fav inter' => '4',
+		'diff inter' => '4',
 	],
 	'9' => [
 		/**
@@ -96,10 +72,7 @@ return [
 		*/
 		'favorites' => '2, 4, 5, 6',
 		'official win' => '5, 4, 8',
-		'diff union' => '',
-		'diff inter' => '2, 3, 7',
-		'win fav inter' => '4',
-		'trio fav inter' => '2, 4',
+		'diff inter' => '2',
 		'win/qin/trio' => '2, 4, 5, 6',
 	],
 ];
