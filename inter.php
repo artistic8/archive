@@ -8,9 +8,11 @@
  $outtext .= "return [\n";
  
  $history = [];
+ for($r = 1; $r <= 11; $r++){
     for($f = 1; $f <= 14; $f++){
-    $history[$f] = [];
+        $history[$r][$f] = [];
     }
+ }
  
  $dir = new DirectoryIterator(__DIR__);
  foreach ($dir as $fileinfo) {
@@ -23,14 +25,18 @@
              if(!isset($data['official win']) || empty($data['official win'])) continue;
              $winners = explode(", ", $data['official win']);
              foreach($inter as $I){
-                 $history[$I]= array_values(array_unique(array_merge($history[$I], array_slice($winners, 0, 1))));
-                 sort($history[$I]);
+                 $history[$raceNumber][$I]= array_values(array_unique(array_merge($history[$raceNumber][$I], array_slice($winners, 0, 1))));
+                 sort($history[$raceNumber][$I]);
              }
          }
      }
  }
-for($f = 1; $f <= 14; $f++){
-    $outtext .= "\t$f => [" . implode(", ", $history[$f]) . "],\n";
+for($r = 1; $r <= 11; $r++){
+    $outtext .= "\t$r => [\n";
+    for($f = 1; $f <= 14; $f++){
+         $outtext .= "\t\t$f => [" . implode(", ", $history[$r][$f]) . "],\n";
+    }
+    $outtext .= "\t],\n";
 }
  $outtext .= "];\n?>\n";
  file_put_contents($outFile, $outtext);
