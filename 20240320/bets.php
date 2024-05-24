@@ -14,7 +14,7 @@ return [
 		*/
 		'favorites' => '2, 4, 5, 6, 7',
 		'official win' => '4, 6, 1',
-		'win/qin/trio' => '2, 4, 5, 6, 7',
+		'win/trio' => '2, 4, 5, 6, 7',
 	],
 	'3' => [
 		/**

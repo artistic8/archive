@@ -28,7 +28,7 @@ return [
 		*/
 		'favorites' => '1, 4, 7, 10',
 		'official win' => '5, 11, 7',
-		'win/qin/trio' => '1, 4, 7, 10',
+		'win/trio' => '1, 4, 7, 10',
 	],
 	'5' => [
 		/**
@@ -36,6 +36,7 @@ return [
 		*/
 		'favorites' => '1, 2, 6',
 		'official win' => '1, 2, 12',
+		'win/qin' => '1, 2, 6',
 	],
 	'6' => [
 		/**
@@ -43,7 +44,7 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 6, 7, 8, 10',
 		'official win' => '1, 7, 5',
-		'win/qin/trio' => '2, 3, 4, 6, 7, 8, 10',
+		'win/trio' => '2, 3, 4, 6, 7, 8, 10',
 	],
 	'7' => [
 		/**
@@ -51,7 +52,8 @@ return [
 		*/
 		'favorites' => '2, 3, 10',
 		'official win' => '5, 7, 2',
-		'win/qin/trio' => '2, 3, 10',
+		'win/qin' => '2, 3, 10',
+		'win/trio' => '2, 3, 10',
 	],
 	'8' => [
 		/**
@@ -59,7 +61,8 @@ return [
 		*/
 		'favorites' => '1, 5, 6',
 		'official win' => '10, 1, 6',
-		'win/qin/trio' => '1, 5, 6',
+		'win/qin' => '1, 5, 6',
+		'win/trio' => '1, 5, 6',
 	],
 	'9' => [
 		/**

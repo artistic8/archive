@@ -85,11 +85,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
-    if(count($qinInter) >= 2 && count($favorites) >= 3){
-        $racetext .= "\t\t'win/qin' => '" . implode(", ", $favorites) . "',\n"; 
-    }
-    if(count($trioInter) >= 2 && count($favorites) >= 3){
-        $racetext .= "\t\t'win/trio' => '" . implode(", ", $favorites) . "',\n"; 
+    if(count($qinInter) >= 2 && count($trioInter) >= 2 && count($favorites) >= 3){
+        $racetext .= "\t\t'win/qin`/trio' => '" . implode(", ", $favorites) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
