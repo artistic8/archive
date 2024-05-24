@@ -80,12 +80,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allInter = array_intersect($winInter, $trioInter, $favorites);
     $inter = array_intersect($allInter, $favorites);
     
-    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) ."',\n"; 
+    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) ."',//count:" . count($trioInter) . "\n"; 
     if(count($trioInter) > 7){
         $wp = array_slice($trioInter, 3, 3);
-        $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
+     //   $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
         $wp = array_intersect($wp, $favorites);
-        $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
+     //   $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
     }
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
