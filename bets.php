@@ -96,6 +96,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     unset($winInter);
     unset($qinInter);
     unset($trioInter);
+    unset($firstSet);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
