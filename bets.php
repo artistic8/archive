@@ -9,6 +9,7 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history.php");
+$interHistory = include(__DIR__ . DIRECTORY_SEPARATOR . "allinterwins.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -76,7 +77,15 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
     }
     $allInter = array_intersect($winInter, $qinInter, $trioInter, $favorites);
-    if(!empty($allInter)) $racetext .= "\t\t'all inter' => '" . implode(", ", $allInter) . "',\n"; 
+    if(!empty($allInter)) {
+        $racetext .= "\t\t'all inter' => '" . implode(", ", $allInter) . "',\n"; 
+        $interWinHistory = [];
+        foreach($allInter as $element){
+            $interWinHistory = array_values(array_unique(array_merge($interWinHistory, $interHistory[$raceNumber][$element])));
+        }
+        sort($interWinHistory);
+        $racetext .= "\t\t'inter win history' => '" . implode(", ", $interWinHistory) . "',\n"; 
+    }
     $inter = array_intersect($allInter, $favorites);
     if(count($allInter) > 0 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
