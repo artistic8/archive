@@ -75,7 +75,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $trioInter = array_intersect($trioInter, $trioCandidates);
         }
     }
-    $allInter = array_intersect($winInter, $qinInter, $trioInter, $favorites);
+    $allInter = array_intersect($winInter, $qinInter, $trioInter);
     $favorites = array_values(array_unique(array_merge($allInter, $favorites)));
     $set1 = true;
     foreach($favorites as $F){
