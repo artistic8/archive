@@ -75,13 +75,25 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $trioInter = array_intersect($trioInter, $trioCandidates);
         }
     }
-    if(count($winInter) >= 2 && count($favorites) >= 3){
+    $allInter = array_intersect($winInter, $qinInter, $trioInter, $favorites);
+    $favorites = array_values(array_unique(array_merge($allInter, $favorites)));
+    $set1 = true;
+    foreach($favorites as $F){
+        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        if($set1) {
+            $inter = $candidates;
+            $set1 = false;
+        }
+        else {
+            $inter = array_intersect($inter, $candidates);
+        }
+    }
+    if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
-    $allInter = array_intersect($winInter, $qinInter, $trioInter, $favorites);
-    if(!empty($allInter)) $racetext .= "\t\t'all inter' => '" . implode(", ", $allInter) . "',\n"; 
+    
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
