@@ -21,7 +21,6 @@ return [
 		*/
 		'favorites' => '1, 7',
 		'official win' => '1, 3, 7',
-		'all inter' => '7',
 	],
 	'4' => [
 		/**
@@ -29,10 +28,9 @@ return [
 		*/
 		'favorites' => '2, 8, 11',
 		'official win' => '11, 7, 1',
-		'win($20)' => '2, 8, 11',
-		'win($20)' => '8, 11',
-		'qin/trio($10)' => '2, 8, 11',
-		'all inter' => '11',
+		'win($20)' => '11, 2, 8',
+		'win($20)' => '2, 8',
+		'qin/trio($10)' => '11, 2, 8',
 	],
 	'5' => [
 		/**
@@ -57,7 +55,6 @@ return [
 		*/
 		'favorites' => '6',
 		'official win' => '6, 7, 4',
-		'all inter' => '6',
 	],
 	'8' => [
 		/**
