@@ -9,8 +9,8 @@ return [
 		'official win' => '1, 7, 5',
 		'inter' => '4',
 		'win inter' => '4',
-		'qin inter' => '4',
 		'trio inter' => '3, 4, 6, 7',
+		'trio union' => '1, 3, 4, 5, 6, 7, 2',
 	],
 	'2' => [
 		/**
@@ -20,8 +20,8 @@ return [
 		'official win' => '2, 5, 8',
 		'inter' => '6',
 		'win inter' => '6, 8',
-		'qin inter' => '6, 8',
 		'trio inter' => '1, 6, 7, 8, 10',
+		'trio union' => '1, 2, 6, 7, 8, 9, 10, 3, 4, 5, 12',
 	],
 	'3' => [
 		/**
@@ -31,8 +31,8 @@ return [
 		'official win' => '7, 3, 4',
 		'inter' => '3',
 		'win inter' => '3',
-		'qin inter' => '3',
 		'trio inter' => '1, 2, 3, 4, 10, 12',
+		'trio union' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12, 7, 9',
 	],
 	'4' => [
 		/**
@@ -42,8 +42,8 @@ return [
 		'official win' => '5, 2, 9',
 		'inter' => '1',
 		'win inter' => '1, 6',
-		'qin inter' => '1, 6',
 		'trio inter' => '1, 3, 4, 5, 6, 7, 9',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -51,6 +51,7 @@ return [
 		*/
 		'favorites' => '1, 4, 5, 7, 9',
 		'official win' => '5, 7, 3',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 6',
 	],
 	'6' => [
 		/**
@@ -60,8 +61,8 @@ return [
 		'official win' => '6, 10, 3',
 		'inter' => '4',
 		'win inter' => '1, 4, 8',
-		'qin inter' => '1, 3, 4, 7, 8, 10',
 		'trio inter' => '1, 3, 4, 5, 7, 8, 9, 10',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 6, 12',
 	],
 	'7' => [
 		/**
@@ -69,6 +70,7 @@ return [
 		*/
 		'favorites' => '2, 7, 12',
 		'official win' => '2, 7, 4',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 6, 11, 12',
 	],
 	'8' => [
 		/**
@@ -76,6 +78,7 @@ return [
 		*/
 		'favorites' => '1, 4, 8',
 		'official win' => '4, 2, 10',
+		'trio union' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2',
 	],
 	'9' => [
 		/**
@@ -83,5 +86,6 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '9, 2, 3',
+		'trio union' => '1, 3, 5, 6, 8, 9, 11, 12, 2, 4, 7',
 	],
 ];

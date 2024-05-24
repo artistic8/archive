@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '8, 13',
 		'official win' => '4, 13, 8',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 13',
 	],
 	'2' => [
 		/**
@@ -16,8 +17,8 @@ return [
 		'official win' => '9, 4, 3',
 		'inter' => '5',
 		'win inter' => '5',
-		'qin inter' => '4, 5, 7',
 		'trio inter' => '1, 2, 4, 5, 6, 7, 8, 9',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'3' => [
 		/**
@@ -27,8 +28,8 @@ return [
 		'official win' => '10, 1, 3',
 		'inter' => '1',
 		'win inter' => '1, 3, 4',
-		'qin inter' => '1, 3, 4',
 		'trio inter' => '1, 3, 4, 5, 8, 9',
+		'trio union' => '1, 3, 4, 5, 7, 8, 9, 10, 2, 6',
 	],
 	'4' => [
 		/**
@@ -36,6 +37,7 @@ return [
 		*/
 		'favorites' => '1, 6, 8',
 		'official win' => '11, 1, 4',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -43,6 +45,7 @@ return [
 		*/
 		'favorites' => '3, 6',
 		'official win' => '6, 3, 12',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 8',
 	],
 	'6' => [
 		/**
@@ -52,8 +55,8 @@ return [
 		'official win' => '11, 7, 3',
 		'inter' => '1',
 		'win inter' => '1',
-		'qin inter' => '1, 2',
 		'trio inter' => '1, 2, 7, 8, 12',
+		'trio union' => '1, 2, 3, 4, 7, 8, 9, 12, 5, 6, 10, 11',
 	],
 	'7' => [
 		/**
@@ -63,8 +66,8 @@ return [
 		'official win' => '7, 8, 9',
 		'inter' => '2',
 		'win inter' => '2',
-		'qin inter' => '2, 8',
 		'trio inter' => '2, 3, 4, 7, 8, 9',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 6',
 	],
 	'8' => [
 		/**
@@ -74,8 +77,8 @@ return [
 		'official win' => '3, 13, 14',
 		'inter' => '3',
 		'win inter' => '3, 4, 6, 8',
-		'qin inter' => '2, 3, 4, 6, 8',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 	],
 	'9' => [
 		/**
@@ -85,8 +88,8 @@ return [
 		'official win' => '1, 4, 8',
 		'inter' => '8',
 		'win inter' => '5, 8, 12',
-		'qin inter' => '3, 5, 8, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 14',
 	],
 	'10' => [
 		/**
@@ -94,5 +97,6 @@ return [
 		*/
 		'favorites' => '2, 10',
 		'official win' => '7, 4, 9',
+		'trio union' => '2, 3, 8, 10, 4',
 	],
 ];

@@ -9,8 +9,8 @@ return [
 		'official win' => '5, 2, 7',
 		'inter' => '8',
 		'win inter' => '8',
-		'qin inter' => '8',
 		'trio inter' => '1, 3, 4, 7, 8, 9, 10',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'2' => [
 		/**
@@ -18,6 +18,7 @@ return [
 		*/
 		'favorites' => '2, 3, 9',
 		'official win' => '2, 3, 14',
+		'trio union' => '1, 2, 4, 5, 6, 7, 9, 10, 12, 13, 14, 3, 8',
 	],
 	'3' => [
 		/**
@@ -27,8 +28,8 @@ return [
 		'official win' => '3, 1, 6',
 		'inter' => '7',
 		'win inter' => '7',
-		'qin inter' => '7',
 		'trio inter' => '1, 2, 3, 4, 7, 10',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 10, 6, 9',
 	],
 	'4' => [
 		/**
@@ -36,6 +37,7 @@ return [
 		*/
 		'favorites' => '4, 9, 11, 12',
 		'official win' => '12, 4, 6',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 6, 9, 12',
 	],
 	'5' => [
 		/**
@@ -43,6 +45,7 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'official win' => '11, 5, 3',
+		'trio union' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 5, 11',
 	],
 	'6' => [
 		/**
@@ -50,6 +53,7 @@ return [
 		*/
 		'favorites' => '6, 7, 10',
 		'official win' => '7, 3, 6',
+		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 6, 14',
 	],
 	'7' => [
 		/**
@@ -59,8 +63,8 @@ return [
 		'official win' => '1, 8, 4',
 		'inter' => '2',
 		'win inter' => '2, 5',
-		'qin inter' => '2, 5, 9',
 		'trio inter' => '2, 3, 4, 5, 8, 9',
+		'trio union' => '1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 7',
 	],
 	'8' => [
 		/**
@@ -70,8 +74,8 @@ return [
 		'official win' => '8, 5, 10',
 		'inter' => '4',
 		'win inter' => '3, 4, 6, 8, 12',
-		'qin inter' => '3, 4, 5, 6, 8, 10, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
+		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'9' => [
 		/**
@@ -79,6 +83,7 @@ return [
 		*/
 		'favorites' => '2, 6',
 		'official win' => '4, 2, 13',
+		'trio union' => '2, 3, 4, 5, 7, 8, 9, 10, 6',
 	],
 	'10' => [
 		/**
@@ -86,5 +91,6 @@ return [
 		*/
 		'favorites' => '6, 11',
 		'official win' => '1, 11, 2',
+		'trio union' => '2, 8, 10, 1, 3, 11, 12, 14',
 	],
 ];

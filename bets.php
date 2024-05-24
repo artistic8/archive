@@ -77,6 +77,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n"; 
         $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n"; 
     }
+    sort($trioUnion);
     $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
