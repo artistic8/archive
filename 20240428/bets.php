@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '6, 7, 9',
 		'official win' => '14, 2, 1',
+		'trio inter' => '2, 3, 4, 5, 6, 7, 8, 9',//count: 8
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count: 13
 		'ratio' => 1.625,
 	],
@@ -19,6 +20,7 @@ return [
 		'inter' => '2',
 		'win inter' => '2',
 		'trio inter' => '1, 2, 5, 6, 10',
+		'trio inter' => '1, 2, 5, 6, 10',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count: 10
 		'ratio' => 2,
 	],
@@ -31,6 +33,7 @@ return [
 		'inter' => '1',
 		'win inter' => '1, 4, 7, 9, 10',
 		'trio inter' => '1, 3, 4, 5, 7, 9, 10, 11',
+		'trio inter' => '1, 3, 4, 5, 7, 9, 10, 11',//count: 8
 		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count: 11
 		'ratio' => 1.375,
 	],
@@ -43,6 +46,7 @@ return [
 		'inter' => '4, 5',
 		'win inter' => '4, 5',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 7',//count: 7
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 1.7142857142857,
 		'win($20)' => '1, 4, 5',
@@ -58,6 +62,7 @@ return [
 		'inter' => '1, 5',
 		'win inter' => '1, 5',
 		'trio inter' => '1, 2, 3, 4, 5, 7, 10',
+		'trio inter' => '1, 2, 3, 4, 5, 7, 10',//count: 7
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 		'ratio' => 1.5714285714286,
 		'win($20)' => '1, 3, 5',
@@ -70,6 +75,7 @@ return [
 		*/
 		'favorites' => '2, 8, 10, 13',
 		'official win' => '3, 10, 14',
+		'trio inter' => '',//count: 0
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 	],
 	'7' => [
@@ -81,6 +87,7 @@ return [
 		'inter' => '1',
 		'win inter' => '1, 2, 3, 5, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 8, 9, 10, 11',
+		'trio inter' => '1, 2, 3, 4, 5, 8, 9, 10, 11',//count: 9
 		'trio union' => '1, 2, 3, 4, 5, 8, 9, 10, 11',//count: 9
 		'ratio' => 1,
 	],
@@ -90,6 +97,7 @@ return [
 		*/
 		'favorites' => '1, 8, 11',
 		'official win' => '1, 4, 9',
+		'trio inter' => '2, 3, 4, 7, 9, 11',//count: 6
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 		'ratio' => 1.8333333333333,
 	],
@@ -102,6 +110,7 @@ return [
 		'inter' => '8',
 		'win inter' => '8',
 		'trio inter' => '2, 3, 4, 8',
+		'trio inter' => '2, 3, 4, 8',//count: 4
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 3,
 	],
@@ -111,6 +120,7 @@ return [
 		*/
 		'favorites' => '2, 7, 8, 13',
 		'official win' => '13, 2, 8',
+		'trio inter' => '2',//count: 1
 		'trio union' => '2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14',//count: 11
 		'ratio' => 11,
 	],

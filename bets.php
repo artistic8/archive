@@ -89,7 +89,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 
     if(!empty($trioInter)) {
         $ratio = count($trioUnion) / count($trioInter);
-        $racetext .= "\t\t'ratio' => $ratio,\n"; 
+        if(count($trioUnion) >= 12 && $ratio <3) $racetext .= "\t\t//Fav win or qin\n"; 
     }
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 

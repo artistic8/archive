@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '1, 7, 8, 10',
 		'official win' => '8, 4, 9',
+		'trio inter' => '1, 3, 4, 5, 7, 9, 10',//count: 7
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 1.7142857142857,
 	],
@@ -16,6 +17,7 @@ return [
 		*/
 		'favorites' => '2, 4, 8, 9',
 		'official win' => '4, 1, 6',
+		'trio inter' => '2, 3, 4, 5, 6',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count: 10
 		'ratio' => 2,
 	],
@@ -28,6 +30,7 @@ return [
 		'inter' => '1, 3',
 		'win inter' => '1, 3, 4, 9',
 		'trio inter' => '1, 3, 4, 5, 7, 8, 9',
+		'trio inter' => '1, 3, 4, 5, 7, 8, 9',//count: 7
 		'trio union' => '1, 2, 3, 4, 5, 7, 8, 9',//count: 8
 		'ratio' => 1.1428571428571,
 	],
@@ -37,6 +40,7 @@ return [
 		*/
 		'favorites' => '3, 6, 7',
 		'official win' => '3, 9, 1',
+		'trio inter' => '5, 7, 9, 10, 11',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 2.4,
 	],
@@ -46,6 +50,7 @@ return [
 		*/
 		'favorites' => '2, 4, 11',
 		'official win' => '11, 6, 7',
+		'trio inter' => '1, 11',//count: 2
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 		'ratio' => 5.5,
 	],
@@ -55,6 +60,7 @@ return [
 		*/
 		'favorites' => '4, 6, 9, 10',
 		'official win' => '8, 3, 9',
+		'trio inter' => '1, 3, 6, 7',//count: 4
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 3,
 	],
@@ -67,6 +73,7 @@ return [
 		'inter' => '3',
 		'win inter' => '2, 3, 10',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',//count: 10
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 		'ratio' => 1.1,
 	],
@@ -79,6 +86,7 @@ return [
 		'inter' => '3',
 		'win inter' => '3, 7',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 11
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 1.0909090909091,
 	],
@@ -88,6 +96,7 @@ return [
 		*/
 		'favorites' => '2, 3, 9',
 		'official win' => '2, 9, 7',
+		'trio inter' => '2, 3, 4, 8, 9',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'ratio' => 2.4,
 	],
