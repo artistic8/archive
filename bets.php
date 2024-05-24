@@ -79,6 +79,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($qinInter);
     sort($trioInter);
     $winInter = array_intersect($favorites, $winInter);
+    $qinInter = array_intersect($favorites, $qinInter);
     $trioInter = array_intersect($favorites, $trioInter);
     if(count($winInter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
