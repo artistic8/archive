@@ -38,7 +38,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     else {
         $runners = [];
-        for($k = 1; $k < 31; $k++) $runners[] = $k;
+        for($k = 1; $k <= 14; $k++) $runners[] = $k;
     }
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
