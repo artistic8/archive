@@ -93,10 +93,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
-    unset($winInter);
-    unset($qinInter);
-    unset($trioInter);
-    unset($firstSet);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
