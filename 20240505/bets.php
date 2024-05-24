@@ -8,7 +8,7 @@ return [
 		'favorites' => '2, 5, 8',
 		'official win' => '8, 9, 5',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'ratio' => 9,
+		'ratio' => 7,
 	],
 	'2' => [
 		/**
@@ -20,7 +20,7 @@ return [
 		'win inter' => '2, 6',
 		'trio inter' => '1, 2, 5, 6, 10',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'ratio' => 5,
+		'ratio' => 3.5,
 	],
 	'3' => [
 		/**
@@ -29,7 +29,7 @@ return [
 		'favorites' => '4, 6, 12',
 		'official win' => '7, 12, 4',
 		'trio union' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
-		'ratio' => 4,
+		'ratio' => 3,
 	],
 	'4' => [
 		/**
@@ -54,7 +54,7 @@ return [
 		'favorites' => '3, 5, 9',
 		'official win' => '2, 7, 9',
 		'trio union' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',
-		'ratio' => 5.5,
+		'ratio' => 5,
 	],
 	'7' => [
 		/**
@@ -63,7 +63,7 @@ return [
 		'favorites' => '1, 4, 6, 8',
 		'official win' => '3, 8, 4',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
-		'ratio' => 12,
+		'ratio' => 11,
 	],
 	'8' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'win inter' => '3, 4',
 		'trio inter' => '1, 2, 3, 4, 5, 9',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12',
-		'ratio' => 5,
+		'ratio' => 3.5,
 		'win($20)' => '3, 4, 11',
 		'win($20)' => '4, 11',
 		'qin/trio($10)' => '3, 4, 11',
@@ -87,7 +87,7 @@ return [
 		'favorites' => '2, 3, 6, 8',
 		'official win' => '8, 4, 2',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'ratio' => 10,
+		'ratio' => 9,
 	],
 	'10' => [
 		/**

@@ -84,7 +84,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     sort($trioUnion);
     $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
-    if(!empty($qinInter)){
+    if(!empty($winInter)){
         $ratio = count($winUnion) / count($winInter);
         $racetext .= "\t\t'ratio' => $ratio,\n"; 
     }
