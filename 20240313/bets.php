@@ -66,5 +66,6 @@ return [
 		'favorites' => '2, 4, 5, 6',
 		'official win' => '5, 4, 8',
 		'inter' => '4',
+		//Fav win
 	],
 ];

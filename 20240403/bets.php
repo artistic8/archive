@@ -37,6 +37,7 @@ return [
 		'favorites' => '4, 5',
 		'official win' => '4, 7, 5',
 		'inter' => '4, 5',
+		//Fav win
 	],
 	'6' => [
 		/**
@@ -60,6 +61,7 @@ return [
 		'favorites' => '4, 5, 6, 7',
 		'official win' => '12, 7, 4',
 		'inter' => '4, 6',
+		//Fav win
 		'win($20)' => '4, 5, 6, 7',
 		'win($20)' => '5, 6',
 		'qin/trio($10)' => '4, 5, 6, 7',
