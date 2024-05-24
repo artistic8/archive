@@ -79,7 +79,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_values(array_unique(array_merge($allInter, $favorites)));
     $set1 = true;
     foreach($favorites as $F){
-        $candidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
+        $candidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
         if($set1) {
             $inter = $candidates;
             $set1 = false;
