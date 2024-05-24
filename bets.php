@@ -85,15 +85,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($trioUnion);
     $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n";
 
-    $ratio2 = count($qinInter) / count($trioUnion);
     $ratio3 = count($trioInter) / count($trioUnion);
     $ratio4 = count($qinInter) / count($winUnion);
     $ratio5 = count($trioInter) / count($winUnion);
     $ratio6 = count($winInter) / count($qinUnion);
     $ratio7 = count($trioInter) / count($winUnion);
 
-    $racetext .= "\t\t'ratio' => $ratio2,\n"; 
-    $racetext .= "\t\t'ratio3' => $ratio3,\n"; 
+    $racetext .= "\t\t'ratio' => $ratio3,\n"; 
     $racetext .= "\t\t'ratio4' => $ratio4,\n"; 
     $racetext .= "\t\t'ratio5' => $ratio5,\n"; 
     $racetext .= "\t\t'ratio6' => $ratio6,\n"; 
