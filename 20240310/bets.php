@@ -73,6 +73,6 @@ return [
 		*/
 		'favorites' => '3, 5, 11',
 		'official win' => '12, 3, 11',
-		//Fav win or qin
+		'trio inter' => '3',
 	],
 ];

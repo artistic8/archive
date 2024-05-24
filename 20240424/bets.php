@@ -7,6 +7,8 @@ return [
 		*/
 		'favorites' => '1, 4',
 		'official win' => '1, 7, 5',
+		'win inter' => '4',
+		'qin inter' => '4',
 	],
 	'2' => [
 		/**
@@ -21,6 +23,8 @@ return [
 		*/
 		'favorites' => '2, 3, 7, 9',
 		'official win' => '7, 3, 4',
+		'win inter' => '3',
+		'qin inter' => '3',
 	],
 	'4' => [
 		/**
@@ -49,7 +53,7 @@ return [
 		*/
 		'favorites' => '2, 7, 12',
 		'official win' => '2, 7, 4',
-		//Fav win or qin
+		'trio inter' => '9',
 	],
 	'8' => [
 		/**
@@ -57,6 +61,8 @@ return [
 		*/
 		'favorites' => '1, 4, 8',
 		'official win' => '4, 2, 10',
+		'win inter' => '3',
+		'qin inter' => '3',
 	],
 	'9' => [
 		/**
