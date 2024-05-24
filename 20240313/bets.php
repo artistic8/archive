@@ -7,9 +7,6 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 6',
 		'official win' => '2, 6, 4',
-		'trio inter' => '1, 4, 5, 9, 12',//count: 5
-		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		//Fav win or qin
 	],
 	'2' => [
 		/**
@@ -17,8 +14,6 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '8, 4, 3',
-		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
-		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
 	],
 	'3' => [
 		/**
@@ -26,8 +21,6 @@ return [
 		*/
 		'favorites' => '2, 4, 6, 7, 11, 12',
 		'official win' => '5, 12, 1',
-		'trio inter' => '',//count: 0
-		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',//count: 11
 	],
 	'4' => [
 		/**
@@ -36,8 +29,6 @@ return [
 		'favorites' => '1, 2, 3',
 		'official win' => '3, 8, 9',
 		'inter' => '1',
-		'win inter' => '1, 4, 8',
-		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		//Fav win or qin
@@ -48,8 +39,6 @@ return [
 		*/
 		'favorites' => '5, 8, 10',
 		'official win' => '4, 11, 10',
-		'trio inter' => '1, 3',//count: 2
-		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 	],
 	'6' => [
 		/**
@@ -58,8 +47,6 @@ return [
 		'favorites' => '1, 3',
 		'official win' => '1, 7, 2',
 		'inter' => '1, 3',
-		'win inter' => '1, 3',
-		'trio inter' => '1, 2, 3, 7, 8, 9',
 		'trio inter' => '1, 2, 3, 7, 8, 9',//count: 6
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
 	],
@@ -69,9 +56,6 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '3, 12, 5',
-		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',//count: 11
-		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		//Fav win or qin
 	],
 	'8' => [
 		/**
@@ -79,9 +63,6 @@ return [
 		*/
 		'favorites' => '4, 7, 10',
 		'official win' => '2, 8, 9',
-		'trio inter' => '2, 3, 4, 6, 9, 12',//count: 6
-		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		//Fav win or qin
 	],
 	'9' => [
 		/**
@@ -90,8 +71,6 @@ return [
 		'favorites' => '2, 4, 5, 6',
 		'official win' => '5, 4, 8',
 		'inter' => '4',
-		'win inter' => '4, 8',
-		'trio inter' => '2, 3, 4, 7, 8',
 		'trio inter' => '2, 3, 4, 7, 8',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 	],
