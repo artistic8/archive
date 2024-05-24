@@ -11,7 +11,7 @@ return [
 		'win inter' => '4',
 		'trio inter' => '3, 4, 6, 7',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7',
-		'ratio' => 5,
+		'ratio' => 6,
 	],
 	'2' => [
 		/**
@@ -23,7 +23,7 @@ return [
 		'win inter' => '6, 8',
 		'trio inter' => '1, 6, 7, 8, 10',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
-		'ratio' => 4,
+		'ratio' => 4.5,
 	],
 	'3' => [
 		/**
@@ -47,7 +47,7 @@ return [
 		'win inter' => '1, 6',
 		'trio inter' => '1, 3, 4, 5, 6, 7, 9',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'ratio' => 5,
+		'ratio' => 6,
 	],
 	'5' => [
 		/**
@@ -67,7 +67,7 @@ return [
 		'win inter' => '1, 4, 8',
 		'trio inter' => '1, 3, 4, 5, 7, 8, 9, 10',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
-		'ratio' => 2.33,
+		'ratio' => 2.67,
 	],
 	'7' => [
 		/**
@@ -84,7 +84,7 @@ return [
 		'favorites' => '1, 4, 8',
 		'official win' => '4, 2, 10',
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'ratio' => 9,
+		'ratio' => 11,
 	],
 	'9' => [
 		/**
