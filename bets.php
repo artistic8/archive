@@ -77,7 +77,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     $allInter = array_intersect($winInter, $qinInter, $trioInter);
     $racetext .= "\t\t'all inter' => '" . implode(", ", $allInter) . "',\n"; 
-    $inter = array_intersect($trioInter, $favorites);
+    $inter = array_intersect($qinInter, $favorites);
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 

@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '2, 5, 8',
 		'official win' => '8, 9, 5',
-		'inter' => '1',
+		'all inter' => '1',
 	],
 	'2' => [
 		/**
@@ -15,7 +15,10 @@ return [
 		*/
 		'favorites' => '1, 6, 7, 9',
 		'official win' => '8, 6, 10',
-		'inter' => '2, 6',
+		'all inter' => '2, 6',
+		'win($20)' => '1, 6, 7, 9',
+		'win($20)' => '6, 7',
+		'qin/trio($10)' => '1, 6, 7, 9',
 	],
 	'3' => [
 		/**
@@ -23,7 +26,7 @@ return [
 		*/
 		'favorites' => '4, 6, 12',
 		'official win' => '7, 12, 4',
-		'inter' => '2, 5',
+		'all inter' => '2, 5',
 	],
 	'4' => [
 		/**
@@ -31,7 +34,10 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 4, 5, 6',
 		'official win' => '4, 7, 2',
-		'inter' => '',
+		'all inter' => '',
+		'win($20)' => '1, 2, 3, 4, 5, 6',
+		'win($20)' => '2, 3',
+		'qin/trio($10)' => '1, 2, 3, 4, 5, 6',
 	],
 	'5' => [
 		/**
@@ -39,7 +45,7 @@ return [
 		*/
 		'favorites' => '1, 5, 12',
 		'official win' => '5, 2, 13',
-		'inter' => '',
+		'all inter' => '',
 	],
 	'6' => [
 		/**
@@ -47,7 +53,7 @@ return [
 		*/
 		'favorites' => '3, 5, 9',
 		'official win' => '2, 7, 9',
-		'inter' => '1, 6',
+		'all inter' => '1, 6',
 	],
 	'7' => [
 		/**
@@ -55,7 +61,7 @@ return [
 		*/
 		'favorites' => '1, 4, 6, 8',
 		'official win' => '3, 8, 4',
-		'inter' => '2',
+		'all inter' => '2',
 	],
 	'8' => [
 		/**
@@ -63,7 +69,7 @@ return [
 		*/
 		'favorites' => '3, 4, 11',
 		'official win' => '7, 4, 11',
-		'inter' => '3, 4',
+		'all inter' => '3, 4',
 		'win($20)' => '3, 4, 11',
 		'win($20)' => '4, 11',
 		'qin/trio($10)' => '3, 4, 11',
@@ -74,7 +80,10 @@ return [
 		*/
 		'favorites' => '2, 3, 6, 8',
 		'official win' => '8, 4, 2',
-		'inter' => '5',
+		'all inter' => '5',
+		'win($20)' => '2, 3, 6, 8',
+		'win($20)' => '3, 6',
+		'qin/trio($10)' => '2, 3, 6, 8',
 	],
 	'10' => [
 		/**
@@ -82,7 +91,7 @@ return [
 		*/
 		'favorites' => '8, 11',
 		'official win' => '8, 3, 11',
-		'inter' => '',
+		'all inter' => '',
 	],
 	'11' => [
 		/**
@@ -90,6 +99,6 @@ return [
 		*/
 		'favorites' => '8, 9, 11',
 		'official win' => '5, 3, 1',
-		'inter' => '',
+		'all inter' => '',
 	],
 ];
