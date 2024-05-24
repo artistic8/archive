@@ -82,7 +82,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n"; 
         $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n"; 
     }
+    sort($trioInter);
     sort($trioUnion);
+    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',//count: " . count($trioInter) . "\n";
     $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',//count: " . count($trioUnion) . "\n";
 
     if(!empty($trioInter)) {
