@@ -8,9 +8,6 @@ return [
 		'favorites' => '5, 6, 9',
 		'official win' => '1, 6, 7',
 		'all inter' => '',
-		'win($20)' => '5, 6, 9',
-		'win($20)' => '6, 9',
-		'qin/trio($10)' => '5, 6, 9',
 	],
 	'2' => [
 		/**
