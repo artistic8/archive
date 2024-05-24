@@ -54,35 +54,30 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     $trioUnion = [];
     $winUnion = [];
-    $qinUnion = [];
     $firstSet = true;
     foreach($favorites as $F){
         $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         $winUnion = array_values(array_unique(array_merge($winUnion, $winCandidates)));
-        $qinCandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
-        $qinUnion = array_values(array_unique(array_merge($qinUnion, $qinCandidates)));
         $trioCandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
         $trioUnion = array_values(array_unique(array_merge($trioUnion, $trioCandidates)));
         if($firstSet) {
             $winInter = $winCandidates;
-            $qinInter = $qinCandidates;
             $trioInter = $trioCandidates;
             $firstSet = false;
         }
         else {
             $winInter = array_intersect($winInter, $winCandidates);
-            $qinInter = array_intersect($qinInter, $winCandidates);
             $trioInter = array_intersect($trioInter, $trioCandidates);
         }
     }
-    $allInter = array_intersect($winInter, $qinInter, $trioInter, $favorites);
+    $allInter = array_intersect($winInter, $trioInter, $favorites);
     $inter = array_intersect($allInter, $favorites);
     if(!empty($inter)) {
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n"; 
         $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n"; 
-        $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n"; 
         $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n"; 
     }
+    $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
