@@ -84,8 +84,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     sort($trioUnion);
     $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
-    if(!empty($winInter)){
-        $ratio = count($winUnion) / count($winInter);
+    if(!empty($trioInter)){
+        $ratio = count($trioUnion) / count($trioInter);
         $racetext .= "\t\t'ratio' => $ratio,\n"; 
     }
     if(count($inter) > 1 && count($favorites) >= 3){
