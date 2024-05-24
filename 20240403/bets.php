@@ -54,6 +54,8 @@ return [
 		'official win' => '5, 2, 6',
 		'qin amount' => '36.00',
 		'trio inter' => '1, 2, 3, 5, 7, 8, 9, 10',//count:8
+		'wp' => '5, 7, 8',
+		'wp' => '',
 	],
 	'7' => [
 		/**

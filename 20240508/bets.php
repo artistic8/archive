@@ -9,6 +9,8 @@ return [
 		'official win' => '6, 1, 8',
 		'qin amount' => '86.00',
 		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 9, 12',//count:9
+		'wp' => '5, 6, 7',
+		'wp' => '6',
 	],
 	'2' => [
 		/**
@@ -72,6 +74,8 @@ return [
 		'official win' => '10, 1, 6',
 		'qin amount' => '305.00',
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 12',//count:8
+		'wp' => '4, 6, 7',
+		'wp' => '6',
 	],
 	'9' => [
 		/**
