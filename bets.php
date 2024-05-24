@@ -93,7 +93,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $ratio6 = count($winInter) / count($qinUnion);
     $ratio7 = count($trioInter) / count($winUnion);
 
-    $racetext .= "\t\t'ratio1' => $ratio1,\n"; 
+    $racetext .= "\t\t'ratio' => $ratio1,\n"; 
     $racetext .= "\t\t'ratio2' => $ratio2,\n"; 
     $racetext .= "\t\t'ratio3' => $ratio3,\n"; 
     $racetext .= "\t\t'ratio4' => $ratio4,\n"; 
