@@ -83,11 +83,24 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n"; 
     }
     sort($trioUnion);
-    $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n"; 
-    if(!empty($trioInter)){
-        $ratio = count($trioUnion) / count($trioInter);
-        $racetext .= "\t\t'ratio' => $ratio,\n"; 
-    }
+    $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',\n";
+
+    $ratio1 = count($trioUnion) / count($winInter);
+    $ratio2 = count($trioUnion) / count($qinInter);
+    $ratio3 = count($trioUnion) / count($trioInter);
+    $ratio4 = count($winUnion) / count($qinInter);
+    $ratio5 = count($winUnion) / count($trioInter);
+    $ratio6 = count($qinUnion) / count($winInter);
+    $ratio7 = count($winUnion) / count($trioInter);
+
+    $racetext .= "\t\t'ratio1' => $ratio1,\n"; 
+    $racetext .= "\t\t'ratio2' => $ratio2,\n"; 
+    $racetext .= "\t\t'ratio3' => $ratio3,\n"; 
+    $racetext .= "\t\t'ratio4' => $ratio4,\n"; 
+    $racetext .= "\t\t'ratio5' => $ratio5,\n"; 
+    $racetext .= "\t\t'ratio6' => $ratio6,\n"; 
+    $racetext .= "\t\t'ratio7' => $ratio7,\n"; 
+
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
