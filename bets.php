@@ -8,8 +8,7 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
-$winHistory = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
-$trioHistory = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -57,9 +56,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $winUnion = [];
     $firstSet = true;
     foreach($favorites as $F){
-        $winCandidates = array_intersect($winHistory[$raceNumber][$F]["win"], $runners);
+        $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         $winUnion = array_values(array_unique(array_merge($winUnion, $winCandidates)));
-        $trioCandidates = array_intersect($trioHistory[$raceNumber][$F]["win"], $runners);
+        $trioCandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
         $trioUnion = array_values(array_unique(array_merge($trioUnion, $trioCandidates)));
         if($firstSet) {
             $winInter = $winCandidates;
