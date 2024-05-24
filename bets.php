@@ -79,7 +79,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $diff1 = array_diff($favorites, $allInter);
     $diff2 = array_diff($allInter, $favorites);
     $racetext .= "\t\t'diff1' => '" . implode(", ", $diff1) . "',//count: " . count($diff1) . "\n"; 
-    $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',//count: " . count($diff2) . "\n"; 
     $inter = array_intersect($allInter, $favorites);
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
