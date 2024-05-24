@@ -85,6 +85,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         sort($interWinHistory);
         $racetext .= "\t\t'inter win history' => '" . implode(", ", $interWinHistory) . "',\n"; 
+        $interF = array_intersect($interWinHistory, $favorites);
+        $racetext .= "\t\t'inter fav' => '" . implode(", ", $interF) . "',\n"; 
     }
     $inter = array_intersect($allInter, $favorites);
     if(count($allInter) > 0 && count($favorites) >= 3){
