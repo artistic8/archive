@@ -1,6 +1,6 @@
 <?php
 
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history.php");
 
 $dir = new DirectoryIterator(__DIR__);
 foreach ($dir as $fileinfo) {
