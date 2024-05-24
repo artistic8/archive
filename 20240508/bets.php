@@ -35,9 +35,6 @@ return [
 		*/
 		'favorites' => '1, 2, 6',
 		'official win' => '1, 2, 12',
-		'all inter' => '1',
-		'inter win history' => '1, 5, 7',
-		'inter fav' => '1',
 		'win($20)' => '1, 2, 6',
 		'win($20)' => '2, 6',
 		'qin/trio($10)' => '1, 2, 6',
@@ -55,9 +52,6 @@ return [
 		*/
 		'favorites' => '2, 3, 10',
 		'official win' => '5, 7, 2',
-		'all inter' => '2',
-		'inter win history' => '1, 7, 9',
-		'inter fav' => '',
 		'win($20)' => '2, 3, 10',
 		'win($20)' => '3, 10',
 		'qin/trio($10)' => '2, 3, 10',
