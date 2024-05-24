@@ -79,18 +79,16 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($allInter, $favorites);
     if(!empty($inter)) {
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n"; 
-        $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n"; 
-        $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n"; 
+        sort($trioInter);
+        sort($trioUnion);
+        $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',//count: " . count($trioInter) . "\n";
+        $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',//count: " . count($trioUnion) . "\n";
+        if(!empty($trioInter)) {
+            $ratio = count($trioUnion) / count($trioInter);
+            if(count($trioUnion) >= 12 && $ratio <3) $racetext .= "\t\t//Fav win or qin\n"; 
+        }
     }
-    sort($trioInter);
-    sort($trioUnion);
-    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',//count: " . count($trioInter) . "\n";
-    $racetext .= "\t\t'trio union' => '" . implode(", ", $trioUnion) . "',//count: " . count($trioUnion) . "\n";
-
-    if(!empty($trioInter)) {
-        $ratio = count($trioUnion) / count($trioInter);
-        if(count($trioUnion) >= 12 && $ratio <3) $racetext .= "\t\t//Fav win or qin\n"; 
-    }
+    
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 

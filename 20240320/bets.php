@@ -12,7 +12,7 @@ return [
 		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 9, 12',
 		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 9, 12',//count: 9
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.3333333333333,
+		//Fav win or qin
 	],
 	'2' => [
 		/**
@@ -22,7 +22,6 @@ return [
 		'official win' => '4, 6, 1',
 		'trio inter' => '2, 5, 6, 7, 10',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count: 11
-		'ratio' => 2.2,
 	],
 	'3' => [
 		/**
@@ -32,7 +31,6 @@ return [
 		'official win' => '8, 5, 11',
 		'trio inter' => '3',//count: 1
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 12,
 	],
 	'4' => [
 		/**
@@ -45,7 +43,7 @@ return [
 		'trio inter' => '1, 2, 4, 5, 6, 7, 10, 11, 12',
 		'trio inter' => '1, 2, 4, 5, 6, 7, 10, 11, 12',//count: 9
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.3333333333333,
+		//Fav win or qin
 	],
 	'5' => [
 		/**
@@ -55,7 +53,6 @@ return [
 		'official win' => '1, 5, 10',
 		'trio inter' => '2, 3, 4, 5, 7, 10, 11',//count: 7
 		'trio union' => '2, 3, 4, 5, 7, 10, 11',//count: 7
-		'ratio' => 1,
 	],
 	'6' => [
 		/**
@@ -65,7 +62,7 @@ return [
 		'official win' => '2, 7, 12',
 		'trio inter' => '1, 2, 3, 5, 7, 8, 10, 11, 12',//count: 9
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.3333333333333,
+		//Fav win or qin
 	],
 	'7' => [
 		/**
@@ -78,7 +75,6 @@ return [
 		'trio inter' => '5, 6, 11',
 		'trio inter' => '5, 6, 11',//count: 3
 		'trio union' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 11
-		'ratio' => 3.6666666666667,
 	],
 	'8' => [
 		/**
@@ -91,7 +87,6 @@ return [
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 10, 12',
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 10, 12',//count: 9
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count: 11
-		'ratio' => 1.2222222222222,
 	],
 	'9' => [
 		/**
@@ -101,6 +96,5 @@ return [
 		'official win' => '5, 11, 7',
 		'trio inter' => '3',//count: 1
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 12,
 	],
 ];

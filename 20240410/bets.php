@@ -9,7 +9,6 @@ return [
 		'official win' => '2, 4, 3',
 		'trio inter' => '1, 2, 4, 5, 6, 7, 8, 9',//count: 8
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
-		'ratio' => 1.375,
 	],
 	'2' => [
 		/**
@@ -19,7 +18,6 @@ return [
 		'official win' => '5, 6, 10',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count: 11
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count: 11
-		'ratio' => 1,
 	],
 	'3' => [
 		/**
@@ -32,7 +30,6 @@ return [
 		'trio inter' => '2, 3, 5',
 		'trio inter' => '2, 3, 5',//count: 3
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
-		'ratio' => 2.6666666666667,
 	],
 	'4' => [
 		/**
@@ -45,7 +42,7 @@ return [
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1,
+		//Fav win or qin
 	],
 	'5' => [
 		/**
@@ -55,7 +52,6 @@ return [
 		'official win' => '1, 9, 11',
 		'trio inter' => '6, 7, 11',//count: 3
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',//count: 11
-		'ratio' => 3.6666666666667,
 	],
 	'6' => [
 		/**
@@ -68,7 +64,7 @@ return [
 		'trio inter' => '1, 2, 3, 6, 7, 8, 11, 12',
 		'trio inter' => '1, 2, 3, 6, 7, 8, 11, 12',//count: 8
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.5,
+		//Fav win or qin
 	],
 	'7' => [
 		/**
@@ -78,7 +74,6 @@ return [
 		'official win' => '2, 9, 4',
 		'trio inter' => '1, 2, 3, 5, 7, 8, 9',//count: 7
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 12',//count: 10
-		'ratio' => 1.4285714285714,
 	],
 	'8' => [
 		/**
@@ -91,7 +86,7 @@ return [
 		'trio inter' => '1, 2, 3, 4, 6, 8, 9',
 		'trio inter' => '1, 2, 3, 4, 6, 8, 9',//count: 7
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.7142857142857,
+		//Fav win or qin
 		'win($20)' => '2, 3, 4, 7',
 		'win($20)' => '3, 4',
 		'qin/trio($10)' => '2, 3, 4, 7',
@@ -107,6 +102,5 @@ return [
 		'trio inter' => '2, 3, 4, 7, 8, 9, 10',
 		'trio inter' => '2, 3, 4, 7, 8, 9, 10',//count: 7
 		'trio union' => '2, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count: 10
-		'ratio' => 1.4285714285714,
 	],
 ];

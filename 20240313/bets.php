@@ -9,7 +9,7 @@ return [
 		'official win' => '2, 6, 4',
 		'trio inter' => '1, 4, 5, 9, 12',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 2.4,
+		//Fav win or qin
 	],
 	'2' => [
 		/**
@@ -19,7 +19,6 @@ return [
 		'official win' => '8, 4, 3',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
-		'ratio' => 1,
 	],
 	'3' => [
 		/**
@@ -41,7 +40,7 @@ return [
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.0909090909091,
+		//Fav win or qin
 	],
 	'5' => [
 		/**
@@ -51,7 +50,6 @@ return [
 		'official win' => '4, 11, 10',
 		'trio inter' => '1, 3',//count: 2
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 6,
 	],
 	'6' => [
 		/**
@@ -64,7 +62,6 @@ return [
 		'trio inter' => '1, 2, 3, 7, 8, 9',
 		'trio inter' => '1, 2, 3, 7, 8, 9',//count: 6
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
-		'ratio' => 1.5,
 	],
 	'7' => [
 		/**
@@ -74,7 +71,7 @@ return [
 		'official win' => '3, 12, 5',
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',//count: 11
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 1.0909090909091,
+		//Fav win or qin
 	],
 	'8' => [
 		/**
@@ -84,7 +81,7 @@ return [
 		'official win' => '2, 8, 9',
 		'trio inter' => '2, 3, 4, 6, 9, 12',//count: 6
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 12
-		'ratio' => 2,
+		//Fav win or qin
 	],
 	'9' => [
 		/**
@@ -97,6 +94,5 @@ return [
 		'trio inter' => '2, 3, 4, 7, 8',
 		'trio inter' => '2, 3, 4, 7, 8',//count: 5
 		'trio union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
-		'ratio' => 2.2,
 	],
 ];
