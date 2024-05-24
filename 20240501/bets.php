@@ -29,7 +29,7 @@ return [
 		'favorites' => '5',
 		'official win' => '6, 5, 2',
 		'win inter' => '',
-		'qin inter' => '1, 2, 3, 4, 5, 8, 9, 10',
+		'qin inter' => '5',
 		'trio inter' => '5',
 	],
 	'4' => [
@@ -39,7 +39,7 @@ return [
 		'favorites' => '3, 11',
 		'official win' => '1, 4, 11',
 		'win inter' => '',
-		'qin inter' => '5, 6',
+		'qin inter' => '',
 		'trio inter' => '3',
 	],
 	'5' => [
@@ -49,7 +49,7 @@ return [
 		'favorites' => '3, 4, 6',
 		'official win' => '10, 3, 9',
 		'win inter' => '',
-		'qin inter' => '7, 11',
+		'qin inter' => '',
 		'trio inter' => '3, 4, 6',
 	],
 	'6' => [
@@ -59,7 +59,7 @@ return [
 		'favorites' => '4, 6, 10, 12',
 		'official win' => '4, 10, 7',
 		'win inter' => '',
-		'qin inter' => '1',
+		'qin inter' => '',
 		'trio inter' => '',
 	],
 	'7' => [
@@ -93,7 +93,7 @@ return [
 		'favorites' => '1, 7',
 		'official win' => '1, 3, 6',
 		'win inter' => '',
-		'qin inter' => '5, 6, 8, 9',
+		'qin inter' => '',
 		'trio inter' => '1',
 	],
 ];
