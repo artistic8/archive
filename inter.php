@@ -18,8 +18,8 @@
          $betsFile = __DIR__ . DIRECTORY_SEPARATOR . $fileinfo->getFilename() . DIRECTORY_SEPARATOR . "bets.php";
          $bets = include($betsFile);
          foreach($bets as $raceNumber => $data){
+            if(!isset($data['all inter'])) continue;
              $inter = explode(", ", $data['all inter']);
-             
              if(!isset($data['official win']) || empty($data['official win'])) continue;
              $winners = explode(", ", $data['official win']);
              foreach($inter as $I){
@@ -30,7 +30,7 @@
      }
  }
 for($f = 1; $f <= 14; $f++){
-    $outtext .= "\t$f => [\n" . implode(", ", $history[$f]) . "],\n";
+    $outtext .= "\t$f => [" . implode(", ", $history[$f]) . "],\n";
 }
  $outtext .= "];\n?>\n";
  file_put_contents($outFile, $outtext);

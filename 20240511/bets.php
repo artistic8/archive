@@ -7,7 +7,6 @@ return [
 		*/
 		'favorites' => '8, 13',
 		'official win' => '4, 13, 8',
-		'all inter' => '',
 	],
 	'2' => [
 		/**
@@ -31,7 +30,6 @@ return [
 		*/
 		'favorites' => '1, 6, 8',
 		'official win' => '11, 1, 4',
-		'all inter' => '',
 	],
 	'5' => [
 		/**
@@ -39,7 +37,6 @@ return [
 		*/
 		'favorites' => '3, 6',
 		'official win' => '6, 3, 12',
-		'all inter' => '',
 	],
 	'6' => [
 		/**
@@ -82,6 +79,5 @@ return [
 		*/
 		'favorites' => '2, 10',
 		'official win' => '7, 4, 9',
-		'all inter' => '',
 	],
 ];
