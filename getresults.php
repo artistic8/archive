@@ -42,6 +42,7 @@ foreach($contents as $raceNumber => $data){
     }
     $racetext .= "\t\t'official win' => '" . $tce[$raceNumber - 1] ."',\n"; 
     $racetext .= "\t\t'qin amount' => '" . $qinAmount[$raceNumber - 1] ."',\n"; 
+    $racetext .= "\t],\n";
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
