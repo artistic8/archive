@@ -10,7 +10,7 @@ return [
 		'win($20)' => '1, 3, 10',
 		'win($20)' => '3, 10',
 		'qin/trio($10)' => '1, 3, 10',
-		'all inter' => '1, 3',
+		'all inter' => '1, 3, 4',
 	],
 	'2' => [
 		/**
@@ -18,7 +18,7 @@ return [
 		*/
 		'favorites' => '4, 9',
 		'official win' => '4, 10, 3',
-		'all inter' => '4',
+		'all inter' => '4, 8, 10',
 	],
 	'3' => [
 		/**
@@ -26,7 +26,7 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '9, 4, 1',
-		'all inter' => '1, 3',
+		'all inter' => '1, 3, 4, 7, 10',
 	],
 	'4' => [
 		/**
@@ -42,6 +42,7 @@ return [
 		*/
 		'favorites' => '4, 10, 12',
 		'official win' => '3, 11, 10',
+		'all inter' => '2',
 	],
 	'6' => [
 		/**
@@ -49,6 +50,10 @@ return [
 		*/
 		'favorites' => '2, 6, 12',
 		'official win' => '2, 11, 12',
+		'win($20)' => '2, 6, 12',
+		'win($20)' => '6, 12',
+		'qin/trio($10)' => '2, 6, 12',
+		'all inter' => '1, 4, 11',
 	],
 	'7' => [
 		/**
@@ -56,6 +61,7 @@ return [
 		*/
 		'favorites' => '4, 6, 7',
 		'official win' => '11, 3, 6',
+		'all inter' => '2',
 	],
 	'8' => [
 		/**
@@ -63,6 +69,10 @@ return [
 		*/
 		'favorites' => '1, 5, 7',
 		'official win' => '5, 4, 1',
+		'win($20)' => '1, 5, 7',
+		'win($20)' => '5, 7',
+		'qin/trio($10)' => '1, 5, 7',
+		'all inter' => '3, 4',
 	],
 	'9' => [
 		/**
@@ -70,7 +80,7 @@ return [
 		*/
 		'favorites' => '5, 10',
 		'official win' => '10, 6, 8',
-		'all inter' => '5',
+		'all inter' => '3, 4, 5',
 	],
 	'10' => [
 		/**
