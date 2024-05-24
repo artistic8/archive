@@ -10,10 +10,8 @@ foreach ($dir as $fileinfo) {
         foreach($bets as $raceNumber => $data){
             $favorites = explode(", ", $data['favorites']);
             $winners = explode(", ", $data['official win']);
-            foreach($favorites as $favorite){
-                $his = $history[$raceNumber][$favorite]["win"];
-                if(!in_array($winners[0], $his)) echo $fileinfo->getFilename() . " - Race $raceNumber" . "\n";
-            }
+            $his = explode(", ", $data['trio inter']);
+            if(!empty(array_intersect(array_slice($winners, 0, 2), $his))) echo $fileinfo->getFilename() . " - Race $raceNumber" . "\n";
         }
     }
 }
