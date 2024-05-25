@@ -8,8 +8,7 @@ return [
 		'favorites' => '4, 12',
 		'official win' => '10, 12, 4',
 		'qin amount' => 556,
-		'test set' => '2, 3, 4, 6, 7, 9, 10, 13',//count:8
-		'won amount' => '-280',
+		'test set' => '10',//count:1
 		'wp' => '6, 7, 9',
 	],
 	'2' => [
@@ -28,8 +27,8 @@ return [
 		'favorites' => '3, 6',
 		'official win' => '1, 3, 10',
 		'qin amount' => 298.5,
-		'test set' => '1, 2, 3, 4, 5, 7, 8, 12',//count:8
-		'won amount' => '18.5',
+		'test set' => '1, 2, 3, 7, 12',//count:5
+		'won amount' => '198.5',
 		'wp' => '4, 5, 7',
 	],
 	'4' => [
@@ -39,8 +38,7 @@ return [
 		'favorites' => '1, 2, 10',
 		'official win' => '10, 4, 3',
 		'qin amount' => 736,
-		'test set' => '1, 2, 3, 4, 5, 6, 7, 10, 11',//count:9
-		'won amount' => '376',
+		'test set' => '1, 5',//count:2
 		'wp' => '4, 5, 6',
 	],
 	'5' => [
@@ -50,8 +48,7 @@ return [
 		'favorites' => '4, 10, 12',
 		'official win' => '2, 11, 13',
 		'qin amount' => 473,
-		'test set' => '3, 5, 10, 11',//count:4
-		'won amount' => '-60',
+		'test set' => '3',//count:1
 	],
 	'6' => [
 		/**
@@ -60,8 +57,7 @@ return [
 		'favorites' => '3, 7',
 		'official win' => '9, 11, 6',
 		'qin amount' => 712.5,
-		'test set' => '1, 2, 3, 5, 6, 7, 8, 9',//count:8
-		'won amount' => '-280',
+		'test set' => '1, 3, 5, 7',//count:4
 		'wp' => '5, 6, 7',
 	],
 	'7' => [
@@ -71,8 +67,8 @@ return [
 		'favorites' => '4',
 		'official win' => '4, 9, 8',
 		'qin amount' => 112.5,
-		'test set' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count:11
-		'won amount' => '-550',
+		'test set' => '2, 3, 4, 7, 10, 11',//count:6
+		'won amount' => '-150',
 		'wp' => '4, 5, 6',
 	],
 	'8' => [
@@ -82,8 +78,7 @@ return [
 		'favorites' => '6',
 		'official win' => '4, 6, 2',
 		'qin amount' => 14.5,
-		'test set' => '1, 3, 4, 6',//count:4
-		'won amount' => '-45.5',
+		'test set' => '6',//count:1
 	],
 	'9' => [
 		/**
@@ -92,8 +87,7 @@ return [
 		'favorites' => '1, 8, 12',
 		'official win' => '5, 1, 6',
 		'qin amount' => 134.5,
-		'test set' => '3, 12',//count:2
-		'won amount' => '-10',
+		'test set' => '12',//count:1
 	],
 	'10' => [
 		/**
@@ -114,4 +108,4 @@ return [
 		'test set' => '',//count:0
 	],
 ];
-//Total won amount: -831
+//Total won amount: 48.5
