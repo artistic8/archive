@@ -18,7 +18,6 @@ return [
 		'official win' => '2, 3, 14',
 		'qin amount' => 55,
 		'test set' => '5, 6, 9, 10, 12',//count:5
-		'wp' => '5, 6, 9',
 	],
 	'3' => [
 		/**
@@ -73,7 +72,6 @@ return [
 		'official win' => '8, 5, 10',
 		'qin amount' => 313,
 		'test set' => '4, 5, 6, 7, 8',//count:5
-		'wp' => '4, 5, 6',
 	],
 	'9' => [
 		/**
