@@ -69,30 +69,19 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($winAmount)) $racetext .= "\t\t'win amount' => '" . $winAmount . "',\n"; 
     if(isset($qinAmount)) $racetext .= "\t\t'qin amount' => " . $qinAmount . ",\n"; 
     $trioUnion = [];
-    $winUnion = [];
-    $qinUnion = [];
     $firstSet = true;
     foreach($favorites as $F){
-        $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        $qinCandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
-        $winUnion = array_values(array_unique(array_merge($winUnion, $winCandidates)));
-        $qinUnion = array_values(array_unique(array_merge($qinUnion, $qinCandidates)));
         $trioCandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
         $trioUnion = array_values(array_unique(array_merge($trioUnion, $trioCandidates)));
         if($firstSet) {
-            $winInter = $winCandidates;
-            $qinInter = $qinCandidates;
             $trioInter = $trioCandidates;
             $firstSet = false;
         }
         else {
-            $winInter = array_intersect($winInter, $winCandidates);
-            $qinInter = array_intersect($winInter, $qinCandidates);
             $trioInter = array_intersect($trioInter, $trioCandidates);
         }
     }
-    $allInter = array_intersect($winInter, $qinInter, $trioInter);
-    $inter = array_intersect($allInter, $favorites);
+    $inter = array_intersect($trioInter, $favorites);
     
     if(count($trioInter) === 5){
         $betAmount = 10 * count($favorites) * (count($runners) - count($favorites));
@@ -101,7 +90,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
         $totalWonAmount += $wonAmount;
     }
-    if(count($trioInter) < 5){
+    if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 

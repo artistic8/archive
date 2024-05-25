@@ -57,6 +57,9 @@ return [
 		'favorites' => '1, 12',
 		'official win' => '5, 9, 12',
 		'qin amount' => 434,
+		'win($20)' => '1, 12',
+		'win($20)' => '12',
+		'qin/trio($10)' => '1, 12',
 	],
 	'8' => [
 		/**

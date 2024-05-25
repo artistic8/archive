@@ -8,6 +8,9 @@ return [
 		'favorites' => '3, 7, 8, 10',
 		'official win' => '3, 7, 10',
 		'qin amount' => 112,
+		'win($20)' => '3, 7, 8, 10',
+		'win($20)' => '7, 8',
+		'qin/trio($10)' => '3, 7, 8, 10',
 	],
 	'2' => [
 		/**
@@ -58,6 +61,9 @@ return [
 		'favorites' => '4, 9',
 		'official win' => '2, 4, 3',
 		'qin amount' => 100,
+		'win($20)' => '4, 9',
+		'win($20)' => '9',
+		'qin/trio($10)' => '4, 9',
 	],
 	'8' => [
 		/**
