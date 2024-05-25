@@ -96,9 +96,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) ."',//count:" . count($trioInter) . "\n"; 
     $betAmount = 10 * combination(2, count($trioInter));
-    // $wonAmount = $qinAmount - $betAmount;
-    // $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
-    // $totalWonAmount += $wonAmount;
+    $wonAmount = $qinAmount - $betAmount;
+    $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
+    $totalWonAmount += $wonAmount;
     if(count($trioInter) > 7){
         $wp = array_slice($trioInter, 3, 3);
         $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
