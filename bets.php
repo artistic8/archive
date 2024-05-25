@@ -95,9 +95,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($allInter, $favorites);
     
     $test = array_slice($trioInter, 3, 5);
+    $test = array_values(array_unique(array_merge($test, $favorites)));
     $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
-    $favs = array_intersect($test, $favorites);
-    if(!empty($favs)) $racetext .= "\t\t'favs' => '" . implode(", ", $favs) ."',\n";
  
     if(count($test) >= 2){
         $betAmount = 10 * combination(2, count($test));
