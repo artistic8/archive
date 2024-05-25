@@ -33,7 +33,6 @@ return [
 		'favorites' => '1, 4, 11',
 		'official win' => '11, 1, 10',
 		'qin amount' => 81,
-		'test set' => '1, 11',//count:2
 		'won amount' => '71',
 		'wp' => '4, 6, 7',
 		'win($20)' => '1, 4, 11',

@@ -53,7 +53,6 @@ return [
 		'favorites' => '3, 7',
 		'official win' => '9, 11, 6',
 		'qin amount' => 712.5,
-		'test set' => '3, 7',//count:2
 		'won amount' => '-10',
 		'wp' => '5, 6, 7',
 	],

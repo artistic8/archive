@@ -8,7 +8,6 @@ return [
 		'favorites' => '1, 3, 10',
 		'official win' => '4, 10, 5',
 		'qin amount' => 286,
-		'test set' => '1, 3',//count:2
 		'won amount' => '-10',
 		'wp' => '6, 7, 9',
 		'win($20)' => '1, 3, 10',
@@ -32,7 +31,6 @@ return [
 		'favorites' => '1, 3',
 		'official win' => '9, 4, 1',
 		'qin amount' => 620.5,
-		'test set' => '1, 3',//count:2
 		'won amount' => '-10',
 		'wp' => '5, 7, 8',
 	],
