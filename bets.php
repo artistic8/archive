@@ -95,18 +95,16 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($allInter, $favorites);
     
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) ."',//count:" . count($trioInter) . "\n"; 
-    if(count($trioInter) >= 6 && count($trioInter) < 10){
-        $betAmount = 10 * combination(2, count($trioInter));
-        if(count(array_intersect(array_slice($officialWin, 0, 2), $trioInter)) === 2) $wonAmount = $qinAmount - $betAmount;
-        else $wonAmount = 0 - $betAmount;
-        $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
-        $totalWonAmount += $wonAmount;
-    }
     if(count($trioInter) > 7){
         $wp = array_slice($trioInter, 3, 3);
         $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
-        $wp = array_intersect($wp, $favorites);
-        $racetext .= "\t\t'wp' => '" . implode(", ", $wp) ."',\n"; 
+        if(count($wp) >= 2){
+            $betAmount = 10 * combination(2, count($wp));
+            if(count(array_intersect(array_slice($officialWin, 0, 2), $wp)) === 2) $wonAmount = $qinAmount - $betAmount;
+            else $wonAmount = 0 - $betAmount;
+            $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
+            $totalWonAmount += $wonAmount;
+        }
     }
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 

@@ -61,7 +61,6 @@ return [
 		'official win' => '11, 7, 3',
 		'qin amount' => 422,
 		'trio inter' => '1, 2, 7, 8, 12',//count:5
-		'won amount' => '-100',
 	],
 	'7' => [
 		/**
@@ -104,7 +103,6 @@ return [
 		'official win' => '7, 4, 9',
 		'qin amount' => 1218.5,
 		'trio inter' => '2, 8, 10',//count:3
-		'won amount' => '-30',
 	],
 ];
-//Total won amount: 691
+//Total won amount: 821
