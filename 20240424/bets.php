@@ -7,7 +7,9 @@ return [
 		*/
 		'favorites' => '1, 4',
 		'official win' => '1, 7, 5',
-		'qin amount' => 86.00,
+		'qin amount' => 86,
+		'trio inter' => '3, 4, 6, 7',//count:4
+		'won amount' => '26',
 	],
 	'2' => [
 		/**
@@ -15,7 +17,9 @@ return [
 		*/
 		'favorites' => '1, 6, 7',
 		'official win' => '2, 5, 8',
-		'qin amount' => 340.50,
+		'qin amount' => 340.5,
+		'trio inter' => '1, 6, 7, 8, 10',//count:5
+		'won amount' => '240.5',
 	],
 	'3' => [
 		/**
@@ -23,7 +27,9 @@ return [
 		*/
 		'favorites' => '2, 3, 7, 9',
 		'official win' => '7, 3, 4',
-		'qin amount' => 132.50,
+		'qin amount' => 132.5,
+		'trio inter' => '1, 2, 3, 4, 10, 12',//count:6
+		'won amount' => '-17.5',
 	],
 	'4' => [
 		/**
@@ -31,7 +37,9 @@ return [
 		*/
 		'favorites' => '1, 5, 11',
 		'official win' => '5, 2, 9',
-		'qin amount' => 230.00,
+		'qin amount' => 230,
+		'trio inter' => '1, 3, 4, 5, 6, 7, 9',//count:7
+		'won amount' => '20',
 	],
 	'5' => [
 		/**
@@ -39,7 +47,9 @@ return [
 		*/
 		'favorites' => '1, 4, 5, 7, 9',
 		'official win' => '5, 7, 3',
-		'qin amount' => 92.00,
+		'qin amount' => 92,
+		'trio inter' => '',//count:0
+		'won amount' => '82',
 	],
 	'6' => [
 		/**
@@ -47,7 +57,11 @@ return [
 		*/
 		'favorites' => '4, 10',
 		'official win' => '6, 10, 3',
-		'qin amount' => 119.50,
+		'qin amount' => 119.5,
+		'trio inter' => '1, 3, 4, 5, 7, 8, 9, 10',//count:8
+		'won amount' => '-160.5',
+		'wp' => '5, 7, 8',
+		'wp' => '',
 	],
 	'7' => [
 		/**
@@ -55,7 +69,9 @@ return [
 		*/
 		'favorites' => '2, 7, 12',
 		'official win' => '2, 7, 4',
-		'qin amount' => 130.00,
+		'qin amount' => 130,
+		'trio inter' => '9',//count:1
+		'won amount' => '120',
 	],
 	'8' => [
 		/**
@@ -63,7 +79,11 @@ return [
 		*/
 		'favorites' => '1, 4, 8',
 		'official win' => '4, 2, 10',
-		'qin amount' => 33.00,
+		'qin amount' => 33,
+		'trio inter' => '1, 3, 4, 6, 7, 8, 9, 10, 11',//count:9
+		'won amount' => '-327',
+		'wp' => '6, 7, 8',
+		'wp' => '8',
 	],
 	'9' => [
 		/**
@@ -71,6 +91,11 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '9, 2, 3',
-		'qin amount' => 408.00,
+		'qin amount' => 408,
+		'trio inter' => '1, 3, 5, 6, 8, 9, 11, 12',//count:8
+		'won amount' => '128',
+		'wp' => '6, 8, 9',
+		'wp' => '',
 	],
 ];
+//Total won amount: 111.5
