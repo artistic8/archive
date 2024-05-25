@@ -95,7 +95,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($allInter, $favorites);
     
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) ."',//count:" . count($trioInter) . "\n"; 
-    if(count($trioInter) >= 2){
+    if(count($trioInter) >= 2 && count($trioInter) < 10){
         $betAmount = 10 * combination(2, count($trioInter));
         if(count(array_intersect(array_slice($officialWin, 0, 2), $trioInter)) === 2) $wonAmount = $qinAmount - $betAmount;
         else $wonAmount = 0 - $betAmount;
