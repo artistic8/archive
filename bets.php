@@ -94,8 +94,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allInter = array_intersect($winInter, $trioInter, $favorites);
     $inter = array_intersect($allInter, $favorites);
     
-    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) ."',//count:" . count($trioInter) . "\n";
     $test = $winUnion;
+    $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
+ 
       if(count($test) >= 2){
             $betAmount = 10 * combination(2, count($test));
             if(count(array_intersect(array_slice($officialWin, 0, 2), $test)) === 2) $wonAmount = $qinAmount - $betAmount;
