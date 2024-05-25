@@ -9,6 +9,7 @@ return [
 		'official win' => '1, 6, 7',
 		'qin amount' => 129.5,
 		'trio inter' => '2, 3, 4, 5, 7, 8, 9',//count:7
+		'won amount' => '-360',
 	],
 	'2' => [
 		/**
@@ -18,8 +19,8 @@ return [
 		'official win' => '5, 6, 3',
 		'qin amount' => 192,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 10',//count:9
+		'won amount' => '-150',
 		'wp' => '4, 5, 6',
-		'won amount' => '-168',
 	],
 	'3' => [
 		/**
@@ -29,8 +30,8 @@ return [
 		'official win' => '6, 1, 12',
 		'qin amount' => 929,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12',//count:10
+		'won amount' => '-100',
 		'wp' => '4, 5, 6',
-		'won amount' => '479',
 	],
 	'4' => [
 		/**
@@ -40,8 +41,8 @@ return [
 		'official win' => '1, 2, 7',
 		'qin amount' => 771.5,
 		'trio inter' => '1, 2, 4, 5, 7, 8, 10, 11',//count:8
+		'won amount' => '411.5',
 		'wp' => '5, 7, 8',
-		'won amount' => '491.5',
 	],
 	'5' => [
 		/**
@@ -51,6 +52,7 @@ return [
 		'official win' => '12, 13, 4',
 		'qin amount' => 180.5,
 		'trio inter' => '1, 2, 3, 4, 5, 7, 10',//count:7
+		'won amount' => '-210',
 	],
 	'6' => [
 		/**
@@ -60,6 +62,7 @@ return [
 		'official win' => '1, 8, 5',
 		'qin amount' => 1967,
 		'trio inter' => '2, 3, 7, 11',//count:4
+		'won amount' => '1607',
 	],
 	'7' => [
 		/**
@@ -69,6 +72,7 @@ return [
 		'official win' => '8, 6, 3',
 		'qin amount' => 1117,
 		'trio inter' => '2, 4, 7, 8, 9',//count:5
+		'won amount' => '907',
 	],
 	'8' => [
 		/**
@@ -78,6 +82,7 @@ return [
 		'official win' => '3, 9, 2',
 		'qin amount' => 213.5,
 		'trio inter' => '9',//count:1
+		'won amount' => '-100',
 	],
 	'9' => [
 		/**
@@ -87,8 +92,8 @@ return [
 		'official win' => '6, 7, 1',
 		'qin amount' => 317.5,
 		'trio inter' => '1, 2, 3, 5, 6, 7, 8, 9, 11',//count:9
+		'won amount' => '-280',
 		'wp' => '5, 6, 7',
-		'won amount' => '-42.5',
 	],
 	'10' => [
 		/**
@@ -98,6 +103,7 @@ return [
 		'official win' => '3, 10, 2',
 		'qin amount' => 458.5,
 		'trio inter' => '',//count:0
+		'won amount' => '-30',
 	],
 ];
-//Total won amount: 760
+//Total won amount: 1695.5

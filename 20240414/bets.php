@@ -9,8 +9,8 @@ return [
 		'official win' => '6, 7, 4',
 		'qin amount' => 49,
 		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 9',//count:8
+		'won amount' => '-231',
 		'wp' => '4, 5, 7',
-		'won amount' => '-280',
 	],
 	'2' => [
 		/**
@@ -20,6 +20,7 @@ return [
 		'official win' => '7, 1, 5',
 		'qin amount' => 4228,
 		'trio inter' => '5, 7, 10',//count:3
+		'won amount' => '-360',
 	],
 	'3' => [
 		/**
@@ -29,6 +30,7 @@ return [
 		'official win' => '9, 10, 13',
 		'qin amount' => 505.5,
 		'trio inter' => '2',//count:1
+		'won amount' => '-100',
 	],
 	'4' => [
 		/**
@@ -38,8 +40,8 @@ return [
 		'official win' => '3, 4, 10',
 		'qin amount' => 34,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8',//count:8
+		'won amount' => '-176',
 		'wp' => '4, 5, 6',
-		'won amount' => '-246',
 	],
 	'5' => [
 		/**
@@ -49,8 +51,8 @@ return [
 		'official win' => '5, 6, 12',
 		'qin amount' => 106.5,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',//count:10
+		'won amount' => '-30',
 		'wp' => '4, 5, 6',
-		'won amount' => '-343.5',
 	],
 	'6' => [
 		/**
@@ -60,6 +62,7 @@ return [
 		'official win' => '6, 11, 12',
 		'qin amount' => 656.5,
 		'trio inter' => '',//count:0
+		'won amount' => '-360',
 	],
 	'7' => [
 		/**
@@ -69,6 +72,7 @@ return [
 		'official win' => '6, 9, 3',
 		'qin amount' => 1684,
 		'trio inter' => '2, 3, 4',//count:3
+		'won amount' => '1234',
 	],
 	'8' => [
 		/**
@@ -78,6 +82,7 @@ return [
 		'official win' => '6, 8, 3',
 		'qin amount' => 46,
 		'trio inter' => '1, 2, 3, 6, 8',//count:5
+		'won amount' => '-164',
 	],
 	'9' => [
 		/**
@@ -87,6 +92,7 @@ return [
 		'official win' => '8, 3, 9',
 		'qin amount' => 111,
 		'trio inter' => '2, 3, 4, 5, 7, 8, 9',//count:7
+		'won amount' => '-99',
 	],
 	'10' => [
 		/**
@@ -96,6 +102,7 @@ return [
 		'official win' => '10, 2, 8',
 		'qin amount' => 1102,
 		'trio inter' => '',//count:0
+		'won amount' => '892',
 	],
 	'11' => [
 		/**
@@ -105,6 +112,7 @@ return [
 		'official win' => '5, 6, 1',
 		'qin amount' => 2260,
 		'trio inter' => '',//count:0
+		'won amount' => '-10',
 	],
 ];
-//Total won amount: -869.5
+//Total won amount: 596

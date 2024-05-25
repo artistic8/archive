@@ -9,8 +9,8 @@ return [
 		'official win' => '3, 4, 5',
 		'qin amount' => 206.5,
 		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count:10
+		'won amount' => '-150',
 		'wp' => '5, 6, 7',
-		'won amount' => '-243.5',
 	],
 	'2' => [
 		/**
@@ -20,6 +20,7 @@ return [
 		'official win' => '7, 5, 10',
 		'qin amount' => 77,
 		'trio inter' => '1, 5, 7',//count:3
+		'won amount' => '-283',
 	],
 	'3' => [
 		/**
@@ -29,6 +30,7 @@ return [
 		'official win' => '2, 4, 5',
 		'qin amount' => 99.5,
 		'trio inter' => '1, 3, 4, 5',//count:4
+		'won amount' => '-50.5',
 	],
 	'4' => [
 		/**
@@ -38,8 +40,8 @@ return [
 		'official win' => '8, 1, 11',
 		'qin amount' => 54,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count:11
+		'won amount' => '-210',
 		'wp' => '4, 5, 6',
-		'won amount' => '-496',
 	],
 	'5' => [
 		/**
@@ -49,6 +51,7 @@ return [
 		'official win' => '8, 4, 3',
 		'qin amount' => 121.5,
 		'trio inter' => '2, 4, 6, 7, 10, 11',//count:6
+		'won amount' => '-280',
 	],
 	'6' => [
 		/**
@@ -58,8 +61,8 @@ return [
 		'official win' => '10, 3, 6',
 		'qin amount' => 74.5,
 		'trio inter' => '1, 3, 5, 6, 7, 8, 9, 10, 12',//count:9
+		'won amount' => '-550',
 		'wp' => '6, 7, 8',
-		'won amount' => '-285.5',
 	],
 	'7' => [
 		/**
@@ -69,6 +72,7 @@ return [
 		'official win' => '8, 1, 14',
 		'qin amount' => 271.5,
 		'trio inter' => '2, 9, 12',//count:3
+		'won amount' => '-178.5',
 	],
 	'8' => [
 		/**
@@ -78,8 +82,8 @@ return [
 		'official win' => '14, 11, 8',
 		'qin amount' => 1650,
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 9',//count:8
+		'won amount' => '-450',
 		'wp' => '4, 6, 7',
-		'won amount' => '-280',
 	],
 	'9' => [
 		/**
@@ -89,6 +93,7 @@ return [
 		'official win' => '4, 3, 6',
 		'qin amount' => 83.5,
 		'trio inter' => '2, 4, 5, 7, 8',//count:5
+		'won amount' => '-466.5',
 	],
 	'10' => [
 		/**
@@ -98,6 +103,7 @@ return [
 		'official win' => '4, 13, 14',
 		'qin amount' => 94.5,
 		'trio inter' => '2',//count:1
+		'won amount' => '-115.5',
 	],
 ];
-//Total won amount: -1305
+//Total won amount: -2734

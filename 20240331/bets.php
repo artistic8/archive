@@ -9,6 +9,7 @@ return [
 		'official win' => '8, 10, 13',
 		'qin amount' => 271,
 		'trio inter' => '',//count:0
+		'won amount' => '-100',
 	],
 	'2' => [
 		/**
@@ -18,6 +19,7 @@ return [
 		'official win' => '6, 9, 10',
 		'qin amount' => 898.5,
 		'trio inter' => '1, 2, 5, 6, 7, 10',//count:6
+		'won amount' => '-450',
 		'win($20)' => '1, 2, 6',
 		'win($20)' => '2, 6',
 		'qin/trio($10)' => '1, 2, 6',
@@ -30,6 +32,7 @@ return [
 		'official win' => '5, 1, 4',
 		'qin amount' => 241.5,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7',//count:7
+		'won amount' => '-100',
 	],
 	'4' => [
 		/**
@@ -39,6 +42,7 @@ return [
 		'official win' => '14, 4, 9',
 		'qin amount' => 220.5,
 		'trio inter' => '',//count:0
+		'won amount' => '-100',
 	],
 	'5' => [
 		/**
@@ -48,8 +52,8 @@ return [
 		'official win' => '11, 4, 6',
 		'qin amount' => 690.5,
 		'trio inter' => '1, 2, 3, 4, 6, 7, 10, 12',//count:8
-		'wp' => '4, 6, 7',
 		'won amount' => '-280',
+		'wp' => '4, 6, 7',
 	],
 	'6' => [
 		/**
@@ -59,8 +63,8 @@ return [
 		'official win' => '3, 8, 10',
 		'qin amount' => 173,
 		'trio inter' => '1, 2, 3, 5, 6, 7, 9, 10, 11, 12',//count:10
+		'won amount' => '-360',
 		'wp' => '5, 6, 7',
-		'won amount' => '-450',
 	],
 	'7' => [
 		/**
@@ -70,8 +74,8 @@ return [
 		'official win' => '4, 11, 8',
 		'qin amount' => 37.5,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count:12
+		'won amount' => '-112.5',
 		'wp' => '4, 5, 6',
-		'won amount' => '-622.5',
 	],
 	'8' => [
 		/**
@@ -81,6 +85,7 @@ return [
 		'official win' => '3, 9, 6',
 		'qin amount' => 3248.5,
 		'trio inter' => '',//count:0
+		'won amount' => '-550',
 	],
 	'9' => [
 		/**
@@ -90,6 +95,7 @@ return [
 		'official win' => '3, 5, 8',
 		'qin amount' => 595,
 		'trio inter' => '',//count:0
+		'won amount' => '-150',
 	],
 	'10' => [
 		/**
@@ -99,6 +105,7 @@ return [
 		'official win' => '7, 2, 8',
 		'qin amount' => 396,
 		'trio inter' => '2, 4, 8',//count:3
+		'won amount' => '-100',
 	],
 ];
-//Total won amount: -1352.5
+//Total won amount: -2302.5
