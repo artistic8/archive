@@ -91,7 +91,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $trioInter = array_intersect($trioInter, $trioCandidates);
         }
     }
-    $allInter = array_intersect($winInter, $trioInter, $favorites);
+    $allInter = array_intersect($winInter, $trioInter);
     $inter = array_intersect($allInter, $favorites);
     
     $test = $allInter;
