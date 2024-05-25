@@ -61,7 +61,6 @@ return [
 		'official win' => '1, 7, 2',
 		'qin amount' => 65.5,
 		'test set' => '1, 3',//count:2
-		'won amount' => '-10',
 	],
 	'7' => [
 		/**
@@ -95,4 +94,4 @@ return [
 		'won amount' => '177.5',
 	],
 ];
-//Total won amount: 36
+//Total won amount: 46
