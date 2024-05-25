@@ -94,20 +94,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allInter = array_intersect($winInter, $qinInter, $trioInter);
     $inter = array_intersect($allInter, $favorites);
     
-    $test = array_slice($trioInter, 3, 5);
-    $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
- 
-    if(count($test) === 2){
+    if(count($trioInter) === 5){
         $betAmount = 10 * count($favorites) * (count($runners) - count($favorites));
         if(!empty(array_intersect(array_slice($officialWin, 0, 2), $favorites))) $wonAmount = $qinAmount - $betAmount;
         else $wonAmount = 0 - $betAmount;
         $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
         $totalWonAmount += $wonAmount;
-        // $betAmount = 10 * count($test) * (count($runners) - count($test));
-        // if(!empty(array_intersect(array_slice($officialWin, 0, 2), $test))) $wonAmount = $qinAmount - $betAmount;
-        // else $wonAmount = 0 - $betAmount;
-        // $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
-        // $totalWonAmount += $wonAmount;
     }
     if(count($inter) > 1 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
