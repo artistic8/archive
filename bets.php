@@ -98,7 +98,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(count($trioInter) >= 2){
         $betAmount = 10 * combination(2, count($trioInter));
         if(!empty(array_intersect(array_slice($officialWin, 0, 2), $trioInter))) $wonAmount = $qinAmount - $betAmount;
-        else $wonAmount -= $betAmount;
+        else $wonAmount = 0 - $betAmount;
         $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
         $totalWonAmount += $wonAmount;
     }
