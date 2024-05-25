@@ -97,7 +97,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $test = array_values(array_unique(array_merge($winInter, $favorites)));
     $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
  
-    if(count($test) >= 5){
+    if(count($test) >= 6){
         $betAmount = 10 * combination(2, count($test));
         if(count(array_intersect(array_slice($officialWin, 0, 2), $test)) === 2) $wonAmount = $qinAmount - $betAmount;
         else $wonAmount = 0 - $betAmount;
