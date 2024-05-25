@@ -27,7 +27,7 @@ return [
 		'favorites' => '1, 5',
 		'official win' => '10, 1, 3',
 		'qin amount' => 32.5,
-		'test set' => '1, 3, 4',//count:3
+		'test set' => '1',//count:1
 	],
 	'4' => [
 		/**
@@ -36,7 +36,7 @@ return [
 		'favorites' => '1, 6, 8',
 		'official win' => '11, 1, 4',
 		'qin amount' => 631.5,
-		'test set' => '10, 11',//count:2
+		'test set' => '',//count:0
 	],
 	'5' => [
 		/**
@@ -45,7 +45,7 @@ return [
 		'favorites' => '3, 6',
 		'official win' => '6, 3, 12',
 		'qin amount' => 31.5,
-		'test set' => '1, 7, 10, 11',//count:4
+		'test set' => '',//count:0
 		'wp' => '4, 5, 6',
 	],
 	'6' => [
@@ -73,7 +73,7 @@ return [
 		'favorites' => '3, 7',
 		'official win' => '3, 13, 14',
 		'qin amount' => 3440.5,
-		'test set' => '3, 4, 6, 8',//count:4
+		'test set' => '3',//count:1
 		'wp' => '4, 5, 6',
 	],
 	'9' => [
@@ -83,7 +83,7 @@ return [
 		'favorites' => '4, 8',
 		'official win' => '1, 4, 8',
 		'qin amount' => 774,
-		'test set' => '5, 8, 12',//count:3
+		'test set' => '8',//count:1
 		'wp' => '4, 5, 6',
 	],
 	'10' => [
