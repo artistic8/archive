@@ -94,8 +94,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allInter = array_intersect($winInter, $qinInter, $trioInter);
     $inter = array_intersect($allInter, $favorites);
     
-    $test = array_intersect($winInter, $favorites);
-    if(count($test) === 1 && count($trioInter) > 7) $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
+    $test = array_slice($trioInter, 3, 5);
+    $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
  
     if(count($test) >= 2){
         $betAmount = 10 * combination(2, count($test));
