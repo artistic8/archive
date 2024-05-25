@@ -97,13 +97,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $test = array_slice($trioInter, 3, 5);
     $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
  
-    if(count($test) >= 5){
-        $betAmount = 10 * combination(2, count($test));
-        if(count(array_intersect(array_slice($officialWin, 0, 2), $test)) === 2) $wonAmount = $qinAmount - $betAmount;
-        else $wonAmount = 0 - $betAmount;
-        $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
-        $totalWonAmount += $wonAmount;
-    }
+    // if(count($test) >= 5){
+    //     $betAmount = 10 * combination(2, count($test));
+    //     if(count(array_intersect(array_slice($officialWin, 0, 2), $test)) === 2) $wonAmount = $qinAmount - $betAmount;
+    //     else $wonAmount = 0 - $betAmount;
+    //     $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
+    //     $totalWonAmount += $wonAmount;
+    // }
     if(count($test) >= 2 && count($test) <= 3){
         $betAmount = 10 * count($test) * (count($runners) - count($test));
         if(!empty(array_intersect(array_slice($officialWin, 0, 2), $test))) $wonAmount = $qinAmount - $betAmount;
