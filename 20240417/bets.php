@@ -10,7 +10,7 @@ return [
 		'qin amount' => 343,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count:10
 		'wp' => '4, 5, 6',
-		'wp' => '5',
+		'won amount' => '-30',
 	],
 	'2' => [
 		/**
@@ -20,7 +20,6 @@ return [
 		'official win' => '1, 8, 6',
 		'qin amount' => 89,
 		'trio inter' => '2, 5, 6, 7, 8, 9, 10',//count:7
-		'won amount' => '-210',
 	],
 	'3' => [
 		/**
@@ -48,7 +47,6 @@ return [
 		'official win' => '3, 4, 10',
 		'qin amount' => 72,
 		'trio inter' => '1, 2, 3, 4, 5, 7, 10',//count:7
-		'won amount' => '-138',
 	],
 	'6' => [
 		/**
@@ -70,7 +68,6 @@ return [
 		'official win' => '2, 6, 10',
 		'qin amount' => 50,
 		'trio inter' => '1, 2, 3, 4, 8, 9',//count:6
-		'won amount' => '-150',
 	],
 	'8' => [
 		/**
@@ -80,7 +77,6 @@ return [
 		'official win' => '8, 3, 7',
 		'qin amount' => 254,
 		'trio inter' => '1, 2, 3, 4, 6, 8, 10',//count:7
-		'won amount' => '44',
 	],
 	'9' => [
 		/**
@@ -91,7 +87,7 @@ return [
 		'qin amount' => 170.5,
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',//count:11
 		'wp' => '4, 5, 6',
-		'wp' => '4',
+		'won amount' => '-30',
 	],
 ];
-//Total won amount: -454
+//Total won amount: -60
