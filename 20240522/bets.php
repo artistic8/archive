@@ -24,7 +24,6 @@ return [
 		'favorites' => '3, 5, 6',
 		'official win' => '1, 5, 3',
 		'qin amount' => 593.5,
-		'test set' => '3',//count:1
 	],
 	'4' => [
 		/**
@@ -51,7 +50,6 @@ return [
 		'favorites' => '1, 2, 9, 10',
 		'official win' => '8, 1, 12',
 		'qin amount' => 100.5,
-		'test set' => '1',//count:1
 	],
 	'7' => [
 		/**
@@ -70,7 +68,6 @@ return [
 		'favorites' => '2, 4, 5, 6, 7',
 		'official win' => '6, 1, 3',
 		'qin amount' => 183,
-		'test set' => '4',//count:1
 	],
 	'9' => [
 		/**
@@ -79,7 +76,6 @@ return [
 		'favorites' => '4, 5, 7',
 		'official win' => '8, 7, 9',
 		'qin amount' => 143,
-		'test set' => '5',//count:1
 	],
 ];
 //Total won amount: 0

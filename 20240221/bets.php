@@ -16,7 +16,6 @@ return [
 		'favorites' => '2, 4',
 		'official win' => '7, 2, 5',
 		'qin amount' => 150,
-		'test set' => '4',//count:1
 	],
 	'3' => [
 		/**
@@ -43,7 +42,6 @@ return [
 		'favorites' => '4, 10',
 		'official win' => '4, 7, 10',
 		'qin amount' => 273,
-		'test set' => '4',//count:1
 	],
 	'6' => [
 		/**

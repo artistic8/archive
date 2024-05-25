@@ -16,7 +16,6 @@ return [
 		'favorites' => '3, 6',
 		'official win' => '2, 6, 3',
 		'qin amount' => 100,
-		'test set' => '6',//count:1
 	],
 	'3' => [
 		/**

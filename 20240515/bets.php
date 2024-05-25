@@ -24,7 +24,6 @@ return [
 		'favorites' => '1, 3',
 		'official win' => '7, 1, 5',
 		'qin amount' => 334.5,
-		'test set' => '1, 3',//count:2
 		'won amount' => '-10',
 	],
 	'4' => [
