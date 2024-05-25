@@ -9,7 +9,7 @@ return [
 		'official win' => '1, 6, 7',
 		'qin amount' => 129.5,
 		'trio inter' => '2, 3, 4, 5, 7, 8, 9',//count:7
-		'won amount' => '-80.5',
+		'won amount' => '-210',
 	],
 	'2' => [
 		/**
@@ -55,7 +55,7 @@ return [
 		'official win' => '12, 13, 4',
 		'qin amount' => 180.5,
 		'trio inter' => '1, 2, 3, 4, 5, 7, 10',//count:7
-		'won amount' => '-29.5',
+		'won amount' => '-210',
 	],
 	'6' => [
 		/**
@@ -65,7 +65,7 @@ return [
 		'official win' => '1, 8, 5',
 		'qin amount' => 1967,
 		'trio inter' => '2, 3, 7, 11',//count:4
-		'won amount' => '1907',
+		'won amount' => '-60',
 	],
 	'7' => [
 		/**
@@ -108,4 +108,4 @@ return [
 		'trio inter' => '',//count:0
 	],
 ];
-//Total won amount: 3574
+//Total won amount: 1297
