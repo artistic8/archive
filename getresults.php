@@ -19,7 +19,7 @@ $parts = explode("\n", $results);
 $tce = [];
 $qinAmount = [];
 foreach($parts as $key => $part){
-    if(strpos($part, "TIERCE")) $tce[] = str_replace(",", "", $parts[$key + 1]);
+    if(strpos($part, "TIERCE")) $tce[] = str_replace(",", ", ", $parts[$key + 1]);
     if(strpos($part, "QUINELLA")) $qinAmount[] = str_replace(",", "", $parts[$key + 2]);
 }
 $tce = array_values($tce);  

@@ -6,7 +6,7 @@ return [
 		Race 1
 		*/
 		'favorites' => '6, 7',
-		'official win' => '674',
+		'official win' => '6, 7, 4',
 		'qin amount' => 49.00,
 	],
 	'2' => [
@@ -14,7 +14,7 @@ return [
 		Race 2
 		*/
 		'favorites' => '2, 4, 10, 11',
-		'official win' => '715',
+		'official win' => '7, 1, 5',
 		'qin amount' => 4228.00,
 	],
 	'3' => [
@@ -22,7 +22,7 @@ return [
 		Race 3
 		*/
 		'favorites' => '9, 13',
-		'official win' => '91013',
+		'official win' => '9, 10, 13',
 		'qin amount' => 505.50,
 	],
 	'4' => [
@@ -30,7 +30,7 @@ return [
 		Race 4
 		*/
 		'favorites' => '3, 4',
-		'official win' => '3410',
+		'official win' => '3, 4, 10',
 		'qin amount' => 34.00,
 	],
 	'5' => [
@@ -38,7 +38,7 @@ return [
 		Race 5
 		*/
 		'favorites' => '5',
-		'official win' => '5612',
+		'official win' => '5, 6, 12',
 		'qin amount' => 106.50,
 	],
 	'6' => [
@@ -46,7 +46,7 @@ return [
 		Race 6
 		*/
 		'favorites' => '3, 5, 9, 14',
-		'official win' => '61112',
+		'official win' => '6, 11, 12',
 		'qin amount' => 656.50,
 	],
 	'7' => [
@@ -54,7 +54,7 @@ return [
 		Race 7
 		*/
 		'favorites' => '3, 7, 9',
-		'official win' => '693',
+		'official win' => '6, 9, 3',
 		'qin amount' => 1684.00,
 	],
 	'8' => [
@@ -62,7 +62,7 @@ return [
 		Race 8
 		*/
 		'favorites' => '2, 3, 6, 7, 8',
-		'official win' => '683',
+		'official win' => '6, 8, 3',
 		'qin amount' => 46.00,
 	],
 	'9' => [
@@ -70,7 +70,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '2, 3',
-		'official win' => '839',
+		'official win' => '8, 3, 9',
 		'qin amount' => 111.00,
 	],
 	'10' => [
@@ -78,7 +78,7 @@ return [
 		Race 10
 		*/
 		'favorites' => '1, 6, 10, 13, 14',
-		'official win' => '1028',
+		'official win' => '10, 2, 8',
 		'qin amount' => 1102.00,
 	],
 	'11' => [
@@ -86,7 +86,7 @@ return [
 		Race 11
 		*/
 		'favorites' => '2, 5, 9',
-		'official win' => '561',
+		'official win' => '5, 6, 1',
 		'qin amount' => 2260.00,
 	],
 ];
