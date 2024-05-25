@@ -94,7 +94,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allInter = array_intersect($winInter, $qinInter, $trioInter);
     $inter = array_intersect($allInter, $favorites);
     
-    $test = array_slice($trioInter, 3, 6);
+    $test = array_slice($trioInter, 3, 5);
     $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
     $favs = array_intersect($test, $favorites);
     if(!empty($favs)) $racetext .= "\t\t'favs' => '" . implode(", ", $favs) ."',\n";

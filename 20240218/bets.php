@@ -8,9 +8,9 @@ return [
 		'favorites' => '5, 6, 9',
 		'official win' => '1, 6, 7',
 		'qin amount' => 129.5,
-		'test set' => '7, 8, 9',//count:3
-		'favs' => '9',
-		'won amount' => '-30',
+		'test set' => '5, 7, 8, 9',//count:4
+		'favs' => '5, 9',
+		'won amount' => '-60',
 	],
 	'2' => [
 		/**
@@ -19,8 +19,9 @@ return [
 		'favorites' => '4',
 		'official win' => '5, 6, 3',
 		'qin amount' => 192,
-		'test set' => '5, 6, 7, 8, 10',//count:5
-		'won amount' => '92',
+		'test set' => '4, 5, 6, 7, 8, 10',//count:6
+		'favs' => '4',
+		'won amount' => '42',
 		'wp' => '4, 5, 6',
 	],
 	'3' => [
@@ -30,9 +31,9 @@ return [
 		'favorites' => '7',
 		'official win' => '6, 1, 12',
 		'qin amount' => 929,
-		'test set' => '5, 6, 7, 10, 11',//count:5
+		'test set' => '4, 5, 6, 7, 10, 11',//count:6
 		'favs' => '7',
-		'won amount' => '-100',
+		'won amount' => '-150',
 		'wp' => '4, 5, 6',
 	],
 	'4' => [
@@ -42,9 +43,9 @@ return [
 		'favorites' => '1, 8',
 		'official win' => '1, 2, 7',
 		'qin amount' => 771.5,
-		'test set' => '7, 8, 10, 11',//count:4
+		'test set' => '5, 7, 8, 10, 11',//count:5
 		'favs' => '8',
-		'won amount' => '-60',
+		'won amount' => '-100',
 		'wp' => '5, 7, 8',
 	],
 	'5' => [
@@ -54,9 +55,9 @@ return [
 		'favorites' => '3, 7',
 		'official win' => '12, 13, 4',
 		'qin amount' => 180.5,
-		'test set' => '5, 7, 10',//count:3
+		'test set' => '4, 5, 7, 10',//count:4
 		'favs' => '7',
-		'won amount' => '-30',
+		'won amount' => '-60',
 	],
 	'6' => [
 		/**
@@ -65,7 +66,7 @@ return [
 		'favorites' => '6, 7, 12',
 		'official win' => '1, 8, 5',
 		'qin amount' => 1967,
-		'test set' => '',//count:0
+		'test set' => '11',//count:1
 	],
 	'7' => [
 		/**
@@ -74,7 +75,8 @@ return [
 		'favorites' => '7, 10',
 		'official win' => '8, 6, 3',
 		'qin amount' => 1117,
-		'test set' => '9',//count:1
+		'test set' => '8, 9',//count:2
+		'won amount' => '-10',
 	],
 	'8' => [
 		/**
@@ -92,9 +94,9 @@ return [
 		'favorites' => '4, 7',
 		'official win' => '6, 7, 1',
 		'qin amount' => 317.5,
-		'test set' => '6, 7, 8, 9, 11',//count:5
+		'test set' => '5, 6, 7, 8, 9, 11',//count:6
 		'favs' => '7',
-		'won amount' => '217.5',
+		'won amount' => '167.5',
 		'wp' => '5, 6, 7',
 	],
 	'10' => [
@@ -107,4 +109,4 @@ return [
 		'test set' => '',//count:0
 	],
 ];
-//Total won amount: 89.5
+//Total won amount: -170.5

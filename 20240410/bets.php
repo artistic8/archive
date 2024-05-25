@@ -8,9 +8,9 @@ return [
 		'favorites' => '5, 6, 7',
 		'official win' => '2, 4, 3',
 		'qin amount' => 317,
-		'test set' => '6, 7, 8, 9',//count:4
-		'favs' => '6, 7',
-		'won amount' => '-60',
+		'test set' => '5, 6, 7, 8, 9',//count:5
+		'favs' => '5, 6, 7',
+		'won amount' => '-100',
 		'wp' => '5, 6, 7',
 	],
 	'2' => [
@@ -20,8 +20,8 @@ return [
 		'favorites' => '3',
 		'official win' => '5, 6, 10',
 		'qin amount' => 3113,
-		'test set' => '5, 6, 7, 8, 9',//count:5
-		'won amount' => '3013',
+		'test set' => '4, 5, 6, 7, 8, 9',//count:6
+		'won amount' => '2963',
 		'wp' => '4, 5, 6',
 	],
 	'3' => [
@@ -40,8 +40,8 @@ return [
 		'favorites' => '1',
 		'official win' => '1, 12, 7',
 		'qin amount' => 56.5,
-		'test set' => '5, 6, 7, 8, 9',//count:5
-		'won amount' => '-100',
+		'test set' => '4, 5, 6, 7, 8, 9',//count:6
+		'won amount' => '-150',
 		'wp' => '4, 5, 6',
 	],
 	'5' => [
@@ -60,8 +60,9 @@ return [
 		'favorites' => '2, 6, 9',
 		'official win' => '9, 11, 1',
 		'qin amount' => 766,
-		'test set' => '7, 8, 11, 12',//count:4
-		'won amount' => '-60',
+		'test set' => '6, 7, 8, 11, 12',//count:5
+		'favs' => '6',
+		'won amount' => '-100',
 		'wp' => '6, 7, 8',
 	],
 	'7' => [
@@ -71,8 +72,8 @@ return [
 		'favorites' => '2, 10',
 		'official win' => '2, 9, 4',
 		'qin amount' => 912,
-		'test set' => '7, 8, 9',//count:3
-		'won amount' => '-30',
+		'test set' => '5, 7, 8, 9',//count:4
+		'won amount' => '-60',
 	],
 	'8' => [
 		/**
@@ -81,8 +82,9 @@ return [
 		'favorites' => '2, 3, 4, 7',
 		'official win' => '8, 3, 12',
 		'qin amount' => 160.5,
-		'test set' => '6, 8, 9',//count:3
-		'won amount' => '-30',
+		'test set' => '4, 6, 8, 9',//count:4
+		'favs' => '4',
+		'won amount' => '-60',
 		'win($20)' => '2, 3, 4, 7',
 		'win($20)' => '3, 4',
 		'qin/trio($10)' => '2, 3, 4, 7',
@@ -94,9 +96,9 @@ return [
 		'favorites' => '2, 9',
 		'official win' => '8, 2, 9',
 		'qin amount' => 102.5,
-		'test set' => '8, 9, 10',//count:3
+		'test set' => '7, 8, 9, 10',//count:4
 		'favs' => '9',
-		'won amount' => '-30',
+		'won amount' => '-60',
 	],
 ];
-//Total won amount: 2703
+//Total won amount: 2433
