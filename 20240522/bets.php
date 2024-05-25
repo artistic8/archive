@@ -9,7 +9,9 @@ return [
 		'official win' => '10, 4, 3',
 		'qin amount' => 144,
 		'test set' => '7, 9',//count:2
+		'won amount' => '-100',
 		'won amount' => '-126',
+		'won amount' => '-200',
 	],
 	'2' => [
 		/**
@@ -47,7 +49,9 @@ return [
 		'official win' => '6, 12, 3',
 		'qin amount' => 543.5,
 		'test set' => '10, 11',//count:2
+		'won amount' => '-100',
 		'won amount' => '343.5',
+		'won amount' => '-200',
 	],
 	'6' => [
 		/**
@@ -57,7 +61,9 @@ return [
 		'official win' => '8, 1, 12',
 		'qin amount' => 100.5,
 		'test set' => '9, 12',//count:2
+		'won amount' => '-100',
 		'won amount' => '-219.5',
+		'won amount' => '-200',
 	],
 	'7' => [
 		/**
@@ -88,4 +94,4 @@ return [
 		'test set' => '6, 7, 9, 11',//count:4
 	],
 ];
-//Total won amount: -2
+//Total won amount: -902
