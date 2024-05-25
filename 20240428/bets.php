@@ -33,9 +33,6 @@ return [
 		'favorites' => '1, 4, 5',
 		'official win' => '1, 4, 5',
 		'qin amount' => 159,
-		'win($20)' => '1, 4, 5',
-		'win($20)' => '4, 5',
-		'qin/trio($10)' => '1, 4, 5',
 	],
 	'5' => [
 		/**
@@ -44,9 +41,6 @@ return [
 		'favorites' => '1, 3, 5',
 		'official win' => '5, 1, 9',
 		'qin amount' => 77,
-		'win($20)' => '1, 3, 5',
-		'win($20)' => '3, 5',
-		'qin/trio($10)' => '1, 3, 5',
 	],
 	'6' => [
 		/**

@@ -66,9 +66,6 @@ return [
 		'favorites' => '4, 5, 6, 7',
 		'official win' => '12, 7, 4',
 		'qin amount' => 727.5,
-		'win($20)' => '4, 5, 6, 7',
-		'win($20)' => '5, 6',
-		'qin/trio($10)' => '4, 5, 6, 7',
 	],
 ];
 //Total won amount: -19.5

@@ -101,7 +101,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
         $totalWonAmount += $wonAmount;
     }
-    if(count($trioInter) === 5 && count($inter) > 1 && count($favorites) >= 3){
+    if(count($trioInter) === 5){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
