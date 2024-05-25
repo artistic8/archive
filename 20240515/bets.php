@@ -9,7 +9,6 @@ return [
 		'official win' => '8, 4, 9',
 		'qin amount' => 589,
 		'test set' => '3, 1, 7, 8, 10',//count:5
-		'won amount' => '-100',
 	],
 	'2' => [
 		/**
@@ -55,7 +54,6 @@ return [
 		'official win' => '8, 3, 9',
 		'qin amount' => 626,
 		'test set' => '1, 4, 6, 9, 10',//count:5
-		'won amount' => '-100',
 	],
 	'7' => [
 		/**
@@ -85,7 +83,6 @@ return [
 		'official win' => '2, 9, 7',
 		'qin amount' => 65.5,
 		'test set' => '4, 8, 2, 3, 9',//count:5
-		'won amount' => '-34.5',
 	],
 ];
-//Total won amount: -234.5
+//Total won amount: 0
