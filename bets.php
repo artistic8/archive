@@ -94,7 +94,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allInter = array_intersect($winInter, $trioInter);
     $inter = array_intersect($allInter, $favorites);
     
-    $test = $allInter;
+    $test = $favorites;
     $racetext .= "\t\t'test set' => '" . implode(", ", $test) ."',//count:" . count($test) . "\n";
  
     if(count($test) >= 2){
