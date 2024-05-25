@@ -29,6 +29,7 @@ return [
 		'official win' => '2, 4, 5',
 		'qin amount' => 99.5,
 		'test set' => '5',//count:1
+		'favs' => '5',
 	],
 	'4' => [
 		/**
@@ -59,6 +60,7 @@ return [
 		'official win' => '10, 3, 6',
 		'qin amount' => 74.5,
 		'test set' => '6, 7, 8, 9, 10',//count:5
+		'favs' => '10',
 		'won amount' => '-100',
 		'wp' => '6, 7, 8',
 	],
@@ -79,6 +81,7 @@ return [
 		'official win' => '14, 11, 8',
 		'qin amount' => 1650,
 		'test set' => '4, 6, 7, 8, 9',//count:5
+		'favs' => '7, 8',
 		'won amount' => '-100',
 		'wp' => '4, 6, 7',
 	],
