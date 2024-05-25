@@ -8,7 +8,7 @@ return [
 		'favorites' => '7, 12',
 		'official win' => '7, 13, 2',
 		'qin amount' => 159.5,
-		'test set' => '8',//count:1
+		'won amount' => '-80.5',
 	],
 	'2' => [
 		/**
@@ -17,7 +17,7 @@ return [
 		'favorites' => '4, 5, 10',
 		'official win' => '10, 14, 7',
 		'qin amount' => 1458.5,
-		'test set' => '7',//count:1
+		'won amount' => '1158.5',
 	],
 	'3' => [
 		/**
@@ -26,7 +26,7 @@ return [
 		'favorites' => '2',
 		'official win' => '2, 4, 6',
 		'qin amount' => 56,
-		'test set' => '2, 3, 5, 7',//count:4
+		'won amount' => '-24',
 	],
 	'4' => [
 		/**
@@ -35,7 +35,7 @@ return [
 		'favorites' => '4, 8',
 		'official win' => '2, 8, 5',
 		'qin amount' => 210,
-		'test set' => '1, 11',//count:2
+		'won amount' => '-30',
 	],
 	'5' => [
 		/**
@@ -44,7 +44,7 @@ return [
 		'favorites' => '3, 6',
 		'official win' => '1, 4, 3',
 		'qin amount' => 359.5,
-		'test set' => '6, 7',//count:2
+		'won amount' => '-140',
 		'wp' => '4, 5, 6',
 	],
 	'6' => [
@@ -54,7 +54,7 @@ return [
 		'favorites' => '1, 2, 4',
 		'official win' => '4, 1, 2',
 		'qin amount' => 72,
-		'test set' => '1, 8',//count:2
+		'won amount' => '-258',
 	],
 	'7' => [
 		/**
@@ -63,8 +63,7 @@ return [
 		'favorites' => '1, 3',
 		'official win' => '1, 8, 5',
 		'qin amount' => 126,
-		'test set' => '1, 2, 3, 5, 10',//count:5
-		'won amount' => '-100',
+		'won amount' => '-54',
 		'wp' => '4, 5, 8',
 	],
 	'8' => [
@@ -74,7 +73,7 @@ return [
 		'favorites' => '2, 3, 7',
 		'official win' => '3, 2, 6',
 		'qin amount' => 49,
-		'test set' => '3, 4, 6, 8',//count:4
+		'won amount' => '-251',
 	],
 	'9' => [
 		/**
@@ -83,8 +82,7 @@ return [
 		'favorites' => '4, 7',
 		'official win' => '7, 2, 14',
 		'qin amount' => 196,
-		'test set' => '1, 5, 6, 8, 9',//count:5
-		'won amount' => '-100',
+		'won amount' => '-44',
 		'wp' => '6, 7, 8',
 	],
 	'10' => [
@@ -94,7 +92,7 @@ return [
 		'favorites' => '1, 3, 9',
 		'official win' => '10, 1, 3',
 		'qin amount' => 307,
-		'test set' => '',//count:0
+		'won amount' => '67',
 	],
 ];
-//Total won amount: -200
+//Total won amount: 344
