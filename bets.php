@@ -68,20 +68,21 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($officialWin)) $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     if(isset($winAmount)) $racetext .= "\t\t'win amount' => '" . $winAmount . "',\n"; 
     if(isset($qinAmount)) $racetext .= "\t\t'qin amount' => " . $qinAmount . ",\n"; 
-    $trioUnion = [];
     $firstSet = true;
     foreach($favorites as $F){
+        $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         $trioCandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
-        $trioUnion = array_values(array_unique(array_merge($trioUnion, $trioCandidates)));
         if($firstSet) {
+            $winInter = $winCandidates;
             $trioInter = $trioCandidates;
             $firstSet = false;
         }
         else {
+            $winInter = array_intersect($winInter, $winCandidates);
             $trioInter = array_intersect($trioInter, $trioCandidates);
         }
     }
-    $inter = array_intersect($trioInter, $favorites);
+    $inter = array_intersect($winInter, $favorites);
     
     if(count($trioInter) === 5){
         $betAmount = 10 * count($favorites) * (count($runners) - count($favorites));
