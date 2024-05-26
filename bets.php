@@ -8,7 +8,7 @@ $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "winhistory.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
