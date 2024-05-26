@@ -1,20 +1,6 @@
 <?php
 
-function factorial($n){
-    if($n <= 0) return 1;
-    $fact = 1;
-    for($i = 1; $i <= $n; $i++) $fact *= $i;
-    return $fact; 
-}
-
-function combination($p, $n){
-    if($p > $n) return 1;
-    return factorial($n) / (factorial($p) * factorial($n - $p));
-}
-
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
-
-$totalWonAmount = 0;
 
 $step = "bets";
 $raceDate = trim($argv[1]);
@@ -40,8 +26,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
-        if(isset($oldData[$raceNumber]['win amount'])) $winAmount = $oldData[$raceNumber]['win amount'];
-        if(isset($oldData[$raceNumber]['qin amount'])) $qinAmount = $oldData[$raceNumber]['qin amount'];
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
@@ -54,7 +38,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     else {
         $runners = [];
-        for($k = 1; $k <= 14; $k++) $runners[] = $k;
+        for($k = 1; $k < 31; $k++) $runners[] = $k;
     }
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
@@ -65,43 +49,37 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
    
-    if(isset($officialWin)) $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-    if(isset($winAmount)) $racetext .= "\t\t'win amount' => '" . $winAmount . "',\n"; 
-    if(isset($qinAmount)) $racetext .= "\t\t'qin amount' => " . $qinAmount . ",\n"; 
+    if(isset($officialWin)){
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    }
     $firstSet = true;
+    $union = [];
     foreach($favorites as $F){
-        $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        $trioCandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
+        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        $union = array_values(array_unique(array_merge($union, $candidates)));
         if($firstSet) {
-            $winInter = $winCandidates;
-            $trioInter = $trioCandidates;
+            $inter = $candidates;
             $firstSet = false;
         }
-        else {
-            $winInter = array_intersect($winInter, $winCandidates);
-            $trioInter = array_intersect($trioInter, $trioCandidates);
-        }
+        else $inter = array_intersect($inter, $candidates);
     }
-    $inter = array_intersect($winInter, $favorites);
-    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n"; 
-    if(count($trioInter) === 5){
-        $betAmount = 10 * count($favorites) * (count($runners) - count($favorites));
-        if(!empty(array_intersect(array_slice($officialWin, 0, 2), $favorites))) $wonAmount = $qinAmount - $betAmount;
-        else $wonAmount = 0 - $betAmount;
-        $racetext .= "\t\t'won amount' => '" . $wonAmount . "',\n"; 
-        $totalWonAmount += $wonAmount;
-    }
-    if(count($inter) > 1 && count($favorites) >= 3){
+    sort($union);
+    sort($inter);
+    $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+    if(!empty($inter)) 
+    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    $inter = array_intersect($favorites, $inter);
+    if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
     }
-    
+ 
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
+    unset($inter);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//Total won amount: $totalWonAmount\n";
 file_put_contents($outFile, $outtext);
