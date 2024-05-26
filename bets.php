@@ -83,7 +83,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
     }
     $inter = array_intersect($winInter, $favorites);
-    $racetext .= "\t\t'inter' => " . $inter . ",\n"; 
+    $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n"; 
     if(count($trioInter) === 5){
         $betAmount = 10 * count($favorites) * (count($runners) - count($favorites));
         if(!empty(array_intersect(array_slice($officialWin, 0, 2), $favorites))) $wonAmount = $qinAmount - $betAmount;
