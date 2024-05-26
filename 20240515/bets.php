@@ -8,9 +8,6 @@ return [
 		'favorites' => '1, 7, 8, 10',
 		'official win' => '8, 4, 9',
 		'qin amount' => 589,
-		'win($20)' => '1, 7, 8, 10',
-		'win($20)' => '7, 8',
-		'qin/trio($10)' => '1, 7, 8, 10',
 	],
 	'2' => [
 		/**
@@ -20,9 +17,6 @@ return [
 		'official win' => '4, 1, 6',
 		'qin amount' => 190.5,
 		'won amount' => '-49.5',
-		'win($20)' => '2, 4, 8, 9',
-		'win($20)' => '4, 8',
-		'qin/trio($10)' => '2, 4, 8, 9',
 	],
 	'3' => [
 		/**
@@ -72,9 +66,6 @@ return [
 		'favorites' => '1, 3, 4',
 		'official win' => '4, 9, 8',
 		'qin amount' => 124.5,
-		'win($20)' => '1, 3, 4',
-		'win($20)' => '3, 4',
-		'qin/trio($10)' => '1, 3, 4',
 	],
 	'9' => [
 		/**
@@ -84,9 +75,6 @@ return [
 		'official win' => '2, 9, 7',
 		'qin amount' => 65.5,
 		'won amount' => '-204.5',
-		'win($20)' => '2, 3, 9',
-		'win($20)' => '3, 9',
-		'qin/trio($10)' => '2, 3, 9',
 	],
 ];
 //Total won amount: 843
