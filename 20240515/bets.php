@@ -7,7 +7,8 @@ return [
 		*/
 		'favorites' => '1, 7, 8, 10',
 		'official win' => '8, 4, 9',
-		'qin amount' => 589,
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'inter' => '3',
 	],
 	'2' => [
 		/**
@@ -15,8 +16,7 @@ return [
 		*/
 		'favorites' => '2, 4, 8, 9',
 		'official win' => '4, 1, 6',
-		'qin amount' => 190.5,
-		'won amount' => '-49.5',
+		'union' => '2, 3, 4, 5, 6, 7, 8, 10',
 	],
 	'3' => [
 		/**
@@ -24,7 +24,8 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '7, 1, 5',
-		'qin amount' => 334.5,
+		'union' => '1, 2, 3, 4, 7, 8, 9',
+		'inter' => '1, 3, 4, 9',
 	],
 	'4' => [
 		/**
@@ -32,8 +33,7 @@ return [
 		*/
 		'favorites' => '3, 6, 7',
 		'official win' => '3, 9, 1',
-		'qin amount' => 1367,
-		'won amount' => '1097',
+		'union' => '1, 3, 4, 5, 6, 8, 10, 11',
 	],
 	'5' => [
 		/**
@@ -41,7 +41,7 @@ return [
 		*/
 		'favorites' => '2, 4, 11',
 		'official win' => '11, 6, 7',
-		'qin amount' => 687.5,
+		'union' => '1, 2, 3, 4, 5, 7, 8, 10, 11',
 	],
 	'6' => [
 		/**
@@ -49,7 +49,8 @@ return [
 		*/
 		'favorites' => '4, 6, 9, 10',
 		'official win' => '8, 3, 9',
-		'qin amount' => 626,
+		'union' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
+		'inter' => '1',
 	],
 	'7' => [
 		/**
@@ -57,7 +58,8 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '7, 4, 6',
-		'qin amount' => 186,
+		'union' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
+		'inter' => '2, 3, 10',
 	],
 	'8' => [
 		/**
@@ -65,7 +67,8 @@ return [
 		*/
 		'favorites' => '1, 3, 4',
 		'official win' => '4, 9, 8',
-		'qin amount' => 124.5,
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 12',
+		'inter' => '3, 7',
 	],
 	'9' => [
 		/**
@@ -73,8 +76,7 @@ return [
 		*/
 		'favorites' => '2, 3, 9',
 		'official win' => '2, 9, 7',
-		'qin amount' => 65.5,
-		'won amount' => '-204.5',
+		'union' => '3, 4, 5, 8, 9, 12',
+		'inter' => '4, 8',
 	],
 ];
-//Total won amount: 843

@@ -7,7 +7,8 @@ return [
 		*/
 		'favorites' => '6, 7',
 		'official win' => '6, 7, 4',
-		'qin amount' => 49,
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'inter' => '2, 7',
 	],
 	'2' => [
 		/**
@@ -15,7 +16,8 @@ return [
 		*/
 		'favorites' => '2, 4, 10, 11',
 		'official win' => '7, 1, 5',
-		'qin amount' => 4228,
+		'union' => '2, 3, 4, 5, 6, 7, 8, 10, 12',
+		'inter' => '7',
 	],
 	'3' => [
 		/**
@@ -23,7 +25,7 @@ return [
 		*/
 		'favorites' => '9, 13',
 		'official win' => '9, 10, 13',
-		'qin amount' => 505.5,
+		'union' => '2, 3, 4, 7, 12',
 	],
 	'4' => [
 		/**
@@ -31,7 +33,8 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '3, 4, 10',
-		'qin amount' => 34,
+		'union' => '1, 2, 3, 4, 5, 6, 8',
+		'inter' => '1, 4',
 	],
 	'5' => [
 		/**
@@ -39,7 +42,8 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '5, 6, 12',
-		'qin amount' => 106.5,
+		'union' => '1, 4, 5',
+		'inter' => '1, 4, 5',
 	],
 	'6' => [
 		/**
@@ -47,7 +51,7 @@ return [
 		*/
 		'favorites' => '3, 5, 9, 14',
 		'official win' => '6, 11, 12',
-		'qin amount' => 656.5,
+		'union' => '1, 2, 3, 5, 7, 8, 9, 10, 11',
 	],
 	'7' => [
 		/**
@@ -55,7 +59,8 @@ return [
 		*/
 		'favorites' => '3, 7, 9',
 		'official win' => '6, 9, 3',
-		'qin amount' => 1684,
+		'union' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11',
+		'inter' => '2',
 	],
 	'8' => [
 		/**
@@ -63,8 +68,8 @@ return [
 		*/
 		'favorites' => '2, 3, 6, 7, 8',
 		'official win' => '6, 8, 3',
-		'qin amount' => 46,
-		'won amount' => '-54',
+		'union' => '1, 2, 3, 5, 6, 7, 8',
+		'inter' => '8',
 	],
 	'9' => [
 		/**
@@ -72,7 +77,8 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'official win' => '8, 3, 9',
-		'qin amount' => 111,
+		'union' => '2, 3, 4, 5, 8, 9, 12',
+		'inter' => '2, 3, 4, 5, 8',
 	],
 	'10' => [
 		/**
@@ -80,7 +86,7 @@ return [
 		*/
 		'favorites' => '1, 6, 10, 13, 14',
 		'official win' => '10, 2, 8',
-		'qin amount' => 1102,
+		'union' => '1, 2, 3, 4, 7, 10, 13',
 	],
 	'11' => [
 		/**
@@ -88,7 +94,6 @@ return [
 		*/
 		'favorites' => '2, 5, 9',
 		'official win' => '5, 6, 1',
-		'qin amount' => 2260,
+		'union' => '5, 12',
 	],
 ];
-//Total won amount: -54

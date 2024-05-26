@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '1, 6, 11',
 		'official win' => '11, 6, 5',
-		'qin amount' => 142,
+		'union' => '1, 2, 3, 4, 6, 7, 8, 10, 12, 14',
 	],
 	'2' => [
 		/**
@@ -15,7 +15,8 @@ return [
 		*/
 		'favorites' => '2, 4, 5',
 		'official win' => '5, 10, 14',
-		'qin amount' => 812,
+		'union' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
+		'inter' => '4, 7',
 	],
 	'3' => [
 		/**
@@ -23,7 +24,8 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'official win' => '10, 3, 4',
-		'qin amount' => 58.5,
+		'union' => '1, 2, 3, 4, 5, 7, 8, 9, 12',
+		'inter' => '2, 3, 7',
 	],
 	'4' => [
 		/**
@@ -31,7 +33,8 @@ return [
 		*/
 		'favorites' => '5',
 		'official win' => '5, 3, 6',
-		'qin amount' => 342,
+		'union' => '1, 2, 4, 5, 6',
+		'inter' => '1, 2, 4, 5, 6',
 	],
 	'5' => [
 		/**
@@ -39,7 +42,8 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '1, 8, 2',
-		'qin amount' => 70,
+		'union' => '1, 5, 7',
+		'inter' => '1, 5, 7',
 	],
 	'6' => [
 		/**
@@ -47,7 +51,8 @@ return [
 		*/
 		'favorites' => '3, 7',
 		'official win' => '7, 2, 3',
-		'qin amount' => 85,
+		'union' => '1, 2, 3, 5, 6, 7, 9, 10, 11',
+		'inter' => '1, 3, 5, 9',
 	],
 	'7' => [
 		/**
@@ -55,7 +60,8 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '2, 10, 9',
-		'qin amount' => 572.5,
+		'union' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'inter' => '1, 3, 5, 10',
 	],
 	'8' => [
 		/**
@@ -63,7 +69,8 @@ return [
 		*/
 		'favorites' => '4, 6, 8',
 		'official win' => '6, 8, 4',
-		'qin amount' => 159,
+		'union' => '1, 2, 3, 4, 6, 7, 8, 10, 12, 14',
+		'inter' => '4, 6, 8',
 		'win($20)' => '4, 6, 8',
 		'win($20)' => '6, 8',
 		'qin/trio($10)' => '4, 6, 8',
@@ -74,7 +81,8 @@ return [
 		*/
 		'favorites' => '2, 3, 5',
 		'official win' => '3, 5, 2',
-		'qin amount' => 733,
+		'union' => '2, 3, 4, 5, 8, 9, 10, 12',
+		'inter' => '4, 5, 8',
 	],
 	'10' => [
 		/**
@@ -82,7 +90,6 @@ return [
 		*/
 		'favorites' => '3, 5, 11',
 		'official win' => '12, 3, 11',
-		'qin amount' => 478,
+		'union' => '1, 3, 4, 8, 10, 14',
 	],
 ];
-//Total won amount: 0

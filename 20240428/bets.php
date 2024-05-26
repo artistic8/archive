@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '6, 7, 9',
 		'official win' => '14, 2, 1',
-		'qin amount' => 705.5,
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12',
 	],
 	'2' => [
 		/**
@@ -15,8 +15,8 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 7',
 		'official win' => '6, 7, 10',
-		'qin amount' => 230.5,
-		'won amount' => '-49.5',
+		'union' => '1, 2, 4, 5, 6, 7, 8, 9',
+		'inter' => '2',
 	],
 	'3' => [
 		/**
@@ -24,7 +24,8 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'official win' => '3, 8, 1',
-		'qin amount' => 311.5,
+		'union' => '1, 2, 3, 4, 7, 8, 9, 10, 11, 12',
+		'inter' => '1, 4, 7, 9, 10',
 	],
 	'4' => [
 		/**
@@ -32,7 +33,8 @@ return [
 		*/
 		'favorites' => '1, 4, 5',
 		'official win' => '1, 4, 5',
-		'qin amount' => 159,
+		'union' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
+		'inter' => '4, 5',
 		'win($20)' => '1, 4, 5',
 		'win($20)' => '4, 5',
 		'qin/trio($10)' => '1, 4, 5',
@@ -43,7 +45,8 @@ return [
 		*/
 		'favorites' => '1, 3, 5',
 		'official win' => '5, 1, 9',
-		'qin amount' => 77,
+		'union' => '1, 4, 5, 6, 7, 10, 11',
+		'inter' => '1, 5',
 		'win($20)' => '1, 3, 5',
 		'win($20)' => '3, 5',
 		'qin/trio($10)' => '1, 3, 5',
@@ -54,7 +57,7 @@ return [
 		*/
 		'favorites' => '2, 8, 10, 13',
 		'official win' => '3, 10, 14',
-		'qin amount' => 176,
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 	],
 	'7' => [
 		/**
@@ -62,7 +65,8 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '3, 10, 2',
-		'qin amount' => 1110.5,
+		'union' => '1, 2, 3, 5, 10, 11',
+		'inter' => '1, 2, 3, 5, 10, 11',
 	],
 	'8' => [
 		/**
@@ -70,7 +74,8 @@ return [
 		*/
 		'favorites' => '1, 8, 11',
 		'official win' => '1, 4, 9',
-		'qin amount' => 47.5,
+		'union' => '2, 3, 4, 5, 6, 7, 8, 10',
+		'inter' => '3, 4',
 	],
 	'9' => [
 		/**
@@ -78,7 +83,8 @@ return [
 		*/
 		'favorites' => '3, 4, 8, 9',
 		'official win' => '12, 7, 8',
-		'qin amount' => 1393.5,
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		'inter' => '8',
 	],
 	'10' => [
 		/**
@@ -86,7 +92,6 @@ return [
 		*/
 		'favorites' => '2, 7, 8, 13',
 		'official win' => '13, 2, 8',
-		'qin amount' => 966.5,
+		'union' => '2, 3, 4, 7, 8, 10',
 	],
 ];
-//Total won amount: -49.5
