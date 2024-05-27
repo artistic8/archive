@@ -3,14 +3,13 @@
 function factorial($n){
     if($n <= 0) return 1;
     $fact = 1;
-    for($i = 1; $i <= $n; $ii) $fact *= $n;
+    for($i = 1; $i <= $n; $i++) $fact *= $i;
     return $fact;
 }
 function combination($p, $n){
-    if($p < $n) return 0;
+    if($n < $p) return 0;
     return factorial($n) / (factorial($p) * factorial($n - $p));
 }
-
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $totalWonAmount = 0;
