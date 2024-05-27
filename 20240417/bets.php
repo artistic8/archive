@@ -57,7 +57,8 @@ return [
 		'win($20)' => '1, 2, 3, 10',
 		'win($20)' => '2, 3',
 		'qin/trio($10)' => '1, 2, 3, 10',
-		'won amount' => 148,
+		'win won amount' => 133.5,
+		'qin won amount' => 148,
 	],
 	'7' => [
 		/**
@@ -87,4 +88,4 @@ return [
 		'qin amount' => 170.5,
 	],
 ];
-//'total won amount': 148
+//'total won amount': 281.5
