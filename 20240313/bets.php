@@ -74,4 +74,4 @@ return [
 		'qin amount' => 277.5,
 	],
 ];
-//'total won amount' => 0,
+//'total won amount': 0

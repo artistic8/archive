@@ -70,4 +70,4 @@ return [
 		'won amount' => -60,
 	],
 ];
-//'total won amount' => -60,
+//'total won amount': -60
