@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '5, 6, 7',
 		'official win' => '2, 4, 3',
+		'qin amount' => 317.00,
 	],
 	'2' => [
 		/**
@@ -14,6 +15,7 @@ return [
 		*/
 		'favorites' => '3',
 		'official win' => '5, 6, 10',
+		'qin amount' => 3113.00,
 	],
 	'3' => [
 		/**
@@ -21,6 +23,7 @@ return [
 		*/
 		'favorites' => '2, 3, 5, 8',
 		'official win' => '3, 8, 2',
+		'qin amount' => 58.00,
 	],
 	'4' => [
 		/**
@@ -28,6 +31,7 @@ return [
 		*/
 		'favorites' => '1',
 		'official win' => '1, 12, 7',
+		'qin amount' => 56.50,
 	],
 	'5' => [
 		/**
@@ -35,6 +39,7 @@ return [
 		*/
 		'favorites' => '5, 11',
 		'official win' => '1, 9, 11',
+		'qin amount' => 1747.00,
 	],
 	'6' => [
 		/**
@@ -42,6 +47,7 @@ return [
 		*/
 		'favorites' => '2, 6, 9',
 		'official win' => '9, 11, 1',
+		'qin amount' => 766.00,
 	],
 	'7' => [
 		/**
@@ -49,6 +55,7 @@ return [
 		*/
 		'favorites' => '2, 10',
 		'official win' => '2, 9, 4',
+		'qin amount' => 912.00,
 	],
 	'8' => [
 		/**
@@ -56,9 +63,7 @@ return [
 		*/
 		'favorites' => '2, 3, 4, 7',
 		'official win' => '8, 3, 12',
-		'win($20)' => '2, 3, 4, 7',
-		'win($20)' => '3, 4',
-		'qin/trio($10)' => '2, 3, 4, 7',
+		'qin amount' => 160.50,
 	],
 	'9' => [
 		/**
@@ -66,5 +71,6 @@ return [
 		*/
 		'favorites' => '2, 9',
 		'official win' => '8, 2, 9',
+		'qin amount' => 102.50,
 	],
 ];
