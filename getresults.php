@@ -24,7 +24,6 @@ $html = "start\n" . get_string_between($html, '<div class="race_result">', '<div
 if(strpos($html, '<div class="bg_green')){
     $html = get_string_between($html, 'start', '<div class="bg_green');
 }
-
 $parts = explode("\n", $html);
 foreach($parts as $key => $line){
     if(strpos($line, 'bg_blue color_w f_fs13 font_wb"')){
@@ -35,11 +34,15 @@ foreach($parts as $key => $line){
         $raceNumber = $var + 0;
         $results[$raceNumber] = [];
     }
-    if(strpos($line, 'WIN</td>')){
+    if(strpos($line, '<td class="fontXi" rowspan="1">WIN</td>')){
         $var = $parts[$key + 2];
         $var = str_replace('<td class="f_fs14 f_tar">', '', $var);
         $var = str_replace('</td>', '', $var);
         $var = str_replace(' ', '', $var);
+        $var = str_replace(',', '', $var);
+        if(!is_numeric($var)) {
+            var_dump($raceDate); var_dump($raceNumber); var_dump($var);die();
+        }
         $results[$raceNumber]['win'] = $var + 0;
     }
     if(strpos($line, 'QUINELLA</td>')){
@@ -47,6 +50,7 @@ foreach($parts as $key => $line){
         $var = str_replace('<td class="f_fs14 f_tar">', '', $var);
         $var = str_replace('</td>', '', $var);
         $var = str_replace(' ', '', $var);
+        $var = str_replace(',', '', $var);
         $results[$raceNumber]['qin'] = $var + 0;
     }
     if(strpos($line, 'TIERCE</td>')){
