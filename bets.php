@@ -103,5 +103,5 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//'total won amount' => $totalWonAmount,\n";
+$outtext .= "//'total won amount': $totalWonAmount\n";
 file_put_contents($outFile, $outtext);
