@@ -26,6 +26,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
+        if(isset($oldData[$raceNumber]['qin amount'])) $qinAmount = explode(", ", $oldData[$raceNumber]['qin amount']);
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
@@ -51,6 +52,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
    
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    }
+    if(isset($qinAmount)){
+        $racetext .= "\t\t'qin amount' => '" . implode(", ", $qinAmount) . "',\n"; 
     }
     $firstSet = true;
     $union = [];
