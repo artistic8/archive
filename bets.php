@@ -97,7 +97,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $set2) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $winbetAmount = 20 * count($favorites) + 20 * count($set2);
-        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 2)))) $winwonAmount = $winAmount - $winbetAmount;
+        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 2)))) $winwonAmount = 2 * $winAmount - $winbetAmount;
+        if(!empty(array_intersect($set2, array_slice($officialWin, 0, 2)))) $winwonAmount = 2 * $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win won amount' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
