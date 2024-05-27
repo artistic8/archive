@@ -93,12 +93,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($favorites, $inter);
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
-        $set2 = array_slice($favorites, 1, 2);
-        $racetext .= "\t\t'win($20)' => '" . implode(", ", $set2) . "',\n"; 
+        $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        $winbetAmount = 20 * count($favorites) + 20 * count($set2);
-        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 2)))) $winwonAmount = 2 * $winAmount - $winbetAmount;
-        if(!empty(array_intersect($set2, array_slice($officialWin, 0, 2)))) $winwonAmount = 2 * $winAmount - $winbetAmount;
+        $winbetAmount = 10 * count($favorites);
+        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 2)))) $winwonAmount = $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win won amount' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
