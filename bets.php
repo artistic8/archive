@@ -1,6 +1,19 @@
 <?php
 
+function factorial($n){
+    if($n <= 0) return 1;
+    $fact = 1;
+    for($i = 1; $i <= $n; $ii) $fact *= $n;
+    return $fact;
+}
+function combination($p, $n){
+    if($p < $n) return 0;
+    return factorial($n) / (factorial($p) * factorial($n - $p));
+}
+
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
+
+$totalWonAmount = 0;
 
 $step = "bets";
 $raceDate = trim($argv[1]);
@@ -26,7 +39,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
-        if(isset($oldData[$raceNumber]['qin amount'])) $qinAmount = explode(", ", $oldData[$raceNumber]['qin amount']);
+        if(isset($oldData[$raceNumber]['qin amount'])) $qinAmount = $oldData[$raceNumber]['qin amount'];
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
@@ -54,7 +67,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     if(isset($qinAmount)){
-        $racetext .= "\t\t'qin amount' => '" . implode(", ", $qinAmount) . "',\n"; 
+        $racetext .= "\t\t'qin amount' => " . $qinAmount . ",\n"; 
     }
     $firstSet = true;
     $union = [];
@@ -77,6 +90,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
+        $betAmount = 10 * combination(2, count($favorites));
+        if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $wonAmount = $qinAmount - $betAmount;
+        else $wonAmount = 0 - $betAmount;
+        $racetext .= "\t\t'won amount' => $wonAmount,\n";
+        $totalWonAmount += $wonAmount;
     }
  
     $racetext .= "\t],\n";
@@ -86,4 +104,5 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
+$outtext .= "//'total won amount' => $totalWonAmount,\n";
 file_put_contents($outFile, $outtext);
