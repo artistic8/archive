@@ -10,7 +10,7 @@ return [
 		'win amount' => 16,
 		'qin amount' => 89.5,
 		'f4 amount' => 101,
-		'f4 won amount' => -241.9,
+		'f4 won amount' => -2419,
 	],
 	'2' => [
 		/**
@@ -21,7 +21,7 @@ return [
 		'win amount' => 69,
 		'qin amount' => 121,
 		'f4 amount' => 798,
-		'f4 won amount' => -256.2,
+		'f4 won amount' => -2562,
 	],
 	'3' => [
 		/**
@@ -32,7 +32,7 @@ return [
 		'win amount' => 194.5,
 		'qin amount' => 2475,
 		'f4 amount' => 6846,
-		'f4 won amount' => 189.6,
+		'f4 won amount' => 1896,
 	],
 	'4' => [
 		/**
@@ -43,7 +43,7 @@ return [
 		'win amount' => 61.5,
 		'qin amount' => 2228.5,
 		'f4 amount' => 3382,
-		'f4 won amount' => -165.8,
+		'f4 won amount' => -1658,
 	],
 	'5' => [
 		/**
@@ -54,7 +54,7 @@ return [
 		'win amount' => 26,
 		'qin amount' => 87,
 		'f4 amount' => 2992,
-		'f4 won amount' => -558.8,
+		'f4 won amount' => -5588,
 	],
 	'6' => [
 		/**
@@ -65,7 +65,7 @@ return [
 		'win amount' => 107,
 		'qin amount' => 437.5,
 		'f4 amount' => 5759,
-		'f4 won amount' => -282.1,
+		'f4 won amount' => -2821,
 	],
 	'7' => [
 		/**
@@ -76,7 +76,7 @@ return [
 		'win amount' => 712,
 		'qin amount' => 1089,
 		'f4 amount' => 5387,
-		'f4 won amount' => -605.3,
+		'f4 won amount' => -6053,
 	],
 	'8' => [
 		/**
@@ -92,7 +92,7 @@ return [
 		'qin/trio($10)' => '3, 4, 11',
 		'win won amount' => -150,
 		'qin won amount' => -30,
-		'f4 won amount' => -181.8,
+		'f4 won amount' => -1818,
 	],
 	'9' => [
 		/**
@@ -103,7 +103,7 @@ return [
 		'win amount' => 64.5,
 		'qin amount' => 353,
 		'f4 amount' => 292,
-		'f4 won amount' => -630.8,
+		'f4 won amount' => -6308,
 	],
 	'10' => [
 		/**
@@ -114,7 +114,7 @@ return [
 		'win amount' => 14,
 		'qin amount' => 47,
 		'f4 amount' => 49,
-		'f4 won amount' => -235.1,
+		'f4 won amount' => -2351,
 	],
 	'11' => [
 		/**
@@ -125,10 +125,10 @@ return [
 		'win amount' => 105,
 		'qin amount' => 159,
 		'f4 amount' => 563,
-		'f4 won amount' => -801.7,
+		'f4 won amount' => -8017,
 	],
 ];
 //'total win: -150
 //'total qin: -30
-//'total f4: -3769.9
-//'total won amount': -3949.9
+//'total f4: -37699
+//'total won amount': -37879
