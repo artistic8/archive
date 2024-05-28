@@ -114,4 +114,5 @@ return [
 ];
 //'total win: 0
 //'total qin: 0
+//'total f4: 0
 //'total won amount': 0
