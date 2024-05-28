@@ -112,8 +112,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin won amount' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $totalWonAmount += $qinwonAmount;
-        $f4betAmount = 10 * combination(2, count($favorites)) * combination(2, count($runners) - count($favorites));
-        if(count(array_intersect($favorites, $officialWin)) === 2) $f4wonAmount = $f4Amount - $f4betAmount;
+        $f4betAmount = 10 * combination(2, count($favorites)) * combination(2, count($runners) - 2);
+        if(count(array_intersect($favorites, $officialWin)) >= 2) $f4wonAmount = $f4Amount - $f4betAmount;
         else $f4wonAmount = 0 - $f4betAmount;
         $racetext .= "\t\t'f4 won amount' => $f4wonAmount,\n";
         $totalF4 += $f4wonAmount;
