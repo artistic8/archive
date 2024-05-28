@@ -100,8 +100,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        $winbetAmount = 200 * count($favorites);
-        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = 20 * $winAmount - $winbetAmount;
+        $winbetAmount = 50 * count($favorites);
+        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = 5 * $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win won amount' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
@@ -112,8 +112,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin won amount' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $totalWonAmount += $qinwonAmount;
-        $f4betAmount = 10 * combination(2, count($favorites)) * combination(2, count($runners) - 2);
-        if(count(array_intersect($favorites, $officialWin)) >= 2) $f4wonAmount = $f4Amount - $f4betAmount;
+        $f4betAmount = 20 * combination(2, count($favorites)) * combination(2, count($runners) - 2);
+        if(count(array_intersect($favorites, $officialWin)) >= 2) $f4wonAmount = 2 * $f4Amount - $f4betAmount;
         else $f4wonAmount = 0 - $f4betAmount;
         $racetext .= "\t\t'f4 won amount' => $f4wonAmount,\n";
         $totalF4 += $f4wonAmount;
