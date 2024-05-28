@@ -24,7 +24,7 @@ foreach ($dir as $fileinfo) {
             foreach($favorites as $favorite){
                 $history[$raceNumber][$favorite]["win"] = array_values(array_unique(array_merge($history[$raceNumber][$favorite]["win"], array_slice($winners, 0, 1))));
                 $history[$raceNumber][$favorite]["qin"] = array_values(array_unique(array_merge($history[$raceNumber][$favorite]["qin"], array_slice($winners, 0, 2))));
-                $history[$raceNumber][$favorite]["trio"] = array_values(array_unique(array_merge($history[$raceNumber][$favorite]["trio"], $winners)));
+                $history[$raceNumber][$favorite]["trio"] = array_values(array_unique(array_merge($history[$raceNumber][$favorite]["trio"], array_slice($winners, 0, 3))));
                 sort($history[$raceNumber][$favorite]["win"]);
                 sort($history[$raceNumber][$favorite]["qin"]);
                 sort($history[$raceNumber][$favorite]["trio"]);

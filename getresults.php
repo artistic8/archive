@@ -53,14 +53,14 @@ foreach($parts as $key => $line){
         $var = str_replace(',', '', $var);
         $results[$raceNumber]['qin'] = $var + 0;
     }
-    if(strpos($line, 'TIERCE</td>')){
+    if(strpos($line, 'QUARTET</td>')){
         $var = $parts[$key + 1];
         $var = str_replace('<td class="f_fs14">', '', $var);
         $var = str_replace('</td>', '', $var);
         $var = str_ireplace("\x0D", "", $var);
         $var = str_replace(' ', '', $var);
         $var = str_replace(',', ', ', $var);
-        $results[$raceNumber]['tce'] = $var;
+        $results[$raceNumber]['quartet'] = $var;
     }
 }
 $outtext = "<?php\n\n";
@@ -74,7 +74,7 @@ foreach($contents as $raceNumber => $data){
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . $favorites . "',\n"; 
-    $racetext .= "\t\t'official win' => '" . $results[$raceNumber]['tce'] ."',\n"; 
+    $racetext .= "\t\t'official win' => '" . $results[$raceNumber]['quartet'] ."',\n"; 
     $racetext .= "\t\t'win amount' => " . $results[$raceNumber]['win'] .",\n"; 
     $racetext .= "\t\t'qin amount' => " . $results[$raceNumber]['qin'] .",\n"; 
     $racetext .= "\t],\n";
