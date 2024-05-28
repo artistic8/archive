@@ -10,6 +10,7 @@ return [
 		'win amount' => 25.5,
 		'qin amount' => 99,
 		'f4 amount' => 2467,
+		'f4 won amount' => -897.3,
 	],
 	'2' => [
 		/**
@@ -20,6 +21,7 @@ return [
 		'win amount' => 40,
 		'qin amount' => 119.5,
 		'f4 amount' => 605,
+		'f4 won amount' => -1083.5,
 	],
 	'3' => [
 		/**
@@ -30,6 +32,7 @@ return [
 		'win amount' => 94.5,
 		'qin amount' => 220.5,
 		'f4 amount' => 5361,
+		'f4 won amount' => -240,
 	],
 	'4' => [
 		/**
@@ -56,6 +59,7 @@ return [
 		'win amount' => 17.5,
 		'qin amount' => 52.5,
 		'f4 amount' => 1642,
+		'f4 won amount' => -693.8,
 	],
 	'6' => [
 		/**
@@ -66,6 +70,7 @@ return [
 		'win amount' => 77.5,
 		'qin amount' => 239.5,
 		'f4 amount' => 598,
+		'f4 won amount' => -798.2,
 	],
 	'7' => [
 		/**
@@ -76,6 +81,7 @@ return [
 		'win amount' => 14.5,
 		'qin amount' => 41.5,
 		'f4 amount' => 146,
+		'f4 won amount' => -90.4,
 	],
 	'8' => [
 		/**
@@ -86,6 +92,7 @@ return [
 		'win amount' => 1650,
 		'qin amount' => 11266,
 		'f4 amount' => 16646,
+		'f4 won amount' => 1092.6,
 	],
 	'9' => [
 		/**
@@ -96,6 +103,7 @@ return [
 		'win amount' => 15,
 		'qin amount' => 60,
 		'f4 amount' => 163,
+		'f4 won amount' => -841.7,
 	],
 	'10' => [
 		/**
@@ -106,9 +114,10 @@ return [
 		'win amount' => 404.5,
 		'qin amount' => 4495,
 		'f4 amount' => 13178,
+		'f4 won amount' => 173.8,
 	],
 ];
 //'total win: -47.5
 //'total qin: 135.5
-//'total f4: -448.2
-//'total won amount': -360.2
+//'total f4: -3826.7
+//'total won amount': -3738.7
