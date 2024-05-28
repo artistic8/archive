@@ -15,6 +15,7 @@ if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 $totalWonAmount = 0;
 $totalWin = 0;
 $totalQin = 0;
+$totalF4 = 0;
 
 $step = "bets";
 $raceDate = trim($argv[1]);
@@ -111,6 +112,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin won amount' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $totalWonAmount += $qinwonAmount;
+        $f4betAmount = 10 * combination(2, count($favorites)) * combination(2, count($runners) - count($favorites));
+        if(count(array_intersect($favorites, $officialWin)) === 2) $f4wonAmount = $f4Amount - $f4betAmount;
+        else $f4wonAmount = 0 - $f4betAmount;
+        $racetext .= "\t\t'f4 won amount' => $f4wonAmount,\n";
+        $totalF4 += $f4wonAmount;
+        $totalWonAmount += $f4wonAmount;
     }
  
     $racetext .= "\t],\n";
@@ -122,5 +129,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 $outtext .= "];\n";
 $outtext .= "//'total win: $totalWin\n";
 $outtext .= "//'total qin: $totalQin\n";
+$outtext .= "//'total f4: $totalF4\n";
 $outtext .= "//'total won amount': $totalWonAmount\n";
 file_put_contents($outFile, $outtext);
