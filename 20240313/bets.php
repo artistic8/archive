@@ -92,3 +92,6 @@ return [
 		'f4 amount' => 1096,
 	],
 ];
+//'total win: 0
+//'total qin: 0
+//'total won amount': 0
