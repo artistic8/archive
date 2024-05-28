@@ -45,7 +45,7 @@ return [
 		'qin/trio($10)' => '1, 4, 11',
 		'win won amount' => 75,
 		'qin won amount' => 51,
-		'f4 won amount' => 1320,
+		'f4 won amount' => 1080,
 	],
 	'5' => [
 		/**
@@ -100,5 +100,5 @@ return [
 ];
 //'total win: 75
 //'total qin: 51
-//'total f4: 1320
-//'total won amount': 1446
+//'total f4: 1080
+//'total won amount': 1206
