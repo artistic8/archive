@@ -46,24 +46,6 @@ return [
 		'win amount' => 48.5,
 		'qin amount' => 72,
 	],
-	'6' => [
-		/**
-		Race 6
-		*/
-		'favorites' => '1, 2, 3, 10',
-		'official win' => '3, 1, 12, 10',
-		'win amount' => 173.5,
-		'qin amount' => 208,
-		'set2' => '4, 5, 6, 11, 12',//count: 5
-		'win($10)' => '1, 2, 3, 10',
-		'win($20)' => '2, 3',
-		'qin/trio($10)' => '1, 2, 3, 10',
-		'qin($10)' => '1, 2, 3, 10 X 4, 5, 6, 11, 12',
-		'win(favorites)' => 133.5,
-		'win(set3)' => 307,
-		'qin(favorites)' => 148,
-		'qin(favorites X set2)' => -200,
-	],
 	'7' => [
 		/**
 		Race 7
@@ -92,6 +74,6 @@ return [
 		'qin amount' => 170.5,
 	],
 ];
-//total win: 440.5
-//total qin: -52
-//total: 388.5
+//total win: 0
+//total qin: 0
+//total: 0
