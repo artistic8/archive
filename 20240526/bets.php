@@ -42,8 +42,10 @@ return [
 		'qin/trio($10)' => '1, 4, 5',
 		'qin($10)' => '1, 4, 5 X 6, 9',
 		'win(favorites)' => -38,
+		'total win bets' => 240,
 		'win(set3)' => -120,
 		'qin(favorites)' => 135.5,
+		'total qin bets' => 90,
 		'qin(favorites X set2)' => -60,
 	],
 	'5' => [
