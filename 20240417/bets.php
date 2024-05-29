@@ -46,6 +46,15 @@ return [
 		'win amount' => 48.5,
 		'qin amount' => 72,
 	],
+	'6' => [
+		/**
+		Race 6
+		*/
+		'favorites' => '1',
+		'official win' => '3, 4, 10, 9',
+		'win amount' => 48.5,
+		'qin amount' => 72,
+	],
 	'7' => [
 		/**
 		Race 7
