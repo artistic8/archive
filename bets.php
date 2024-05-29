@@ -122,6 +122,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin(favorites)' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $total += $qinwonAmount;
+        $qinbetAmount = 10 * combination(2, count($set2));
+        if(count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount = $qinAmount - $qinbetAmount;
+        else $qinwonAmount = 0 - $qinbetAmount;
+        $racetext .= "\t\t'qin(set2)' => $qinwonAmount,\n";
+        $totalQin += $qinwonAmount;
+        $total += $qinwonAmount;
       }
     $racetext .= "\t],\n";
     unset($oldFavorites);
