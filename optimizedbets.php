@@ -31,7 +31,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    //find optimal bets for horses in $all
+    //find optimal win bets for horses in $all
    
     $outtext .= $racetext;
 }
