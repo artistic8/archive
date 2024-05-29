@@ -36,7 +36,7 @@ return [
 		'official win' => '1, 5, 13, 3',
 		'win amount' => 20.5,
 		'qin amount' => 165.5,
-		'set2' => '6, 9',
+		'set2' => '6, 9',//count: 2
 		'win($20)' => '1, 4, 5',
 		'win(favorites)' => -47.5,
 		'qin(favorites)' => 135.5,
