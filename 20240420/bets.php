@@ -24,12 +24,6 @@ return [
 		'official win' => '12, 2, 5, 6',
 		'win amount' => 63,
 		'qin amount' => 232.5,
-		'win($10)' => '2, 5, 7, 10, 12, 14',//count: 6
-		'win($20)' => '2, 5, 10, 12',
-		'win(favorites)' => 46,
-		'win(set2)' => 3,
-		'qin(favorites)' => 172.5,
-		'qin(set2)' => 82.5,
 	],
 	'3' => [
 		/**
@@ -72,12 +66,6 @@ return [
 		'official win' => '11, 8, 3, 2',
 		'win amount' => 233.5,
 		'qin amount' => 703,
-		'win($10)' => '2, 6, 8, 10, 12',//count: 5
-		'win($20)' => '2, 6, 8',
-		'win(favorites)' => -60,
-		'win(set2)' => -50,
-		'qin(favorites)' => -30,
-		'qin(set2)' => -100,
 	],
 	'7' => [
 		/**
@@ -96,12 +84,6 @@ return [
 		'official win' => '4, 6, 1, 7',
 		'win amount' => 121,
 		'qin amount' => 401.5,
-		'win($10)' => '7',//count: 1
-		'win($20)' => '7',
-		'win(favorites)' => -20,
-		'win(set2)' => -10,
-		'qin(favorites)' => 0,
-		'qin(set2)' => 0,
 	],
 	'9' => [
 		/**
@@ -111,12 +93,6 @@ return [
 		'official win' => '7, 8, 2, 6',
 		'win amount' => 77,
 		'qin amount' => 976,
-		'win($10)' => '6',//count: 1
-		'win($20)' => '6',
-		'win(favorites)' => -20,
-		'win(set2)' => -10,
-		'qin(favorites)' => 0,
-		'qin(set2)' => 0,
 	],
 	'10' => [
 		/**
@@ -126,14 +102,8 @@ return [
 		'official win' => '14, 1, 3, 10',
 		'win amount' => 120,
 		'qin amount' => 1102.5,
-		'win($10)' => '3, 4, 7, 11, 12, 14',//count: 6
-		'win($20)' => '3, 4, 11',
-		'win(favorites)' => -60,
-		'win(set2)' => 60,
-		'qin(favorites)' => -30,
-		'qin(set2)' => -150,
 	],
 ];
-//total win: -173.5
-//total qin: -301.5
-//total: -475
+//total win: -52.5
+//total qin: -246.5
+//total: -299

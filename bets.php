@@ -99,7 +99,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(count($inter) >= 2 && count($favorites) >= 3){
         $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
         sort($set2);
-        $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
+        $racetext .= "\t\t'set2' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         //$racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
        // $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
@@ -109,22 +109,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win(favorites)' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
         $total += $winwonAmount;
-        $winbetAmount = 10 * count($set2);
-        if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $winwonAmount = $winAmount - $winbetAmount;
-        else $winwonAmount = 0 - $winbetAmount;
-        $racetext .= "\t\t'win(set2)' => $winwonAmount,\n";
-        $totalWin += $winwonAmount;
-        $total += $winwonAmount;
         $qinbetAmount = 10 * combination(2, count($favorites));
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount = $qinAmount - $qinbetAmount;
         else $qinwonAmount = 0 - $qinbetAmount;
         $racetext .= "\t\t'qin(favorites)' => $qinwonAmount,\n";
-        $totalQin += $qinwonAmount;
-        $total += $qinwonAmount;
-        $qinbetAmount = 10 * combination(2, count($set2));
-        if(count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount = $qinAmount - $qinbetAmount;
-        else $qinwonAmount = 0 - $qinbetAmount;
-        $racetext .= "\t\t'qin(set2)' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $total += $qinwonAmount;
       }
