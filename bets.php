@@ -80,9 +80,25 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($qinAmount)){
         $racetext .= "\t\t'qin amount' => " . $qinAmount . ",\n"; 
     }
-    $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
-    sort($set2);
-    if(count($set2) < 7){
+    $firstSet = true;
+    $union = [];
+    foreach($favorites as $F){
+        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        $union = array_values(array_unique(array_merge($union, $candidates)));
+        if($firstSet) {
+            $inter = $candidates;
+            $firstSet = false;
+        }
+        else $inter = array_intersect($inter, $candidates);
+    }
+    sort($union);
+    sort($inter);
+    //$racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+    //if(!empty($inter)) $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    $inter = array_intersect($favorites, $inter);
+    if(count($inter) >= 2 && count($favorites) >= 3){
+        $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
+        sort($set2);
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         //$racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
@@ -111,7 +127,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin(set2)' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $total += $qinwonAmount;
-    }
+      }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
