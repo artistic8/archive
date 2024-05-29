@@ -123,7 +123,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalWin += $winwonAmount;
         $total += $winwonAmount;
         $qinbetAmount = 10 * combination(2, count($favorites));
-        $totalQinBets += $qinbetAmount;
+        $totalQinBets = $qinbetAmount;
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount = $qinAmount - $qinbetAmount;
         else $qinwonAmount = 0 - $qinbetAmount;
         $racetext .= "\t\t'qin(favorites)' => $qinwonAmount,\n";
