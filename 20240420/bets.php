@@ -14,6 +14,7 @@ return [
 		'win(favorites)' => 24,
 		'win(set2)' => -18,
 		'qin(favorites)' => -30,
+		'qin(set2)' => -150,
 	],
 	'2' => [
 		/**
@@ -37,6 +38,7 @@ return [
 		'win(favorites)' => -19,
 		'win(set2)' => -39.5,
 		'qin(favorites)' => -30,
+		'qin(set2)' => -36.5,
 	],
 	'4' => [
 		/**
@@ -103,5 +105,5 @@ return [
 	],
 ];
 //total win: -52.5
-//total qin: -60
-//total: -112.5
+//total qin: -246.5
+//total: -299
