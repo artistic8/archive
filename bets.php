@@ -102,9 +102,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'set2' => '" . implode(", ", $set2) . "',\n"; 
         $unitBet = 20;
-        $racetext .= "\t\t'win(2 * $unitBet)' => '" . implode(", ", $favorites) . "',\n"; 
+        $racetext .= "\t\t'win($" . 2 * $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $set3 = array_slice($favorites, 1, 2);
-        $racetext .= "\t\t'win(3 * $unitBet)' => '" . implode(", ", $set3) . "',\n"; 
+        $racetext .= "\t\t'win($" . 3 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
         $winbetAmount = 2 * $unitBet * count($favorites);
