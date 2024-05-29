@@ -93,9 +93,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
   //  $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
     $inter = array_intersect($favorites, $inter);
     if(count($inter) >= 2 && count($favorites) >= 3){
-        $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
-        $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
-        $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
+      //  $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
+        //$racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
+       // $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $winbetAmount = 50 * count($favorites);
         if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = 5 * $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
