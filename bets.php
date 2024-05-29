@@ -108,18 +108,22 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
         $winbetAmount = 2 * $unitBet * count($favorites);
+        $totalWinBets = $winbetAmount;
         if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = (2 * $unitBet / 10) * $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win(favorites)' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
         $total += $winwonAmount;
         $winbetAmount = 3 * $unitBet * count($set3);
+        $totalWinBets += $winbetAmount;
+        $racetext .= "\t\t'total win bets' => $totalWinBets\n";
         if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $winwonAmount = (3 * $unitBet / 10) *$winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win(set3)' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
         $total += $winwonAmount;
         $qinbetAmount = 10 * combination(2, count($favorites));
+        $totalQinBets += $qinbetAmount;
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount = $qinAmount - $qinbetAmount;
         else $qinwonAmount = 0 - $qinbetAmount;
         $racetext .= "\t\t'qin(favorites)' => $qinwonAmount,\n";
@@ -127,6 +131,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $total += $qinwonAmount;
         //qin 2: {favorites} X {set2}
         $qinbetAmount = 10 * count($favorites) * count($set2);
+        $totalQinBets += $qinbetAmount;
+        $racetext .= "\t\t'total qin bets' => $totalQinBets\n";
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
             $qinwonAmount = $qinAmount - $qinbetAmount;
         else $qinwonAmount = 0 - $qinbetAmount;
