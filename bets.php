@@ -101,7 +101,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         sort($set2);
         $set2 = array_diff($set2, $favorites);
         if(count($set2) >= 5) continue;
-        $racetext .= "\t\t'set2' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
+        $racetext .= "\t\t'set2' => '" . implode(", ", $set2) . "',\n"; 
         $unitBet = 20;
         $racetext .= "\t\t'win(2 * $unitBet)' => '" . implode(", ", $favorites) . "',\n"; 
         $set3 = array_slice($favorites, 1, 2);
