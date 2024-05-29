@@ -15,7 +15,6 @@ if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 $totalWonAmount = 0;
 $totalWin = 0;
 $totalQin = 0;
-$totalF4 = 0;
 
 $step = "bets";
 $raceDate = trim($argv[1]);
@@ -76,9 +75,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($qinAmount)){
         $racetext .= "\t\t'qin amount' => " . $qinAmount . ",\n"; 
     }
-    if(isset($f4Amount)){
-        $racetext .= "\t\t'f4 amount' => " . $f4Amount . ",\n"; 
-    }
     $firstSet = true;
     $union = [];
     foreach($favorites as $F){
@@ -99,7 +95,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
-        $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
+       // $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $winbetAmount = 50 * count($favorites);
         if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = 5 * $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
@@ -112,13 +108,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'qin won amount' => $qinwonAmount,\n";
         $totalQin += $qinwonAmount;
         $totalWonAmount += $qinwonAmount;
-        $f4betAmount = 10 * combination(2, $favorites) * combination(3, count($runners) - 2);
-        if(count(array_intersect($favorites, $officialWin)) >= 2) $f4wonAmount = (count(array_intersect($favorites, $officialWin)) - 1) * $f4Amount - $f4betAmount;
-        else $f4wonAmount = 0 - $f4betAmount;
-        $racetext .= "\t\t'f4 won amount' => $f4wonAmount,\n";
-        $totalF4 += $f4wonAmount;
-        $totalWonAmount += $f4wonAmount;
-    }
+      }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
@@ -128,6 +118,5 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 $outtext .= "];\n";
 $outtext .= "//'total win: $totalWin\n";
 $outtext .= "//'total qin: $totalQin\n";
-$outtext .= "//'total f4: $totalF4\n";
 $outtext .= "//'total won amount': $totalWonAmount\n";
 file_put_contents($outFile, $outtext);
