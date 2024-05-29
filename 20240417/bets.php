@@ -56,7 +56,7 @@ return [
 		'qin amount' => 208,
 		'set2' => '4, 5, 6, 11, 12',
 		'win($20)' => '1, 2, 3, 10',
-		'win(favorites)' => 667.5,
+		'win(favorites)' => 1335,
 		'qin(favorites)' => 148,
 		'qin(favorites X set2)' => -200,
 	],
@@ -88,6 +88,6 @@ return [
 		'qin amount' => 170.5,
 	],
 ];
-//total win: 667.5
+//total win: 1335
 //total qin: -52
-//total: 615.5
+//total: 1283

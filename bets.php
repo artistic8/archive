@@ -104,18 +104,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($20)' => '" . implode(", ", $favorites) . "',\n"; 
         //$racetext .= "\t\t'win($20)' => '" . implode(", ", array_slice($favorites, 1, 2)) . "',\n"; 
        // $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        $winbetAmount = 100 * count($favorites);
-        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = 10 * $winAmount - $winbetAmount;
+        $winbetAmount = 50 * count($favorites);
+        if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $winwonAmount = 5 * $winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win(favorites)' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
         $total += $winwonAmount;
-        $qinbetAmount = 10 * combination(2, count($favorites));
-        if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount = $qinAmount - $qinbetAmount;
-        else $qinwonAmount = 0 - $qinbetAmount;
-        $racetext .= "\t\t'qin(favorites)' => $qinwonAmount,\n";
-        $totalQin += $qinwonAmount;
-        $total += $qinwonAmount;
         //qin 2: {favorites} X {set2}
         $qinbetAmount = 10 * count($favorites) * count($set2);
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
