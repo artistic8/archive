@@ -84,7 +84,7 @@ return [
 	'9' => [
 		/**
 		Race 9
-		*/./pack
+		*/
 		'favorites' => '2, 9',
 		'official win' => '8, 2, 9, 6',
 		'win amount' => 42,
