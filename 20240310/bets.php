@@ -74,6 +74,7 @@ return [
 		'qin amount' => 159,
 		'win($20)' => '4, 6, 8',
 		'win($20)' => '6, 8',
+		'qin/trio($10)' => '4, 6, 8',
 		'win won amount' => 177.5,
 		'qin won amount' => 129,
 	],
