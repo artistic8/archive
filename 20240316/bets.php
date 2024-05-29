@@ -9,15 +9,13 @@ return [
 		'official win' => '4, 10, 5, 3',
 		'win amount' => 73,
 		'qin amount' => 286,
-		'set2' => '4, 11',
-		'win($40)' => '1, 3, 10',
-		'win($60)' => '3, 10',
+		'f4 amount' => 3514,
+		'win($20)' => '1, 3, 10',
+		'win($20)' => '3, 10',
 		'qin/trio($10)' => '1, 3, 10',
-		'qin($10)' => '1, 3, 10 X 4, 11',
-		'win(favorites)' => -120,
-		'win(set3)' => -120,
-		'qin(favorites)' => -30,
-		'qin(favorites X set2)' => 226,
+		'win won amount' => -150,
+		'qin won amount' => -30,
+		'f4 won amount' => 2078,
 	],
 	'2' => [
 		/**
@@ -27,6 +25,7 @@ return [
 		'official win' => '4, 10, 3, 9',
 		'win amount' => 63.5,
 		'qin amount' => 222.5,
+		'f4 amount' => 1181,
 	],
 	'3' => [
 		/**
@@ -36,6 +35,7 @@ return [
 		'official win' => '9, 4, 1, 8',
 		'win amount' => 83,
 		'qin amount' => 620.5,
+		'f4 amount' => 2284,
 	],
 	'4' => [
 		/**
@@ -45,6 +45,7 @@ return [
 		'official win' => '10, 5, 1, 9',
 		'win amount' => 168,
 		'qin amount' => 5059,
+		'f4 amount' => 17997,
 	],
 	'5' => [
 		/**
@@ -54,6 +55,7 @@ return [
 		'official win' => '3, 11, 10, 12',
 		'win amount' => 95.5,
 		'qin amount' => 800,
+		'f4 amount' => 1095,
 	],
 	'6' => [
 		/**
@@ -63,6 +65,7 @@ return [
 		'official win' => '2, 11, 12, 7',
 		'win amount' => 35.5,
 		'qin amount' => 193.5,
+		'f4 amount' => 2731,
 	],
 	'7' => [
 		/**
@@ -72,6 +75,7 @@ return [
 		'official win' => '11, 3, 6, 1',
 		'win amount' => 69,
 		'qin amount' => 231,
+		'f4 amount' => 820,
 	],
 	'8' => [
 		/**
@@ -81,6 +85,7 @@ return [
 		'official win' => '5, 4, 1, 12',
 		'win amount' => 47.5,
 		'qin amount' => 222.5,
+		'f4 amount' => 826,
 	],
 	'9' => [
 		/**
@@ -90,6 +95,7 @@ return [
 		'official win' => '10, 6, 8, 9',
 		'win amount' => 24.5,
 		'qin amount' => 52.5,
+		'f4 amount' => 487,
 	],
 	'10' => [
 		/**
@@ -99,8 +105,10 @@ return [
 		'official win' => '2, 9, 4, 1',
 		'win amount' => 69,
 		'qin amount' => 149.5,
+		'f4 amount' => 1642,
 	],
 ];
-//total win: -240
-//total qin: 196
-//total: -44
+//'total win: -150
+//'total qin: -30
+//'total f4: 2078
+//'total won amount': 1898

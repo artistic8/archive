@@ -9,6 +9,7 @@ return [
 		'official win' => '1, 7, 12, 11',
 		'win amount' => 25.5,
 		'qin amount' => 99,
+		'f4 amount' => 2467,
 	],
 	'2' => [
 		/**
@@ -18,6 +19,7 @@ return [
 		'official win' => '10, 9, 2, 6',
 		'win amount' => 40,
 		'qin amount' => 119.5,
+		'f4 amount' => 605,
 	],
 	'3' => [
 		/**
@@ -27,6 +29,7 @@ return [
 		'official win' => '9, 11, 4, 8',
 		'win amount' => 94.5,
 		'qin amount' => 220.5,
+		'f4 amount' => 5361,
 	],
 	'4' => [
 		/**
@@ -36,15 +39,13 @@ return [
 		'official win' => '1, 5, 13, 3',
 		'win amount' => 20.5,
 		'qin amount' => 165.5,
-		'set2' => '6, 9',
-		'win($40)' => '1, 4, 5',
-		'win($60)' => '4, 5',
+		'f4 amount' => 4098,
+		'win($20)' => '1, 4, 5',
+		'win($20)' => '4, 5',
 		'qin/trio($10)' => '1, 4, 5',
-		'qin($10)' => '1, 4, 5 X 6, 9',
-		'win(favorites)' => -38,
-		'win(set3)' => -120,
-		'qin(favorites)' => 135.5,
-		'qin(favorites X set2)' => -60,
+		'win won amount' => -47.5,
+		'qin won amount' => 135.5,
+		'f4 won amount' => -384,
 	],
 	'5' => [
 		/**
@@ -54,6 +55,7 @@ return [
 		'official win' => '1, 7, 2, 9',
 		'win amount' => 17.5,
 		'qin amount' => 52.5,
+		'f4 amount' => 1642,
 	],
 	'6' => [
 		/**
@@ -63,6 +65,7 @@ return [
 		'official win' => '11, 9, 13, 4',
 		'win amount' => 77.5,
 		'qin amount' => 239.5,
+		'f4 amount' => 598,
 	],
 	'7' => [
 		/**
@@ -72,6 +75,7 @@ return [
 		'official win' => '1, 3, 5, 8',
 		'win amount' => 14.5,
 		'qin amount' => 41.5,
+		'f4 amount' => 146,
 	],
 	'8' => [
 		/**
@@ -81,6 +85,7 @@ return [
 		'official win' => '1, 4, 11, 2',
 		'win amount' => 1650,
 		'qin amount' => 11266,
+		'f4 amount' => 16646,
 	],
 	'9' => [
 		/**
@@ -90,6 +95,7 @@ return [
 		'official win' => '9, 1, 3, 13',
 		'win amount' => 15,
 		'qin amount' => 60,
+		'f4 amount' => 163,
 	],
 	'10' => [
 		/**
@@ -99,8 +105,10 @@ return [
 		'official win' => '11, 9, 10, 12',
 		'win amount' => 404.5,
 		'qin amount' => 4495,
+		'f4 amount' => 13178,
 	],
 ];
-//total win: -158
-//total qin: 75.5
-//total: -82.5
+//'total win: -47.5
+//'total qin: 135.5
+//'total f4: -384
+//'total won amount': -296
