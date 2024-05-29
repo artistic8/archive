@@ -36,7 +36,7 @@ return [
 		'official win' => '11, 1, 10, 2',
 		'win amount' => 45,
 		'qin amount' => 81,
-		'set2' => '12',//count: 1
+		'set2' => '12',
 		'win(2 * 20)' => '1, 4, 11',
 		'win(3 * 20)' => '4, 11',
 		'qin/trio($10)' => '1, 4, 11',
