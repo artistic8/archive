@@ -9,6 +9,7 @@ return [
 		'official win' => '4, 10, 5, 3',
 		'win amount' => 73,
 		'qin amount' => 286,
+		'win($20)' => '1, 3, 10',
 		'win won amount' => -150,
 		'qin won amount' => -30,
 	],

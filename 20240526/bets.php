@@ -36,6 +36,7 @@ return [
 		'official win' => '1, 5, 13, 3',
 		'win amount' => 20.5,
 		'qin amount' => 165.5,
+		'win($20)' => '1, 4, 5',
 		'win won amount' => -47.5,
 		'qin won amount' => 135.5,
 	],
