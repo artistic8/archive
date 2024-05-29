@@ -114,8 +114,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win(favorites)' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
         $total += $winwonAmount;
-        $winbetAmount = $unitBet * count($set3);
-        if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $winwonAmount = ($unitBet / 10) *$winAmount - $winbetAmount;
+        $winbetAmount = 2 * $unitBet * count($set3);
+        if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $winwonAmount = (2 * $unitBet / 10) *$winAmount - $winbetAmount;
         else $winwonAmount = 0 - $winbetAmount;
         $racetext .= "\t\t'win(set3)' => $winwonAmount,\n";
         $totalWin += $winwonAmount;
