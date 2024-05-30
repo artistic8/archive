@@ -122,7 +122,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',\n"; 
         $winbetAmountSet2 = 10 * count($set2);
-        $totalWinBets += $winbetAmountSet3;
+        $totalWinBets += $winbetAmountSet2;
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
         $qinbetAmount2 = 10 * count($favorites) * count($set2);
         $qinbetAmount = $qinbetAmount1 + $qinbetAmount2;
@@ -135,7 +135,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'win(favorites)' => $winwonAmount,\n";
             $totalWin += $winwonAmount;
             $total += $winwonAmount;
-            if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $winwonAmount = $winAmount - $winbetAmountSet3;
+            if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $winwonAmount = $winAmount - $winbetAmountSet2;
             else $winwonAmount = 0 - $winbetAmountSet2;
             $racetext .= "\t\t'win(set2)' => $winwonAmount,\n";
             $totalWin += $winwonAmount;
