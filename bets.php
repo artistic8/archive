@@ -140,10 +140,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $winbetAmountFavs = 1 * $unitBet * count($favorites);
         $totalWinBets = $winbetAmountFavs;
-        // $set3 = array_slice($favorites, 0, 2);
-        // $racetext .= "\t\t'win($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
-        // $winbetAmountSet3 = 1 * $unitBet * count($set3);
-        // $totalWinBets = $winbetAmountSet3;
+        $set3 = array_slice($favorites, 1, 2);
+        $racetext .= "\t\t'win($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
+        $winbetAmountSet3 = 1 * $unitBet * count($set3);
+        $totalWinBets = $winbetAmountSet3;
         $racetext .= "\t\t'win bets' => $totalWinBets,\n";
         $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $favorites) . "',\n"; 
         // $plaBetAmount = 1 * $unitBet * count($favorites);
@@ -185,6 +185,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $winwonAmount = $winAmount - $winbetAmountSet2;
             else $winwonAmount = 0 - $winbetAmountSet2;
             $racetext .= "\t\t'win(set2)' => $winwonAmount,\n";
+            $totalWin += $winwonAmount;
+            $total += $winwonAmount;
+            if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $winwonAmount =  ($unitBet / 10) * $winAmount - $winbetAmountSet3;
+            else $winwonAmount = 0 - $winbetAmountSet3;
+            $racetext .= "\t\t'win(set3)' => $winwonAmount,\n";
             $totalWin += $winwonAmount;
             $total += $winwonAmount;
             // if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 3)))) {
