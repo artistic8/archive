@@ -136,11 +136,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $set2 = array_values(array_unique(array_merge($sums, $mults)));
         $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
-        $totalBets += 10 * count($set2);
+        $totalBets = 10 * count($set2);
         if(count($set2) !== 2){
             $unitBet = 70;
             $racetext .= "\t\t'win bet($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
-            $totalBets = 1 * $unitBet * count($favorites);
+            $totalBets += 1 * $unitBet * count($favorites);
             $set3 = array_slice($favorites, 1, 2);
             $racetext .= "\t\t'win bet($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
             $totalBets += 1 * $unitBet * count($set3);
