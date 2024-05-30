@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '3, 7, 8, 10',
 		'official win' => '3, 7, 10, 2',
+		'set 2' => '10, 11',
 		'win amount' => 39,
 		'qin amount' => 112,
 		'place amount' => [
@@ -14,7 +15,6 @@ return [
 			7 => 16.5,
 			10 => 19,
 		],
-		'set 2' => '10, 11',
 		'set 2' => '11',
 	],
 	'2' => [
@@ -23,6 +23,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'official win' => '5, 6, 4, 7',
+		'set 2' => '7, 12',
 		'win amount' => 412.5,
 		'qin amount' => 4879.5,
 		'place amount' => [
@@ -31,7 +32,6 @@ return [
 			4 => 19.5,
 		],
 		'set 2' => '7, 12',
-		'set 2' => '7, 12',
 	],
 	'3' => [
 		/**
@@ -39,6 +39,7 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5, 10',
 		'official win' => '4, 3, 5, 9',
+		'set 2' => '3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win amount' => 61,
 		'qin amount' => 259,
 		'place amount' => [
@@ -46,7 +47,6 @@ return [
 			3 => 31.5,
 			5 => 27.5,
 		],
-		'set 2' => '3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'set 2' => '6, 7, 8, 9, 11, 12',
 	],
 	'4' => [
@@ -55,6 +55,7 @@ return [
 		*/
 		'favorites' => '2, 5, 6',
 		'official win' => '5, 6, 1, 3',
+		'set 2' => '7, 8',
 		'win amount' => 36.5,
 		'qin amount' => 181,
 		'place amount' => [
@@ -63,7 +64,6 @@ return [
 			1 => 16.5,
 		],
 		'set 2' => '7, 8',
-		'set 2' => '7, 8',
 	],
 	'5' => [
 		/**
@@ -71,6 +71,7 @@ return [
 		*/
 		'favorites' => '1, 3, 7',
 		'official win' => '7, 2, 1, 8',
+		'set 2' => '3, 4, 7, 8',
 		'win amount' => 29.5,
 		'qin amount' => 262,
 		'place amount' => [
@@ -78,7 +79,6 @@ return [
 			2 => 50,
 			1 => 32.5,
 		],
-		'set 2' => '3, 4, 7, 8',
 		'set 2' => '4, 8',
 	],
 	'6' => [
@@ -87,6 +87,7 @@ return [
 		*/
 		'favorites' => '1, 5, 9',
 		'official win' => '1, 12, 9, 6',
+		'set 2' => '5, 6, 9, 10',
 		'win amount' => 51,
 		'qin amount' => 227.5,
 		'place amount' => [
@@ -94,7 +95,6 @@ return [
 			12 => 23,
 			9 => 18.5,
 		],
-		'set 2' => '5, 6, 9, 10',
 		'set 2' => '6, 10',
 	],
 	'7' => [
@@ -103,6 +103,7 @@ return [
 		*/
 		'favorites' => '4, 9',
 		'official win' => '2, 4, 3, 5',
+		'set 2' => '',
 		'win amount' => 77,
 		'qin amount' => 100,
 		'place amount' => [
@@ -111,7 +112,6 @@ return [
 			3 => 18,
 		],
 		'set 2' => '',
-		'set 2' => '',
 	],
 	'8' => [
 		/**
@@ -119,6 +119,7 @@ return [
 		*/
 		'favorites' => '3, 8',
 		'official win' => '8, 4, 10, 12',
+		'set 2' => '11',
 		'win amount' => 41.5,
 		'qin amount' => 150,
 		'place amount' => [
@@ -127,7 +128,6 @@ return [
 			10 => 34.5,
 		],
 		'set 2' => '11',
-		'set 2' => '11',
 	],
 	'9' => [
 		/**
@@ -135,6 +135,7 @@ return [
 		*/
 		'favorites' => '3, 7, 11',
 		'official win' => '9, 11, 1, 3',
+		'set 2' => '10',
 		'win amount' => 63.5,
 		'qin amount' => 270,
 		'place amount' => [
@@ -142,7 +143,6 @@ return [
 			11 => 26.5,
 			1 => 34.5,
 		],
-		'set 2' => '10',
 		'set 2' => '10',
 	],
 ];
