@@ -14,13 +14,9 @@ return [
 			10 => 21.5,
 			5 => 52,
 		],
-		'win bet($70)' => '1, 3, 10',
 		'win bet($10)' => '4, 11',//count: 2
-		'win bet($70)' => '3, 10',
-		'qin bet($20)' => '1, 3, 10',
-		'qin($10)' => '1, 3, 10 X 4, 11',
-		'total bets' => 490,
-		'total won in race' => -131,
+		'total bets' => 20,
+		'total won in race' => 53,
 	],
 	'2' => [
 		/**
@@ -149,4 +145,4 @@ return [
 		],
 	],
 ];
-//total: -131
+//total: 53
