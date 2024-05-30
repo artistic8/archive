@@ -114,7 +114,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         // $totalWinBets = $winbetAmountSet3;
         $racetext .= "\t\t'win bets' => $totalWinBets,\n";
         $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $favorites) . "',\n"; 
-        $plaBetAmount = 1 * $unitBet;
+        $plaBetAmount = 1 * $unitBet * count($favorites);
         $racetext .= "\t\t'place bets' => $plaBetAmount,\n";
         // $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
         // // $set2 = array_diff($set2, $favorites);
@@ -136,10 +136,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             // $totalWin += $winwonAmount;
             // $total += $winwonAmount;
             if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 3)))) {
-                $plaWonAmount = 0;
+                $plaWonAmount = 0 - $plaBetAmount;
                 $placed = array_intersect($favorites, array_slice($officialWin, 0, 3));
                 foreach($placed as $fuck){
-                    $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck] - $plaBetAmount;
+                    $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck];
                 }
             }
             else $plaWonAmount = 0 - $plaBetAmount;
