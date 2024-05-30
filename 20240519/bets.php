@@ -141,3 +141,6 @@ return [
 		],
 	],
 ];
+//total win: 0
+//total qin: 0
+//total: 0
