@@ -117,7 +117,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         // $plaBetAmount = 1 * $unitBet * count($favorites);
         // $racetext .= "\t\t'place bets' => $plaBetAmount,\n";
         $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        $qinbetAmount1 = 10 * combination(2, count($favorites));
+        $qinbetAmount1 = 20 * combination(2, count($favorites));
         $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
         $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',\n"; 
@@ -151,7 +151,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             // $racetext .= "\t\t'place(favorites)' => $plaWonAmount,\n";
             // $totalPlace += $plaWonAmount;
             // $total += $plaWonAmount; 
-            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount1 = $qinAmount - $qinbetAmount1;
+            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount1 = 2 * $qinAmount - $qinbetAmount1;
             else $qinwonAmount1 = 0 - $qinbetAmount1;
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
                 $qinwonAmount2 = $qinAmount - $qinbetAmount2;
