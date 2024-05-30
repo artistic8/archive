@@ -133,7 +133,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($inter);
     $inter = array_intersect($favorites, $inter);
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
+    sort($set2);
+    $racetext .= "\t\t'set 2' => '" . implode(", ", $set2) . "',\n"; 
     $set2 = array_diff($set2, $favorites);
+    $racetext .= "\t\t'set 2' => '" . implode(", ", $set2) . "',\n"; 
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
         $totalBets = 10 * count($set2);
