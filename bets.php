@@ -135,7 +135,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             // $racetext .= "\t\t'win(set3)' => $winwonAmount,\n";
             // $totalWin += $winwonAmount;
             // $total += $winwonAmount;
-            if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 3)))) $plaWonAmount = (1 * $unitBet / 10) * $placeAmount[end($favorites)] - $plaBetAmount;
+            if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 3)))) {
+                $plaWonAmount = 0;
+                $placed = array_intersect($favorites, array_slice($officialWin, 0, 3));
+                foreach($placed as $fuck){
+                    $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck] - $plaBetAmount;
+                }
+            }
             else $plaWonAmount = 0 - $plaBetAmount;
             $racetext .= "\t\t'place(favorites)' => $plaWonAmount,\n";
             $totalPlace += $plaWonAmount;
