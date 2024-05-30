@@ -9,11 +9,6 @@ return [
 		'official win' => '5, 2, 7, 9',
 		'win amount' => 58,
 		'qin amount' => 307,
-		'place amount' => [
-			5 => 19.5,
-			2 => 38.5,
-			7 => 15,
-		],
 	],
 	'2' => [
 		/**
@@ -23,11 +18,6 @@ return [
 		'official win' => '2, 3, 14, 12',
 		'win amount' => 48,
 		'qin amount' => 55,
-		'place amount' => [
-			2 => 16,
-			3 => 13,
-			14 => 23,
-		],
 	],
 	'3' => [
 		/**
@@ -37,11 +27,6 @@ return [
 		'official win' => '3, 1, 6, 10',
 		'win amount' => 95.5,
 		'qin amount' => 922,
-		'place amount' => [
-			3 => 28.5,
-			1 => 58,
-			6 => 14,
-		],
 	],
 	'4' => [
 		/**
@@ -51,11 +36,6 @@ return [
 		'official win' => '12, 4, 6, 11',
 		'win amount' => 50,
 		'qin amount' => 190.5,
-		'place amount' => [
-			12 => 19.5,
-			4 => 21,
-			6 => 22,
-		],
 	],
 	'5' => [
 		/**
@@ -65,11 +45,6 @@ return [
 		'official win' => '11, 5, 3, 10',
 		'win amount' => 424,
 		'qin amount' => 897,
-		'place amount' => [
-			11 => 74.5,
-			5 => 20,
-			3 => 59.5,
-		],
 	],
 	'6' => [
 		/**
@@ -79,11 +54,6 @@ return [
 		'official win' => '7, 3, 6, 10',
 		'win amount' => 41,
 		'qin amount' => 343,
-		'place amount' => [
-			7 => 17,
-			3 => 48.5,
-			6 => 16.5,
-		],
 	],
 	'7' => [
 		/**
@@ -93,11 +63,6 @@ return [
 		'official win' => '1, 8, 4, 14',
 		'win amount' => 16.5,
 		'qin amount' => 397,
-		'place amount' => [
-			1 => 10.5,
-			8 => 95.5,
-			4 => 20.5,
-		],
 	],
 	'8' => [
 		/**
@@ -107,11 +72,6 @@ return [
 		'official win' => '8, 5, 10, 3',
 		'win amount' => 97,
 		'qin amount' => 313,
-		'place amount' => [
-			8 => 33,
-			5 => 15,
-			10 => 27.5,
-		],
 	],
 	'9' => [
 		/**
@@ -121,11 +81,6 @@ return [
 		'official win' => '4, 2, 13, 9',
 		'win amount' => 91.5,
 		'qin amount' => 237,
-		'place amount' => [
-			4 => 30.5,
-			2 => 16,
-			13 => 72,
-		],
 	],
 	'10' => [
 		/**
@@ -135,10 +90,8 @@ return [
 		'official win' => '1, 11, 2, 6',
 		'win amount' => 36.5,
 		'qin amount' => 51.5,
-		'place amount' => [
-			1 => 15.5,
-			11 => 13,
-			2 => 304.5,
-		],
 	],
 ];
+//total win: 0
+//total qin: 0
+//total: 0
