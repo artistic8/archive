@@ -15,6 +15,7 @@ if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 $total = 0;
 $totalWin = 0;
 $totalQin = 0;
+$totalPlace = 0;
 
 $step = "bets";
 $raceDate = trim($argv[1]);
@@ -139,6 +140,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(in_array(end($favorites), array_slice($officialWin, 0, 3))) $plaWonAmount = (1 * $unitBet / 10) * $placeAmount[end($favorites)] - $plaBetAmount;
             else $plaWonAmount = 0 - $plaBetAmount;
             $racetext .= "\t\t'place(" . end($favorites) . ")' => $plaWonAmount,\n";
+            $totalPlace += $plaWonAmount;
             $total += $plaWonAmount; 
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
                 $qinwonAmount = $qinAmount - $qinbetAmount;
@@ -156,6 +158,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
 }
 $outtext .= "];\n";
 $outtext .= "//total win: $totalWin\n";
+$outtext .= "//total place: $totalPlace\n";
 $outtext .= "//total qin: $totalQin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
