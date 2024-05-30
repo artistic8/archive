@@ -14,13 +14,14 @@ return [
 			13 => 39,
 			7 => 20.5,
 		],
-		'place($20)' => '10',
-		'place bets' => 20,
-		'qin($10)' => '1, 4, 10 X 5, 11, 14, 4, 10, 1',
-		'qin bets' => 180,
-		'total bets' => 200,
-		'place(10)' => 11,
-		'qin(favorites X set2)' => 70,
+		'win($50)' => '1, 4, 10',
+		'win bets' => 150,
+		'place($50)' => '1, 4, 10',
+		'qin($10)' => '1, 4, 10 X 5, 11, 14',
+		'qin bets' => 90,
+		'total bets' => 240,
+		'win(favorites)' => 60,
+		'qin(favorites X set2)' => -90,
 	],
 	'2' => [
 		/**
@@ -49,13 +50,14 @@ return [
 			9 => 23,
 			8 => 80,
 		],
-		'place($20)' => '5',
-		'place bets' => 20,
-		'qin($10)' => '3, 4, 5 X 7, 8, 9, 3, 4, 5',
-		'qin bets' => 180,
-		'total bets' => 200,
-		'place(5)' => -20,
-		'qin(favorites X set2)' => -180,
+		'win($50)' => '3, 4, 5',
+		'win bets' => 150,
+		'place($50)' => '3, 4, 5',
+		'qin($10)' => '3, 4, 5 X 7, 8, 9',
+		'qin bets' => 90,
+		'total bets' => 240,
+		'win(favorites)' => -47.5,
+		'qin(favorites X set2)' => 23.5,
 	],
 	'4' => [
 		/**
@@ -156,7 +158,7 @@ return [
 		],
 	],
 ];
-//total win: 0
-//total place: -9
-//total qin: -110
-//total: -119
+//total win: 12.5
+//total place: 0
+//total qin: -66.5
+//total: -54
