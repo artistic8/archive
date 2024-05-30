@@ -132,7 +132,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($union);
     sort($inter);
     $inter = array_intersect($favorites, $inter);
-    if(count($inter) >= 2 && count($favorites) === 3){
+    if(count($inter) >= 2 && count($favorites) >= 3){
         $set2 = array_values(array_unique(array_merge($sums, $mults)));
         $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
