@@ -113,15 +113,17 @@ return [
 			4 => 16,
 		],
 		'win($70)' => '4, 6, 8',
-		'win bets' => 210,
+		'win($70)' => '6, 8',
+		'win bets' => 140,
 		'place($70)' => '4, 6, 8',
 		'qin/trio($10)' => '4, 6, 8',
 		'win($10)' => '10, 12, 14',
 		'qin($10)' => '4, 6, 8 X 10, 12, 14',
 		'qin bets' => 150,
-		'total bets' => 390,
+		'total bets' => 320,
 		'win(favorites)' => 248.5,
 		'win(set2)' => -30,
+		'win(set3)' => 318.5,
 		'qin won amount' => 168,
 	],
 	'9' => [
@@ -153,7 +155,7 @@ return [
 		],
 	],
 ];
-//total win: 218.5
+//total win: 537
 //total place: 0
 //total qin: 168
-//total: 386.5
+//total: 705
