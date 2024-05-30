@@ -112,7 +112,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $set3 = array_slice($favorites, 0, 2);
         $racetext .= "\t\t'win($" . 3 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
         $winbetAmountSet3 = 3 * $unitBet * count($set3);
-        $totalWinBets += $winbetAmountSet3;
+        $totalWinBets = $winbetAmountSet3;
         $racetext .= "\t\t'win bets' => $totalWinBets,\n";
         $racetext .= "\t\t'place($" . 3 * $unitBet . ")' => '" . end($favorites) . "',\n"; 
         $plaBetAmount = 3 * $unitBet;
