@@ -112,15 +112,9 @@ return [
 			8 => 20,
 			4 => 16,
 		],
-		'set2' => '10, 12, 14',
-		'win($40)' => '4, 6, 8',
-		'win($60)' => '6, 8',
-		'qin($10)' => '4, 6, 8 X 10, 12, 14',
-		'win(favorites)' => 142,
-		'total win bets' => 240,
-		'win(set3)' => 273,
-		'total qin bets' => 90,
-		'qin(favorites X set2)' => -90,
+		'place($60)' => '8',
+		'place bets' => 60,
+		'place(8)' => 60,
 	],
 	'9' => [
 		/**
@@ -151,6 +145,6 @@ return [
 		],
 	],
 ];
-//total win: 415
-//total qin: -90
-//total: 325
+//total win: 0
+//total qin: 0
+//total: 60
