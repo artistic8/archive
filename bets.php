@@ -136,6 +136,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $totalWin += $winwonAmount;
             $total += $winwonAmount;
             if(in_array(end($favorites), array_slice($officialWin, 0, 3))) $plaWonAmount = (3 * $unitBet / 10) * $placeAmount[end($favorites)] - $plaBetAmount;
+            else $plaWonAmount = 0 - $plaBetAmount;
             $racetext .= "\t\t'place(" . end($favorites) . ")' => $plaWonAmount,\n";
             $total += $plaWonAmount; 
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
