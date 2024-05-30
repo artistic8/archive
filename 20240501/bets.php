@@ -20,6 +20,7 @@ return [
 		'qin bet($20)' => '1, 3, 4',
 		'qin($10)' => '1, 3, 4 X 5, 7, 12',
 		'total bets' => 530,
+		'total won in race' => 474,
 	],
 	'2' => [
 		/**
