@@ -105,7 +105,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     //if(!empty($inter)) $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',\n";
     $inter = array_intersect($favorites, $inter);
     if(count($inter) >= 2 && count($favorites) >= 3){
-        // $unitBet = 20;
+        $unitBet = 20;
         // $racetext .= "\t\t'win($" . 2 * $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         // $winbetAmountFavs = 2 * $unitBet * count($favorites);
         // $totalWinBets = $winbetAmountFavs;
