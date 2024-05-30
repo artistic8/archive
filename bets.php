@@ -119,8 +119,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" . end($favorites) . "',\n"; 
         $plaBetAmount = 1 * $unitBet;
         $racetext .= "\t\t'place bets' => $plaBetAmount,\n";
-        $set2 = array_values(array_unique(array_merge($sums, $mults)));
-        $set2 = array_diff($set2, $favorites);
+        $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
+        // $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
         $qinbetAmount = 10 * count($favorites) * count($set2);
         $racetext .= "\t\t'qin bets' => $qinbetAmount,\n";
