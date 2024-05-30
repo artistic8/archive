@@ -45,6 +45,42 @@ foreach($parts as $key => $line){
         }
         $results[$raceNumber]['win'] = $var + 0;
     }
+    if(strpos($line, '>PLACE</td>')){
+        $places = [];
+        $placer1 = $parts[$key + 1];
+        $placer1 = str_replace('<td class="f_fs14">', '', $placer1);
+        $placer1 = str_replace('</td>', '', $placer1);
+        $placer1 = str_ireplace("\x0D", "", $placer1);
+        $placer1 = str_replace(' ', '', $placer1);
+        $placeAmount1 = $parts[$key + 2];
+        $placeAmount1 = str_replace('<td class="f_fs14 f_tar">', '', $placeAmount1);
+        $placeAmount1 = str_replace('</td>', '', $placeAmount1);
+        $placeAmount1 = str_replace(' ', '', $placeAmount1);
+        $places[$placer1] = (float)$placeAmount1;
+        $placer2 = $parts[$key + 5];
+        $placer2 = str_replace('<td class="f_fs14">', '', $placer2);
+        $placer2 = str_replace('</td>', '', $placer2);
+        $placer2 = str_ireplace("\x0D", "", $placer2);
+        $placer2 = str_replace(' ', '', $placer2);
+        $placeAmount2 = $parts[$key + 6];
+        $placeAmount2 = str_replace('<td class="f_fs14 f_tar">', '', $placeAmount2);
+        $placeAmount2 = str_replace('</td>', '', $placeAmount2);
+        $placeAmount2 = str_replace(' ', '', $placeAmount2);
+        $places[$placer2] = (float)$placeAmount2;
+        if(strpos($parts[$key + 8], '<tr class="">')){
+            $placer3 = $parts[$key + 9];
+            $placer3 = str_replace('<td class="f_fs14">', '', $placer3);
+            $placer3 = str_replace('</td>', '', $placer3);
+            $placer3 = str_ireplace("\x0D", "", $placer3);
+            $placer3 = str_replace(' ', '', $placer3);
+            $placeAmount3 = $parts[$key + 10];
+            $placeAmount3 = str_replace('<td class="f_fs14 f_tar">', '', $placeAmount3);
+            $placeAmount3 = str_replace('</td>', '', $placeAmount3);
+            $placeAmount3 = str_replace(' ', '', $placeAmount3);
+            $places[$placer3] = (float)$placeAmount3;
+        }
+        $results[$raceNumber]['places'] = $places;
+    }
     if(strpos($line, 'QUINELLA</td>')){
         $var = $parts[$key + 2];
         $var = str_replace('<td class="f_fs14 f_tar">', '', $var);
@@ -86,6 +122,12 @@ foreach($contents as $raceNumber => $data){
     $racetext .= "\t\t'official win' => '" . $results[$raceNumber]['quartet'] ."',\n"; 
     $racetext .= "\t\t'win amount' => " . $results[$raceNumber]['win'] .",\n"; 
     $racetext .= "\t\t'qin amount' => " . $results[$raceNumber]['qin'] .",\n"; 
+    $racetext .= "\t\t'place amount' => [\n";
+    $places = $results[$raceNumber]['places'];
+    foreach($places as $place => $amount){
+        $racetext .= "\t\t\t$place => $amount,\n";
+    }
+    $racetext .= "\t\t],\n";
     $racetext .= "\t],\n";
     $outtext .= $racetext;
 }

@@ -9,15 +9,11 @@ return [
 		'official win' => '4, 10, 5, 3',
 		'win amount' => 73,
 		'qin amount' => 286,
-		'set2' => '4, 11',
-		'win($40)' => '1, 3, 10',
-		'win($60)' => '3, 10',
-		'qin($10)' => '1, 3, 10 X 4, 11',
-		'win(favorites)' => -120,
-		'total win bets' => 240,
-		'win(set3)' => -120,
-		'total qin bets' => 60,
-		'qin(favorites X set2)' => 226,
+		'place amount' => [
+			4 => 26,
+			10 => 21.5,
+			5 => 52,
+		],
 	],
 	'2' => [
 		/**
@@ -27,6 +23,11 @@ return [
 		'official win' => '4, 10, 3, 9',
 		'win amount' => 63.5,
 		'qin amount' => 222.5,
+		'place amount' => [
+			4 => 21.5,
+			10 => 27.5,
+			3 => 34.5,
+		],
 	],
 	'3' => [
 		/**
@@ -36,6 +37,11 @@ return [
 		'official win' => '9, 4, 1, 8',
 		'win amount' => 83,
 		'qin amount' => 620.5,
+		'place amount' => [
+			9 => 22,
+			4 => 34,
+			1 => 18,
+		],
 	],
 	'4' => [
 		/**
@@ -45,6 +51,11 @@ return [
 		'official win' => '10, 5, 1, 9',
 		'win amount' => 168,
 		'qin amount' => 5059,
+		'place amount' => [
+			10 => 33.5,
+			5 => 152.5,
+			1 => 13,
+		],
 	],
 	'5' => [
 		/**
@@ -54,6 +65,11 @@ return [
 		'official win' => '3, 11, 10, 12',
 		'win amount' => 95.5,
 		'qin amount' => 800,
+		'place amount' => [
+			3 => 41,
+			11 => 40,
+			10 => 18,
+		],
 	],
 	'6' => [
 		/**
@@ -63,6 +79,11 @@ return [
 		'official win' => '2, 11, 12, 7',
 		'win amount' => 35.5,
 		'qin amount' => 193.5,
+		'place amount' => [
+			2 => 14.5,
+			11 => 32.5,
+			12 => 20,
+		],
 	],
 	'7' => [
 		/**
@@ -72,6 +93,11 @@ return [
 		'official win' => '11, 3, 6, 1',
 		'win amount' => 69,
 		'qin amount' => 231,
+		'place amount' => [
+			11 => 26.5,
+			3 => 19,
+			6 => 25,
+		],
 	],
 	'8' => [
 		/**
@@ -81,6 +107,11 @@ return [
 		'official win' => '5, 4, 1, 12',
 		'win amount' => 47.5,
 		'qin amount' => 222.5,
+		'place amount' => [
+			5 => 19,
+			4 => 24.5,
+			1 => 30,
+		],
 	],
 	'9' => [
 		/**
@@ -90,6 +121,11 @@ return [
 		'official win' => '10, 6, 8, 9',
 		'win amount' => 24.5,
 		'qin amount' => 52.5,
+		'place amount' => [
+			10 => 13.5,
+			6 => 15.5,
+			8 => 22,
+		],
 	],
 	'10' => [
 		/**
@@ -99,8 +135,10 @@ return [
 		'official win' => '2, 9, 4, 1',
 		'win amount' => 69,
 		'qin amount' => 149.5,
+		'place amount' => [
+			2 => 24,
+			9 => 17.5,
+			4 => 31.5,
+		],
 	],
 ];
-//total win: -240
-//total qin: 226
-//total: -14

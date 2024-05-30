@@ -9,6 +9,11 @@ return [
 		'official win' => '8, 12, 4, 3',
 		'win amount' => 221.5,
 		'qin amount' => 984.5,
+		'place amount' => [
+			8 => 65.5,
+			12 => 25.5,
+			4 => 46,
+		],
 	],
 	'2' => [
 		/**
@@ -18,6 +23,11 @@ return [
 		'official win' => '2, 3, 8, 7',
 		'win amount' => 57.5,
 		'qin amount' => 154,
+		'place amount' => [
+			2 => 22,
+			3 => 19,
+			8 => 15,
+		],
 	],
 	'3' => [
 		/**
@@ -27,6 +37,11 @@ return [
 		'official win' => '11, 4, 7, 2',
 		'win amount' => 58,
 		'qin amount' => 216.5,
+		'place amount' => [
+			11 => 19,
+			4 => 28,
+			7 => 21,
+		],
 	],
 	'4' => [
 		/**
@@ -36,15 +51,11 @@ return [
 		'official win' => '11, 1, 10, 2',
 		'win amount' => 45,
 		'qin amount' => 81,
-		'set2' => '12',
-		'win($40)' => '1, 4, 11',
-		'win($60)' => '4, 11',
-		'qin($10)' => '1, 4, 11 X 12',
-		'win(favorites)' => 60,
-		'total win bets' => 240,
-		'win(set3)' => 150,
-		'total qin bets' => 30,
-		'qin(favorites X set2)' => -30,
+		'place amount' => [
+			11 => 17,
+			1 => 16,
+			10 => 41.5,
+		],
 	],
 	'5' => [
 		/**
@@ -54,6 +65,11 @@ return [
 		'official win' => '3, 1, 4, 8',
 		'win amount' => 52,
 		'qin amount' => 361,
+		'place amount' => [
+			3 => 21,
+			1 => 33.5,
+			4 => 13.5,
+		],
 	],
 	'6' => [
 		/**
@@ -63,6 +79,11 @@ return [
 		'official win' => '3, 2, 9, 12',
 		'win amount' => 43.5,
 		'qin amount' => 208.5,
+		'place amount' => [
+			3 => 19,
+			2 => 21.5,
+			9 => 23,
+		],
 	],
 	'7' => [
 		/**
@@ -72,6 +93,11 @@ return [
 		'official win' => '2, 9, 5, 7',
 		'win amount' => 206.5,
 		'qin amount' => 438,
+		'place amount' => [
+			2 => 52,
+			9 => 17,
+			5 => 15.5,
+		],
 	],
 	'8' => [
 		/**
@@ -81,6 +107,11 @@ return [
 		'official win' => '3, 2, 4, 8',
 		'win amount' => 189,
 		'qin amount' => 897.5,
+		'place amount' => [
+			3 => 59,
+			2 => 21.5,
+			4 => 18.5,
+		],
 	],
 	'9' => [
 		/**
@@ -90,8 +121,10 @@ return [
 		'official win' => '12, 3, 11, 5',
 		'win amount' => 47.5,
 		'qin amount' => 184.5,
+		'place amount' => [
+			12 => 17.5,
+			3 => 28,
+			11 => 18,
+		],
 	],
 ];
-//total win: 210
-//total qin: -30
-//total: 180
