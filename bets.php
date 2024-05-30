@@ -149,12 +149,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalBets += 20 * combination(2, count($favorites));
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
         $totalBets += 10 * count($favorites) * count($set2);
-        $total -= $totalBets;
+        $totalRace = 0 - $totalBets;
         $racetext .= "\t\t'total bets' => $totalBets,\n";
         if(isset($officialWin)){
-            if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $total += ($unitBet / 10) * $winAmount;
-            if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $total += $winAmount;
-            if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $total +=  ($unitBet / 10) * $winAmount;
+            if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $totalRace += ($unitBet / 10) * $winAmount;
+            if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $totalRace += $winAmount;
+            if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $totalRace +=  ($unitBet / 10) * $winAmount;
             // if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 3)))) {
             //     $plaWonAmount = 0 - $plaBetAmount;
             //     $placed = array_intersect($favorites, array_slice($officialWin, 0, 3));
@@ -162,9 +162,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             //         $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck];
             //     }
             // }
-            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $total += 2 * $qinAmount;
+            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace += 2 * $qinAmount;
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
-                $total += $qinAmount;
+                $totalRace += $qinAmount;
+            $racetext .= "\t\t'total won in race' => $totalRace,\n";
+            $total += $totalRace;
         }
       }
     $racetext .= "\t],\n";
