@@ -74,3 +74,6 @@ return [
 		'qin amount' => 269.5,
 	],
 ];
+//total win: 0
+//total qin: 0
+//total: 0
