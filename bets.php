@@ -116,10 +116,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $favorites) . "',\n"; 
         // $plaBetAmount = 1 * $unitBet * count($favorites);
         // $racetext .= "\t\t'place bets' => $plaBetAmount,\n";
+        $racetext .= "\t\t'qin/trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
+        $qinbetAmount1 = 10 * combination(2, count($favorites));
         $set2 = array_values(array_unique(array_merge($sums, $mults, $favorites)));
         $set2 = array_diff($set2, $favorites);
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
-        $qinbetAmount = 10 * count($favorites) * count($set2);
+        $qinbetAmount2 = 10 * count($favorites) * count($set2);
+        $qinbetAmount = $qinbetAmount1 + $qinbetAmount2;
         $racetext .= "\t\t'qin bets' => $qinbetAmount,\n";
         $totalBets = $totalWinBets + $qinbetAmount;
         $racetext .= "\t\t'total bets' => $totalBets,\n";
@@ -145,10 +148,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             // $racetext .= "\t\t'place(favorites)' => $plaWonAmount,\n";
             // $totalPlace += $plaWonAmount;
             // $total += $plaWonAmount; 
+            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $qinwonAmount1 = $qinAmount - $qinbetAmount1;
+            else $qinwonAmount1 = 0 - $qinbetAmount1;
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
-                $qinwonAmount = $qinAmount - $qinbetAmount;
-            else $qinwonAmount = 0 - $qinbetAmount;
-            $racetext .= "\t\t'qin(favorites X set2)' => $qinwonAmount,\n";
+                $qinwonAmount2 = $qinAmount - $qinbetAmount2;
+            else $qinwonAmount2 = 0 - $qinbetAmount2;
+            $qinwonAmount = $qinwonAmount1 + $qinwonAmount2;
+            $racetext .= "\t\t'qin won amount' => $qinwonAmount,\n";
             $totalQin += $qinwonAmount;
             $total += $qinwonAmount;
         }
