@@ -124,8 +124,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $total += $winwonAmount;
             //qin: {favorites} X {set2}
             $qinbetAmount = 10 * count($favorites) * count($set2);
-            $totalQinBets += $qinbetAmount;
-            $racetext .= "\t\t'total qin bets' => $totalQinBets,\n";
+            $racetext .= "\t\t'total qin bets' => $qinbetAmount,\n";
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
                 $qinwonAmount = $qinAmount - $qinbetAmount;
             else $qinwonAmount = 0 - $qinbetAmount;
