@@ -113,8 +113,10 @@ return [
 			11 => 22,
 		],
 		'win bet($10)' => '7, 12',//count: 2
-		'total bets' => 20,
-		'total won in race' => 203,
+		'qin bet($20)' => '3, 4, 11',
+		'qin($10)' => '3, 4, 11 X 7, 12',
+		'total bets' => 140,
+		'total won in race' => 398.5,
 	],
 	'9' => [
 		/**
@@ -159,4 +161,4 @@ return [
 		],
 	],
 ];
-//total: 203
+//total: 398.5

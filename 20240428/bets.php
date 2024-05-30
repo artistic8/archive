@@ -57,8 +57,10 @@ return [
 			5 => 15,
 		],
 		'win bet($10)' => '6, 9',//count: 2
-		'total bets' => 20,
-		'total won in race' => -20,
+		'qin bet($20)' => '1, 4, 5',
+		'qin($10)' => '1, 4, 5 X 6, 9',
+		'total bets' => 140,
+		'total won in race' => 178,
 	],
 	'5' => [
 		/**
@@ -74,10 +76,10 @@ return [
 			9 => 29,
 		],
 		'win bet($10)' => '4, 6, 8',//count: 3
-		'win bet($70)' => '1, 3, 5',
-		'win bet($70)' => '3, 5',
 		'qin bet($20)' => '1, 3, 5',
 		'qin($10)' => '1, 3, 5 X 4, 6, 8',
+		'win bet($70)' => '1, 3, 5',
+		'win bet($70)' => '3, 5',
 		'total bets' => 530,
 		'total won in race' => 590,
 	],
@@ -152,4 +154,4 @@ return [
 		],
 	],
 ];
-//total: 570
+//total: 768
