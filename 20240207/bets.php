@@ -15,6 +15,7 @@ return [
 			4 => 27.5,
 		],
 		'inter' => '1',//count: 1
+		'Sure Place' => '1, 7',
 	],
 	'2' => [
 		/**
@@ -30,7 +31,6 @@ return [
 			4 => 22.5,
 		],
 		'inter' => '4',//count: 1
-		'Sure Place' => '4',
 	],
 	'3' => [
 		/**
@@ -46,7 +46,6 @@ return [
 			2 => 11,
 		],
 		'inter' => '7',//count: 1
-		'Sure Place' => '7',
 	],
 	'4' => [
 		/**
@@ -76,6 +75,7 @@ return [
 			10 => 16.5,
 			4 => 21,
 		],
+		'Sure Place' => '1, 7',
 	],
 	'6' => [
 		/**
@@ -105,6 +105,7 @@ return [
 			5 => 27,
 		],
 		'inter' => '2',//count: 1
+		'Sure Place' => '2, 3',
 	],
 	'8' => [
 		/**
@@ -119,7 +120,6 @@ return [
 			5 => 21.5,
 			9 => 38.5,
 		],
-		'Sure Place' => '4',
 	],
 	'9' => [
 		/**
@@ -137,5 +137,5 @@ return [
 		'inter' => '5',//count: 1
 	],
 ];
-//total place: 20
-//total: 20
+//total place: 4
+//total: 4
