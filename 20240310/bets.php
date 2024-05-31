@@ -30,7 +30,6 @@ return [
 			14 => 31,
 		],
 		'inter' => '4',//count: 1
-		'Sure Place' => '2, 4, 5',
 	],
 	'3' => [
 		/**
@@ -46,7 +45,6 @@ return [
 			4 => 32,
 		],
 		'inter' => '2, 3',//count: 2
-		'Sure Place' => '2, 3',
 	],
 	'4' => [
 		/**
@@ -94,7 +92,6 @@ return [
 			3 => 15.5,
 		],
 		'inter' => '3',//count: 1
-		'Sure Place' => '3, 7',
 	],
 	'7' => [
 		/**
@@ -110,7 +107,6 @@ return [
 			9 => 41,
 		],
 		'inter' => '1, 3',//count: 2
-		'Sure Place' => '1, 3',
 	],
 	'8' => [
 		/**
@@ -126,7 +122,6 @@ return [
 			4 => 16,
 		],
 		'inter' => '4, 6, 8',//count: 3
-		'Sure Place' => '4, 6, 8',
 		'win bet($10)' => '10, 12, 14',
 		'qin bet($20)' => '4, 6, 8',
 		'qin($10)' => '4, 6, 8 X 10, 12, 14',
@@ -149,7 +144,6 @@ return [
 			2 => 23.5,
 		],
 		'inter' => '5',//count: 1
-		'Sure Place' => '2, 3, 5',
 	],
 	'10' => [
 		/**
@@ -166,5 +160,5 @@ return [
 		],
 	],
 ];
-//total place: 55
-//total: 760
+//total place: -4
+//total: 701
