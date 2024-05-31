@@ -6,6 +6,6 @@ for f in *; do
         git checkout $f/;
         php bets.php $f;
         git checkout history.php;
-        git checkout inter3.php;
+        git checkout threes.php;
     fi
 done
