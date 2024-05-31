@@ -128,7 +128,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         } 
     }
-    if(count($surePlace) > 0){
+    if(count($surePlace) === 1){
         $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
         $totalPlace -= 10 * count($surePlace);
         $total -= 10 * count($surePlace);

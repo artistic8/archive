@@ -14,6 +14,7 @@ return [
 			1 => 16,
 			8 => 120.5,
 		],
+		'Sure Place' => '10',
 	],
 	'2' => [
 		/**
@@ -74,6 +75,7 @@ return [
 			12 => 49.5,
 		],
 		'inter' => '1',//count: 1
+		'Sure Place' => '1',
 	],
 	'6' => [
 		/**
@@ -137,5 +139,5 @@ return [
 		'Sure Place' => '9, 10',
 	],
 ];
-//total place: -65.5
-//total: -65.5
+//total place: -70
+//total: -70

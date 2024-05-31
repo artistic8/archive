@@ -81,6 +81,7 @@ return [
 			3 => 15,
 			9 => 35,
 		],
+		'Sure Place' => '3',
 	],
 	'6' => [
 		/**
@@ -149,5 +150,5 @@ return [
 		],
 	],
 ];
-//total place: -5.5
-//total: 294.5
+//total place: -0.5
+//total: 299.5
