@@ -10,36 +10,7 @@ function combination($p, $n){
     if($n < $p) return 0;
     return factorial($n) / (factorial($p) * factorial($n - $p));
 }
-function getWeights($odds, $profit = 10, $precision = 10){
-    $weights = [];
-    $totalWeights = 0;
-    foreach($odds as $key => $value){
-        $weights[$key] = 1;
-        $totalWeights += $weights[$key];
-    }
-    $criterion = true;
-    foreach($odds as $key => $value){
-        $criterion = $criterion && ($weights[$key] * $odds[$key] >= $totalWeights + $profit);
-    }
-    $iterations = 0;
-    while($criterion === false){
-        $criterion = true;
-        foreach($odds as $key => $value){
-            if($weights[$key] * $odds[$key] < $totalWeights + $profit){
-                $weights[$key] +=1;
-                $totalWeights += 1;
-            }
-            $criterion = $criterion && ($weights[$key] * $odds[$key] >= $totalWeights + $profit);
-        }
-        $iterations ++;
-        if($iterations == $precision) {
-            $failed = [];
-            foreach($odds as $key => $value) $failed[$key] = 0;
-            return $failed;
-        }
-    }
-    return $weights;
-}
+
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
@@ -132,12 +103,15 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($union);
     sort($inter);
     $inter = array_intersect($favorites, $inter);
+    if(!empty($inter)){
+        $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
+    }
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
     $set2 = array_diff($set2, $favorites);
   
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
-        $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n"; 
+        $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',\n"; 
         $totalBets = 10 * count($set2);
         $racetext .= "\t\t'qin bet($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets += 20 * combination(2, count($favorites));
