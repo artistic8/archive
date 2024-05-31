@@ -102,6 +102,7 @@ return [
 			3 => 20,
 		],
 		'inter' => '3',//count: 1
+		//check this out 
 	],
 	'8' => [
 		/**
@@ -117,6 +118,7 @@ return [
 			3 => 17.5,
 		],
 		'inter' => '8',//count: 1
+		//check this out 
 	],
 	'9' => [
 		/**

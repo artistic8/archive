@@ -30,6 +30,7 @@ return [
 			8 => 29.5,
 		],
 		'inter' => '6',//count: 1
+		//check this out 
 	],
 	'3' => [
 		/**
@@ -45,6 +46,7 @@ return [
 			4 => 25.5,
 		],
 		'inter' => '3',//count: 1
+		//check this out 
 	],
 	'4' => [
 		/**
@@ -60,6 +62,7 @@ return [
 			9 => 26,
 		],
 		'inter' => '1',//count: 1
+		//check this out 
 	],
 	'5' => [
 		/**

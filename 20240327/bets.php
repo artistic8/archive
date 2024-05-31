@@ -58,6 +58,7 @@ return [
 			1 => 50,
 		],
 		'inter' => '11',//count: 1
+		//check this out 
 	],
 	'5' => [
 		/**
@@ -73,6 +74,7 @@ return [
 			7 => 35.5,
 		],
 		'inter' => '1',//count: 1
+		//check this out 
 	],
 	'6' => [
 		/**

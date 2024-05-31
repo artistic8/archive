@@ -87,6 +87,7 @@ return [
 			3 => 16,
 		],
 		'inter' => '1',//count: 1
+		//check this out 
 	],
 	'7' => [
 		/**
