@@ -109,11 +109,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
     $set2 = array_diff($set2, $favorites);
-    if(count($inter) === 1 && count($favorites) >= 3)  {
-        $racetext .= "\t\t//check this out \n";
-        $racetext .= "\t\t'set2' => '" . implode(", ", $set2) . "',//count: " . count($set2) . "\n";
-    }
-    if(count($inter) >= 1 && count($favorites) >= 3 && count($set2) < 7){
+  
+    if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',\n"; 
         $totalBets = 10 * count($set2);
         $racetext .= "\t\t'qin bet($20)' => '" . implode(", ", $favorites) . "',\n"; 
