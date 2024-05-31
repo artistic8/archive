@@ -97,7 +97,7 @@ return [
 			9 => 23,
 		],
 		'inter' => '1',//count: 1
-		'Sure Place' => '1, 3, 7',
+		'Sure Place' => '1, 3',
 	],
 	'7' => [
 		/**
@@ -142,7 +142,7 @@ return [
 			3 => 28,
 			11 => 18,
 		],
-		'Sure Place' => '5, 9',
+		'Sure Place' => '1, 5, 9',
 	],
 ];
-//total: 342
+//total: 403

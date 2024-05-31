@@ -147,4 +147,4 @@ return [
 		'inter' => '4',//count: 1
 	],
 ];
-//total: 2055
+//total: 2182.5

@@ -133,7 +133,6 @@ return [
 			9 => 15,
 		],
 		'inter' => '2',//count: 1
-		'Sure Place' => '2, 9',
 	],
 ];
-//total: 0
+//total: 23

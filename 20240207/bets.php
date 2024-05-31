@@ -136,7 +136,7 @@ return [
 			9 => 50.5,
 		],
 		'inter' => '5',//count: 1
-		'Sure Place' => '3, 5',
+		'Sure Place' => '1, 3, 5',
 	],
 ];
-//total: 0
+//total: 90.5

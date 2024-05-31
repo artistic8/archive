@@ -29,7 +29,7 @@ return [
 			14 => 31,
 		],
 		'inter' => '4',//count: 1
-		'Sure Place' => '4, 5',
+		'Sure Place' => '2, 4, 5',
 	],
 	'3' => [
 		/**
@@ -45,6 +45,7 @@ return [
 			4 => 32,
 		],
 		'inter' => '2, 3',//count: 2
+		'Sure Place' => '2, 3',
 	],
 	'4' => [
 		/**
@@ -162,4 +163,4 @@ return [
 		],
 	],
 ];
-//total: 705
+//total: 899
