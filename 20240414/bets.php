@@ -103,6 +103,7 @@ return [
 		],
 		'inter' => '3',//count: 1
 		//check this out 
+		'set2' => '10, 12',//count: 2
 	],
 	'8' => [
 		/**
@@ -119,6 +120,7 @@ return [
 		],
 		'inter' => '8',//count: 1
 		//check this out 
+		'set2' => '5',//count: 1
 	],
 	'9' => [
 		/**
