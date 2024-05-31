@@ -130,6 +130,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(count($surePlace) >= 2){
         $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
+        $totalPlace -= count($surePlace);
         $total -= count($surePlace);
         if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
             $placed = array_intersect($surePlace, array_slice($officialWin, 0, 3));
