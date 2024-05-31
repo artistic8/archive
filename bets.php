@@ -132,7 +132,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
     }
   
-    if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+    // if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+    if(count($favorites) >= 3 && !empty($surePlace)){
         $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',\n"; 
         $totalBets = 10 * count($set2);
         $racetext .= "\t\t'qin bet($20)' => '" . implode(", ", $favorites) . "',\n"; 
