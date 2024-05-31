@@ -15,7 +15,6 @@ return [
 			6 => 37,
 		],
 		'inter' => '5',//count: 1
-		'Sure Place' => '5',
 	],
 	'2' => [
 		/**
@@ -76,7 +75,6 @@ return [
 			10 => 33.5,
 		],
 		'inter' => '7',//count: 1
-		'Sure Place' => '7',
 	],
 	'6' => [
 		/**

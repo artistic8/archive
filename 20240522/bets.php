@@ -60,7 +60,6 @@ return [
 			3 => 60,
 		],
 		'inter' => '10',//count: 1
-		'Sure Place' => '10',
 	],
 	'5' => [
 		/**
@@ -106,7 +105,6 @@ return [
 			8 => 23,
 		],
 		'inter' => '1',//count: 1
-		'Sure Place' => '1',
 	],
 	'8' => [
 		/**
@@ -138,7 +136,6 @@ return [
 			9 => 23,
 		],
 		'inter' => '5',//count: 1
-		'Sure Place' => '5',
 	],
 ];
 //total: 0
