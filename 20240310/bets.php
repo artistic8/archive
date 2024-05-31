@@ -160,5 +160,5 @@ return [
 		],
 	],
 ];
-//total place: -22.5
-//total: 682.5
+//total place: 0
+//total: 705
