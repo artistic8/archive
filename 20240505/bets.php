@@ -29,8 +29,6 @@ return [
 			10 => 39.5,
 		],
 		'inter' => '6',//count: 1
-		//check this out 
-		'set2' => '8, 10',//count: 2
 	],
 	'3' => [
 		/**

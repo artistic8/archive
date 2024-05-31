@@ -58,8 +58,6 @@ return [
 			10 => 47.5,
 		],
 		'inter' => '12',//count: 1
-		//check this out 
-		'set2' => '8, 9',//count: 2
 	],
 	'5' => [
 		/**
@@ -112,8 +110,6 @@ return [
 			10 => 24,
 		],
 		'inter' => '3',//count: 1
-		//check this out 
-		'set2' => '9',//count: 1
 	],
 	'8' => [
 		/**

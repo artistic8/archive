@@ -91,8 +91,6 @@ return [
 			13 => 41,
 		],
 		'inter' => '1',//count: 1
-		//check this out 
-		'set2' => '5, 10, 13',//count: 3
 	],
 	'7' => [
 		/**
@@ -150,8 +148,6 @@ return [
 			10 => 15,
 		],
 		'inter' => '4',//count: 1
-		//check this out 
-		'set2' => '5, 7, 11, 12, 13, 14',//count: 6
 	],
 ];
 //total: 191

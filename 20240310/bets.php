@@ -29,8 +29,6 @@ return [
 			14 => 31,
 		],
 		'inter' => '4',//count: 1
-		//check this out 
-		'set2' => '6, 7, 8, 9, 10',//count: 5
 	],
 	'3' => [
 		/**
@@ -143,8 +141,6 @@ return [
 			2 => 23.5,
 		],
 		'inter' => '5',//count: 1
-		//check this out 
-		'set2' => '6, 7, 8, 10',//count: 4
 	],
 	'10' => [
 		/**

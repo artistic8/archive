@@ -43,8 +43,6 @@ return [
 			3 => 19,
 		],
 		'inter' => '3',//count: 1
-		//check this out 
-		'set2' => '8, 9, 11',//count: 3
 	],
 	'4' => [
 		/**
@@ -89,8 +87,6 @@ return [
 			12 => 49.5,
 		],
 		'inter' => '1',//count: 1
-		//check this out 
-		'set2' => '3, 11, 12',//count: 3
 	],
 	'7' => [
 		/**
@@ -121,8 +117,6 @@ return [
 			3 => 45,
 		],
 		'inter' => '4',//count: 1
-		//check this out 
-		'set2' => '8, 9, 10, 11, 12',//count: 5
 	],
 	'9' => [
 		/**
@@ -138,8 +132,6 @@ return [
 			9 => 23,
 		],
 		'inter' => '5',//count: 1
-		//check this out 
-		'set2' => '9, 11, 12',//count: 3
 	],
 ];
 //total: 0

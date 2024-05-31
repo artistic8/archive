@@ -102,8 +102,6 @@ return [
 			3 => 20,
 		],
 		'inter' => '3',//count: 1
-		//check this out 
-		'set2' => '10, 12',//count: 2
 	],
 	'8' => [
 		/**
@@ -119,8 +117,6 @@ return [
 			3 => 17.5,
 		],
 		'inter' => '8',//count: 1
-		//check this out 
-		'set2' => '5',//count: 1
 	],
 	'9' => [
 		/**
