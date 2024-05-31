@@ -128,7 +128,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         } 
     }
-    if(!empty(array_intersect($surePlace, $favorites))){
+    if(count(array_intersect($surePlace, $favorites)) >= 2){
         $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
     }
   
