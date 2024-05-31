@@ -107,6 +107,30 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
     $set2 = array_diff($set2, $favorites);
+    $surePlace = [];
+    foreach($favorites as $one){
+        $union = []; 
+        foreach($runners as $two){
+            if($two !== $one){
+                if($one < $two) $index = "f$one-f$two";
+                else $index = "f$two-f$one";
+                if(isset($threes[$raceNumber][$index])){
+                    $threeSet = explode(", ", $threes[$raceNumber][$index]);
+                    $union = array_values(array_unique(array_merge($union, $threeSet)));
+                }
+            }
+        }
+        sort($union);
+        if(!empty($union)){
+            sort($union);
+            if(in_array($one, array_intersect($favorites, $union))){
+                $surePlace[] = $one;
+            }
+        } 
+    }
+    if(!empty($surePlace)){
+        $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
+    }
   
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'win bet($10)' => '" . implode(", ", $set2) . "',\n"; 
