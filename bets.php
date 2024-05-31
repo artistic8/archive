@@ -130,6 +130,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(count($surePlace) >= 2){
         $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
+        $total -= count($surePlace);
+        if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
+            $placed = array_intersect($surePlace, array_slice($officialWin, 0, 3));
+            foreach($placed as $fuck){
+                $total += $placeAmount[$fuck];
+            }
+        }
     }
   
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
