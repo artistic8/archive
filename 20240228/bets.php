@@ -135,5 +135,5 @@ return [
 		'inter' => '1',//count: 1
 	],
 ];
-//total place: 57.5
-//total: 57.5
+//total place: 3.5
+//total: 3.5

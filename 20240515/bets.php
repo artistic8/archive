@@ -136,5 +136,5 @@ return [
 		'Sure Place' => '3, 9',
 	],
 ];
-//total place: 41.5
-//total: 41.5
+//total place: -57.5
+//total: -57.5
