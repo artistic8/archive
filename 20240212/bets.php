@@ -15,7 +15,7 @@ return [
 			4 => 17,
 		],
 		'Place' => '4, 12',
-		'win race' => -2,
+		'win race' => -20,
 	],
 	'2' => [
 		/**
@@ -31,7 +31,7 @@ return [
 			12 => 30,
 		],
 		'Place' => '2, 12',
-		'win race' => -2,
+		'win race' => -40,
 	],
 	'3' => [
 		/**
@@ -63,7 +63,7 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 10',
-		'win race' => 33.5,
+		'win race' => -24.5,
 	],
 	'5' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		],
 		'inter' => '3, 7',//count: 2
 		'Place' => '3, 7',
-		'win race' => -2,
+		'win race' => -44.5,
 	],
 	'7' => [
 		/**
@@ -125,7 +125,7 @@ return [
 		],
 		'inter' => '6',//count: 1
 		'Place' => '6',
-		'win race' => -1,
+		'win race' => -54.5,
 	],
 	'9' => [
 		/**
@@ -142,7 +142,7 @@ return [
 		],
 		'inter' => '12',//count: 1
 		'Place' => '1, 8',
-		'win race' => -2,
+		'win race' => -74.5,
 	],
 	'10' => [
 		/**
@@ -173,5 +173,5 @@ return [
 		],
 	],
 ];
-//total win: -2
-//total: 24.5
+//total win: -74.5
+//total: -74.5
