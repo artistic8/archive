@@ -122,7 +122,7 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'Place' => '3',
-		'win race' => 0,
+		'win race' => -10,
 		'win bet($10)' => '7, 12',
 		'qin bet($20)' => '3, 4, 11',
 		'qin($10)' => '3, 4, 11 X 7, 12',
@@ -173,5 +173,5 @@ return [
 		],
 	],
 ];
-//total place: 0
-//total: 398.5
+//total place: -10
+//total: 388.5

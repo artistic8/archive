@@ -54,7 +54,7 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'Place' => '4',
-		'win race' => 20.5,
+		'win race' => 10.5,
 		'win bet($10)' => '7, 8, 9',
 		'qin bet($20)' => '3, 4, 5',
 		'qin($10)' => '3, 4, 5 X 7, 8, 9',
@@ -92,7 +92,7 @@ return [
 			8 => 32,
 		],
 		'Place' => '1',
-		'win race' => 47.5,
+		'win race' => 37.5,
 	],
 	'6' => [
 		/**
@@ -108,7 +108,7 @@ return [
 			3 => 44.5,
 		],
 		'Place' => '2',
-		'win race' => 0,
+		'win race' => -10,
 	],
 	'7' => [
 		/**
@@ -168,5 +168,5 @@ return [
 		],
 	],
 ];
-//total place: 68
-//total: -3.5
+//total place: 38
+//total: -33.5
