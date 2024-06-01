@@ -129,7 +129,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         } 
     }
     if(!empty($surePlace)){
-        $racetext .= "\t\t'Sure Place' => '" . implode(", ", $surePlace) . "',\n";
+        $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
+        if(isset($officialWin)){
+            $total -= count($surePlace);
+            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) $totalRace += $winAmount;
+        }
     }
   
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
