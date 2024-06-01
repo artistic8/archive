@@ -181,6 +181,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     else{
         $setX = array_diff($runners, $favorites);
+        $setX = array_slice($setX, 0, 6);
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $setX) . "',\n"; 
         $totalBets = 10 * count($setX);
         $totalRace = 0 - $totalBets;
