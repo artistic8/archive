@@ -93,7 +93,7 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 3',
-		'win race' => 20,
+		'win race' => -20,
 	],
 	'7' => [
 		/**
