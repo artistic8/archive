@@ -154,6 +154,8 @@ return [
 		'trio($10)' => '3, 4, 11',
 		'total bets' => 150,
 		'total won in race' => 388.5,
+		'win($10)' => '11, 4, 9, 3, 12',
+		'total won in race' => -50,
 	],
 	'9' => [
 		/**
@@ -211,4 +213,4 @@ return [
 	],
 ];
 //total place: 0
-//total: 89.5
+//total: 39.5

@@ -159,7 +159,9 @@ return [
 		'win($70)' => '5, 6',
 		'total bets' => 830,
 		'total won in race' => 93,
+		'win($10)' => '6, 4, 8, 13, 5, 7',
+		'total won in race' => -60,
 	],
 ];
 //total place: 0
-//total: 119
+//total: 59

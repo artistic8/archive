@@ -179,10 +179,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $total += $totalRace;
         }
     }
-        // $setX = array_diff($runners, $favorites);
-        $setX = array_slice($runners, 0, 2 + count($favorites));
+    else{
+        $setX = array_diff($runners, $favorites);
+        $setX = array_slice($setX, 0, 3);
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $setX) . "',\n"; 
-        $totalRace -= 10 * count($setX);
+        $totalBets = 10 * count($setX);
+        $totalRace = 0 - $totalBets;
         if(isset($officialWin)){
             if(!empty(array_intersect($setX, array_slice($officialWin, 0, 1)))) {
                 $totalRace += $winAmount;
@@ -193,6 +195,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         $racetext .= "\t\t'total won in race' => $totalRace,\n";
         $total += $totalRace;
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);

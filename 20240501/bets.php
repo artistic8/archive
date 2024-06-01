@@ -25,6 +25,9 @@ return [
 		'win($70)' => '3, 4',
 		'total bets' => 540,
 		'total won in race' => 464,
+		'win($10)' => '4, 1, 2, 3, 9',
+		'key' => 0,
+		'total won in race' => 1.5,
 	],
 	'2' => [
 		/**
@@ -162,6 +165,9 @@ return [
 		'win($70)' => '2, 3',
 		'total bets' => 830,
 		'total won in race' => -214,
+		'win($10)' => '3, 4, 7, 1, 9, 2',
+		'key' => 0,
+		'total won in race' => -16,
 	],
 	'9' => [
 		/**
@@ -183,4 +189,4 @@ return [
 	],
 ];
 //total place: 0
-//total: 393.5
+//total: 379
