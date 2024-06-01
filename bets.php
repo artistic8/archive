@@ -185,7 +185,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalBets = 10 * count($setX);
         $totalRace = 0 - $totalBets;
         if(isset($officialWin)){
-            if(!empty(array_intersect($setX, array_slice($officialWin, 0, 1)))) $totalRace += $winAmount;
+            if(!empty(array_intersect($setX, array_slice($officialWin, 0, 1)))) {
+                $totalRace += $winAmount;
+                $winner = $officialWin[0];
+                $key = array_search($winner, $setX);
+                $racetext .= "\t\t'key' => $key,\n";
+            }
         }
         $racetext .= "\t\t'total won in race' => $totalRace,\n";
         $total += $totalRace;
