@@ -14,7 +14,7 @@ function combination($p, $n){
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
-$totalPlace = 0;
+$totalWin = 0;
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
@@ -130,6 +130,17 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($surePlace)){
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
+        if(isset($officialWin) && count($surePlace) >= 2){
+            $total -= 10 * count($surePlace);
+            $totalWin -= 10 * count($surePlace);
+            $totalWinRace -= 10 * count($surePlace);
+            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
+                $total += $winAmount;
+                $totalWin += $winAmount;
+                $totalWinRace += $winAmount;
+            }
+            $racetext .= "\t\t'win race' => $totalWinRace,\n" ;
+        }
     }
   
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
@@ -178,6 +189,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total place: $totalPlace\n";
+$outtext .= "//total place: $totalWin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
