@@ -130,22 +130,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($surePlace)){
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
-        if(isset($officialWin) && count($surePlace) === 1){
-            $total -= 20 * count($surePlace);
-            $totalWin -= 20 * count($surePlace);
-            $totalWinRace = 0 - 20 * count($surePlace);
-            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
-                $total += $placeAmount[end($surePlace)];
-                $totalWin += $placeAmount[end($surePlace)];
-                $totalWinRace += $placeAmount[end($surePlace)];
-            }
-            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
-                $total += $winAmount;
-                $totalWin += $winAmount;
-                $totalWinRace += $winAmount;
-            }
-            $racetext .= "\t\t'win race' => $totalWinRace,\n" ;
-        }
     }
   
     if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
