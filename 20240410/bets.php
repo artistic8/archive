@@ -16,8 +16,8 @@ return [
 			3 => 26,
 		],
 		'Place' => '5',
-		'qin($10)' => '3, 5, 6, 7, 9, 10',
-		'total won in race' => -150,
+		'win($10)' => '9, 3',
+		'total won in race' => -20,
 	],
 	'2' => [
 		/**
@@ -33,8 +33,9 @@ return [
 			6 => 188.5,
 			10 => 96,
 		],
-		'qin($10)' => '1, 2, 3, 5',
-		'total won in race' => -60,
+		'win($10)' => '1, 5',
+		'key, winer' => [1, 5],
+		'total won in race' => 73,
 	],
 	'3' => [
 		/**
@@ -52,8 +53,8 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2',
-		'qin($10)' => '1, 2, 3, 5, 6, 7, 8',
-		'total won in race' => -152,
+		'win($10)' => '1, 7',
+		'total won in race' => -20,
 	],
 	'4' => [
 		/**
@@ -71,8 +72,8 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
-		'qin($10)' => '1, 3, 8, 12',
-		'total won in race' => -3.5,
+		'win($10)' => '3, 12',
+		'total won in race' => -20,
 	],
 	'5' => [
 		/**
@@ -89,8 +90,8 @@ return [
 			11 => 14.5,
 		],
 		'Place' => '5, 11',
-		'qin($10)' => '3, 5, 8, 11, 12',
-		'total won in race' => -100,
+		'win($10)' => '12, 3',
+		'total won in race' => -20,
 	],
 	'6' => [
 		/**
@@ -108,8 +109,8 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2',
-		'qin($10)' => '2, 3, 4, 6, 9, 11',
-		'total won in race' => 616,
+		'win($10)' => '4, 3',
+		'total won in race' => -20,
 	],
 	'7' => [
 		/**
@@ -126,8 +127,8 @@ return [
 			4 => 17.5,
 		],
 		'Place' => '2',
-		'qin($10)' => '1, 2, 4, 6, 10',
-		'total won in race' => -100,
+		'win($10)' => '4, 1',
+		'total won in race' => -20,
 	],
 	'8' => [
 		/**
@@ -145,8 +146,8 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'Place' => '3, 4',
-		'qin($10)' => '1, 2, 3, 4, 5, 7, 8',
-		'total won in race' => -49.5,
+		'win($10)' => '5, 1',
+		'total won in race' => -20,
 	],
 	'9' => [
 		/**
@@ -164,9 +165,10 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '9',
-		'qin($10)' => '2, 4, 8, 9, 11',
-		'total won in race' => 2.5,
+		'win($10)' => '4, 8',
+		'key, winer' => [1, 8],
+		'total won in race' => 22,
 	],
 ];
 //total place: 0
-//total: 3.5
+//total: -45

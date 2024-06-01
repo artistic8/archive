@@ -41,8 +41,8 @@ return [
 			10 => 20,
 		],
 		'Place' => '6, 12',
-		'qin($10)' => '1, 3, 5, 6, 9, 10, 12',
-		'total won in race' => -71.5,
+		'win($10)' => '9, 10',
+		'total won in race' => -20,
 	],
 	'3' => [
 		/**
@@ -58,8 +58,9 @@ return [
 			5 => 11,
 			2 => 38,
 		],
-		'qin($10)' => '1, 5, 6, 11',
-		'total won in race' => 23.5,
+		'win($10)' => '11, 6',
+		'key, winer' => [1, 6],
+		'total won in race' => 45.5,
 	],
 	'4' => [
 		/**
@@ -76,8 +77,9 @@ return [
 			11 => 18,
 		],
 		'Place' => '3, 11',
-		'qin($10)' => '1, 3, 5, 6, 11',
-		'total won in race' => -100,
+		'win($10)' => '6, 1',
+		'key, winer' => [1, 1],
+		'total won in race' => 105,
 	],
 	'5' => [
 		/**
@@ -94,8 +96,9 @@ return [
 			9 => 35,
 		],
 		'Place' => '3',
-		'qin($10)' => '2, 3, 4, 6, 9, 10',
-		'total won in race' => -22,
+		'win($10)' => '10, 9',
+		'key, winer' => [0, 10],
+		'total won in race' => 39.5,
 	],
 	'6' => [
 		/**
@@ -111,8 +114,8 @@ return [
 			10 => 16.5,
 			7 => 29.5,
 		],
-		'qin($10)' => '4, 5, 6, 8, 9, 10, 12',
-		'total won in race' => 16.5,
+		'win($10)' => '9, 8',
+		'total won in race' => -20,
 	],
 	'7' => [
 		/**
@@ -129,8 +132,8 @@ return [
 			11 => 10.5,
 		],
 		'Place' => '3, 6',
-		'qin($10)' => '1, 3, 5, 6, 8, 11',
-		'total won in race' => 97,
+		'win($10)' => '8, 1',
+		'total won in race' => -20,
 	],
 	'8' => [
 		/**
@@ -171,9 +174,9 @@ return [
 			3 => 34,
 			6 => 17,
 		],
-		'qin($10)' => '1, 2, 4, 6, 7',
-		'total won in race' => -100,
+		'win($10)' => '6, 2',
+		'total won in race' => -20,
 	],
 ];
 //total place: 0
-//total: 93.5
+//total: 360
