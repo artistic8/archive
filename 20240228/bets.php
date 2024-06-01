@@ -52,7 +52,7 @@ return [
 		],
 		'Place' => '3, 8, 9',
 		'qin($10)' => '1, 3, 6, 8, 9, 10, 12',
-		'total won in race' => -210,
+		'total won in race' => -44,
 	],
 	'4' => [
 		/**
@@ -167,4 +167,4 @@ return [
 	],
 ];
 //total place: 0
-//total: -760
+//total: -594

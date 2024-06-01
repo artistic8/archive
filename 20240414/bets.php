@@ -17,7 +17,7 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'qin($10)' => '3, 4, 6, 7',
-		'total won in race' => -60,
+		'total won in race' => -11,
 	],
 	'2' => [
 		/**
@@ -52,7 +52,7 @@ return [
 			13 => 13,
 		],
 		'qin($10)' => '5, 9, 10, 13',
-		'total won in race' => -60,
+		'total won in race' => 445.5,
 	],
 	'4' => [
 		/**
@@ -70,7 +70,7 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'qin($10)' => '2, 3, 4, 10',
-		'total won in race' => -60,
+		'total won in race' => -26,
 	],
 	'5' => [
 		/**
@@ -145,7 +145,7 @@ return [
 		'inter' => '8',//count: 1
 		'Place' => '3, 6, 8',
 		'qin($10)' => '1, 2, 3, 5, 6, 7, 8',
-		'total won in race' => -210,
+		'total won in race' => -164,
 	],
 	'9' => [
 		/**
@@ -164,7 +164,7 @@ return [
 		'inter' => '2, 3',//count: 2
 		'Place' => '2, 3',
 		'qin($10)' => '2, 3, 8, 9',
-		'total won in race' => -60,
+		'total won in race' => 51,
 	],
 	'10' => [
 		/**
@@ -181,7 +181,7 @@ return [
 			8 => 122.5,
 		],
 		'qin($10)' => '1, 2, 4, 6, 10, 13, 14',
-		'total won in race' => -210,
+		'total won in race' => 892,
 	],
 	'11' => [
 		/**
@@ -202,4 +202,4 @@ return [
 	],
 ];
 //total place: 0
-//total: -1190
+//total: 657.5

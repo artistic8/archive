@@ -181,7 +181,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     else{
         $setX = array_diff($runners, $favorites);
-        $setX = array_slice($setX, 0, 2);
+        $setX = array_slice($setX, 0, 3);
         $qinX = array_merge($setX, $favorites);
         sort($qinX);
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $qinX) . "',\n"; 

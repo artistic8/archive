@@ -42,7 +42,7 @@ return [
 		],
 		'Place' => '2, 5, 10',
 		'qin($10)' => '2, 5, 6, 10, 11, 12',
-		'total won in race' => -150,
+		'total won in race' => 82.5,
 	],
 	'3' => [
 		/**
@@ -85,7 +85,7 @@ return [
 		],
 		'Place' => '1, 3, 5, 12',
 		'qin($10)' => '1, 3, 5, 6, 9, 12, 13',
-		'total won in race' => -210,
+		'total won in race' => -16,
 	],
 	'5' => [
 		/**
@@ -103,7 +103,7 @@ return [
 		],
 		'Place' => '1',
 		'qin($10)' => '1, 2, 6, 8, 10, 14',
-		'total won in race' => -150,
+		'total won in race' => 120,
 	],
 	'6' => [
 		/**
@@ -194,4 +194,4 @@ return [
 	],
 ];
 //total place: 0
-//total: -1071.5
+//total: -375
