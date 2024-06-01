@@ -15,6 +15,7 @@ return [
 			6 => 18,
 		],
 		'Place' => '6, 10',
+		'win race' => 20,
 	],
 	'2' => [
 		/**
@@ -78,6 +79,7 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 3',
+		'win race' => 20,
 	],
 	'6' => [
 		/**
@@ -141,5 +143,5 @@ return [
 		'Place' => '4',
 	],
 ];
-//total place: 0
-//total: 0
+//total place: -40
+//total: -40
