@@ -139,7 +139,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 $totalWin += $placeAmount[end($surePlace)];
                 $totalWinRace += $placeAmount[end($surePlace)];
             }
-            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
+            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
                 $total += $winAmount;
                 $totalWin += $winAmount;
                 $totalWinRace += $winAmount;
