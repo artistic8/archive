@@ -141,5 +141,5 @@ return [
 		'Place' => '5',
 	],
 ];
-//total win: -110
-//total: -110
+//total place: 0
+//total: 0

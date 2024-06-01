@@ -62,7 +62,6 @@ return [
 			7 => 67,
 		],
 		'Place' => '1',
-		'win race' => 19,
 	],
 	'5' => [
 		/**
@@ -155,5 +154,5 @@ return [
 		'Place' => '4',
 	],
 ];
-//total win: -71
-//total: -71
+//total place: 0
+//total: 0

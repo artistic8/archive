@@ -61,7 +61,6 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 10',
-		'win race' => 15.5,
 	],
 	'5' => [
 		/**
@@ -168,5 +167,5 @@ return [
 		],
 	],
 ];
-//total win: -74.5
-//total: -74.5
+//total place: 0
+//total: 0
