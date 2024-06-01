@@ -188,7 +188,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalBets = 10 * combination(2, count($qinX));
         $totalRace = 0 - $totalBets;
         if(isset($officialWin)){
-            if(count(array_intersect($setX, array_slice($officialWin, 0, 2))) === 2) {
+            if(count(array_intersect($qinX, array_slice($officialWin, 0, 2))) === 2) {
                 $totalRace += $qinAmount;
             }
         }
