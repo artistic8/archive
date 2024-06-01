@@ -16,9 +16,9 @@ return [
 			1 => 54.5,
 		],
 		'Place' => '7',
-		'win($10)' => '12, 14, 2, 4, 3, 8',
+		'win($10)' => '12, 14, 2, 4, 3',
 		'key' => 1,
-		'total won in race' => 56,
+		'total won in race' => 66,
 	],
 	'2' => [
 		/**
@@ -36,9 +36,9 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2, 7',
-		'win($10)' => '11, 6, 8, 10, 4, 9',
+		'win($10)' => '11, 6, 8, 10, 4',
 		'key' => 1,
-		'total won in race' => 51,
+		'total won in race' => 61,
 	],
 	'3' => [
 		/**
@@ -55,8 +55,8 @@ return [
 			1 => 16.5,
 		],
 		'inter' => '1',//count: 1
-		'win($10)' => '9, 2, 12, 8, 6, 14',
-		'total won in race' => -60,
+		'win($10)' => '9, 2, 12, 8, 6',
+		'total won in race' => -50,
 	],
 	'4' => [
 		/**
@@ -121,9 +121,9 @@ return [
 			14 => 91,
 		],
 		'Place' => '2',
-		'win($10)' => '11, 1, 3, 7, 5, 14',
+		'win($10)' => '11, 1, 3, 7, 5',
 		'key' => 2,
-		'total won in race' => 4.5,
+		'total won in race' => 14.5,
 	],
 	'7' => [
 		/**
@@ -141,9 +141,9 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
-		'win($10)' => '9, 2, 3, 10, 6, 4',
+		'win($10)' => '9, 2, 3, 10, 6',
 		'key' => 2,
-		'total won in race' => 66.5,
+		'total won in race' => 76.5,
 	],
 	'8' => [
 		/**
@@ -160,8 +160,8 @@ return [
 			9 => 151,
 		],
 		'Place' => '1, 8',
-		'win($10)' => '4, 5, 2, 3, 7, 10',
-		'total won in race' => -60,
+		'win($10)' => '4, 5, 2, 3, 7',
+		'total won in race' => -50,
 	],
 	'9' => [
 		/**
@@ -179,9 +179,9 @@ return [
 		],
 		'inter' => '8',//count: 1
 		'Place' => '3, 4, 8, 9',
-		'win($10)' => '6, 12, 10, 5, 7, 2',
+		'win($10)' => '6, 12, 10, 5, 7',
 		'key' => 1,
-		'total won in race' => 63,
+		'total won in race' => 73,
 	],
 	'10' => [
 		/**
@@ -197,9 +197,9 @@ return [
 			2 => 29,
 			8 => 17.5,
 		],
-		'win($10)' => '3, 6, 1, 4, 5, 14',
-		'total won in race' => -60,
+		'win($10)' => '3, 6, 1, 4, 5',
+		'total won in race' => -50,
 	],
 ];
 //total place: 0
-//total: 1069
+//total: 1149
