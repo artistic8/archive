@@ -137,8 +137,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 $total += $winAmount;
                 $totalWin += $winAmount;
                 $totalRaceWin = $winAmount - 10 * count($surePlace);
+                $racetext .= "\t\t'win race' => $totalRaceWin,\n";
             }
-            $racetext .= "\t\t'win race' => $totalRaceWin,\n";
+            
         }
     }
   
