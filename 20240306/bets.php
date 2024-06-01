@@ -9,12 +9,12 @@ return [
 		'official win' => '3, 7, 10, 2',
 		'win amount' => 39,
 		'qin amount' => 112,
+		'trio amount' => 191,
 		'place amount' => [
 			3 => 17,
 			7 => 16.5,
 			10 => 19,
 		],
-		'Place' => '7, 8, 10',
 	],
 	'2' => [
 		/**
@@ -24,12 +24,12 @@ return [
 		'official win' => '5, 6, 4, 7',
 		'win amount' => 412.5,
 		'qin amount' => 4879.5,
+		'trio amount' => 7495,
 		'place amount' => [
 			5 => 96,
 			6 => 53.5,
 			4 => 19.5,
 		],
-		'Place' => '4',
 	],
 	'3' => [
 		/**
@@ -39,12 +39,12 @@ return [
 		'official win' => '4, 3, 5, 9',
 		'win amount' => 61,
 		'qin amount' => 259,
+		'trio amount' => 673,
 		'place amount' => [
 			4 => 20.5,
 			3 => 31.5,
 			5 => 27.5,
 		],
-		'Place' => '1, 4',
 	],
 	'4' => [
 		/**
@@ -54,6 +54,7 @@ return [
 		'official win' => '5, 6, 1, 3',
 		'win amount' => 36.5,
 		'qin amount' => 181,
+		'trio amount' => 245,
 		'place amount' => [
 			5 => 15.5,
 			6 => 30,
@@ -68,13 +69,12 @@ return [
 		'official win' => '7, 2, 1, 8',
 		'win amount' => 29.5,
 		'qin amount' => 262,
+		'trio amount' => 585,
 		'place amount' => [
 			7 => 14,
 			2 => 50,
 			1 => 32.5,
 		],
-		'inter' => '1',//count: 1
-		'Place' => '3',
 	],
 	'6' => [
 		/**
@@ -84,12 +84,12 @@ return [
 		'official win' => '1, 12, 9, 6',
 		'win amount' => 51,
 		'qin amount' => 227.5,
+		'trio amount' => 360,
 		'place amount' => [
 			1 => 18.5,
 			12 => 23,
 			9 => 18.5,
 		],
-		'Place' => '1, 5',
 	],
 	'7' => [
 		/**
@@ -99,6 +99,7 @@ return [
 		'official win' => '2, 4, 3, 5',
 		'win amount' => 77,
 		'qin amount' => 100,
+		'trio amount' => 192,
 		'place amount' => [
 			2 => 21.5,
 			4 => 13.5,
@@ -113,13 +114,12 @@ return [
 		'official win' => '8, 4, 10, 12',
 		'win amount' => 41.5,
 		'qin amount' => 150,
+		'trio amount' => 515,
 		'place amount' => [
 			8 => 16.5,
 			4 => 20,
 			10 => 34.5,
 		],
-		'inter' => '3, 8',//count: 2
-		'Place' => '3, 8',
 	],
 	'9' => [
 		/**
@@ -129,13 +129,11 @@ return [
 		'official win' => '9, 11, 1, 3',
 		'win amount' => 63.5,
 		'qin amount' => 270,
+		'trio amount' => 1078,
 		'place amount' => [
 			9 => 22,
 			11 => 26.5,
 			1 => 34.5,
 		],
-		'Place' => '3',
 	],
 ];
-//total place: 0
-//total: 0

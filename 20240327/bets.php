@@ -9,12 +9,12 @@ return [
 		'official win' => '12, 4, 6, 7',
 		'win amount' => 120.5,
 		'qin amount' => 797.5,
+		'trio amount' => 1254,
 		'place amount' => [
 			12 => 34,
 			4 => 47.5,
 			6 => 18,
 		],
-		'Place' => '6, 10',
 	],
 	'2' => [
 		/**
@@ -24,12 +24,12 @@ return [
 		'official win' => '5, 4, 6, 3',
 		'win amount' => 48,
 		'qin amount' => 250,
+		'trio amount' => 2437,
 		'place amount' => [
 			5 => 17.5,
 			4 => 37.5,
 			6 => 75.5,
 		],
-		'Place' => '5',
 	],
 	'3' => [
 		/**
@@ -39,13 +39,12 @@ return [
 		'official win' => '1, 3, 7, 8',
 		'win amount' => 57,
 		'qin amount' => 139,
+		'trio amount' => 112,
 		'place amount' => [
 			1 => 19.5,
 			3 => 20,
 			7 => 16.5,
 		],
-		'inter' => '7',//count: 1
-		'Place' => '7',
 	],
 	'4' => [
 		/**
@@ -55,13 +54,12 @@ return [
 		'official win' => '11, 7, 1, 8',
 		'win amount' => 30,
 		'qin amount' => 999,
+		'trio amount' => 3217,
 		'place amount' => [
 			11 => 14.5,
 			7 => 141,
 			1 => 50,
 		],
-		'inter' => '11',//count: 1
-		'Place' => '11',
 	],
 	'5' => [
 		/**
@@ -71,13 +69,12 @@ return [
 		'official win' => '5, 3, 7, 6',
 		'win amount' => 70,
 		'qin amount' => 153.5,
+		'trio amount' => 395,
 		'place amount' => [
 			5 => 26,
 			3 => 18,
 			7 => 35.5,
 		],
-		'inter' => '1',//count: 1
-		'Place' => '1, 3',
 	],
 	'6' => [
 		/**
@@ -87,12 +84,12 @@ return [
 		'official win' => '5, 1, 10, 12',
 		'win amount' => 32,
 		'qin amount' => 157.5,
+		'trio amount' => 399,
 		'place amount' => [
 			5 => 13.5,
 			1 => 23.5,
 			10 => 28.5,
 		],
-		'Place' => '3',
 	],
 	'7' => [
 		/**
@@ -102,13 +99,12 @@ return [
 		'official win' => '6, 7, 4, 9',
 		'win amount' => 16.5,
 		'qin amount' => 82,
+		'trio amount' => 176,
 		'place amount' => [
 			6 => 10.1,
 			7 => 30.5,
 			4 => 19.5,
 		],
-		'inter' => '6',//count: 1
-		'Place' => '6',
 	],
 	'8' => [
 		/**
@@ -118,12 +114,12 @@ return [
 		'official win' => '10, 12, 3, 2',
 		'win amount' => 33,
 		'qin amount' => 122,
+		'trio amount' => 224,
 		'place amount' => [
 			10 => 15,
 			12 => 19,
 			3 => 20.5,
 		],
-		'Place' => '1',
 	],
 	'9' => [
 		/**
@@ -133,13 +129,11 @@ return [
 		'official win' => '2, 4, 11, 7',
 		'win amount' => 207,
 		'qin amount' => 175,
+		'trio amount' => 155,
 		'place amount' => [
 			2 => 34.5,
 			4 => 11.5,
 			11 => 14,
 		],
-		'Place' => '4',
 	],
 ];
-//total place: 0
-//total: 0

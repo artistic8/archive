@@ -9,12 +9,12 @@ return [
 		'official win' => '8, 9, 5, 4',
 		'win amount' => 16,
 		'qin amount' => 89.5,
+		'trio amount' => 81,
 		'place amount' => [
 			8 => 13,
 			9 => 23,
 			5 => 12,
 		],
-		'Place' => '2, 5',
 	],
 	'2' => [
 		/**
@@ -24,13 +24,12 @@ return [
 		'official win' => '8, 6, 10, 7',
 		'win amount' => 69,
 		'qin amount' => 121,
+		'trio amount' => 489,
 		'place amount' => [
 			8 => 19.5,
 			6 => 15.5,
 			10 => 39.5,
 		],
-		'inter' => '6',//count: 1
-		'Place' => '6, 9',
 	],
 	'3' => [
 		/**
@@ -40,12 +39,12 @@ return [
 		'official win' => '7, 12, 4, 10',
 		'win amount' => 194.5,
 		'qin amount' => 2475,
+		'trio amount' => 5706,
 		'place amount' => [
 			7 => 55,
 			12 => 82.5,
 			4 => 28,
 		],
-		'Place' => '4, 12',
 	],
 	'4' => [
 		/**
@@ -55,12 +54,12 @@ return [
 		'official win' => '4, 7, 2, 3',
 		'win amount' => 61.5,
 		'qin amount' => 2228.5,
+		'trio amount' => 3182,
 		'place amount' => [
 			4 => 19.5,
 			7 => 154.5,
 			2 => 21,
 		],
-		'Place' => '1, 3, 5',
 	],
 	'5' => [
 		/**
@@ -70,12 +69,12 @@ return [
 		'official win' => '5, 2, 13, 7',
 		'win amount' => 26,
 		'qin amount' => 87,
+		'trio amount' => 415,
 		'place amount' => [
 			5 => 15.5,
 			2 => 18.5,
 			13 => 35.5,
 		],
-		'Place' => '1, 5',
 	],
 	'6' => [
 		/**
@@ -85,12 +84,12 @@ return [
 		'official win' => '2, 7, 9, 6',
 		'win amount' => 107,
 		'qin amount' => 437.5,
+		'trio amount' => 759,
 		'place amount' => [
 			2 => 34,
 			7 => 28.5,
 			9 => 19.5,
 		],
-		'Place' => '3, 5',
 	],
 	'7' => [
 		/**
@@ -100,12 +99,12 @@ return [
 		'official win' => '3, 8, 4, 12',
 		'win amount' => 712,
 		'qin amount' => 1089,
+		'trio amount' => 1503,
 		'place amount' => [
 			3 => 161.5,
 			8 => 13.5,
 			4 => 21,
 		],
-		'Place' => '1, 6, 8',
 	],
 	'8' => [
 		/**
@@ -115,18 +114,12 @@ return [
 		'official win' => '7, 4, 11, 5',
 		'win amount' => 223,
 		'qin amount' => 315.5,
+		'trio amount' => 790,
 		'place amount' => [
 			7 => 51,
 			4 => 16,
 			11 => 22,
 		],
-		'inter' => '3, 4',//count: 2
-		'Place' => '3',
-		'win bet($10)' => '7, 12',
-		'qin bet($20)' => '3, 4, 11',
-		'qin($10)' => '3, 4, 11 X 7, 12',
-		'total bets' => 140,
-		'total won in race' => 398.5,
 	],
 	'9' => [
 		/**
@@ -136,12 +129,12 @@ return [
 		'official win' => '8, 4, 2, 6',
 		'win amount' => 64.5,
 		'qin amount' => 353,
+		'trio amount' => 166,
 		'place amount' => [
 			8 => 19,
 			4 => 30,
 			2 => 13,
 		],
-		'Place' => '2, 3',
 	],
 	'10' => [
 		/**
@@ -151,6 +144,7 @@ return [
 		'official win' => '8, 3, 11, 5',
 		'win amount' => 14,
 		'qin amount' => 47,
+		'trio amount' => 50,
 		'place amount' => [
 			8 => 10.1,
 			3 => 19,
@@ -165,6 +159,7 @@ return [
 		'official win' => '5, 3, 1, 8',
 		'win amount' => 105,
 		'qin amount' => 159,
+		'trio amount' => 686,
 		'place amount' => [
 			5 => 27.5,
 			3 => 11.5,
@@ -172,5 +167,3 @@ return [
 		],
 	],
 ];
-//total place: 0
-//total: 398.5

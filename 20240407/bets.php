@@ -9,6 +9,7 @@ return [
 		'official win' => '7, 13, 2, 4',
 		'win amount' => 44.5,
 		'qin amount' => 159.5,
+		'trio amount' => 345,
 		'place amount' => [
 			7 => 17,
 			13 => 25.5,
@@ -23,12 +24,12 @@ return [
 		'official win' => '10, 14, 7, 5',
 		'win amount' => 124,
 		'qin amount' => 1458.5,
+		'trio amount' => 13742,
 		'place amount' => [
 			10 => 35,
 			14 => 63,
 			7 => 120,
 		],
-		'Place' => '4, 5, 10',
 	],
 	'3' => [
 		/**
@@ -38,13 +39,12 @@ return [
 		'official win' => '2, 4, 6, 7',
 		'win amount' => 20,
 		'qin amount' => 56,
+		'trio amount' => 114,
 		'place amount' => [
 			2 => 10.5,
 			4 => 18,
 			6 => 22,
 		],
-		'inter' => '2',//count: 1
-		'Place' => '2',
 	],
 	'4' => [
 		/**
@@ -54,12 +54,12 @@ return [
 		'official win' => '2, 8, 5, 4',
 		'win amount' => 75,
 		'qin amount' => 210,
+		'trio amount' => 1280,
 		'place amount' => [
 			2 => 27,
 			8 => 18.5,
 			5 => 56,
 		],
-		'Place' => '4',
 	],
 	'5' => [
 		/**
@@ -69,12 +69,12 @@ return [
 		'official win' => '1, 4, 3, 2',
 		'win amount' => 57,
 		'qin amount' => 359.5,
+		'trio amount' => 191,
 		'place amount' => [
 			1 => 15.5,
 			4 => 31.5,
 			3 => 13,
 		],
-		'inter' => '6',//count: 1
 	],
 	'6' => [
 		/**
@@ -84,13 +84,12 @@ return [
 		'official win' => '4, 1, 2, 8',
 		'win amount' => 26.5,
 		'qin amount' => 72,
+		'trio amount' => 53,
 		'place amount' => [
 			4 => 12.5,
 			1 => 16,
 			2 => 15,
 		],
-		'inter' => '1',//count: 1
-		'Place' => '1, 2, 4',
 	],
 	'7' => [
 		/**
@@ -100,13 +99,12 @@ return [
 		'official win' => '1, 8, 5, 3',
 		'win amount' => 20,
 		'qin amount' => 126,
+		'trio amount' => 346,
 		'place amount' => [
 			1 => 11.5,
 			8 => 30,
 			5 => 29,
 		],
-		'inter' => '1, 3',//count: 2
-		'Place' => '1, 3',
 	],
 	'8' => [
 		/**
@@ -116,13 +114,12 @@ return [
 		'official win' => '3, 2, 6, 5',
 		'win amount' => 46,
 		'qin amount' => 49,
+		'trio amount' => 327,
 		'place amount' => [
 			3 => 17,
 			2 => 11.5,
 			6 => 49,
 		],
-		'inter' => '3',//count: 1
-		'Place' => '3',
 	],
 	'9' => [
 		/**
@@ -132,6 +129,7 @@ return [
 		'official win' => '7, 2, 14, 4',
 		'win amount' => 22,
 		'qin amount' => 196,
+		'trio amount' => 402,
 		'place amount' => [
 			7 => 12.5,
 			2 => 43.5,
@@ -146,6 +144,7 @@ return [
 		'official win' => '10, 1, 3, 9',
 		'win amount' => 88,
 		'qin amount' => 307,
+		'trio amount' => 271,
 		'place amount' => [
 			10 => 29.5,
 			1 => 20,
@@ -153,5 +152,3 @@ return [
 		],
 	],
 ];
-//total place: 0
-//total: 0
