@@ -34,7 +34,7 @@ return [
 			10 => 96,
 		],
 		'win($10)' => '1, 5',
-		'key' => 1,
+		'key, winer' => [1, 5],
 		'total won in race' => 73,
 	],
 	'3' => [
@@ -166,7 +166,7 @@ return [
 		'inter' => '2',//count: 1
 		'Place' => '9',
 		'win($10)' => '4, 8',
-		'key' => 1,
+		'key, winer' => [1, 8],
 		'total won in race' => 22,
 	],
 ];

@@ -180,7 +180,7 @@ return [
 			3 => 14.5,
 		],
 		'win($10)' => '6, 10',
-		'key' => 1,
+		'key, winer' => [1, 10],
 		'total won in race' => 68,
 	],
 ];

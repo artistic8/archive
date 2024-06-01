@@ -60,7 +60,7 @@ return [
 		'inter' => '4',//count: 1
 		'Place' => '4',
 		'win($10)' => '5, 7',
-		'key' => 0,
+		'key, winer' => [0, 5],
 		'total won in race' => 27.5,
 	],
 	'4' => [
@@ -170,7 +170,7 @@ return [
 		],
 		'Place' => '8, 10',
 		'win($10)' => '9, 3',
-		'key' => 1,
+		'key, winer' => [1, 3],
 		'total won in race' => 51.5,
 	],
 	'10' => [

@@ -85,7 +85,7 @@ return [
 		],
 		'Place' => '1, 3, 5, 12',
 		'win($10)' => '13, 6',
-		'key' => 1,
+		'key, winer' => [1, 6],
 		'total won in race' => 57.5,
 	],
 	'5' => [
@@ -191,7 +191,7 @@ return [
 			3 => 10.1,
 		],
 		'win($10)' => '14, 2',
-		'key' => 0,
+		'key, winer' => [0, 14],
 		'total won in race' => 100,
 	],
 ];

@@ -110,7 +110,7 @@ return [
 			11 => 18,
 		],
 		'win($10)' => '12, 3',
-		'key' => 0,
+		'key, winer' => [0, 12],
 		'total won in race' => 81.5,
 	],
 	'7' => [
@@ -130,7 +130,7 @@ return [
 		'inter' => '2',//count: 1
 		'Place' => '2, 3',
 		'win($10)' => '9, 5',
-		'key' => 0,
+		'key, winer' => [0, 9],
 		'total won in race' => 59.5,
 	],
 	'8' => [
@@ -168,7 +168,7 @@ return [
 		'inter' => '5',//count: 1
 		'Place' => '1, 3, 5',
 		'win($10)' => '7, 8',
-		'key' => 1,
+		'key, winer' => [1, 8],
 		'total won in race' => 82,
 	],
 ];

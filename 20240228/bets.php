@@ -16,7 +16,7 @@ return [
 			5 => 21.5,
 		],
 		'win($10)' => '3, 5',
-		'key' => 0,
+		'key, winer' => [0, 3],
 		'total won in race' => 29.5,
 	],
 	'2' => [

@@ -53,7 +53,7 @@ return [
 		],
 		'Place' => '2, 4, 7, 12',
 		'win($10)' => '5, 1',
-		'key' => 0,
+		'key, winer' => [0, 5],
 		'total won in race' => 45,
 	],
 	'4' => [
@@ -91,7 +91,7 @@ return [
 		],
 		'Place' => '5',
 		'win($10)' => '2, 4',
-		'key' => 1,
+		'key, winer' => [1, 4],
 		'total won in race' => 110,
 	],
 	'6' => [
@@ -146,7 +146,7 @@ return [
 		],
 		'Place' => '4',
 		'win($10)' => '1, 2',
-		'key' => 1,
+		'key, winer' => [1, 2],
 		'total won in race' => 53.5,
 	],
 	'9' => [

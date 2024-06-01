@@ -109,7 +109,7 @@ return [
 		'inter' => '2, 3',//count: 2
 		'Place' => '2, 3',
 		'win($10)' => '10, 5',
-		'key' => 1,
+		'key, winer' => [1, 5],
 		'total won in race' => 0,
 	],
 	'7' => [

@@ -36,7 +36,7 @@ return [
 		'inter' => '6',//count: 1
 		'Place' => '6, 9',
 		'win($10)' => '8, 2',
-		'key' => 0,
+		'key, winer' => [0, 8],
 		'total won in race' => 49,
 	],
 	'3' => [
