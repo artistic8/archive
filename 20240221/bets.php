@@ -17,9 +17,8 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 10, 12',
-		'win($10)' => '11, 5, 8',
-		'key' => 2,
-		'total won in race' => 79,
+		'win($10)' => '11, 5',
+		'total won in race' => -20,
 	],
 	'2' => [
 		/**
@@ -37,9 +36,8 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4',
-		'win($10)' => '3, 5, 7',
-		'key' => 2,
-		'total won in race' => 54.5,
+		'win($10)' => '3, 5',
+		'total won in race' => -20,
 	],
 	'3' => [
 		/**
@@ -56,8 +54,8 @@ return [
 			9 => 35.5,
 		],
 		'Place' => '4',
-		'win($10)' => '12, 6, 5',
-		'total won in race' => -30,
+		'win($10)' => '12, 6',
+		'total won in race' => -20,
 	],
 	'4' => [
 		/**
@@ -75,9 +73,9 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
-		'win($10)' => '8, 6, 5',
+		'win($10)' => '8, 6',
 		'key' => 0,
-		'total won in race' => 10.5,
+		'total won in race' => 20.5,
 	],
 	'5' => [
 		/**
@@ -94,8 +92,8 @@ return [
 			10 => 22,
 		],
 		'inter' => '4',//count: 1
-		'win($10)' => '12, 6, 5',
-		'total won in race' => -30,
+		'win($10)' => '12, 6',
+		'total won in race' => -20,
 	],
 	'6' => [
 		/**
@@ -112,9 +110,9 @@ return [
 			1 => 54,
 		],
 		'Place' => '2, 7',
-		'win($10)' => '10, 5, 6',
+		'win($10)' => '10, 5',
 		'key' => 1,
-		'total won in race' => 16,
+		'total won in race' => 26,
 	],
 	'7' => [
 		/**
@@ -130,9 +128,9 @@ return [
 			9 => 22.5,
 			12 => 13,
 		],
-		'win($10)' => '4, 5, 9',
+		'win($10)' => '4, 5',
 		'key' => 1,
-		'total won in race' => 90.5,
+		'total won in race' => 100.5,
 	],
 	'8' => [
 		/**
@@ -150,9 +148,9 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '1, 3',
-		'win($10)' => '7, 5, 6',
+		'win($10)' => '7, 5',
 		'key' => 0,
-		'total won in race' => 36.5,
+		'total won in race' => 46.5,
 	],
 	'9' => [
 		/**
@@ -170,9 +168,9 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
-		'win($10)' => '3, 9, 2',
-		'total won in race' => -30,
+		'win($10)' => '3, 9',
+		'total won in race' => -20,
 	],
 ];
 //total place: 0
-//total: 197
+//total: 93.5
