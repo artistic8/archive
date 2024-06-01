@@ -16,8 +16,8 @@ return [
 			4 => 17,
 		],
 		'inter' => '7',//count: 1
-		'win($10)' => '4, 3, 2',
-		'total won in race' => -30,
+		'win($10)' => '4, 3',
+		'total won in race' => -20,
 	],
 	'2' => [
 		/**
@@ -34,8 +34,8 @@ return [
 			5 => 35,
 		],
 		'Place' => '4, 10',
-		'win($10)' => '3, 5, 6',
-		'total won in race' => -30,
+		'win($10)' => '3, 5',
+		'total won in race' => -20,
 	],
 	'3' => [
 		/**
@@ -51,8 +51,8 @@ return [
 			10 => 45.5,
 			13 => 13,
 		],
-		'win($10)' => '5, 10, 1',
-		'total won in race' => -30,
+		'win($10)' => '5, 10',
+		'total won in race' => -20,
 	],
 	'4' => [
 		/**
@@ -69,8 +69,8 @@ return [
 			10 => 18.5,
 		],
 		'inter' => '4',//count: 1
-		'win($10)' => '2, 10, 5',
-		'total won in race' => -30,
+		'win($10)' => '2, 10',
+		'total won in race' => -20,
 	],
 	'5' => [
 		/**
@@ -88,8 +88,8 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
-		'win($10)' => '8, 12, 9',
-		'total won in race' => -30,
+		'win($10)' => '8, 12',
+		'total won in race' => -20,
 	],
 	'6' => [
 		/**
@@ -106,9 +106,8 @@ return [
 			12 => 55.5,
 		],
 		'Place' => '3, 5',
-		'win($10)' => '2, 1, 6',
-		'key' => 2,
-		'total won in race' => 45.5,
+		'win($10)' => '2, 1',
+		'total won in race' => -20,
 	],
 	'7' => [
 		/**
@@ -126,8 +125,8 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3, 7',
-		'win($10)' => '12, 2, 1',
-		'total won in race' => -30,
+		'win($10)' => '12, 2',
+		'total won in race' => -20,
 	],
 	'8' => [
 		/**
@@ -164,9 +163,9 @@ return [
 		],
 		'inter' => '2, 3',//count: 2
 		'Place' => '2, 3',
-		'win($10)' => '9, 8, 4',
+		'win($10)' => '9, 8',
 		'key' => 1,
-		'total won in race' => 61,
+		'total won in race' => 71,
 	],
 	'10' => [
 		/**
@@ -182,8 +181,8 @@ return [
 			2 => 59.5,
 			8 => 122.5,
 		],
-		'win($10)' => '4, 2, 11',
-		'total won in race' => -30,
+		'win($10)' => '4, 2',
+		'total won in race' => -20,
 	],
 	'11' => [
 		/**
@@ -199,9 +198,9 @@ return [
 			6 => 130.5,
 			1 => 36,
 		],
-		'win($10)' => '13, 8, 14',
-		'total won in race' => -30,
+		'win($10)' => '13, 8',
+		'total won in race' => -20,
 	],
 ];
 //total place: 0
-//total: -153.5
+//total: -129

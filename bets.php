@@ -190,7 +190,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 $totalRace += $winAmount;
                 $winner = $officialWin[0];
                 $key = array_search($winner, $setX);
-                $racetext .= "\t\t'key' => $key,\n";
+                $racetext .= "\t\t'key, winer' => [$key, $winner],\n";
             }
         }
         $racetext .= "\t\t'total won in race' => $totalRace,\n";
