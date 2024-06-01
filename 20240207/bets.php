@@ -17,8 +17,8 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 7',
-		'win($10)' => '4, 9, 2, 11',
-		'total won in race' => -40,
+		'win($10)' => '4, 9, 2',
+		'total won in race' => -30,
 	],
 	'2' => [
 		/**
@@ -36,8 +36,8 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4',
-		'win($10)' => '2, 10, 11, 7',
-		'total won in race' => -40,
+		'win($10)' => '2, 10, 11',
+		'total won in race' => -30,
 	],
 	'3' => [
 		/**
@@ -55,8 +55,8 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'Place' => '7',
-		'win($10)' => '2, 10, 3, 6',
-		'total won in race' => -40,
+		'win($10)' => '2, 10, 3',
+		'total won in race' => -30,
 	],
 	'4' => [
 		/**
@@ -74,9 +74,9 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 3, 11',
-		'win($10)' => '9, 12, 6, 2',
+		'win($10)' => '9, 12, 6',
 		'key' => 2,
-		'total won in race' => 96,
+		'total won in race' => 106,
 	],
 	'5' => [
 		/**
@@ -93,8 +93,8 @@ return [
 			4 => 21,
 		],
 		'Place' => '1, 7',
-		'win($10)' => '4, 10, 12, 6',
-		'total won in race' => -40,
+		'win($10)' => '4, 10, 12',
+		'total won in race' => -30,
 	],
 	'6' => [
 		/**
@@ -110,9 +110,9 @@ return [
 			2 => 71.5,
 			11 => 18,
 		],
-		'win($10)' => '12, 3, 10, 1',
+		'win($10)' => '12, 3, 10',
 		'key' => 0,
-		'total won in race' => 61.5,
+		'total won in race' => 71.5,
 	],
 	'7' => [
 		/**
@@ -130,9 +130,9 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2, 3',
-		'win($10)' => '9, 5, 7, 8',
+		'win($10)' => '9, 5, 7',
 		'key' => 0,
-		'total won in race' => 39.5,
+		'total won in race' => 49.5,
 	],
 	'8' => [
 		/**
@@ -149,8 +149,8 @@ return [
 			9 => 38.5,
 		],
 		'Place' => '4',
-		'win($10)' => '8, 1, 5, 6',
-		'total won in race' => -40,
+		'win($10)' => '8, 1, 5',
+		'total won in race' => -30,
 	],
 	'9' => [
 		/**
@@ -168,10 +168,10 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '1, 3, 5',
-		'win($10)' => '7, 8, 9, 2',
+		'win($10)' => '7, 8, 9',
 		'key' => 1,
-		'total won in race' => 62,
+		'total won in race' => 72,
 	],
 ];
 //total place: 0
-//total: 59
+//total: 149

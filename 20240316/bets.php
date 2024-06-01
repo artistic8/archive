@@ -40,8 +40,8 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4, 9',
-		'win($10)' => '10, 5, 6, 3',
-		'total won in race' => -40,
+		'win($10)' => '10, 5, 6',
+		'total won in race' => -30,
 	],
 	'3' => [
 		/**
@@ -59,9 +59,9 @@ return [
 		],
 		'inter' => '1, 3',//count: 2
 		'Place' => '1, 3',
-		'win($10)' => '9, 2, 4, 7',
+		'win($10)' => '9, 2, 4',
 		'key' => 0,
-		'total won in race' => 43,
+		'total won in race' => 53,
 	],
 	'4' => [
 		/**
@@ -79,9 +79,9 @@ return [
 		],
 		'inter' => '11',//count: 1
 		'Place' => '1, 11',
-		'win($10)' => '3, 10, 2, 13',
+		'win($10)' => '3, 10, 2',
 		'key' => 1,
-		'total won in race' => 128,
+		'total won in race' => 138,
 	],
 	'5' => [
 		/**
@@ -97,8 +97,8 @@ return [
 			11 => 40,
 			10 => 18,
 		],
-		'win($10)' => '2, 7, 1, 11',
-		'total won in race' => -40,
+		'win($10)' => '2, 7, 1',
+		'total won in race' => -30,
 	],
 	'6' => [
 		/**
@@ -115,8 +115,8 @@ return [
 			12 => 20,
 		],
 		'Place' => '2',
-		'win($10)' => '10, 9, 1, 11',
-		'total won in race' => -40,
+		'win($10)' => '10, 9, 1',
+		'total won in race' => -30,
 	],
 	'7' => [
 		/**
@@ -133,9 +133,8 @@ return [
 			6 => 25,
 		],
 		'Place' => '6, 7',
-		'win($10)' => '3, 1, 10, 11',
-		'key' => 3,
-		'total won in race' => 29,
+		'win($10)' => '3, 1, 10',
+		'total won in race' => -30,
 	],
 	'8' => [
 		/**
@@ -153,8 +152,8 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
-		'win($10)' => '12, 2, 10, 14',
-		'total won in race' => -40,
+		'win($10)' => '12, 2, 10',
+		'total won in race' => -30,
 	],
 	'9' => [
 		/**
@@ -172,8 +171,8 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
-		'win($10)' => '6, 7, 9, 8',
-		'total won in race' => -40,
+		'win($10)' => '6, 7, 9',
+		'total won in race' => -30,
 	],
 	'10' => [
 		/**
@@ -189,10 +188,10 @@ return [
 			9 => 17.5,
 			4 => 31.5,
 		],
-		'win($10)' => '1, 2, 3, 6',
+		'win($10)' => '1, 2, 3',
 		'key' => 1,
-		'total won in race' => 29,
+		'total won in race' => 39,
 	],
 ];
 //total place: 0
-//total: 238
+//total: 259
