@@ -14,7 +14,7 @@ function combination($p, $n){
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
-$totalPlace = 0;
+$totalWin = 0;
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
@@ -132,7 +132,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
         if(isset($officialWin)){
             $total -= count($surePlace);
-            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) $total += $winAmount;
+            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
+                $total += $winAmount;
+                $totalWin = $winAmount - count($surePlace);
+            }
         }
     }
   
@@ -182,6 +185,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total place: $totalPlace\n";
+$outtext .= "//total win: $totalWin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
