@@ -181,17 +181,15 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     else{
         $setX = array_diff($runners, $favorites);
-        $racetext .= "\t\t'win($10)' => '" . implode(", ", $setX) . "',\n"; 
         $setX = array_slice($setX, 0, 2);
-        $racetext .= "\t\t'win($10)' => '" . implode(", ", $setX) . "',\n"; 
-        $totalBets = 10 * count($setX);
+        $qinX = array_merge($setX, $favorites);
+        sort($qinX);
+        $racetext .= "\t\t'qin($10)' => '" . implode(", ", $qinX) . "',\n"; 
+        $totalBets = 10 * combination(2, count($qinX));
         $totalRace = 0 - $totalBets;
         if(isset($officialWin)){
-            if(!empty(array_intersect($setX, array_slice($officialWin, 0, 1)))) {
-                $totalRace += $winAmount;
-                $winner = $officialWin[0];
-                $key = array_search($winner, $setX);
-                $racetext .= "\t\t'key, winer' => [$key, $winner],\n";
+            if(count(array_intersect($setX, array_slice($officialWin, 0, 2))) === 2) {
+                $totalRace += $qinAmount;
             }
         }
         $racetext .= "\t\t'total won in race' => $totalRace,\n";
