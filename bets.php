@@ -132,7 +132,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
         if(isset($officialWin)){
             $total -= count($surePlace);
-            $totalWin -= count($surePlace);
+            $totalWin = 0 - count($surePlace);
             if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
                 $total += $winAmount;
                 $totalWin += $winAmount;
