@@ -16,9 +16,8 @@ return [
 			12 => 24.5,
 		],
 		'Place' => '1, 2, 7, 12',
-		'win($10)' => '1, 2, 7, 12, 10, 6',
-		'key' => 0,
-		'total won in race' => -34.5,
+		'win($10)' => '10, 6, 4',
+		'total won in race' => -30,
 	],
 	'2' => [
 		/**
@@ -35,9 +34,8 @@ return [
 			2 => 16.5,
 		],
 		'Place' => '2, 10',
-		'win($10)' => '2, 10, 13, 9, 14, 6',
-		'key' => 1,
-		'total won in race' => -20,
+		'win($10)' => '9, 6, 3',
+		'total won in race' => -30,
 	],
 	'3' => [
 		/**
@@ -54,8 +52,9 @@ return [
 			4 => 44.5,
 		],
 		'Place' => '7',
-		'win($10)' => '5, 7, 11, 2',
-		'total won in race' => -40,
+		'win($10)' => '11, 2, 9',
+		'key' => 2,
+		'total won in race' => 64.5,
 	],
 	'4' => [
 		/**
@@ -79,9 +78,6 @@ return [
 		'trio($10)' => '1, 4, 5',
 		'total bets' => 150,
 		'total won in race' => 181,
-		'win($10)' => '1, 4, 2, 12, 5',
-		'key' => 0,
-		'total won in race' => -29.5,
 	],
 	'5' => [
 		/**
@@ -98,9 +94,8 @@ return [
 			2 => 43,
 		],
 		'Place' => '1, 4, 11',
-		'win($10)' => '1, 7, 4, 11, 2',
-		'key' => 0,
-		'total won in race' => -32.5,
+		'win($10)' => '7, 2, 8',
+		'total won in race' => -30,
 	],
 	'6' => [
 		/**
@@ -118,9 +113,9 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 4',
-		'win($10)' => '1, 4, 14, 11, 6',
-		'key' => 3,
-		'total won in race' => 27.5,
+		'win($10)' => '14, 11, 6',
+		'key' => 1,
+		'total won in race' => 47.5,
 	],
 	'7' => [
 		/**
@@ -137,9 +132,8 @@ return [
 			5 => 27.5,
 		],
 		'Place' => '1',
-		'win($10)' => '1, 7, 3, 4, 2',
-		'key' => 0,
-		'total won in race' => -35.5,
+		'win($10)' => '3, 2, 5',
+		'total won in race' => -30,
 	],
 	'8' => [
 		/**
@@ -155,8 +149,8 @@ return [
 			4 => 43.5,
 			11 => 27,
 		],
-		'win($10)' => '7, 11, 5, 8',
-		'total won in race' => -40,
+		'win($10)' => '5, 8, 2',
+		'total won in race' => -30,
 	],
 	'9' => [
 		/**
@@ -173,9 +167,8 @@ return [
 			3 => 19,
 		],
 		'Place' => '7',
-		'win($10)' => '9, 3, 13, 1, 6',
-		'key' => 0,
-		'total won in race' => -35,
+		'win($10)' => '3, 13, 1',
+		'total won in race' => -30,
 	],
 	'10' => [
 		/**
@@ -193,9 +186,9 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '10',
-		'win($10)' => '4, 10, 1, 2, 7, 3',
-		'total won in race' => -60,
+		'win($10)' => '2, 7, 12',
+		'total won in race' => -30,
 	],
 ];
 //total place: 0
-//total: -118.5
+//total: 83

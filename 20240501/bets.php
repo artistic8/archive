@@ -25,9 +25,6 @@ return [
 		'win($70)' => '3, 4',
 		'total bets' => 540,
 		'total won in race' => 464,
-		'win($10)' => '4, 1, 2, 3, 9',
-		'key' => 0,
-		'total won in race' => 1.5,
 	],
 	'2' => [
 		/**
@@ -44,9 +41,8 @@ return [
 			10 => 20,
 		],
 		'Place' => '6, 12',
-		'win($10)' => '6, 5, 9, 10, 3, 12',
-		'key' => 1,
-		'total won in race' => -5.5,
+		'win($10)' => '9, 10, 1',
+		'total won in race' => -30,
 	],
 	'3' => [
 		/**
@@ -62,8 +58,8 @@ return [
 			5 => 11,
 			2 => 38,
 		],
-		'win($10)' => '5, 11, 6',
-		'key' => 2,
+		'win($10)' => '11, 6, 1',
+		'key' => 1,
 		'total won in race' => 35.5,
 	],
 	'4' => [
@@ -81,9 +77,9 @@ return [
 			11 => 18,
 		],
 		'Place' => '3, 11',
-		'win($10)' => '11, 3, 6, 1',
-		'key' => 3,
-		'total won in race' => 85,
+		'win($10)' => '6, 1, 5',
+		'key' => 1,
+		'total won in race' => 95,
 	],
 	'5' => [
 		/**
@@ -100,9 +96,9 @@ return [
 			9 => 35,
 		],
 		'Place' => '3',
-		'win($10)' => '3, 4, 10, 6, 9',
-		'key' => 2,
-		'total won in race' => 9.5,
+		'win($10)' => '10, 9, 2',
+		'key' => 0,
+		'total won in race' => 29.5,
 	],
 	'6' => [
 		/**
@@ -118,9 +114,8 @@ return [
 			10 => 16.5,
 			7 => 29.5,
 		],
-		'win($10)' => '6, 4, 10, 9, 12, 8',
-		'key' => 1,
-		'total won in race' => 35,
+		'win($10)' => '9, 8, 5',
+		'total won in race' => -30,
 	],
 	'7' => [
 		/**
@@ -137,9 +132,8 @@ return [
 			11 => 10.5,
 		],
 		'Place' => '3, 6',
-		'win($10)' => '11, 6, 3, 8, 1',
-		'key' => 1,
-		'total won in race' => -15.5,
+		'win($10)' => '8, 1, 5',
+		'total won in race' => -30,
 	],
 	'8' => [
 		/**
@@ -165,9 +159,6 @@ return [
 		'win($70)' => '2, 3',
 		'total bets' => 830,
 		'total won in race' => -214,
-		'win($10)' => '3, 4, 7, 1, 9, 2',
-		'key' => 0,
-		'total won in race' => -16,
 	],
 	'9' => [
 		/**
@@ -183,10 +174,9 @@ return [
 			3 => 34,
 			6 => 17,
 		],
-		'win($10)' => '1, 6, 2, 4',
-		'key' => 0,
-		'total won in race' => -0.5,
+		'win($10)' => '6, 2, 4',
+		'total won in race' => -30,
 	],
 ];
 //total place: 0
-//total: 379
+//total: 290
