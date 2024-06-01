@@ -133,7 +133,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         if(isset($officialWin) && count($surePlace) >= 2){
             $total -= 10 * count($surePlace);
             $totalWin -= 10 * count($surePlace);
-            $totalWinRace -= 10 * count($surePlace);
+            $totalWinRace = 10 * count($surePlace);
             if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
                 $total += $winAmount;
                 $totalWin += $winAmount;
