@@ -148,10 +148,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         
         if(count($set2) !== 2){
             $unitBet = 70;
-            $racetext .= "\t\t'win bet($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
+            $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
             $totalBets += 1 * $unitBet * count($favorites);
             $set3 = array_slice($favorites, 1, 2);
-            $racetext .= "\t\t'win bet($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
+            $racetext .= "\t\t'win($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
             $totalBets += 1 * $unitBet * count($set3);
             // $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $favorites) . "',\n"; 
             // $plaBetAmount = 1 * $unitBet * count($favorites);
