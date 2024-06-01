@@ -16,8 +16,8 @@ return [
 			10 => 19,
 		],
 		'Place' => '7, 8, 10',
-		'win($10)' => '1, 6, 2, 4, 11',
-		'total won in race' => -50,
+		'win($10)' => '1, 6, 2, 4',
+		'total won in race' => -40,
 	],
 	'2' => [
 		/**
@@ -34,8 +34,8 @@ return [
 			4 => 19.5,
 		],
 		'Place' => '4',
-		'win($10)' => '10, 7, 8, 1, 2',
-		'total won in race' => -50,
+		'win($10)' => '10, 7, 8, 1',
+		'total won in race' => -40,
 	],
 	'3' => [
 		/**
@@ -52,8 +52,8 @@ return [
 			5 => 27.5,
 		],
 		'Place' => '1, 4',
-		'win($10)' => '2, 7, 9, 6, 8',
-		'total won in race' => -50,
+		'win($10)' => '2, 7, 9, 6',
+		'total won in race' => -40,
 	],
 	'4' => [
 		/**
@@ -69,8 +69,8 @@ return [
 			6 => 30,
 			1 => 16.5,
 		],
-		'win($10)' => '1, 3, 4, 7, 8',
-		'total won in race' => -50,
+		'win($10)' => '1, 3, 4, 7',
+		'total won in race' => -40,
 	],
 	'5' => [
 		/**
@@ -88,8 +88,8 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '3',
-		'win($10)' => '4, 8, 9, 2, 6',
-		'total won in race' => -50,
+		'win($10)' => '4, 8, 9, 2',
+		'total won in race' => -40,
 	],
 	'6' => [
 		/**
@@ -106,8 +106,8 @@ return [
 			9 => 18.5,
 		],
 		'Place' => '1, 5',
-		'win($10)' => '6, 4, 8, 12, 3',
-		'total won in race' => -50,
+		'win($10)' => '6, 4, 8, 12',
+		'total won in race' => -40,
 	],
 	'7' => [
 		/**
@@ -123,9 +123,9 @@ return [
 			4 => 13.5,
 			3 => 18,
 		],
-		'win($10)' => '2, 1, 3, 5, 8',
+		'win($10)' => '2, 1, 3, 5',
 		'key' => 0,
-		'total won in race' => 27,
+		'total won in race' => 37,
 	],
 	'8' => [
 		/**
@@ -143,8 +143,8 @@ return [
 		],
 		'inter' => '3, 8',//count: 2
 		'Place' => '3, 8',
-		'win($10)' => '10, 12, 4, 5, 6',
-		'total won in race' => -50,
+		'win($10)' => '10, 12, 4, 5',
+		'total won in race' => -40,
 	],
 	'9' => [
 		/**
@@ -161,10 +161,10 @@ return [
 			1 => 34.5,
 		],
 		'Place' => '3',
-		'win($10)' => '9, 2, 10, 6, 1',
+		'win($10)' => '9, 2, 10, 6',
 		'key' => 0,
-		'total won in race' => 13.5,
+		'total won in race' => 23.5,
 	],
 ];
 //total place: 0
-//total: -309.5
+//total: -219.5

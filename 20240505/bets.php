@@ -16,8 +16,8 @@ return [
 			5 => 12,
 		],
 		'Place' => '2, 5',
-		'win($10)' => '4, 9, 3, 6, 1',
-		'total won in race' => -50,
+		'win($10)' => '4, 9, 3, 6',
+		'total won in race' => -40,
 	],
 	'2' => [
 		/**
@@ -35,9 +35,9 @@ return [
 		],
 		'inter' => '6',//count: 1
 		'Place' => '6, 9',
-		'win($10)' => '8, 2, 3, 5, 10',
+		'win($10)' => '8, 2, 3, 5',
 		'key' => 0,
-		'total won in race' => 19,
+		'total won in race' => 29,
 	],
 	'3' => [
 		/**
@@ -54,8 +54,8 @@ return [
 			4 => 28,
 		],
 		'Place' => '4, 12',
-		'win($10)' => '10, 8, 1, 11, 5',
-		'total won in race' => -50,
+		'win($10)' => '10, 8, 1, 11',
+		'total won in race' => -40,
 	],
 	'4' => [
 		/**
@@ -90,8 +90,8 @@ return [
 			13 => 35.5,
 		],
 		'Place' => '1, 5',
-		'win($10)' => '2, 13, 8, 9, 6',
-		'total won in race' => -50,
+		'win($10)' => '2, 13, 8, 9',
+		'total won in race' => -40,
 	],
 	'6' => [
 		/**
@@ -108,9 +108,9 @@ return [
 			9 => 19.5,
 		],
 		'Place' => '3, 5',
-		'win($10)' => '13, 4, 2, 1, 14',
+		'win($10)' => '13, 4, 2, 1',
 		'key' => 2,
-		'total won in race' => 57,
+		'total won in race' => 67,
 	],
 	'7' => [
 		/**
@@ -127,8 +127,8 @@ return [
 			4 => 21,
 		],
 		'Place' => '1, 6, 8',
-		'win($10)' => '7, 10, 2, 12, 5',
-		'total won in race' => -50,
+		'win($10)' => '7, 10, 2, 12',
+		'total won in race' => -40,
 	],
 	'8' => [
 		/**
@@ -168,8 +168,8 @@ return [
 			2 => 13,
 		],
 		'Place' => '2, 3',
-		'win($10)' => '4, 10, 7, 9, 12',
-		'total won in race' => -50,
+		'win($10)' => '4, 10, 7, 9',
+		'total won in race' => -40,
 	],
 	'10' => [
 		/**
@@ -185,8 +185,8 @@ return [
 			3 => 19,
 			11 => 13.5,
 		],
-		'win($10)' => '3, 5, 1, 4, 2',
-		'total won in race' => -50,
+		'win($10)' => '3, 5, 1, 4',
+		'total won in race' => -40,
 	],
 	'11' => [
 		/**
@@ -202,10 +202,9 @@ return [
 			3 => 11.5,
 			1 => 36,
 		],
-		'win($10)' => '3, 1, 4, 2, 5',
-		'key' => 4,
-		'total won in race' => 55,
+		'win($10)' => '3, 1, 4, 2',
+		'total won in race' => -40,
 	],
 ];
 //total place: 0
-//total: 179.5
+//total: 164.5
