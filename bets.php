@@ -131,13 +131,16 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($surePlace)){
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
         if(isset($officialWin) && count($surePlace) === 1){
-            $total -= 10 * count($surePlace);
-            $totalWin -= 10 * count($surePlace);
-            $totalWinRace = 0 - 10 * count($surePlace);
+            $total -= 20 * count($surePlace);
+            $totalWin -= 20 * count($surePlace);
+            $totalWinRace = 0 - 20 * count($surePlace);
             if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
                 $total += $placeAmount[end($surePlace)];
+                $total += $winAmount;
                 $totalWin += $placeAmount[end($surePlace)];
+                $totalWin += $winAmount;
                 $totalWinRace += $placeAmount[end($surePlace)];
+                $totalWinRace += $winAmount;
             }
             $racetext .= "\t\t'win race' => $totalWinRace,\n" ;
         }
