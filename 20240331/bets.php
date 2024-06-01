@@ -30,6 +30,7 @@ return [
 		],
 		'inter' => '2, 6',//count: 2
 		'Place' => '6',
+		'win race' => 64,
 		'win bet($10)' => '3, 7, 8, 12',
 		'qin bet($20)' => '1, 2, 6',
 		'qin($10)' => '1, 2, 6 X 3, 7, 8, 12',
@@ -99,6 +100,7 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
+		'win race' => 19,
 	],
 	'7' => [
 		/**

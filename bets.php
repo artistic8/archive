@@ -134,7 +134,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $total -= count($surePlace);
             if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 1)))) {
                 $total += $winAmount;
-                $totalWin = $winAmount - count($surePlace);
+                $totalWin = $winAmount - 10 * count($surePlace);
                 $racetext .= "\t\t'win race' => $totalWin,\n"; 
             }
         }

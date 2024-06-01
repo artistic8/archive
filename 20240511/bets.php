@@ -125,6 +125,7 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
+		'win race' => 33.5,
 	],
 	'9' => [
 		/**
