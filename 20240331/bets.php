@@ -15,8 +15,8 @@ return [
 			10 => 57.5,
 			13 => 65,
 		],
-		'qin($10)' => '3, 5, 8, 14',
-		'total won in race' => -60,
+		'qin($10)' => '3, 5, 7, 8, 14',
+		'total won in race' => -100,
 	],
 	'2' => [
 		/**
@@ -59,8 +59,8 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4',
-		'qin($10)' => '4, 5, 7',
-		'total won in race' => -30,
+		'qin($10)' => '1, 4, 5, 7',
+		'total won in race' => 181.5,
 	],
 	'4' => [
 		/**
@@ -77,8 +77,8 @@ return [
 			9 => 51.5,
 		],
 		'Place' => '3',
-		'qin($10)' => '3, 4, 10, 14',
-		'total won in race' => 160.5,
+		'qin($10)' => '3, 4, 7, 10, 14',
+		'total won in race' => 120.5,
 	],
 	'5' => [
 		/**
@@ -95,8 +95,8 @@ return [
 			6 => 157.5,
 		],
 		'Place' => '3',
-		'qin($10)' => '2, 3, 4, 10',
-		'total won in race' => -60,
+		'qin($10)' => '2, 3, 4, 5, 10',
+		'total won in race' => -100,
 	],
 	'6' => [
 		/**
@@ -114,8 +114,8 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
-		'qin($10)' => '3, 5, 11',
-		'total won in race' => -30,
+		'qin($10)' => '3, 5, 11, 14',
+		'total won in race' => -60,
 	],
 	'7' => [
 		/**
@@ -132,8 +132,8 @@ return [
 			8 => 27,
 		],
 		'inter' => '4',//count: 1
-		'qin($10)' => '1, 4, 11',
-		'total won in race' => 7.5,
+		'qin($10)' => '1, 4, 8, 11',
+		'total won in race' => -22.5,
 	],
 	'8' => [
 		/**
@@ -150,8 +150,8 @@ return [
 			6 => 20,
 		],
 		'Place' => '1, 4, 10',
-		'qin($10)' => '1, 2, 4, 6, 10, 13, 14',
-		'total won in race' => -210,
+		'qin($10)' => '1, 2, 3, 4, 6, 10, 13, 14',
+		'total won in race' => -280,
 	],
 	'9' => [
 		/**
@@ -168,8 +168,8 @@ return [
 			8 => 23,
 		],
 		'Place' => '8, 10',
-		'qin($10)' => '3, 8, 9, 10, 13',
-		'total won in race' => -100,
+		'qin($10)' => '1, 3, 8, 9, 10, 13',
+		'total won in race' => -150,
 	],
 	'10' => [
 		/**
@@ -185,9 +185,9 @@ return [
 			2 => 42,
 			8 => 24,
 		],
-		'qin($10)' => '1, 2, 7, 8, 13',
-		'total won in race' => 296,
+		'qin($10)' => '1, 2, 7, 8, 12, 13',
+		'total won in race' => 246,
 	],
 ];
 //total place: 0
-//total: 304
+//total: 165.5

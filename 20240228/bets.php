@@ -15,8 +15,8 @@ return [
 			10 => 33,
 			5 => 21.5,
 		],
-		'qin($10)' => '3, 5, 9',
-		'total won in race' => -30,
+		'qin($10)' => '3, 5, 8, 9',
+		'total won in race' => -60,
 	],
 	'2' => [
 		/**
@@ -33,8 +33,8 @@ return [
 			9 => 21.5,
 		],
 		'Place' => '6, 9, 12',
-		'qin($10)' => '1, 3, 4, 6, 7, 9, 12',
-		'total won in race' => -210,
+		'qin($10)' => '1, 2, 3, 4, 6, 7, 9, 12',
+		'total won in race' => -34,
 	],
 	'3' => [
 		/**
@@ -51,8 +51,8 @@ return [
 			2 => 61,
 		],
 		'Place' => '3, 8, 9',
-		'qin($10)' => '1, 3, 6, 8, 9, 10, 12',
-		'total won in race' => -44,
+		'qin($10)' => '1, 3, 5, 6, 8, 9, 10, 12',
+		'total won in race' => -114,
 	],
 	'4' => [
 		/**
@@ -70,8 +70,8 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
-		'qin($10)' => '3, 5, 7',
-		'total won in race' => -30,
+		'qin($10)' => '3, 5, 7, 9',
+		'total won in race' => -60,
 	],
 	'5' => [
 		/**
@@ -89,8 +89,8 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
-		'qin($10)' => '1, 3, 5',
-		'total won in race' => -30,
+		'qin($10)' => '1, 2, 3, 5',
+		'total won in race' => 31,
 	],
 	'6' => [
 		/**
@@ -108,8 +108,8 @@ return [
 		],
 		'inter' => '2, 9',//count: 2
 		'Place' => '2',
-		'qin($10)' => '1, 2, 3, 9',
-		'total won in race' => -60,
+		'qin($10)' => '1, 2, 3, 5, 9',
+		'total won in race' => -100,
 	],
 	'7' => [
 		/**
@@ -127,8 +127,8 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
-		'qin($10)' => '1, 3, 4, 9',
-		'total won in race' => -60,
+		'qin($10)' => '1, 3, 4, 7, 9',
+		'total won in race' => -100,
 	],
 	'8' => [
 		/**
@@ -144,8 +144,8 @@ return [
 			9 => 56,
 			3 => 20,
 		],
-		'qin($10)' => '2, 3, 5, 7, 8',
-		'total won in race' => -100,
+		'qin($10)' => '2, 3, 5, 7, 8, 10',
+		'total won in race' => -150,
 	],
 	'9' => [
 		/**
@@ -162,9 +162,9 @@ return [
 			11 => 30,
 		],
 		'inter' => '1',//count: 1
-		'qin($10)' => '1, 3, 5',
-		'total won in race' => -30,
+		'qin($10)' => '1, 3, 5, 7',
+		'total won in race' => -60,
 	],
 ];
 //total place: 0
-//total: -594
+//total: -647
