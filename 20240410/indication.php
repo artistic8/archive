@@ -6,6 +6,7 @@ return [
 		Race 1
 		*/
 		'favorites' => '5, 6, 7',
+		'official win' => '2, 4, 3, 10',
 		'indication' => [],
 	],
 	'2' => [
@@ -13,6 +14,7 @@ return [
 		Race 2
 		*/
 		'favorites' => '3',
+		'official win' => '5, 6, 10, 11',
 		'indication' => [],
 	],
 	'3' => [
@@ -20,6 +22,7 @@ return [
 		Race 3
 		*/
 		'favorites' => '2, 3, 5, 8',
+		'official win' => '3, 8, 2, 1',
 		'indication' => [],
 	],
 	'4' => [
@@ -27,6 +30,7 @@ return [
 		Race 4
 		*/
 		'favorites' => '1',
+		'official win' => '1, 12, 7, 10',
 		'indication' => [3, 4, 5],
 	],
 	'5' => [
@@ -34,6 +38,7 @@ return [
 		Race 5
 		*/
 		'favorites' => '5, 11',
+		'official win' => '1, 9, 11, 10',
 		'indication' => [],
 	],
 	'6' => [
@@ -41,6 +46,7 @@ return [
 		Race 6
 		*/
 		'favorites' => '2, 6, 9',
+		'official win' => '9, 11, 1, 6',
 		'indication' => [],
 	],
 	'7' => [
@@ -48,6 +54,7 @@ return [
 		Race 7
 		*/
 		'favorites' => '2, 10',
+		'official win' => '2, 9, 4, 6',
 		'indication' => [],
 	],
 	'8' => [
@@ -55,6 +62,7 @@ return [
 		Race 8
 		*/
 		'favorites' => '2, 3, 4, 7',
+		'official win' => '8, 3, 12, 4',
 		'indication' => [5],
 	],
 	'9' => [
@@ -62,6 +70,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '2, 9',
+		'official win' => '8, 2, 9, 6',
 		'indication' => [],
 	],
 ];
