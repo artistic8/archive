@@ -87,18 +87,24 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
-    $racetext .= "\t\t'win($10)' => '" . implode(", ", $favorites) . "',\n"; 
-    $totalBets = 10 * count($favorites);
+    $max = max($favorites);
+    $toBet = [];
+    foreach($runners as $horse){
+        if($horse <= $max) $toBet[] = $horse;
+    }
+    $racetext .= "\t\t'win($10)' => '" . implode(", ", $toBet) . "',\n"; 
+    $totalBets = 10 * count($toBet);
     $totalRace = 0 - $totalBets;
     $racetext .= "\t\t'total bets' => $totalBets,\n";
     if(isset($officialWin)){
-        if(count(array_intersect($favorites, array_slice($officialWin, 0, 1))) === 1) $totalRace += $winAmount;
+        if(count(array_intersect($toBet, array_slice($officialWin, 0, 1))) === 1) $totalRace += $winAmount;
         $racetext .= "\t\t'total (fake) won in race' => $totalRace,\n";
         $total += $totalRace;
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
+    unset($toBet);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
