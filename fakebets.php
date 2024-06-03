@@ -129,7 +129,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             //         $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck];
             //     }
             // }
-            $racetext .= "\t\t'total won in race' => $totalRace,\n";
+            $racetext .= "\t\t'total (fake) won in race' => $totalRace,\n";
             $total += $totalRace;
         }
     }
