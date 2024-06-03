@@ -18,7 +18,7 @@ return [
 		'qin($10)' => '1, 6, 10',
 		'trio($10)' => '1, 6, 10',
 		'total bets' => 40,
-		'total (fake) won in race' => 132,
+		'total (fake) won in race' => 46,
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		'qin($10)' => '1, 3, 5, 6, 7, 8, 10, 11, 12',
 		'trio($10)' => '1, 3, 5, 6, 7, 8, 10, 11, 12',
 		'total bets' => 1200,
-		'total (fake) won in race' => -734,
+		'total (fake) won in race' => -859,
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 7, 9, 10, 11',
 		'trio($10)' => '1, 2, 3, 4, 7, 9, 10, 11',
 		'total bets' => 840,
-		'total (fake) won in race' => 181,
+		'total (fake) won in race' => 26,
 	],
 	'4' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'qin($10)' => '1, 4, 7, 10, 11',
 		'trio($10)' => '1, 4, 7, 10, 11',
 		'total bets' => 200,
-		'total (fake) won in race' => 361,
+		'total (fake) won in race' => -200,
 	],
 	'5' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		'qin($10)' => '1, 2, 6, 9',
 		'trio($10)' => '1, 2, 6, 9',
 		'total bets' => 100,
-		'total (fake) won in race' => 102,
+		'total (fake) won in race' => 1,
 	],
 	'6' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		'qin($10)' => '2, 3, 4, 6, 7, 8, 10',
 		'trio($10)' => '2, 3, 4, 6, 7, 8, 10',
 		'total bets' => 560,
-		'total (fake) won in race' => -232,
+		'total (fake) won in race' => -560,
 	],
 	'7' => [
 		/**
@@ -132,7 +132,7 @@ return [
 		'qin($10)' => '1, 2, 3, 10',
 		'trio($10)' => '1, 2, 3, 10',
 		'total bets' => 100,
-		'total (fake) won in race' => 296,
+		'total (fake) won in race' => -100,
 	],
 	'8' => [
 		/**
@@ -151,7 +151,7 @@ return [
 		'qin($10)' => '1, 5, 6',
 		'trio($10)' => '1, 5, 6',
 		'total bets' => 40,
-		'total (fake) won in race' => 265,
+		'total (fake) won in race' => -40,
 	],
 	'9' => [
 		/**
@@ -170,7 +170,7 @@ return [
 		'qin($10)' => '1, 2, 4, 6, 8, 9, 10',
 		'trio($10)' => '1, 2, 4, 6, 8, 9, 10',
 		'total bets' => 560,
-		'total (fake) won in race' => -265,
+		'total (fake) won in race' => -324.5,
 	],
 ];
-//fake total: 106
+//fake total: -2010.5

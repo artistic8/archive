@@ -18,7 +18,7 @@ return [
 		'qin($10)' => '1, 7, 8, 10',
 		'trio($10)' => '1, 7, 8, 10',
 		'total bets' => 100,
-		'total (fake) won in race' => 489,
+		'total (fake) won in race' => -100,
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		'qin($10)' => '2, 4, 8, 9',
 		'trio($10)' => '2, 4, 8, 9',
 		'total bets' => 100,
-		'total (fake) won in race' => 90.5,
+		'total (fake) won in race' => -100,
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'qin($10)' => '1, 2, 3, 5, 6, 7, 9',
 		'trio($10)' => '1, 2, 3, 5, 6, 7, 9',
 		'total bets' => 560,
-		'total (fake) won in race' => 653,
+		'total (fake) won in race' => 318.5,
 	],
 	'4' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 6, 7',
 		'trio($10)' => '1, 2, 3, 4, 6, 7',
 		'total bets' => 350,
-		'total (fake) won in race' => 1017,
+		'total (fake) won in race' => -350,
 	],
 	'5' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		'qin($10)' => '2, 4, 5, 7, 11',
 		'trio($10)' => '2, 4, 5, 7, 11',
 		'total bets' => 200,
-		'total (fake) won in race' => 487.5,
+		'total (fake) won in race' => -200,
 	],
 	'6' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',
 		'trio($10)' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',
 		'total bets' => 2200,
-		'total (fake) won in race' => -1574,
+		'total (fake) won in race' => -2200,
 	],
 	'7' => [
 		/**
@@ -132,7 +132,7 @@ return [
 		'qin($10)' => '3, 4, 5',
 		'trio($10)' => '3, 4, 5',
 		'total bets' => 40,
-		'total (fake) won in race' => 146,
+		'total (fake) won in race' => -40,
 	],
 	'8' => [
 		/**
@@ -151,7 +151,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 7, 11, 12',
 		'trio($10)' => '1, 2, 3, 4, 7, 11, 12',
 		'total bets' => 560,
-		'total (fake) won in race' => -435.5,
+		'total (fake) won in race' => -560,
 	],
 	'9' => [
 		/**
@@ -170,7 +170,7 @@ return [
 		'qin($10)' => '1, 2, 3, 5, 6, 7, 9, 10, 11',
 		'trio($10)' => '1, 2, 3, 5, 6, 7, 9, 10, 11',
 		'total bets' => 1200,
-		'total (fake) won in race' => -723,
+		'total (fake) won in race' => -788.5,
 	],
 ];
-//fake total: 150.5
+//fake total: -4020

@@ -87,15 +87,12 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
-    $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . "',\n"; 
-    $totalBets = 10 * combination(2, count($favorites));
-    $racetext .= "\t\t'trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-    $totalBets += 10 * combination(3, count($favorites));
+    $racetext .= "\t\t'win($10)' => '" . implode(", ", $favorites) . "',\n"; 
+    $totalBets = 10 * count($favorites);
     $totalRace = 0 - $totalBets;
     $racetext .= "\t\t'total bets' => $totalBets,\n";
     if(isset($officialWin)){
-        if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace += $qinAmount;
-        if(count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3) $totalRace += $trioAmount;
+        if(count(array_intersect($favorites, array_slice($officialWin, 0, 1))) === 1) $totalRace += $winAmount;
         $racetext .= "\t\t'total (fake) won in race' => $totalRace,\n";
         $total += $totalRace;
     }

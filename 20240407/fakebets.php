@@ -18,7 +18,7 @@ return [
 		'qin($10)' => '2, 3, 6, 7, 8, 9, 11, 12, 13',
 		'trio($10)' => '2, 3, 6, 7, 8, 9, 11, 12, 13',
 		'total bets' => 1200,
-		'total (fake) won in race' => -536,
+		'total (fake) won in race' => -695.5,
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		'qin($10)' => '1, 3, 4, 5, 9, 10, 11',
 		'trio($10)' => '1, 3, 4, 5, 9, 10, 11',
 		'total bets' => 560,
-		'total (fake) won in race' => 898.5,
+		'total (fake) won in race' => -560,
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'qin($10)' => '2',
 		'trio($10)' => '2',
 		'total bets' => 0,
-		'total (fake) won in race' => 56,
+		'total (fake) won in race' => 0,
 	],
 	'4' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'qin($10)' => '4, 8',
 		'trio($10)' => '4, 8',
 		'total bets' => 10,
-		'total (fake) won in race' => 200,
+		'total (fake) won in race' => -10,
 	],
 	'5' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		'qin($10)' => '3, 6',
 		'trio($10)' => '3, 6',
 		'total bets' => 10,
-		'total (fake) won in race' => 349.5,
+		'total (fake) won in race' => -10,
 	],
 	'6' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		'qin($10)' => '1, 2, 4',
 		'trio($10)' => '1, 2, 4',
 		'total bets' => 40,
-		'total (fake) won in race' => 157,
+		'total (fake) won in race' => 85,
 	],
 	'7' => [
 		/**
@@ -132,7 +132,7 @@ return [
 		'qin($10)' => '1, 3',
 		'trio($10)' => '1, 3',
 		'total bets' => 10,
-		'total (fake) won in race' => 116,
+		'total (fake) won in race' => -10,
 	],
 	'8' => [
 		/**
@@ -151,7 +151,7 @@ return [
 		'qin($10)' => '2, 3, 5, 7, 10, 11, 13',
 		'trio($10)' => '2, 3, 5, 7, 10, 11, 13',
 		'total bets' => 560,
-		'total (fake) won in race' => -462,
+		'total (fake) won in race' => -511,
 	],
 	'9' => [
 		/**
@@ -170,7 +170,7 @@ return [
 		'qin($10)' => '4, 7',
 		'trio($10)' => '4, 7',
 		'total bets' => 10,
-		'total (fake) won in race' => 186,
+		'total (fake) won in race' => -10,
 	],
 	'10' => [
 		/**
@@ -189,7 +189,7 @@ return [
 		'qin($10)' => '1, 3, 9',
 		'trio($10)' => '1, 3, 9',
 		'total bets' => 40,
-		'total (fake) won in race' => 267,
+		'total (fake) won in race' => -40,
 	],
 ];
-//fake total: 1232
+//fake total: -1761.5

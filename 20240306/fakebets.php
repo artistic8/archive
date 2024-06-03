@@ -18,7 +18,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 6, 7, 8, 10',
 		'trio($10)' => '1, 2, 3, 4, 6, 7, 8, 10',
 		'total bets' => 840,
-		'total (fake) won in race' => -425,
+		'total (fake) won in race' => -537,
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		'qin($10)' => '3, 4',
 		'trio($10)' => '3, 4',
 		'total bets' => 10,
-		'total (fake) won in race' => 4869.5,
+		'total (fake) won in race' => -10,
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 5, 10',
 		'trio($10)' => '1, 2, 3, 4, 5, 10',
 		'total bets' => 350,
-		'total (fake) won in race' => 841,
+		'total (fake) won in race' => 582,
 	],
 	'4' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 5, 6, 7',
 		'trio($10)' => '1, 2, 3, 4, 5, 6, 7',
 		'total bets' => 560,
-		'total (fake) won in race' => 47,
+		'total (fake) won in race' => -134,
 	],
 	'5' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 7, 8, 9',
 		'trio($10)' => '1, 2, 3, 4, 7, 8, 9',
 		'total bets' => 560,
-		'total (fake) won in race' => 549,
+		'total (fake) won in race' => 287,
 	],
 	'6' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		'qin($10)' => '1, 3, 4, 5, 6, 8, 9, 12',
 		'trio($10)' => '1, 3, 4, 5, 6, 8, 9, 12',
 		'total bets' => 840,
-		'total (fake) won in race' => -25,
+		'total (fake) won in race' => -252.5,
 	],
 	'7' => [
 		/**
@@ -132,7 +132,7 @@ return [
 		'qin($10)' => '4, 9',
 		'trio($10)' => '4, 9',
 		'total bets' => 10,
-		'total (fake) won in race' => 90,
+		'total (fake) won in race' => -10,
 	],
 	'8' => [
 		/**
@@ -151,7 +151,7 @@ return [
 		'qin($10)' => '3, 8',
 		'trio($10)' => '3, 8',
 		'total bets' => 10,
-		'total (fake) won in race' => 140,
+		'total (fake) won in race' => -10,
 	],
 	'9' => [
 		/**
@@ -170,7 +170,7 @@ return [
 		'qin($10)' => '3, 7, 9, 11',
 		'trio($10)' => '3, 7, 9, 11',
 		'total bets' => 100,
-		'total (fake) won in race' => 440,
+		'total (fake) won in race' => 170,
 	],
 ];
-//fake total: 6526.5
+//fake total: 85.5

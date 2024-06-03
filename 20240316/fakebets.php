@@ -18,7 +18,7 @@ return [
 		'qin($10)' => '1, 3, 10',
 		'trio($10)' => '1, 3, 10',
 		'total bets' => 40,
-		'total (fake) won in race' => 246,
+		'total (fake) won in race' => -40,
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		'qin($10)' => '4, 9',
 		'trio($10)' => '4, 9',
 		'total bets' => 10,
-		'total (fake) won in race' => 212.5,
+		'total (fake) won in race' => -10,
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		'qin($10)' => '1, 3',
 		'trio($10)' => '1, 3',
 		'total bets' => 10,
-		'total (fake) won in race' => 610.5,
+		'total (fake) won in race' => -10,
 	],
 	'4' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		'qin($10)' => '1, 3, 6, 8, 11',
 		'trio($10)' => '1, 3, 6, 8, 11',
 		'total bets' => 200,
-		'total (fake) won in race' => 4859,
+		'total (fake) won in race' => -200,
 	],
 	'5' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		'qin($10)' => '4, 10, 12',
 		'trio($10)' => '4, 10, 12',
 		'total bets' => 40,
-		'total (fake) won in race' => 760,
+		'total (fake) won in race' => -40,
 	],
 	'6' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		'qin($10)' => '2, 6, 12',
 		'trio($10)' => '2, 6, 12',
 		'total bets' => 40,
-		'total (fake) won in race' => 153.5,
+		'total (fake) won in race' => -40,
 	],
 	'7' => [
 		/**
@@ -132,7 +132,7 @@ return [
 		'qin($10)' => '4, 6, 7',
 		'trio($10)' => '4, 6, 7',
 		'total bets' => 40,
-		'total (fake) won in race' => 191,
+		'total (fake) won in race' => -40,
 	],
 	'8' => [
 		/**
@@ -151,7 +151,7 @@ return [
 		'qin($10)' => '1, 5, 7',
 		'trio($10)' => '1, 5, 7',
 		'total bets' => 40,
-		'total (fake) won in race' => 182.5,
+		'total (fake) won in race' => -40,
 	],
 	'9' => [
 		/**
@@ -170,7 +170,7 @@ return [
 		'qin($10)' => '5, 6, 10',
 		'trio($10)' => '5, 6, 10',
 		'total bets' => 40,
-		'total (fake) won in race' => 65,
+		'total (fake) won in race' => 12.5,
 	],
 	'10' => [
 		/**
@@ -189,7 +189,7 @@ return [
 		'qin($10)' => '1, 7, 9, 14',
 		'trio($10)' => '1, 7, 9, 14',
 		'total bets' => 100,
-		'total (fake) won in race' => 49.5,
+		'total (fake) won in race' => -100,
 	],
 ];
-//fake total: 7329.5
+//fake total: -507.5
