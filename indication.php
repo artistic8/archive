@@ -25,6 +25,7 @@ $outtext .= "return [\n";
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = explode(", ", $data[$raceNumber]['favorites']);
     if(isset($data[$raceNumber]['official win'])) $officialWin = explode(", ", $data[$raceNumber]['official win']);
+    if(isset($data[$raceNumber]['place amount'])) $placeAmount = $data[$raceNumber]['place amount'];
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
@@ -39,6 +40,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $copy = $favorites;
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    }
+    if(isset($placeAmount)){
+        $racetext .= "\t\t'place amount' => [\n";
+        foreach($placeAmount as $place => $amount){
+            $racetext .= "\t\t\t$place => $amount,\n";
+        }
+        $racetext .= "\t\t],\n"; 
     }
     if(count($runners) < 10) $racetext .= "\t\t'indication' => [],\n";
     else{
