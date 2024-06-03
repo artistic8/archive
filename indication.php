@@ -24,6 +24,7 @@ $outtext .= "return [\n";
 
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = explode(", ", $data[$raceNumber]['favorites']);
+    if(isset($data[$raceNumber]['official win'])) $officialWin = explode(", ", $data[$raceNumber]['official win']);
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
@@ -35,6 +36,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
+    if(isset($officialWin)){
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    }
     if(count($runners) < 10) $racetext .= "\t\t'indication' => [],\n";
     else{
         $indication = [];
