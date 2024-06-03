@@ -38,7 +38,8 @@ return [
 			3 => 14,
 			10 => 37,
 		],
-		'indication' => [1],
+		'indication' => [1, 2, 7],
+		//CHECK THIS ONE OUT
 	],
 	'4' => [
 		/**
@@ -51,7 +52,7 @@ return [
 			4 => 79,
 			3 => 22.5,
 		],
-		'indication' => [],
+		'indication' => [5],
 	],
 	'5' => [
 		/**
@@ -77,7 +78,8 @@ return [
 			11 => 41,
 			6 => 45.5,
 		],
-		'indication' => [1],
+		'indication' => [1, 10],
+		//CHECK THIS ONE OUT
 	],
 	'7' => [
 		/**
@@ -90,7 +92,7 @@ return [
 			9 => 35,
 			8 => 18.5,
 		],
-		'indication' => [2, 3, 5, 6],
+		'indication' => [],
 	],
 	'8' => [
 		/**

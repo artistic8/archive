@@ -76,7 +76,7 @@ return [
 			6 => 44,
 			3 => 37.5,
 		],
-		'indication' => [3],
+		'indication' => [],
 	],
 	'7' => [
 		/**

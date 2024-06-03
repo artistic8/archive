@@ -37,7 +37,7 @@ return [
 			4 => 21,
 			10 => 15.5,
 		],
-		'indication' => [3],
+		'indication' => [],
 	],
 	'4' => [
 		/**
@@ -102,6 +102,6 @@ return [
 			3 => 28,
 			4 => 19,
 		],
-		'indication' => [4],
+		'indication' => [],
 	],
 ];

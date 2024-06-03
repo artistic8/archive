@@ -103,7 +103,8 @@ return [
 			4 => 20,
 			10 => 34.5,
 		],
-		'indication' => [5],
+		'indication' => [2, 4, 5, 6, 7],
+		//CHECK THIS ONE OUT
 	],
 	'9' => [
 		/**

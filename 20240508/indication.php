@@ -12,8 +12,7 @@ return [
 			1 => 16,
 			8 => 120.5,
 		],
-		'indication' => [4, 5],
-		//CHECK THIS ONE OUT
+		'indication' => [],
 	],
 	'2' => [
 		/**

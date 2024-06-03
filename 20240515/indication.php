@@ -12,7 +12,7 @@ return [
 			4 => 31.5,
 			9 => 31,
 		],
-		'indication' => [],
+		'indication' => [3],
 	],
 	'2' => [
 		/**
@@ -90,8 +90,7 @@ return [
 			4 => 19,
 			6 => 44,
 		],
-		'indication' => [1, 2, 5, 6, 7],
-		//CHECK THIS ONE OUT
+		'indication' => [1],
 	],
 	'8' => [
 		/**
@@ -117,6 +116,6 @@ return [
 			9 => 16,
 			7 => 44,
 		],
-		'indication' => [],
+		'indication' => [4],
 	],
 ];
