@@ -7,6 +7,11 @@ return [
 		*/
 		'favorites' => '1, 2, 7, 12',
 		'official win' => '1, 7, 12, 11',
+		'place amount' => [
+			1 => 12.5,
+			7 => 18.5,
+			12 => 24.5,
+		],
 		'indication' => [],
 	],
 	'2' => [
@@ -15,6 +20,11 @@ return [
 		*/
 		'favorites' => '2, 10, 13, 14',
 		'official win' => '10, 9, 2, 6',
+		'place amount' => [
+			10 => 16,
+			9 => 19.5,
+			2 => 16.5,
+		],
 		'indication' => [],
 	],
 	'3' => [
@@ -23,6 +33,11 @@ return [
 		*/
 		'favorites' => '5, 7',
 		'official win' => '9, 11, 4, 8',
+		'place amount' => [
+			9 => 28.5,
+			11 => 18,
+			4 => 44.5,
+		],
 		'indication' => [],
 	],
 	'4' => [
@@ -31,6 +46,11 @@ return [
 		*/
 		'favorites' => '1, 4, 5',
 		'official win' => '1, 5, 13, 3',
+		'place amount' => [
+			1 => 13,
+			5 => 39,
+			13 => 59,
+		],
 		'indication' => [2, 3],
 	],
 	'5' => [
@@ -39,6 +59,11 @@ return [
 		*/
 		'favorites' => '1, 4, 11',
 		'official win' => '1, 7, 2, 9',
+		'place amount' => [
+			1 => 11,
+			7 => 18,
+			2 => 43,
+		],
 		'indication' => [],
 	],
 	'6' => [
@@ -47,6 +72,11 @@ return [
 		*/
 		'favorites' => '1, 4, 9',
 		'official win' => '11, 9, 13, 4',
+		'place amount' => [
+			11 => 20.5,
+			9 => 25.5,
+			13 => 41,
+		],
 		'indication' => [],
 	],
 	'7' => [
@@ -55,6 +85,11 @@ return [
 		*/
 		'favorites' => '1, 4, 7',
 		'official win' => '1, 3, 5, 8',
+		'place amount' => [
+			1 => 11,
+			3 => 14.5,
+			5 => 27.5,
+		],
 		'indication' => [],
 	],
 	'8' => [
@@ -63,6 +98,11 @@ return [
 		*/
 		'favorites' => '7, 11',
 		'official win' => '1, 4, 11, 2',
+		'place amount' => [
+			1 => 307,
+			4 => 43.5,
+			11 => 27,
+		],
 		'indication' => [],
 	],
 	'9' => [
@@ -71,6 +111,11 @@ return [
 		*/
 		'favorites' => '6, 7, 9',
 		'official win' => '9, 1, 3, 13',
+		'place amount' => [
+			9 => 10.1,
+			1 => 21.5,
+			3 => 19,
+		],
 		'indication' => [],
 	],
 	'10' => [
@@ -79,6 +124,11 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 10',
 		'official win' => '11, 9, 10, 12',
+		'place amount' => [
+			11 => 85.5,
+			9 => 72.5,
+			10 => 15,
+		],
 		'indication' => [],
 	],
 ];
