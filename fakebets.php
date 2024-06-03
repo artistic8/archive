@@ -96,7 +96,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(isset($officialWin)){
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace += $qinAmount;
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3) $totalRace += $trioAmount;
-                $totalRace += $qinAmount;
         $racetext .= "\t\t'total (fake) won in race' => $totalRace,\n";
         $total += $totalRace;
     }
