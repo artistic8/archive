@@ -56,6 +56,7 @@ return [
 		'favorites' => '2, 7',
 		'official win' => '7, 8, 9, 1',
 		'indication' => [1, 3, 4, 5, 6],
+		//CHECK THIS ONE OUT
 	],
 	'8' => [
 		/**
@@ -72,6 +73,7 @@ return [
 		'favorites' => '4, 8',
 		'official win' => '1, 4, 8, 5',
 		'indication' => [7],
+		//CHECK THIS ONE OUT
 	],
 	'10' => [
 		/**

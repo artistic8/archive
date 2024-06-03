@@ -72,7 +72,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7) $indication[] = $other;
         }
         $racetext .= "\t\t'indication' => [" . implode(", ", $indication) . "],\n";
-        if(count($copy) === 2 && !empty($indication)) $racetext .= "\t\t//CHECK THIS ONE OUT\n";
+        if(count($copy) === 2 && count($indication) >= 2) $racetext .= "\t\t//CHECK THIS ONE OUT\n";
     }
     $racetext .= "\t],\n";
     unset($favorites);

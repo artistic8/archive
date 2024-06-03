@@ -32,7 +32,6 @@ return [
 		'favorites' => '1',
 		'official win' => '1, 12, 7, 10',
 		'indication' => [3, 4, 5],
-		//CHECK THIS ONE OUT
 	],
 	'5' => [
 		/**
