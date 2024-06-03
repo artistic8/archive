@@ -5,6 +5,7 @@ for f in *; do
         php inter3.php;
         git checkout $f/;
         php bets.php $f;
+        php indication.php $f;
         git checkout history.php;
         git checkout threes.php;
     fi
