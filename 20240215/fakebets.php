@@ -67,7 +67,7 @@ return [
 		'win($70)' => '1, 4, 11',
 		'win($70)' => '4, 11',
 		'total bets' => 420,
-		'total won in race' => 453,
+		'total (fake) won in race' => 453,
 	],
 	'5' => [
 		/**
