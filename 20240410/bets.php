@@ -146,8 +146,8 @@ return [
 			2 => 15.5,
 			9 => 15,
 		],
-		'inter' => '2',//count: 1
-		'Place' => '9',
+		'inter' => '2, 9',//count: 2
+		'Place' => '2, 9',
 	],
 ];
 //total place: 0
