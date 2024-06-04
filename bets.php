@@ -14,7 +14,7 @@ function combination($p, $n){
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
-$totalWin = 0;
+$totalPlace = 0;
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
@@ -148,6 +148,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $check) . "',\n"; 
             $plaBetAmount = 1 * $unitBet * count($check);
             $totalBets += $plaBetAmount;
+            $totalPlace = 0 - $plaBetAmount;
         }
         if(!empty($set2)){
             $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',\n"; 
@@ -176,7 +177,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(!empty(array_intersect($check, array_slice($officialWin, 0, 3)))) {
                 $placed = array_intersect($check, array_slice($officialWin, 0, 3));
                 foreach($placed as $fuck){
-                    $totalRace += (1 * $unitBet / 10) * $placeAmount[$fuck];
+                    $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck];
+                    $totalRace += $plaWonAmount;
+                    $totalPlace += $plaWonAmount;
                 }
             }
             if(count($set2) !== 2){
@@ -194,6 +197,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total place: $totalWin\n";
+$outtext .= "//total place: $totalPlace\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
