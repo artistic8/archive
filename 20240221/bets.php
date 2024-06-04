@@ -51,6 +51,7 @@ return [
 		],
 		'check' => '3',
 		'Place' => '4',
+		'place($70)' => '3',
 	],
 	'4' => [
 		/**
@@ -151,5 +152,5 @@ return [
 		'Place' => '5',
 	],
 ];
-//total place: 0
+//total place: 77
 //total: 0

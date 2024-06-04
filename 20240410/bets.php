@@ -17,6 +17,7 @@ return [
 		],
 		'check' => '7',
 		'Place' => '5',
+		'place($70)' => '7',
 	],
 	'2' => [
 		/**
@@ -133,6 +134,7 @@ return [
 		'inter' => '3, 4',//count: 2
 		'check' => '4',
 		'Place' => '3, 4',
+		'place($70)' => '4',
 	],
 	'9' => [
 		/**
@@ -152,5 +154,5 @@ return [
 		'Place' => '2, 9',
 	],
 ];
-//total place: 0
+//total place: -70
 //total: 0
