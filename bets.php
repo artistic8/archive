@@ -141,6 +141,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
   
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+        $unitBet = 70;
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets = 20 * combination(2, count($favorites));
         if(!empty($check)){
@@ -158,7 +159,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalBets += 10 * combination(3, count($favorites));
         
         if(count($set2) !== 2){
-            $unitBet = 70;
             $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
             $totalBets += 1 * $unitBet * count($favorites);
             $set3 = array_slice($favorites, 1, 2);
