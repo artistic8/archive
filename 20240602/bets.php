@@ -125,7 +125,7 @@ return [
 		],
 		'inter' => '4, 8',//count: 2
 		'check' => '4',
-		//FAV WIN,
+		'Place' => '4',
 	],
 	'9' => [
 		/**

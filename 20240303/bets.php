@@ -48,7 +48,7 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'check' => '7',
-		//FAV WIN,
+		'Place' => '7',
 	],
 	'4' => [
 		/**

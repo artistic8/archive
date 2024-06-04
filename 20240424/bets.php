@@ -49,7 +49,7 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'check' => '3',
-		//FAV WIN,
+		'Place' => '3',
 	],
 	'4' => [
 		/**
@@ -67,7 +67,7 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'check' => '1',
-		//FAV WIN,
+		'Place' => '1',
 	],
 	'5' => [
 		/**

@@ -110,7 +110,7 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'check' => '3',
-		//FAV WIN,
+		'Place' => '3',
 	],
 	'8' => [
 		/**

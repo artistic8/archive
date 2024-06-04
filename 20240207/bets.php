@@ -66,7 +66,7 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'check' => '1',
-		//FAV WIN,
+		'Place' => '1',
 	],
 	'5' => [
 		/**
