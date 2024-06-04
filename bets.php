@@ -139,17 +139,27 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($surePlace)){
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
+
+    $unitBet = 70;
+    if(!empty($check)){
+        $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $check) . "',\n"; 
+        $plaBetAmount = 1 * $unitBet * count($check);
+        $totalPlace = 0 - $plaBetAmount;
+        if(isset($officialWin)){
+            if(!empty(array_intersect($check, array_slice($officialWin, 0, 3)))) {
+                $placed = array_intersect($check, array_slice($officialWin, 0, 3));
+                foreach($placed as $fuck){
+                    $plaWonAmount = (1 * $unitBet / 10) * $placeAmount[$fuck];
+                    $totalPlace += $plaWonAmount;
+                }
+            }
+        }
+    }
   
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
-        $unitBet = 70;
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets = 20 * combination(2, count($favorites));
-        if(!empty($check)){
-            $racetext .= "\t\t'place($" . 1 * $unitBet . ")' => '" .implode(", ", $check) . "',\n"; 
-            $plaBetAmount = 1 * $unitBet * count($check);
-            $totalBets += $plaBetAmount;
-            $totalPlace = 0 - $plaBetAmount;
-        }
+        
         if(!empty($set2)){
             $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',\n"; 
             $totalBets += 10 * count($set2);
@@ -174,18 +184,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3) $totalRace += 2 * $trioAmount;
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
                     $totalRace += $qinAmount;
-            if(!empty(array_intersect($check, array_slice($officialWin, 0, 3)))) {
-                $placed = array_intersect($check, array_slice($officialWin, 0, 3));
-                foreach($placed as $fuck){
-                    $plaWonAmount = (1 * $unitBet / 10) * $placeAmount[$fuck];
-                    $totalRace += $plaWonAmount;
-                    $totalPlace += $plaWonAmount;
-                }
-            }
             if(count($set2) !== 2){
                 if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $totalRace += ($unitBet / 10) * $winAmount;
                 if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $totalRace +=  ($unitBet / 10) * $winAmount;    
             }
+            if(!empty($check)) $totalRace += $totalPlace;
             $racetext .= "\t\t'total won in race' => $totalRace,\n";
             $total += $totalRace;
         }
