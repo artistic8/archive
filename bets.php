@@ -99,9 +99,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         if(empty(array_diff($favorites, $candidates)) && count($favorites) >= 2) $check[] = $F;
-        if($raceDate == "20240310" && $raceNumber == 9 && $F == 2){
-            var_dump($candidates); die();
-        }
         if($firstSet) {
             $inter = $candidates;
             $firstSet = false;
