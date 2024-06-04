@@ -138,7 +138,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     $surePlace = array_intersect($surePlace, $inter, $check);
     if(!empty($surePlace)){
-        $racetext .= "\t\t//FAV WIN,\n";
+        $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
 
     $unitBet = 70;
