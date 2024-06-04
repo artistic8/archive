@@ -177,7 +177,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(!empty(array_intersect($check, array_slice($officialWin, 0, 3)))) {
                 $placed = array_intersect($check, array_slice($officialWin, 0, 3));
                 foreach($placed as $fuck){
-                    $plaWonAmount += (1 * $unitBet / 10) * $placeAmount[$fuck];
+                    $plaWonAmount = (1 * $unitBet / 10) * $placeAmount[$fuck];
                     $totalRace += $plaWonAmount;
                     $totalPlace += $plaWonAmount;
                 }
