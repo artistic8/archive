@@ -98,7 +98,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $check = [];
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        if(count(array_intersect($candidates, $favorites)) >= 3) $check[] = $F;
+        if(empty(array_diff($favorites, $candidates)) && count($favorites) >= 2) $check[] = $F;
         if($firstSet) {
             $inter = $candidates;
             $firstSet = false;
@@ -110,7 +110,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!empty($inter)){
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
     }
-    $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
+    if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
     
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
