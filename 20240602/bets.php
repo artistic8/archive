@@ -132,7 +132,6 @@ return [
 		'inter' => '4, 8',//count: 2
 		'check' => '4',
 		'Place' => '4, 8',
-		'place($70)' => '4',
 	],
 	'9' => [
 		/**
@@ -182,5 +181,5 @@ return [
 		],
 	],
 ];
-//total place: 0.7
+//total place: 0
 //total: 0
