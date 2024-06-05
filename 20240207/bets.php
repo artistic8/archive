@@ -15,9 +15,9 @@ return [
 			9 => 29.5,
 			4 => 27.5,
 		],
-		'inter' => '1',//count inter: 1
-		'check' => '7',//count check: 1
-		'Place' => '1, 7',//count place: 2
+		'inter' => '1',//count: 1
+		'check' => '7',
+		'Place' => '1, 7',
 	],
 	'2' => [
 		/**
@@ -33,8 +33,8 @@ return [
 			8 => 11.5,
 			4 => 22.5,
 		],
-		'inter' => '4',//count inter: 1
-		'Place' => '4',//count place: 1
+		'inter' => '4',//count: 1
+		'Place' => '4',
 	],
 	'3' => [
 		/**
@@ -50,8 +50,8 @@ return [
 			11 => 70,
 			2 => 11,
 		],
-		'inter' => '7',//count inter: 1
-		'Place' => '7',//count place: 1
+		'inter' => '7',//count: 1
+		'Place' => '7',
 	],
 	'4' => [
 		/**
@@ -67,9 +67,9 @@ return [
 			1 => 12,
 			12 => 52,
 		],
-		'inter' => '1',//count inter: 1
-		'check' => '1',//count check: 1
-		'Place' => '1, 3, 11',//count place: 3
+		'inter' => '1',//count: 1
+		'check' => '1',
+		'Place' => '1, 3, 11',
 	],
 	'5' => [
 		/**
@@ -85,7 +85,7 @@ return [
 			10 => 16.5,
 			4 => 21,
 		],
-		'Place' => '1, 7',//count place: 2
+		'Place' => '1, 7',
 	],
 	'6' => [
 		/**
@@ -116,8 +116,8 @@ return [
 			3 => 19,
 			5 => 27,
 		],
-		'inter' => '2',//count inter: 1
-		'Place' => '2, 3',//count place: 2
+		'inter' => '2',//count: 1
+		'Place' => '2, 3',
 	],
 	'8' => [
 		/**
@@ -133,7 +133,7 @@ return [
 			5 => 21.5,
 			9 => 38.5,
 		],
-		'Place' => '4',//count place: 1
+		'Place' => '4',
 	],
 	'9' => [
 		/**
@@ -149,9 +149,9 @@ return [
 			5 => 26.5,
 			9 => 50.5,
 		],
-		'inter' => '5',//count inter: 1
-		'Place' => '1, 3, 5',//count place: 3
+		'inter' => '5',//count: 1
+		'Place' => '1, 3, 5',
 	],
 ];
-//total win: 0
+//total place: 0
 //total: 0

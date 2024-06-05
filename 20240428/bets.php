@@ -15,8 +15,8 @@ return [
 			2 => 34,
 			1 => 54.5,
 		],
-		'inter' => '7',//count inter: 1
-		'Place' => '7',//count place: 1
+		'inter' => '7',//count: 1
+		'Place' => '7',
 	],
 	'2' => [
 		/**
@@ -32,8 +32,8 @@ return [
 			7 => 16.5,
 			10 => 37.5,
 		],
-		'inter' => '2',//count inter: 1
-		'Place' => '2, 7',//count place: 2
+		'inter' => '2',//count: 1
+		'Place' => '2, 7',
 	],
 	'3' => [
 		/**
@@ -49,7 +49,7 @@ return [
 			8 => 42,
 			1 => 16.5,
 		],
-		'inter' => '1',//count inter: 1
+		'inter' => '1',//count: 1
 	],
 	'4' => [
 		/**
@@ -65,9 +65,9 @@ return [
 			4 => 18.5,
 			5 => 15,
 		],
-		'inter' => '1, 4, 5',//count inter: 3
-		'check' => '1, 4, 5',//count check: 3
-		'Place' => '1, 4, 5',//count place: 3
+		'inter' => '1, 4, 5',//count: 3
+		'check' => '1, 4, 5',
+		'Place' => '1, 4, 5',
 		'qin($20)' => '1, 4, 5',
 		'win($10)' => '6, 9',
 		'qin($10)' => '1, 4, 5 X 6, 9',
@@ -89,17 +89,17 @@ return [
 			1 => 13,
 			9 => 29,
 		],
-		'inter' => '1, 5',//count inter: 2
-		'check' => '3, 5',//count check: 2
-		'Place' => '1, 3, 5',//count place: 3
+		'inter' => '1, 5',//count: 2
+		'check' => '3, 5',
+		'Place' => '1, 3, 5',
 		'qin($20)' => '1, 3, 5',
 		'win($10)' => '4, 6, 8',
 		'qin($10)' => '1, 3, 5 X 4, 6, 8',
 		'trio($10)' => '1, 3, 5',
-		'win($40)' => '1, 3, 5',
-		'win($40)' => '3, 5',
-		'total bets' => 390,
-		'total won in race' => 316,
+		'win($70)' => '1, 3, 5',
+		'win($70)' => '3, 5',
+		'total bets' => 540,
+		'total won in race' => 580,
 	],
 	'6' => [
 		/**
@@ -115,7 +115,7 @@ return [
 			10 => 19,
 			14 => 91,
 		],
-		'Place' => '2',//count place: 1
+		'Place' => '2',
 	],
 	'7' => [
 		/**
@@ -131,8 +131,8 @@ return [
 			10 => 43,
 			2 => 14.5,
 		],
-		'inter' => '1',//count inter: 1
-		'Place' => '1',//count place: 1
+		'inter' => '1',//count: 1
+		'Place' => '1',
 	],
 	'8' => [
 		/**
@@ -148,7 +148,7 @@ return [
 			4 => 16.5,
 			9 => 151,
 		],
-		'Place' => '1, 8',//count place: 2
+		'Place' => '1, 8',
 	],
 	'9' => [
 		/**
@@ -164,9 +164,9 @@ return [
 			7 => 55,
 			8 => 24.5,
 		],
-		'inter' => '8',//count inter: 1
-		'check' => '3',//count check: 1
-		'Place' => '3, 4, 8, 9',//count place: 4
+		'inter' => '8',//count: 1
+		'check' => '3',
+		'Place' => '3, 4, 8, 9',
 	],
 	'10' => [
 		/**
@@ -184,5 +184,5 @@ return [
 		],
 	],
 ];
-//total win: 302
-//total: 744
+//total place: 0
+//total: 1008
