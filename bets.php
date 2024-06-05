@@ -57,17 +57,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     $sums = [];
-    $mults = [];
     foreach($favorites as $one){
         foreach($favorites as $two){
             if($two > $one){
                 $sums[] = $one + $two;
-                $mults[] = $one * $two;
             }
         }
     }
     $sums = array_intersect($sums, $runners);
-    $mults = array_intersect($mults, $runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
     $racetext .= "\t\t/**\n";
@@ -112,7 +109,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
     
-    $set2 = array_values(array_unique(array_merge($sums, $mults)));
+    $set2 = $sums;
     sort($set2);
     $set2 = array_diff($set2, $favorites);
     $surePlace = [];
