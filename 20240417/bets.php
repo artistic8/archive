@@ -100,9 +100,10 @@ return [
 		'inter' => '1, 3',//count: 2
 		'check' => '3',
 		'Place' => '1, 2, 3',
+		'win($10)' => '1, 2, 3, 10',
 		'win($10)' => '1, 2, 3, 4, 5, 6, 10, 11, 12',
-		'total bets' => 90,
-		'total won in race' => 83.5,
+		'total bets' => 130,
+		'total won in race' => 217,
 	],
 	'7' => [
 		/**
@@ -156,5 +157,5 @@ return [
 		'inter' => '4',//count: 1
 	],
 ];
-//total win: 83.5
-//total: 83.5
+//total win: 217
+//total: 217

@@ -68,9 +68,10 @@ return [
 		'inter' => '1, 4, 5',//count: 3
 		'check' => '1, 4, 5',
 		'Place' => '1, 4, 5',
+		'win($10)' => '1, 4, 5',
 		'win($10)' => '1, 4, 5, 6, 9',
-		'total bets' => 50,
-		'total won in race' => 11.5,
+		'total bets' => 80,
+		'total won in race' => 43,
 	],
 	'5' => [
 		/**
@@ -89,9 +90,10 @@ return [
 		'inter' => '1, 5',//count: 2
 		'check' => '3, 5',
 		'Place' => '1, 3, 5',
+		'win($10)' => '1, 3, 5',
 		'win($10)' => '1, 3, 4, 5, 6, 8',
-		'total bets' => 60,
-		'total won in race' => 9,
+		'total bets' => 90,
+		'total won in race' => 48,
 	],
 	'6' => [
 		/**
@@ -176,5 +178,5 @@ return [
 		],
 	],
 ];
-//total win: 20.5
-//total: 20.5
+//total win: 91
+//total: 91
