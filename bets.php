@@ -60,7 +60,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     foreach($favorites as $one){
         foreach($favorites as $two){
             if($two > $one){
-                $sums[] = $one + $two;
+                if(!in_array($one + $two, $sums)) $sums[] = $one + $two;
             }
         }
     }
