@@ -20,8 +20,9 @@ return [
 		'Place' => '1, 3, 10',
 		'win($10)' => '1, 3, 10',
 		'win($10)' => '1, 3, 4, 10, 11',
-		'total bets' => 80,
-		'total won in race' => -7,
+		'qin($20)' => '1, 3, 4, 10, 11',
+		'total bets' => 280,
+		'total won in race' => 365,
 	],
 	'2' => [
 		/**
@@ -173,4 +174,4 @@ return [
 	],
 ];
 //total win: -7
-//total: -7
+//total: 365
