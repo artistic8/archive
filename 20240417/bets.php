@@ -15,8 +15,8 @@ return [
 			7 => 57,
 			6 => 37,
 		],
-		'inter' => '5',//count: 1
-		'Place' => '5',
+		'inter' => '5',//count inter: 1
+		'Place' => '5',//count place: 1
 	],
 	'2' => [
 		/**
@@ -47,7 +47,7 @@ return [
 			1 => 23,
 			6 => 28,
 		],
-		'Place' => '4, 9',
+		'Place' => '4, 9',//count place: 2
 	],
 	'4' => [
 		/**
@@ -63,8 +63,8 @@ return [
 			9 => 27.5,
 			10 => 47.5,
 		],
-		'inter' => '12',//count: 1
-		'Place' => '11, 12',
+		'inter' => '12',//count inter: 1
+		'Place' => '11, 12',//count place: 2
 	],
 	'5' => [
 		/**
@@ -80,8 +80,8 @@ return [
 			4 => 12.5,
 			10 => 33.5,
 		],
-		'inter' => '7',//count: 1
-		'Place' => '7',
+		'inter' => '7',//count inter: 1
+		'Place' => '7',//count place: 1
 	],
 	'6' => [
 		/**
@@ -97,17 +97,17 @@ return [
 			1 => 13,
 			12 => 36,
 		],
-		'inter' => '1, 3',//count: 2
-		'check' => '3',
-		'Place' => '1, 2, 3',
+		'inter' => '1, 3',//count inter: 2
+		'check' => '3',//count check: 1
+		'Place' => '1, 2, 3',//count place: 3
 		'qin($20)' => '1, 2, 3, 10',
 		'win($10)' => '4, 5, 6, 11, 12',
 		'qin($10)' => '1, 2, 3, 10 X 4, 5, 6, 11, 12',
 		'trio($10)' => '1, 2, 3, 10',
-		'win($70)' => '1, 2, 3, 10',
-		'win($70)' => '2, 3',
-		'total bets' => 830,
-		'total won in race' => 2015,
+		'win($40)' => '1, 2, 3, 10',
+		'win($40)' => '2, 3',
+		'total bets' => 650,
+		'total won in race' => 1154,
 	],
 	'7' => [
 		/**
@@ -123,9 +123,9 @@ return [
 			6 => 12,
 			10 => 24,
 		],
-		'inter' => '3',//count: 1
-		'check' => '3',
-		'Place' => '3, 6, 8',
+		'inter' => '3',//count inter: 1
+		'check' => '3',//count check: 1
+		'Place' => '3, 6, 8',//count place: 3
 	],
 	'8' => [
 		/**
@@ -141,8 +141,8 @@ return [
 			3 => 22.5,
 			7 => 63.5,
 		],
-		'inter' => '6, 8',//count: 2
-		'Place' => '6, 8',
+		'inter' => '6, 8',//count inter: 2
+		'Place' => '6, 8',//count place: 2
 	],
 	'9' => [
 		/**
@@ -158,8 +158,8 @@ return [
 			4 => 16.5,
 			6 => 15,
 		],
-		'inter' => '4',//count: 1
+		'inter' => '4',//count inter: 1
 	],
 ];
-//total win: 1959
-//total: 2015
+//total win: 1098
+//total: 1154

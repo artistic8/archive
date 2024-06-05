@@ -14,7 +14,7 @@ return [
 			4 => 13,
 			5 => 16.5,
 		],
-		'Place' => '4',
+		'Place' => '4',//count place: 1
 	],
 	'2' => [
 		/**
@@ -45,8 +45,8 @@ return [
 			4 => 21,
 			10 => 15.5,
 		],
-		'inter' => '7',//count: 1
-		'Place' => '7',
+		'inter' => '7',//count inter: 1
+		'Place' => '7',//count place: 1
 	],
 	'4' => [
 		/**
@@ -77,7 +77,7 @@ return [
 			7 => 31.5,
 			9 => 24,
 		],
-		'Place' => '5',
+		'Place' => '5',//count place: 1
 	],
 	'6' => [
 		/**
@@ -108,7 +108,7 @@ return [
 			5 => 22.5,
 			6 => 41.5,
 		],
-		'Place' => '7, 8',
+		'Place' => '7, 8',//count place: 2
 	],
 	'8' => [
 		/**
