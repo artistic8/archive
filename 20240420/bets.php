@@ -172,5 +172,5 @@ return [
 		'check' => '4',
 	],
 ];
-//total place: 0
+//total win: 208
 //total: 48
