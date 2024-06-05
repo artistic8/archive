@@ -185,5 +185,5 @@ return [
 		],
 	],
 ];
-//total place: 203
+//total win: 203
 //total: 388.5
