@@ -140,7 +140,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
 
-    $unitBet = 70;
+    $unitBet = 40;
   
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
