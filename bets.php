@@ -108,9 +108,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     sort($inter);
     $inter = array_intersect($favorites, $inter);
     if(!empty($inter)){
-        $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
+        $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count inter: " . count($inter) . "\n";
     }
-    if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
+    if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',//count check: " . count($check) . "\n";
     
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
@@ -137,7 +137,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         } 
     }
     if(!empty($surePlace)){
-        $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
+        $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',//count place: " . count($surePlace) . "\n";
     }
 
     $unitBet = 40;
