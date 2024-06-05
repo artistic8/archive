@@ -145,13 +145,20 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $toWin = array_values(array_unique(array_merge($favorites, $set2)));
     sort($toWin);
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+        $racetext .= "\t\t'win($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $toWin) . "',\n"; 
         $totalBets = 10 * count($toWin);
+        $totalBets += 10 * count($favorites);
         $totalPlace -= 10 * count($toWin);
+        $totalPlace -= 10 * count($favorites);
         $totalRace = 0 - $totalBets;
         $racetext .= "\t\t'total bets' => $totalBets,\n";
         if(isset($officialWin)){
             if(!empty(array_intersect($toWin, array_slice($officialWin, 0, 1)))) {
+                $totalRace += $winAmount;
+                $totalPlace += $winAmount;
+            }
+            if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
                 $totalRace += $winAmount;
                 $totalPlace += $winAmount;
             }

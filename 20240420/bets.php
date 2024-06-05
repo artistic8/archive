@@ -18,14 +18,9 @@ return [
 		'inter' => '1, 4',//count: 2
 		'check' => '4',
 		'Place' => '1, 4',
-		'qin($20)' => '1, 4, 10',
-		'win($10)' => '5, 11, 14',
-		'qin($10)' => '1, 4, 10 X 5, 11, 14',
-		'trio($10)' => '1, 4, 10',
-		'win($70)' => '1, 4, 10',
-		'win($70)' => '4, 10',
-		'total bets' => 540,
-		'total won in race' => 48,
+		'win($10)' => '1, 4, 5, 10, 11, 14',
+		'total bets' => 60,
+		'total won in race' => -18,
 	],
 	'2' => [
 		/**
@@ -172,5 +167,5 @@ return [
 		'check' => '4',
 	],
 ];
-//total win: 208
-//total: 48
+//total win: -18
+//total: -18
