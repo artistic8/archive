@@ -197,6 +197,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total place: $totalWin\n";
+$outtext .= "//total win: $totalWin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);

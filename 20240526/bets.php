@@ -173,5 +173,5 @@ return [
 		'Place' => '10',
 	],
 ];
-//total place: 0
+//total place: -20
 //total: 181
