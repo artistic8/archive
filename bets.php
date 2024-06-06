@@ -149,7 +149,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
 
     $unitBet = 70;
-  
+    if(!empty($check)){
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
+        $totalWin -= 1 * $unitBet * count($favorites);
+    }
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
