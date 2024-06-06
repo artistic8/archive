@@ -148,7 +148,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
 
-    $unitBet = 70;
+    $unitBet = 50;
     if(!empty($check)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $check) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($check);
