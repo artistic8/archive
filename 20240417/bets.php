@@ -161,5 +161,5 @@ return [
 		'inter' => '4',//count: 1
 	],
 ];
-//total win: 0
+//total place: 0
 //total: 2015

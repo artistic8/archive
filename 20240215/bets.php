@@ -159,5 +159,5 @@ return [
 		'Place' => '1, 5, 9',
 	],
 ];
-//total win: 0
+//total place: 0
 //total: 332
