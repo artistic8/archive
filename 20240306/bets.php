@@ -156,5 +156,5 @@ return [
 		'total won in race' => 0,
 	],
 ];
-//total place: 0
+//total place: 258.5
 //total: 810.5
