@@ -206,7 +206,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
-            if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) {
+            if(isset($set3) && !empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) {
                 $totalRace[$raceNumber] +=  ($unitBet / 10) * $winAmount;    
                 $totalWin +=  ($unitBet / 10) * $winAmount;    
             }
