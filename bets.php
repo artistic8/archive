@@ -193,7 +193,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    if(isset($officialWin) && isset($totalRace[$raceNumber])){
+    if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $racetext .= "\t\t'total won in race' => $totalRace[$raceNumber],\n";
         $total += $totalRace[$raceNumber];
     }
