@@ -162,7 +162,7 @@ return [
 		'qin($10)' => '2, 3, 6, 8',
 		'win($70)' => '2, 3, 6, 8',
 		'total bets' => 340,
-		'total won in race' => -275.5,
+		'total won in race' => 111.5,
 	],
 	'10' => [
 		/**
@@ -200,4 +200,4 @@ return [
 	],
 ];
 //total win: -215.5
-//total: -625.5
+//total: -238.5

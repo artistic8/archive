@@ -147,7 +147,7 @@ return [
 		'win($70)' => '4, 6, 8',
 		'win($70)' => '6, 8',
 		'total bets' => 590,
-		'total won in race' => 551.5,
+		'total won in race' => 944.5,
 	],
 	'9' => [
 		/**
@@ -187,4 +187,4 @@ return [
 	],
 ];
 //total win: 772.5
-//total: 551.5
+//total: 944.5
