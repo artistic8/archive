@@ -163,7 +163,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $set3 = array_slice($favorites, 1, 2);
             $racetext .= "\t\t'win($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
             $totalBets += 1 * $unitBet * count($set3);
-            $totalwin -= 1 * $unitBet * count($set3);
+            $totalWin -= 1 * $unitBet * count($set3);
         }
         $totalRace = 0 - $totalBets;
         $racetext .= "\t\t'total bets' => $totalBets,\n";
