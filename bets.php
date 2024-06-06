@@ -153,9 +153,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $check) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($check);
         $totalWin -= 1 * $unitBet * count($check);
-        $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $check) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($check);
-        $totalPlace -= 1 * $unitBet * count($check);
+    }
+    if(!empty($surePlace)){
+        $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $surePlace) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet * count($surePlace);
+        $totalPlace -= 1 * $unitBet * count($surePlace);
     }
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
@@ -193,14 +195,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
-            if(!empty(array_intersect($check, array_slice($officialWin, 0, 3)))) {
-                $placed = array_intersect($check, array_slice($officialWin, 0, 3));
+        }
+        if(!empty($surePlace)){
+            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
+                $placed = array_intersect($surePlace, array_slice($officialWin, 0, 3));
                 foreach($placed as $hero){
                     $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hero];
                     $racetext .= "\t\t'1 won(place bet)' => " . ($unitBet / 10) * $placeAmount[$hero] . ",\n";
                     $totalPlace += ($unitBet / 10) * $placeAmount[$hero];
                 }
-                
             }
         }
         if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){

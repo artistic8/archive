@@ -18,8 +18,9 @@ return [
 		'check' => '7',
 		'Place' => '5',
 		'win($70)' => '7',
-		'total bets' => 70,
-		'total won in race' => -70,
+		'place($70)' => '7',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'2' => [
 		/**
@@ -137,8 +138,9 @@ return [
 		'check' => '4',
 		'Place' => '3, 4',
 		'win($70)' => '4',
-		'total bets' => 70,
-		'total won in race' => -70,
+		'place($70)' => '4',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'9' => [
 		/**
@@ -159,7 +161,7 @@ return [
 	],
 ];
 //total win: -140
-//total place: 0
+//total place: -140
 //total qin: 0
 //total trio: 0
-//total: -140
+//total: -280
