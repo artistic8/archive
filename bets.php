@@ -191,9 +191,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                     $totalWin +=  ($unitBet / 10) * $winAmount;    
                 }
             }
-            $racetext .= "\t\t'total won in race' => $totalRace[$raceNumber],\n";
-            $total += $totalRace[$raceNumber];
         }
+    }
+    if(isset($officialWin) && isset($totalRace[$raceNumber])){
+        $racetext .= "\t\t'total won in race' => $totalRace[$raceNumber],\n";
+        $total += $totalRace[$raceNumber];
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
