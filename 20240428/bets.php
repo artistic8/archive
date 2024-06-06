@@ -17,8 +17,6 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'Place' => '7',
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'2' => [
 		/**
@@ -36,8 +34,6 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2, 7',
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'3' => [
 		/**
@@ -54,8 +50,6 @@ return [
 			1 => 16.5,
 		],
 		'inter' => '1',//count: 1
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'4' => [
 		/**
@@ -75,9 +69,12 @@ return [
 		'check' => '1, 4, 5',
 		'Place' => '1, 4, 5',
 		'win($70)' => '1, 4, 5',
+		'qin($20)' => '1, 4, 5',
 		'win($10)' => '6, 9',
-		'total bets' => 230,
-		'total won in race' => -168.5,
+		'qin($10)' => '1, 4, 5 X 6, 9',
+		'trio($10)' => '1, 4, 5',
+		'total bets' => 360,
+		'total won in race' => 218,
 	],
 	'5' => [
 		/**
@@ -97,11 +94,14 @@ return [
 		'check' => '3, 5',
 		'Place' => '1, 3, 5',
 		'win($70)' => '1, 3, 5',
+		'qin($20)' => '1, 3, 5',
 		'win($10)' => '4, 6, 8',
+		'qin($10)' => '1, 3, 5 X 4, 6, 8',
+		'trio($10)' => '1, 3, 5',
 		'win($70)' => '1, 3, 5',
 		'win($70)' => '3, 5',
-		'total bets' => 590,
-		'total won in race' => 445,
+		'total bets' => 750,
+		'total won in race' => 370,
 	],
 	'6' => [
 		/**
@@ -118,8 +118,6 @@ return [
 			14 => 91,
 		],
 		'Place' => '2',
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'7' => [
 		/**
@@ -137,8 +135,6 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -155,8 +151,6 @@ return [
 			9 => 151,
 		],
 		'Place' => '1, 8',
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'9' => [
 		/**
@@ -175,8 +169,6 @@ return [
 		'inter' => '8',//count: 1
 		'check' => '3',
 		'Place' => '3, 4, 8, 9',
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 	'10' => [
 		/**
@@ -192,9 +184,7 @@ return [
 			2 => 29,
 			8 => 17.5,
 		],
-		'total bets' => 0,
-		'total won in race' => 0,
 	],
 ];
-//total win: 676.5
-//total: 276.5
+//total win: -420
+//total: 588
