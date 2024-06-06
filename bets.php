@@ -144,7 +144,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
 
-    $unitBet = 70;
+    $unitBet = 50;
 
     if(count($check) >= 2){
         $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . "',\n"; 
