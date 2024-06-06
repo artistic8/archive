@@ -38,7 +38,7 @@ return [
 			4 => 28,
 			7 => 21,
 		],
-		'indication' => [3, 6, 9],
+		'indication' => [3, 4, 6, 9],
 		//CHECK THIS ONE OUT
 	],
 	'4' => [
