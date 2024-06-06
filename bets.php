@@ -143,7 +143,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         if(count($check) >= 2){
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 1))) === 1) {
-                $totalRace[$raceNumber] += $winAmount;
+                $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $totalWin += $winAmount;
             }
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace[$raceNumber] += $qinAmount;
