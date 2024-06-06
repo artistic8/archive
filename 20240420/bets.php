@@ -172,5 +172,8 @@ return [
 		'check' => '4',
 	],
 ];
-//total place: 208
+//total win: 208
+//total place: 0
+//total qin: -150
+//total trio: -10
 //total: 48

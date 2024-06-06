@@ -162,5 +162,8 @@ return [
 		'Place' => '2, 3',
 	],
 ];
-//total place: 65
+//total win: 65
+//total place: 0
+//total qin: -180
+//total trio: -10
 //total: -125

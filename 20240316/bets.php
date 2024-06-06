@@ -174,5 +174,8 @@ return [
 		],
 	],
 ];
-//total place: 53
+//total win: 53
+//total place: 0
+//total qin: 166
+//total trio: -10
 //total: 209

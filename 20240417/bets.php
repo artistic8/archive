@@ -161,5 +161,8 @@ return [
 		'inter' => '4',//count: 1
 	],
 ];
-//total place: 1959
+//total win: 1959
+//total place: 0
+//total qin: 96
+//total trio: -40
 //total: 2015

@@ -173,5 +173,8 @@ return [
 		'Place' => '10',
 	],
 ];
-//total place: -20
+//total win: -20
+//total place: 0
+//total qin: 211
+//total trio: -10
 //total: 181
