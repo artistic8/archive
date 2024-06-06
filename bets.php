@@ -204,7 +204,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 1))) === 1) $totalRace[$raceNumber] += $winAmount;
         if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace[$raceNumber] += $qinAmount;
         $racetext .= "\t\t'total won in race' => $totalRace[$raceNumber],\n";
-        $total += $totalRace;
+        $total += $totalRace[$raceNumber];
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
