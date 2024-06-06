@@ -16,6 +16,8 @@ return [
 			12 => 24.5,
 		],
 		'Place' => '1, 2, 7',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'2' => [
 		/**
@@ -32,6 +34,8 @@ return [
 			2 => 16.5,
 		],
 		'Place' => '2, 10',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'3' => [
 		/**
@@ -48,6 +52,8 @@ return [
 			4 => 44.5,
 		],
 		'Place' => '7',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'4' => [
 		/**
@@ -68,7 +74,12 @@ return [
 		'Place' => '1, 4, 5',
 		'qin($10)' => '1, 4, 5',
 		'win($10)' => '1, 4, 5',
-		'total won in race' => 126,
+		'qin($20)' => '1, 4, 5',
+		'win($10)' => '6, 9',
+		'qin($10)' => '1, 4, 5 X 6, 9',
+		'trio($10)' => '1, 4, 5',
+		'total bets' => 150,
+		'total won in race' => 367,
 	],
 	'5' => [
 		/**
@@ -85,6 +96,8 @@ return [
 			2 => 43,
 		],
 		'Place' => '1, 4, 11',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'6' => [
 		/**
@@ -103,6 +116,8 @@ return [
 		'inter' => '1',//count: 1
 		'check' => '4',
 		'Place' => '1, 4',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'7' => [
 		/**
@@ -119,6 +134,8 @@ return [
 			5 => 27.5,
 		],
 		'Place' => '1',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -134,6 +151,8 @@ return [
 			4 => 43.5,
 			11 => 27,
 		],
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'9' => [
 		/**
@@ -151,6 +170,8 @@ return [
 		],
 		'check' => '7',
 		'Place' => '7, 9',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'10' => [
 		/**
@@ -168,7 +189,9 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '10',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 ];
 //total win: -9.5
-//total: 126
+//total: 367

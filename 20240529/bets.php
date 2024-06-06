@@ -15,6 +15,8 @@ return [
 			5 => 16.5,
 		],
 		'Place' => '4',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'2' => [
 		/**
@@ -30,6 +32,8 @@ return [
 			2 => 65,
 			4 => 33.5,
 		],
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'3' => [
 		/**
@@ -47,6 +51,8 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'Place' => '7',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'4' => [
 		/**
@@ -62,6 +68,8 @@ return [
 			3 => 24,
 			11 => 56.5,
 		],
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'5' => [
 		/**
@@ -78,6 +86,8 @@ return [
 			9 => 24,
 		],
 		'Place' => '5',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'6' => [
 		/**
@@ -94,6 +104,8 @@ return [
 			13 => 28.5,
 		],
 		'inter' => '11',//count: 1
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'7' => [
 		/**
@@ -110,6 +122,8 @@ return [
 			6 => 41.5,
 		],
 		'Place' => '7, 8',
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -125,6 +139,8 @@ return [
 			3 => 28,
 			4 => 19,
 		],
+		'total bets' => 0,
+		'total won in race' => 0,
 	],
 ];
 //total win: 0
