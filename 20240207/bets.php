@@ -18,7 +18,6 @@ return [
 		'inter' => '1',//count: 1
 		'check' => '7',
 		'Place' => '1, 7',
-		'total won in race' => 62.5,
 	],
 	'2' => [
 		/**
@@ -36,7 +35,6 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4',
-		'total won in race' => 0,
 	],
 	'3' => [
 		/**
@@ -54,7 +52,6 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'Place' => '7',
-		'total won in race' => 31,
 	],
 	'4' => [
 		/**
@@ -73,7 +70,6 @@ return [
 		'inter' => '1',//count: 1
 		'check' => '1',
 		'Place' => '1, 3, 11',
-		'total won in race' => 0,
 	],
 	'5' => [
 		/**
@@ -91,7 +87,6 @@ return [
 		],
 		'check' => '1',
 		'Place' => '7',
-		'total won in race' => 71,
 	],
 	'6' => [
 		/**
@@ -108,7 +103,6 @@ return [
 			11 => 18,
 		],
 		'inter' => '11',//count: 1
-		'total won in race' => 0,
 	],
 	'7' => [
 		/**
@@ -126,7 +120,6 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2, 3',
-		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -143,7 +136,6 @@ return [
 			9 => 38.5,
 		],
 		'Place' => '4',
-		'total won in race' => 20,
 	],
 	'9' => [
 		/**
@@ -161,8 +153,7 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '1, 3, 5',
-		'total won in race' => 0,
 	],
 ];
-//total place: 184.5
-//total: 184.5
+//total win: 0
+//total: 0
