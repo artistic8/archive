@@ -18,19 +18,18 @@ return [
 		'inter' => '1, 4',//count: 2
 		'check' => '1, 3',
 		'Place' => '1, 3, 4',
-		'win($70)' => '1, 3, 4',
+		'win($70)' => '1, 3',
 		'qin($20)' => '1, 3, 4',
 		'win($10)' => '5, 7, 12',
 		'qin($10)' => '1, 3, 4 X 5, 7, 12',
 		'trio($10)' => '1, 3, 4',
 		'win($70)' => '1, 3, 4',
 		'win($70)' => '3, 4',
-		'total bets' => 750,
-		'1 won(win bet)' => 360.5,
+		'total bets' => 680,
 		'3 won(qin bet)' => 283,
 		'6 won(win bet)' => 360.5,
 		'7 won(win bet)' => 360.5,
-		'total won in race' => 614.5,
+		'total won in race' => 324,
 	],
 	'2' => [
 		/**
@@ -47,9 +46,6 @@ return [
 			10 => 20,
 		],
 		'Place' => '6, 12',
-		'win($70)' => '6, 12',
-		'total bets' => 140,
-		'total won in race' => -140,
 	],
 	'3' => [
 		/**
@@ -81,9 +77,6 @@ return [
 			11 => 18,
 		],
 		'Place' => '3, 11',
-		'win($70)' => '3, 11',
-		'total bets' => 140,
-		'total won in race' => -140,
 	],
 	'5' => [
 		/**
@@ -100,9 +93,6 @@ return [
 			9 => 35,
 		],
 		'Place' => '3',
-		'win($70)' => '3',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 	'6' => [
 		/**
@@ -135,10 +125,10 @@ return [
 		],
 		'check' => '6',
 		'Place' => '3, 6',
-		'win($70)' => '3, 6',
-		'total bets' => 140,
+		'win($70)' => '6',
+		'total bets' => 70,
 		'1 won(win bet)' => 241.5,
-		'total won in race' => 101.5,
+		'total won in race' => 171.5,
 	],
 	'8' => [
 		/**
@@ -156,18 +146,16 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'Place' => '1, 3, 4',
-		'win($70)' => '1, 3, 4',
 		'qin($20)' => '1, 2, 3, 4',
 		'win($10)' => '5, 6, 7, 8, 12',
 		'qin($10)' => '1, 2, 3, 4 X 5, 6, 7, 8, 12',
 		'trio($10)' => '1, 2, 3, 4',
 		'win($70)' => '1, 2, 3, 4',
 		'win($70)' => '2, 3',
-		'total bets' => 1040,
-		'1 won(win bet)' => 308,
+		'total bets' => 830,
 		'6 won(win bet)' => 308,
 		'7 won(win bet)' => 308,
-		'total won in race' => -116,
+		'total won in race' => -214,
 	],
 	'9' => [
 		/**
@@ -185,8 +173,8 @@ return [
 		],
 	],
 ];
-//total win: 487
+//total win: 518.5
 //total place: 0
 //total qin: -187
 //total trio: -50
-//total: 250
+//total: 281.5
