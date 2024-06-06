@@ -184,6 +184,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
+        if(!empty($check) && !empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
+            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+            $totalWin += ($unitBet / 10) * $winAmount;
+        }
         if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) {
             $totalRace[$raceNumber] += $winAmount;
             $totalWin += $winAmount;
