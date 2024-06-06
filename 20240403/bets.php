@@ -138,6 +138,8 @@ return [
 		'win($70)' => '4, 5, 6, 7',
 		'win($70)' => '5, 6',
 		'total bets' => 830,
+		'2 won(win bet)' => 195.5,
+		'5 won(qin bet)' => 727.5,
 		'total won in race' => 93,
 	],
 ];

@@ -20,6 +20,8 @@ return [
 		'Place' => '4, 5',
 		'win($70)' => '4, 5, 8',
 		'total bets' => 210,
+		'1 won(win bet)' => 423.5,
+		'3 won(qin bet)' => 215,
 		'total won in race' => 428.5,
 	],
 	'2' => [
@@ -47,6 +49,9 @@ return [
 		'win($70)' => '1, 2, 6',
 		'win($70)' => '2, 6',
 		'total bets' => 790,
+		'1 won(win bet)' => 227.5,
+		'6 won(win bet)' => 227.5,
+		'7 won(win bet)' => 227.5,
 		'total won in race' => -107.5,
 	],
 	'3' => [
@@ -117,6 +122,10 @@ return [
 		'Place' => '2, 3, 4',
 		'win($70)' => '2, 3, 4, 9, 11',
 		'total bets' => 350,
+		'1 won(win bet)' => 178.5,
+		'3 won(qin bet)' => 176,
+		'4 won(trio bet)' => 99,
+		'6 won(win bet)' => 178.5,
 		'total won in race' => 282,
 	],
 	'7' => [

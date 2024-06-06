@@ -24,6 +24,8 @@ return [
 		'qin($10)' => '1, 3, 10 X 4, 11',
 		'trio($10)' => '1, 3, 10',
 		'total bets' => 360,
+		'2 won(win bet)' => 73,
+		'5 won(qin bet)' => 286,
 		'total won in race' => -1,
 	],
 	'2' => [

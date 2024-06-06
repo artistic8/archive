@@ -50,6 +50,7 @@ return [
 		'Place' => '1, 7',
 		'win($70)' => '1, 7, 10, 11',
 		'total bets' => 280,
+		'1 won(win bet)' => 451.5,
 		'total won in race' => 171.5,
 	],
 	'4' => [
@@ -120,6 +121,7 @@ return [
 		'Place' => '2, 3, 10',
 		'win($70)' => '2, 3, 10',
 		'total bets' => 210,
+		'2 won(win bet)' => 103,
 		'total won in race' => -107,
 	],
 	'8' => [

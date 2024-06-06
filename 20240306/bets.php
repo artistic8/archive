@@ -66,6 +66,8 @@ return [
 		'check' => '5',
 		'win($70)' => '2, 5, 6',
 		'total bets' => 210,
+		'1 won(win bet)' => 255.5,
+		'3 won(qin bet)' => 362,
 		'total won in race' => 407.5,
 	],
 	'5' => [

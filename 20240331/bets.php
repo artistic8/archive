@@ -42,6 +42,9 @@ return [
 		'win($70)' => '1, 2, 6',
 		'win($70)' => '2, 6',
 		'total bets' => 790,
+		'1 won(win bet)' => 455,
+		'6 won(win bet)' => 455,
+		'7 won(win bet)' => 455,
 		'total won in race' => 575,
 	],
 	'3' => [
