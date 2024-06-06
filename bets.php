@@ -170,7 +170,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         if(isset($officialWin)){
             if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) {
                 $totalRace += $winAmount;
-                $totalWin -= $winAmount;
+                $totalWin += $winAmount;
             }
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace += 2 * $qinAmount;
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3) $totalRace += 2 * $trioAmount;
@@ -179,11 +179,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if(count($set2) !== 2){
                 if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
                     $totalRace += ($unitBet / 10) * $winAmount;
-                    $totalWin -= ($unitBet / 10) * $winAmount;
+                    $totalWin += ($unitBet / 10) * $winAmount;
                 }
                 if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) {
                     $totalRace +=  ($unitBet / 10) * $winAmount;    
-                    $totalWin -=  ($unitBet / 10) * $winAmount;    
+                    $totalWin +=  ($unitBet / 10) * $winAmount;    
                 }
             }
             $racetext .= "\t\t'total won in race' => $totalRace,\n";
