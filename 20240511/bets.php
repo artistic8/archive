@@ -16,10 +16,6 @@ return [
 			8 => 18,
 		],
 		'Place' => '8',
-		'place($70)' => '8',
-		'total bets' => 70,
-		'1 won(place bet)' => 126,
-		'total won in race' => 56,
 	],
 	'2' => [
 		/**
@@ -37,9 +33,6 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
-		'place($70)' => '5',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 	'3' => [
 		/**
@@ -57,10 +50,6 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
-		'place($70)' => '1',
-		'total bets' => 70,
-		'1 won(place bet)' => 70.7,
-		'total won in race' => 0.7,
 	],
 	'4' => [
 		/**
@@ -79,10 +68,8 @@ return [
 		'check' => '1',
 		'Place' => '1',
 		'win($70)' => '1',
-		'place($70)' => '1',
-		'total bets' => 140,
-		'1 won(place bet)' => 119,
-		'total won in race' => -21,
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'5' => [
 		/**
@@ -99,10 +86,6 @@ return [
 			12 => 48,
 		],
 		'Place' => '3',
-		'place($70)' => '3',
-		'total bets' => 70,
-		'1 won(place bet)' => 70.7,
-		'total won in race' => 0.7,
 	],
 	'6' => [
 		/**
@@ -120,10 +103,6 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 3',
-		'place($70)' => '1, 3',
-		'total bets' => 140,
-		'1 won(place bet)' => 112,
-		'total won in race' => -28,
 	],
 	'7' => [
 		/**
@@ -141,9 +120,6 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2',
-		'place($70)' => '2',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 	'8' => [
 		/**
@@ -161,10 +137,6 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
-		'place($70)' => '3',
-		'total bets' => 70,
-		'1 won(place bet)' => 108.5,
-		'total won in race' => 38.5,
 	],
 	'9' => [
 		/**
@@ -182,10 +154,6 @@ return [
 		],
 		'inter' => '8',//count: 1
 		'Place' => '8',
-		'place($70)' => '8',
-		'total bets' => 70,
-		'1 won(place bet)' => 115.5,
-		'total won in race' => 45.5,
 	],
 	'10' => [
 		/**
@@ -202,13 +170,10 @@ return [
 			9 => 38.5,
 		],
 		'Place' => '10',
-		'place($70)' => '10',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 ];
 //total win: -70
-//total place: -47.6
+//total place: 0
 //total qin: 0
 //total trio: 0
-//total: -117.6
+//total: -70
