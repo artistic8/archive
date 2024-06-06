@@ -76,9 +76,8 @@ return [
 		'Place' => '1, 4, 5',
 		'win($70)' => '1, 4, 5',
 		'win($10)' => '6, 9',
-		'trio($10)' => '1, 4, 5',
-		'total bets' => 240,
-		'total won in race' => -48.5,
+		'total bets' => 230,
+		'total won in race' => -168.5,
 	],
 	'5' => [
 		/**
@@ -99,11 +98,10 @@ return [
 		'Place' => '1, 3, 5',
 		'win($70)' => '1, 3, 5',
 		'win($10)' => '4, 6, 8',
-		'trio($10)' => '1, 3, 5',
 		'win($70)' => '1, 3, 5',
 		'win($70)' => '3, 5',
-		'total bets' => 600,
-		'total won in race' => 435,
+		'total bets' => 590,
+		'total won in race' => 445,
 	],
 	'6' => [
 		/**
@@ -199,4 +197,4 @@ return [
 	],
 ];
 //total win: 676.5
-//total: 386.5
+//total: 276.5

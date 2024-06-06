@@ -40,11 +40,10 @@ return [
 		'check' => '1',
 		'Place' => '6',
 		'win($10)' => '3, 7, 8, 12',
-		'trio($10)' => '1, 2, 6',
 		'win($70)' => '1, 2, 6',
 		'win($70)' => '2, 6',
-		'total bets' => 400,
-		'total won in race' => 55,
+		'total bets' => 390,
+		'total won in race' => 65,
 	],
 	'3' => [
 		/**
@@ -178,4 +177,4 @@ return [
 	],
 ];
 //total win: 305.5
-//total: -94.5
+//total: -84.5

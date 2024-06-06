@@ -40,6 +40,7 @@ $outtext .= "return [\n";
 
 $totalBets = [];
 $totalRace = [];
+
 for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $totalBets[$raceNumber] = 0;
     $totalRace[$raceNumber] = 0;
@@ -151,12 +152,21 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);
         
+        
     }
+  
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+        $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
+        
         if(!empty($set2)){
             $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',\n"; 
             $totalBets[$raceNumber] += 10 * count($set2);
+            $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . " X " . implode(", ", $set2)  . "',\n"; 
+            $totalBets[$raceNumber] += 10 * count($favorites) * count($set2);
         }
+        $racetext .= "\t\t'trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
         
         if(count($set2) !== 2){
             $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
@@ -165,35 +175,21 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $racetext .= "\t\t'win($" . 1 * $unitBet . ")' => '" . implode(", ", $set3) . "',\n"; 
             $totalBets[$raceNumber] += 1 * $unitBet * count($set3);
         }
-    }
-   
-    if(isset($officialWin)){
-        $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
-        if(count($check) >= 2){
-            if(count(array_intersect($favorites, array_slice($officialWin, 0, 1))) === 1) {
-                $totalRace[$raceNumber] += $winAmount;
-                $totalWin += $winAmount;
-            }
-        }
-        if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
-            if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) {
-                $totalRace[$raceNumber] += $winAmount;
-                $totalWin += $winAmount;
-            }
+        $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
+        if(isset($officialWin)){
+            if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) $totalRace[$raceNumber] += $winAmount;
+            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace[$raceNumber] += 2 * $qinAmount;
+            if(count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3) $totalRace[$raceNumber] += 2 * $trioAmount;
+            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 1 && count(array_intersect($set2, array_slice($officialWin, 0, 2))) === 1)
+                    $totalRace[$raceNumber] += $qinAmount;
             if(count($set2) !== 2){
-                if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
-                    $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                    $totalWin += ($unitBet / 10) * $winAmount;
-                }
-                if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) {
-                    $totalRace[$raceNumber] +=  ($unitBet / 10) * $winAmount;    
-                    $totalWin+=  ($unitBet / 10) * $winAmount;    
-                }
+                if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+                if(!empty(array_intersect($set3, array_slice($officialWin, 0, 1)))) $totalRace[$raceNumber] +=  ($unitBet / 10) * $winAmount;    
             }
+            $racetext .= "\t\t'total won in race' => $totalRace[$raceNumber],\n";
+            $total += $totalRace[$raceNumber];
         }
-        $racetext .= "\t\t'total won in race' => $totalRace[$raceNumber],\n";
-        $total += $totalRace[$raceNumber];
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
