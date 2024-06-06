@@ -137,8 +137,10 @@ return [
 		'win($10)' => '7, 12',
 		'qin($10)' => '3, 4, 11 X 7, 12',
 		'trio($10)' => '3, 4, 11',
-		'total bets' => 150,
-		'total won in race' => 388.5,
+		'win($70)' => '3, 4, 11',
+		'win($70)' => '4, 11',
+		'total bets' => 500,
+		'total won in race' => 38.5,
 	],
 	'9' => [
 		/**
@@ -197,4 +199,4 @@ return [
 	],
 ];
 //total win: 0
-//total: 10
+//total: -340
