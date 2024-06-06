@@ -171,10 +171,7 @@ return [
 		'win($70)' => '2, 3, 5',
 		'total bets' => 210,
 		'1 won(win bet)' => 539,
-		'3 won(qin bet)' => 1466,
-		'4 won(trio bet)' => 859,
-		'6 won(win bet)' => 539,
-		'total won in race' => 3193,
+		'total won in race' => 329,
 	],
 	'10' => [
 		/**
@@ -192,8 +189,8 @@ return [
 		],
 	],
 ];
-//total win: 1653.5
+//total win: 1114.5
 //total place: 0
-//total qin: 1634
-//total trio: 974
-//total: 4261.5
+//total qin: 168
+//total trio: 115
+//total: 1397.5
