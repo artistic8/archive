@@ -147,12 +147,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($surePlace)){
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
-
+    $juice = array_values(array_unique(array_merge($check, $inter, $surePlace)));
+    sort($juice);
     $unitBet = 70;
-    if(!empty($check)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $check) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($check);
-        $totalWin -= 1 * $unitBet * count($check);
+    if(!empty($juice)){
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $juice) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet * count($juice);
+        $totalWin -= 1 * $unitBet * count($juice);
     }
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
@@ -184,8 +185,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-        if(!empty($check)){
-            if(!empty(array_intersect($check, array_slice($officialWin, 0, 1)))) {
+        if(!empty($juice)){
+            if(!empty(array_intersect($juice, array_slice($officialWin, 0, 1)))) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;

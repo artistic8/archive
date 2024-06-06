@@ -51,9 +51,9 @@ return [
 		'inter' => '7',//count: 1
 		'check' => '7',
 		'Place' => '7, 9',
-		'win($70)' => '6, 7, 9',
-		'total bets' => 210,
-		'total won in race' => -210,
+		'win($70)' => '7',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'4' => [
 		/**
@@ -165,8 +165,8 @@ return [
 		],
 	],
 ];
-//total win: -210
+//total win: -70
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: -210
+//total: -70
