@@ -147,8 +147,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $unitBet = 50;
 
     if(count($check) >= 2){
-        $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        $totalBets[$raceNumber] += 10 * combination(2, count($favorites));
+        $racetext .= "\t\t'qin($10)' => '" . implode(", ", $check) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * combination(2, count($check));
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);
@@ -182,7 +182,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $totalWin += $winAmount;
             }
-            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) $totalRace[$raceNumber] += $qinAmount;
+            if(count(array_intersect($check, array_slice($officialWin, 0, 2))) === 2) $totalRace[$raceNumber] += $qinAmount;
         }
         if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
             if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) {
