@@ -19,9 +19,9 @@ return [
 		'check' => '1, 10',
 		'Place' => '1, 7, 8',
 		'qin($10)' => '1, 7, 8, 10',
-		'win($70)' => '1, 7, 8, 10',
-		'total bets' => 340,
-		'total won in race' => 542,
+		'win($50)' => '1, 7, 8, 10',
+		'total bets' => 260,
+		'total won in race' => 370,
 	],
 	'2' => [
 		/**
@@ -153,10 +153,10 @@ return [
 		'win($10)' => '5, 7, 12',
 		'qin($10)' => '1, 3, 4 X 5, 7, 12',
 		'trio($10)' => '1, 3, 4',
-		'win($70)' => '1, 3, 4',
-		'win($70)' => '3, 4',
-		'total bets' => 540,
-		'total won in race' => -1,
+		'win($50)' => '1, 3, 4',
+		'win($50)' => '3, 4',
+		'total bets' => 440,
+		'total won in race' => -55,
 	],
 	'9' => [
 		/**
@@ -178,5 +178,5 @@ return [
 		'total won in race' => 0,
 	],
 ];
-//total win: 385
-//total: 541
+//total win: 311
+//total: 315

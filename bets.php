@@ -154,7 +154,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $totalWin -= 1 * $unitBet * count($favorites);
         
     }
-    if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+    if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         
