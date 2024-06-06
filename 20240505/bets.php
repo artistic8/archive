@@ -169,10 +169,10 @@ return [
 		],
 		'check' => '2, 3',
 		'Place' => '3',
-		'qin($10)' => '2, 3, 6, 8',
+		'qin($10)' => '2, 3',
 		'win($50)' => '2, 3, 6, 8',
-		'total bets' => 260,
-		'total won in race' => 62.5,
+		'total bets' => 210,
+		'total won in race' => 112.5,
 	],
 	'10' => [
 		/**
@@ -210,4 +210,4 @@ return [
 	],
 ];
 //total win: 87.5
-//total: 195.5
+//total: 245.5
