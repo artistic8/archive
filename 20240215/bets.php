@@ -159,5 +159,5 @@ return [
 		'Place' => '1, 5, 9',
 	],
 ];
-//total place: -990
+//total place: 270
 //total: 332
