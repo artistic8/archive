@@ -18,9 +18,10 @@ return [
 		'inter' => '1',//count: 1
 		'check' => '1, 10',
 		'Place' => '1, 7, 8',
-		'win($70)' => '1, 10',
-		'total bets' => 140,
-		'total won in race' => -140,
+		'win($70)' => '1, 7, 8, 10',
+		'total bets' => 280,
+		'1 won(win bet)' => 882,
+		'total won in race' => 602,
 	],
 	'2' => [
 		/**
@@ -38,9 +39,10 @@ return [
 		],
 		'check' => '9',
 		'Place' => '2, 4, 9',
-		'win($70)' => '9',
-		'total bets' => 70,
-		'total won in race' => -70,
+		'win($70)' => '2, 4, 9',
+		'total bets' => 210,
+		'1 won(win bet)' => 392,
+		'total won in race' => 182,
 	],
 	'3' => [
 		/**
@@ -57,6 +59,9 @@ return [
 			5 => 21,
 		],
 		'inter' => '1, 3',//count: 2
+		'win($70)' => '1, 3',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'4' => [
 		/**
@@ -73,6 +78,10 @@ return [
 			1 => 29.5,
 		],
 		'Place' => '3',
+		'win($70)' => '3',
+		'total bets' => 70,
+		'1 won(win bet)' => 364,
+		'total won in race' => 294,
 	],
 	'5' => [
 		/**
@@ -104,6 +113,9 @@ return [
 			9 => 28,
 		],
 		'Place' => '4',
+		'win($70)' => '4',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'7' => [
 		/**
@@ -121,6 +133,9 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
+		'win($70)' => '3',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'8' => [
 		/**
@@ -139,17 +154,18 @@ return [
 		'inter' => '3, 4',//count: 2
 		'check' => '1',
 		'Place' => '1, 3, 4',
-		'win($70)' => '1',
+		'win($70)' => '1, 3, 4',
 		'qin($20)' => '1, 3, 4',
 		'win($10)' => '5, 7, 12',
 		'qin($10)' => '1, 3, 4 X 5, 7, 12',
 		'trio($10)' => '1, 3, 4',
 		'win($70)' => '1, 3, 4',
 		'win($70)' => '3, 4',
-		'total bets' => 610,
+		'total bets' => 750,
+		'1 won(win bet)' => 269.5,
 		'6 won(win bet)' => 269.5,
 		'7 won(win bet)' => 269.5,
-		'total won in race' => -71,
+		'total won in race' => 58.5,
 	],
 	'9' => [
 		/**
@@ -167,10 +183,13 @@ return [
 		],
 		'inter' => '9',//count: 1
 		'Place' => '3, 9',
+		'win($70)' => '3, 9',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 ];
-//total win: -121
+//total win: 876.5
 //total place: 0
 //total qin: -150
 //total trio: -10
-//total: -281
+//total: 716.5

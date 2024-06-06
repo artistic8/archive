@@ -18,15 +18,15 @@ return [
 		'inter' => '1, 3',//count: 2
 		'check' => '1, 10',
 		'Place' => '1, 3',
-		'win($70)' => '1, 10',
+		'win($70)' => '1, 3, 10',
 		'qin($20)' => '1, 3, 10',
 		'win($10)' => '4, 11',
 		'qin($10)' => '1, 3, 10 X 4, 11',
 		'trio($10)' => '1, 3, 10',
-		'total bets' => 290,
+		'total bets' => 360,
 		'2 won(win bet)' => 73,
 		'5 won(qin bet)' => 286,
-		'total won in race' => 69,
+		'total won in race' => -1,
 	],
 	'2' => [
 		/**
@@ -44,6 +44,10 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4, 9',
+		'win($70)' => '4, 9',
+		'total bets' => 140,
+		'1 won(win bet)' => 444.5,
+		'total won in race' => 304.5,
 	],
 	'3' => [
 		/**
@@ -61,6 +65,9 @@ return [
 		],
 		'inter' => '1, 3',//count: 2
 		'Place' => '1',
+		'win($70)' => '1, 3',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'4' => [
 		/**
@@ -79,9 +86,9 @@ return [
 		'inter' => '11',//count: 1
 		'check' => '1',
 		'Place' => '1, 11',
-		'win($70)' => '1',
-		'total bets' => 70,
-		'total won in race' => -70,
+		'win($70)' => '1, 11',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'5' => [
 		/**
@@ -113,6 +120,10 @@ return [
 			12 => 20,
 		],
 		'Place' => '2',
+		'win($70)' => '2',
+		'total bets' => 70,
+		'1 won(win bet)' => 248.5,
+		'total won in race' => 178.5,
 	],
 	'7' => [
 		/**
@@ -129,6 +140,9 @@ return [
 			6 => 25,
 		],
 		'Place' => '6, 7',
+		'win($70)' => '6, 7',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'8' => [
 		/**
@@ -146,6 +160,9 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
+		'win($70)' => '1',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'9' => [
 		/**
@@ -163,6 +180,9 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
+		'win($70)' => '5',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'10' => [
 		/**
@@ -180,8 +200,8 @@ return [
 		],
 	],
 ];
-//total win: -157
+//total win: -234
 //total place: 0
 //total qin: 166
 //total trio: -10
-//total: -1
+//total: -78

@@ -16,6 +16,9 @@ return [
 			4 => 46,
 		],
 		'Place' => '2',
+		'win($70)' => '2',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'2' => [
 		/**
@@ -48,6 +51,9 @@ return [
 		],
 		'inter' => '1, 7',//count: 2
 		'Place' => '1, 7',
+		'win($70)' => '1, 7',
+		'total bets' => 140,
+		'total won in race' => -140,
 	],
 	'4' => [
 		/**
@@ -66,18 +72,19 @@ return [
 		'inter' => '1, 11',//count: 2
 		'check' => '1, 4',
 		'Place' => '1, 4, 11',
-		'win($70)' => '1, 4',
+		'win($70)' => '1, 4, 11',
 		'qin($20)' => '1, 4, 11',
 		'win($10)' => '12',
 		'qin($10)' => '1, 4, 11 X 12',
 		'trio($10)' => '1, 4, 11',
 		'win($70)' => '1, 4, 11',
 		'win($70)' => '4, 11',
-		'total bets' => 600,
+		'total bets' => 670,
+		'1 won(win bet)' => 315,
 		'3 won(qin bet)' => 162,
 		'6 won(win bet)' => 315,
 		'7 won(win bet)' => 315,
-		'total won in race' => 192,
+		'total won in race' => 437,
 	],
 	'5' => [
 		/**
@@ -94,6 +101,9 @@ return [
 			4 => 13.5,
 		],
 		'inter' => '4',//count: 1
+		'win($70)' => '4',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'6' => [
 		/**
@@ -111,6 +121,10 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 3',
+		'win($70)' => '1, 3',
+		'total bets' => 140,
+		'1 won(win bet)' => 304.5,
+		'total won in race' => 164.5,
 	],
 	'7' => [
 		/**
@@ -128,6 +142,9 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
+		'win($70)' => '3',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'8' => [
 		/**
@@ -145,9 +162,9 @@ return [
 		],
 		'check' => '5',
 		'Place' => '8, 10',
-		'win($70)' => '5',
-		'total bets' => 70,
-		'total won in race' => -70,
+		'win($70)' => '5, 8, 10',
+		'total bets' => 210,
+		'total won in race' => -210,
 	],
 	'9' => [
 		/**
@@ -164,10 +181,13 @@ return [
 			11 => 18,
 		],
 		'Place' => '1, 5, 9',
+		'win($70)' => '1, 5, 9',
+		'total bets' => 210,
+		'total won in race' => -210,
 	],
 ];
-//total win: 60
+//total win: -230.5
 //total place: 0
 //total qin: 72
 //total trio: -10
-//total: 122
+//total: -168.5
