@@ -18,6 +18,8 @@ return [
 		'inter' => '4',//count: 1
 		'check' => '5, 8',
 		'Place' => '4, 5',
+		'qin($10)' => '4, 5, 8',
+		'win($70)' => '4, 5, 8',
 	],
 	'2' => [
 		/**
@@ -162,5 +164,5 @@ return [
 		'Place' => '2, 3',
 	],
 ];
-//total place: 65
+//total place: -145
 //total: -125
