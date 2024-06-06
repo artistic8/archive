@@ -154,10 +154,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 1 * $unitBet * count($check);
         $totalWin -= 1 * $unitBet * count($check);
     }
-    if(!empty($surePlace)){
-        $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $surePlace) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($surePlace);
-        $totalPlace -= 1 * $unitBet * count($surePlace);
+    if(!empty($inter)){
+        $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $inter) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet * count($inter);
+        $totalPlace -= 1 * $unitBet * count($inter);
     }
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
@@ -196,9 +196,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
         }
-        if(!empty($surePlace)){
-            if(!empty(array_intersect($surePlace, array_slice($officialWin, 0, 3)))) {
-                $placed = array_intersect($surePlace, array_slice($officialWin, 0, 3));
+        if(!empty($inter)){
+            if(!empty(array_intersect($inter, array_slice($officialWin, 0, 3)))) {
+                $placed = array_intersect($inter, array_slice($officialWin, 0, 3));
                 foreach($placed as $hero){
                     $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hero];
                     $racetext .= "\t\t'1 won(place bet)' => " . ($unitBet / 10) * $placeAmount[$hero] . ",\n";

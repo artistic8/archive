@@ -19,16 +19,15 @@ return [
 		'check' => '1, 10',
 		'Place' => '1, 3',
 		'win($70)' => '1, 10',
-		'place($70)' => '1, 10',
+		'place($70)' => '1, 3',
 		'qin($20)' => '1, 3, 10',
 		'win($10)' => '4, 11',
 		'qin($10)' => '1, 3, 10 X 4, 11',
 		'trio($10)' => '1, 3, 10',
 		'total bets' => 430,
-		'1 won(place bet)' => 150.5,
 		'2 won(win bet)' => 73,
 		'5 won(qin bet)' => 286,
-		'total won in race' => 79.5,
+		'total won in race' => -71,
 	],
 	'2' => [
 		/**
@@ -46,6 +45,10 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'Place' => '4, 9',
+		'place($70)' => '4, 9',
+		'total bets' => 140,
+		'1 won(place bet)' => 150.5,
+		'total won in race' => 10.5,
 	],
 	'3' => [
 		/**
@@ -63,6 +66,10 @@ return [
 		],
 		'inter' => '1, 3',//count: 2
 		'Place' => '1',
+		'place($70)' => '1',
+		'total bets' => 70,
+		'1 won(place bet)' => 126,
+		'total won in race' => 56,
 	],
 	'4' => [
 		/**
@@ -82,10 +89,10 @@ return [
 		'check' => '1',
 		'Place' => '1, 11',
 		'win($70)' => '1',
-		'place($70)' => '1',
-		'total bets' => 140,
+		'place($70)' => '1, 11',
+		'total bets' => 210,
 		'1 won(place bet)' => 91,
-		'total won in race' => -49,
+		'total won in race' => -119,
 	],
 	'5' => [
 		/**
@@ -117,6 +124,10 @@ return [
 			12 => 20,
 		],
 		'Place' => '2',
+		'place($70)' => '2',
+		'total bets' => 70,
+		'1 won(place bet)' => 101.5,
+		'total won in race' => 31.5,
 	],
 	'7' => [
 		/**
@@ -133,6 +144,10 @@ return [
 			6 => 25,
 		],
 		'Place' => '6, 7',
+		'place($70)' => '6, 7',
+		'total bets' => 140,
+		'1 won(place bet)' => 175,
+		'total won in race' => 35,
 	],
 	'8' => [
 		/**
@@ -150,6 +165,10 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1',
+		'place($70)' => '1',
+		'total bets' => 70,
+		'1 won(place bet)' => 210,
+		'total won in race' => 140,
 	],
 	'9' => [
 		/**
@@ -167,6 +186,9 @@ return [
 		],
 		'inter' => '5',//count: 1
 		'Place' => '5',
+		'place($70)' => '5',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'10' => [
 		/**
@@ -185,7 +207,7 @@ return [
 	],
 ];
 //total win: -157
-//total place: 31.5
+//total place: 14
 //total qin: 166
 //total trio: -10
-//total: 30.5
+//total: 13

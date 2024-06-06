@@ -31,6 +31,10 @@ return [
 			7 => 120,
 		],
 		'Place' => '4, 5, 10',
+		'place($70)' => '4, 5, 10',
+		'total bets' => 210,
+		'1 won(place bet)' => 245,
+		'total won in race' => 35,
 	],
 	'3' => [
 		/**
@@ -48,6 +52,10 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'Place' => '2',
+		'place($70)' => '2',
+		'total bets' => 70,
+		'1 won(place bet)' => 73.5,
+		'total won in race' => 3.5,
 	],
 	'4' => [
 		/**
@@ -64,6 +72,9 @@ return [
 			5 => 56,
 		],
 		'Place' => '4',
+		'place($70)' => '4',
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'5' => [
 		/**
@@ -81,6 +92,10 @@ return [
 		],
 		'inter' => '6',//count: 1
 		'Place' => '3',
+		'place($70)' => '3',
+		'total bets' => 70,
+		'1 won(place bet)' => 91,
+		'total won in race' => 21,
 	],
 	'6' => [
 		/**
@@ -98,6 +113,12 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'Place' => '1, 2, 4',
+		'place($70)' => '1, 2, 4',
+		'total bets' => 210,
+		'1 won(place bet)' => 112,
+		'1 won(place bet)' => 105,
+		'1 won(place bet)' => 87.5,
+		'total won in race' => 94.5,
 	],
 	'7' => [
 		/**
@@ -115,6 +136,10 @@ return [
 		],
 		'inter' => '1, 3',//count: 2
 		'Place' => '1, 3',
+		'place($70)' => '1, 3',
+		'total bets' => 140,
+		'1 won(place bet)' => 80.5,
+		'total won in race' => -59.5,
 	],
 	'8' => [
 		/**
@@ -132,6 +157,10 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'Place' => '3',
+		'place($70)' => '3',
+		'total bets' => 70,
+		'1 won(place bet)' => 119,
+		'total won in race' => 49,
 	],
 	'9' => [
 		/**
@@ -165,7 +194,7 @@ return [
 	],
 ];
 //total win: 0
-//total place: 0
+//total place: 73.5
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 73.5
