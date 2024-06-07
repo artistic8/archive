@@ -105,7 +105,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $firstSet = true;
     $check = [];
     foreach($favorites as $F){
-        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        $candidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
         if(empty(array_diff($favorites, $candidates)) && count($favorites) >= 3) $check[] = $F;
         if($firstSet) {
             $inter = $candidates;
