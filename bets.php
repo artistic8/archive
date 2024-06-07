@@ -136,7 +136,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
     $set2 = array_diff($set2, $favorites);
-    $unitBet = 100;
+    $unitBet = 70;
     // if(!empty($check)){
     //     $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $check) . "',\n"; 
     //     $totalBets[$raceNumber] += 1 * $unitBet * count($check);
