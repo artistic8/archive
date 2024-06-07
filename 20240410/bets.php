@@ -104,14 +104,6 @@ return [
 		],
 		'qin check' => '2, 9',
 		'trio check' => '2, 6, 9',
-		'win($70)' => '2, 6, 9',
-		'win($70)' => '6, 9',
-		'qin($20)' => '2, 6, 9',
-		'trio($10)' => '2, 6, 9',
-		'total bets' => 420,
-		'6 won(win bet)' => 276.5,
-		'7 won(win bet)' => 276.5,
-		'total won in race' => 133,
 	],
 	'7' => [
 		/**
@@ -169,8 +161,8 @@ return [
 		],
 	],
 ];
-//total win: -567
+//total win: -770
 //total place: 0
-//total qin: -240
-//total trio: -60
-//total: -867
+//total qin: -180
+//total trio: -50
+//total: -1000
