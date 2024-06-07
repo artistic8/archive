@@ -45,10 +45,6 @@ return [
 			3 => 18.5,
 			10 => 39.5,
 		],
-		'win check' => '1',
-		'qin check' => '1, 7',
-		'trio check' => '1, 7',
-		'inter check' => '1',
 	],
 	'4' => [
 		/**
@@ -64,8 +60,6 @@ return [
 			11 => 25.5,
 			7 => 20.5,
 		],
-		'qin check' => '1, 4',
-		'trio check' => '1, 4, 10',
 	],
 	'5' => [
 		/**
@@ -96,7 +90,6 @@ return [
 			7 => 17.5,
 			5 => 94.5,
 		],
-		'trio check' => '4, 6',
 	],
 	'7' => [
 		/**
@@ -112,10 +105,6 @@ return [
 			7 => 31.5,
 			2 => 14,
 		],
-		'win check' => '3',
-		'qin check' => '3',
-		'trio check' => '3, 10',
-		'inter check' => '3',
 	],
 	'8' => [
 		/**
@@ -131,10 +120,6 @@ return [
 			1 => 24.5,
 			6 => 15.5,
 		],
-		'win check' => '5',
-		'qin check' => '5',
-		'trio check' => '1, 5',
-		'inter check' => '5',
 	],
 	'9' => [
 		/**
@@ -152,8 +137,3 @@ return [
 		],
 	],
 ];
-//total win: 0
-//total place: 0
-//total qin: 0
-//total trio: 0
-//total: 0

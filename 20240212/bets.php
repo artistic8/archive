@@ -60,16 +60,6 @@ return [
 			4 => 79,
 			3 => 22.5,
 		],
-		'qin check' => '1, 10',
-		'trio check' => '1, 2, 10',
-		'win($70)' => '1, 2, 10',
-		'win($70)' => '2, 10',
-		'qin($20)' => '1, 2, 10',
-		'trio($10)' => '1, 2, 10',
-		'total bets' => 420,
-		'6 won(win bet)' => 248.5,
-		'7 won(win bet)' => 248.5,
-		'total won in race' => 77,
 	],
 	'5' => [
 		/**
@@ -144,12 +134,6 @@ return [
 			1 => 16.5,
 			6 => 31.5,
 		],
-		'win check' => '1, 8',
-		'qin check' => '1, 8',
-		'trio check' => '1, 8',
-		//pivot 1, 
-		//pivot 8, 
-		'inter check' => '1, 8',
 	],
 	'10' => [
 		/**
@@ -182,8 +166,3 @@ return [
 		],
 	],
 ];
-//total win: 147
-//total place: 0
-//total qin: -60
-//total trio: -10
-//total: 77

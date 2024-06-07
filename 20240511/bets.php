@@ -60,10 +60,6 @@ return [
 			1 => 17,
 			4 => 59.5,
 		],
-		'win check' => '1',
-		'qin check' => '1',
-		'trio check' => '1',
-		'inter check' => '1',
 	],
 	'5' => [
 		/**
@@ -94,8 +90,6 @@ return [
 			7 => 20.5,
 			3 => 16,
 		],
-		'qin check' => '1',
-		'trio check' => '1, 3',
 	],
 	'7' => [
 		/**
@@ -158,8 +152,3 @@ return [
 		],
 	],
 ];
-//total win: 0
-//total place: 0
-//total qin: 0
-//total trio: 0
-//total: 0
