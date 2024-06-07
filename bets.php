@@ -104,7 +104,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $firstSet = true;
     $check = [];
-    $pivots = [];
+   
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         if(empty(array_diff($favorites, $candidates)) && count($favorites) >= 3) $check[] = $F;
@@ -116,11 +116,18 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($inter);
     $inter = array_intersect($favorites, $inter);
+    $winpivots = [];
+    $qinpivots = [];
+    $triopivots = [];
     foreach($favorites as $F){
         foreach($favorites as $other){
             if($F !== $other){
+                $candidates = array_intersect($history[$raceNumber][$other]["win"], $runners);
+                if(!in_array($F, $candidates)) $winpivots[] = $F;
                 $candidates = array_intersect($history[$raceNumber][$other]["qin"], $runners);
-                if(!in_array($F, $candidates)) $pivots[] = $F;
+                if(!in_array($F, $candidates)) $qinpivots[] = $F;
+                $candidates = array_intersect($history[$raceNumber][$other]["trio"], $runners);
+                if(!in_array($F, $candidates)) $triopivots[] = $F;
             }
         }
     }
@@ -128,7 +135,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
     }
     if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
-    if(!empty($pivots)) $racetext .= "\t\t'pivots' => '" . implode(", ", $pivots) . "',\n";
+    if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
+    if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
+    if(!empty($triopivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $triopivots) . "',\n";
     
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
