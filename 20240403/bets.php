@@ -61,6 +61,7 @@ return [
 			7 => 36,
 		],
 		'qin check' => '1',
+		'trio check' => '1, 2',
 	],
 	'5' => [
 		/**
@@ -122,6 +123,7 @@ return [
 			4 => 17.5,
 		],
 		'qin check' => '4',
+		'trio check' => '4',
 	],
 ];
 //total win: 0

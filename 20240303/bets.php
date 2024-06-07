@@ -16,6 +16,7 @@ return [
 			7 => 15,
 		],
 		'qin check' => '5, 8',
+		'trio check' => '5, 8, 9',
 	],
 	'2' => [
 		/**
@@ -32,6 +33,7 @@ return [
 			14 => 23,
 		],
 		'qin check' => '3',
+		'trio check' => '3, 9',
 	],
 	'3' => [
 		/**
@@ -49,6 +51,7 @@ return [
 		],
 		'win check' => '7',
 		'qin check' => '7',
+		'trio check' => '7, 9',
 		'inter check' => '7',
 	],
 	'4' => [
@@ -65,6 +68,7 @@ return [
 			4 => 21,
 			6 => 22,
 		],
+		'trio check' => '11',
 	],
 	'5' => [
 		/**
@@ -96,6 +100,7 @@ return [
 			6 => 16.5,
 		],
 		'qin check' => '10',
+		'trio check' => '10',
 	],
 	'7' => [
 		/**

@@ -107,6 +107,7 @@ return [
 		],
 		'win check' => '3',
 		'qin check' => '3',
+		'trio check' => '3, 7',
 		'inter check' => '3',
 	],
 	'8' => [
@@ -124,6 +125,7 @@ return [
 			3 => 17.5,
 		],
 		'qin check' => '7',
+		'trio check' => '3, 6, 7, 8',
 	],
 	'9' => [
 		/**

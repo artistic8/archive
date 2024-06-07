@@ -32,6 +32,7 @@ return [
 		],
 		'win check' => '1',
 		'qin check' => '1, 2',
+		'trio check' => '1, 2, 6',
 		'inter check' => '1',
 	],
 	'3' => [

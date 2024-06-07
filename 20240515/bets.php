@@ -17,6 +17,7 @@ return [
 		],
 		'win check' => '1, 10',
 		'qin check' => '1, 8, 10',
+		'trio check' => '1, 8, 10',
 		'inter check' => '1, 10',
 		'qin($20)' => '1, 7, 8, 10',
 		'trio($10)' => '1, 7, 8, 10',
@@ -43,6 +44,7 @@ return [
 		],
 		'win check' => '9',
 		'qin check' => '8, 9',
+		'trio check' => '8, 9',
 		'inter check' => '9',
 	],
 	'3' => [
@@ -75,6 +77,7 @@ return [
 			1 => 29.5,
 		],
 		'qin check' => '3, 6',
+		'trio check' => '3, 6, 7',
 	],
 	'5' => [
 		/**
@@ -91,6 +94,7 @@ return [
 			7 => 20.5,
 		],
 		'qin check' => '2, 4',
+		'trio check' => '2, 4',
 	],
 	'6' => [
 		/**
@@ -107,6 +111,7 @@ return [
 			9 => 28,
 		],
 		'qin check' => '4',
+		'trio check' => '4, 6',
 	],
 	'7' => [
 		/**
@@ -139,6 +144,7 @@ return [
 		],
 		'win check' => '1',
 		'qin check' => '1, 4',
+		'trio check' => '1, 3, 4',
 		'inter check' => '1',
 	],
 	'9' => [
@@ -156,6 +162,7 @@ return [
 			7 => 44,
 		],
 		'qin check' => '2, 3, 9',
+		'trio check' => '2, 3, 9',
 		'qin($20)' => '2, 3, 9',
 		'trio($10)' => '2, 3, 9',
 		'win($100)' => '2, 3, 9',

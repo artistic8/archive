@@ -31,6 +31,7 @@ return [
 			14 => 31,
 		],
 		'qin check' => '2, 4, 5',
+		'trio check' => '2, 4, 5',
 		'qin($20)' => '2, 4, 5',
 		'trio($10)' => '2, 4, 5',
 		'win($100)' => '2, 4, 5',
@@ -131,6 +132,7 @@ return [
 		],
 		'win check' => '4, 6, 8',
 		'qin check' => '4, 6, 8',
+		'trio check' => '4, 6, 8',
 		'inter check' => '4, 6, 8',
 		'qin($20)' => '4, 6, 8',
 		'trio($10)' => '4, 6, 8',
@@ -159,6 +161,7 @@ return [
 		],
 		'win check' => '3',
 		'qin check' => '2, 3',
+		'trio check' => '2, 3',
 		'inter check' => '3',
 	],
 	'10' => [
@@ -175,6 +178,7 @@ return [
 			3 => 30.5,
 			11 => 19,
 		],
+		'trio check' => '3, 5',
 	],
 ];
 //total win: 1320
