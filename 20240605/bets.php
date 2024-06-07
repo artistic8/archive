@@ -17,10 +17,6 @@ return [
 		],
 		'inter' => '4',//count: 1
 		'trio pivots' => '4, 5, 8',
-		'win($100)' => '4',
-		'place($100)' => '4',
-		'total bets' => 200,
-		'total won in race' => -200,
 	],
 	'2' => [
 		/**
@@ -38,19 +34,16 @@ return [
 		],
 		'inter' => '2, 6',//count: 2
 		'trio pivots' => '1, 2, 6',
-		'win($100)' => '1',
-		'place($100)' => '1',
 		'qin($20)' => '1, 2, 6',
 		'win($10)' => '3, 7, 8, 12',
 		'qin($10)' => '1, 2, 6 X 3, 7, 8, 12',
 		'trio($10)' => '1, 2, 6',
 		'win($100)' => '1, 2, 6',
 		'win($100)' => '2, 6',
-		'total bets' => 930,
-		'0 won(place bet)' => 285,
+		'total bets' => 730,
 		'6 won(win bet)' => 325,
 		'7 won(win bet)' => 325,
-		'total won in race' => 5,
+		'total won in race' => -80,
 	],
 	'3' => [
 		/**
@@ -101,11 +94,6 @@ return [
 			3 => 15,
 		],
 		'trio pivots' => '1, 3, 9, 12',
-		'win($100)' => '1, 3',
-		'place($100)' => '1, 3',
-		'total bets' => 400,
-		'0 won(place bet)' => 150,
-		'total won in race' => -250,
 	],
 	'6' => [
 		/**
@@ -122,11 +110,6 @@ return [
 			3 => 17,
 		],
 		'trio pivots' => '2, 3, 4, 9, 11',
-		'win($100)' => '2, 3, 4',
-		'place($100)' => '2, 3, 4',
-		'total bets' => 600,
-		'0 won(place bet)' => 170,
-		'total won in race' => -430,
 	],
 	'7' => [
 		/**
@@ -143,11 +126,6 @@ return [
 			11 => 19,
 		],
 		'trio pivots' => '4, 6, 10, 11',
-		'win($100)' => '4, 6',
-		'place($100)' => '4, 6',
-		'total bets' => 400,
-		'0 won(place bet)' => 185,
-		'total won in race' => -215,
 	],
 	'8' => [
 		/**
@@ -164,10 +142,6 @@ return [
 			1 => 18.5,
 		],
 		'trio pivots' => '3, 6, 12',
-		'win($100)' => '3',
-		'place($100)' => '3',
-		'total bets' => 200,
-		'total won in race' => -200,
 	],
 	'9' => [
 		/**
@@ -185,14 +159,10 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'trio pivots' => '2, 3, 4, 11',
-		'win($100)' => '2, 3',
-		'place($100)' => '2, 3',
-		'total bets' => 400,
-		'total won in race' => -400,
 	],
 ];
-//total win: -1090
-//total place: -410
+//total win: 110
+//total place: 0
 //total qin: -180
 //total trio: -10
-//total: -1690
+//total: -80
