@@ -18,6 +18,8 @@ return [
 		'win check' => '1, 3',
 		'qin check' => '1, 3',
 		'trio check' => '1, 3, 4',
+		//pivot 1, 
+		//pivot 3, 
 		'inter check' => '1, 3',
 		'win($70)' => '1, 3, 4',
 		'win($70)' => '3, 4',
@@ -130,6 +132,7 @@ return [
 		'win check' => '6',
 		'qin check' => '3, 6',
 		'trio check' => '3, 6',
+		//pivot 6, 
 		'inter check' => '6',
 	],
 	'8' => [

@@ -33,6 +33,7 @@ return [
 		'win check' => '2',
 		'qin check' => '2, 6',
 		'trio check' => '2, 5, 6',
+		//pivot 2, 
 		'inter check' => '2',
 		'win($70)' => '2, 4, 5, 6, 7',
 		'win($70)' => '4, 5',

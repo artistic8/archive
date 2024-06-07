@@ -169,6 +169,7 @@ return [
 		'win check' => '4',
 		'qin check' => '4',
 		'trio check' => '4, 5',
+		//pivot 4, 
 		'inter check' => '4',
 	],
 ];

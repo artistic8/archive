@@ -63,6 +63,7 @@ return [
 		'win check' => '1',
 		'qin check' => '1',
 		'trio check' => '1',
+		//pivot 1, 
 		'inter check' => '1',
 	],
 	'5' => [

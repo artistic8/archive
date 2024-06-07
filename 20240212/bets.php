@@ -147,6 +147,8 @@ return [
 		'win check' => '1, 8',
 		'qin check' => '1, 8',
 		'trio check' => '1, 8',
+		//pivot 1, 
+		//pivot 8, 
 		'inter check' => '1, 8',
 	],
 	'10' => [
