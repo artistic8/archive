@@ -17,7 +17,7 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'check' => '7',
-		'pivots' => '1',
+		'pivots' => '7',
 		'Place' => '1',
 	],
 	'2' => [
@@ -35,7 +35,6 @@ return [
 			4 => 22.5,
 		],
 		'inter' => '4',//count: 1
-		'pivots' => '4, 8',
 		'Place' => '4',
 	],
 	'3' => [
@@ -53,6 +52,7 @@ return [
 			2 => 11,
 		],
 		'inter' => '7',//count: 1
+		'pivots' => '7',
 		'Place' => '7',
 	],
 	'4' => [
@@ -71,7 +71,6 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'check' => '1',
-		'pivots' => '1',
 		'Place' => '1, 3, 11',
 	],
 	'5' => [
@@ -106,7 +105,7 @@ return [
 			11 => 18,
 		],
 		'inter' => '11',//count: 1
-		'pivots' => '11',
+		'pivots' => '8',
 	],
 	'7' => [
 		/**
@@ -123,7 +122,7 @@ return [
 			5 => 27,
 		],
 		'inter' => '2',//count: 1
-		'pivots' => '2',
+		'pivots' => '3',
 		'Place' => '2, 3',
 	],
 	'8' => [
@@ -140,6 +139,7 @@ return [
 			5 => 21.5,
 			9 => 38.5,
 		],
+		'pivots' => '4, 11',
 	],
 	'9' => [
 		/**
@@ -156,7 +156,7 @@ return [
 			9 => 50.5,
 		],
 		'inter' => '5',//count: 1
-		'pivots' => '5',
+		'pivots' => '1',
 		'Place' => '1, 3, 5',
 	],
 ];
