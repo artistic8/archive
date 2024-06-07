@@ -142,7 +142,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     //     $totalBets[$raceNumber] += 1 * $unitBet * count($check);
     //     $totalWin -= 1 * $unitBet * count($check);
     // }
-    if(count($runners) >= 10 && count($winInter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+    if(count($runners) >= 10 && count($winInter) >= 2 && count($favorites) >= 3 && count($favorites) < 6 && count($set2) < 7){
         if(!empty($set2)){
             $racetext .= "\t\t'win($10)' => '" . implode(", ", $set2) . "',\n"; 
             $totalBets[$raceNumber] += 10 * count($set2);
@@ -162,7 +162,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin -= 1 * $unitBet * count($set3);
         }
     }
-    if(count($runners) >= 10 && count($qinInter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+    if(count($runners) >= 10 && count($qinInter) >= 2 && count($favorites) >= 3 && count($favorites) < 6 && count($set2) < 7){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         $totalQin -= 20 * combination(2, count($favorites));
