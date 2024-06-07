@@ -227,6 +227,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
             if(!empty(array_intersect($wp, array_slice($officialWin, 0, 3)))) {
+                $wp = array_intersect($wp, array_slice($officialWin, 0, 3));
                 foreach($wp as $hired){
                     $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hired];
                     $racetext .= "\t\t'0 won(place bet)' => " . ($unitBet / 10) * $placeAmount[$hired] . ",\n";
