@@ -32,12 +32,10 @@ return [
 		],
 		'qin check' => '1',
 		'trio check' => '1, 6, 7',
-		'win($70)' => '1, 6, 7',
-		'win($70)' => '6, 7',
 		'qin($20)' => '1, 6, 7',
 		'trio($10)' => '1, 6, 7',
-		'total bets' => 420,
-		'total won in race' => -420,
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'3' => [
 		/**
@@ -76,14 +74,10 @@ return [
 		'qin check' => '1, 5, 11',
 		'trio check' => '1, 5, 11',
 		'inter check' => '1',
-		'win($70)' => '1, 5, 11',
-		'win($70)' => '5, 11',
 		'qin($20)' => '1, 5, 11',
 		'trio($10)' => '1, 5, 11',
-		'total bets' => 420,
-		'6 won(win bet)' => 280,
-		'7 won(win bet)' => 280,
-		'total won in race' => 140,
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'5' => [
 		/**
@@ -150,14 +144,10 @@ return [
 		'qin check' => '4, 8',
 		'trio check' => '1, 4, 8',
 		'inter check' => '8',
-		'win($70)' => '1, 4, 8',
-		'win($70)' => '4, 8',
 		'qin($20)' => '1, 4, 8',
 		'trio($10)' => '1, 4, 8',
-		'total bets' => 420,
-		'6 won(win bet)' => 189,
-		'7 won(win bet)' => 189,
-		'total won in race' => -42,
+		'total bets' => 70,
+		'total won in race' => -70,
 	],
 	'9' => [
 		/**
@@ -177,8 +167,8 @@ return [
 		'trio check' => '3, 4',
 	],
 ];
-//total win: -112
+//total win: 0
 //total place: 0
 //total qin: -180
 //total trio: -30
-//total: -322
+//total: -210
