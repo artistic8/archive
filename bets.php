@@ -117,18 +117,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($inter);
     $inter = array_intersect($favorites, $inter);
     foreach($favorites as $F){
-        $interOthers = [];
-        $firstSet = true;
+        $unionOthers = [];
         foreach($favorites as $other){
             if($F !== $other){
-                if($firstSet) {
-                    $interOthers = array_intersect($history[$raceNumber][$other]["win"], $runners);
-                    $firstSet = false;
-                }
-                else $interOthers = array_intersect($interOthers, $history[$raceNumber][$other]["win"], $runners);
+                $candidates = array_intersect($history[$raceNumber][$other]["win"], $runners);
+                $unionOthers = array_values(array_unique(array_merge($unionOthers, $candidates)));
             }
         }
-        if(in_array($F, $interOthers)) $pivots[] = $F;
+        if(!in_array($F, $unionOthers)) $pivots[] = $F;
     }
     if(!empty($inter)){
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";

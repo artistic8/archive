@@ -80,6 +80,7 @@ return [
 			12 => 49.5,
 		],
 		'inter' => '1',//count: 1
+		'pivots' => '1',
 		'Place' => '1',
 	],
 	'6' => [
@@ -114,6 +115,7 @@ return [
 		],
 		'inter' => '2',//count: 1
 		'check' => '3',
+		'pivots' => '2',
 		'Place' => '2, 3, 10',
 	],
 	'8' => [

@@ -48,6 +48,7 @@ return [
 			2 => 20.5,
 		],
 		'inter' => '2',//count: 1
+		'pivots' => '2',
 		'Place' => '2, 8',
 	],
 	'4' => [
@@ -98,6 +99,7 @@ return [
 			1 => 41,
 		],
 		'inter' => '2',//count: 1
+		'pivots' => '2',
 		'Place' => '2',
 	],
 	'7' => [
@@ -132,6 +134,7 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'check' => '4',
+		'pivots' => '3, 4',
 		'Place' => '3, 4',
 	],
 	'9' => [
@@ -149,6 +152,7 @@ return [
 			9 => 15,
 		],
 		'inter' => '2, 9',//count: 2
+		'pivots' => '2, 9',
 		'Place' => '2, 9',
 	],
 ];
