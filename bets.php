@@ -119,6 +119,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($winCheck)) $racetext .= "\t\t'win check' => '" . implode(", ", $winCheck) . "',\n";
     if(!empty($qinCheck)) $racetext .= "\t\t'qin check' => '" . implode(", ", $qinCheck) . "',\n";
     if(!empty($trioCheck)) $racetext .= "\t\t'trio check' => '" . implode(", ", $trioCheck) . "',\n";
+    $union = array_merge($winCheck, $qinCheck, $trioCheck);
+    foreach($favorites as $X){
+        if(count(array_keys($array, 6)) >= 3) $racetext .= "\t\t//pivot $X, \n";
+    }
     $check = array_intersect($winCheck, $qinCheck, $trioCheck);
     if(!empty($check)) $racetext .= "\t\t'inter check' => '" . implode(", ", $check) . "',\n";
     $unitBet = 70;
