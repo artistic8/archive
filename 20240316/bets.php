@@ -21,12 +21,6 @@ return [
 		//pivot 1, 
 		//pivot 10, 
 		'inter check' => '1, 10',
-		'win($70)' => '1, 3, 10',
-		'win($70)' => '3, 10',
-		'qin($20)' => '1, 3, 10',
-		'trio($10)' => '1, 3, 10',
-		'total bets' => 420,
-		'total won in race' => -420,
 	],
 	'2' => [
 		/**
@@ -76,6 +70,10 @@ return [
 		'qin check' => '1',
 		'trio check' => '1',
 		'inter check' => '1',
+		'win($70)' => '1, 6, 8, 11',
+		'win($70)' => '6, 8',
+		'total bets' => 420,
+		'total won in race' => -420,
 	],
 	'5' => [
 		/**
@@ -173,8 +171,8 @@ return [
 		],
 	],
 ];
-//total win: -350
+//total win: -420
 //total place: 0
-//total qin: -60
-//total trio: -10
+//total qin: 0
+//total trio: 0
 //total: -420
