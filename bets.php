@@ -119,7 +119,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     foreach($favorites as $F){
         foreach($favorites as $other){
             if($F !== $other){
-                $candidates = array_intersect($history[$raceNumber][$other]["win"], $runners);
+                $candidates = array_intersect($history[$raceNumber][$other]["qin"], $runners);
                 if(!in_array($F, $candidates)) $pivots[] = $F;
             }
         }
