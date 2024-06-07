@@ -1,5 +1,5 @@
 <?php
-$compact = [];
+
 $dir = new DirectoryIterator(__DIR__);
 foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() && $fileinfo->isDir() && preg_match("/^[0-9]+$/", $fileinfo->getFilename())) {
@@ -9,14 +9,10 @@ foreach ($dir as $fileinfo) {
             $favorites = explode(", ", $data['favorites']);
             if(!isset($data['official win']) || empty($data['official win'])) continue;
             $winners = explode(", ", $data['official win']);
-            if(isset($data['win check']) && isset($data['qin check']) && isset($data['trio check']) && in_array($winners[0], $favorites)) {
-                $expr = count(explode(", ", $data['win check'])) . count(explode(", ", $data['qin check'])) . count(explode(", ", $data['trio check']));
-                if(!in_array($expr, $compact)) $compact[] = $expr;
-                
+            if(count($favorites) >= 3 && in_array(end($favorites), array_slice($winners, 0, 3))) {
+                echo $fileinfo->getFilename() . ", Race: " . $raceNumber . "\n";
             }
         }
     }
 }
-sort($compact);
-foreach($compact as $what) echo $what . "\n";
 ?>
