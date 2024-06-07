@@ -179,9 +179,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             if(!empty(array_intersect($wp, array_slice($officialWin, 0, 3)))) {
                 $wp = array_intersect($wp, array_slice($officialWin, 0, 3));
                 foreach($wp as $hired){
-                    $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hired];
-                    $racetext .= "\t\t'0 won(place bet)' => " . ($unitBet / 10) * $placeAmount[$hired] . ",\n";
-                    $totalPlace += ($unitBet / 10) * $placeAmount[$hired];
+                    if(isset($placeAmount[$hired])){
+                        $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hired];
+                        $racetext .= "\t\t'0 won(place bet)' => " . ($unitBet / 10) * $placeAmount[$hired] . ",\n";
+                        $totalPlace += ($unitBet / 10) * $placeAmount[$hired];
+                    }
                 }
             }
         }
