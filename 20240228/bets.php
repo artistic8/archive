@@ -30,6 +30,8 @@ return [
 			2 => 31,
 			9 => 21.5,
 		],
+		'win pivots' => '6, 9',
+		'qin pivots' => '1, 3, 6, 9',
 		'trio pivots' => '1, 3, 6, 9, 12',
 	],
 	'3' => [
@@ -46,6 +48,8 @@ return [
 			8 => 19,
 			2 => 61,
 		],
+		'win pivots' => '3, 8, 9',
+		'qin pivots' => '3, 8, 9, 12',
 		'trio pivots' => '3, 6, 8, 9, 12',
 	],
 	'4' => [
@@ -95,6 +99,8 @@ return [
 			3 => 20.5,
 		],
 		'inter' => '2, 9',//count: 2
+		'win pivots' => '2, 9',
+		'qin pivots' => '2, 9',
 		'trio pivots' => '2, 9',
 	],
 	'7' => [
@@ -112,6 +118,8 @@ return [
 			4 => 15.5,
 		],
 		'inter' => '3',//count: 1
+		'win pivots' => '3',
+		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
 	],
 	'8' => [
@@ -128,6 +136,8 @@ return [
 			9 => 56,
 			3 => 20,
 		],
+		'win pivots' => '2, 5',
+		'qin pivots' => '2, 5, 7',
 		'trio pivots' => '2, 5, 7',
 	],
 	'9' => [
