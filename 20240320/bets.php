@@ -31,8 +31,8 @@ return [
 			1 => 49.5,
 		],
 		'win check' => '2',
-		'qin check' => '2, 4, 6',
-		'trio check' => '2, 4, 5, 6',
+		'qin check' => '2, 6',
+		'trio check' => '2, 5, 6',
 		'inter check' => '2',
 	],
 	'3' => [

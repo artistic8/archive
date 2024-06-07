@@ -132,7 +132,7 @@ return [
 			1 => 30,
 		],
 		'qin check' => '5',
-		'trio check' => '1, 5',
+		'trio check' => '5',
 	],
 	'9' => [
 		/**

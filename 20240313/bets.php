@@ -142,7 +142,7 @@ return [
 			8 => 19.5,
 		],
 		'qin check' => '2',
-		'trio check' => '2, 5',
+		'trio check' => '2',
 	],
 ];
 //total win: 0
