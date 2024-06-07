@@ -138,7 +138,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
     $set2 = array_diff($set2, $favorites);
-    if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($pivots) === 3 && count($set2) !== 2 && count($set2) < 7){
+    if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($pivots) === 3){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         $totalQin -= 20 * combination(2, count($favorites));
@@ -174,7 +174,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         //         }
         //     }
         // }
-        if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($pivots) === 3 && count($set2) !== 2 && count($set2) < 7){
+        if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($pivots) === 3){
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) {
                 $totalRace[$raceNumber] += 2 * $qinAmount;
                 $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
