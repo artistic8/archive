@@ -63,18 +63,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
-    $sums = [];
-    $mults = [];
-    foreach($favorites as $one){
-        foreach($favorites as $two){
-            if($two > $one){
-                $sums[] = $one + $two;
-                $mults[] = $one * $two;
-            }
-        }
-    }
-    $sums = array_intersect($sums, $runners);
-    $mults = array_intersect($mults, $runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
     $racetext .= "\t\t/**\n";
@@ -126,9 +114,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
-    $set2 = array_values(array_unique(array_merge($sums, $mults)));
-    sort($set2);
-    $set2 = array_diff($set2, $favorites);
     if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($pivots) === 3){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
