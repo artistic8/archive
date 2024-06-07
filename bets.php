@@ -140,7 +140,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($triopivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $triopivots) . "',\n";
     $unitBet = 100;
     if(count($triopivots) >= 3){
-        $wp = array_slice($favs, 0, -2);
+        $wp = array_slice($favorites, 0, -2);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
         $totalWin -= 1 * $unitBet;
@@ -220,7 +220,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         //     }
         // }
         if(count($triopivots) >= 3){
-            $wp = array_slice($favs, 0, -2);
+            $wp = array_slice($favorites, 0, -2);
             if(in_array($officialWin[0], $wp)) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'0 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
