@@ -93,6 +93,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $firstSet = true;
     $winCheck = [];
     $qinCheck = [];
+    $trioCheck = [];
     foreach($favorites as $F){
         $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         $qinCandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
