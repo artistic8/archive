@@ -123,11 +123,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         foreach($favorites as $other){
             if($F !== $other){
                 $candidates = array_intersect($history[$raceNumber][$other]["win"], $runners);
-                if(!in_array($F, $candidates)) $winpivots[] = $F;
+                if(in_array($F, $candidates)) $winpivots[] = $F;
                 $candidates = array_intersect($history[$raceNumber][$other]["qin"], $runners);
-                if(!in_array($F, $candidates)) $qinpivots[] = $F;
+                if(in_array($F, $candidates)) $qinpivots[] = $F;
                 $candidates = array_intersect($history[$raceNumber][$other]["trio"], $runners);
-                if(!in_array($F, $candidates)) $triopivots[] = $F;
+                if(in_array($F, $candidates)) $triopivots[] = $F;
             }
         }
     }
@@ -135,7 +135,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
     }
     if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
-    $racetext .= "\t\t'count trio pivots' => '" . count($triopivots) . "',\n";
+    if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
+    if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
+    if(!empty($triopivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $triopivots) . "',\n";
     
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);

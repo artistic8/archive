@@ -16,6 +16,7 @@ return [
 			5 => 29.5,
 		],
 		'inter' => '1',//count: 1
+		'count trio pivots' => '0',
 		'Place' => '1',
 	],
 	'2' => [
@@ -32,9 +33,7 @@ return [
 			5 => 16.5,
 			10 => 14.5,
 		],
-		'win pivots' => '5, 5, 5, 7, 10, 10, 11, 11, 11',
-		'qin pivots' => '5, 7, 10, 10, 11, 11, 11',
-		'trio pivots' => '10, 11, 11, 11',
+		'count trio pivots' => '4',
 		'Place' => '5, 10',
 	],
 	'3' => [
@@ -50,9 +49,7 @@ return [
 			2 => 26.5,
 			4 => 22.5,
 		],
-		'win pivots' => '2, 2, 2, 2, 3, 4, 4, 5, 6, 6, 6',
-		'qin pivots' => '2, 2, 2, 2, 4, 6, 6, 6',
-		'trio pivots' => '2, 6',
+		'count trio pivots' => '2',
 		'Place' => '3',
 	],
 	'4' => [
@@ -70,7 +67,7 @@ return [
 			11 => 60.5,
 		],
 		'inter' => '1',//count: 1
-		'win pivots' => '2',
+		'count trio pivots' => '0',
 		'Place' => '1',
 	],
 	'5' => [
@@ -87,7 +84,7 @@ return [
 			4 => 17.5,
 			3 => 21,
 		],
-		'win pivots' => '2, 4, 4, 6, 6',
+		'count trio pivots' => '0',
 	],
 	'6' => [
 		/**
@@ -104,8 +101,7 @@ return [
 			6 => 21.5,
 		],
 		'inter' => '3',//count: 1
-		'win pivots' => '10',
-		'qin pivots' => '10',
+		'count trio pivots' => '0',
 		'Place' => '3',
 	],
 	'7' => [
@@ -122,9 +118,7 @@ return [
 			1 => 54.5,
 			14 => 20.5,
 		],
-		'win pivots' => '3, 5, 8, 8, 10',
-		'qin pivots' => '3, 8, 10',
-		'trio pivots' => '8',
+		'count trio pivots' => '1',
 		'Place' => '3, 10',
 	],
 	'8' => [
@@ -142,9 +136,7 @@ return [
 			8 => 30,
 		],
 		'inter' => '1',//count: 1
-		'win pivots' => '7, 7, 8',
-		'qin pivots' => '7, 7, 8',
-		'trio pivots' => '7',
+		'count trio pivots' => '1',
 		'Place' => '1, 8',
 	],
 	'9' => [
@@ -161,8 +153,7 @@ return [
 			3 => 20,
 			6 => 17.5,
 		],
-		'win pivots' => '3, 3, 4',
-		'qin pivots' => '3, 3',
+		'count trio pivots' => '0',
 	],
 	'10' => [
 		/**
@@ -178,9 +169,7 @@ return [
 			13 => 19,
 			14 => 50.5,
 		],
-		'win pivots' => '4, 4, 8, 8, 10, 10',
-		'qin pivots' => '4, 8, 8, 10',
-		'trio pivots' => '4, 8, 10',
+		'count trio pivots' => '3',
 		'Place' => '4, 10',
 	],
 ];

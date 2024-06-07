@@ -17,7 +17,7 @@ return [
 		],
 		'inter' => '1, 4',//count: 2
 		'check' => '4',
-		'win pivots' => '10',
+		'count trio pivots' => '0',
 		'Place' => '1, 4',
 		'qin($20)' => '1, 4, 10',
 		'win($10)' => '5, 11, 14',
@@ -44,9 +44,7 @@ return [
 			2 => 24,
 			5 => 17,
 		],
-		'win pivots' => '2, 2, 2, 5, 10, 12',
-		'qin pivots' => '2, 2, 10, 12',
-		'trio pivots' => '2',
+		'count trio pivots' => '1',
 		'Place' => '2, 5, 10',
 	],
 	'3' => [
@@ -64,7 +62,7 @@ return [
 			8 => 80,
 		],
 		'inter' => '4',//count: 1
-		'win pivots' => '3, 5',
+		'count trio pivots' => '0',
 		'Place' => '4',
 	],
 	'4' => [
@@ -81,9 +79,7 @@ return [
 			5 => 22,
 			1 => 18.5,
 		],
-		'win pivots' => '1, 3, 3, 3, 5, 5, 5, 9, 9, 9, 9, 12, 12, 12',
-		'qin pivots' => '1, 3, 3, 5, 5, 5, 9, 9, 12, 12',
-		'trio pivots' => '1, 3, 3, 5, 5, 5, 12',
+		'count trio pivots' => '7',
 		'Place' => '1, 3, 5, 12',
 	],
 	'5' => [
@@ -100,9 +96,7 @@ return [
 			10 => 34,
 			8 => 32,
 		],
-		'win pivots' => '1, 2, 2, 6, 6, 8',
-		'qin pivots' => '1, 2, 6',
-		'trio pivots' => '1, 2, 6',
+		'count trio pivots' => '3',
 		'Place' => '1',
 	],
 	'6' => [
@@ -119,9 +113,7 @@ return [
 			8 => 18,
 			3 => 44.5,
 		],
-		'win pivots' => '2, 6, 6',
-		'qin pivots' => '6',
-		'trio pivots' => '6',
+		'count trio pivots' => '1',
 		'Place' => '2',
 	],
 	'7' => [
@@ -138,9 +130,7 @@ return [
 			11 => 26,
 			12 => 27,
 		],
-		'win pivots' => '1, 3, 4, 4, 4, 4, 5, 5, 5, 14, 14, 14, 14',
-		'qin pivots' => '1, 3, 4, 4, 4, 5, 5, 14, 14, 14, 14',
-		'trio pivots' => '1, 3, 4, 4, 5, 14, 14',
+		'count trio pivots' => '7',
 		'Place' => '1, 3',
 	],
 	'8' => [
@@ -157,6 +147,7 @@ return [
 			6 => 23.5,
 			1 => 22,
 		],
+		'count trio pivots' => '0',
 	],
 	'9' => [
 		/**
@@ -172,6 +163,7 @@ return [
 			8 => 64,
 			2 => 41.5,
 		],
+		'count trio pivots' => '0',
 	],
 	'10' => [
 		/**
@@ -188,9 +180,7 @@ return [
 			3 => 10.1,
 		],
 		'check' => '4',
-		'win pivots' => '3, 4',
-		'qin pivots' => '4',
-		'trio pivots' => '4',
+		'count trio pivots' => '1',
 	],
 ];
 //total win: 310
