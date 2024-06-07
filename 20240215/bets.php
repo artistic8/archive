@@ -15,7 +15,8 @@ return [
 			12 => 25.5,
 			4 => 46,
 		],
-		'count trio pivots' => '0',
+		'qin pivots' => '2, 9',
+		'trio pivots' => '2, 9',
 		'Place' => '2',
 	],
 	'2' => [
@@ -32,7 +33,9 @@ return [
 			3 => 19,
 			8 => 15,
 		],
-		'count trio pivots' => '0',
+		'win pivots' => '3, 8',
+		'qin pivots' => '3, 8',
+		'trio pivots' => '3, 8',
 	],
 	'3' => [
 		/**
@@ -49,7 +52,9 @@ return [
 			7 => 21,
 		],
 		'inter' => '1, 7',//count: 2
-		'count trio pivots' => '0',
+		'win pivots' => '1, 7',
+		'qin pivots' => '1, 7',
+		'trio pivots' => '1, 7',
 		'Place' => '1, 7',
 	],
 	'4' => [
@@ -68,7 +73,9 @@ return [
 		],
 		'inter' => '1, 11',//count: 2
 		'check' => '1, 4',
-		'count trio pivots' => '0',
+		'win pivots' => '1, 1, 4, 11, 11',
+		'qin pivots' => '1, 1, 4, 4, 11, 11',
+		'trio pivots' => '1, 1, 4, 4, 11, 11',
 		'Place' => '1, 4, 11',
 		'qin($20)' => '1, 4, 11',
 		'win($10)' => '12',
@@ -97,7 +104,6 @@ return [
 			4 => 13.5,
 		],
 		'inter' => '4',//count: 1
-		'count trio pivots' => '0',
 	],
 	'6' => [
 		/**
@@ -114,7 +120,9 @@ return [
 			9 => 23,
 		],
 		'inter' => '1',//count: 1
-		'count trio pivots' => '0',
+		'win pivots' => '1, 1, 1, 3, 3, 7, 8',
+		'qin pivots' => '1, 1, 1, 3, 3, 3, 7, 7, 7, 8, 8, 8',
+		'trio pivots' => '1, 1, 1, 3, 3, 3, 7, 7, 7, 8, 8, 8',
 		'Place' => '1, 3, 7',
 	],
 	'7' => [
@@ -132,7 +140,9 @@ return [
 			5 => 15.5,
 		],
 		'inter' => '3',//count: 1
-		'count trio pivots' => '0',
+		'win pivots' => '3, 5',
+		'qin pivots' => '3, 5',
+		'trio pivots' => '3, 5',
 		'Place' => '3',
 	],
 	'8' => [
@@ -150,7 +160,9 @@ return [
 			4 => 18.5,
 		],
 		'check' => '5',
-		'count trio pivots' => '2',
+		'win pivots' => '8, 10',
+		'qin pivots' => '8, 8, 10',
+		'trio pivots' => '8, 8, 10, 10',
 		'Place' => '8, 10',
 	],
 	'9' => [
@@ -167,7 +179,9 @@ return [
 			3 => 28,
 			11 => 18,
 		],
-		'count trio pivots' => '7',
+		'win pivots' => '5, 5, 5, 9, 9, 12',
+		'qin pivots' => '1, 1, 5, 5, 5, 5, 9, 9, 11, 12',
+		'trio pivots' => '1, 1, 1, 5, 5, 5, 5, 9, 9, 9, 11, 11, 12',
 		'Place' => '1, 5, 9',
 	],
 ];

@@ -17,7 +17,9 @@ return [
 		],
 		'inter' => '1, 4',//count: 2
 		'check' => '1, 3',
-		'count trio pivots' => '0',
+		'win pivots' => '1, 1, 3, 4, 4',
+		'qin pivots' => '1, 1, 3, 4, 4',
+		'trio pivots' => '1, 1, 3, 3, 4, 4',
 		'Place' => '1, 3, 4',
 		'qin($20)' => '1, 3, 4',
 		'win($10)' => '5, 7, 12',
@@ -45,7 +47,9 @@ return [
 			9 => 19.5,
 			10 => 20,
 		],
-		'count trio pivots' => '1',
+		'win pivots' => '5, 6, 6, 12',
+		'qin pivots' => '5, 5, 6, 6, 6, 12',
+		'trio pivots' => '3, 3, 5, 5, 5, 6, 6, 6, 12, 12, 12',
 		'Place' => '6, 12',
 	],
 	'3' => [
@@ -62,7 +66,6 @@ return [
 			5 => 11,
 			2 => 38,
 		],
-		'count trio pivots' => '0',
 	],
 	'4' => [
 		/**
@@ -78,7 +81,7 @@ return [
 			4 => 32.5,
 			11 => 18,
 		],
-		'count trio pivots' => '1',
+		'trio pivots' => '3',
 		'Place' => '3, 11',
 	],
 	'5' => [
@@ -95,7 +98,9 @@ return [
 			3 => 15,
 			9 => 35,
 		],
-		'count trio pivots' => '0',
+		'win pivots' => '3, 6',
+		'qin pivots' => '3, 3, 4, 4, 6, 6',
+		'trio pivots' => '3, 3, 4, 4, 6, 6',
 		'Place' => '3',
 	],
 	'6' => [
@@ -112,7 +117,9 @@ return [
 			10 => 16.5,
 			7 => 29.5,
 		],
-		'count trio pivots' => '7',
+		'win pivots' => '6, 6, 12',
+		'qin pivots' => '6, 6, 10, 12',
+		'trio pivots' => '6, 6, 10, 12, 12',
 	],
 	'7' => [
 		/**
@@ -129,7 +136,9 @@ return [
 			11 => 10.5,
 		],
 		'check' => '6',
-		'count trio pivots' => '1',
+		'win pivots' => '3, 6, 11',
+		'qin pivots' => '3, 6, 6, 11, 11',
+		'trio pivots' => '3, 6, 6, 11, 11',
 		'Place' => '3, 6',
 	],
 	'8' => [
@@ -147,7 +156,9 @@ return [
 			1 => 21.5,
 		],
 		'inter' => '3, 4',//count: 2
-		'count trio pivots' => '0',
+		'win pivots' => '1, 2, 3, 3, 3, 4, 4, 4',
+		'qin pivots' => '1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4',
+		'trio pivots' => '1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4',
 		'Place' => '1, 3, 4',
 		'qin($20)' => '1, 2, 3, 4',
 		'win($10)' => '5, 6, 7, 8, 12',
@@ -174,7 +185,8 @@ return [
 			3 => 34,
 			6 => 17,
 		],
-		'count trio pivots' => '1',
+		'qin pivots' => '1',
+		'trio pivots' => '1',
 	],
 ];
 //total win: 730

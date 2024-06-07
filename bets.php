@@ -123,11 +123,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         foreach($favorites as $other){
             if($F !== $other){
                 $candidates = array_intersect($history[$raceNumber][$other]["win"], $runners);
-                if(in_array($F, $candidates)) $winpivots[] = $F;
+                if(in_array($F, $candidates) && !in_array($F, $winpivots)) $winpivots[] = $F;
                 $candidates = array_intersect($history[$raceNumber][$other]["qin"], $runners);
-                if(in_array($F, $candidates)) $qinpivots[] = $F;
+                if(in_array($F, $candidates) && !in_array($F, $qinpivots)) $qinpivots[] = $F;
                 $candidates = array_intersect($history[$raceNumber][$other]["trio"], $runners);
-                if(in_array($F, $candidates)) $triopivots[] = $F;
+                if(in_array($F, $candidates) && !in_array($F, $triopivots)) $triopivots[] = $F;
             }
         }
     }

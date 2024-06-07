@@ -16,7 +16,9 @@ return [
 			4 => 17,
 		],
 		'inter' => '7',//count: 1
-		'count trio pivots' => '0',
+		'win pivots' => '7',
+		'qin pivots' => '7',
+		'trio pivots' => '6, 7',
 	],
 	'2' => [
 		/**
@@ -32,7 +34,9 @@ return [
 			1 => 41.5,
 			5 => 35,
 		],
-		'count trio pivots' => '7',
+		'win pivots' => '4, 10, 10',
+		'qin pivots' => '2, 4, 10, 10',
+		'trio pivots' => '2, 4, 10, 10, 10',
 		'Place' => '2, 4, 10',
 	],
 	'3' => [
@@ -49,7 +53,6 @@ return [
 			10 => 45.5,
 			13 => 13,
 		],
-		'count trio pivots' => '2',
 	],
 	'4' => [
 		/**
@@ -66,7 +69,9 @@ return [
 			10 => 18.5,
 		],
 		'inter' => '4',//count: 1
-		'count trio pivots' => '0',
+		'win pivots' => '4',
+		'qin pivots' => '4',
+		'trio pivots' => '3, 4',
 		'Place' => '3',
 	],
 	'5' => [
@@ -84,7 +89,6 @@ return [
 			12 => 35,
 		],
 		'inter' => '5',//count: 1
-		'count trio pivots' => '0',
 		'Place' => '5',
 	],
 	'6' => [
@@ -101,7 +105,9 @@ return [
 			11 => 44,
 			12 => 55.5,
 		],
-		'count trio pivots' => '8',
+		'win pivots' => '5, 9',
+		'qin pivots' => '3, 5, 9',
+		'trio pivots' => '3, 5, 9, 9',
 		'Place' => '3, 5',
 	],
 	'7' => [
@@ -120,7 +126,9 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'check' => '3',
-		'count trio pivots' => '1',
+		'win pivots' => '3, 3, 7, 9',
+		'qin pivots' => '3, 3, 7, 9',
+		'trio pivots' => '3, 3, 7, 9, 9',
 		'Place' => '3, 7',
 	],
 	'8' => [
@@ -138,7 +146,9 @@ return [
 			3 => 17.5,
 		],
 		'inter' => '8',//count: 1
-		'count trio pivots' => '1',
+		'win pivots' => '2, 2, 3, 3, 3, 6, 6, 6, 7, 8, 8, 8, 8',
+		'qin pivots' => '2, 2, 2, 3, 3, 3, 3, 6, 6, 6, 7, 7, 8, 8, 8, 8',
+		'trio pivots' => '2, 2, 2, 2, 3, 3, 3, 3, 6, 6, 6, 6, 7, 7, 7, 8, 8, 8, 8',
 		'Place' => '3, 6, 8',
 	],
 	'9' => [
@@ -156,7 +166,9 @@ return [
 			9 => 21.5,
 		],
 		'inter' => '2, 3',//count: 2
-		'count trio pivots' => '0',
+		'win pivots' => '2, 3',
+		'qin pivots' => '2, 3',
+		'trio pivots' => '2, 3',
 		'Place' => '3',
 	],
 	'10' => [
@@ -173,7 +185,9 @@ return [
 			2 => 59.5,
 			8 => 122.5,
 		],
-		'count trio pivots' => '16',
+		'win pivots' => '1, 10',
+		'qin pivots' => '1, 10, 13',
+		'trio pivots' => '1, 10, 13, 14',
 	],
 	'11' => [
 		/**
@@ -189,7 +203,9 @@ return [
 			6 => 130.5,
 			1 => 36,
 		],
-		'count trio pivots' => '5',
+		'win pivots' => '5',
+		'qin pivots' => '5',
+		'trio pivots' => '5',
 	],
 ];
 //total win: 0

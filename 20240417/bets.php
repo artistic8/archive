@@ -16,7 +16,6 @@ return [
 			6 => 37,
 		],
 		'inter' => '5',//count: 1
-		'count trio pivots' => '0',
 		'Place' => '5',
 	],
 	'2' => [
@@ -33,7 +32,6 @@ return [
 			8 => 22.5,
 			6 => 28,
 		],
-		'count trio pivots' => '0',
 	],
 	'3' => [
 		/**
@@ -49,7 +47,9 @@ return [
 			1 => 23,
 			6 => 28,
 		],
-		'count trio pivots' => '1',
+		'win pivots' => '4',
+		'qin pivots' => '4, 9, 10, 10',
+		'trio pivots' => '4, 4, 9, 10, 10',
 		'Place' => '4, 9',
 	],
 	'4' => [
@@ -67,7 +67,9 @@ return [
 			10 => 47.5,
 		],
 		'inter' => '12',//count: 1
-		'count trio pivots' => '2',
+		'win pivots' => '6, 6, 6, 11, 11, 12, 12, 12, 12',
+		'qin pivots' => '2, 2, 6, 6, 6, 6, 7, 7, 7, 11, 11, 11, 12, 12, 12, 12',
+		'trio pivots' => '2, 2, 2, 6, 6, 6, 6, 7, 7, 7, 7, 11, 11, 11, 12, 12, 12, 12',
 		'Place' => '11, 12',
 	],
 	'5' => [
@@ -85,7 +87,9 @@ return [
 			10 => 33.5,
 		],
 		'inter' => '7',//count: 1
-		'count trio pivots' => '0',
+		'win pivots' => '7',
+		'qin pivots' => '7',
+		'trio pivots' => '4, 7',
 		'Place' => '7',
 	],
 	'6' => [
@@ -104,7 +108,9 @@ return [
 		],
 		'inter' => '1, 3',//count: 2
 		'check' => '3',
-		'count trio pivots' => '2',
+		'win pivots' => '1, 1, 1, 2, 3, 3, 3, 10',
+		'qin pivots' => '1, 1, 1, 2, 2, 3, 3, 3, 10, 10',
+		'trio pivots' => '1, 1, 1, 2, 2, 3, 3, 3, 10, 10',
 		'Place' => '1, 2, 3',
 		'qin($20)' => '1, 2, 3, 10',
 		'win($10)' => '4, 5, 6, 11, 12',
@@ -134,7 +140,9 @@ return [
 		],
 		'inter' => '3',//count: 1
 		'check' => '3',
-		'count trio pivots' => '0',
+		'win pivots' => '3, 3, 6, 8',
+		'qin pivots' => '3, 3, 6, 8, 8',
+		'trio pivots' => '3, 3, 6, 6, 8, 8',
 		'Place' => '3, 8',
 	],
 	'8' => [
@@ -152,7 +160,9 @@ return [
 			7 => 63.5,
 		],
 		'inter' => '6, 8',//count: 2
-		'count trio pivots' => '0',
+		'win pivots' => '6, 8',
+		'qin pivots' => '6, 8',
+		'trio pivots' => '6, 8',
 		'Place' => '6, 8',
 	],
 	'9' => [
@@ -170,7 +180,6 @@ return [
 			6 => 15,
 		],
 		'inter' => '4',//count: 1
-		'count trio pivots' => '0',
 	],
 ];
 //total win: 2820

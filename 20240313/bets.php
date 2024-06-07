@@ -15,7 +15,9 @@ return [
 			6 => 36.5,
 			4 => 21.5,
 		],
-		'count trio pivots' => '5',
+		'win pivots' => '2, 4, 4',
+		'qin pivots' => '2, 3, 4, 4, 4',
+		'trio pivots' => '2, 3, 3, 4, 4, 4, 6',
 		'Place' => '3, 4',
 	],
 	'2' => [
@@ -32,7 +34,9 @@ return [
 			4 => 16,
 			3 => 10.5,
 		],
-		'count trio pivots' => '0',
+		'win pivots' => '3',
+		'qin pivots' => '3, 4',
+		'trio pivots' => '3, 4',
 		'Place' => '4',
 	],
 	'3' => [
@@ -49,7 +53,9 @@ return [
 			12 => 29.5,
 			1 => 34.5,
 		],
-		'count trio pivots' => '9',
+		'win pivots' => '2, 2, 2, 4, 6, 7, 7, 7, 7, 11, 12',
+		'qin pivots' => '2, 2, 2, 4, 4, 4, 6, 7, 7, 7, 7, 11, 12, 12',
+		'trio pivots' => '2, 2, 2, 2, 4, 4, 4, 4, 6, 6, 6, 7, 7, 7, 7, 11, 11, 11, 12, 12, 12',
 		'Place' => '2, 4, 7, 12',
 	],
 	'4' => [
@@ -67,7 +73,9 @@ return [
 			9 => 23.5,
 		],
 		'inter' => '1',//count: 1
-		'count trio pivots' => '0',
+		'win pivots' => '1, 1',
+		'qin pivots' => '1, 1, 2, 3',
+		'trio pivots' => '1, 1, 2, 2, 3, 3',
 		'Place' => '1, 3',
 	],
 	'5' => [
@@ -84,7 +92,8 @@ return [
 			11 => 58,
 			10 => 14.5,
 		],
-		'count trio pivots' => '4',
+		'qin pivots' => '5, 10',
+		'trio pivots' => '5, 10',
 		'Place' => '5',
 	],
 	'6' => [
@@ -102,7 +111,9 @@ return [
 			2 => 20,
 		],
 		'inter' => '1, 3',//count: 2
-		'count trio pivots' => '0',
+		'win pivots' => '1, 3',
+		'qin pivots' => '1, 3',
+		'trio pivots' => '1, 3',
 		'Place' => '1, 3',
 	],
 	'7' => [
@@ -119,7 +130,9 @@ return [
 			12 => 77,
 			5 => 19.5,
 		],
-		'count trio pivots' => '0',
+		'win pivots' => '3',
+		'qin pivots' => '3, 4',
+		'trio pivots' => '3, 4',
 	],
 	'8' => [
 		/**
@@ -135,7 +148,9 @@ return [
 			8 => 44.5,
 			9 => 41.5,
 		],
-		'count trio pivots' => '2',
+		'win pivots' => '4, 7',
+		'qin pivots' => '4, 7, 10',
+		'trio pivots' => '4, 4, 7, 10',
 		'Place' => '4',
 	],
 	'9' => [
@@ -152,7 +167,9 @@ return [
 			4 => 27.5,
 			8 => 19.5,
 		],
-		'count trio pivots' => '3',
+		'win pivots' => '2, 4, 4, 6, 6',
+		'qin pivots' => '2, 2, 4, 4, 5, 6, 6, 6',
+		'trio pivots' => '2, 2, 2, 4, 4, 5, 6, 6, 6',
 		'Place' => '2, 5',
 	],
 ];
