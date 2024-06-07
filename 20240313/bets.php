@@ -18,12 +18,13 @@ return [
 		'win pivots' => '2, 4',
 		'qin pivots' => '2, 3, 4',
 		'trio pivots' => '2, 3, 4, 6',
-		'win($100)' => '6',
-		'place($100)' => '6',
+		'win($100)' => '2, 3',
+		'place($100)' => '2, 3',
 		'Place' => '3, 4',
 		'total bets' => 200,
-		'0 won(place bet)' => 365,
-		'total won in race' => 165,
+		'0 won(win bet)' => 590,
+		'0 won(place bet)' => 195,
+		'total won in race' => 585,
 	],
 	'2' => [
 		/**
@@ -61,12 +62,11 @@ return [
 		'win pivots' => '2, 4, 6, 7, 11, 12',
 		'qin pivots' => '2, 4, 6, 7, 11, 12',
 		'trio pivots' => '2, 4, 6, 7, 11, 12',
-		'win($100)' => '12',
-		'place($100)' => '12',
+		'win($100)' => '2, 4, 6, 7',
+		'place($100)' => '2, 4, 6, 7',
 		'Place' => '2, 4, 7, 12',
 		'total bets' => 200,
-		'0 won(place bet)' => 295,
-		'total won in race' => 95,
+		'total won in race' => -200,
 	],
 	'4' => [
 		/**
@@ -86,13 +86,11 @@ return [
 		'win pivots' => '1',
 		'qin pivots' => '1, 2, 3',
 		'trio pivots' => '1, 2, 3',
-		'win($100)' => '3',
-		'place($100)' => '3',
+		'win($100)' => '1',
+		'place($100)' => '1',
 		'Place' => '1, 3',
 		'total bets' => 200,
-		'0 won(win bet)' => 240,
-		'0 won(place bet)' => 125,
-		'total won in race' => 165,
+		'total won in race' => -200,
 	],
 	'5' => [
 		/**
@@ -167,8 +165,8 @@ return [
 		'win pivots' => '4, 7',
 		'qin pivots' => '4, 7, 10',
 		'trio pivots' => '4, 7, 10',
-		'win($100)' => '10',
-		'place($100)' => '10',
+		'win($100)' => '4',
+		'place($100)' => '4',
 		'Place' => '4',
 		'total bets' => 200,
 		'total won in race' => -200,
@@ -190,15 +188,16 @@ return [
 		'win pivots' => '2, 4, 6',
 		'qin pivots' => '2, 4, 5, 6',
 		'trio pivots' => '2, 4, 5, 6',
-		'win($100)' => '6',
-		'place($100)' => '6',
+		'win($100)' => '2, 4',
+		'place($100)' => '2, 4',
 		'Place' => '2, 5',
 		'total bets' => 200,
-		'total won in race' => -200,
+		'0 won(place bet)' => 275,
+		'total won in race' => 75,
 	],
 ];
-//total win: -260
-//total place: 285
+//total win: 90
+//total place: -30
 //total qin: 0
 //total trio: 0
-//total: 25
+//total: 60
