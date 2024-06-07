@@ -133,7 +133,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     //     $totalBets[$raceNumber] += 1 * $unitBet * count($check);
     //     $totalWin -= 1 * $unitBet * count($check);
     // }
-    if(count($runners) >= 10 && count($trioCheck) > 1 && (count($winInter) >= 2 || count($qinInter) >= 2 || count($trioInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
+    if(count($runners) >= 10 && count($winCheck) > 1 && (count($winInter) >= 2 || count($qinInter) >= 2 || count($trioInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);

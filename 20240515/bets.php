@@ -43,7 +43,6 @@ return [
 		'win check' => '9',
 		'qin check' => '8, 9',
 		'trio check' => '8, 9',
-		//pivot 9, 
 		'inter check' => '9',
 	],
 	'3' => [

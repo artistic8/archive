@@ -122,7 +122,6 @@ return [
 		'win check' => '2',
 		'qin check' => '2',
 		'trio check' => '2, 4',
-		//pivot 2, 
 		'inter check' => '2',
 	],
 	'7' => [

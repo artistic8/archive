@@ -175,7 +175,6 @@ return [
 		'win check' => '4',
 		'qin check' => '3, 4',
 		'trio check' => '3, 4',
-		//pivot 4, 
 		'inter check' => '4',
 		'win($70)' => '3, 4, 11',
 		'win($70)' => '4, 11',
