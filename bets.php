@@ -192,7 +192,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalQin += 2 * $qinAmount;
             }
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3) {
-                $totalRace[$raceNumber] += $trioAmount;
+                $totalRace[$raceNumber] += 2 * $trioAmount;
                 $racetext .= "\t\t'4 won(trio bet)' => " . $trioAmount . ",\n";
                 $totalTrio += $trioAmount;
             }
