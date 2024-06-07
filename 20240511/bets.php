@@ -75,7 +75,7 @@ return [
 		'check' => '1',
 		'win pivots' => '1, 6, 8',
 		'qin pivots' => '1, 6, 8',
-		'trio pivots' => '1, 1, 6, 8',
+		'trio pivots' => '1, 6, 8',
 		'Place' => '1',
 	],
 	'5' => [
@@ -111,9 +111,9 @@ return [
 			3 => 16,
 		],
 		'inter' => '1',//count: 1
-		'win pivots' => '1, 1, 3',
-		'qin pivots' => '1, 1, 3, 12',
-		'trio pivots' => '1, 1, 3, 12, 12',
+		'win pivots' => '1, 3',
+		'qin pivots' => '1, 3, 12',
+		'trio pivots' => '1, 3, 12',
 		'Place' => '1, 3',
 	],
 	'7' => [

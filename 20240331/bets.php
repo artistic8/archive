@@ -33,9 +33,9 @@ return [
 		],
 		'inter' => '2, 6',//count: 2
 		'check' => '1',
-		'win pivots' => '2, 2, 6, 6',
-		'qin pivots' => '1, 2, 2, 6, 6',
-		'trio pivots' => '1, 1, 2, 2, 6, 6',
+		'win pivots' => '2, 6',
+		'qin pivots' => '1, 2, 6',
+		'trio pivots' => '1, 2, 6',
 		'Place' => '6',
 		'qin($20)' => '1, 2, 6',
 		'win($10)' => '3, 7, 8, 12',
@@ -150,8 +150,8 @@ return [
 			6 => 20,
 		],
 		'win pivots' => '4, 10, 14',
-		'qin pivots' => '1, 4, 10, 10, 14',
-		'trio pivots' => '1, 4, 4, 10, 10, 14',
+		'qin pivots' => '1, 4, 10, 14',
+		'trio pivots' => '1, 4, 10, 14',
 		'Place' => '1, 4, 10',
 	],
 	'9' => [
@@ -186,7 +186,7 @@ return [
 			2 => 42,
 			8 => 24,
 		],
-		'trio pivots' => '8, 8',
+		'trio pivots' => '8',
 	],
 ];
 //total win: 760

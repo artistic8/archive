@@ -16,8 +16,8 @@ return [
 			7 => 47,
 		],
 		'win pivots' => '5',
-		'qin pivots' => '5, 9, 9',
-		'trio pivots' => '5, 5, 6, 6, 9, 9',
+		'qin pivots' => '5, 9',
+		'trio pivots' => '5, 6, 9',
 		'Place' => '5',
 	],
 	'2' => [
@@ -108,8 +108,8 @@ return [
 			5 => 56.5,
 		],
 		'win pivots' => '7',
-		'qin pivots' => '7, 7',
-		'trio pivots' => '6, 7, 7, 12',
+		'qin pivots' => '7',
+		'trio pivots' => '6, 7, 12',
 		'Place' => '7',
 	],
 	'7' => [

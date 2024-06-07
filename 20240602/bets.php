@@ -16,7 +16,7 @@ return [
 			6 => 20,
 		],
 		'qin pivots' => '7, 9, 10',
-		'trio pivots' => '7, 7, 9, 9, 10, 10',
+		'trio pivots' => '7, 9, 10',
 		'Place' => '10',
 	],
 	'2' => [
@@ -129,7 +129,7 @@ return [
 			3 => 30,
 		],
 		'qin pivots' => '1, 5',
-		'trio pivots' => '1, 1, 5, 5, 6',
+		'trio pivots' => '1, 5, 6',
 		'Place' => '6',
 	],
 	'8' => [
@@ -148,9 +148,9 @@ return [
 		],
 		'inter' => '4, 8',//count: 2
 		'check' => '4',
-		'win pivots' => '4, 4, 7, 8, 8',
-		'qin pivots' => '4, 4, 7, 8, 8',
-		'trio pivots' => '4, 4, 7, 7, 8, 8',
+		'win pivots' => '4, 7, 8',
+		'qin pivots' => '4, 7, 8',
+		'trio pivots' => '4, 7, 8',
 		'Place' => '8',
 	],
 	'9' => [

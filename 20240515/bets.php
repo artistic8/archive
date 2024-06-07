@@ -16,9 +16,9 @@ return [
 			9 => 31,
 		],
 		'inter' => '1',//count: 1
-		'win pivots' => '1, 1, 1, 7, 7, 10',
-		'qin pivots' => '1, 1, 1, 7, 7, 7, 10, 10',
-		'trio pivots' => '1, 1, 1, 7, 7, 7, 8, 10, 10, 10',
+		'win pivots' => '1, 7, 10',
+		'qin pivots' => '1, 7, 10',
+		'trio pivots' => '1, 7, 8, 10',
 		'Place' => '1, 7, 8, 10',
 	],
 	'2' => [
@@ -36,9 +36,9 @@ return [
 			6 => 58.5,
 		],
 		'check' => '9',
-		'win pivots' => '2, 2, 4, 4, 8, 8, 9',
-		'qin pivots' => '2, 2, 4, 4, 4, 8, 8, 9, 9',
-		'trio pivots' => '2, 2, 4, 4, 4, 8, 8, 9, 9',
+		'win pivots' => '2, 4, 8, 9',
+		'qin pivots' => '2, 4, 8, 9',
+		'trio pivots' => '2, 4, 8, 9',
 		'Place' => '2, 4, 9',
 	],
 	'3' => [
@@ -74,9 +74,9 @@ return [
 			9 => 114,
 			1 => 29.5,
 		],
-		'win pivots' => '6, 6',
-		'qin pivots' => '3, 3, 6, 6, 7, 7',
-		'trio pivots' => '3, 3, 6, 6, 7, 7',
+		'win pivots' => '6',
+		'qin pivots' => '3, 6, 7',
+		'trio pivots' => '3, 6, 7',
 		'Place' => '3',
 	],
 	'5' => [
@@ -94,8 +94,8 @@ return [
 			7 => 20.5,
 		],
 		'win pivots' => '2, 11',
-		'qin pivots' => '2, 4, 11, 11',
-		'trio pivots' => '2, 2, 4, 11, 11',
+		'qin pivots' => '2, 4, 11',
+		'trio pivots' => '2, 4, 11',
 	],
 	'6' => [
 		/**
@@ -111,9 +111,9 @@ return [
 			3 => 36.5,
 			9 => 28,
 		],
-		'win pivots' => '4, 4, 6, 6, 6, 9, 9',
-		'qin pivots' => '4, 4, 6, 6, 6, 9, 9, 10, 10',
-		'trio pivots' => '4, 4, 6, 6, 6, 9, 9, 10, 10',
+		'win pivots' => '4, 6, 9',
+		'qin pivots' => '4, 6, 9, 10',
+		'trio pivots' => '4, 6, 9, 10',
 		'Place' => '4',
 	],
 	'7' => [
@@ -152,9 +152,9 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'check' => '1',
-		'win pivots' => '3, 3, 4, 4',
-		'qin pivots' => '1, 3, 3, 4, 4',
-		'trio pivots' => '1, 1, 3, 3, 4, 4',
+		'win pivots' => '3, 4',
+		'qin pivots' => '1, 3, 4',
+		'trio pivots' => '1, 3, 4',
 		'Place' => '1, 3, 4',
 		'qin($20)' => '1, 3, 4',
 		'win($10)' => '5, 7, 12',
@@ -182,9 +182,9 @@ return [
 			7 => 44,
 		],
 		'inter' => '9',//count: 1
-		'win pivots' => '3, 9, 9',
-		'qin pivots' => '2, 2, 3, 3, 9, 9',
-		'trio pivots' => '2, 2, 3, 3, 9, 9',
+		'win pivots' => '3, 9',
+		'qin pivots' => '2, 3, 9',
+		'trio pivots' => '2, 3, 9',
 		'Place' => '3, 9',
 	],
 ];

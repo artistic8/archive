@@ -17,8 +17,8 @@ return [
 		],
 		'check' => '7',
 		'win pivots' => '5, 6, 7',
-		'qin pivots' => '5, 6, 6, 7, 7',
-		'trio pivots' => '5, 5, 6, 6, 7, 7',
+		'qin pivots' => '5, 6, 7',
+		'trio pivots' => '5, 6, 7',
 		'Place' => '5',
 	],
 	'2' => [
@@ -51,9 +51,9 @@ return [
 			2 => 20.5,
 		],
 		'inter' => '2',//count: 1
-		'win pivots' => '2, 2, 2, 5, 8',
-		'qin pivots' => '2, 2, 2, 3, 3, 5, 5, 5, 8',
-		'trio pivots' => '2, 2, 2, 3, 3, 5, 5, 5, 8, 8',
+		'win pivots' => '2, 5, 8',
+		'qin pivots' => '2, 3, 5, 8',
+		'trio pivots' => '2, 3, 5, 8',
 		'Place' => '2, 8',
 	],
 	'4' => [
@@ -106,9 +106,9 @@ return [
 			1 => 41,
 		],
 		'inter' => '2',//count: 1
-		'win pivots' => '2, 2, 6, 9',
-		'qin pivots' => '2, 2, 6, 6, 9',
-		'trio pivots' => '2, 2, 6, 6, 9, 9',
+		'win pivots' => '2, 6, 9',
+		'qin pivots' => '2, 6, 9',
+		'trio pivots' => '2, 6, 9',
 		'Place' => '2',
 	],
 	'7' => [
@@ -145,9 +145,9 @@ return [
 		],
 		'inter' => '3, 4',//count: 2
 		'check' => '4',
-		'win pivots' => '2, 2, 3, 3, 3, 4, 4, 4, 7, 7',
-		'qin pivots' => '2, 2, 2, 3, 3, 3, 4, 4, 4, 7, 7',
-		'trio pivots' => '2, 2, 2, 3, 3, 3, 4, 4, 4, 7, 7',
+		'win pivots' => '2, 3, 4, 7',
+		'qin pivots' => '2, 3, 4, 7',
+		'trio pivots' => '2, 3, 4, 7',
 		'Place' => '3, 4',
 	],
 	'9' => [

@@ -138,7 +138,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
     if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     if(!empty($triopivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $triopivots) . "',\n";
-    
+    $unitBet = 100;
+    if(count($triopivots) >= 3){
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
+        $totalWin -= 1 * $unitBet * count($favorites);
+    }
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
     $set2 = array_diff($set2, $favorites);
@@ -167,7 +172,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'Place' => '" . implode(", ", $surePlace) . "',\n";
     }
 
-    $unitBet = 100;
+    
     // if(!empty($check)){
     //     $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $check) . "',\n"; 
     //     $totalBets[$raceNumber] += 1 * $unitBet * count($check);
@@ -210,6 +215,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         //         $totalWin += ($unitBet / 10) * $winAmount;
         //     }
         // }
+        if(count($triopivots) >= 3){
+            if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
+                $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+                $racetext .= "\t\t'0 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                $totalWin += ($unitBet / 10) * $winAmount;
+            }
+        }
         if(count($runners) >= 10 && count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
             if(!empty(array_intersect($set2, array_slice($officialWin, 0, 1)))) {
                 $totalRace[$raceNumber] += $winAmount;
