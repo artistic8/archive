@@ -34,10 +34,10 @@ return [
 		'trio pivots' => '5, 10, 12',
 		'win($100)' => '10, 12',
 		'place($100)' => '10, 12',
-		'total bets' => 200,
+		'total bets' => 400,
 		'0 won(win bet)' => 705,
 		'0 won(place bet)' => 230,
-		'total won in race' => 735,
+		'total won in race' => 535,
 	],
 	'3' => [
 		/**
@@ -56,11 +56,11 @@ return [
 		'trio pivots' => '1, 7, 10, 11',
 		'win($100)' => '10, 11',
 		'place($100)' => '10, 11',
-		'total bets' => 200,
+		'total bets' => 400,
 		'0 won(win bet)' => 645,
 		'0 won(place bet)' => 395,
 		'0 won(place bet)' => 220,
-		'total won in race' => 1060,
+		'total won in race' => 860,
 	],
 	'4' => [
 		/**
@@ -79,9 +79,9 @@ return [
 		'trio pivots' => '1, 4, 7, 10',
 		'win($100)' => '7, 10',
 		'place($100)' => '7, 10',
-		'total bets' => 200,
+		'total bets' => 400,
 		'0 won(place bet)' => 205,
-		'total won in race' => 5,
+		'total won in race' => -195,
 	],
 	'5' => [
 		/**
@@ -101,9 +101,9 @@ return [
 		'trio pivots' => '1, 2, 6',
 		'win($100)' => '2, 6',
 		'place($100)' => '2, 6',
-		'total bets' => 200,
+		'total bets' => 400,
 		'0 won(place bet)' => 185,
-		'total won in race' => -15,
+		'total won in race' => -215,
 	],
 	'6' => [
 		/**
@@ -122,8 +122,8 @@ return [
 		'trio pivots' => '2, 3, 4, 6, 7, 8, 10',
 		'win($100)' => '8, 10',
 		'place($100)' => '8, 10',
-		'total bets' => 200,
-		'total won in race' => -200,
+		'total bets' => 400,
+		'total won in race' => -400,
 	],
 	'7' => [
 		/**
@@ -143,8 +143,8 @@ return [
 		'trio pivots' => '2, 3, 10',
 		'win($100)' => '3, 10',
 		'place($100)' => '3, 10',
-		'total bets' => 200,
-		'total won in race' => -200,
+		'total bets' => 400,
+		'total won in race' => -400,
 	],
 	'8' => [
 		/**
@@ -163,9 +163,9 @@ return [
 		'trio pivots' => '1, 5, 6',
 		'win($100)' => '5, 6',
 		'place($100)' => '5, 6',
-		'total bets' => 200,
+		'total bets' => 400,
 		'0 won(place bet)' => 155,
-		'total won in race' => -45,
+		'total won in race' => -245,
 	],
 	'9' => [
 		/**
@@ -188,4 +188,4 @@ return [
 //total place: -10
 //total qin: 0
 //total trio: 0
-//total: 1340
+//total: -60
