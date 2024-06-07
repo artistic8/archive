@@ -174,7 +174,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalWin +=  ($unitBet / 10) * $winAmount;    
             }
         }
-        if(count($runners) >= 10 && count($qinInter) >= 2 && count($favorites) >= 3 && count($set2) < 7){
+        if(count($runners) >= 10 && count($qinInter) >= 2 && count($favorites) >= 3){
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) {
                 $totalRace[$raceNumber] += 2 * $qinAmount;
                 $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
