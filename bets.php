@@ -154,7 +154,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         //         $totalWin += ($unitBet / 10) * $winAmount;
         //     }
         // }
-        if(count($runners) >= 10 && (count($winInter) >= 2 || count($qinInter) >= 2) && count($favorites) >= 3){
+        if(count($runners) >= 10 && (count($winInter) >= 2 || count($qinInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
             if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'6 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
@@ -166,7 +166,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalWin +=  ($unitBet / 10) * $winAmount;    
             }
         }
-        if(count($runners) >= 10 && count($qinInter) >= 2 && count($favorites) >= 3){
+        if(count($runners) >= 10 && count($qinInter) >= 2 && count($favorites) >= 3 && count($favorites) < 6){
             if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) {
                 $totalRace[$raceNumber] += 2 * $qinAmount;
                 $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
