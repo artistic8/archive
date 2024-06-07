@@ -117,7 +117,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($inter);
     $inter = array_intersect($favorites, $inter);
     foreach($favorites as $F){
-        $interOther = [];
+        $interOthers = [];
         $firstSet = true;
         foreach($favorites as $other){
             if($F !== $other){
