@@ -131,10 +131,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $wp = array_slice($favorites, -2);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
-        $totalWin -= 1 * $unitBet;
+        $totalWin -= 1 * $unitBet * count($wp);
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
-        $totalPlace -= 1 * $unitBet;
+        $totalPlace -= 1 * $unitBet  * count($wp);
     }
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
