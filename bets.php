@@ -127,7 +127,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     //     $totalBets[$raceNumber] += 1 * $unitBet * count($check);
     //     $totalWin -= 1 * $unitBet * count($check);
     // }
-    if(count($runners) >= 10 && (count($winInter) >= 2 || count($qinInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
+    if(count($runners) >= 10 && (count($winInter) >= 2 || count($qinInter) >= 2 || count($trioInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);
@@ -154,7 +154,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         //         $totalWin += ($unitBet / 10) * $winAmount;
         //     }
         // }
-        if(count($runners) >= 10 && (count($winInter) >= 2 || count($qinInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
+        if(count($runners) >= 10 && (count($winInter) >= 2 || count($qinInter) >= 2 || count($trioInter) >= 2) && count($favorites) >= 3 && count($favorites) < 6){
             if(!empty(array_intersect($favorites, array_slice($officialWin, 0, 1)))) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'6 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
