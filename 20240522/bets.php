@@ -15,12 +15,9 @@ return [
 			4 => 16.5,
 			3 => 51,
 		],
-		'win pivots' => '4',
-		'qin pivots' => '4, 5, 12',
 		'trio pivots' => '4, 5, 12',
 		'win($100)' => '4',
 		'place($100)' => '4',
-		'Place' => '4, 5, 12',
 		'total bets' => 200,
 		'0 won(place bet)' => 165,
 		'total won in race' => -35,
@@ -39,12 +36,9 @@ return [
 			5 => 58,
 			12 => 28,
 		],
-		'win pivots' => '6, 10',
-		'qin pivots' => '6, 9, 10',
 		'trio pivots' => '6, 9, 10',
 		'win($100)' => '6',
 		'place($100)' => '6',
-		'Place' => '6, 9, 10',
 		'total bets' => 200,
 		'total won in race' => -200,
 	],
@@ -63,8 +57,6 @@ return [
 			3 => 19,
 		],
 		'inter' => '3',//count: 1
-		'win pivots' => '3, 5, 6',
-		'qin pivots' => '3, 5, 6',
 		'trio pivots' => '3, 5, 6',
 		'win($100)' => '3',
 		'place($100)' => '3',
@@ -87,7 +79,6 @@ return [
 			3 => 60,
 		],
 		'inter' => '10',//count: 1
-		'Place' => '10',
 	],
 	'5' => [
 		/**
@@ -103,8 +94,6 @@ return [
 			12 => 44.5,
 			3 => 28,
 		],
-		'win pivots' => '8',
-		'qin pivots' => '8',
 		'trio pivots' => '8',
 	],
 	'6' => [
@@ -122,12 +111,9 @@ return [
 			12 => 49.5,
 		],
 		'inter' => '1',//count: 1
-		'win pivots' => '1, 2, 9',
-		'qin pivots' => '1, 2, 9, 10',
 		'trio pivots' => '1, 2, 9, 10',
 		'win($100)' => '1, 2',
 		'place($100)' => '1, 2',
-		'Place' => '1, 2',
 		'total bets' => 200,
 		'0 won(place bet)' => 130,
 		'total won in race' => -70,
@@ -147,7 +133,6 @@ return [
 			8 => 23,
 		],
 		'inter' => '1',//count: 1
-		'Place' => '1',
 	],
 	'8' => [
 		/**
@@ -164,12 +149,9 @@ return [
 			3 => 45,
 		],
 		'inter' => '4',//count: 1
-		'win pivots' => '2, 4, 5, 6, 7',
-		'qin pivots' => '2, 4, 5, 6, 7',
 		'trio pivots' => '2, 4, 5, 6, 7',
 		'win($100)' => '2, 4, 5',
 		'place($100)' => '2, 4, 5',
-		'Place' => '4, 6',
 		'total bets' => 200,
 		'total won in race' => -200,
 	],
@@ -188,13 +170,9 @@ return [
 			9 => 23,
 		],
 		'inter' => '5',//count: 1
-		'check' => '4',
-		'win pivots' => '5, 7',
-		'qin pivots' => '4, 5, 7',
 		'trio pivots' => '4, 5, 7',
 		'win($100)' => '4',
 		'place($100)' => '4',
-		'Place' => '5, 7',
 		'total bets' => 200,
 		'total won in race' => -200,
 	],

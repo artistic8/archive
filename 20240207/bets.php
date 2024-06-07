@@ -16,13 +16,9 @@ return [
 			4 => 27.5,
 		],
 		'inter' => '1',//count: 1
-		'check' => '7',
-		'win pivots' => '1, 6',
-		'qin pivots' => '1, 6, 7',
 		'trio pivots' => '1, 6, 7',
 		'win($100)' => '1',
 		'place($100)' => '1',
-		'Place' => '1',
 		'total bets' => 200,
 		'total won in race' => -200,
 	],
@@ -41,10 +37,7 @@ return [
 			4 => 22.5,
 		],
 		'inter' => '4',//count: 1
-		'win pivots' => '4, 8',
-		'qin pivots' => '4, 8',
 		'trio pivots' => '4, 8',
-		'Place' => '4',
 	],
 	'3' => [
 		/**
@@ -61,7 +54,6 @@ return [
 			2 => 11,
 		],
 		'inter' => '7',//count: 1
-		'Place' => '7',
 	],
 	'4' => [
 		/**
@@ -78,13 +70,9 @@ return [
 			12 => 52,
 		],
 		'inter' => '1',//count: 1
-		'check' => '1',
-		'win pivots' => '1, 3, 11',
-		'qin pivots' => '1, 3, 11',
 		'trio pivots' => '1, 3, 11',
 		'win($100)' => '1',
 		'place($100)' => '1',
-		'Place' => '1, 3, 11',
 		'total bets' => 200,
 		'0 won(place bet)' => 120,
 		'total won in race' => -80,
@@ -103,13 +91,9 @@ return [
 			10 => 16.5,
 			4 => 21,
 		],
-		'check' => '1',
-		'win pivots' => '1, 2, 7',
-		'qin pivots' => '1, 2, 7',
 		'trio pivots' => '1, 2, 7',
 		'win($100)' => '1',
 		'place($100)' => '1',
-		'Place' => '7',
 		'total bets' => 200,
 		'0 won(win bet)' => 710,
 		'0 won(place bet)' => 255,
@@ -130,8 +114,6 @@ return [
 			11 => 18,
 		],
 		'inter' => '11',//count: 1
-		'win pivots' => '11',
-		'qin pivots' => '11',
 		'trio pivots' => '11',
 	],
 	'7' => [
@@ -149,10 +131,7 @@ return [
 			5 => 27,
 		],
 		'inter' => '2',//count: 1
-		'win pivots' => '2',
-		'qin pivots' => '2',
 		'trio pivots' => '2',
-		'Place' => '2, 3',
 	],
 	'8' => [
 		/**
@@ -168,7 +147,6 @@ return [
 			5 => 21.5,
 			9 => 38.5,
 		],
-		'qin pivots' => '4',
 		'trio pivots' => '4, 11',
 	],
 	'9' => [
@@ -186,12 +164,9 @@ return [
 			9 => 50.5,
 		],
 		'inter' => '5',//count: 1
-		'win pivots' => '3, 5',
-		'qin pivots' => '3, 5',
 		'trio pivots' => '1, 3, 5',
 		'win($100)' => '1',
 		'place($100)' => '1',
-		'Place' => '1, 3, 5',
 		'total bets' => 200,
 		'total won in race' => -200,
 	],

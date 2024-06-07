@@ -16,13 +16,9 @@ return [
 			5 => 52,
 		],
 		'inter' => '1, 3',//count: 2
-		'check' => '1, 10',
-		'win pivots' => '1, 3, 10',
-		'qin pivots' => '1, 3, 10',
 		'trio pivots' => '1, 3, 10',
 		'win($100)' => '1',
 		'place($100)' => '1',
-		'Place' => '1, 3',
 		'qin($20)' => '1, 3, 10',
 		'win($10)' => '4, 11',
 		'qin($10)' => '1, 3, 10 X 4, 11',
@@ -47,10 +43,7 @@ return [
 			3 => 34.5,
 		],
 		'inter' => '4',//count: 1
-		'win pivots' => '4',
-		'qin pivots' => '4',
 		'trio pivots' => '4',
-		'Place' => '4, 9',
 	],
 	'3' => [
 		/**
@@ -67,10 +60,7 @@ return [
 			1 => 18,
 		],
 		'inter' => '1, 3',//count: 2
-		'win pivots' => '1, 3',
-		'qin pivots' => '1, 3',
 		'trio pivots' => '1, 3',
-		'Place' => '1',
 	],
 	'4' => [
 		/**
@@ -87,13 +77,9 @@ return [
 			1 => 13,
 		],
 		'inter' => '11',//count: 1
-		'check' => '1',
-		'win pivots' => '1, 6, 8, 11',
-		'qin pivots' => '1, 6, 8, 11',
 		'trio pivots' => '1, 6, 8, 11',
 		'win($100)' => '1, 6',
 		'place($100)' => '1, 6',
-		'Place' => '1, 11',
 		'total bets' => 200,
 		'0 won(place bet)' => 130,
 		'total won in race' => -70,
@@ -112,8 +98,6 @@ return [
 			11 => 40,
 			10 => 18,
 		],
-		'win pivots' => '4, 10',
-		'qin pivots' => '4, 10',
 		'trio pivots' => '4, 10',
 	],
 	'6' => [
@@ -130,12 +114,9 @@ return [
 			11 => 32.5,
 			12 => 20,
 		],
-		'win pivots' => '2',
-		'qin pivots' => '2, 6',
 		'trio pivots' => '2, 6, 12',
 		'win($100)' => '2',
 		'place($100)' => '2',
-		'Place' => '2',
 		'total bets' => 200,
 		'0 won(win bet)' => 355,
 		'0 won(place bet)' => 145,
@@ -155,12 +136,9 @@ return [
 			3 => 19,
 			6 => 25,
 		],
-		'win pivots' => '6, 7',
-		'qin pivots' => '4, 6, 7',
 		'trio pivots' => '4, 6, 7',
 		'win($100)' => '4',
 		'place($100)' => '4',
-		'Place' => '6, 7',
 		'total bets' => 200,
 		'total won in race' => -200,
 	],
@@ -179,10 +157,7 @@ return [
 			1 => 30,
 		],
 		'inter' => '1',//count: 1
-		'win pivots' => '1',
-		'qin pivots' => '1, 7',
 		'trio pivots' => '1, 7',
-		'Place' => '1',
 	],
 	'9' => [
 		/**
@@ -199,10 +174,7 @@ return [
 			8 => 22,
 		],
 		'inter' => '5',//count: 1
-		'win pivots' => '5',
-		'qin pivots' => '5',
 		'trio pivots' => '5',
-		'Place' => '5',
 	],
 	'10' => [
 		/**
