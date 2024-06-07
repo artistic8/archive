@@ -135,9 +135,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
     }
     if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
-    if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
-    if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
-    if(!empty($triopivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $triopivots) . "',\n";
+    if(!empty($winpivots) && empty($qinpivots) && empty($triopivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
     
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
