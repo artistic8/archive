@@ -130,10 +130,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(count($pivots) >= 3){
         $wp = array_slice($favorites, -2);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet;
+        $totalBets[$raceNumber] += 1 * $unitBet * count($wp);
         $totalWin -= 1 * $unitBet * count($wp);
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet;
+        $totalBets[$raceNumber] += 1 * $unitBet * count($wp);
         $totalPlace -= 1 * $unitBet  * count($wp);
     }
     $set2 = array_values(array_unique(array_merge($sums, $mults)));

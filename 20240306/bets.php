@@ -16,13 +16,11 @@ return [
 			10 => 19,
 		],
 		'trio pivots' => '3, 7, 8, 10',
-		'win($100)' => '3, 7',
-		'place($100)' => '3, 7',
+		'win($100)' => '8, 10',
+		'place($100)' => '8, 10',
 		'total bets' => 200,
-		'0 won(win bet)' => 390,
-		'0 won(place bet)' => 170,
-		'0 won(place bet)' => 165,
-		'total won in race' => 525,
+		'0 won(place bet)' => 190,
+		'total won in race' => -10,
 	],
 	'2' => [
 		/**
@@ -55,13 +53,11 @@ return [
 			5 => 27.5,
 		],
 		'trio pivots' => '1, 3, 4, 5, 10',
-		'win($100)' => '1, 3, 4',
-		'place($100)' => '1, 3, 4',
+		'win($100)' => '5, 10',
+		'place($100)' => '5, 10',
 		'total bets' => 200,
-		'0 won(win bet)' => 610,
-		'0 won(place bet)' => 315,
-		'0 won(place bet)' => 205,
-		'total won in race' => 930,
+		'0 won(place bet)' => 275,
+		'total won in race' => 75,
 	],
 	'4' => [
 		/**
@@ -78,10 +74,13 @@ return [
 			1 => 16.5,
 		],
 		'trio pivots' => '2, 5, 6',
-		'win($100)' => '2',
-		'place($100)' => '2',
+		'win($100)' => '5, 6',
+		'place($100)' => '5, 6',
 		'total bets' => 200,
-		'total won in race' => -200,
+		'0 won(win bet)' => 365,
+		'0 won(place bet)' => 155,
+		'0 won(place bet)' => 300,
+		'total won in race' => 620,
 	],
 	'5' => [
 		/**
@@ -99,11 +98,12 @@ return [
 		],
 		'inter' => '1',//count: 1
 		'trio pivots' => '1, 3, 7',
-		'win($100)' => '1',
-		'place($100)' => '1',
+		'win($100)' => '3, 7',
+		'place($100)' => '3, 7',
 		'total bets' => 200,
-		'0 won(place bet)' => 325,
-		'total won in race' => 125,
+		'0 won(win bet)' => 295,
+		'0 won(place bet)' => 140,
+		'total won in race' => 235,
 	],
 	'6' => [
 		/**
@@ -169,14 +169,15 @@ return [
 			1 => 34.5,
 		],
 		'trio pivots' => '3, 7, 11',
-		'win($100)' => '3',
-		'place($100)' => '3',
+		'win($100)' => '7, 11',
+		'place($100)' => '7, 11',
 		'total bets' => 200,
-		'total won in race' => -200,
+		'0 won(place bet)' => 265,
+		'total won in race' => 65,
 	],
 ];
-//total win: 500
-//total place: 680
+//total win: -340
+//total place: 325
 //total qin: 0
 //total trio: 0
-//total: 1180
+//total: 985

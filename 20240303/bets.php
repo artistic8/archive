@@ -17,13 +17,10 @@ return [
 		],
 		'inter' => '8',//count: 1
 		'trio pivots' => '5, 7, 8, 9',
-		'win($100)' => '5, 7',
-		'place($100)' => '5, 7',
+		'win($100)' => '8, 9',
+		'place($100)' => '8, 9',
 		'total bets' => 200,
-		'0 won(win bet)' => 580,
-		'0 won(place bet)' => 195,
-		'0 won(place bet)' => 150,
-		'total won in race' => 725,
+		'total won in race' => -200,
 	],
 	'2' => [
 		/**
@@ -40,12 +37,11 @@ return [
 			14 => 23,
 		],
 		'trio pivots' => '2, 3, 9',
-		'win($100)' => '2',
-		'place($100)' => '2',
+		'win($100)' => '3, 9',
+		'place($100)' => '3, 9',
 		'total bets' => 200,
-		'0 won(win bet)' => 480,
-		'0 won(place bet)' => 160,
-		'total won in race' => 440,
+		'0 won(place bet)' => 130,
+		'total won in race' => -70,
 	],
 	'3' => [
 		/**
@@ -63,11 +59,10 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'trio pivots' => '6, 7, 9',
-		'win($100)' => '6',
-		'place($100)' => '6',
+		'win($100)' => '7, 9',
+		'place($100)' => '7, 9',
 		'total bets' => 200,
-		'0 won(place bet)' => 140,
-		'total won in race' => -60,
+		'total won in race' => -200,
 	],
 	'4' => [
 		/**
@@ -84,11 +79,12 @@ return [
 			6 => 22,
 		],
 		'trio pivots' => '4, 9, 11, 12',
-		'win($100)' => '4, 9',
-		'place($100)' => '4, 9',
+		'win($100)' => '11, 12',
+		'place($100)' => '11, 12',
 		'total bets' => 200,
-		'0 won(place bet)' => 210,
-		'total won in race' => 10,
+		'0 won(win bet)' => 500,
+		'0 won(place bet)' => 195,
+		'total won in race' => 495,
 	],
 	'5' => [
 		/**
@@ -121,11 +117,12 @@ return [
 			6 => 16.5,
 		],
 		'trio pivots' => '6, 7, 10',
-		'win($100)' => '6',
-		'place($100)' => '6',
+		'win($100)' => '7, 10',
+		'place($100)' => '7, 10',
 		'total bets' => 200,
-		'0 won(place bet)' => 165,
-		'total won in race' => -35,
+		'0 won(win bet)' => 410,
+		'0 won(place bet)' => 170,
+		'total won in race' => 380,
 	],
 	'7' => [
 		/**
@@ -193,8 +190,8 @@ return [
 		],
 	],
 ];
-//total win: 560
-//total place: 520
+//total win: -90
+//total place: -505
 //total qin: 0
 //total trio: 0
-//total: 1080
+//total: 405
