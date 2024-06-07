@@ -112,6 +112,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $qinInter = array_intersect($favorites, $qinInter);
     if(!empty($winCheck)) $racetext .= "\t\t'win check' => '" . implode(", ", $winCheck) . "',\n";
     if(!empty($qinCheck)) $racetext .= "\t\t'qin check' => '" . implode(", ", $qinCheck) . "',\n";
+    $check = array_intersect($winCheck, $qinCheck);
+    if(!empty($check)) $racetext .= "\t\t'inter check' => '" . implode(", ", $check) . "',\n";
     
     $unitBet = 100;
     // if(!empty($check)){
