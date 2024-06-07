@@ -104,6 +104,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $firstSet = true;
     $check = [];
+    $pivots = [];
     foreach($favorites as $F){
         $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         if(empty(array_diff($favorites, $candidates)) && count($favorites) >= 3) $check[] = $F;
@@ -115,10 +116,25 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($inter);
     $inter = array_intersect($favorites, $inter);
+    foreach($favorites as $F){
+        $interOther = [];
+        $firstSet = true;
+        foreach($favorites as $other){
+            if($F !== $other){
+                if($firstSet) {
+                    $interOthers = array_intersect($history[$raceNumber][$other]["win"], $runners);
+                    $firstSet = false;
+                }
+                else $interOthers = array_intersect($interOthers, $history[$raceNumber][$other]["win"], $runners);
+            }
+        }
+        if(in_array($F, $interOthers)) $pivots[] = $F;
+    }
     if(!empty($inter)){
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
     }
     if(!empty($check)) $racetext .= "\t\t'check' => '" . implode(", ", $check) . "',\n";
+    if(!empty($pivots)) $racetext .= "\t\t'pivots' => '" . implode(", ", $pivots) . "',\n";
     
     $set2 = array_values(array_unique(array_merge($sums, $mults)));
     sort($set2);
