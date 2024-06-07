@@ -133,7 +133,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     //     $totalBets[$raceNumber] += 1 * $unitBet * count($check);
     //     $totalWin -= 1 * $unitBet * count($check);
     // }
-    $expr = count(explode(", ", $winCheck)) . count(explode(", ", $qinCheck)) . count(explode(", ", $trioCheck));
+    $expr = count($winCheck) . count($qinCheck) . count($trioCheck);
     if(isset($expr) && in_array($expr, ["112", "113", "122", "123", "133", "222", "223", "233", "333"])){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
