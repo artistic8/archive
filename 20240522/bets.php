@@ -149,6 +149,7 @@ return [
 		],
 		'win check' => '4',
 		'qin check' => '4',
+		'inter check' => '4',
 	],
 ];
 //total win: -95

@@ -49,6 +49,7 @@ return [
 		],
 		'win check' => '7',
 		'qin check' => '7',
+		'inter check' => '7',
 	],
 	'4' => [
 		/**

@@ -96,23 +96,29 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     foreach($favorites as $F){
         $winCandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
         $qinCandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
+        $trioCandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
         if(empty(array_diff($favorites, $winCandidates)) && count($favorites) >= 3) $winCheck[] = $F;
         if(empty(array_diff($favorites, $qinCandidates)) && count($favorites) >= 3) $qinCheck[] = $F;
+        if(empty(array_diff($favorites, $trioCandidates)) && count($favorites) >= 3) $trioCheck[] = $F;
         if($firstSet) {
             $winInter = $winCandidates;
             $qinInter = $qinCandidates;
+            $trioInter = $trioCandidates;
             $firstSet = false;
         }
         else {
             $winInter = array_intersect($winInter, $winCandidates);
             $qinInter = array_intersect($qinInter, $qinCandidates);
+            $trioInter = array_intersect($qinInter, $trioCandidates);
         }
     }
     $winInter = array_intersect($favorites, $winInter);
     $qinInter = array_intersect($favorites, $qinInter);
+    $trioInter = array_intersect($favorites, $trioInter);
     if(!empty($winCheck)) $racetext .= "\t\t'win check' => '" . implode(", ", $winCheck) . "',\n";
     if(!empty($qinCheck)) $racetext .= "\t\t'qin check' => '" . implode(", ", $qinCheck) . "',\n";
-    $check = array_intersect($winCheck, $qinCheck);
+    if(!empty($trioCheck)) $racetext .= "\t\t'trio check' => '" . implode(", ", $trioCheck) . "',\n";
+    $check = array_intersect($winCheck, $qinCheck, $trioCheck);
     if(!empty($check)) $racetext .= "\t\t'inter check' => '" . implode(", ", $check) . "',\n";
     
     $unitBet = 100;

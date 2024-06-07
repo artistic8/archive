@@ -17,6 +17,7 @@ return [
 		],
 		'win check' => '1, 10',
 		'qin check' => '1, 10',
+		'inter check' => '1, 10',
 	],
 	'2' => [
 		/**
@@ -64,6 +65,7 @@ return [
 		],
 		'win check' => '1',
 		'qin check' => '1',
+		'inter check' => '1',
 	],
 	'5' => [
 		/**

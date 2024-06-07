@@ -62,6 +62,7 @@ return [
 		],
 		'win check' => '1, 4, 5',
 		'qin check' => '1, 4, 5',
+		'inter check' => '1, 4, 5',
 		'qin($20)' => '1, 4, 5',
 		'trio($10)' => '1, 4, 5',
 		'win($100)' => '1, 4, 5',
@@ -103,6 +104,7 @@ return [
 		],
 		'win check' => '4',
 		'qin check' => '4',
+		'inter check' => '4',
 	],
 	'7' => [
 		/**
@@ -151,6 +153,7 @@ return [
 		],
 		'win check' => '7',
 		'qin check' => '7',
+		'inter check' => '7',
 	],
 	'10' => [
 		/**

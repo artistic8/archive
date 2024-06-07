@@ -137,6 +137,7 @@ return [
 		],
 		'win check' => '1, 8',
 		'qin check' => '1, 8',
+		'inter check' => '1, 8',
 	],
 	'10' => [
 		/**
