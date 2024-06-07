@@ -101,9 +101,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($inter);
     $inter = array_intersect($favorites, $inter);
     $pivots = [];
+    $winpivots = [];
+    $qinpivots = [];
     foreach($favorites as $F){
         foreach($favorites as $other){
             if($F !== $other){
+                $candidates = array_intersect($history[$raceNumber][$other]["win"], $runners);
+                if(in_array($F, $candidates) && !in_array($F, $winpivots)) $winpivots[] = $F;
+                $candidates = array_intersect($history[$raceNumber][$other]["qin"], $runners);
+                if(in_array($F, $candidates) && !in_array($F, $qinpivots)) $qinpivots[] = $F;
                 $candidates = array_intersect($history[$raceNumber][$other]["trio"], $runners);
                 if(in_array($F, $candidates) && !in_array($F, $pivots)) $pivots[] = $F;
             }
@@ -112,6 +118,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($inter)){
         $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
     }
+    if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
+    if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
     if(count($inter) >= 1 && count($favorites) >= 3 && count($pivots) === 3){

@@ -17,6 +17,10 @@ return [
 		],
 		'inter' => '7',//count: 1
 		'trio pivots' => '6, 7, 9',
+		'win($100)' => '9',
+		'place($1000)' => '9',
+		'total bets' => 1100,
+		'total won in race' => -1100,
 	],
 	'2' => [
 		/**
@@ -179,8 +183,8 @@ return [
 		'trio pivots' => '2, 7, 8, 13',
 	],
 ];
-//total win: 490
-//total place: 1300
+//total win: 390
+//total place: 300
 //total qin: 0
 //total trio: 0
-//total: 1790
+//total: 690
