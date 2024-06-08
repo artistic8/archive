@@ -72,6 +72,7 @@ return [
 			4 => 29.5,
 			9 => 51.5,
 		],
+		'inter' => '3',//count: 1
 		'qin pivots' => '3',
 		'trio pivots' => '3',
 	],
@@ -89,6 +90,7 @@ return [
 			4 => 20.5,
 			6 => 157.5,
 		],
+		'inter' => '2',//count: 1
 		'win pivots' => '2',
 		'qin pivots' => '2',
 		'trio pivots' => '2, 3',

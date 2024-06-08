@@ -91,15 +91,22 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $firstSet = true;
     foreach($favorites as $F){
-        $candidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
+        $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        $qincandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
         if($firstSet) {
-            $inter = $candidates;
+            $wininter = $wincandidates;
+            $qininter = $qincandidates;
             $firstSet = false;
         }
-        else $inter = array_intersect($inter, $candidates);
+        else {
+            $wininter = array_intersect($wininter, $wincandidates);
+            $qininter = array_intersect($qininter, $qincandidates);
+        }
     }
-    sort($inter);
-    $inter = array_intersect($favorites, $inter);
+    sort($wininter);
+    sort($qininter);
+    $wininter = array_intersect($favorites, $wininter);
+    $qininter = array_intersect($favorites, $qininter);
     $pivots = [];
     $winpivots = [];
     $qinpivots = [];
@@ -115,15 +122,18 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    if(!empty($inter)){
-        $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
+    if(!empty($wininter)){
+        $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',//count: " . count($wininter) . "\n";
+    }
+    if(!empty($qininter)){
+        $racetext .= "\t\t'qin inter' => '" . implode(", ", $qininter) . "',//count: " . count($qininter) . "\n";
     }
     if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
     if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
     if(
-        (count($inter) >= 2 || (count($inter) > 0 && !empty(array_diff([2], $inter)) && count($winpivots) === 2 && in_array(end($favorites), $winpivots))) 
+        (count($wininter) >= 2 || (count($wininter) > 0 && !empty(array_diff([2], $wininter)) && count($winpivots) === 2 && in_array(end($favorites), $winpivots))) 
         && 
         (count($pivots) === 3)
     ){
@@ -161,7 +171,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
-    unset($inter);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";

@@ -88,6 +88,7 @@ return [
 			6 => 15.5,
 			10 => 40,
 		],
+		'inter' => '4, 6',//count: 2
 		'qin pivots' => '4, 6',
 		'trio pivots' => '4, 6',
 	],

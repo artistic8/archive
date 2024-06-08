@@ -15,6 +15,7 @@ return [
 			6 => 36.5,
 			4 => 21.5,
 		],
+		'inter' => '4',//count: 1
 		'win pivots' => '2, 4',
 		'qin pivots' => '2, 3, 4',
 		'trio pivots' => '2, 3, 4, 6',
@@ -33,6 +34,7 @@ return [
 			4 => 16,
 			3 => 10.5,
 		],
+		'inter' => '3, 4',//count: 2
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
@@ -124,6 +126,7 @@ return [
 			12 => 77,
 			5 => 19.5,
 		],
+		'inter' => '3, 4',//count: 2
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',

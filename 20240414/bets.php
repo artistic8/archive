@@ -139,7 +139,7 @@ return [
 			8 => 11,
 			3 => 17.5,
 		],
-		'inter' => '8',//count: 1
+		'inter' => '3, 8',//count: 2
 		'win pivots' => '2, 3, 6, 7, 8',
 		'qin pivots' => '2, 3, 6, 7, 8',
 		'trio pivots' => '2, 3, 6, 7, 8',

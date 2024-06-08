@@ -33,7 +33,7 @@ return [
 			10 => 72,
 			14 => 31,
 		],
-		'inter' => '4',//count: 1
+		'inter' => '4, 5',//count: 2
 		'win pivots' => '4, 5',
 		'qin pivots' => '2, 4, 5',
 		'trio pivots' => '2, 4, 5',
@@ -110,7 +110,7 @@ return [
 			2 => 22,
 			3 => 15.5,
 		],
-		'inter' => '3',//count: 1
+		'inter' => '3, 7',//count: 2
 		'win pivots' => '3',
 		'qin pivots' => '3, 7',
 		'trio pivots' => '3, 7',
@@ -174,7 +174,7 @@ return [
 			5 => 47,
 			2 => 23.5,
 		],
-		'inter' => '5',//count: 1
+		'inter' => '3, 5',//count: 2
 		'win pivots' => '2, 5',
 		'qin pivots' => '2, 3, 5',
 		'trio pivots' => '2, 3, 5',
