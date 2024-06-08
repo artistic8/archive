@@ -77,7 +77,7 @@ return [
 		'place($1000)' => '5',
 		'qin($20)' => '1, 4, 5',
 		'total bets' => 1160,
-		'0 won(place bet)' => 3900,
+		'2 won(place bet)' => 3900,
 		'3 won(qin bet)' => 331,
 		'total won in race' => 3071,
 	],

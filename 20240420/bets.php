@@ -23,8 +23,8 @@ return [
 		'place($1000)' => '10',
 		'qin($20)' => '1, 4, 10',
 		'total bets' => 1160,
-		'0 won(win bet)' => 420,
-		'0 won(place bet)' => 1550,
+		'1 won(win bet)' => 420,
+		'2 won(place bet)' => 1550,
 		'total won in race' => 810,
 	],
 	'2' => [
