@@ -12,7 +12,7 @@ return [
 			9 => 29.5,
 			4 => 27.5,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'2' => [
 		/**
@@ -25,7 +25,7 @@ return [
 			8 => 11.5,
 			4 => 22.5,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'3' => [
 		/**
@@ -38,7 +38,7 @@ return [
 			11 => 70,
 			2 => 11,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'4' => [
 		/**
@@ -51,7 +51,7 @@ return [
 			1 => 12,
 			12 => 52,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'5' => [
 		/**
@@ -64,7 +64,7 @@ return [
 			10 => 16.5,
 			4 => 21,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'6' => [
 		/**
@@ -77,7 +77,7 @@ return [
 			2 => 71.5,
 			11 => 18,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'7' => [
 		/**
@@ -90,7 +90,7 @@ return [
 			3 => 19,
 			5 => 27,
 		],
-		'indication' => [1, 7],//count indication: 2
+		'indication' => [1, 7],
 	],
 	'8' => [
 		/**
@@ -103,7 +103,7 @@ return [
 			5 => 21.5,
 			9 => 38.5,
 		],
-		'indication' => [],//count indication: 0
+		'indication' => [],
 	],
 	'9' => [
 		/**
@@ -116,6 +116,6 @@ return [
 			5 => 26.5,
 			9 => 50.5,
 		],
-		'indication' => [12],//count indication: 1
+		'indication' => [12],
 	],
 ];
