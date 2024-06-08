@@ -9,7 +9,7 @@ foreach ($dir as $fileinfo) {
             $favorites = explode(", ", $data['favorites']);
             if(!isset($data['official win']) || empty($data['official win'])) continue;
             $winners = explode(", ", $data['official win']);
-            if(count($favorites) >= 3 && in_array(end($favorites), array_slice($winners, 0, 3))) {
+            if(count(array_intersect($favorites, array_slice($winners, 0, 3))) === 3) {
                 echo $fileinfo->getFilename() . ", Race: " . $raceNumber . "\n";
             }
         }
