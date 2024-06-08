@@ -91,7 +91,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $firstSet = true;
     foreach($favorites as $F){
-        $candidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        $candidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
         if($firstSet) {
             $inter = $candidates;
             $firstSet = false;
