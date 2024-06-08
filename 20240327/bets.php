@@ -78,8 +78,10 @@ return [
 		'qin pivots' => '2, 8, 11',
 		'trio pivots' => '2, 8, 11',
 		'win($100)' => '11',
-		'total bets' => 100,
+		'win($100)' => '2, 8, 11',
+		'total bets' => 400,
 		'1 won(win bet)' => 300,
+		'6 won(win bet)' => 300,
 		'total won in race' => 200,
 	],
 	'5' => [
