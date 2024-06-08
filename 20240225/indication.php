@@ -5,7 +5,6 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1, 2, 3, 8, 10',//count favorites: 5
 		'official win' => '1, 4, 12, 8',
 		'place amount' => [
 			1 => 21.5,
@@ -13,24 +12,23 @@ return [
 			12 => 31,
 		],
 		'indication' => [],
+		'favorites' => '1, 2, 3, 8, 10',//count favorites: 5
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
-		'favorites' => '3, 6',//count favorites: 2
 		'official win' => '2, 6, 3, 5',
 		'place amount' => [
 			2 => 29,
 			6 => 15,
 		],
-		'indication' => [],
+		'indication' => [],//count runners < 10
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'favorites' => '2, 8, 12, 13',//count favorites: 4
 		'official win' => '2, 13, 11, 12',
 		'place amount' => [
 			2 => 27.5,
@@ -38,12 +36,12 @@ return [
 			11 => 28,
 		],
 		'indication' => [],
+		'favorites' => '2, 8, 12, 13',//count favorites: 4
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'favorites' => '6, 10',//count favorites: 2
 		'official win' => '10, 4, 6, 3',
 		'place amount' => [
 			10 => 12.5,
@@ -51,12 +49,12 @@ return [
 			6 => 26.5,
 		],
 		'indication' => [],
+		'favorites' => '6, 10',//count favorites: 2
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'favorites' => '4, 6',//count favorites: 2
 		'official win' => '7, 6, 10, 5',
 		'place amount' => [
 			7 => 17.5,
@@ -64,12 +62,12 @@ return [
 			10 => 40,
 		],
 		'indication' => [],
+		'favorites' => '4, 6',//count favorites: 2
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '10',//count favorites: 1
 		'official win' => '12, 6, 3, 1',
 		'place amount' => [
 			12 => 22,
@@ -77,12 +75,12 @@ return [
 			3 => 37.5,
 		],
 		'indication' => [],
+		'favorites' => '10',//count favorites: 1
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
-		'favorites' => '1, 3',//count favorites: 2
 		'official win' => '1, 2, 8, 3',
 		'place amount' => [
 			1 => 11.5,
@@ -90,13 +88,12 @@ return [
 			8 => 34,
 		],
 		'indication' => [2, 4, 5, 6, 7],
-		//CHECK THIS ONE OUT
+		'favorites' => '1, 3',//count favorites: 2
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'favorites' => '4, 8, 9, 12',//count favorites: 4
 		'official win' => '2, 3, 9, 12',
 		'place amount' => [
 			2 => 41.5,
@@ -104,12 +101,12 @@ return [
 			9 => 34,
 		],
 		'indication' => [],
+		'favorites' => '4, 8, 9, 12',//count favorites: 4
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'favorites' => '3, 14',//count favorites: 2
 		'official win' => '3, 12, 14, 7',
 		'place amount' => [
 			3 => 10.1,
@@ -117,12 +114,12 @@ return [
 			14 => 16,
 		],
 		'indication' => [],
+		'favorites' => '3, 14',//count favorites: 2
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'favorites' => '1, 3, 4, 5',//count favorites: 4
 		'official win' => '4, 5, 3, 9',
 		'place amount' => [
 			4 => 18,
@@ -130,5 +127,6 @@ return [
 			3 => 19,
 		],
 		'indication' => [],
+		'favorites' => '1, 3, 4, 5',//count favorites: 4
 	],
 ];

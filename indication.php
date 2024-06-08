@@ -36,7 +36,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    
+    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n";
     $copy = $favorites;
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
@@ -80,8 +80,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $inter = array_intersect($favorites, $inter);
             if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7) $indication[] = $other;
         }
-        $racetext .= "\t\t'indication' => [" . implode(", ", $indication) . "],\n";
         $racetext .= "\t\t'favorites' => '" . implode(", ", $copy) . "',//count favorites: " . count($copy) . "\n"; 
+        $racetext .= "\t\t'indication' => [" . implode(", ", $indication) . "],\n";
+        
     }
     $racetext .= "\t],\n";
     unset($favorites);
