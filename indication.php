@@ -36,7 +36,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
+    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',//count favorites: " . count($favorites) . "\n"; 
     $copy = $favorites;
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
