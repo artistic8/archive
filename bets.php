@@ -133,7 +133,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
     $compactExpr = count($wininter) . count($qininter) . count($winpivots) . count($qinpivots) . count($pivots);
-    $placeCondition = !in_array($compactExpr, ["12333", "13333"]) && in_array(end($favorites), $winpivots) && count($pivots) === 3 && count($qininter) !== 1;
+    $placeCondition = !in_array($compactExpr, ["12333", "13333"]) && in_array(end($favorites), $winpivots) && count($pivots) === 3 && count($wininter) > 0 && count($qininter) !== 1;
     if(
         $placeCondition
     ){
