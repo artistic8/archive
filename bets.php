@@ -132,7 +132,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
-    $winCondition = count($qininter) >= 2;
+    $winCondition = (count($qininter) >= 2 || (count($qininter) > 0 && !empty(array_diff([2], $qininter)) && count($winpivots) === 2 && in_array(end($favorites), $winpivots))) 
+    && 
+    (count($pivots) === 3);
     $placeCondition = (count($wininter) >= 2 || (count($wininter) > 0 && !empty(array_diff([2], $wininter)) && count($winpivots) === 2 && in_array(end($favorites), $winpivots))) 
     && 
     (count($pivots) === 3);
