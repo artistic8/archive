@@ -80,8 +80,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             $inter = array_intersect($favorites, $inter);
             if(count($inter) >= 2 && count($favorites) >= 3 && count($set2) < 7) $indication[] = $other;
         }
-        $racetext .= "\t\t'indication' => [" . implode(", ", $indication) . "],\n";
-        if(count($copy) === 2 && count($indication) >= 2) $racetext .= "\t\t//CHECK THIS ONE OUT\n";
+        $racetext .= "\t\t'indication' => [" . implode(", ", $indication) . "],//count indication: " . count($indication) . "\n";
     }
     $racetext .= "\t],\n";
     unset($favorites);
