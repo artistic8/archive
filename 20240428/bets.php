@@ -15,15 +15,11 @@ return [
 			2 => 34,
 			1 => 54.5,
 		],
-		'inter' => '6, 7, 9',//count: 3
+		'win inter' => '7',//count: 1
+		'qin inter' => '6, 7, 9',//count: 3
 		'win pivots' => '6, 7',
 		'qin pivots' => '6, 7, 9',
 		'trio pivots' => '6, 7, 9',
-		'win($100)' => '9',
-		'place($1000)' => '9',
-		'qin($20)' => '6, 7, 9',
-		'total bets' => 1160,
-		'total won in race' => -1160,
 	],
 	'2' => [
 		/**
@@ -39,7 +35,8 @@ return [
 			7 => 16.5,
 			10 => 37.5,
 		],
-		'inter' => '2',//count: 1
+		'win inter' => '2',//count: 1
+		'qin inter' => '2',//count: 1
 		'win pivots' => '2, 7',
 		'qin pivots' => '1, 2, 3, 7',
 		'trio pivots' => '1, 2, 3, 7',
@@ -58,7 +55,8 @@ return [
 			8 => 42,
 			1 => 16.5,
 		],
-		'inter' => '1, 3',//count: 2
+		'win inter' => '1',//count: 1
+		'qin inter' => '1, 3',//count: 2
 		'win pivots' => '1',
 		'qin pivots' => '1, 3',
 		'trio pivots' => '1, 3',
@@ -77,7 +75,8 @@ return [
 			4 => 18.5,
 			5 => 15,
 		],
-		'inter' => '1, 4, 5',//count: 3
+		'win inter' => '1, 4, 5',//count: 3
+		'qin inter' => '1, 4, 5',//count: 3
 		'win pivots' => '1, 4, 5',
 		'qin pivots' => '1, 4, 5',
 		'trio pivots' => '1, 4, 5',
@@ -103,7 +102,8 @@ return [
 			1 => 13,
 			9 => 29,
 		],
-		'inter' => '1, 3, 5',//count: 3
+		'win inter' => '1, 5',//count: 2
+		'qin inter' => '1, 3, 5',//count: 3
 		'win pivots' => '1, 3, 5',
 		'qin pivots' => '1, 3, 5',
 		'trio pivots' => '1, 3, 5',
@@ -148,7 +148,8 @@ return [
 			10 => 43,
 			2 => 14.5,
 		],
-		'inter' => '1',//count: 1
+		'win inter' => '1',//count: 1
+		'qin inter' => '1',//count: 1
 	],
 	'8' => [
 		/**
@@ -182,7 +183,8 @@ return [
 			7 => 55,
 			8 => 24.5,
 		],
-		'inter' => '3, 4, 8',//count: 3
+		'win inter' => '8',//count: 1
+		'qin inter' => '3, 4, 8',//count: 3
 		'win pivots' => '3, 4, 8, 9',
 		'qin pivots' => '3, 4, 8, 9',
 		'trio pivots' => '3, 4, 8, 9',
@@ -206,8 +208,8 @@ return [
 		'trio pivots' => '2, 7, 8, 13',
 	],
 ];
-//total win: 390
-//total place: 300
-//total qin: 292
+//total win: 490
+//total place: 1300
+//total qin: 352
 //total trio: 0
-//total: 982
+//total: 2142

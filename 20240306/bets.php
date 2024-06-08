@@ -33,7 +33,7 @@ return [
 			6 => 53.5,
 			4 => 19.5,
 		],
-		'inter' => '3, 4',//count: 2
+		'qin inter' => '3, 4',//count: 2
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
@@ -52,7 +52,7 @@ return [
 			3 => 31.5,
 			5 => 27.5,
 		],
-		'inter' => '1, 4',//count: 2
+		'qin inter' => '1, 4',//count: 2
 		'win pivots' => '1, 3, 4, 5, 10',
 		'qin pivots' => '1, 3, 4, 5, 10',
 		'trio pivots' => '1, 3, 4, 5, 10',
@@ -89,17 +89,11 @@ return [
 			2 => 50,
 			1 => 32.5,
 		],
-		'inter' => '1, 3, 7',//count: 3
+		'win inter' => '1',//count: 1
+		'qin inter' => '1, 3, 7',//count: 3
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3, 7',
 		'trio pivots' => '1, 3, 7',
-		'win($100)' => '7',
-		'place($1000)' => '7',
-		'qin($20)' => '1, 3, 7',
-		'total bets' => 1160,
-		'1 won(win bet)' => 295,
-		'2 won(place bet)' => 1400,
-		'total won in race' => 535,
 	],
 	'6' => [
 		/**
@@ -115,7 +109,7 @@ return [
 			12 => 23,
 			9 => 18.5,
 		],
-		'inter' => '1',//count: 1
+		'qin inter' => '1',//count: 1
 		'qin pivots' => '1, 9',
 		'trio pivots' => '1, 9',
 	],
@@ -133,7 +127,7 @@ return [
 			4 => 13.5,
 			3 => 18,
 		],
-		'inter' => '9',//count: 1
+		'qin inter' => '9',//count: 1
 		'qin pivots' => '9',
 		'trio pivots' => '9',
 	],
@@ -151,7 +145,8 @@ return [
 			4 => 20,
 			10 => 34.5,
 		],
-		'inter' => '3, 8',//count: 2
+		'win inter' => '3, 8',//count: 2
+		'qin inter' => '3, 8',//count: 2
 		'win pivots' => '3, 8',
 		'qin pivots' => '3, 8',
 		'trio pivots' => '3, 8',
@@ -170,19 +165,13 @@ return [
 			11 => 26.5,
 			1 => 34.5,
 		],
-		'inter' => '3, 11',//count: 2
+		'qin inter' => '3, 11',//count: 2
 		'qin pivots' => '3, 7, 11',
 		'trio pivots' => '3, 7, 11',
-		'win($100)' => '11',
-		'place($1000)' => '11',
-		'qin($20)' => '3, 7, 11',
-		'total bets' => 1160,
-		'2 won(place bet)' => 2650,
-		'total won in race' => 1490,
 	],
 ];
-//total win: 95
-//total place: 2050
-//total qin: -120
+//total win: 0
+//total place: 0
+//total qin: 0
 //total trio: 0
-//total: 2025
+//total: 0

@@ -15,7 +15,8 @@ return [
 			4 => 31.5,
 			9 => 31,
 		],
-		'inter' => '1, 7',//count: 2
+		'win inter' => '1',//count: 1
+		'qin inter' => '1, 7',//count: 2
 		'win pivots' => '1, 7, 10',
 		'qin pivots' => '1, 7, 10',
 		'trio pivots' => '1, 7, 8, 10',
@@ -34,7 +35,7 @@ return [
 			1 => 24,
 			6 => 58.5,
 		],
-		'inter' => '4',//count: 1
+		'qin inter' => '4',//count: 1
 		'win pivots' => '2, 4, 8, 9',
 		'qin pivots' => '2, 4, 8, 9',
 		'trio pivots' => '2, 4, 8, 9',
@@ -53,7 +54,8 @@ return [
 			1 => 49,
 			5 => 21,
 		],
-		'inter' => '1, 3',//count: 2
+		'win inter' => '1, 3',//count: 2
+		'qin inter' => '1, 3',//count: 2
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3',
 		'trio pivots' => '1, 3',
@@ -72,15 +74,10 @@ return [
 			9 => 114,
 			1 => 29.5,
 		],
-		'inter' => '3, 6',//count: 2
+		'qin inter' => '3, 6',//count: 2
 		'win pivots' => '6',
 		'qin pivots' => '3, 6, 7',
 		'trio pivots' => '3, 6, 7',
-		'win($100)' => '7',
-		'place($1000)' => '7',
-		'qin($20)' => '3, 6, 7',
-		'total bets' => 1160,
-		'total won in race' => -1160,
 	],
 	'5' => [
 		/**
@@ -132,7 +129,8 @@ return [
 			4 => 19,
 			6 => 44,
 		],
-		'inter' => '3',//count: 1
+		'win inter' => '3',//count: 1
+		'qin inter' => '3',//count: 1
 		'win pivots' => '3',
 		'qin pivots' => '3',
 		'trio pivots' => '3, 4',
@@ -151,7 +149,8 @@ return [
 			9 => 24.5,
 			8 => 97,
 		],
-		'inter' => '3, 4',//count: 2
+		'win inter' => '3, 4',//count: 2
+		'qin inter' => '3, 4',//count: 2
 		'win pivots' => '3, 4',
 		'qin pivots' => '1, 3, 4',
 		'trio pivots' => '1, 3, 4',
@@ -177,7 +176,8 @@ return [
 			9 => 16,
 			7 => 44,
 		],
-		'inter' => '2, 3, 9',//count: 3
+		'win inter' => '9',//count: 1
+		'qin inter' => '2, 3, 9',//count: 3
 		'win pivots' => '3, 9',
 		'qin pivots' => '2, 3, 9',
 		'trio pivots' => '2, 3, 9',
@@ -190,8 +190,8 @@ return [
 		'total won in race' => 571,
 	],
 ];
-//total win: 85
-//total place: 350
-//total qin: -49
+//total win: 185
+//total place: 1350
+//total qin: 11
 //total trio: 0
-//total: 386
+//total: 1546

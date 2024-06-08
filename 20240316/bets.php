@@ -15,7 +15,8 @@ return [
 			10 => 21.5,
 			5 => 52,
 		],
-		'inter' => '1, 3',//count: 2
+		'win inter' => '1, 3',//count: 2
+		'qin inter' => '1, 3',//count: 2
 		'win pivots' => '1, 3, 10',
 		'qin pivots' => '1, 3, 10',
 		'trio pivots' => '1, 3, 10',
@@ -40,7 +41,8 @@ return [
 			10 => 27.5,
 			3 => 34.5,
 		],
-		'inter' => '4',//count: 1
+		'win inter' => '4',//count: 1
+		'qin inter' => '4',//count: 1
 		'win pivots' => '4',
 		'qin pivots' => '4',
 		'trio pivots' => '4',
@@ -59,7 +61,8 @@ return [
 			4 => 34,
 			1 => 18,
 		],
-		'inter' => '1, 3',//count: 2
+		'win inter' => '1, 3',//count: 2
+		'qin inter' => '1, 3',//count: 2
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3',
 		'trio pivots' => '1, 3',
@@ -78,7 +81,8 @@ return [
 			5 => 152.5,
 			1 => 13,
 		],
-		'inter' => '1, 11',//count: 2
+		'win inter' => '11',//count: 1
+		'qin inter' => '1, 11',//count: 2
 		'win pivots' => '1, 6, 8, 11',
 		'qin pivots' => '1, 6, 8, 11',
 		'trio pivots' => '1, 6, 8, 11',
@@ -133,15 +137,10 @@ return [
 			3 => 19,
 			6 => 25,
 		],
-		'inter' => '7',//count: 1
+		'qin inter' => '7',//count: 1
 		'win pivots' => '6, 7',
 		'qin pivots' => '4, 6, 7',
 		'trio pivots' => '4, 6, 7',
-		'win($100)' => '7',
-		'place($1000)' => '7',
-		'qin($20)' => '4, 6, 7',
-		'total bets' => 1160,
-		'total won in race' => -1160,
 	],
 	'8' => [
 		/**
@@ -157,7 +156,8 @@ return [
 			4 => 24.5,
 			1 => 30,
 		],
-		'inter' => '1',//count: 1
+		'win inter' => '1',//count: 1
+		'qin inter' => '1',//count: 1
 		'win pivots' => '1',
 		'qin pivots' => '1, 7',
 		'trio pivots' => '1, 7',
@@ -176,7 +176,8 @@ return [
 			6 => 15.5,
 			8 => 22,
 		],
-		'inter' => '5',//count: 1
+		'win inter' => '5',//count: 1
+		'qin inter' => '5',//count: 1
 		'win pivots' => '5',
 		'qin pivots' => '5',
 		'trio pivots' => '5',
@@ -197,8 +198,8 @@ return [
 		],
 	],
 ];
-//total win: -200
-//total place: 150
-//total qin: -120
+//total win: -100
+//total place: 1150
+//total qin: -60
 //total trio: 0
-//total: -170
+//total: 990
