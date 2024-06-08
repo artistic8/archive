@@ -12,7 +12,6 @@ return [
 			10 => 21.5,
 			5 => 52,
 		],
-		'favorites' => '1, 3, 10',//count favorites: 3
 		'indication' => [4, 7, 8, 9],
 	],
 	'2' => [
@@ -26,7 +25,6 @@ return [
 			10 => 27.5,
 			3 => 34.5,
 		],
-		'favorites' => '4, 9',//count favorites: 2
 		'indication' => [],
 	],
 	'3' => [
@@ -40,8 +38,8 @@ return [
 			4 => 34,
 			1 => 18,
 		],
-		'favorites' => '1, 3',//count favorites: 2
 		'indication' => [5, 6, 7],
+		//CHECK THIS ONE OUT
 	],
 	'4' => [
 		/**
@@ -54,7 +52,6 @@ return [
 			5 => 152.5,
 			1 => 13,
 		],
-		'favorites' => '1, 6, 8, 11',//count favorites: 4
 		'indication' => [],
 	],
 	'5' => [
@@ -68,7 +65,6 @@ return [
 			11 => 40,
 			10 => 18,
 		],
-		'favorites' => '4, 10, 12',//count favorites: 3
 		'indication' => [],
 	],
 	'6' => [
@@ -82,7 +78,6 @@ return [
 			11 => 32.5,
 			12 => 20,
 		],
-		'favorites' => '2, 6, 12',//count favorites: 3
 		'indication' => [],
 	],
 	'7' => [
@@ -96,7 +91,6 @@ return [
 			3 => 19,
 			6 => 25,
 		],
-		'favorites' => '4, 6, 7',//count favorites: 3
 		'indication' => [],
 	],
 	'8' => [
@@ -110,7 +104,6 @@ return [
 			4 => 24.5,
 			1 => 30,
 		],
-		'favorites' => '1, 5, 7',//count favorites: 3
 		'indication' => [],
 	],
 	'9' => [
@@ -124,7 +117,6 @@ return [
 			6 => 15.5,
 			8 => 22,
 		],
-		'favorites' => '5, 10',//count favorites: 2
 		'indication' => [3],
 	],
 	'10' => [
@@ -138,7 +130,6 @@ return [
 			9 => 17.5,
 			4 => 31.5,
 		],
-		'favorites' => '7, 9, 14',//count favorites: 3
 		'indication' => [],
 	],
 ];

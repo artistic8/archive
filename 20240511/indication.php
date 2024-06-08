@@ -12,7 +12,6 @@ return [
 			13 => 19,
 			8 => 18,
 		],
-		'favorites' => '8, 13',//count favorites: 2
 		'indication' => [],
 	],
 	'2' => [
@@ -26,7 +25,7 @@ return [
 			4 => 26.5,
 			3 => 22,
 		],
-		'indication' => [],//count runners < 10
+		'indication' => [],
 	],
 	'3' => [
 		/**
@@ -39,7 +38,6 @@ return [
 			1 => 10.1,
 			3 => 29.5,
 		],
-		'favorites' => '1, 5',//count favorites: 2
 		'indication' => [3],
 	],
 	'4' => [
@@ -53,7 +51,6 @@ return [
 			1 => 17,
 			4 => 59.5,
 		],
-		'favorites' => '1, 6, 8',//count favorites: 3
 		'indication' => [],
 	],
 	'5' => [
@@ -67,7 +64,6 @@ return [
 			3 => 10.1,
 			12 => 48,
 		],
-		'favorites' => '3, 6',//count favorites: 2
 		'indication' => [],
 	],
 	'6' => [
@@ -81,7 +77,6 @@ return [
 			7 => 20.5,
 			3 => 16,
 		],
-		'favorites' => '1, 3, 12',//count favorites: 3
 		'indication' => [],
 	],
 	'7' => [
@@ -95,7 +90,6 @@ return [
 			8 => 24.5,
 			9 => 58.5,
 		],
-		'favorites' => '2, 7',//count favorites: 2
 		'indication' => [1],
 	],
 	'8' => [
@@ -109,8 +103,8 @@ return [
 			13 => 336,
 			14 => 18,
 		],
-		'favorites' => '3, 7',//count favorites: 2
 		'indication' => [4, 8],
+		//CHECK THIS ONE OUT
 	],
 	'9' => [
 		/**
@@ -123,7 +117,6 @@ return [
 			4 => 14.5,
 			8 => 16.5,
 		],
-		'favorites' => '4, 8',//count favorites: 2
 		'indication' => [5],
 	],
 	'10' => [
@@ -137,7 +130,6 @@ return [
 			4 => 66,
 			9 => 38.5,
 		],
-		'favorites' => '2, 10',//count favorites: 2
 		'indication' => [],
 	],
 ];
