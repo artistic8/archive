@@ -133,6 +133,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'place($" . 10 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 10 * $unitBet;
         $totalPlace -= 10 * $unitBet;
+        $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
+        $totalQin -= 20 * combination(2, count($favorites));
     }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
@@ -146,6 +149,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
             $racetext .= "\t\t'0 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
             $totalPlace += $unitBet * $placeAmount[end($favorites)];
+        }
+        if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) {
+            $totalRace[$raceNumber] += 2 * $qinAmount;
+            $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
+            $totalQin += 2 * $qinAmount;
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
