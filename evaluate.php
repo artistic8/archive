@@ -27,6 +27,7 @@ foreach ($dir as $fileinfo) {
         else $monthly[$month] += (float)$parts[1];
     }
 }
+ksort($monthly);
 foreach($monthly as $key => $value){
     echo "Total $key: $value \n";
 }
