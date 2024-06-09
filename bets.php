@@ -149,11 +149,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
         $totalWin -= 1 * $unitBet;
+    }
     if(in_array($compactExpr, $biggestFavoritePlace)){
         $racetext .= "\t\t'place($" . 10 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 10 * $unitBet;
         $totalPlace -= 10 * $unitBet;
-        
     }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
