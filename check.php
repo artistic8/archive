@@ -6,6 +6,9 @@ $favoritesTrio = [];
 $biggestFavoriteWin = [];
 $biggestFavoritePlace = [];
 
+$outFile = __DIR__ . DIRECTORY_SEPARATOR . "condition.php";
+$outtext = "<?php\n";
+
 $dir = new DirectoryIterator(__DIR__);
 foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() && $fileinfo->isDir() && preg_match("/^[0-9]+$/", $fileinfo->getFilename())) {
@@ -69,9 +72,11 @@ sort($favoritesQinKeys);
 sort($favoritesTrioKeys);
 sort($biggestFavoriteWinKeys);
 sort($biggestFavoritePlaceKeys);
-echo '$favoriteWin = ' . "['" . implode("', '", $favoritesWinKeys) . "'];\n";
-echo '$favoriteQin =' . " ['" . implode("', '", $favoritesQinKeys) . "'];\n";
-echo '$favoriteTrio =' . " ['" . implode("', '", $favoritesTrioKeys) . "'];\n";
-echo '$biggestFavoriteWin =' . " ['" . implode("', '", $biggestFavoriteWinKeys) . "'];\n";
-echo '$biggestFavoritePlace =' . " ['" . implode("', '", $biggestFavoritePlaceKeys) . "'];\n";
+$outtext .= '$favoriteWin = ' . "['" . implode("', '", $favoritesWinKeys) . "'];\n";
+$outtext .= '$favoriteQin =' . " ['" . implode("', '", $favoritesQinKeys) . "'];\n";
+$outtext .= '$favoriteTrio =' . " ['" . implode("', '", $favoritesTrioKeys) . "'];\n";
+$outtext .= '$biggestFavoriteWin =' . " ['" . implode("', '", $biggestFavoriteWinKeys) . "'];\n";
+$outtext .= '$biggestFavoritePlace =' . " ['" . implode("', '", $biggestFavoritePlaceKeys) . "'];\n";
+
+file_put_contents($outFile, $outtext);
 ?>
