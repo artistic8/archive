@@ -146,7 +146,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalQin -= 20 * combination(2, count($favorites));
     }
     if(in_array($compactExpr, $favoriteTrio)){
-        $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . "',\n"; 
+        $racetext .= "\t\t'trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
         $totalTrio -= 10 * combination(3, count($favorites));
     }
