@@ -145,6 +145,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         $totalQin -= 20 * combination(2, count($favorites));
     }
+    if(in_array($compactExpr, $favoriteTrio)){
+        $racetext .= "\t\t'qin($10)' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
+        $totalTrio -= 10 * combination(3, count($favorites));
+    }
     if(in_array($compactExpr, $biggestFavoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
@@ -165,18 +170,23 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         if(in_array($compactExpr, $favoriteQin) && count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2){
             $totalRace[$raceNumber] += 2 * $qinAmount;
-            $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
+            $racetext .= "\t\t'2 won(qin bet)' => " . 2 * $qinAmount . ",\n";
             $totalQin += 2 * $qinAmount;
         }
         if(in_array($compactExpr, $biggestFavoriteWin) && $officialWin[0] == end($favorites)){
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-            $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+            $racetext .= "\t\t'3 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
         }
         if(in_array($compactExpr, $biggestFavoritePlace) && in_array(end($favorites), array_slice($officialWin, 0, 3))) {
             $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
-            $racetext .= "\t\t'2 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
+            $racetext .= "\t\t'4 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
             $totalPlace += $unitBet * $placeAmount[end($favorites)];
+        }
+        if(in_array($compactExpr, $favoriteTrio) && count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3){
+            $totalRace[$raceNumber] += $trioAmount;
+            $racetext .= "\t\t'5 won(trio bet)' => " . $trioAmount . ",\n";
+            $totalTrio += $trioAmount;
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
