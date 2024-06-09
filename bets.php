@@ -171,18 +171,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalPlace += $unitBet * $placeAmount[end($favorites)];
             }
         }
-        if($placeCondition){
-            if(in_array(end($favorites), array_slice($officialWin, 0, 3))) {
-                $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
-                $racetext .= "\t\t'2 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
-                $totalPlace += $unitBet * $placeAmount[end($favorites)];
-            }
-            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) {
-                $totalRace[$raceNumber] += 2 * $qinAmount;
-                $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
-                $totalQin += 2 * $qinAmount;
-            }
-        }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
     }
