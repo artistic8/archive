@@ -132,14 +132,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = count($wininter) . count($qininter) . count($winpivots) . count($qinpivots) . count($pivots);
-    $placeCondition = !empty($wininter) && !in_array($compactExpr, ["11233", "11333", "12123", "12333", "13233", "13333"]) && count($pivots) === 3;
+    $winCondition = (count($qininter) >= 2 || (count($qininter) > 0 && !empty(array_diff([2], $qininter)) && count($winpivots) === 2 && in_array(end($favorites), $winpivots))) 
+    && 
+    (count($pivots) === 3);
+    $placeCondition = (count($wininter) >= 2 || (count($wininter) > 0 && !empty(array_diff([2], $wininter)) && count($winpivots) === 2 && in_array(end($favorites), $winpivots))) 
+    && 
+    (count($pivots) === 3);
     if(
         $placeCondition
     ){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet;
-        $totalWin -= 1 * $unitBet;
         $racetext .= "\t\t'place($" . 10 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 10 * $unitBet;
         $totalPlace -= 10 * $unitBet;
@@ -147,15 +148,30 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         $totalQin -= 20 * combination(2, count($favorites));
     }
+    if($winCondition){
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet;
+        $totalWin -= 1 * $unitBet;
+        $racetext .= "\t\t'place($" . 10 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
+        $totalBets[$raceNumber] += 10 * $unitBet;
+        $totalPlace -= 10 * $unitBet;
+    }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-        if($placeCondition){
+        if($winCondition){
             if(end($favorites) == $officialWin[0]) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
+            if(in_array(end($favorites), array_slice($officialWin, 0, 3))) {
+                $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
+                $racetext .= "\t\t'4 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
+                $totalPlace += $unitBet * $placeAmount[end($favorites)];
+            }
+        }
+        if($placeCondition){
             if(in_array(end($favorites), array_slice($officialWin, 0, 3))) {
                 $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
                 $racetext .= "\t\t'2 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
