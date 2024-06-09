@@ -15,6 +15,8 @@ return [
 			4 => 25,
 			12 => 31,
 		],
+		'win inter' => '',
+		'qin inter' => '',
 		'win pivots' => '1, 2, 3, 8, 10',
 		'qin pivots' => '1, 2, 3, 8, 10',
 		'trio pivots' => '1, 2, 3, 8, 10',
@@ -32,8 +34,8 @@ return [
 			2 => 29,
 			6 => 15,
 		],
-		'win inter' => '6',//count: 1
-		'qin inter' => '6',//count: 1
+		'win inter' => '6',
+		'qin inter' => '6',
 		'win pivots' => '6',
 		'qin pivots' => '6',
 		'trio pivots' => '6',
@@ -52,6 +54,8 @@ return [
 			13 => 35.5,
 			11 => 28,
 		],
+		'win inter' => '',
+		'qin inter' => '',
 		'win pivots' => '12',
 		'qin pivots' => '8, 12',
 		'trio pivots' => '2, 8, 12',
@@ -70,8 +74,8 @@ return [
 			4 => 31,
 			6 => 26.5,
 		],
-		'win inter' => '10',//count: 1
-		'qin inter' => '10',//count: 1
+		'win inter' => '10',
+		'qin inter' => '10',
 		'win pivots' => '10',
 		'qin pivots' => '10',
 		'trio pivots' => '10',
@@ -90,7 +94,9 @@ return [
 			6 => 15.5,
 			10 => 40,
 		],
-		'qin inter' => '4, 6',//count: 2
+		'win inter' => '',
+		'qin inter' => '4, 6',
+		'win pivots' => '',
 		'qin pivots' => '4, 6',
 		'trio pivots' => '4, 6',
 	],
@@ -108,8 +114,11 @@ return [
 			6 => 44,
 			3 => 37.5,
 		],
-		'win inter' => '10',//count: 1
-		'qin inter' => '10',//count: 1
+		'win inter' => '10',
+		'qin inter' => '10',
+		'win pivots' => '',
+		'qin pivots' => '',
+		'trio pivots' => '',
 	],
 	'7' => [
 		/**
@@ -125,8 +134,8 @@ return [
 			2 => 14.5,
 			8 => 34,
 		],
-		'win inter' => '1, 3',//count: 2
-		'qin inter' => '1, 3',//count: 2
+		'win inter' => '1, 3',
+		'qin inter' => '1, 3',
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3',
 		'trio pivots' => '1, 3',
@@ -145,6 +154,8 @@ return [
 			3 => 26.5,
 			9 => 34,
 		],
+		'win inter' => '',
+		'qin inter' => '',
 		'win pivots' => '4, 8, 12',
 		'qin pivots' => '4, 8, 9, 12',
 		'trio pivots' => '4, 8, 9, 12',
@@ -163,6 +174,11 @@ return [
 			12 => 39,
 			14 => 16,
 		],
+		'win inter' => '',
+		'qin inter' => '',
+		'win pivots' => '',
+		'qin pivots' => '',
+		'trio pivots' => '',
 	],
 	'10' => [
 		/**
@@ -178,6 +194,8 @@ return [
 			5 => 17,
 			3 => 19,
 		],
+		'win inter' => '',
+		'qin inter' => '',
 		'win pivots' => '3, 5',
 		'qin pivots' => '1, 3, 4, 5',
 		'trio pivots' => '1, 3, 4, 5',
