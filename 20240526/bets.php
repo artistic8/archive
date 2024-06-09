@@ -85,8 +85,8 @@ return [
 		'place($1000)' => '5',
 		'total bets' => 1360,
 		'1 won(win bet)' => 205,
-		'3 won(qin bet)' => 331,
-		'2 won(place bet)' => 3900,
+		'2 won(qin bet)' => 331,
+		'4 won(place bet)' => 3900,
 		'total won in race' => 3076,
 	],
 	'5' => [
@@ -210,7 +210,7 @@ return [
 		'trio pivots' => '1, 3, 4, 10',
 		'place($1000)' => '10',
 		'total bets' => 1000,
-		'2 won(place bet)' => 1500,
+		'4 won(place bet)' => 1500,
 		'total won in race' => 500,
 	],
 ];

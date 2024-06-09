@@ -45,8 +45,8 @@ return [
 		'place($1000)' => '6',
 		'total bets' => 1400,
 		'1 won(win bet)' => 650,
-		'1 won(win bet)' => 650,
-		'2 won(place bet)' => 1900,
+		'3 won(win bet)' => 650,
+		'4 won(place bet)' => 1900,
 		'total won in race' => 1800,
 	],
 	'3' => [

@@ -161,7 +161,7 @@ return [
 		'trio pivots' => '4, 7, 8',
 		'place($1000)' => '8',
 		'total bets' => 1000,
-		'2 won(place bet)' => 1400,
+		'4 won(place bet)' => 1400,
 		'total won in race' => 400,
 	],
 	'9' => [
