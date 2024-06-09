@@ -129,39 +129,54 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
     $compactExpr = count($wininter) . count($qininter) . count($winpivots) . count($qinpivots) . count($pivots);
-    $placeCondition = !empty($wininter) && !in_array($compactExpr, ["11233", "11333", "12123", "12333", "13233", "13333"]) && count($pivots) === 3;
-    if(
-        $placeCondition
-    ){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet;
-        $totalWin -= 1 * $unitBet;
-        $racetext .= "\t\t'place($" . 10 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
-        $totalBets[$raceNumber] += 10 * $unitBet;
-        $totalPlace -= 10 * $unitBet;
+    $favoriteWin = ['11134', '11234', '11245', '11255', '11355', '11444', '11555', '12233', '12334', '12355', '12445', '12555', '13244', '13333', '14444', '14566', '22233', '23333', '33333'];
+    $favoriteQin = ['11134', '11255', '12445', '33333'];
+    $favoriteTrio = ['11255', '12445'];
+    $biggestFavoriteWin = ['11134', '11355', '22233', '23333'];
+    $biggestFavoritePlace = ['11134', '11255', '11355', '11666', '12233', '12344', '22233', '22333', '23333', '33333'];
+    
+    if(in_array($compactExpr, $favoriteWin)){
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
+        $totalWin -= 1 * $unitBet * count($favorites);
+    }
+    if(in_array($compactExpr, $favoriteQin)){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         $totalQin -= 20 * combination(2, count($favorites));
     }
+    if(in_array($compactExpr, $biggestFavoriteWin)){
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet;
+        $totalWin -= 1 * $unitBet;
+    if(in_array($compactExpr, $biggestFavoritePlace)){
+        $racetext .= "\t\t'place($" . 10 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
+        $totalBets[$raceNumber] += 10 * $unitBet;
+        $totalPlace -= 10 * $unitBet;
+        
+    }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-        if($placeCondition){
-            if(end($favorites) == $officialWin[0]) {
-                $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-                $totalWin += ($unitBet / 10) * $winAmount;
-            }
-            if(in_array(end($favorites), array_slice($officialWin, 0, 3))) {
-                $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
-                $racetext .= "\t\t'2 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
-                $totalPlace += $unitBet * $placeAmount[end($favorites)];
-            }
-            if(count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2) {
-                $totalRace[$raceNumber] += 2 * $qinAmount;
-                $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
-                $totalQin += 2 * $qinAmount;
-            }
+        if(in_array($compactExpr, $favoriteWin) && in_array($officialWin[0], $favorites)){
+            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+            $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+            $totalWin += ($unitBet / 10) * $winAmount;
+        }
+        if(in_array($compactExpr, $favoriteQin) && count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2){
+            $totalRace[$raceNumber] += 2 * $qinAmount;
+            $racetext .= "\t\t'3 won(qin bet)' => " . 2 * $qinAmount . ",\n";
+            $totalQin += 2 * $qinAmount;
+        }
+        if(in_array($compactExpr, $biggestFavoriteWin) && $officialWin[0] == end($favorites)){
+            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+            $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+            $totalWin += ($unitBet / 10) * $winAmount;
+        }
+        if(in_array($compactExpr, $biggestFavoritePlace) && in_array(end($favorites), array_slice($officialWin, 0, 3))) {
+            $totalRace[$raceNumber] += $unitBet * $placeAmount[end($favorites)];
+            $racetext .= "\t\t'2 won(place bet)' => " . $unitBet * $placeAmount[end($favorites)] . ",\n";
+            $totalPlace += $unitBet * $placeAmount[end($favorites)];
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
