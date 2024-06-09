@@ -45,8 +45,7 @@ return [
 		'total bets' => 2160,
 		'1 won(win bet)' => 505,
 		'4 won(place bet)' => 1800,
-		'2 won(place bet)' => 1800,
-		'total won in race' => 1945,
+		'total won in race' => 145,
 	],
 	'3' => [
 		/**
@@ -167,9 +166,7 @@ return [
 		'place($1000)' => '8',
 		'total bets' => 2160,
 		'4 won(place bet)' => 2000,
-		'2 won(place bet)' => 2000,
-		'3 won(qin bet)' => 318,
-		'total won in race' => 2158,
+		'total won in race' => -160,
 	],
 	'9' => [
 		/**
@@ -196,9 +193,7 @@ return [
 		'place($1000)' => '5',
 		'total bets' => 2160,
 		'4 won(place bet)' => 4700,
-		'2 won(place bet)' => 4700,
-		'3 won(qin bet)' => 1466,
-		'total won in race' => 8706,
+		'total won in race' => 2540,
 	],
 	'10' => [
 		/**
@@ -220,7 +215,7 @@ return [
 	],
 ];
 //total win: 205
-//total place: 11000
-//total qin: 1604
+//total place: 2500
+//total qin: -180
 //total trio: 0
-//total: 12809
+//total: 2525

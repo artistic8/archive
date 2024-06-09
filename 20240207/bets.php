@@ -186,12 +186,11 @@ return [
 		'place($1000)' => '5',
 		'total bets' => 2160,
 		'4 won(place bet)' => 2650,
-		'2 won(place bet)' => 2650,
-		'total won in race' => 3140,
+		'total won in race' => 490,
 	],
 ];
 //total win: 425
-//total place: 4250
+//total place: 1600
 //total qin: -60
 //total trio: 0
-//total: 4615
+//total: 1965
