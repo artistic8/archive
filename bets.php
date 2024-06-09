@@ -129,11 +129,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
     $compactExpr = count($wininter) . count($qininter) . count($winpivots) . count($qinpivots) . count($pivots);
-    $favoriteWin = ['11134', '11234', '11245', '11255', '11355', '11444', '11555', '12233', '12334', '12355', '12445', '12555', '13244', '13333', '14444', '14566', '22233', '23333', '33333'];
-    $favoriteQin = ['11134', '11255', '12445', '33333'];
-    $favoriteTrio = ['11255', '12445'];
+    $favoriteWin = ['11134', '11245', '11255', '11355', '11444', '11555', '12223', '12233', '12334', '12344', '12355', '12445', '12555', '13244', '13333', '13355', '14444', '14566', '22233', '23233', '23333', '33333'];
+    $favoriteQin = ['11134', '11255', '12344', '12445', '33333'];
+    $favoriteTrio = ['11255', '12344', '12445'];
     $biggestFavoriteWin = ['11134', '11355', '22233', '23333'];
-    $biggestFavoritePlace = ['11134', '11255', '11355', '11666', '12233', '12344', '22233', '22333', '23333', '33333'];
+    $biggestFavoritePlace = ['11134', '11255', '11355', '11666', '12344', '22223', '22233', '22333', '22344', '23233', '23333', '33333'];
     
     if(in_array($compactExpr, $favoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
