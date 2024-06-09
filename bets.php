@@ -122,15 +122,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    if(!empty($wininter)){
-        $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',//count: " . count($wininter) . "\n";
-    }
-    if(!empty($qininter)){
-        $racetext .= "\t\t'qin inter' => '" . implode(", ", $qininter) . "',//count: " . count($qininter) . "\n";
-    }
-    if(!empty($winpivots)) $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
-    if(!empty($qinpivots)) $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
-    if(!empty($pivots)) $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
+    $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',\n";
+    $racetext .= "\t\t'qin inter' => '" . implode(", ", $qininter) . "',\n";
+    $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
+    $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
+    $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
     $compactExpr = count($wininter) . count($qininter) . count($winpivots) . count($qinpivots) . count($pivots);
     $placeCondition = !empty($wininter) && !in_array($compactExpr, ["11233", "11333", "12123", "12333", "13233", "13333"]) && count($pivots) === 3;
