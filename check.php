@@ -7,7 +7,7 @@ $biggestFavoriteWin = [];
 $biggestFavoritePlace = [];
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "condition.php";
-$outtext = "<?php\n";
+$outtext = "<?php\n\n\n";
 
 $dir = new DirectoryIterator(__DIR__);
 foreach ($dir as $fileinfo) {
@@ -78,5 +78,6 @@ $outtext .= '$favoriteTrio =' . " ['" . implode("', '", $favoritesTrioKeys) . "'
 $outtext .= '$biggestFavoriteWin =' . " ['" . implode("', '", $biggestFavoriteWinKeys) . "'];\n";
 $outtext .= '$biggestFavoritePlace =' . " ['" . implode("', '", $biggestFavoritePlaceKeys) . "'];\n";
 
+$outtext .="\n?>\n";
 file_put_contents($outFile, $outtext);
 ?>
