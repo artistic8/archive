@@ -187,7 +187,7 @@ return [
 			9 => 16,
 			7 => 44,
 		],
-		'win inter' => '9',
+		'win inter' => '3, 9',
 		'qin inter' => '2, 3, 9',
 		'win pivots' => '3, 9',
 		'qin pivots' => '2, 3, 9',

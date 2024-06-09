@@ -207,7 +207,7 @@ return [
 		'qin inter' => '',
 		'win pivots' => '',
 		'qin pivots' => '',
-		'trio pivots' => '8',
+		'trio pivots' => '1, 8',
 	],
 ];
 //total win: 900

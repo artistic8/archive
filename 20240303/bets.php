@@ -100,7 +100,7 @@ return [
 			3 => 59.5,
 		],
 		'win inter' => '',
-		'qin inter' => '',
+		'qin inter' => '10',
 		'win pivots' => '10',
 		'qin pivots' => '10',
 		'trio pivots' => '10',

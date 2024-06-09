@@ -124,7 +124,7 @@ return [
 			3 => 17,
 		],
 		'win inter' => '',
-		'qin inter' => '11',
+		'qin inter' => '2, 11',
 		'win pivots' => '2, 3, 4, 9, 11',
 		'qin pivots' => '2, 3, 4, 9, 11',
 		'trio pivots' => '2, 3, 4, 9, 11',

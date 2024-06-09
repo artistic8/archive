@@ -178,7 +178,7 @@ return [
 		'qin inter' => '',
 		'win pivots' => '',
 		'qin pivots' => '',
-		'trio pivots' => '',
+		'trio pivots' => '14',
 	],
 	'10' => [
 		/**

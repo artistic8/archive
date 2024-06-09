@@ -96,7 +96,7 @@ return [
 			10 => 16.5,
 		],
 		'win inter' => '',
-		'qin inter' => '',
+		'qin inter' => '10',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',

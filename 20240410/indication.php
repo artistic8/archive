@@ -12,7 +12,7 @@ return [
 			4 => 29.5,
 			3 => 26,
 		],
-		'indication' => [],
+		'indication' => [1],
 	],
 	'2' => [
 		/**

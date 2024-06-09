@@ -156,7 +156,7 @@ return [
 			6 => 15.5,
 		],
 		'win inter' => '',
-		'qin inter' => '1',
+		'qin inter' => '1, 6',
 		'win pivots' => '1, 5, 6',
 		'qin pivots' => '1, 5, 6',
 		'trio pivots' => '1, 5, 6',

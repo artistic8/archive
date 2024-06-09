@@ -136,9 +136,9 @@ return [
 		],
 		'win inter' => '',
 		'qin inter' => '',
-		'win pivots' => '8',
-		'qin pivots' => '8, 9',
-		'trio pivots' => '5, 8, 9',
+		'win pivots' => '7, 8',
+		'qin pivots' => '7, 8, 9',
+		'trio pivots' => '5, 7, 8, 9',
 	],
 	'8' => [
 		/**
@@ -156,7 +156,7 @@ return [
 		],
 		'win inter' => '',
 		'qin inter' => '1, 2',
-		'win pivots' => '5',
+		'win pivots' => '1, 5',
 		'qin pivots' => '1, 2, 5',
 		'trio pivots' => '1, 2, 5',
 	],
