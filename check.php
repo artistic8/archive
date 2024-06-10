@@ -19,16 +19,16 @@ foreach ($dir as $fileinfo) {
         $bets = include($betsFile);
         foreach($bets as $raceNumber => $data){
             if(!isset($data['official win']) || empty($data['official win'])) continue;
-            $favorites = explode(", ", $data['favorites']);
-            $runners = explode(", ", $data['runners']);
+            $favorites = array_filter(explode(", ", $data['favorites']));
+            $runners = array_filter(explode(", ", $data['runners']));
             $nonFavorites = array_diff($runners, $favorites);
-            $winInter = explode(", ", $data['win inter']);
-            $qinInter = explode(", ", $data['qin inter']);
-            $winPivots = explode(", ", $data['win pivots']);
-            $qinPivots = explode(", ", $data['qin pivots']);
-            $trioPivots = explode(", ", $data['trio pivots']);
+            $winInter = array_filter(explode(", ", $data['win inter']));
+            $qinInter = array_filter(explode(", ", $data['qin inter']));
+            $winPivots = array_filter(explode(", ", $data['win pivots']));
+            $qinPivots = array_filter(explode(", ", $data['qin pivots']));
+            $trioPivots = array_filter(explode(", ", $data['trio pivots']));
             $expr = count($winInter) . count($qinInter) . count($winPivots) . count($qinPivots) . count($trioPivots);
-            $winners = explode(", ", $data['official win']);
+            $winners = array_filter(explode(", ", $data['official win']));
             if(in_array($winners[0], $favorites)){
                 if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
             }
