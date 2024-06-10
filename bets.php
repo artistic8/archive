@@ -165,6 +165,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
         $totalTrio -= 10 * combination(3, count($favorites));
     }
+    if(in_array($compactExpr, $nonFavoriteTrio)){
+        $racetext .= "\t\t'trio($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * combination(3, count($nonFavorites));
+        $totalTrio -= 10 * combination(3, count($nonFavorites));
+    }
     if(in_array($compactExpr, $biggestFavoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
@@ -211,6 +216,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(in_array($compactExpr, $favoriteTrio) && count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3){
             $totalRace[$raceNumber] += $trioAmount;
             $racetext .= "\t\t'5 won(trio bet)' => " . $trioAmount . ",\n";
+            $totalTrio += $trioAmount;
+        }
+        if(in_array($compactExpr, $nonFavoriteTrio) && count(array_intersect($nonFavorites, array_slice($officialWin, 0, 3))) === 3){
+            $totalRace[$raceNumber] += $trioAmount;
+            $racetext .= "\t\t'5N won(trio bet)' => " . $trioAmount . ",\n";
             $totalTrio += $trioAmount;
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
