@@ -155,6 +155,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 20 * combination(2, count($favorites));
         $totalQin -= 20 * combination(2, count($favorites));
     }
+    if(in_array($compactExpr, $nonFavoriteQin)){
+        $racetext .= "\t\t'qin($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * combination(2, count($nonFavorites));
+        $totalQin -= 20 * combination(2, count($nonFavorites));
+    }
     if(in_array($compactExpr, $favoriteTrio)){
         $racetext .= "\t\t'trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
@@ -187,6 +192,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += 2 * $qinAmount;
             $racetext .= "\t\t'2 won(qin bet)' => " . 2 * $qinAmount . ",\n";
             $totalQin += 2 * $qinAmount;
+        }
+        if(in_array($compactExpr, $nonFavoriteQin) && count(array_intersect($nonFavorites, array_slice($officialWin, 0, 2))) === 2){
+            $totalRace[$raceNumber] += $qinAmount;
+            $racetext .= "\t\t'2N won(qin bet)' => " . $qinAmount . ",\n";
+            $totalQin += $qinAmount;
         }
         if(in_array($compactExpr, $biggestFavoriteWin) && $officialWin[0] == end($favorites)){
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
