@@ -71,7 +71,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     sort($runners);
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
-   
+    $nonFavorites = array_diff($runners, $favorites);
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
@@ -134,6 +134,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $favoriteWin = ['11134', '11245', '11255', '11355', '11444', '11555', '12223', '12233', '12334', '12344', '12355', '12445', '12555', '13244', '13333', '13355', '14444', '14566', '22233', '23233', '23333', '33333'];
     $favoriteQin = ['11134', '11255', '12344', '12445', '33333'];
     $favoriteTrio = ['11255', '12344', '12445'];
+    $nonFavoriteWin = ['11113', '11666', '12123', '12444', '12777', '13133', '13444', '22223', '22344'];
+    $nonFavoriteQin = ['11113', '12123', '12444', '22344'];
+    $nonFavoriteTrio = ['11113', '12123'];
     $biggestFavoriteWin = ['11134', '11355', '22233', '23333'];
     $biggestFavoritePlace = ['11134', '11255', '11355', '11666', '12344', '22223', '22233', '22333', '22344', '23233', '23333', '33333'];
     
@@ -141,6 +144,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);
+    }
+    if(in_array($compactExpr, $nonFavoriteWin)){
+        $racetext .= "\t\t'win($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * count($nonFavorites);
+        $totalWin -= 10 * count($nonFavorites);
     }
     if(in_array($compactExpr, $favoriteQin)){
         $racetext .= "\t\t'qin($20)' => '" . implode(", ", $favorites) . "',\n"; 
@@ -169,6 +177,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
             $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
+        }
+        if(in_array($compactExpr, $nonFavoriteWin) && in_array($officialWin[0], $nonFavorites)){
+            $totalRace[$raceNumber] += $winAmount;
+            $racetext .= "\t\t'1N won(win bet)' => " . $winAmount . ",\n";
+            $totalWin += $winAmount;
         }
         if(in_array($compactExpr, $favoriteQin) && count(array_intersect($favorites, array_slice($officialWin, 0, 2))) === 2){
             $totalRace[$raceNumber] += 2 * $qinAmount;
