@@ -50,7 +50,7 @@ return [
 		'1 won(win bet)' => 505,
 		'3 won(win bet)' => 505,
 		'4 won(place bet)' => 1800,
-		'4P won(place bet)' => 360,
+		'4P won(place bet 10)' => 360,
 		'total won in race' => 1360,
 	],
 	'3' => [
@@ -232,7 +232,7 @@ return [
 		'place($50)' => '11',
 		'total bets' => 160,
 		'1N won(win bet)' => 92,
-		'4P won(place bet)' => 95,
+		'4P won(place bet 11)' => 95,
 		'total won in race' => -68,
 	],
 ];

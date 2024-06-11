@@ -28,8 +28,8 @@ return [
 		'total bets' => 1400,
 		'1 won(win bet)' => 625,
 		'4 won(place bet)' => 1950,
-		'4P won(place bet)' => 97.5,
-		'4P won(place bet)' => 147.5,
+		'4P won(place bet 7)' => 97.5,
+		'4P won(place bet 9)' => 147.5,
 		'total won in race' => 1175,
 	],
 	'2' => [
@@ -207,9 +207,9 @@ return [
 		'total bets' => 1240,
 		'4 won(place bet)' => 2650,
 		'1N won(win bet)' => 102,
-		'4P won(place bet)' => 132.5,
-		'4P won(place bet)' => 132.5,
-		'4P won(place bet)' => 252.5,
+		'4P won(place bet 5)' => 132.5,
+		'4P won(place bet 8)' => 132.5,
+		'4P won(place bet 9)' => 252.5,
 		'total won in race' => 1512,
 	],
 ];

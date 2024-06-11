@@ -96,9 +96,9 @@ return [
 		'total bets' => 700,
 		'1N won(win bet)' => 168,
 		'2N won(qin bet)' => 5059,
-		'4P won(place bet)' => 65,
-		'4P won(place bet)' => 762.5,
-		'4P won(place bet)' => 167.5,
+		'4P won(place bet 1)' => 65,
+		'4P won(place bet 5)' => 762.5,
+		'4P won(place bet 10)' => 167.5,
 		'total won in race' => 4527,
 	],
 	'5' => [

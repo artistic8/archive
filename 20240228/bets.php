@@ -52,9 +52,9 @@ return [
 		'place($50)' => '9',
 		'total bets' => 650,
 		'1 won(win bet)' => 590,
-		'4P won(place bet)' => 155,
-		'4P won(place bet)' => 115,
-		'4P won(place bet)' => 107.5,
+		'4P won(place bet 2)' => 155,
+		'4P won(place bet 6)' => 115,
+		'4P won(place bet 9)' => 107.5,
 		'total won in race' => -60,
 	],
 	'3' => [
@@ -79,7 +79,7 @@ return [
 		'trio pivots' => '3, 6, 8, 9, 12',
 		'place($50)' => '12',
 		'total bets' => 50,
-		'4P won(place bet)' => 117.5,
+		'4P won(place bet 12)' => 117.5,
 		'total won in race' => -50,
 	],
 	'4' => [

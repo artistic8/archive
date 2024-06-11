@@ -64,9 +64,9 @@ return [
 		'3 won(win bet)' => 630,
 		'4 won(place bet)' => 2400,
 		'5 won(trio bet)' => 257,
-		'4P won(place bet)' => 120,
-		'4P won(place bet)' => 85,
-		'4P won(place bet)' => 120,
+		'4P won(place bet 2)' => 120,
+		'4P won(place bet 5)' => 85,
+		'4P won(place bet 12)' => 120,
 		'total won in race' => 2572,
 	],
 	'3' => [
@@ -93,7 +93,7 @@ return [
 		'place($50)' => '9',
 		'total bets' => 350,
 		'1 won(win bet)' => 205,
-		'4P won(place bet)' => 115,
+		'4P won(place bet 9)' => 115,
 		'total won in race' => -145,
 	],
 	'4' => [
@@ -122,9 +122,9 @@ return [
 		'place($50)' => '6',
 		'total bets' => 240,
 		'1N won(win bet)' => 77.5,
-		'4P won(place bet)' => 92.5,
-		'4P won(place bet)' => 110,
-		'4P won(place bet)' => 125,
+		'4P won(place bet 1)' => 92.5,
+		'4P won(place bet 5)' => 110,
+		'4P won(place bet 6)' => 125,
 		'total won in race' => -162.5,
 	],
 	'5' => [
@@ -153,7 +153,7 @@ return [
 		'total bets' => 1450,
 		'1 won(win bet)' => 475,
 		'4 won(place bet)' => 3200,
-		'4P won(place bet)' => 170,
+		'4P won(place bet 10)' => 170,
 		'total won in race' => 2225,
 	],
 	'6' => [
@@ -199,7 +199,7 @@ return [
 		'trio pivots' => '1, 3, 4, 5, 14',
 		'place($50)' => '12',
 		'total bets' => 50,
-		'4P won(place bet)' => 135,
+		'4P won(place bet 12)' => 135,
 		'total won in race' => -50,
 	],
 	'8' => [
@@ -272,7 +272,7 @@ return [
 		'place($50)' => '1',
 		'total bets' => 160,
 		'1N won(win bet)' => 120,
-		'4P won(place bet)' => 285,
+		'4P won(place bet 1)' => 285,
 		'total won in race' => -40,
 	],
 ];
