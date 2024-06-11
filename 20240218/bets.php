@@ -139,7 +139,7 @@ return [
 		'4P won(place bet 1)' => 130,
 		'4P won(place bet 5)' => 282.5,
 		'4P won(place bet 8)' => 687.5,
-		'total won in race' => 11642.5,
+		'total won in race' => 12742.5,
 	],
 	'7' => [
 		/**
@@ -231,11 +231,11 @@ return [
 		'1N won(win bet)' => 52,
 		'2N won(qin bet)' => 458.5,
 		'4P won(place bet 10)' => 237.5,
-		'total won in race' => 10.5,
+		'total won in race' => 248,
 	],
 ];
 //total win: -52.5
 //total place: 1137.5
 //total qin: 985.5
 //total trio: 10200
-//total: 11653
+//total: 12990.5

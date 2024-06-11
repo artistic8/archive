@@ -55,7 +55,7 @@ return [
 		'4P won(place bet 2)' => 155,
 		'4P won(place bet 6)' => 115,
 		'4P won(place bet 9)' => 107.5,
-		'total won in race' => -60,
+		'total won in race' => 317.5,
 	],
 	'3' => [
 		/**
@@ -80,7 +80,7 @@ return [
 		'place($50)' => '12',
 		'total bets' => 50,
 		'4P won(place bet 12)' => 117.5,
-		'total won in race' => -50,
+		'total won in race' => 67.5,
 	],
 	'4' => [
 		/**
@@ -213,4 +213,4 @@ return [
 //total place: 295
 //total qin: 0
 //total trio: 0
-//total: -170.5
+//total: 324.5
