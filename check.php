@@ -8,6 +8,9 @@ $nonFavoritesQin = [];
 $nonFavoritesTrio = [];
 $biggestFavoriteWin = [];
 $biggestFavoritePlace = [];
+$place = [];
+$placeKeys = [];
+for($k = 1; $k <= 14; $k ++) $place[$k] = [];
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "condition.php";
 $outtext = "<?php\n\n\n";
@@ -61,7 +64,19 @@ foreach ($dir as $fileinfo) {
                 if(!isset($nonFavoritesTrio[$expr])) $nonFavoritesTrio[$expr] = true;
             }
             else $nonFavoritesTrio[$expr] = false;
+            for($k = 1; $k <= 14; $k++){
+                if(in_array($k, array_slice($winners, 0, 3))){
+                    if(!isset($place[$k][$expr])) $place[$k][$expr] = true;
+                }
+                else $place[$k][$expr] = false;
+            }
         }
+    }
+}
+
+for($k = 1; $k <= 14; $k++){
+    foreach($place[$k] as $key => $value){
+        if($value === false) unset($place[$k][$key]);
     }
 }
 foreach($favoritesWin as $key => $value){
@@ -96,6 +111,10 @@ $nonFavoritesQinKeys = array_keys($nonFavoritesQin);
 $nonFavoritesTrioKeys = array_keys($nonFavoritesTrio);
 $biggestFavoriteWinKeys = array_keys($biggestFavoriteWin);
 $biggestFavoritePlaceKeys = array_keys($biggestFavoritePlace);
+for($k = 1; $k <= 14; $k++){
+    $placeKeys[$k] = array_keys($place[$k]);
+    sort($placeKeys[$k]);
+}
 sort($favoritesWinKeys);
 sort($favoritesQinKeys);
 sort($favoritesTrioKeys);
@@ -112,7 +131,9 @@ $outtext .= '$nonFavoriteQin =' . " ['" . implode("', '", $nonFavoritesQinKeys) 
 $outtext .= '$nonFavoriteTrio =' . " ['" . implode("', '", $nonFavoritesTrioKeys) . "'];\n";
 $outtext .= '$biggestFavoriteWin =' . " ['" . implode("', '", $biggestFavoriteWinKeys) . "'];\n";
 $outtext .= '$biggestFavoritePlace =' . " ['" . implode("', '", $biggestFavoritePlaceKeys) . "'];\n";
-
+$outtext .= '$placeCondition' . " = [\n";
+for($k = 1; $k <= 14; $k++) $outtext .= "\t$k => ['" . implode("', '", $placeKeys[$k]) . "'],\n";
+$outtext .= "];\n";
 $outtext .="\n?>\n";
 file_put_contents($outFile, $outtext);
 ?>
