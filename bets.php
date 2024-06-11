@@ -247,7 +247,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalTrio += $trioAmount;
         }
         foreach($placeCondition as $placer => $criteria){
-            if(in_array($compactExpr, $criteria) && in_array($placer, array_slice($officialWin, 0, 3))){
+            if(in_array($compactExpr, $criteria) && in_array($placer, array_slice($officialWin, 0, 3)) && isset($placeAmount[$placer])){
                 $racetext .= "\t\t'4P won(place bet)' => " . 5 * $placeAmount[$placer] . ",\n";
                 $totalPlace += 5 * $placeAmount[$placer];
             }
