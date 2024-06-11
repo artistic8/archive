@@ -43,9 +43,15 @@ return [
 		'qin pivots' => '2, 10, 13, 14',
 		'trio pivots' => '2, 10, 13, 14',
 		'win($100)' => '2, 10, 13, 14',
-		'total bets' => 400,
+		'place($50)' => '2',
+		'place($50)' => '9',
+		'place($50)' => '10',
+		'total bets' => 550,
 		'1 won(win bet)' => 400,
-		'total won in race' => 0,
+		'4P won(place bet)' => 82.5,
+		'4P won(place bet)' => 97.5,
+		'4P won(place bet)' => 80,
+		'total won in race' => -150,
 	],
 	'3' => [
 		/**
@@ -122,9 +128,11 @@ return [
 		'qin pivots' => '1, 11',
 		'trio pivots' => '1, 4, 11',
 		'win($100)' => '1, 4, 11',
-		'total bets' => 300,
+		'place($50)' => '2',
+		'total bets' => 350,
 		'1 won(win bet)' => 175,
-		'total won in race' => -125,
+		'4P won(place bet)' => 215,
+		'total won in race' => -175,
 	],
 	'6' => [
 		/**
@@ -191,11 +199,17 @@ return [
 		'place($1000)' => '11',
 		'win($10)' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14',
 		'qin($10)' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14',
-		'total bets' => 1780,
+		'place($50)' => '1',
+		'place($50)' => '4',
+		'place($50)' => '11',
+		'total bets' => 1930,
 		'4 won(place bet)' => 2700,
 		'1N won(win bet)' => 1650,
 		'2N won(qin bet)' => 11266,
-		'total won in race' => 13836,
+		'4P won(place bet)' => 1535,
+		'4P won(place bet)' => 217.5,
+		'4P won(place bet)' => 135,
+		'total won in race' => 13686,
 	],
 	'9' => [
 		/**
@@ -241,15 +255,21 @@ return [
 		'place($1000)' => '10',
 		'win($10)' => '2, 5, 6, 7, 8, 9, 11, 12, 13, 14',
 		'qin($10)' => '2, 5, 6, 7, 8, 9, 11, 12, 13, 14',
-		'total bets' => 1550,
+		'place($50)' => '9',
+		'place($50)' => '10',
+		'place($50)' => '11',
+		'total bets' => 1700,
 		'4 won(place bet)' => 1500,
 		'1N won(win bet)' => 404.5,
 		'2N won(qin bet)' => 4495,
-		'total won in race' => 4849.5,
+		'4P won(place bet)' => 362.5,
+		'4P won(place bet)' => 75,
+		'4P won(place bet)' => 427.5,
+		'total won in race' => 4699.5,
 	],
 ];
 //total win: 1619
-//total place: 5100
+//total place: 7827.5
 //total qin: 13812
 //total trio: 0
-//total: 21641
+//total: 21141

@@ -45,11 +45,17 @@ return [
 		'win($10)' => '2, 3, 4, 5, 8, 9, 10, 11, 12',
 		'qin($10)' => '2, 3, 4, 5, 8, 9, 10, 11, 12',
 		'trio($10)' => '2, 3, 4, 5, 8, 9, 10, 11, 12',
-		'total bets' => 1290,
+		'place($50)' => '2',
+		'place($50)' => '5',
+		'place($50)' => '8',
+		'total bets' => 1440,
 		'1N won(win bet)' => 84,
 		'2N won(qin bet)' => 340.5,
 		'5N won(trio bet)' => 1053,
-		'total won in race' => 187.5,
+		'4P won(place bet)' => 132.5,
+		'4P won(place bet)' => 140,
+		'4P won(place bet)' => 147.5,
+		'total won in race' => 37.5,
 	],
 	'3' => [
 		/**
@@ -73,10 +79,16 @@ return [
 		'trio pivots' => '2, 3, 7, 9',
 		'win($100)' => '2, 3, 7, 9',
 		'qin($20)' => '2, 3, 7, 9',
-		'total bets' => 520,
+		'place($50)' => '3',
+		'place($50)' => '4',
+		'place($50)' => '7',
+		'total bets' => 670,
 		'1 won(win bet)' => 625,
 		'2 won(qin bet)' => 265,
-		'total won in race' => 370,
+		'4P won(place bet)' => 87.5,
+		'4P won(place bet)' => 127.5,
+		'4P won(place bet)' => 100,
+		'total won in race' => 220,
 	],
 	'4' => [
 		/**
@@ -99,9 +111,11 @@ return [
 		'qin pivots' => '1, 5, 11',
 		'trio pivots' => '1, 5, 11',
 		'win($100)' => '1, 5, 11',
-		'total bets' => 300,
+		'place($50)' => '9',
+		'total bets' => 350,
 		'1 won(win bet)' => 400,
-		'total won in race' => 100,
+		'4P won(place bet)' => 130,
+		'total won in race' => 50,
 	],
 	'5' => [
 		/**
@@ -125,10 +139,16 @@ return [
 		'trio pivots' => '1, 4, 5, 7, 9',
 		'win($100)' => '1, 4, 5, 7, 9',
 		'qin($20)' => '1, 4, 5, 7, 9',
-		'total bets' => 700,
+		'place($50)' => '3',
+		'place($50)' => '5',
+		'place($50)' => '7',
+		'total bets' => 850,
 		'1 won(win bet)' => 395,
 		'2 won(qin bet)' => 184,
-		'total won in race' => -121,
+		'4P won(place bet)' => 215,
+		'4P won(place bet)' => 80,
+		'4P won(place bet)' => 77.5,
+		'total won in race' => -271,
 	],
 	'6' => [
 		/**
@@ -220,7 +240,7 @@ return [
 	],
 ];
 //total win: 279
-//total place: 0
+//total place: 737.5
 //total qin: -250.5
 //total trio: 213
-//total: 601.5
+//total: 101.5
