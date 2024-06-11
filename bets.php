@@ -139,7 +139,22 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $nonFavoriteTrio = ['01113', '12123'];
     $biggestFavoriteWin = ['00134', '01355', '02344', '11133', '12223', '12233', '22233', '23333'];
     $biggestFavoritePlace = ['00002', '00134', '00334', '00444', '00666', '01022', '01122', '01123', '01144', '01223', '01255', '01355', '02222', '02344', '11133', '12223', '12233', '12344', '22223', '22233', '22333', '22344', '23233', '23333', '33333'];
-    
+    $placeCondition = [
+        1 => ['00023', '00133', '00455', '00555', '00666', '01022', '01023', '01113', '01122', '02333', '02777', '11344', '12223', '12444', '13233'],
+        2 => ['00112', '00144', '00223', '01245', '02222', '02223', '02344', '02445', '04566', '12123', '12223', '12344', '13233', '13244', '14444'],
+        3 => ['00023', '01023', '01133', '01144', '01223', '01355', '01455', '02222', '03133', '03233', '11133', '11444', '12344', '12555', '13355', '14444', '23444'],
+        4 => ['00112', '00133', '00134', '00334', '00555', '01112', '01122', '01123', '01144', '01222', '01223', '02445', '03133', '04566', '11444', '12223', '12334'],
+        5 => ['00023', '00223', '00455', '00666', '01113', '01255', '01455', '02344', '02445', '02777', '12123', '12444', '13244', '22223'],
+        6 => ['00033', '00133', '00134', '00455', '01223', '01245', '11244', '12555'],
+        7 => ['00012', '00033', '01123', '01255', '01455', '02777', '04566', '11444', '13244', '23233'],
+        8 => ['01113', '01144', '02222', '03133', '11133', '11344', '12123', '12334', '12344', '13355', '22223'],
+        9 => ['00033', '00144', '01022', '01245', '01334', '02133', '03233', '11133', '12334', '12355', '13333', '14444', '22223', '22344', '23233'],
+        10 => ['00012', '00022', '00144', '00334', '00444', '01023', '03233', '11244', '12233', '12355', '12444', '22344'],
+        11 => ['00333', '00334', '01112', '01122', '01255', '01355', '11223', '12355', '22344'],
+        12 => ['00134', '00345', '00555', '00666', '01022', '01123', '01355', '02344', '11344', '22444'],
+        13 => ['00012', '00112', '00223'],
+        14 => ['13355'],
+    ];
     
     if(in_array($compactExpr, $favoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
@@ -180,6 +195,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'trio($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
         $totalBets[$raceNumber] += 10 * combination(3, count($nonFavorites));
         $totalTrio -= 10 * combination(3, count($nonFavorites));
+    }
+    foreach($placeCondition as $placer => $criteria){
+        if(in_array($compactExpr, $criteria)){
+            $racetext .= "\t\t'place($50)' => '" .  $placer  . "',\n"; 
+            $totalBets[$raceNumber] += 50;
+            $totalPlace -= 50;
+        }
     }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
@@ -223,6 +245,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += $trioAmount;
             $racetext .= "\t\t'5N won(trio bet)' => " . $trioAmount . ",\n";
             $totalTrio += $trioAmount;
+        }
+        foreach($placeCondition as $placer => $criteria){
+            if(in_array($compactExpr, $criteria) && in_array($placer, array_slice($officialWin, 0, 3))){
+                $racetext .= "\t\t'4P won(place bet)' => " . 5 * $placeAmount[$placer] . ",\n";
+                $totalPlace += 5 * $placeAmount[$placer];
+            }
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
