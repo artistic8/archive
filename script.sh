@@ -4,7 +4,6 @@ for f in *; do
         php populate.php;
         git checkout $f/;
         php bets.php $f;
-        php indication.php $f;
         git checkout history.php;
     fi
 done
