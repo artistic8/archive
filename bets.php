@@ -208,13 +208,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 10 * combination(3, count($nonFavorites));
         $totalTrio -= 10 * combination(3, count($nonFavorites));
     }
+    $surePlace = [];
     foreach($placeCondition as $placer => $criteria){
         if(in_array($compactExpr, $criteria)){
+            $surePlace[] = $placer;
             $racetext .= "\t\t'place($50)' => '" .  $placer  . "',\n"; 
             $totalBets[$raceNumber] += 50;
             $totalPlace -= 50;
         }
     }
+    $surePlace = array_intersect($surePlace, $favorites);
+    if(!empty($surePlace)) $racetext .= "\t\t'sure wp' => '" . implode(", ", $surePlace) . "',\n";
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
