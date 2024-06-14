@@ -124,7 +124,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',\n";
+    $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',//count: " . count($wininter) . "\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qininter) . "',\n";
     $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
