@@ -16,7 +16,7 @@ return [
 			13 => 19,
 			8 => 18,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '',
 		'win pivots' => '',
 		'qin pivots' => '',
@@ -37,7 +37,7 @@ return [
 			4 => 26.5,
 			3 => 22,
 		],
-		'win inter' => '5',
+		'win inter' => '5',//count: 1
 		'qin inter' => '5',
 		'win pivots' => '5',
 		'qin pivots' => '5',
@@ -58,7 +58,7 @@ return [
 			1 => 10.1,
 			3 => 29.5,
 		],
-		'win inter' => '1',
+		'win inter' => '1',//count: 1
 		'qin inter' => '1',
 		'win pivots' => '1',
 		'qin pivots' => '1',
@@ -79,7 +79,7 @@ return [
 			1 => 17,
 			4 => 59.5,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '',
 		'win pivots' => '1, 6, 8',
 		'qin pivots' => '1, 6, 8',
@@ -106,7 +106,7 @@ return [
 			3 => 10.1,
 			12 => 48,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '3',
 		'win pivots' => '',
 		'qin pivots' => '3',
@@ -127,7 +127,7 @@ return [
 			7 => 20.5,
 			3 => 16,
 		],
-		'win inter' => '1',
+		'win inter' => '1',//count: 1
 		'qin inter' => '1',
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3, 12',
@@ -148,7 +148,7 @@ return [
 			8 => 24.5,
 			9 => 58.5,
 		],
-		'win inter' => '2',
+		'win inter' => '2',//count: 1
 		'qin inter' => '2, 7',
 		'win pivots' => '2',
 		'qin pivots' => '2, 7',
@@ -169,7 +169,7 @@ return [
 			13 => 336,
 			14 => 18,
 		],
-		'win inter' => '3',
+		'win inter' => '3',//count: 1
 		'qin inter' => '3, 7',
 		'win pivots' => '3, 7',
 		'qin pivots' => '3, 7',
@@ -190,7 +190,7 @@ return [
 			4 => 14.5,
 			8 => 16.5,
 		],
-		'win inter' => '8',
+		'win inter' => '8',//count: 1
 		'qin inter' => '4, 8',
 		'win pivots' => '8',
 		'qin pivots' => '4, 8',
@@ -211,7 +211,7 @@ return [
 			4 => 66,
 			9 => 38.5,
 		],
-		'win inter' => '10',
+		'win inter' => '10',//count: 1
 		'qin inter' => '2, 10',
 		'win pivots' => '10',
 		'qin pivots' => '2, 10',
