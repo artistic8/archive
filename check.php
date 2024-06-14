@@ -6,7 +6,9 @@ $favoritesTrio = [];
 $nonFavoritesWin = [];
 $nonFavoritesQin = [];
 $nonFavoritesTrio = [];
+$smallestFavoriteWin = [];
 $biggestFavoriteWin = [];
+$smallestFavoritePlace = [];
 $biggestFavoritePlace = [];
 $place = [];
 $placeKeys = [];
@@ -40,10 +42,18 @@ foreach ($dir as $fileinfo) {
                 if(!isset($nonFavoritesWin[$expr])) $nonFavoritesWin[$expr] = true;
             }
             else $nonFavoritesWin[$expr] = false;
+            if($winners[0] == $favorites[0]){
+                if(!isset($smallestFavoriteWin[$expr])) $smallestFavoriteWin[$expr] = true;
+            }
+            else $smallestFavoriteWin[$expr] = false;
             if($winners[0] == end($favorites)){
                 if(!isset($biggestFavoriteWin[$expr])) $biggestFavoriteWin[$expr] = true;
             }
             else $biggestFavoriteWin[$expr] = false;
+            if(in_array($favorites[0], array_slice($winners, 0, 3))){
+                if(!isset($smallestFavoritePlace[$expr])) $smallestFavoritePlace[$expr] = true;
+            }
+            else $smallestFavoritePlace[$expr] = false;
             if(in_array(end($favorites), array_slice($winners, 0, 3))){
                 if(!isset($biggestFavoritePlace[$expr])) $biggestFavoritePlace[$expr] = true;
             }
@@ -97,8 +107,14 @@ foreach($nonFavoritesQin as $key => $value){
 foreach($nonFavoritesTrio as $key => $value){
     if($value === false) unset($nonFavoritesTrio[$key]);
 }
+foreach($smallestFavoriteWin as $key => $value){
+    if($value === false) unset($smallestFavoriteWin[$key]);
+}
 foreach($biggestFavoriteWin as $key => $value){
     if($value === false) unset($biggestFavoriteWin[$key]);
+}
+foreach($smallestFavoritePlace as $key => $value){
+    if($value === false) unset($smallestFavoritePlace[$key]);
 }
 foreach($biggestFavoritePlace as $key => $value){
     if($value === false) unset($biggestFavoritePlace[$key]);
@@ -110,7 +126,9 @@ $nonFavoritesWinKeys = array_keys($nonFavoritesWin);
 $nonFavoritesQinKeys = array_keys($nonFavoritesQin);
 $nonFavoritesTrioKeys = array_keys($nonFavoritesTrio);
 $biggestFavoriteWinKeys = array_keys($biggestFavoriteWin);
+$smallestFavoriteWinKeys = array_keys($smallestFavoriteWin);
 $biggestFavoritePlaceKeys = array_keys($biggestFavoritePlace);
+$smallestFavoritePlaceKeys = array_keys($smallestFavoritePlace);
 for($k = 1; $k <= 14; $k++){
     $placeKeys[$k] = array_keys($place[$k]);
     sort($placeKeys[$k]);
@@ -121,7 +139,9 @@ sort($favoritesTrioKeys);
 sort($nonFavoritesWinKeys);
 sort($nonFavoritesQinKeys);
 sort($nonFavoritesTrioKeys);
+sort($smallestFavoriteWinKeys);
 sort($biggestFavoriteWinKeys);
+sort($smallestFavoritePlaceKeys);
 sort($biggestFavoritePlaceKeys);
 $outtext .= '$favoriteWin = ' . "['" . implode("', '", $favoritesWinKeys) . "'];\n";
 $outtext .= '$favoriteQin =' . " ['" . implode("', '", $favoritesQinKeys) . "'];\n";
@@ -129,7 +149,9 @@ $outtext .= '$favoriteTrio =' . " ['" . implode("', '", $favoritesTrioKeys) . "'
 $outtext .= '$nonFavoriteWin = ' . "['" . implode("', '", $nonFavoritesWinKeys) . "'];\n";
 $outtext .= '$nonFavoriteQin =' . " ['" . implode("', '", $nonFavoritesQinKeys) . "'];\n";
 $outtext .= '$nonFavoriteTrio =' . " ['" . implode("', '", $nonFavoritesTrioKeys) . "'];\n";
+$outtext .= '$smallestFavoriteWin =' . " ['" . implode("', '", $smallestFavoriteWinKeys) . "'];\n";
 $outtext .= '$biggestFavoriteWin =' . " ['" . implode("', '", $biggestFavoriteWinKeys) . "'];\n";
+$outtext .= '$smallestFavoritePlace =' . " ['" . implode("', '", $smallestFavoritePlaceKeys) . "'];\n";
 $outtext .= '$biggestFavoritePlace =' . " ['" . implode("', '", $biggestFavoritePlaceKeys) . "'];\n";
 $outtext .= '$placeCondition' . " = [\n";
 for($k = 1; $k <= 14; $k++) $outtext .= "\t$k => ['" . implode("', '", $placeKeys[$k]) . "'],\n";
