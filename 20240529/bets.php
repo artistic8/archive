@@ -42,6 +42,7 @@ return [
 		'qin pivots' => '1, 8, 9',
 		'trio pivots' => '1, 8, 9',
 		'place($50)' => '9',
+		'sure wp' => '9',
 		'total bets' => 50,
 		'4P won(place bet 9)' => 80,
 		'total won in race' => 30,

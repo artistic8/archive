@@ -220,6 +220,7 @@ return [
 		'trio pivots' => '3, 5, 11',
 		'win($10)' => '1, 2, 4, 6, 7, 8, 9, 10, 12, 13, 14',
 		'place($50)' => '11',
+		'sure wp' => '11',
 		'total bets' => 160,
 		'1N won(win bet)' => 92,
 		'4P won(place bet 11)' => 95,
