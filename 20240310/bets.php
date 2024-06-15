@@ -21,13 +21,6 @@ return [
 		'win pivots' => '1, 6',
 		'qin pivots' => '1, 6, 11',
 		'trio pivots' => '1, 6, 11',
-		'place($100)' => '1, 6, 11',
-		'win($100)' => '1, 6, 11',
-		'total bets' => 600,
-		'11 won(place bet 6)' => 195,
-		'11 won(place bet 11)' => 190,
-		'1 won(win bet 11)' => 630,
-		'total won in race' => 415,
 	],
 	'2' => [
 		/**
@@ -91,12 +84,6 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
-		'place($100)' => '5',
-		'win($100)' => '5',
-		'total bets' => 200,
-		'11 won(place bet 5)' => 130,
-		'1 won(win bet 5)' => 235,
-		'total won in race' => 165,
 	],
 	'5' => [
 		/**
@@ -139,6 +126,13 @@ return [
 		'win pivots' => '3',
 		'qin pivots' => '3, 7',
 		'trio pivots' => '3, 7',
+		'place($100)' => '3, 7',
+		'win($100)' => '3, 7',
+		'total bets' => 400,
+		'11 won(place bet 3)' => 155,
+		'11 won(place bet 7)' => 110,
+		'1 won(win bet 7)' => 200,
+		'total won in race' => 65,
 	],
 	'7' => [
 		/**
@@ -160,10 +154,6 @@ return [
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3',
 		'trio pivots' => '1, 3',
-		'place($100)' => '1, 3',
-		'win($100)' => '1, 3',
-		'total bets' => 400,
-		'total won in race' => -400,
 	],
 	'8' => [
 		/**
@@ -206,6 +196,14 @@ return [
 		'win pivots' => '2, 3, 5',
 		'qin pivots' => '2, 3, 5',
 		'trio pivots' => '2, 3, 5',
+		'place($100)' => '2, 3, 5',
+		'win($100)' => '2, 3, 5',
+		'total bets' => 600,
+		'11 won(place bet 2)' => 235,
+		'11 won(place bet 3)' => 265,
+		'11 won(place bet 5)' => 470,
+		'1 won(win bet 3)' => 770,
+		'total won in race' => 1140,
 	],
 	'10' => [
 		/**
@@ -227,16 +225,10 @@ return [
 		'win pivots' => '3, 5, 11',
 		'qin pivots' => '3, 5, 11',
 		'trio pivots' => '3, 5, 11',
-		'place($100)' => '3, 5, 11',
-		'win($100)' => '3, 5, 11',
-		'total bets' => 600,
-		'11 won(place bet 3)' => 305,
-		'11 won(place bet 11)' => 190,
-		'total won in race' => -105,
 	],
 ];
-//total win: -35
-//total place: 110
+//total win: 470
+//total place: 735
 //total qin: 0
 //total trio: 0
-//total: 75
+//total: 1205

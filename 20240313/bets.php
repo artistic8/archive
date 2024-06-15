@@ -21,6 +21,14 @@ return [
 		'win pivots' => '2, 4',
 		'qin pivots' => '2, 3, 4',
 		'trio pivots' => '2, 3, 4, 6',
+		'place($100)' => '2, 3, 4, 6',
+		'win($100)' => '2, 3, 4, 6',
+		'total bets' => 800,
+		'11 won(place bet 2)' => 195,
+		'11 won(place bet 4)' => 215,
+		'11 won(place bet 6)' => 365,
+		'1 won(win bet 2)' => 590,
+		'total won in race' => 565,
 	],
 	'2' => [
 		/**
@@ -42,12 +50,6 @@ return [
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
-		'place($100)' => '3, 4',
-		'win($100)' => '3, 4',
-		'total bets' => 400,
-		'11 won(place bet 3)' => 105,
-		'11 won(place bet 4)' => 160,
-		'total won in race' => -135,
 	],
 	'3' => [
 		/**
@@ -90,12 +92,6 @@ return [
 		'win pivots' => '1',
 		'qin pivots' => '1, 2, 3',
 		'trio pivots' => '1, 2, 3',
-		'place($100)' => '1, 2, 3',
-		'win($100)' => '1, 2, 3',
-		'total bets' => 600,
-		'11 won(place bet 3)' => 125,
-		'1 won(win bet 3)' => 240,
-		'total won in race' => -235,
 	],
 	'5' => [
 		/**
@@ -159,12 +155,6 @@ return [
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
-		'place($100)' => '3, 4',
-		'win($100)' => '3, 4',
-		'total bets' => 400,
-		'11 won(place bet 3)' => 375,
-		'1 won(win bet 3)' => 1345,
-		'total won in race' => 1320,
 	],
 	'8' => [
 		/**
@@ -186,10 +176,6 @@ return [
 		'win pivots' => '4, 7',
 		'qin pivots' => '4, 7, 10',
 		'trio pivots' => '4, 7, 10',
-		'place($100)' => '4, 7, 10',
-		'win($100)' => '4, 7, 10',
-		'total bets' => 600,
-		'total won in race' => -600,
 	],
 	'9' => [
 		/**
@@ -211,17 +197,10 @@ return [
 		'win pivots' => '2, 4, 6',
 		'qin pivots' => '2, 4, 5, 6',
 		'trio pivots' => '2, 4, 5, 6',
-		'place($100)' => '2, 4, 5, 6',
-		'win($100)' => '2, 4, 5, 6',
-		'total bets' => 800,
-		'11 won(place bet 4)' => 275,
-		'11 won(place bet 5)' => 175,
-		'1 won(win bet 5)' => 420,
-		'total won in race' => 70,
 	],
 ];
-//total win: 605
-//total place: -185
+//total win: 190
+//total place: 375
 //total qin: 0
 //total trio: 0
-//total: 420
+//total: 565
