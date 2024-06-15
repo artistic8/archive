@@ -3,7 +3,7 @@
 
 $favoriteWin = [9, 32, 50, 56, 65, 72, 75, 80, 85, 90, 126];
 $favoritePlace = [4, 9, 15, 32, 33, 39, 45, 48, 50, 52, 56, 64, 65, 68, 70, 72, 75, 80, 85, 90, 108, 126, 161];
-$favoriteQin = [32, 65, 85'l];
+$favoriteQin = [32, 65, 85];
 $favoriteTrio = [32, 65, 85];
 $smallestFavoriteWin = [];
 $biggestFavoriteWin = [];
