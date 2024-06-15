@@ -159,6 +159,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(!empty(array_intersect($triointer, array_slice($officialWin, 0, 3)))){
             $intersection = array_intersect($triointer, array_slice($officialWin, 0, 3));
             foreach($intersection as $placer){
+                if(!isset($placeAmount[$placer])) continue;
                 $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$placer];
                 $racetext .= "\t\t'4P won(place bet $placer)' => " . ($unitBet / 10) * $placeAmount[$placer] . ",\n";
                 $totalPlace += ($unitBet / 10) * $placeAmount[$placer];
