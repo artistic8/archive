@@ -150,6 +150,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
             $totalTrio -= 10 * combination(3, count($favorites));
         }
+        if(in_array($compactExpr, $smallestFavoriteWin)){
+            $racetext .= "\t\t'win($" . $unitBet . ")' => '" . $favorites[0] . "',\n"; 
+            $totalBets[$raceNumber] += 1 * $unitBet;
+            $totalWin -= 1 * $unitBet;
+        }
+        if(in_array($compactExpr, $biggestFavoriteWin)){
+            $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
+            $totalBets[$raceNumber] += 1 * $unitBet;
+            $totalWin -= 1 * $unitBet;
+        }
         foreach($placeCondition as $placer => $criteria){
             if(in_array($compactExpr, $criteria)){
                 $surePlace[] = $placer;
@@ -165,6 +175,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(in_array($compactExpr, $favoriteWin) && in_array($officialWin[0], $favorites)){
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
             $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+            $totalWin += ($unitBet / 10) * $winAmount;
+        }
+        if(in_array($compactExpr, $smallestFavoriteWin) && $officialWin[0] == $favorites[0]){
+            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+            $racetext .= "\t\t'6 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+            $totalWin += ($unitBet / 10) * $winAmount;
+        }
+        if(in_array($compactExpr, $biggestFavoriteWin) && $officialWin[0] == end($favorites)){
+            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+            $racetext .= "\t\t'3 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
         }
         if(in_array($compactExpr, $favoriteTrio) && count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3){
