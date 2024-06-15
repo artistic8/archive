@@ -44,18 +44,9 @@ return [
 		'win pivots' => '2, 4, 10',
 		'qin pivots' => '2, 4, 10',
 		'trio pivots' => '2, 4, 10, 11',
-		//Check this out!
 		'win($100)' => '2, 4, 10, 11',
-		'qin($20)' => '2, 4, 10, 11',
-		'trio($10)' => '2, 4, 10, 11',
-		'place($500)' => '2',
-		'place($500)' => '11',
-		'place($50)' => '4',
-		'place($50)' => '10',
-		'place($50)' => '11',
-		'sure wp' => '4, 10, 11',
-		'total bets' => 1710,
-		'total won in race' => -1710,
+		'total bets' => 400,
+		'total won in race' => -400,
 	],
 	'3' => [
 		/**
@@ -166,11 +157,6 @@ return [
 		'win pivots' => '3, 7, 9',
 		'qin pivots' => '3, 7, 9',
 		'trio pivots' => '3, 7, 9',
-		'place($500)' => '9',
-		'place($50)' => '4',
-		'total bets' => 550,
-		'4 won(place bet)' => 1375,
-		'total won in race' => 825,
 	],
 	'8' => [
 		/**
@@ -193,6 +179,10 @@ return [
 		'win pivots' => '2, 3, 6, 7, 8',
 		'qin pivots' => '2, 3, 6, 7, 8',
 		'trio pivots' => '2, 3, 6, 7, 8',
+		'win($100)' => '2, 3, 6, 7, 8',
+		'total bets' => 500,
+		'1 won(win bet)' => 350,
+		'total won in race' => -150,
 	],
 	'9' => [
 		/**
@@ -237,13 +227,6 @@ return [
 		'win pivots' => '1, 10',
 		'qin pivots' => '1, 10, 13',
 		'trio pivots' => '1, 10, 13, 14',
-		//Check this out!
-		'win($100)' => '1, 6, 10, 13, 14',
-		'qin($20)' => '1, 6, 10, 13, 14',
-		'place($500)' => '1',
-		'total bets' => 1200,
-		'1 won(win bet)' => 890,
-		'total won in race' => -310,
 	],
 	'11' => [
 		/**
@@ -266,22 +249,10 @@ return [
 		'win pivots' => '5',
 		'qin pivots' => '5',
 		'trio pivots' => '5',
-		//Check this out!
-		'win($100)' => '2, 5, 9',
-		'qin($20)' => '2, 5, 9',
-		'win($100)' => '2',
-		'place($500)' => '2',
-		'place($50)' => '2',
-		'place($50)' => '4',
-		'place($50)' => '7',
-		'sure wp' => '2',
-		'total bets' => 1110,
-		'1 won(win bet)' => 880,
-		'total won in race' => -230,
 	],
 ];
-//total win: 470
-//total place: -1475
-//total qin: -380
-//total trio: -40
-//total: -1425
+//total win: -550
+//total place: 0
+//total qin: 0
+//total trio: 0
+//total: -550
