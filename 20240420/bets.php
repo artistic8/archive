@@ -42,12 +42,16 @@ return [
 		'win pivots' => '5, 10, 12',
 		'qin pivots' => '2, 5, 10, 12',
 		'trio pivots' => '2, 5, 10, 12',
+		'place($100)' => '2, 5, 10, 12',
 		'place($100)' => '12',
 		'win($10)' => '2, 5, 10, 12',
-		'total bets' => 140,
+		'total bets' => 540,
+		'1 won(win bet)' => 240,
+		'1 won(win bet)' => 170,
+		'1 won(win bet)' => 240,
 		'4 won(place bet)' => 240,
 		'4 won(winpla bet)' => 63,
-		'total won in race' => 163,
+		'total won in race' => 413,
 	],
 	'3' => [
 		/**
@@ -70,9 +74,11 @@ return [
 		'qin pivots' => '3, 4, 5',
 		'trio pivots' => '3, 4, 5',
 		'win($100)' => '3, 4, 5',
-		'total bets' => 300,
+		'place($100)' => '3, 4, 5',
+		'total bets' => 600,
 		'1 won(win bet)' => 205,
-		'total won in race' => -95,
+		'1 won(win bet)' => 120,
+		'total won in race' => -275,
 	],
 	'4' => [
 		/**
@@ -95,8 +101,11 @@ return [
 		'qin pivots' => '1, 3, 5, 9, 12',
 		'trio pivots' => '1, 3, 5, 9, 12',
 		'win($100)' => '1, 3, 5, 9, 12',
-		'total bets' => 500,
-		'total won in race' => -500,
+		'place($100)' => '1, 3, 5, 9, 12',
+		'total bets' => 1000,
+		'1 won(win bet)' => 185,
+		'1 won(win bet)' => 220,
+		'total won in race' => -595,
 	],
 	'5' => [
 		/**
@@ -119,9 +128,12 @@ return [
 		'qin pivots' => '1, 2, 6, 8',
 		'trio pivots' => '1, 2, 6, 8',
 		'win($100)' => '1, 2, 6, 8',
-		'total bets' => 400,
+		'place($100)' => '1, 2, 6, 8',
+		'total bets' => 800,
 		'1 won(win bet)' => 475,
-		'total won in race' => 75,
+		'1 won(win bet)' => 190,
+		'1 won(win bet)' => 320,
+		'total won in race' => 185,
 	],
 	'6' => [
 		/**
@@ -227,14 +239,16 @@ return [
 		'win pivots' => '3, 4, 11',
 		'qin pivots' => '3, 4, 11',
 		'trio pivots' => '3, 4, 11',
+		'place($100)' => '3, 4, 11',
 		'place($100)' => '11',
 		'win($10)' => '3, 4, 11',
-		'total bets' => 130,
-		'total won in race' => -130,
+		'total bets' => 430,
+		'1 won(win bet)' => 101,
+		'total won in race' => -329,
 	],
 ];
 //total win: -520
-//total place: 33
+//total place: -81
 //total qin: 0
 //total trio: 0
-//total: -487
+//total: -601
