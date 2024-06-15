@@ -124,7 +124,7 @@ sort($smallestFavoritePlaceKeys);
 sort($biggestFavoritePlaceKeys);
 $outtext .= '$favoriteWin = ' . "[" . implode(", ", array_filter($favoritesWinKeys)) . "];\n";
 $outtext .= '$favoritePlace = ' . "[" . implode(", ", array_filter($favoritesPlaceKeys)) . "];\n";
-$outtext .= '$favoriteQin =' . " [" . implode(", ", array_filter($favoritesQinKeys)) . "'l];\n";
+$outtext .= '$favoriteQin =' . " [" . implode(", ", array_filter($favoritesQinKeys)) . "];\n";
 $outtext .= '$favoriteTrio =' . " [" . implode(", ", array_filter($favoritesTrioKeys)) . "];\n";
 $outtext .= '$smallestFavoriteWin =' . " [" . implode(", ", array_filter($smallestFavoriteWinKeys)) . "];\n";
 $outtext .= '$biggestFavoriteWin =' . " [" . implode(", ", array_filter($biggestFavoriteWinKeys)) . "];\n";
