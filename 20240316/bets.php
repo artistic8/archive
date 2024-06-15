@@ -88,7 +88,6 @@ return [
 		'place($50)' => '1',
 		'place($50)' => '4',
 		'place($50)' => '6',
-		'sure wp' => '1, 6',
 		'total bets' => 550,
 		'4P won(place bet 1)' => 65,
 		'total won in race' => -485,

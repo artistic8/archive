@@ -175,7 +175,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $surePlace[] = $placer;
         }
     }
-    if(count($surePlace) > 1){
+    if(count($surePlace) > 1 && !empty(array_intersect($surePlace, $favorites))){
         foreach($placeCondition as $placer => $criteria){
             if(in_array($compactExpr, $criteria)){
                 $surePlace[] = $placer;
@@ -224,7 +224,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t'5 won(trio bet)' => " . $trioAmount . ",\n";
             $totalTrio += $trioAmount;
         }
-        if(count($surePlace) > 1){
+        if(count($surePlace) > 1 && !empty(array_intersect($surePlace, $favorites))){
             foreach($placeCondition as $placer => $criteria){
                 if(in_array($compactExpr, $criteria) && in_array($placer, array_slice($officialWin, 0, 3)) && isset($placeAmount[$placer])){
                     $totalRace[$raceNumber] += 5 * $placeAmount[$placer];
