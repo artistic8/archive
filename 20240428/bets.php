@@ -23,16 +23,12 @@ return [
 		'trio pivots' => '6, 7, 9',
 		'win($100)' => '6, 7, 9',
 		'win($100)' => '9',
-		'place($500)' => '6',
-		'place($500)' => '9',
 		'place($50)' => '1',
 		'place($50)' => '2',
 		'place($50)' => '7',
 		'sure wp' => '7',
-		'total bets' => 1550,
-		'4P won(place bet 1)' => 272.5,
-		'4P won(place bet 2)' => 170,
-		'total won in race' => -1107.5,
+		'total bets' => 550,
+		'total won in race' => -550,
 	],
 	'2' => [
 		/**
@@ -60,9 +56,7 @@ return [
 		'place($50)' => '10',
 		'total bets' => 220,
 		'1N won(win bet)' => 111,
-		'4P won(place bet 6)' => 160,
-		'4P won(place bet 10)' => 187.5,
-		'total won in race' => 238.5,
+		'total won in race' => -109,
 	],
 	'3' => [
 		/**
@@ -105,10 +99,6 @@ return [
 		'win pivots' => '1, 4, 5',
 		'qin pivots' => '1, 4, 5',
 		'trio pivots' => '1, 4, 5',
-		'place($500)' => '5',
-		'total bets' => 500,
-		'4 won(place bet)' => 750,
-		'total won in race' => 250,
 	],
 	'5' => [
 		/**
@@ -195,18 +185,14 @@ return [
 		'trio pivots' => '1, 8, 11',
 		'win($100)' => '1, 8, 11',
 		'win($100)' => '1',
-		'place($500)' => '1',
 		'place($50)' => '1',
 		'place($50)' => '4',
 		'place($50)' => '6',
 		'sure wp' => '1',
-		'total bets' => 1050,
+		'total bets' => 550,
 		'1 won(win bet)' => 190,
 		'6 won(win bet)' => 190,
-		'7 won(place bet)' => 575,
-		'4P won(place bet 1)' => 57.5,
-		'4P won(place bet 4)' => 82.5,
-		'total won in race' => 45,
+		'total won in race' => -170,
 	],
 	'9' => [
 		/**
@@ -228,15 +214,14 @@ return [
 		'win pivots' => '3, 4, 8, 9',
 		'qin pivots' => '3, 4, 8, 9',
 		'trio pivots' => '3, 4, 8, 9',
-		'place($500)' => '9',
 		'win($10)' => '1, 2, 5, 6, 7, 10, 11, 12, 13',
 		'place($50)' => '4',
 		'place($50)' => '6',
 		'place($50)' => '11',
 		'sure wp' => '4',
-		'total bets' => 740,
+		'total bets' => 240,
 		'1N won(win bet)' => 123,
-		'total won in race' => -617,
+		'total won in race' => -117,
 	],
 	'10' => [
 		/**
@@ -261,7 +246,7 @@ return [
 	],
 ];
 //total win: -346
-//total place: -845
+//total place: -600
 //total qin: 0
 //total trio: 0
-//total: -1191
+//total: -946

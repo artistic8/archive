@@ -187,9 +187,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     foreach($placeCondition as $placer => $criteria){
         if(in_array($compactExpr, $criteria)){
             $surePlace[] = $placer;
-            $racetext .= "\t\t'place($50)' => '" .  $placer  . "',\n"; 
-            $totalBets[$raceNumber] += 50;
-            $totalPlace -= 50;
+            // $racetext .= "\t\t'place($50)' => '" .  $placer  . "',\n"; 
+            // $totalBets[$raceNumber] += 50;
+            // $totalPlace -= 50;
         }
     }
     $surePlace = array_intersect($surePlace, $favorites);
