@@ -156,7 +156,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
             if(in_array($officialWin[0], $favorites)){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                $racetext .= "\t\t'1 won(win bet" . $officialWin[0] .")' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
         }
