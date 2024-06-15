@@ -125,13 +125,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',//count: " . count($winInter) . "\n";
+    $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
     $racetext .= "\t\t'win pivots' => '" . implode(", ", $winPivots) . "',\n";
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinPivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $trioPivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = count($winInter) . count($qinInter) . count($winPivots);
+    $compactExpr = count($winInter) . array_sum($winInter) . count($qinInter) . array_sum($qinInter) . count($winPivots) . array_sum($winPivots);
     
     if(in_array($compactExpr, $favoritePlace)){
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
