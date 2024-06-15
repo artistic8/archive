@@ -175,12 +175,8 @@ return [
 		'win($100)' => '1, 7, 8',
 		'win($100) smallest f' => '1',
 		'place($500)' => '1',
-		'place($50)' => '2',
-		'place($50)' => '4',
-		'place($50)' => '11',
-		'total bets' => 1050,
-		'4P won(place bet 11)' => 290,
-		'total won in race' => -760,
+		'total bets' => 900,
+		'total won in race' => -900,
 	],
 	'9' => [
 		/**
@@ -226,7 +222,7 @@ return [
 	],
 ];
 //total win: -515
-//total place: -860
+//total place: -1000
 //total qin: 0
 //total trio: 0
-//total: -1375
+//total: -1515

@@ -158,16 +158,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 1 * $unitBet;
         $totalWin -= 1 * $unitBet;
     }
-    if(in_array($compactExpr, $smallestFavoritePlace)){
-        $racetext .= "\t\t'place($" . 5 * $unitBet . ")' => '" .  $favorites[0]  . "',\n"; 
-        $totalBets[$raceNumber] += 5 * $unitBet;
-        $totalPlace -= 5 * $unitBet;
-    }
-    if(in_array($compactExpr, $biggestFavoritePlace)){
-        $racetext .= "\t\t'place($" . 5 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
-        $totalBets[$raceNumber] += 5 * $unitBet;
-        $totalPlace -= 5 * $unitBet;
-    }
+    // if(in_array($compactExpr, $smallestFavoritePlace)){
+    //     $racetext .= "\t\t'place($" . 5 * $unitBet . ")' => '" .  $favorites[0]  . "',\n"; 
+    //     $totalBets[$raceNumber] += 5 * $unitBet;
+    //     $totalPlace -= 5 * $unitBet;
+    // }
+    // if(in_array($compactExpr, $biggestFavoritePlace)){
+    //     $racetext .= "\t\t'place($" . 5 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
+    //     $totalBets[$raceNumber] += 5 * $unitBet;
+    //     $totalPlace -= 5 * $unitBet;
+    // }
     // if(in_array($compactExpr, $nonFavoriteWin)){
     //     $racetext .= "\t\t'win($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
     //     $totalBets[$raceNumber] += 10 * count($nonFavorites);
