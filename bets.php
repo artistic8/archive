@@ -134,8 +134,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $pivotsUnion = array_values(array_unique(array_merge($winpivots, $qinpivots, $pivots)));
     $diff = array_diff($pivotsUnion, $interUnion);
-    $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',//count: " . count($wininter) . "\n";
+    $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qininter) . "',\n";
+    $racetext .= "\t\t'trio inter' => '" . implode(", ", $triointer) . "',//count: " . count($triointer) . "\n";
+   
     $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
