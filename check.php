@@ -75,7 +75,7 @@ foreach ($dir as $fileinfo) {
 
 for($k = 1; $k <= 14; $k++){
     foreach($place[$k] as $key => $value){
-        if($value === false) unset($place[$k][$key]);
+        if($value === false || empty($key)) unset($place[$k][$key]);
     }
 }
 foreach($favoritesWin as $key => $value){
