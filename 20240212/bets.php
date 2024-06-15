@@ -23,13 +23,11 @@ return [
 		'qin pivots' => '4',
 		'trio pivots' => '4, 12',
 		'win($100)' => '4, 12',
-		'place($50)' => '4',
-		'place($50)' => '5',
-		'place($50)' => '9',
-		'sure wp' => '4',
+		'place($50)' => '1',
+		'place($50)' => '3',
+		'place($50)' => '6',
 		'total bets' => 350,
-		'4P won(place bet 4)' => 85,
-		'total won in race' => -265,
+		'total won in race' => -350,
 	],
 	'2' => [
 		/**
@@ -74,6 +72,12 @@ return [
 		'win pivots' => '3',
 		'qin pivots' => '3',
 		'trio pivots' => '3',
+		'win($100)' => '3, 6',
+		'place($50)' => '2',
+		'place($50)' => '7',
+		'place($50)' => '14',
+		'total bets' => 350,
+		'total won in race' => -350,
 	],
 	'4' => [
 		/**
@@ -96,6 +100,15 @@ return [
 		'win pivots' => '1, 10',
 		'qin pivots' => '1, 2, 10',
 		'trio pivots' => '1, 2, 10',
+		'win($100)' => '1, 2, 10',
+		'place($50)' => '1',
+		'place($50)' => '3',
+		'place($50)' => '6',
+		'sure wp' => '1',
+		'total bets' => 450,
+		'1 won(win bet)' => 355,
+		'4P won(place bet 3)' => 112.5,
+		'total won in race' => 17.5,
 	],
 	'5' => [
 		/**
@@ -140,6 +153,9 @@ return [
 		'win pivots' => '3, 7',
 		'qin pivots' => '3, 7',
 		'trio pivots' => '3, 7',
+		'place($50)' => '5',
+		'total bets' => 50,
+		'total won in race' => -50,
 	],
 	'7' => [
 		/**
@@ -183,13 +199,6 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
-		'win($100)' => '6',
-		'place($50)' => '4',
-		'place($50)' => '5',
-		'place($50)' => '9',
-		'total bets' => 250,
-		'4P won(place bet 4)' => 67.5,
-		'total won in race' => -182.5,
 	],
 	'9' => [
 		/**
@@ -212,6 +221,11 @@ return [
 		'win pivots' => '1, 8, 12',
 		'qin pivots' => '1, 8, 12',
 		'trio pivots' => '1, 8, 12',
+		'place($50)' => '2',
+		'place($50)' => '3',
+		'place($50)' => '9',
+		'total bets' => 150,
+		'total won in race' => -150,
 	],
 	'10' => [
 		/**
@@ -258,8 +272,8 @@ return [
 		'trio pivots' => '6',
 	],
 ];
-//total win: -300
-//total place: -147.5
+//total win: -345
+//total place: -537.5
 //total qin: 0
 //total trio: 0
-//total: -447.5
+//total: -882.5
