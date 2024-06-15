@@ -131,7 +131,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinPivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $trioPivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = array_sum($winInter) . "x" . array_sum($qinInter);
+    $compactExpr = count($winInter) + count($qinInter);
     
     if(in_array($compactExpr, $favoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
