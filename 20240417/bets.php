@@ -151,6 +151,7 @@ return [
 		'win pivots' => '1, 2, 3, 10',
 		'qin pivots' => '1, 2, 3, 10',
 		'trio pivots' => '1, 2, 3, 10',
+		//Check this out!
 		'place($500)' => '1',
 		'place($500)' => '10',
 		'place($50)' => '4',

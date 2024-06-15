@@ -114,6 +114,7 @@ return [
 		'win pivots' => '2',
 		'qin pivots' => '2',
 		'trio pivots' => '2, 3',
+		//Check this out!
 		'place($500)' => '2',
 		'place($500)' => '3',
 		'place($50)' => '2',

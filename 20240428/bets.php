@@ -21,6 +21,7 @@ return [
 		'win pivots' => '6, 7',
 		'qin pivots' => '6, 7, 9',
 		'trio pivots' => '6, 7, 9',
+		//Check this out!
 		'win($100)' => '6, 7, 9',
 		'win($100)' => '9',
 		'place($500)' => '6',
