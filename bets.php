@@ -170,10 +170,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
         }
-        if(!in_array($compactExpr, $favoriteWin) && count($favorites) >= 3 && in_array($compactExpr, $biggestFavoritePlace) && in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])) {
-            $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
-            $racetext .= "\t\t'4 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
-            $totalPlace += 1/10 * $unitBet * $placeAmount[end($favorites)];
+        if(!in_array($compactExpr, $favoriteWin) && count($favorites) >= 3 && in_array($compactExpr, $biggestFavoritePlace)) {
+            if(in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
+                $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
+                $racetext .= "\t\t'4 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
+                $totalPlace += 1/10 * $unitBet * $placeAmount[end($favorites)];
+            }
             if(in_array($officialWin[0], $favorites)){
                 $totalRace[$raceNumber] +=$winAmount;
                 $racetext .= "\t\t'1 won(winpla bet)' => " . $winAmount . ",\n";

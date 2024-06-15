@@ -22,9 +22,10 @@ return [
 		'qin pivots' => '1, 3, 10',
 		'trio pivots' => '1, 3, 10',
 		'place($100)' => '10',
-		'total bets' => 100,
+		'win($10)' => '1, 3, 10',
+		'total bets' => 130,
 		'4 won(place bet)' => 215,
-		'total won in race' => 115,
+		'total won in race' => 85,
 	],
 	'2' => [
 		/**
@@ -220,7 +221,7 @@ return [
 	],
 ];
 //total win: -400
-//total place: 115
+//total place: 85
 //total qin: 0
 //total trio: 0
-//total: -285
+//total: -315
