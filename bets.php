@@ -108,8 +108,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     sort($qinInter);
-    // $winInter = array_intersect($favorites, $winInter);
-    // $qinInter = array_intersect($favorites, $qinInter);
+    $winInter = array_intersect($favorites, $winInter);
+    $qinInter = array_intersect($favorites, $qinInter);
     $trioPivots = [];
     $winPivots = [];
     $qinPivots = [];
@@ -131,7 +131,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinPivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $trioPivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = count($winInter) . count($qinInter);
+    $compactExpr = count($winInter) . count($qinInter) . count($winPivots);
     
     if(in_array($compactExpr, $favoritePlace)){
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
