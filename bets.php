@@ -142,22 +142,22 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
-    $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $diff) . "',\n"; 
-    $totalBets[$raceNumber] += 1 * $unitBet * count($diff);
-    $totalWin -= 1 * $unitBet * count($diff);
-    $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  implode(", ", $diff)  . "',\n"; 
-    $totalBets[$raceNumber] += 1 * $unitBet * count($diff);
-    $totalPlace -= 1 * $unitBet * count($diff);
+    $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $triointer) . "',\n"; 
+    $totalBets[$raceNumber] += 1 * $unitBet * count($triointer);
+    $totalWin -= 1 * $unitBet * count($triointer);
+    $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  implode(", ", $triointer)  . "',\n"; 
+    $totalBets[$raceNumber] += 1 * $unitBet * count($triointer);
+    $totalPlace -= 1 * $unitBet * count($triointer);
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-        if(in_array($officialWin[0], $diff)){
+        if(in_array($officialWin[0], $triointer)){
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
             $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
         }
-        if(!empty(array_intersect($diff, array_slice($officialWin, 0, 3)))){
-            $intersection = array_intersect($diff, array_slice($officialWin, 0, 3));
+        if(!empty(array_intersect($triointer, array_slice($officialWin, 0, 3)))){
+            $intersection = array_intersect($triointer, array_slice($officialWin, 0, 3));
             foreach($intersection as $placer){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$placer];
                 $racetext .= "\t\t'4P won(place bet $placer)' => " . ($unitBet / 10) * $placeAmount[$placer] . ",\n";
