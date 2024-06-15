@@ -111,9 +111,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($wininter);
     sort($qininter);
-    $wininter = array_intersect($favorites, $wininter);
-    $qininter = array_intersect($favorites, $qininter);
-    $triointer = array_intersect($favorites, $triointer);
+    // $wininter = array_intersect($favorites, $wininter);
+    // $qininter = array_intersect($favorites, $qininter);
+    // $triointer = array_intersect($favorites, $triointer);
     $pivots = [];
     $winpivots = [];
     $qinpivots = [];
