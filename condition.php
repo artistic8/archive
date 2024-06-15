@@ -1,27 +1,27 @@
 <?php
 
 
-$favoriteWin = [9, 32, 50, 56, 65, 72, 75, 80, 85, 90, 126];
-$favoritePlace = [4, 9, 15, 32, 33, 39, 45, 48, 50, 52, 56, 64, 65, 68, 70, 72, 75, 80, 85, 90, 108, 126, 161];
-$favoriteQin = [32, 65, 85];
-$favoriteTrio = [32, 65, 85];
+$favoriteWin = [5, 10, 24];
+$favoritePlace = [5, 10, 14, 16, 18, 20, 24];
+$favoriteQin = [];
+$favoriteTrio = [];
 $smallestFavoriteWin = [];
 $biggestFavoriteWin = [];
-$smallestFavoritePlace = [15, 32];
-$biggestFavoritePlace = [4, 65, 108];
+$smallestFavoritePlace = [];
+$biggestFavoritePlace = [18];
 $placeCondition = [
-	1 => [15, 108, 161],
-	2 => [72, 126],
-	3 => [68, 72, 85],
-	4 => [126],
-	5 => [32, 65, 108, 161],
+	1 => [14],
+	2 => [24],
+	3 => [20],
+	4 => [],
+	5 => [14],
 	6 => [],
-	7 => [32, 50, 65, 126, 161],
-	8 => [50],
-	9 => [50, 55, 72],
-	10 => [32],
-	11 => [65],
-	12 => [108],
+	7 => [14],
+	8 => [],
+	9 => [],
+	10 => [],
+	11 => [],
+	12 => [],
 	13 => [],
 	14 => [],
 ];
