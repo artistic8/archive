@@ -108,8 +108,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     sort($qinInter);
-    $winInter = array_intersect($favorites, $winInter);
-    $qinInter = array_intersect($favorites, $qinInter);
+    // $winInter = array_intersect($favorites, $winInter);
+    // $qinInter = array_intersect($favorites, $qinInter);
     $trioPivots = [];
     $winPivots = [];
     $qinPivots = [];
