@@ -16,17 +16,22 @@ return [
 			4 => 47.5,
 			6 => 18,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '6',
-		'trio inter' => '5, 6',//count: 2
 		'win pivots' => '6, 11',
 		'qin pivots' => '6, 11',
 		'trio pivots' => '6, 11',
-		'win($100)' => '5, 6',
-		'place($100)' => '5, 6',
-		'total bets' => 400,
-		'4P won(place bet 6)' => 180,
-		'total won in race' => -220,
+		'win($10)' => '1, 2, 3, 4, 5, 7, 8, 9, 12',
+		'qin($10)' => '1, 2, 3, 4, 5, 7, 8, 9, 12',
+		'trio($10)' => '1, 2, 3, 4, 5, 7, 8, 9, 12',
+		'place($50)' => '2',
+		'place($50)' => '3',
+		'place($50)' => '4',
+		'total bets' => 1440,
+		'1N won(win bet)' => 120.5,
+		'2N won(qin bet)' => 797.5,
+		'4P won(place bet 4)' => 237.5,
+		'total won in race' => -284.5,
 	],
 	'2' => [
 		/**
@@ -43,18 +48,11 @@ return [
 			4 => 37.5,
 			6 => 75.5,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '8',
-		'trio inter' => '1, 2, 3, 4, 6, 8, 9, 12',//count: 8
 		'win pivots' => '',
 		'qin pivots' => '8',
 		'trio pivots' => '8',
-		'win($100)' => '1, 2, 3, 4, 6, 8, 9, 12',
-		'place($100)' => '1, 2, 3, 4, 6, 8, 9, 12',
-		'total bets' => 1600,
-		'4P won(place bet 4)' => 375,
-		'4P won(place bet 6)' => 755,
-		'total won in race' => -470,
 	],
 	'3' => [
 		/**
@@ -71,20 +69,11 @@ return [
 			3 => 20,
 			7 => 16.5,
 		],
-		'win inter' => '7',
+		'win inter' => '7',//count: 1
 		'qin inter' => '1, 7',
-		'trio inter' => '1, 3, 4, 7, 8, 9, 10, 11',//count: 8
 		'win pivots' => '1, 7',
 		'qin pivots' => '1, 7',
 		'trio pivots' => '1, 7',
-		'win($100)' => '1, 3, 4, 7, 8, 9, 10, 11',
-		'place($100)' => '1, 3, 4, 7, 8, 9, 10, 11',
-		'total bets' => 1600,
-		'1 won(win bet)' => 570,
-		'4P won(place bet 1)' => 195,
-		'4P won(place bet 3)' => 200,
-		'4P won(place bet 7)' => 165,
-		'total won in race' => -470,
 	],
 	'4' => [
 		/**
@@ -101,19 +90,11 @@ return [
 			7 => 141,
 			1 => 50,
 		],
-		'win inter' => '11',
+		'win inter' => '11',//count: 1
 		'qin inter' => '2, 11',
-		'trio inter' => '1, 2, 4, 5, 10, 11, 12',//count: 7
 		'win pivots' => '2, 8, 11',
 		'qin pivots' => '2, 8, 11',
 		'trio pivots' => '2, 8, 11',
-		'win($100)' => '1, 2, 4, 5, 10, 11, 12',
-		'place($100)' => '1, 2, 4, 5, 10, 11, 12',
-		'total bets' => 1400,
-		'1 won(win bet)' => 300,
-		'4P won(place bet 1)' => 500,
-		'4P won(place bet 11)' => 145,
-		'total won in race' => -455,
 	],
 	'5' => [
 		/**
@@ -130,20 +111,11 @@ return [
 			3 => 18,
 			7 => 35.5,
 		],
-		'win inter' => '1',
+		'win inter' => '1',//count: 1
 		'qin inter' => '1',
-		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',//count: 10
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3, 4',
 		'trio pivots' => '1, 3, 4',
-		'win($100)' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
-		'place($100)' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
-		'total bets' => 2000,
-		'1 won(win bet)' => 700,
-		'4P won(place bet 3)' => 180,
-		'4P won(place bet 5)' => 260,
-		'4P won(place bet 7)' => 355,
-		'total won in race' => -505,
 	],
 	'6' => [
 		/**
@@ -160,17 +132,21 @@ return [
 			1 => 23.5,
 			10 => 28.5,
 		],
-		'win inter' => '3',
+		'win inter' => '3',//count: 1
 		'qin inter' => '3',
-		'trio inter' => '1, 2, 3, 6, 7, 9, 11, 12',//count: 8
 		'win pivots' => '3, 5',
 		'qin pivots' => '3, 5',
 		'trio pivots' => '3, 5',
-		'win($100)' => '1, 2, 3, 6, 7, 9, 11, 12',
-		'place($100)' => '1, 2, 3, 6, 7, 9, 11, 12',
-		'total bets' => 1600,
-		'4P won(place bet 1)' => 235,
-		'total won in race' => -1365,
+		'place($500)' => '5',
+		'win($10)' => '1, 2, 4, 6, 7, 8, 9, 10, 11, 12',
+		'place($50)' => '5',
+		'place($50)' => '11',
+		'place($50)' => '13',
+		'sure wp' => '5',
+		'total bets' => 750,
+		'4 won(place bet)' => 675,
+		'4P won(place bet 5)' => 67.5,
+		'total won in race' => -7.5,
 	],
 	'7' => [
 		/**
@@ -187,19 +163,11 @@ return [
 			7 => 30.5,
 			4 => 19.5,
 		],
-		'win inter' => '6',
+		'win inter' => '6',//count: 1
 		'qin inter' => '6',
-		'trio inter' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',//count: 11
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
-		'win($100)' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
-		'place($100)' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
-		'total bets' => 2200,
-		'1 won(win bet)' => 165,
-		'4P won(place bet 4)' => 195,
-		'4P won(place bet 6)' => 101,
-		'total won in race' => -1739,
 	],
 	'8' => [
 		/**
@@ -216,17 +184,11 @@ return [
 			12 => 19,
 			3 => 20.5,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '',
-		'trio inter' => '2, 3, 9',//count: 3
 		'win pivots' => '10',
 		'qin pivots' => '9, 10',
 		'trio pivots' => '1, 9, 10',
-		'win($100)' => '2, 3, 9',
-		'place($100)' => '2, 3, 9',
-		'total bets' => 600,
-		'4P won(place bet 3)' => 205,
-		'total won in race' => -395,
 	],
 	'9' => [
 		/**
@@ -243,22 +205,27 @@ return [
 			4 => 11.5,
 			11 => 14,
 		],
-		'win inter' => '',
+		'win inter' => '',//count: 0
 		'qin inter' => '11',
-		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 9, 11, 12',//count: 10
 		'win pivots' => '11',
 		'qin pivots' => '11',
 		'trio pivots' => '4, 11',
-		'win($100)' => '1, 3, 4, 5, 6, 7, 8, 9, 11, 12',
-		'place($100)' => '1, 3, 4, 5, 6, 7, 8, 9, 11, 12',
-		'total bets' => 2000,
-		'4P won(place bet 4)' => 115,
-		'4P won(place bet 11)' => 140,
-		'total won in race' => -1745,
+		'win($10)' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 12',
+		'qin($10)' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 12',
+		'trio($10)' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 12',
+		'place($50)' => '4',
+		'place($50)' => '6',
+		'place($50)' => '11',
+		'sure wp' => '4, 11',
+		'total bets' => 1900,
+		'1N won(win bet)' => 207,
+		'4P won(place bet 4)' => 57.5,
+		'4P won(place bet 11)' => 70,
+		'total won in race' => -1565.5,
 	],
 ];
-//total win: -4965
-//total place: -2399
-//total qin: 0
-//total trio: 0
-//total: -7364
+//total win: 37.5
+//total place: 157.5
+//total qin: -822.5
+//total trio: -2040
+//total: -1857.5
