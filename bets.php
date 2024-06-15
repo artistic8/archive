@@ -178,7 +178,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(in_array($compactExpr, $favoritePlace) && !empty(array_intersect($favorites, array_slice($officialWin, 0, 3)))){
             $placed = array_intersect($favorites, array_slice($officialWin, 0, 3));
             foreach($placed as $hopeful){
-                if(isset(placeAmount[$hopeful])){
+                if(isset($placeAmount[$hopeful])){
                     $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hopeful];
                     $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $placeAmount[$hopeful] . ",\n";
                     $totalPlace += ($unitBet / 10) * $placeAmount[$hopeful];
