@@ -1,6 +1,7 @@
 <?php
 
 $favoritesWin = [];
+$favoritesPlace = [];
 $favoritesQin = [];
 $favoritesTrio = [];
 $smallestFavoriteWin = [];
@@ -34,6 +35,10 @@ foreach ($dir as $fileinfo) {
                 if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
             }
             else $favoritesWin[$expr] = false;
+            if(!empty(array_intersect($favorites, array_slice($winners, 0, 3)))){
+                if(!isset($favoritesPlace[$expr])) $favoritesPlace[$expr] = true;
+            }
+            else $favoritesPlace[$expr] = false;
             if($winners[0] == $favorites[0]){
                 if(!isset($smallestFavoriteWin[$expr])) $smallestFavoriteWin[$expr] = true;
             }
@@ -76,6 +81,9 @@ for($k = 1; $k <= 14; $k++){
 foreach($favoritesWin as $key => $value){
     if($value === false) unset($favoritesWin[$key]);
 }
+foreach($favoritesPlace as $key => $value){
+    if($value === false) unset($favoritesPlace[$key]);
+}
 foreach($favoritesQin as $key => $value){
     if($value === false) unset($favoritesQin[$key]);
 }
@@ -95,6 +103,7 @@ foreach($biggestFavoritePlace as $key => $value){
     if($value === false) unset($biggestFavoritePlace[$key]);
 }
 $favoritesWinKeys = array_keys($favoritesWin);
+$favoritesPlaceKeys = array_keys($favoritesPlace);
 $favoritesQinKeys = array_keys($favoritesQin);
 $favoritesTrioKeys = array_keys($favoritesTrio);
 $biggestFavoriteWinKeys = array_keys($biggestFavoriteWin);
@@ -106,6 +115,7 @@ for($k = 1; $k <= 14; $k++){
     sort($placeKeys[$k]);
 }
 sort($favoritesWinKeys);
+sort($favoritesPlaceKeys);
 sort($favoritesQinKeys);
 sort($favoritesTrioKeys);
 sort($smallestFavoriteWinKeys);
@@ -113,6 +123,7 @@ sort($biggestFavoriteWinKeys);
 sort($smallestFavoritePlaceKeys);
 sort($biggestFavoritePlaceKeys);
 $outtext .= '$favoriteWin = ' . "['" . implode("', '", $favoritesWinKeys) . "'];\n";
+$outtext .= '$favoritePlace = ' . "['" . implode("', '", $favoritesPlaceKeys) . "'];\n";
 $outtext .= '$favoriteQin =' . " ['" . implode("', '", $favoritesQinKeys) . "'];\n";
 $outtext .= '$favoriteTrio =' . " ['" . implode("', '", $favoritesTrioKeys) . "'];\n";
 $outtext .= '$smallestFavoriteWin =' . " ['" . implode("', '", $smallestFavoriteWinKeys) . "'];\n";
