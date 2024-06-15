@@ -25,9 +25,12 @@ return [
 		'place($500)' => '12',
 		'place($50)' => '2',
 		'place($50)' => '7',
-		'total bets' => 600,
+		'place($50)' => '12',
+		'sure wp' => '12',
+		'total bets' => 650,
 		'4 won(place bet)' => 1200,
-		'total won in race' => 600,
+		'4P won(place bet 12)' => 120,
+		'total won in race' => 670,
 	],
 	'2' => [
 		/**
@@ -196,7 +199,7 @@ return [
 	],
 ];
 //total win: -400
-//total place: 1095
+//total place: 1165
 //total qin: -120
 //total trio: 0
-//total: 575
+//total: 645
