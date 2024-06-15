@@ -198,7 +198,6 @@ return [
 		'win pivots' => '1, 3, 5',
 		'qin pivots' => '1, 3, 5',
 		'trio pivots' => '1, 3, 5',
-		//Check this out!
 		'win($100)' => '1, 3, 5',
 		'qin($20)' => '1, 3, 5',
 		'place($500)' => '1',
