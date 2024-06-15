@@ -18,7 +18,6 @@ return [
 		],
 		'win inter' => '1, 4',//count: 2
 		'qin inter' => '1, 2, 4, 5, 7, 10',
-		'trio inter' => '1, 2, 3, 4, 5, 7, 9, 10',
 		'win pivots' => '4, 5, 8',
 		'qin pivots' => '4, 5, 8',
 		'trio pivots' => '4, 5, 8',
@@ -40,7 +39,6 @@ return [
 		],
 		'win inter' => '2, 6',//count: 2
 		'qin inter' => '2, 5, 6, 7, 9',
-		'trio inter' => '1, 2, 4, 5, 6, 7, 9, 10',
 		'win pivots' => '2, 6',
 		'qin pivots' => '1, 2, 6',
 		'trio pivots' => '1, 2, 6',
@@ -62,7 +60,6 @@ return [
 		],
 		'win inter' => '5, 7',//count: 2
 		'qin inter' => '1, 2, 3, 4, 5, 7, 9, 12',
-		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 9, 12',
 		'win pivots' => '7',
 		'qin pivots' => '4, 7',
 		'trio pivots' => '4, 7',
@@ -84,7 +81,6 @@ return [
 		],
 		'win inter' => '5',//count: 1
 		'qin inter' => '3, 5',
-		'trio inter' => '1, 3, 5, 7, 9',
 		'win pivots' => '5',
 		'qin pivots' => '5, 7',
 		'trio pivots' => '5, 7',
@@ -106,7 +102,6 @@ return [
 		],
 		'win inter' => '5',//count: 1
 		'qin inter' => '3, 5',
-		'trio inter' => '3, 5',
 		'win pivots' => '1, 3, 12',
 		'qin pivots' => '1, 3, 9, 12',
 		'trio pivots' => '1, 3, 9, 12',
@@ -128,7 +123,6 @@ return [
 		],
 		'win inter' => '',//count: 0
 		'qin inter' => '2, 11',
-		'trio inter' => '2, 11',
 		'win pivots' => '2, 3, 4, 9, 11',
 		'qin pivots' => '2, 3, 4, 9, 11',
 		'trio pivots' => '2, 3, 4, 9, 11',
@@ -150,7 +144,6 @@ return [
 		],
 		'win inter' => '',//count: 0
 		'qin inter' => '',
-		'trio inter' => '1, 5, 6',
 		'win pivots' => '6, 10, 11',
 		'qin pivots' => '6, 10, 11',
 		'trio pivots' => '4, 6, 10, 11',
@@ -172,7 +165,6 @@ return [
 		],
 		'win inter' => '',//count: 0
 		'qin inter' => '3, 10',
-		'trio inter' => '2, 3, 9, 10, 12',
 		'win pivots' => '6, 12',
 		'qin pivots' => '3, 6, 12',
 		'trio pivots' => '3, 6, 12',
@@ -194,7 +186,6 @@ return [
 		],
 		'win inter' => '2, 5, 9',//count: 3
 		'qin inter' => '2, 3, 4, 5, 8, 9',
-		'trio inter' => '2, 3, 4, 5, 6, 7, 8, 9',
 		'win pivots' => '2, 3, 4, 11',
 		'qin pivots' => '2, 3, 4, 11',
 		'trio pivots' => '2, 3, 4, 11',
