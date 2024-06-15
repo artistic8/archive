@@ -43,7 +43,7 @@ return [
 		'qin pivots' => '5, 10, 12',
 		'trio pivots' => '5, 10, 12',
 		'win($100)' => '5, 8, 10, 12',
-		'win($100)' => '5',
+		'win($100) smallest f' => '5',
 		'sure wp' => '10',
 		'total bets' => 500,
 		'1 won(win bet)' => 705,

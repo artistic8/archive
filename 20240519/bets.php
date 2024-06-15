@@ -172,7 +172,7 @@ return [
 		'qin pivots' => '1, 8',
 		'trio pivots' => '1, 7, 8',
 		'win($100)' => '1, 7, 8',
-		'win($100)' => '1',
+		'win($100) smallest f' => '1',
 		'total bets' => 400,
 		'total won in race' => -400,
 	],
