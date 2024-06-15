@@ -173,7 +173,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(in_array($compactExpr, $criteria)){
             $surePlace[] = $placer;
             $racetext .= "\t\t'place($50)' => '" .  $placer  . "',\n"; 
-            if($placer == $raceNumber) $racetext .= "\t\t'sure bet' => '" .  $placer  . "',\n"; 
             $totalBets[$raceNumber] += 50;
             $totalPlace -= 50;
         }
