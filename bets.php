@@ -139,6 +139,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $surePlace[] = $placer;
         }
     }
+    $surePlace = array_diff($surePlace, $pivots);
     if(!empty(array_intersect($surePlace, $favorites))){
         if(in_array($compactExpr, $favoriteWin)){
             $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
