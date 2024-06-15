@@ -89,7 +89,7 @@ return [
 		'total bets' => 600,
 		'11 won(place bet)' => 130,
 		'11 won(place bet)' => 390,
-		'1 won(win bet)' => 205,
+		'1 won(win bet1)' => 205,
 		'total won in race' => 125,
 	],
 	'5' => [
@@ -116,7 +116,7 @@ return [
 		'win($100)' => '1, 4, 11',
 		'total bets' => 600,
 		'11 won(place bet)' => 110,
-		'1 won(win bet)' => 175,
+		'1 won(win bet1)' => 175,
 		'total won in race' => -315,
 	],
 	'6' => [
@@ -211,7 +211,7 @@ return [
 		'win($100)' => '6, 7, 9',
 		'total bets' => 600,
 		'11 won(place bet)' => 101,
-		'1 won(win bet)' => 150,
+		'1 won(win bet9)' => 150,
 		'total won in race' => -349,
 	],
 	'10' => [

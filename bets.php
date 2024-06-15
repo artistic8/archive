@@ -150,13 +150,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             foreach($placed as $hopeful){
                 if(isset($placeAmount[$hopeful])){
                     $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$hopeful];
-                    $racetext .= "\t\t'11 won(place bet)' => " . ($unitBet / 10) * $placeAmount[$hopeful] . ",\n";
+                    $racetext .= "\t\t'11 won(place bet " . $hopeful . ")' => " . ($unitBet / 10) * $placeAmount[$hopeful] . ",\n";
                     $totalPlace += ($unitBet / 10) * $placeAmount[$hopeful];
                 }
             }
             if(in_array($officialWin[0], $favorites)){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                $racetext .= "\t\t'1 won(win bet" . $officialWin[0] .")' => " . ($unitBet / 10) * $winAmount . ",\n";
+                $racetext .= "\t\t'1 won(win bet " . $officialWin[0] .")' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
         }

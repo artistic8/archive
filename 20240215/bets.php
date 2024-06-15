@@ -209,7 +209,7 @@ return [
 		'total bets' => 1000,
 		'11 won(place bet)' => 180,
 		'11 won(place bet)' => 175,
-		'1 won(win bet)' => 475,
+		'1 won(win bet12)' => 475,
 		'total won in race' => -170,
 	],
 ];
