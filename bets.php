@@ -149,12 +149,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     //     $totalTrio -= 10 * combination(3, count($favorites));
     // }
     if(in_array($compactExpr, $smallestFavoriteWin)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . $favorites[0] . "',\n"; 
+        $racetext .= "\t\t'win($" . $unitBet . ") smallest f' => '" . $favorites[0] . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
         $totalWin -= 1 * $unitBet;
     }
     if(in_array($compactExpr, $biggestFavoriteWin)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . end($favorites) . "',\n"; 
+        $racetext .= "\t\t'win($" . $unitBet . ") largest f' => '" . end($favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
         $totalWin -= 1 * $unitBet;
     }

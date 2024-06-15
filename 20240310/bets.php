@@ -214,15 +214,11 @@ return [
 		'win pivots' => '3, 5, 11',
 		'qin pivots' => '3, 5, 11',
 		'trio pivots' => '3, 5, 11',
-		'win($10)' => '1, 2, 4, 6, 7, 8, 9, 10, 12, 13, 14',
 		'sure wp' => '11',
-		'total bets' => 110,
-		'1N won(win bet)' => 92,
-		'total won in race' => -18,
 	],
 ];
-//total win: 187
+//total win: 205
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 187
+//total: 205
