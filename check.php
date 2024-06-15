@@ -79,28 +79,28 @@ for($k = 1; $k <= 14; $k++){
     }
 }
 foreach($favoritesWin as $key => $value){
-    if($value === false) unset($favoritesWin[$key]);
+    if($value === false || empty($key)) unset($favoritesWin[$key]);
 }
 foreach($favoritesPlace as $key => $value){
-    if($value === false) unset($favoritesPlace[$key]);
+    if($value === false || empty($key)) unset($favoritesPlace[$key]);
 }
 foreach($favoritesQin as $key => $value){
-    if($value === false) unset($favoritesQin[$key]);
+    if($value === false || empty($key)) unset($favoritesQin[$key]);
 }
 foreach($favoritesTrio as $key => $value){
-    if($value === false) unset($favoritesTrio[$key]);
+    if($value === false || empty($key)) unset($favoritesTrio[$key]);
 }
 foreach($smallestFavoriteWin as $key => $value){
-    if($value === false) unset($smallestFavoriteWin[$key]);
+    if($value === false || empty($key)) unset($smallestFavoriteWin[$key]);
 }
 foreach($biggestFavoriteWin as $key => $value){
-    if($value === false) unset($biggestFavoriteWin[$key]);
+    if($value === false || empty($key)) unset($biggestFavoriteWin[$key]);
 }
 foreach($smallestFavoritePlace as $key => $value){
-    if($value === false) unset($smallestFavoritePlace[$key]);
+    if($value === false || empty($key)) unset($smallestFavoritePlace[$key]);
 }
 foreach($biggestFavoritePlace as $key => $value){
-    if($value === false) unset($biggestFavoritePlace[$key]);
+    if($value === false || empty($key)) unset($biggestFavoritePlace[$key]);
 }
 $favoritesWinKeys = array_keys($favoritesWin);
 $favoritesPlaceKeys = array_keys($favoritesPlace);
