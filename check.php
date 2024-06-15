@@ -102,16 +102,16 @@ foreach($smallestFavoritePlace as $key => $value){
 foreach($biggestFavoritePlace as $key => $value){
     if($value === false || empty($key)) unset($biggestFavoritePlace[$key]);
 }
-$favoritesWinKeys = array_keys($favoritesWin);
-$favoritesPlaceKeys = array_keys($favoritesPlace);
-$favoritesQinKeys = array_keys($favoritesQin);
-$favoritesTrioKeys = array_keys($favoritesTrio);
-$biggestFavoriteWinKeys = array_keys($biggestFavoriteWin);
-$smallestFavoriteWinKeys = array_keys($smallestFavoriteWin);
-$biggestFavoritePlaceKeys = array_keys($biggestFavoritePlace);
-$smallestFavoritePlaceKeys = array_keys($smallestFavoritePlace);
+$favoritesWinKeys = array_filter(array_keys($favoritesWin));
+$favoritesPlaceKeys = array_filter(array_keys($favoritesPlace));
+$favoritesQinKeys = array_filter(array_keys($favoritesQin));
+$favoritesTrioKeys = array_filter(array_keys($favoritesTrio));
+$biggestFavoriteWinKeys = array_filter(array_keys($biggestFavoriteWin));
+$smallestFavoriteWinKeys = array_filter(array_keys($smallestFavoriteWin));
+$biggestFavoritePlaceKeys = array_filter(array_keys($biggestFavoritePlace));
+$smallestFavoritePlaceKeys = array_filter(array_keys($smallestFavoritePlace));
 for($k = 1; $k <= 14; $k++){
-    $placeKeys[$k] = array_keys($place[$k]);
+    $placeKeys[$k] = array_filter(array_keys($place[$k]));
     sort($placeKeys[$k]);
 }
 sort($favoritesWinKeys);
