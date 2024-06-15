@@ -178,7 +178,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
             if(in_array($officialWin[0], $favorites)){
                 $totalRace[$raceNumber] +=$winAmount;
-                $racetext .= "\t\t'1 won(winpla bet)' => " . $winAmount . ",\n";
+                $racetext .= "\t\t'4 won(winpla bet)' => " . $winAmount . ",\n";
                 $totalPlace += $winAmount;
             }
         }
