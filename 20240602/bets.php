@@ -171,7 +171,7 @@ return [
 		'win($10)' => '4, 7, 8',
 		'total bets' => 130,
 		'4 won(place bet)' => 140,
-		'1 won(winpla bet)' => 23.5,
+		'4 won(winpla bet)' => 23.5,
 		'total won in race' => 33.5,
 	],
 	'9' => [
