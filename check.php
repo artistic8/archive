@@ -25,10 +25,11 @@ foreach ($dir as $fileinfo) {
             $runners = array_filter(explode(", ", $data['runners']));
             $winInter = array_filter(explode(", ", $data['win inter']));
             $qinInter = array_filter(explode(", ", $data['qin inter']));
+            $trioInter = array_filter(explode(", ", $data['trio inter']));
             $winPivots = array_filter(explode(", ", $data['win pivots']));
             $qinPivots = array_filter(explode(", ", $data['qin pivots']));
             $trioPivots = array_filter(explode(", ", $data['trio pivots']));
-            $expr = count($winInter) . count($qinInter) . count($winPivots) . count($qinPivots) . count($trioPivots);
+            $expr = count($winInter) . count($qinInter) . count($trioInter) . count($winPivots) . count($qinPivots) . count($trioPivots);
             $winners = array_filter(explode(", ", $data['official win']));
             if(in_array($winners[0], $favorites)){
                 if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
