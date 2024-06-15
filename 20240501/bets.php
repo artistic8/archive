@@ -177,7 +177,6 @@ return [
 		'trio pivots' => '1, 2, 3, 4',
 		'place($50)' => '3',
 		'place($50)' => '8',
-		'sure bet' => '8',
 		'place($50)' => '12',
 		'sure wp' => '3',
 		'total bets' => 150,

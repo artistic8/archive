@@ -26,7 +26,6 @@ return [
 		'place($500)' => '6',
 		'place($500)' => '9',
 		'place($50)' => '1',
-		'sure bet' => '1',
 		'place($50)' => '2',
 		'place($50)' => '7',
 		'sure wp' => '7',
