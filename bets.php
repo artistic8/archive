@@ -160,7 +160,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalBets[$raceNumber] += 1 * $unitBet;
             $totalWin -= 1 * $unitBet;
         }
-        $fabor = array_intersect($surePlace, $favorites);
+        $fabor = array_values(array_intersect($surePlace, $favorites));
         if(count($fabor) === 1){
             $racetext .= "\t\t'place($1000)' => '" .  $fabor[0]  . "',\n"; 
                 $totalBets[$raceNumber] += 1000;
@@ -197,7 +197,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t'5 won(trio bet)' => " . $trioAmount . ",\n";
             $totalTrio += $trioAmount;
         }
-        $fabor = array_intersect($surePlace, $favorites);
+        $fabor = array_values(array_intersect($surePlace, $favorites));
         if(count($fabor) === 1  && in_array($fabor[0], array_slice($officialWin, 0, 3)) && isset($placeAmount[$fabor[0]])){
             $totalRace[$raceNumber] += 100 * $placeAmount[$fabor[0]];
             $racetext .= "\t\t'4P won(place bet $placer)' => " . 100 * $placeAmount[$fabor[0]] . ",\n";
