@@ -25,7 +25,6 @@ foreach ($dir as $fileinfo) {
             $runners = array_filter(explode(", ", $data['runners']));
             $winInter = array_filter(explode(", ", $data['win inter']));
             $qinInter = array_filter(explode(", ", $data['qin inter']));
-            $trioInter = array_filter(explode(", ", $data['trio inter']));
             $winPivots = array_filter(explode(", ", $data['win pivots']));
             $qinPivots = array_filter(explode(", ", $data['qin pivots']));
             $trioPivots = array_filter(explode(", ", $data['trio pivots']));
