@@ -16,12 +16,18 @@ return [
 			10 => 33,
 			5 => 21.5,
 		],
-		'win inter' => '',//count: 0
-		'qin inter' => '9',
-		'trio inter' => '9',
+		'win inter' => '1, 5, 7, 8',//count: 4
+		'qin inter' => '1, 2, 5, 6, 7, 8, 9, 12',
+		'trio inter' => '1, 2, 4, 5, 6, 7, 8, 9, 12',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'place($50)' => '6',
+		'place($50)' => '7',
+		'place($50)' => '10',
+		'total bets' => 150,
+		'4P won(place bet 10)' => 165,
+		'total won in race' => 15,
 	],
 	'2' => [
 		/**
@@ -39,8 +45,8 @@ return [
 			9 => 21.5,
 		],
 		'win inter' => '',//count: 0
-		'qin inter' => '9',
-		'trio inter' => '1, 9',
+		'qin inter' => '2, 5, 8, 9',
+		'trio inter' => '1, 2, 5, 8, 9, 10',
 		'win pivots' => '6, 9',
 		'qin pivots' => '1, 3, 6, 9',
 		'trio pivots' => '1, 3, 6, 9, 12',
@@ -62,7 +68,7 @@ return [
 		],
 		'win inter' => '',//count: 0
 		'qin inter' => '',
-		'trio inter' => '3',
+		'trio inter' => '3, 4, 7',
 		'win pivots' => '3, 8, 9',
 		'qin pivots' => '3, 8, 9, 12',
 		'trio pivots' => '3, 6, 8, 9, 12',
@@ -82,12 +88,17 @@ return [
 			5 => 13.5,
 			9 => 25.5,
 		],
-		'win inter' => '5',//count: 1
-		'qin inter' => '5',
-		'trio inter' => '5',
+		'win inter' => '1, 4, 5, 6',//count: 4
+		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 11',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 9, 11',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'place($50)' => '6',
+		'place($50)' => '7',
+		'place($50)' => '10',
+		'total bets' => 150,
+		'total won in race' => -150,
 	],
 	'5' => [
 		/**
@@ -104,12 +115,18 @@ return [
 			2 => 25,
 			6 => 28.5,
 		],
-		'win inter' => '5',//count: 1
-		'qin inter' => '5',
-		'trio inter' => '5',
+		'win inter' => '1, 3, 4, 5',//count: 4
+		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 9',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 9',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'place($50)' => '6',
+		'place($50)' => '7',
+		'place($50)' => '10',
+		'total bets' => 150,
+		'4P won(place bet 6)' => 142.5,
+		'total won in race' => -7.5,
 	],
 	'6' => [
 		/**
@@ -126,12 +143,18 @@ return [
 			11 => 93,
 			3 => 20.5,
 		],
-		'win inter' => '2, 9',//count: 2
-		'qin inter' => '2, 9',
-		'trio inter' => '2, 9',
+		'win inter' => '1, 2, 3, 8, 9, 11',//count: 6
+		'qin inter' => '1, 2, 3, 6, 7, 8, 9, 11',
+		'trio inter' => '1, 2, 3, 6, 7, 8, 9, 11, 12',
 		'win pivots' => '2, 9',
 		'qin pivots' => '2, 9',
 		'trio pivots' => '2, 9',
+		'place($50)' => '4',
+		'place($50)' => '7',
+		'place($50)' => '11',
+		'total bets' => 150,
+		'4P won(place bet 11)' => 465,
+		'total won in race' => 315,
 	],
 	'7' => [
 		/**
@@ -148,12 +171,16 @@ return [
 			1 => 18.5,
 			4 => 15.5,
 		],
-		'win inter' => '3',//count: 1
-		'qin inter' => '3, 4',
-		'trio inter' => '3, 4',
+		'win inter' => '1, 2, 3, 7, 10',//count: 5
+		'qin inter' => '1, 2, 3, 4, 7, 8, 9, 10',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
+		'place($50)' => '1',
+		'total bets' => 50,
+		'4P won(place bet 1)' => 92.5,
+		'total won in race' => 42.5,
 	],
 	'8' => [
 		/**
@@ -170,12 +197,16 @@ return [
 			9 => 56,
 			3 => 20,
 		],
-		'win inter' => '',//count: 0
-		'qin inter' => '2',
-		'trio inter' => '2, 7',
+		'win inter' => '1, 3, 6, 8',//count: 4
+		'qin inter' => '1, 2, 3, 6, 8',
+		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 9',
 		'win pivots' => '2, 5',
 		'qin pivots' => '2, 5, 7',
 		'trio pivots' => '2, 5, 7',
+		'place($50)' => '2',
+		'sure wp' => '2',
+		'total bets' => 50,
+		'total won in race' => -50,
 	],
 	'9' => [
 		/**
@@ -192,16 +223,16 @@ return [
 			6 => 38.5,
 			11 => 30,
 		],
-		'win inter' => '1',//count: 1
-		'qin inter' => '1',
-		'trio inter' => '1',
+		'win inter' => '1, 3, 5, 8, 9, 12',//count: 6
+		'qin inter' => '1, 2, 3, 5, 8, 9, 12',
+		'trio inter' => '1, 2, 3, 5, 6, 8, 9, 11, 12',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
 	],
 ];
 //total win: 0
-//total place: 0
+//total place: 165
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 165

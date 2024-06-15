@@ -1,23 +1,23 @@
 <?php
 
 
-$favoriteWin = ['05', '15'];
-$favoriteQin = [''];
-$favoriteTrio = [''];
-$smallestFavoriteWin = [''];
+$favoriteWin = ['05', '15', '25', '53'];
+$favoriteQin = ['15', '53'];
+$favoriteTrio = ['15'];
+$smallestFavoriteWin = ['53'];
 $biggestFavoriteWin = [''];
-$smallestFavoritePlace = [''];
-$biggestFavoritePlace = ['06', '33'];
+$smallestFavoritePlace = ['20', '53', '90'];
+$biggestFavoritePlace = ['06', '15', '53', '72', '90'];
 $placeCondition = [
-	1 => ['06', '07'],
+	1 => ['06', '07', '25', '53', '61'],
 	2 => [''],
-	3 => ['15'],
-	4 => [''],
+	3 => ['15', '25', '72'],
+	4 => ['53'],
 	5 => ['06', '07'],
-	6 => ['15'],
+	6 => ['15', '25', '60'],
 	7 => ['07'],
-	8 => [''],
-	9 => [''],
+	8 => ['15', '53', '61', '72'],
+	9 => ['72'],
 	10 => [''],
 	11 => [''],
 	12 => ['06'],
