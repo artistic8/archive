@@ -63,15 +63,14 @@ return [
 		'qin pivots' => '3, 4, 5, 6',
 		'trio pivots' => '2, 3, 4, 5, 6',
 		'win($100)' => '2, 3, 4, 5, 6',
-		'win($100)' => '6',
 		'place($500)' => '6',
 		'place($50)' => '3',
 		'place($50)' => '11',
 		'place($50)' => '12',
 		'sure wp' => '3',
-		'total bets' => 1250,
+		'total bets' => 1150,
 		'1 won(win bet)' => 630,
-		'total won in race' => -620,
+		'total won in race' => -520,
 	],
 	'4' => [
 		/**
@@ -225,8 +224,8 @@ return [
 		'trio pivots' => '4, 8, 10',
 	],
 ];
-//total win: -85
+//total win: 15
 //total place: -650
 //total qin: 0
 //total trio: 0
-//total: -735
+//total: -635
