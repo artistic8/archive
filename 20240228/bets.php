@@ -21,6 +21,8 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'2' => [
 		/**
@@ -42,6 +44,12 @@ return [
 		'win pivots' => '6, 9',
 		'qin pivots' => '1, 3, 6, 9',
 		'trio pivots' => '1, 3, 6, 9, 12',
+		'win($100)' => '6, 3, 12',
+		'place($100)' => '6, 3, 12',
+		'total bets' => 600,
+		'1 won(win bet)' => 590,
+		'4P won(place bet 6)' => 230,
+		'total won in race' => 220,
 	],
 	'3' => [
 		/**
@@ -63,7 +71,13 @@ return [
 		'win pivots' => '3, 8, 9',
 		'qin pivots' => '3, 8, 9, 12',
 		'trio pivots' => '3, 6, 8, 9, 12',
-		'sure wp' => '12',
+		'win($100)' => '8, 9, 12, 6',
+		'place($100)' => '8, 9, 12, 6',
+		'total bets' => 800,
+		'1 won(win bet)' => 705,
+		'4P won(place bet 8)' => 190,
+		'4P won(place bet 12)' => 235,
+		'total won in race' => 330,
 	],
 	'4' => [
 		/**
@@ -85,6 +99,8 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'5' => [
 		/**
@@ -106,6 +122,8 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'6' => [
 		/**
@@ -127,6 +145,8 @@ return [
 		'win pivots' => '2, 9',
 		'qin pivots' => '2, 9',
 		'trio pivots' => '2, 9',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'7' => [
 		/**
@@ -148,6 +168,8 @@ return [
 		'win pivots' => '3',
 		'qin pivots' => '3, 4',
 		'trio pivots' => '3, 4',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'8' => [
 		/**
@@ -169,6 +191,10 @@ return [
 		'win pivots' => '2, 5',
 		'qin pivots' => '2, 5, 7',
 		'trio pivots' => '2, 5, 7',
+		'win($100)' => '5',
+		'place($100)' => '5',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 	'9' => [
 		/**
@@ -190,10 +216,12 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 ];
-//total win: 0
-//total place: 0
+//total win: 495
+//total place: -145
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 350

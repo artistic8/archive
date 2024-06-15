@@ -21,6 +21,10 @@ return [
 		'win pivots' => '6, 11',
 		'qin pivots' => '6, 11',
 		'trio pivots' => '6, 11',
+		'win($100)' => '11',
+		'place($100)' => '11',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 	'2' => [
 		/**
@@ -42,6 +46,8 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '8',
 		'trio pivots' => '8',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'3' => [
 		/**
@@ -63,6 +69,8 @@ return [
 		'win pivots' => '1, 7',
 		'qin pivots' => '1, 7',
 		'trio pivots' => '1, 7',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'4' => [
 		/**
@@ -84,6 +92,10 @@ return [
 		'win pivots' => '2, 8, 11',
 		'qin pivots' => '2, 8, 11',
 		'trio pivots' => '2, 8, 11',
+		'win($100)' => '8',
+		'place($100)' => '8',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 	'5' => [
 		/**
@@ -105,6 +117,8 @@ return [
 		'win pivots' => '1, 3',
 		'qin pivots' => '1, 3, 4',
 		'trio pivots' => '1, 3, 4',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'6' => [
 		/**
@@ -126,7 +140,12 @@ return [
 		'win pivots' => '3, 5',
 		'qin pivots' => '3, 5',
 		'trio pivots' => '3, 5',
-		'sure wp' => '5',
+		'win($100)' => '5',
+		'place($100)' => '5',
+		'total bets' => 200,
+		'1 won(win bet)' => 320,
+		'4P won(place bet 5)' => 135,
+		'total won in race' => 255,
 	],
 	'7' => [
 		/**
@@ -148,6 +167,8 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 	'8' => [
 		/**
@@ -169,6 +190,12 @@ return [
 		'win pivots' => '10',
 		'qin pivots' => '9, 10',
 		'trio pivots' => '1, 9, 10',
+		'win($100)' => '10, 1',
+		'place($100)' => '10, 1',
+		'total bets' => 400,
+		'1 won(win bet)' => 330,
+		'4P won(place bet 10)' => 150,
+		'total won in race' => 80,
 	],
 	'9' => [
 		/**
@@ -190,11 +217,12 @@ return [
 		'win pivots' => '11',
 		'qin pivots' => '11',
 		'trio pivots' => '4, 11',
-		'sure wp' => '4, 11',
+		'win($100)' => '',
+		'place($100)' => '',
 	],
 ];
-//total win: 0
-//total place: 0
+//total win: 150
+//total place: -215
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: -65

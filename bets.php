@@ -116,7 +116,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $wininter = array_intersect($favorites, $wininter);
     $qininter = array_intersect($favorites, $qininter);
     $triointer = array_intersect($favorites, $triointer);
-    $interUnion = array_values(array_unique(array_merge($wininter, $qininter, $triointer)));
+    $interUnion = array_values(array_unique(array_merge($wininter, $qininter)));
     $pivots = [];
     $winpivots = [];
     $qinpivots = [];
