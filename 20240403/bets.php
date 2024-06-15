@@ -16,11 +16,17 @@ return [
 			4 => 31,
 			6 => 34.5,
 		],
-		'win inter' => '1',//count: 1
-		'qin inter' => '1, 4, 7, 10',
+		'win inter' => '',//count: 0
+		'qin inter' => '',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '3, 12',
+		'place($500)' => '12',
+		'place($50)' => '2',
+		'place($50)' => '7',
+		'total bets' => 600,
+		'4 won(place bet)' => 1200,
+		'total won in race' => 600,
 	],
 	'2' => [
 		/**
@@ -38,7 +44,7 @@ return [
 			1 => 25.5,
 		],
 		'win inter' => '10',//count: 1
-		'qin inter' => '2, 5, 8, 9, 10',
+		'qin inter' => '10',
 		'win pivots' => '10',
 		'qin pivots' => '10',
 		'trio pivots' => '10',
@@ -59,7 +65,7 @@ return [
 			1 => 24.5,
 		],
 		'win inter' => '11',//count: 1
-		'qin inter' => '3, 5, 11, 12',
+		'qin inter' => '3, 11',
 		'win pivots' => '11',
 		'qin pivots' => '3, 11',
 		'trio pivots' => '3, 11',
@@ -80,7 +86,7 @@ return [
 			7 => 36,
 		],
 		'win inter' => '',//count: 0
-		'qin inter' => '4, 5, 11',
+		'qin inter' => '',
 		'win pivots' => '10, 12',
 		'qin pivots' => '1, 2, 10, 12',
 		'trio pivots' => '1, 2, 10, 12',
@@ -100,8 +106,8 @@ return [
 			7 => 22.5,
 			5 => 11.5,
 		],
-		'win inter' => '1, 3, 5',//count: 3
-		'qin inter' => '1, 3, 4, 5, 6, 7',
+		'win inter' => '5',//count: 1
+		'qin inter' => '4, 5',
 		'win pivots' => '4, 5',
 		'qin pivots' => '4, 5',
 		'trio pivots' => '4, 5',
@@ -121,8 +127,8 @@ return [
 			2 => 14,
 			6 => 67.5,
 		],
-		'win inter' => '1, 2, 3, 9',//count: 4
-		'qin inter' => '1, 2, 3, 6, 7, 8, 9, 10',
+		'win inter' => '2, 3',//count: 2
+		'qin inter' => '2, 3',
 		'win pivots' => '2, 3',
 		'qin pivots' => '2, 3',
 		'trio pivots' => '2, 3',
@@ -163,15 +169,15 @@ return [
 			7 => 21,
 			4 => 17.5,
 		],
-		'win inter' => '4, 6, 8',//count: 3
-		'qin inter' => '1, 3, 4, 6, 8, 9',
+		'win inter' => '4, 6',//count: 2
+		'qin inter' => '4, 6',
 		'win pivots' => '4, 5, 6, 7',
 		'qin pivots' => '4, 5, 6, 7',
 		'trio pivots' => '4, 5, 6, 7',
 	],
 ];
 //total win: 0
-//total place: 0
+//total place: 600
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 600

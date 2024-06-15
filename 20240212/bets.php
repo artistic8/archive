@@ -16,11 +16,22 @@ return [
 			12 => 19.5,
 			4 => 17,
 		],
-		'win inter' => '1, 10',//count: 2
-		'qin inter' => '1, 4, 7, 10, 13',
+		'win inter' => '',//count: 0
+		'qin inter' => '4',
 		'win pivots' => '',
 		'qin pivots' => '4',
 		'trio pivots' => '4, 12',
+		'win($100)' => '4, 12',
+		'win($100)' => '4',
+		'place($500)' => '4',
+		'place($50)' => '4',
+		'place($50)' => '5',
+		'place($50)' => '9',
+		'sure wp' => '4',
+		'total bets' => 950,
+		'7 won(place bet)' => 850,
+		'4P won(place bet 4)' => 85,
+		'total won in race' => -15,
 	],
 	'2' => [
 		/**
@@ -38,10 +49,14 @@ return [
 			12 => 30,
 		],
 		'win inter' => '',//count: 0
-		'qin inter' => '9, 10',
+		'qin inter' => '',
 		'win pivots' => '2, 12',
 		'qin pivots' => '2, 3, 12',
 		'trio pivots' => '2, 3, 12, 13',
+		'win($100)' => '2, 3, 12, 13',
+		'total bets' => 400,
+		'1 won(win bet)' => 805,
+		'total won in race' => 405,
 	],
 	'3' => [
 		/**
@@ -58,8 +73,8 @@ return [
 			3 => 14,
 			10 => 37,
 		],
-		'win inter' => '1, 2, 3, 7, 12',//count: 5
-		'qin inter' => '1, 2, 3, 4, 5, 7, 8, 12',
+		'win inter' => '3',//count: 1
+		'qin inter' => '3',
 		'win pivots' => '3',
 		'qin pivots' => '3',
 		'trio pivots' => '3',
@@ -82,8 +97,8 @@ return [
 			4 => 79,
 			3 => 22.5,
 		],
-		'win inter' => '1, 5',//count: 2
-		'qin inter' => '1, 2, 4, 5, 11',
+		'win inter' => '1',//count: 1
+		'qin inter' => '1, 2',
 		'win pivots' => '1, 10',
 		'qin pivots' => '1, 2, 10',
 		'trio pivots' => '1, 2, 10',
@@ -103,8 +118,8 @@ return [
 			11 => 45,
 			13 => 29,
 		],
-		'win inter' => '3',//count: 1
-		'qin inter' => '3, 5, 11',
+		'win inter' => '',//count: 0
+		'qin inter' => '',
 		'win pivots' => '4, 10',
 		'qin pivots' => '4, 10',
 		'trio pivots' => '4, 10',
@@ -124,8 +139,8 @@ return [
 			11 => 41,
 			6 => 45.5,
 		],
-		'win inter' => '1, 3, 7',//count: 3
-		'qin inter' => '1, 2, 3, 7, 8',
+		'win inter' => '3, 7',//count: 2
+		'qin inter' => '3, 7',
 		'win pivots' => '3, 7',
 		'qin pivots' => '3, 7',
 		'trio pivots' => '3, 7',
@@ -145,16 +160,14 @@ return [
 			9 => 35,
 			8 => 18.5,
 		],
-		'win inter' => '1, 2, 3, 4, 7, 10, 11',//count: 7
-		'qin inter' => '1, 2, 3, 4, 7, 8, 10, 11, 12',
+		'win inter' => '4',//count: 1
+		'qin inter' => '4',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
-		'place($50)' => '3',
-		'place($50)' => '5',
-		'place($50)' => '6',
-		'total bets' => 150,
-		'total won in race' => -150,
+		'place($50)' => '2',
+		'total bets' => 50,
+		'total won in race' => -50,
 	],
 	'8' => [
 		/**
@@ -170,11 +183,14 @@ return [
 			4 => 13.5,
 			6 => 12.5,
 		],
-		'win inter' => '4, 6',//count: 2
-		'qin inter' => '1, 3, 4, 6',
+		'win inter' => '6',//count: 1
+		'qin inter' => '6',
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '',
+		'place($50)' => '2',
+		'total bets' => 50,
+		'total won in race' => -50,
 	],
 	'9' => [
 		/**
@@ -192,10 +208,20 @@ return [
 			6 => 31.5,
 		],
 		'win inter' => '12',//count: 1
-		'qin inter' => '3, 12',
+		'qin inter' => '12',
 		'win pivots' => '1, 8, 12',
 		'qin pivots' => '1, 8, 12',
 		'trio pivots' => '1, 8, 12',
+		'place($500)' => '1',
+		'place($50)' => '1',
+		'place($50)' => '6',
+		'place($50)' => '12',
+		'sure wp' => '1, 12',
+		'total bets' => 650,
+		'7 won(place bet)' => 825,
+		'4P won(place bet 1)' => 82.5,
+		'4P won(place bet 6)' => 157.5,
+		'total won in race' => 415,
 	],
 	'10' => [
 		/**
@@ -213,7 +239,7 @@ return [
 			11 => 52,
 		],
 		'win inter' => '',//count: 0
-		'qin inter' => '4, 5',
+		'qin inter' => '5',
 		'win pivots' => '5',
 		'qin pivots' => '5',
 		'trio pivots' => '5',
@@ -238,10 +264,17 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '6',
 		'trio pivots' => '6',
+		'place($500)' => '4',
+		'place($50)' => '3',
+		'place($50)' => '5',
+		'place($50)' => '8',
+		'sure wp' => '5',
+		'total bets' => 650,
+		'total won in race' => -650,
 	],
 ];
-//total win: 0
-//total place: -650
+//total win: 105
+//total place: -550
 //total qin: 0
 //total trio: 0
-//total: -650
+//total: -445
