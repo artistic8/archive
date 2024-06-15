@@ -70,6 +70,10 @@ return [
 		'win pivots' => '5',
 		'qin pivots' => '5',
 		'trio pivots' => '5',
+		'place($50)' => '5',
+		'sure wp' => '5',
+		'total bets' => 50,
+		'total won in race' => -50,
 	],
 	'4' => [
 		/**
@@ -166,6 +170,10 @@ return [
 		'win pivots' => '7',
 		'qin pivots' => '1, 7',
 		'trio pivots' => '1, 4, 7',
+		'place($500)' => '1',
+		'total bets' => 500,
+		'7 won(place bet)' => 550,
+		'total won in race' => 50,
 	],
 	'8' => [
 		/**
