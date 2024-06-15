@@ -29,7 +29,7 @@ foreach ($dir as $fileinfo) {
             $winPivots = array_filter(explode(", ", $data['win pivots']));
             $qinPivots = array_filter(explode(", ", $data['qin pivots']));
             $trioPivots = array_filter(explode(", ", $data['trio pivots']));
-            $expr = count($winPivots) . count($qinPivots) . count($trioPivots);
+            $expr = count($winInter) . count($winPivots) . count($qinPivots) . count($trioPivots);
             $winners = array_filter(explode(", ", $data['official win']));
             if(in_array($winners[0], $favorites)){
                 if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
