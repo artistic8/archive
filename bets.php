@@ -147,6 +147,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalPlace -= $unitBet;
+        $racetext .= "\t\t'win($10)' => '" . implode(", ", $favorites) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * count($favorites);
+        $totalPlace -= 10 * count($favorites);
     }
     // $surePlace = [];
     // foreach($placeCondition as $placer => $criteria){
@@ -171,6 +174,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
             $racetext .= "\t\t'4 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
             $totalPlace += 1/10 * $unitBet * $placeAmount[end($favorites)];
+            if(in_array($officialWin[0], $favorites)){
+                $totalRace[$raceNumber] +=$winAmount;
+                $racetext .= "\t\t'1 won(winpla bet)' => " . $winAmount . ",\n";
+                $totalPlace += $winAmount;
+            }
         }
         if(in_array($compactExpr, $favoriteTrio) && count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3){
             $totalRace[$raceNumber] += $trioAmount;
