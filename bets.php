@@ -98,22 +98,22 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $qincandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
         $triocandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
         if($firstSet) {
-            $wininter = $wincandidates;
-            $qininter = $qincandidates;
-            $triointer = $triocandidates;
+            $winInter = $wincandidates;
+            $qinInter = $qincandidates;
+            $trioInter = $triocandidates;
             $firstSet = false;
         }
         else {
-            $wininter = array_intersect($wininter, $wincandidates);
-            $qininter = array_intersect($qininter, $qincandidates);
-            $triointer = array_intersect($triointer, $triocandidates);
+            $winInter = array_intersect($winInter, $wincandidates);
+            $qinInter = array_intersect($qinInter, $qincandidates);
+            $trioInter = array_intersect($trioInter, $triocandidates);
         }
     }
-    sort($wininter);
-    sort($qininter);
-    // $wininter = array_intersect($favorites, $wininter);
-    // $qininter = array_intersect($favorites, $qininter);
-    // $triointer = array_intersect($favorites, $triointer);
+    sort($winInter);
+    sort($qinInter);
+    // $winInter = array_intersect($favorites, $winInter);
+    // $qinInter = array_intersect($favorites, $qinInter);
+    // $trioInter = array_intersect($favorites, $trioInter);
     $pivots = [];
     $winpivots = [];
     $qinpivots = [];
@@ -129,14 +129,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    $racetext .= "\t\t'win inter' => '" . implode(", ", $wininter) . "',//count: " . count($wininter) . "\n";
-    $racetext .= "\t\t'qin inter' => '" . implode(", ", $qininter) . "',\n";
-    $racetext .= "\t\t'trio inter' => '" . implode(", ", $triointer) . "',\n";
+    $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',//count: " . count($winInter) . "\n";
+    $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
+    $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
     $racetext .= "\t\t'win pivots' => '" . implode(", ", $winpivots) . "',\n";
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinpivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $pivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = count($wininter) . count($qininter) . count($triointer);
+    $compactExpr = count($winInter) . count($qinInter) . count($trioInter);
     if(!empty($compactExpr) && in_array($compactExpr, $favoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
