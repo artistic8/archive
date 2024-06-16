@@ -50,7 +50,6 @@ return [
 		'place($50)' => '1',
 		'place($50)' => '3',
 		'place($50)' => '6',
-		'sure wp' => '6, 6',
 		'total bets' => 1250,
 		'1 won(win bet)' => 835,
 		'4P won(place bet 1)' => 247.5,
