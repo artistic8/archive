@@ -1,35 +1,35 @@
 <?php
 
 
-$favoriteWin = [10];
-$winInterWin = [10];
-$qinInterWin = [10];
-$trioInterWin = [10];
-$favoritePlace = [9, 10];
-$winInterPlace = [7, 9, 10];
-$qinInterPlace = [2, 3, 4, 5, 6, 7, 8, 9, 10];
-$trioInterPlace = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$favoriteWin = [25, 30, 32, 35, 40, 48];
+$winInterWin = [32, 40];
+$qinInterWin = [32, 35, 40, 48];
+$trioInterWin = [32, 35, 40, 48];
+$favoritePlace = [18, 20, 25, 27, 28, 30, 32, 35, 36, 40, 48];
+$winInterPlace = [15, 21, 24, 27, 32, 35, 36, 40];
+$qinInterPlace = [6, 8, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 28, 30, 32, 35, 36, 40, 48];
+$trioInterPlace = [1, 2, 3, 4, 6, 8, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 28, 30, 32, 35, 36, 40, 48];
 $favoriteQin = [];
 $favoriteTrio = [];
 $smallestFavoriteWin = [];
 $biggestFavoriteWin = [];
-$smallestFavoritePlace = [];
-$biggestFavoritePlace = [];
+$smallestFavoritePlace = [32];
+$biggestFavoritePlace = [27];
 $placeCondition = [
-	1 => [],
-	2 => [10],
-	3 => [10],
-	4 => [],
+	1 => [30, 32],
+	2 => [40, 48],
+	3 => [32, 35, 36, 40],
+	4 => [48],
 	5 => [],
-	6 => [],
-	7 => [],
-	8 => [],
-	9 => [10],
-	10 => [],
+	6 => [30],
+	7 => [48],
+	8 => [1, 35, 36],
+	9 => [40],
+	10 => [32],
 	11 => [],
-	12 => [],
+	12 => [36],
 	13 => [],
-	14 => [],
+	14 => [35],
 ];
 
 ?>
