@@ -89,8 +89,10 @@ return [
 		'qin pivots' => '',
 		'trio pivots' => '',
 		'win($100)' => '5',
-		'total bets' => 100,
-		'total won in race' => -100,
+		'place($100)' => '5',
+		'total bets' => 200,
+		'5P won(place bet)' => 135,
+		'total won in race' => -65,
 	],
 	'5' => [
 		/**
@@ -114,9 +116,11 @@ return [
 		'qin pivots' => '',
 		'trio pivots' => '',
 		'win($100)' => '5',
-		'total bets' => 100,
-		'1 won(win bet)' => 175,
-		'total won in race' => 75,
+		'place($100)' => '5',
+		'total bets' => 200,
+		'5W won(win bet)' => 175,
+		'5P won(place bet)' => 115,
+		'total won in race' => 90,
 	],
 	'6' => [
 		/**
@@ -183,9 +187,10 @@ return [
 		'win pivots' => '2, 5',
 		'qin pivots' => '2, 5, 7',
 		'trio pivots' => '2, 5, 7',
-		'win($100)' => '2, 5, 7',
-		'total bets' => 300,
-		'total won in race' => -300,
+		'win($100)' => '5',
+		'place($100)' => '5',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 	'9' => [
 		/**
@@ -210,8 +215,8 @@ return [
 		'trio pivots' => '',
 	],
 ];
-//total win: -325
-//total place: 0
+//total win: -125
+//total place: -50
 //total qin: 0
 //total trio: 0
-//total: -325
+//total: -175

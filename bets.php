@@ -169,7 +169,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $racetext .= "\t\t'5W won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
-            if(in_array(5, array_slice($officialWin, 0, 3))){
+            if(in_array(5, array_slice($officialWin, 0, 3)) && isset($placeAmount[5])){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[5];
                 $racetext .= "\t\t'5P won(place bet)' => " . ($unitBet / 10) * $placeAmount[5] . ",\n";
                 $totalPlace += ($unitBet / 10) * $placeAmount[5];
