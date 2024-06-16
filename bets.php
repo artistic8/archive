@@ -164,7 +164,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
         $totalTrio -= 10 * combination(3, count($favorites));
     }
-    $experimental = count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
+    $experimental = !empty($winPivots) && count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
     if(in_array($compactExpr, $biggestFavoritePlace) || $experimental){
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
