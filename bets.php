@@ -137,7 +137,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinPivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $trioPivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = count($favorites) * (count($qinInter) + count($trioInter));
+    $compactExpr = count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
     
     if(in_array($compactExpr, $favoriteWin)){
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
@@ -164,7 +164,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
         $totalTrio -= 10 * combination(3, count($favorites));
     }
-    if(in_array($compactExpr, $biggestFavoritePlace)){
+    $experimental = count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
+    if(in_array($compactExpr, $biggestFavoritePlace) || $experimental){
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalPlace -= $unitBet;
@@ -208,7 +209,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
         }
-        if(in_array($compactExpr, $biggestFavoritePlace)) {
+        if(in_array($compactExpr, $biggestFavoritePlace) || $experimental) {
             if(in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
                 $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
                 $racetext .= "\t\t'4 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
