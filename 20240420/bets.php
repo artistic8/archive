@@ -28,6 +28,7 @@ return [
 		Race 2
 		*/
 		'favorites' => '2, 5, 10, 12',
+		//5 in favorites
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '12, 2, 5, 6',
 		'win amount' => 63,
@@ -50,6 +51,7 @@ return [
 		Race 3
 		*/
 		'favorites' => '3, 4, 5',
+		//5 in favorites
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'official win' => '4, 9, 8, 5',
 		'win amount' => 20.5,
@@ -72,6 +74,7 @@ return [
 		Race 4
 		*/
 		'favorites' => '1, 3, 5, 9, 12',
+		//5 in favorites
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '6, 5, 1, 3',
 		'win amount' => 77.5,
@@ -138,6 +141,7 @@ return [
 		Race 7
 		*/
 		'favorites' => '1, 3, 4, 5, 14',
+		//5 in favorites
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '10, 11, 12, 8',
 		'win amount' => 119,

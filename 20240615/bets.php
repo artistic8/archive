@@ -28,6 +28,7 @@ return [
 		Race 2
 		*/
 		'favorites' => '3, 5, 6',
+		//5 in favorites
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 1, 10, 4',
 		'win amount' => 56,
@@ -160,6 +161,7 @@ return [
 		Race 8
 		*/
 		'favorites' => '1, 4, 5, 6',
+		//5 in favorites
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '5, 7, 1, 4',
 		'win amount' => 53.5,
