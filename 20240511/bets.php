@@ -38,12 +38,12 @@ return [
 			4 => 26.5,
 			3 => 22,
 		],
-		'win inter' => '5',
-		'qin inter' => '5',
-		'trio inter' => '5',
-		'win pivots' => '5',
-		'qin pivots' => '5',
-		'trio pivots' => '5',
+		'win inter' => '3, 5',
+		'qin inter' => '3, 5',
+		'trio inter' => '3, 5',
+		'win pivots' => '3, 5',
+		'qin pivots' => '3, 5',
+		'trio pivots' => '3, 5',
 	],
 	'3' => [
 		/**

@@ -41,8 +41,8 @@ return [
 		'win inter' => '',
 		'qin inter' => '6',
 		'trio inter' => '6',
-		'win pivots' => '5, 6, 12',
-		'qin pivots' => '5, 6, 12',
+		'win pivots' => '3, 5, 6, 12',
+		'qin pivots' => '3, 5, 6, 12',
 		'trio pivots' => '3, 5, 6, 12',
 	],
 	'3' => [
