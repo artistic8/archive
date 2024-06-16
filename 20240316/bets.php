@@ -171,11 +171,11 @@ return [
 			1 => 30,
 		],
 		'win inter' => '1',
-		'qin inter' => '1, 7',
-		'trio inter' => '1, 7',
-		'win pivots' => '1, 5',
-		'qin pivots' => '1, 5, 7',
-		'trio pivots' => '1, 5, 7',
+		'qin inter' => '1',
+		'trio inter' => '1',
+		'win pivots' => '1',
+		'qin pivots' => '1, 7',
+		'trio pivots' => '1, 7',
 	],
 	'9' => [
 		/**
@@ -219,7 +219,7 @@ return [
 		'trio inter' => '',
 		'win pivots' => '',
 		'qin pivots' => '',
-		'trio pivots' => '9',
+		'trio pivots' => '',
 	],
 ];
 //total win: 0

@@ -238,9 +238,9 @@ return [
 		'win inter' => '',
 		'qin inter' => '',
 		'trio inter' => '',
-		'win pivots' => '4',
-		'qin pivots' => '4, 6',
-		'trio pivots' => '4, 6',
+		'win pivots' => '',
+		'qin pivots' => '6',
+		'trio pivots' => '6',
 	],
 ];
 //total win: 0
