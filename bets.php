@@ -139,11 +139,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $unitBet = 100;
     $compactExpr = count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
     
-    if(in_array($compactExpr, $favoriteTrio)){
-        $racetext .= "\t\t'trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
-        $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
-        $totalTrio -= 10 * combination(3, count($favorites));
-    }
     $experimental = !empty($winPivots) && count($favorites) != 2 && count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
     if(in_array($compactExpr, $biggestFavoritePlace) || $experimental){
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
