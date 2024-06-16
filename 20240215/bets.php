@@ -38,7 +38,7 @@ return [
 			3 => 19,
 			8 => 15,
 		],
-		'win inter' => '',
+		'win inter' => '3',
 		'qin inter' => '3, 8',
 		'trio inter' => '3, 8',
 		'win pivots' => '3, 8',

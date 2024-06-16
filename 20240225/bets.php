@@ -37,12 +37,12 @@ return [
 			2 => 29,
 			6 => 15,
 		],
-		'win inter' => '6',
-		'qin inter' => '6',
-		'trio inter' => '6',
-		'win pivots' => '6',
-		'qin pivots' => '6',
-		'trio pivots' => '6',
+		'win inter' => '3, 6',
+		'qin inter' => '3, 6',
+		'trio inter' => '3, 6',
+		'win pivots' => '3, 6',
+		'qin pivots' => '3, 6',
+		'trio pivots' => '3, 6',
 	],
 	'3' => [
 		/**
