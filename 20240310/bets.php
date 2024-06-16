@@ -176,6 +176,10 @@ return [
 		'win pivots' => '4, 6, 8',
 		'qin pivots' => '4, 6, 8',
 		'trio pivots' => '4, 6, 8',
+		'place($100)' => '8',
+		'total bets' => 100,
+		'4 won(place bet)' => 200,
+		'total won in race' => 100,
 	],
 	'9' => [
 		/**
@@ -223,7 +227,7 @@ return [
 	],
 ];
 //total win: 0
-//total place: 0
+//total place: 100
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 100
