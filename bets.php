@@ -151,15 +151,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $surePlace[] = $placer;
         }
     }
-    if(count($surePlace) > 1){
-        foreach($placeCondition as $placer => $criteria){
-            if(in_array($compactExpr, $criteria)){
-                $racetext .= "\t\t'place($50)' => '" .  $placer  . "',\n"; 
-                $totalBets[$raceNumber] += 50;
-                $totalPlace -= 50;
-            }
-        }
-    }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
@@ -168,15 +159,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
                 $racetext .= "\t\t'4 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
                 $totalPlace += 1/10 * $unitBet * $placeAmount[end($favorites)];
-            }
-        }
-        if(count($surePlace) > 1){
-            foreach($placeCondition as $placer => $criteria){
-                if(in_array($compactExpr, $criteria) && in_array($placer, array_slice($officialWin, 0, 3)) && isset($placeAmount[$placer])){
-                    $totalRace[$raceNumber] += 5 * $placeAmount[$placer];
-                    $racetext .= "\t\t'4P won(place bet $placer)' => " . 5 * $placeAmount[$placer] . ",\n";
-                    $totalPlace += 5 * $placeAmount[$placer];
-                }
             }
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
