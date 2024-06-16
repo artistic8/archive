@@ -143,9 +143,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . 5 . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet;
         $totalWin -= 1 * $unitBet;
-        $racetext .= "\t\t'place($" . $unitBet . ")' => '" . 5 . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet;
-        $totalPlace -= 1 * $unitBet;
     }
     
     $experimental = !empty($winPivots) && count($favorites) != 2 && count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
@@ -168,11 +165,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'5W won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
-            }
-            if(in_array(5, array_slice($officialWin, 0, 3)) && isset($placeAmount[5])){
-                $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[5];
-                $racetext .= "\t\t'5P won(place bet)' => " . ($unitBet / 10) * $placeAmount[5] . ",\n";
-                $totalPlace += ($unitBet / 10) * $placeAmount[5];
             }
         }
         if(in_array($compactExpr, $biggestFavoritePlace) || $experimental) {
