@@ -23,7 +23,7 @@ foreach ($dir as $fileinfo) {
             $winPivots = array_filter(explode(", ", $data['win pivots']));
             $qinPivots = array_filter(explode(", ", $data['qin pivots']));
             $trioPivots = array_filter(explode(", ", $data['trio pivots']));
-            $expr = $raceNumber *  count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
+            $expr =  count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
             $winners = array_filter(explode(", ", $data['official win']));
             if(in_array(end($favorites), array_slice($winners, 0, 3))){
                 if(!isset($biggestFavoritePlace[$expr])) $biggestFavoritePlace[$expr] = true;
