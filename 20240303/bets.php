@@ -23,11 +23,9 @@ return [
 		'qin pivots' => '5, 7, 8, 9',
 		'trio pivots' => '5, 7, 8, 9',
 		'place($100)' => '7, 8, 9',
-		'place($100)' => '7, 8, 9',
-		'total bets' => 600,
+		'total bets' => 300,
 		'4P won(place bet 7)' => 75,
-		'4P won(place bet 7)' => 75,
-		'total won in race' => -450,
+		'total won in race' => -225,
 	],
 	'2' => [
 		/**
@@ -51,11 +49,9 @@ return [
 		'qin pivots' => '2, 9',
 		'trio pivots' => '2, 3, 9',
 		'place($100)' => '2, 9',
-		'place($100)' => '2, 9',
-		'total bets' => 400,
+		'total bets' => 200,
 		'4P won(place bet 2)' => 80,
-		'4P won(place bet 2)' => 80,
-		'total won in race' => -240,
+		'total won in race' => -120,
 	],
 	'3' => [
 		/**
@@ -79,9 +75,8 @@ return [
 		'qin pivots' => '6, 7, 9',
 		'trio pivots' => '6, 7, 9',
 		'place($100)' => '7',
-		'place($100)' => '7',
-		'total bets' => 200,
-		'total won in race' => -200,
+		'total bets' => 100,
+		'total won in race' => -100,
 	],
 	'4' => [
 		/**
@@ -126,9 +121,6 @@ return [
 		'win pivots' => '10',
 		'qin pivots' => '10',
 		'trio pivots' => '10',
-		'place($100)' => '10',
-		'total bets' => 100,
-		'total won in race' => -100,
 	],
 	'6' => [
 		/**
@@ -152,11 +144,9 @@ return [
 		'qin pivots' => '6, 7, 10',
 		'trio pivots' => '6, 7, 10',
 		'place($100)' => '7',
-		'place($100)' => '7',
-		'total bets' => 200,
+		'total bets' => 100,
 		'4P won(place bet 7)' => 85,
-		'4P won(place bet 7)' => 85,
-		'total won in race' => -30,
+		'total won in race' => -15,
 	],
 	'7' => [
 		/**
@@ -180,9 +170,8 @@ return [
 		'qin pivots' => '2',
 		'trio pivots' => '2',
 		'place($100)' => '2',
-		'place($100)' => '2',
-		'total bets' => 200,
-		'total won in race' => -200,
+		'total bets' => 100,
+		'total won in race' => -100,
 	],
 	'8' => [
 		/**
@@ -206,11 +195,9 @@ return [
 		'qin pivots' => '4, 5',
 		'trio pivots' => '4, 5',
 		'place($100)' => '4, 5',
-		'place($100)' => '4, 5',
-		'total bets' => 400,
+		'total bets' => 200,
 		'4P won(place bet 5)' => 75,
-		'4P won(place bet 5)' => 75,
-		'total won in race' => -250,
+		'total won in race' => -125,
 	],
 	'9' => [
 		/**
@@ -258,7 +245,7 @@ return [
 	],
 ];
 //total win: 0
-//total place: -1470
+//total place: -685
 //total qin: 0
 //total trio: 0
-//total: -1470
+//total: -685
