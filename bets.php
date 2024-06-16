@@ -149,16 +149,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += 1 * $unitBet * count($winInter);
         $totalWin -= 1 * $unitBet * count($winInter);
     }
-    if(in_array($compactExpr, $qinInterWin)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $qinInter) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($qinInter);
-        $totalWin -= 1 * $unitBet * count($qinInter);
-    }
-    if(in_array($compactExpr, $trioInterWin)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $trioInter) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($trioInter);
-        $totalWin -= 1 * $unitBet * count($trioInter);
-    }
     if(in_array($compactExpr, $favoriteTrio)){
         $racetext .= "\t\t'trio($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 10 * combination(3, count($favorites));
@@ -195,16 +185,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin += ($unitBet / 10) * $winAmount;
         }
         if(in_array($compactExpr, $winInterWin) && in_array($officialWin[0], $winInter)){
-            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-            $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-            $totalWin += ($unitBet / 10) * $winAmount;
-        }
-        if(in_array($compactExpr, $qinInterWin) && in_array($officialWin[0], $qinInter)){
-            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-            $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-            $totalWin += ($unitBet / 10) * $winAmount;
-        }
-        if(in_array($compactExpr, $trioInterWin) && in_array($officialWin[0], $trioInter)){
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
             $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
