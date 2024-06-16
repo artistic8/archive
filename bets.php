@@ -170,11 +170,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalPlace += 1/10 * $unitBet * $placeAmount[end($favorites)];
             }
         }
-        if(in_array($compactExpr, $favoriteTrio) && count(array_intersect($favorites, array_slice($officialWin, 0, 3))) === 3){
-            $totalRace[$raceNumber] += $trioAmount;
-            $racetext .= "\t\t'5 won(trio bet)' => " . $trioAmount . ",\n";
-            $totalTrio += $trioAmount;
-        }
         if(count($surePlace) > 1){
             foreach($placeCondition as $placer => $criteria){
                 if(in_array($compactExpr, $criteria) && in_array($placer, array_slice($officialWin, 0, 3)) && isset($placeAmount[$placer])){
