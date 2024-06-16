@@ -137,7 +137,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'qin pivots' => '" . implode(", ", $qinPivots) . "',\n";
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $trioPivots) . "',\n";
     $unitBet = 100;
-    $compactExpr = count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
+    $compactExpr = $raceNumber * count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
     
     $experimental = !empty($winPivots) && count($favorites) != 2 && count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
     if(in_array($compactExpr, $biggestFavoritePlace) || $experimental){
