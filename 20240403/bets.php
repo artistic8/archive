@@ -22,6 +22,11 @@ return [
 		'win pivots' => '',
 		'qin pivots' => '',
 		'trio pivots' => '3, 12',
+		'place($100)' => '',
+		'place($100)' => '12',
+		'total bets' => 100,
+		'4P won(place bet 12)' => 120,
+		'total won in race' => 20,
 	],
 	'2' => [
 		/**
@@ -44,6 +49,12 @@ return [
 		'win pivots' => '10',
 		'qin pivots' => '10',
 		'trio pivots' => '10',
+		'place($100)' => '10',
+		'place($100)' => '10',
+		'total bets' => 200,
+		'4P won(place bet 10)' => 87.5,
+		'4P won(place bet 10)' => 87.5,
+		'total won in race' => -25,
 	],
 	'3' => [
 		/**
@@ -66,6 +77,12 @@ return [
 		'win pivots' => '11',
 		'qin pivots' => '3, 11',
 		'trio pivots' => '3, 11',
+		'place($100)' => '3, 11',
+		'place($100)' => '3, 11',
+		'total bets' => 400,
+		'4P won(place bet 3)' => 100,
+		'4P won(place bet 3)' => 100,
+		'total won in race' => -200,
 	],
 	'4' => [
 		/**
@@ -110,6 +127,14 @@ return [
 		'win pivots' => '4, 5',
 		'qin pivots' => '4, 5',
 		'trio pivots' => '4, 5',
+		'place($100)' => '4, 5',
+		'place($100)' => '4, 5',
+		'total bets' => 400,
+		'4P won(place bet 4)' => 77.5,
+		'4P won(place bet 5)' => 57.5,
+		'4P won(place bet 4)' => 77.5,
+		'4P won(place bet 5)' => 57.5,
+		'total won in race' => -130,
 	],
 	'6' => [
 		/**
@@ -132,6 +157,12 @@ return [
 		'win pivots' => '2, 3',
 		'qin pivots' => '2, 3',
 		'trio pivots' => '2, 3',
+		'place($100)' => '2, 3',
+		'place($100)' => '2, 3',
+		'total bets' => 400,
+		'4P won(place bet 2)' => 70,
+		'4P won(place bet 2)' => 70,
+		'total won in race' => -260,
 	],
 	'7' => [
 		/**
@@ -176,10 +207,18 @@ return [
 		'win pivots' => '4, 5, 6, 7',
 		'qin pivots' => '4, 5, 6, 7',
 		'trio pivots' => '4, 5, 6, 7',
+		'place($100)' => '4, 6',
+		'place($100)' => '4, 6',
+		'place($100)' => '4, 6',
+		'total bets' => 600,
+		'4P won(place bet 4)' => 87.5,
+		'4P won(place bet 4)' => 87.5,
+		'4P won(place bet 4)' => 87.5,
+		'total won in race' => -337.5,
 	],
 ];
 //total win: 0
-//total place: 0
+//total place: -932.5
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: -932.5

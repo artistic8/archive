@@ -179,11 +179,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += $unitBet * count($qinInter);
         $totalPlace -= $unitBet * count($qinInter);
     }
-    if(in_array($compactExpr, $trioInterPlace)){
-        $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  implode(", ", $trioInter)  . "',\n"; 
-        $totalBets[$raceNumber] += $unitBet * count($trioInter);
-        $totalPlace -= $unitBet * count($trioInter);
-    }
     $surePlace = [];
     foreach($placeCondition as $placer => $criteria){
         if(in_array($compactExpr, $criteria)){
@@ -248,15 +243,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         if(in_array($compactExpr, $qinInterPlace)){
             foreach($qinInter as $placer){
-                if(in_array($placer, array_slice($officialWin, 0, 3)) && isset($placeAmount[$placer])){
-                    $totalRace[$raceNumber] += 5 * $placeAmount[$placer];
-                    $racetext .= "\t\t'4P won(place bet $placer)' => " . 5 * $placeAmount[$placer] . ",\n";
-                    $totalPlace += 5 * $placeAmount[$placer];
-                }
-            }
-        }
-        if(in_array($compactExpr, $trioInterPlace)){
-            foreach($trioInter as $placer){
                 if(in_array($placer, array_slice($officialWin, 0, 3)) && isset($placeAmount[$placer])){
                     $totalRace[$raceNumber] += 5 * $placeAmount[$placer];
                     $racetext .= "\t\t'4P won(place bet $placer)' => " . 5 * $placeAmount[$placer] . ",\n";
