@@ -140,9 +140,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $compactExpr = count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
 
     if(in_array(5, $favorites)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
-        $totalWin -= 1 * $unitBet * count($favorites);
+        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . 5 . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet;
+        $totalWin -= 1 * $unitBet;
+        $racetext .= "\t\t'place($" . $unitBet . ")' => '" . 5 . "',\n"; 
+        $totalBets[$raceNumber] += 1 * $unitBet;
+        $totalPlace -= 1 * $unitBet;
     }
     
     $experimental = !empty($winPivots) && count($favorites) != 2 && count($favorites) === count($winInter) && count($winInter) === count($qinInter) && count($qinInter) === count($trioInter);
@@ -160,10 +163,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-        if(in_array(5, $favorites)  && in_array($officialWin[0], $favorites)){
-            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-            $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-            $totalWin += ($unitBet / 10) * $winAmount;
+        if(in_array(5, $favorites)){
+            if($officialWin[0] == 5){
+                $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+                $racetext .= "\t\t'5W won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                $totalWin += ($unitBet / 10) * $winAmount;
+            }
+            if(in_array(5, array_slice($officialWin, 0, 3))){
+                $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[5];
+                $racetext .= "\t\t'5P won(place bet)' => " . ($unitBet / 10) * $placeAmount[5] . ",\n";
+                $totalPlace += ($unitBet / 10) * $placeAmount[5];
+            }
         }
         if(in_array($compactExpr, $biggestFavoritePlace) || $experimental) {
             if(in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
