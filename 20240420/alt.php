@@ -76,7 +76,7 @@ return [
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
-		'all values' => '1, 3, 4, 5',
+		'all place' => '1, 3, 4, 5',
 	],
 	'5' => [
 		/**
