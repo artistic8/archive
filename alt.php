@@ -54,11 +54,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
-    if(isset($officialWin)){
-        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-    }
+   
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
     }
@@ -77,6 +74,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $allValues = [];
     $place = [];
+    $sets = [];
     foreach($runners  as $one){
         foreach($runners as $two){
             if($two > $one){
@@ -93,11 +91,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                             $racetext .= "\t\t'set' => '" . implode(", ", $set) . "',\n";
                             $allValues = array_values(array_unique(array_merge($allValues, $set)));
                             if(!in_array($three, $place)) $place[] = $three;
+                            $sets[] = $set;
                         }
                     }
                 }
             }
         }
+    }
+    $racetext .= "\t\t'count sets => " . count($sets) . ",\n"; 
+    $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
+    if(isset($officialWin)){
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     sort($allValues);
