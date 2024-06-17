@@ -62,7 +62,6 @@ return [
 		],
 		'set' => '1, 3, 7',
 		'set' => '3, 7, 9',
-		'shit' => '3',
 		'all place' => '7, 9',
 		'all values' => '1, 3, 7, 9',//count:4
 		'win($10)' => '3, 9',
