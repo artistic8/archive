@@ -104,6 +104,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                     $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                     $totalWin += ($unitBet / 10) * $winAmount;
                 }
+            }
         }
     }
     $place = array_intersect($place, $favorites);
