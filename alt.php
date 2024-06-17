@@ -78,6 +78,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                         $trioInter = array_intersect($set, $trioInter);
                         if(count($winInter) === 3 && count($qinInter) === 3 && count($trioInter) === 3){
                             $racetext .= "\t\t'set' => '" . implode(", ", $set) . "',\n";
+                            $allValues = array_values(array_unique(array_merge($allValues, $set)));
                         }
                     }
                 }
