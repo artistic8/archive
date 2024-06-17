@@ -95,8 +95,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $inter1 = array_intersect($ones, $twos);
     $inter2 = array_intersect($threes, $twos);
-    if(!empty($inter1)) $racetext .= "\t\t'inter1' => '" . implode(", ", $inter1) . "',\n";
-    if(!empty($inter2)) $racetext .= "\t\t'inter2' => '" . implode(", ", $inter2) . "',\n";
+    if(!empty($inter1) && !empty($inter2)){
+        $shit = array_intersect($favorites, array_merge($inter1, $inter2));
+        if(!empty($shit)) $racetext .= "\t\t'shit' => '" . implode(", ", $shit) . "',\n";
+    }
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     sort($allValues);
     $unitBet = 10;
