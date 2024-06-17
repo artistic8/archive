@@ -5,9 +5,7 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '8, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '8, 10, 13, 3',
 		'win amount' => 21,
 		'qin amount' => 271,
 		'trio amount' => 2027,
@@ -19,6 +17,9 @@ return [
 		'set' => '1, 4, 8',
 		'set' => '1, 4, 10',
 		'set' => '1, 6, 7',
+		'count sets => 3,
+		'favorites' => '8, 14',
+		'official win' => '8, 10, 13, 3',
 		'all place' => '8, 10, 7',
 		'all values' => '1, 4, 6, 7, 8, 10',//count:6
 		'trio($10)' => '1, 4, 6, 7, 8, 10',
@@ -29,9 +30,7 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '1, 2, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '6, 9, 10, 11',
 		'win amount' => 65,
 		'qin amount' => 898.5,
 		'trio amount' => 25915,
@@ -41,6 +40,9 @@ return [
 			10 => 248.5,
 		],
 		'set' => '2, 4, 7',
+		'count sets => 1,
+		'favorites' => '1, 2, 6',
+		'official win' => '6, 9, 10, 11',
 		'all place' => '7',
 		'all values' => '2, 4, 7',//count:3
 	],
@@ -48,9 +50,7 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7',
-		'official win' => '5, 1, 4, 2',
 		'win amount' => 47.5,
 		'qin amount' => 241.5,
 		'trio amount' => 42,
@@ -60,6 +60,9 @@ return [
 			4 => 10.1,
 		],
 		'set' => '1, 3, 7',
+		'count sets => 1,
+		'favorites' => '4',
+		'official win' => '5, 1, 4, 2',
 		'all place' => '7',
 		'all values' => '1, 3, 7',//count:3
 	],
@@ -67,9 +70,7 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '3, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '14, 4, 9, 5',
 		'win amount' => 43,
 		'qin amount' => 220.5,
 		'trio amount' => 1266,
@@ -80,6 +81,9 @@ return [
 		],
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
+		'count sets => 2,
+		'favorites' => '3, 14',
+		'official win' => '14, 4, 9, 5',
 		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
 	],
@@ -87,9 +91,7 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '2, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '11, 4, 6, 10',
 		'win amount' => 255,
 		'qin amount' => 690.5,
 		'trio amount' => 15838,
@@ -100,6 +102,9 @@ return [
 		],
 		'set' => '1, 3, 5',
 		'set' => '1, 3, 7',
+		'count sets => 2,
+		'favorites' => '2, 3',
+		'official win' => '11, 4, 6, 10',
 		'all place' => '5, 7',
 		'all values' => '1, 3, 5, 7',//count:4
 	],
@@ -107,9 +112,7 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '3, 8, 10, 1',
 		'win amount' => 20,
 		'qin amount' => 173,
 		'trio amount' => 850,
@@ -120,6 +123,9 @@ return [
 		],
 		'set' => '2, 3, 5',
 		'set' => '2, 3, 9',
+		'count sets => 2,
+		'favorites' => '3',
+		'official win' => '3, 8, 10, 1',
 		'all place' => '5, 9',
 		'all values' => '2, 3, 5, 9',//count:4
 	],
@@ -127,9 +133,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'official win' => '4, 11, 8, 5',
 		'win amount' => 24,
 		'qin amount' => 37.5,
 		'trio amount' => 91,
@@ -138,14 +142,15 @@ return [
 			11 => 14.5,
 			8 => 27,
 		],
+		'count sets => 0,
+		'favorites' => '4',
+		'official win' => '4, 11, 8, 5',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'favorites' => '1, 4, 10, 13, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '3, 9, 6, 4',
 		'win amount' => 228.5,
 		'qin amount' => 3248.5,
 		'trio amount' => 6784,
@@ -157,6 +162,9 @@ return [
 		'set' => '3, 4, 8',
 		'set' => '4, 5, 6',
 		'set' => '4, 6, 8',
+		'count sets => 3,
+		'favorites' => '1, 4, 10, 13, 14',
+		'official win' => '3, 9, 6, 4',
 		'all place' => '8, 6',
 		'all values' => '3, 4, 5, 6, 8',//count:5
 	],
@@ -164,9 +172,7 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '8, 10, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '3, 5, 8, 13',
 		'win amount' => 71.5,
 		'qin amount' => 595,
 		'trio amount' => 1181,
@@ -179,6 +185,9 @@ return [
 		'set' => '1, 5, 8',
 		'set' => '2, 3, 9',
 		'set' => '2, 4, 9',
+		'count sets => 4,
+		'favorites' => '8, 10, 13',
+		'official win' => '3, 5, 8, 13',
 		'all place' => '5, 8, 9',
 		'all values' => '1, 2, 3, 4, 5, 8, 9',//count:7
 		'trio($10)' => '1, 2, 3, 4, 5, 8, 9',
@@ -190,9 +199,7 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '1, 7, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'official win' => '7, 2, 8, 13',
 		'win amount' => 43,
 		'qin amount' => 396,
 		'trio amount' => 450,
@@ -201,6 +208,9 @@ return [
 			2 => 42,
 			8 => 24,
 		],
+		'count sets => 0,
+		'favorites' => '1, 7, 8',
+		'official win' => '7, 2, 8, 13',
 	],
 ];
 //total alt win: 0
