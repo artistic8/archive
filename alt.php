@@ -63,25 +63,28 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
+    $allValues = [];
     foreach($runners  as $one){
         foreach($runners as $two){
             if($two > $one){
                 foreach($runners as $three){
                     if($three > $two){
+                        $set = $set;
                         $winInter = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
                         $qinInter = array_intersect($history[$raceNumber][$one]["qin"], $history[$raceNumber][$two]["qin"], $history[$raceNumber][$three]["qin"], $runners);
                         $trioInter = array_intersect($history[$raceNumber][$one]["trio"], $history[$raceNumber][$two]["trio"], $history[$raceNumber][$three]["trio"], $runners);
-                        $winInter = array_intersect([$one, $two, $three], $winInter);
-                        $qinInter = array_intersect([$one, $two, $three], $qinInter);
-                        $trioInter = array_intersect([$one, $two, $three], $trioInter);
+                        $winInter = array_intersect($set, $winInter);
+                        $qinInter = array_intersect($set, $qinInter);
+                        $trioInter = array_intersect($set, $trioInter);
                         if(count($winInter) === 3 && count($qinInter) === 3 && count($trioInter) === 3){
-                            $racetext .= "\t\t'set' => '$one, $two, $three',\n";
+                            $racetext .= "\t\t'set' => '" . implode(", ", $set) . "',\n";
                         }
                     }
                 }
             }
         }
     }
+    if(!empty($allValues)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',\n";
     $racetext .= "\t],\n";
     $outtext .= $racetext;
 }
