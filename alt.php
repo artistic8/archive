@@ -69,7 +69,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             if($two > $one){
                 foreach($runners as $three){
                     if($three > $two){
-                        $set = $set;
+                        $set = [$one, $two, $three];
                         $winInter = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
                         $qinInter = array_intersect($history[$raceNumber][$one]["qin"], $history[$raceNumber][$two]["qin"], $history[$raceNumber][$three]["qin"], $runners);
                         $trioInter = array_intersect($history[$raceNumber][$one]["trio"], $history[$raceNumber][$two]["trio"], $history[$raceNumber][$three]["trio"], $runners);
