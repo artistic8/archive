@@ -1,10 +1,22 @@
 <?php
 
+function factorial($n){
+    if($n <= 0) return 1;
+    $fact = 1;
+    for($i = 1; $i <= $n; $i++) $fact *= $i;
+    return $fact;
+}
+function combination($p, $n){
+    if($n < $p) return 0;
+    return factorial($n) / (factorial($p) * factorial($n - $p));
+}
+
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
 $totalWin = 0;
 $totalPlace = 0;
+$totalTrio = 0;
 $in = "bets";
 $out = "alt";
 $raceDate = trim($argv[1]);
@@ -92,29 +104,22 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $unitBet = 10;
     if(!empty($allValues)) {
         $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
-        $wp = array_intersect($allValues, $favorites);
-        if(!empty($wp) && count($favorites) >= 3) {
-            $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
-            $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
-            $totalWin -= 1 * $unitBet * count($favorites);
-        }
-    }
-    if(isset($officialWin)){
-        if(!empty($allValues)){
-            $wp = array_intersect($allValues, $favorites);
-            if(!empty($wp) && count($favorites) >= 3) {
-                $totalRace[$raceNumber] -= $totalBets[$raceNumber];
-                $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-                if(in_array($officialWin[0], $favorites)){
-                    $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                    $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-                    $totalWin += ($unitBet / 10) * $winAmount;
-                }
+        $racetext .= "\t\t'trio($10)' => '" . implode(", ", $allValues) . "',\n"; 
+        $totalBets[$raceNumber] += 10 * combination(3, count($allValues));
+        $totalTrio -= 10 * combination(3, count($allValues));
+        if(isset($officialWin)){
+            $totalRace[$raceNumber] -= $totalBets[$raceNumber];
+            $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
+            if(count(array_intersect($allValues, array_slice($officialWin, 0, 3))) === 3){
+                $totalRace[$raceNumber] += $trioAmount;
+                $racetext .= "\t\t'5 won(trio bet)' => " . $trioAmount . ",\n";
+                $totalTrio += $trioAmount;
             }
+            $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
+            $total += $totalRace[$raceNumber];
         }
-        $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
-        $total += $totalRace[$raceNumber];
     }
+    
     $racetext .= "\t],\n";
     $outtext .= $racetext;
 }
@@ -122,6 +127,6 @@ $outtext .= "];\n";
 $outtext .= "//total alt win: $totalWin\n";
 $outtext .= "//total alt place: $totalPlace\n";
 // $outtext .= "//total qin: $totalQin\n";
-// $outtext .= "//total trio: $totalTrio\n";
+$outtext .= "//total alt trio: $totalTrio\n";
 $outtext .= "//total alt: $total\n";
 file_put_contents($outFile, $outtext);
