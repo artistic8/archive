@@ -18,6 +18,7 @@ return [
 		],
 		'set' => '1, 4, 10',
 		'set' => '1, 6, 7',
+		'all place' => '10, 7',
 		'all values' => '1, 4, 6, 7, 10',//count:5
 		'win($10)' => '1, 7, 10',
 		'total bets' => 30,
@@ -40,6 +41,7 @@ return [
 			6 => 58.5,
 		],
 		'set' => '2, 4, 7',
+		'all place' => '7',
 		'all values' => '2, 4, 7',//count:3
 		'win($10)' => '2, 4',
 		'total bets' => 20,
@@ -63,6 +65,7 @@ return [
 		],
 		'set' => '3, 7, 9',
 		'set' => '4, 7, 9',
+		'all place' => '9',
 		'all values' => '3, 4, 7, 9',//count:4
 		'win($10)' => '3',
 		'total bets' => 10,
@@ -85,6 +88,7 @@ return [
 		],
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
+		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
 		'win($10)' => '3',
 		'total bets' => 10,
@@ -108,6 +112,7 @@ return [
 		],
 		'set' => '1, 3, 5',
 		'set' => '1, 3, 7',
+		'all place' => '5, 7',
 		'all values' => '1, 3, 5, 7',//count:4
 		'total won in race' => 0,
 	],
@@ -128,6 +133,7 @@ return [
 		],
 		'set' => '2, 3, 5',
 		'set' => '2, 3, 9',
+		'all place' => '5, 9',
 		'all values' => '2, 3, 5, 9',//count:4
 		'win($10)' => '9',
 		'total bets' => 10,
@@ -169,6 +175,7 @@ return [
 		'set' => '3, 4, 8',
 		'set' => '4, 5, 6',
 		'set' => '4, 6, 8',
+		'all place' => '8, 6',
 		'all values' => '3, 4, 5, 6, 8',//count:5
 		'win($10)' => '3, 4',
 		'total bets' => 20,
@@ -194,6 +201,7 @@ return [
 		'set' => '1, 3, 8',
 		'set' => '1, 5, 8',
 		'set' => '3, 5, 8',
+		'all place' => '5, 8',
 		'all values' => '1, 3, 5, 8',//count:4
 		'win($10)' => '3',
 		'total bets' => 10,
