@@ -85,7 +85,7 @@ return [
 		],
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
-		'inter3' => '4',
+		'inter2' => '4',
 		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
 		'total won in race' => 0,
@@ -195,7 +195,7 @@ return [
 		'set' => '2, 3, 9',
 		'set' => '3, 5, 8',
 		'inter1' => '3',
-		'inter3' => '5',
+		'inter2' => '5',
 		'all place' => '5, 8, 9',
 		'all values' => '1, 2, 3, 5, 8, 9',//count:6
 		'total won in race' => 0,

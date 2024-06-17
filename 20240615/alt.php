@@ -63,7 +63,7 @@ return [
 		'set' => '1, 3, 7',
 		'set' => '3, 7, 9',
 		'inter1' => '3',
-		'inter3' => '7',
+		'inter2' => '7',
 		'all place' => '7, 9',
 		'all values' => '1, 3, 7, 9',//count:4
 		'win($10)' => '3, 9',
@@ -88,7 +88,7 @@ return [
 		],
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
-		'inter3' => '4',
+		'inter2' => '4',
 		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
 		'win($10)' => '1',
