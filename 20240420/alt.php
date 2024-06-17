@@ -93,7 +93,6 @@ return [
 		'win($10)' => '1, 3, 5',
 		'total bets' => 30,
 		'total won in race' => -30,
-		'all place' => '5',
 	],
 	'5' => [
 		/**

@@ -133,7 +133,6 @@ return [
 		'win($10)' => '2, 9',
 		'total bets' => 20,
 		'total won in race' => -20,
-		'all place' => '9',
 	],
 	'7' => [
 		/**
@@ -202,7 +201,6 @@ return [
 		'win($10)' => '4, 5',
 		'total bets' => 20,
 		'total won in race' => -20,
-		'all place' => '5',
 	],
 ];
 //total alt win: -19.5

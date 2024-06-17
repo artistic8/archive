@@ -174,7 +174,6 @@ return [
 		'win($10)' => '6',
 		'total bets' => 10,
 		'total won in race' => -10,
-		'all place' => '6',
 	],
 	'9' => [
 		/**
@@ -199,7 +198,6 @@ return [
 		'win($10)' => '1, 8',
 		'total bets' => 20,
 		'total won in race' => -20,
-		'all place' => '8',
 	],
 	'10' => [
 		/**

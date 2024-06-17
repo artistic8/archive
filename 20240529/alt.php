@@ -60,7 +60,6 @@ return [
 		'win($10)' => '7',
 		'total bets' => 10,
 		'total won in race' => -10,
-		'all place' => '7',
 	],
 	'4' => [
 		/**

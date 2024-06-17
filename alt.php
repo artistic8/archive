@@ -65,6 +65,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $allValues = [];
     $place = [];
+    $ones = [];
+    $twos = [];
+    $threes = [];
     foreach($runners  as $one){
         foreach($runners as $two){
             if($two > $one){
@@ -81,12 +84,21 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                             $racetext .= "\t\t'set' => '" . implode(", ", $set) . "',\n";
                             $allValues = array_values(array_unique(array_merge($allValues, $set)));
                             if(!in_array($three, $place)) $place[] = $three;
+                            if(!in_array($ones, $one)) $ones[] = $one;
+                            if(!in_array($twos, $two)) $twos[] = $two;
+                            if(!in_array($threes, $one)) $threes[] = $three;
                         }
                     }
                 }
             }
         }
     }
+    $inter1 = array_intersect($ones, $twos);
+    $inter2 = array_intersect($ones, $threes);
+    $inter3 = array_intersect($threes, $twos);
+    if(!empty($inter1)) $racetext .= "\t\t'inter1' => '" . implode(", ", $inter1) . "',\n";
+    if(!empty($inter2)) $racetext .= "\t\t'inter2' => '" . implode(", ", $inter2) . "',\n";
+    if(!empty($inter3)) $racetext .= "\t\t'inter3' => '" . implode(", ", $inter3) . "',\n";
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     sort($allValues);
     $unitBet = 10;
