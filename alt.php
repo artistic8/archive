@@ -90,7 +90,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($allValues);
     if(!empty($allValues)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
     $place = array_intersect($place, $favorites);
-    if(!empty($place)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',\n";
+    if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $allValues) . "',\n";
     $racetext .= "\t],\n";
     $outtext .= $racetext;
 }
