@@ -19,9 +19,6 @@ return [
 		'set' => '1, 6, 7',
 		'all place' => '7',
 		'all values' => '1, 6, 7',//count:3
-		'win($10)' => '1, 4',
-		'total bets' => 20,
-		'1 won(win bet)' => 20,
 		'total won in race' => 0,
 	],
 	'2' => [
