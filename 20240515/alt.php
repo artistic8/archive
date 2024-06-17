@@ -87,7 +87,6 @@ return [
 		],
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
-		'inter2' => '4',
 		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
 		'win($10)' => '3',
@@ -174,8 +173,7 @@ return [
 		'set' => '3, 4, 8',
 		'set' => '4, 5, 6',
 		'set' => '4, 6, 8',
-		'inter1' => '4',
-		'inter2' => '6',
+		'shit' => '4',
 		'all place' => '8, 6',
 		'all values' => '3, 4, 5, 6, 8',//count:5
 		'win($10)' => '3, 4',
@@ -202,8 +200,7 @@ return [
 		'set' => '1, 3, 8',
 		'set' => '1, 5, 8',
 		'set' => '3, 5, 8',
-		'inter1' => '3',
-		'inter2' => '5',
+		'shit' => '3',
 		'all place' => '5, 8',
 		'all values' => '1, 3, 5, 8',//count:4
 		'win($10)' => '3',
