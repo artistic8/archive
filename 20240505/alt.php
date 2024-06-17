@@ -65,6 +65,8 @@ return [
 		],
 		'set' => '1, 3, 7',
 		'set' => '3, 7, 9',
+		'inter1' => '3',
+		'inter3' => '7',
 		'all place' => '7, 9',
 		'all values' => '1, 3, 7, 9',//count:4
 		'total won in race' => 0,

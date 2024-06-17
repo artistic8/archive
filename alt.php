@@ -94,11 +94,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $inter1 = array_intersect($ones, $twos);
-    $inter2 = array_intersect($ones, $threes);
-    $inter3 = array_intersect($threes, $twos);
+    $inter2 = array_intersect($threes, $twos);
     if(!empty($inter1)) $racetext .= "\t\t'inter1' => '" . implode(", ", $inter1) . "',\n";
     if(!empty($inter2)) $racetext .= "\t\t'inter2' => '" . implode(", ", $inter2) . "',\n";
-    if(!empty($inter3)) $racetext .= "\t\t'inter3' => '" . implode(", ", $inter3) . "',\n";
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     sort($allValues);
     $unitBet = 10;
