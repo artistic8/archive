@@ -87,6 +87,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
+    if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     sort($allValues);
     $unitBet = 10;
     if(!empty($allValues)) {

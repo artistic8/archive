@@ -21,6 +21,7 @@ return [
 		'win($10)' => '1',
 		'total bets' => 10,
 		'1 won(win bet)' => 59,
+		'total won in race' => 49,
 	],
 	'2' => [
 		/**
@@ -36,6 +37,7 @@ return [
 			2 => 29,
 			6 => 15,
 		],
+		'total won in race' => 0,
 	],
 	'3' => [
 		/**
@@ -56,6 +58,7 @@ return [
 		'set' => '3, 7, 9',
 		'set' => '4, 7, 9',
 		'all values' => '1, 3, 4, 7, 9',//count:5
+		'total won in race' => 0,
 	],
 	'4' => [
 		/**
@@ -75,6 +78,7 @@ return [
 		'set' => '1, 3, 4',
 		'set' => '1, 4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
+		'total won in race' => 0,
 	],
 	'5' => [
 		/**
@@ -94,6 +98,7 @@ return [
 		'set' => '1, 3, 5',
 		'set' => '1, 3, 7',
 		'all values' => '1, 3, 5, 7',//count:4
+		'total won in race' => 0,
 	],
 	'6' => [
 		/**
@@ -113,6 +118,7 @@ return [
 		'set' => '2, 3, 5',
 		'set' => '2, 3, 9',
 		'all values' => '2, 3, 5, 9',//count:4
+		'total won in race' => 0,
 	],
 	'7' => [
 		/**
@@ -129,6 +135,7 @@ return [
 			2 => 14.5,
 			8 => 34,
 		],
+		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -151,6 +158,7 @@ return [
 		'all values' => '3, 4, 5, 6, 8',//count:5
 		'win($10)' => '4, 8',
 		'total bets' => 20,
+		'total won in race' => -20,
 		'all place' => '8',
 	],
 	'9' => [
@@ -178,6 +186,7 @@ return [
 		'win($10)' => '3',
 		'total bets' => 10,
 		'1 won(win bet)' => 16,
+		'total won in race' => 6,
 	],
 	'10' => [
 		/**
@@ -194,8 +203,9 @@ return [
 			5 => 17,
 			3 => 19,
 		],
+		'total won in race' => 0,
 	],
 ];
 //total alt win: 35
 //total alt place: 0
-//total: 0
+//total alt: 35
