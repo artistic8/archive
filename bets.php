@@ -138,7 +138,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'trio pivots' => '" . implode(", ", $trioPivots) . "',\n";
     $unitBet = 100;
     $compactExpr = count($favorites) * (count($winInter) + count($qinInter) + count($trioInter));
-    $condition = count($favorites) === 3 && count($winInter) === 3 && count($qinInter) === 3 && count($trioInter) === 3;
+    $condition = count($favorites) >= 3 && count($winInter) >= 3 && count($qinInter) >= 3 && count($trioInter) >= 3;
     if($condition){
         // if(in_array($compactExpr, $biggestFavoritePlace)){
         $racetext .= "\t\t'place($" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 

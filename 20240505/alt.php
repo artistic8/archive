@@ -20,7 +20,7 @@ return [
 		'set' => '1, 4, 10',
 		'set' => '1, 6, 7',
 		'all values' => '1, 4, 6, 7, 8, 10',//count:6
-		'all place' => '1, 4, 6, 7, 8, 10',
+		'all place' => '8',
 	],
 	'2' => [
 		/**
@@ -39,7 +39,7 @@ return [
 		],
 		'set' => '2, 4, 7',
 		'all values' => '2, 4, 7',//count:3
-		'all place' => '2, 4, 7',
+		'all place' => '7',
 	],
 	'3' => [
 		/**
@@ -94,7 +94,7 @@ return [
 		'set' => '1, 3, 5',
 		'set' => '1, 3, 7',
 		'all values' => '1, 3, 5, 7',//count:4
-		'all place' => '1, 3, 5, 7',
+		'all place' => '5',
 	],
 	'6' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		],
 		'set' => '2, 3, 9',
 		'all values' => '2, 3, 9',//count:3
-		'all place' => '2, 3, 9',
+		'all place' => '9',
 	],
 	'7' => [
 		/**

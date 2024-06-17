@@ -57,7 +57,7 @@ return [
 		'set' => '3, 7, 9',
 		'set' => '4, 7, 9',
 		'all values' => '1, 3, 4, 7, 9',//count:5
-		'all place' => '1, 3, 4, 7, 9',
+		'all place' => '7',
 	],
 	'4' => [
 		/**
@@ -96,7 +96,7 @@ return [
 		'set' => '1, 3, 5',
 		'set' => '1, 3, 7',
 		'all values' => '1, 3, 5, 7',//count:4
-		'all place' => '1, 3, 5, 7',
+		'all place' => '7',
 	],
 	'6' => [
 		/**

@@ -147,7 +147,7 @@ return [
 		],
 		'set' => '4, 5, 6',
 		'all values' => '4, 5, 6',//count:3
-		'all place' => '4, 5, 6',
+		'all place' => '6',
 	],
 	'9' => [
 		/**
@@ -168,7 +168,7 @@ return [
 		'set' => '2, 3, 9',
 		'set' => '2, 4, 9',
 		'all values' => '1, 2, 3, 4, 8, 9',//count:6
-		'all place' => '1, 2, 3, 4, 8, 9',
+		'all place' => '8',
 	],
 	'10' => [
 		/**
