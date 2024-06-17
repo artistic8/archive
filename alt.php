@@ -93,7 +93,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($allValues)) {
         $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
         $wp = array_intersect($allValues, $favorites);
-        if(!empty($wp)) {
+        if(!empty($wp) && count($favorites) >= 3) {
             $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
             $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
             $totalWin -= 1 * $unitBet * count($favorites);
@@ -102,7 +102,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin)){
         if(!empty($allValues)){
             $wp = array_intersect($allValues, $favorites);
-            if(!empty($wp)) {
+            if(!empty($wp) && count($favorites) >= 3) {
                 $totalRace[$raceNumber] -= $totalBets[$raceNumber];
                 $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
                 if(in_array($officialWin[0], $favorites)){

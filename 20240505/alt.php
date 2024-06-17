@@ -21,10 +21,10 @@ return [
 		'set' => '1, 6, 7',
 		'all place' => '8, 10, 7',
 		'all values' => '1, 4, 6, 7, 8, 10',//count:6
-		'win($10)' => '8',
-		'total bets' => 10,
+		'win($10)' => '2, 5, 8',
+		'total bets' => 30,
 		'1 won(win bet)' => 16,
-		'total won in race' => 6,
+		'total won in race' => -14,
 	],
 	'2' => [
 		/**
@@ -44,9 +44,9 @@ return [
 		'set' => '2, 4, 7',
 		'all place' => '7',
 		'all values' => '2, 4, 7',//count:3
-		'win($10)' => '7',
-		'total bets' => 10,
-		'total won in race' => -10,
+		'win($10)' => '1, 6, 7, 9',
+		'total bets' => 40,
+		'total won in race' => -40,
 	],
 	'3' => [
 		/**
@@ -105,10 +105,10 @@ return [
 		'set' => '1, 3, 7',
 		'all place' => '5, 7',
 		'all values' => '1, 3, 5, 7',//count:4
-		'win($10)' => '1, 5',
-		'total bets' => 20,
+		'win($10)' => '1, 5, 12',
+		'total bets' => 30,
 		'1 won(win bet)' => 26,
-		'total won in race' => 6,
+		'total won in race' => -4,
 	],
 	'6' => [
 		/**
@@ -128,9 +128,9 @@ return [
 		'set' => '2, 3, 9',
 		'all place' => '9',
 		'all values' => '2, 3, 9',//count:3
-		'win($10)' => '3, 9',
-		'total bets' => 20,
-		'total won in race' => -20,
+		'win($10)' => '3, 5, 9',
+		'total bets' => 30,
+		'total won in race' => -30,
 	],
 	'7' => [
 		/**
@@ -167,9 +167,9 @@ return [
 		'set' => '4, 5, 6',
 		'all place' => '6',
 		'all values' => '4, 5, 6',//count:3
-		'win($10)' => '4',
-		'total bets' => 10,
-		'total won in race' => -10,
+		'win($10)' => '3, 4, 11',
+		'total bets' => 30,
+		'total won in race' => -30,
 	],
 	'9' => [
 		/**
@@ -191,9 +191,10 @@ return [
 		'set' => '2, 4, 9',
 		'all place' => '5, 9',
 		'all values' => '1, 2, 3, 4, 5, 9',//count:6
-		'win($10)' => '2, 3',
-		'total bets' => 20,
-		'total won in race' => -20,
+		'win($10)' => '2, 3, 6, 8',
+		'total bets' => 40,
+		'1 won(win bet)' => 64.5,
+		'total won in race' => 24.5,
 	],
 	'10' => [
 		/**
@@ -230,6 +231,6 @@ return [
 		'total won in race' => 0,
 	],
 ];
-//total alt win: -48
+//total alt win: -93.5
 //total alt place: 0
-//total alt: -48
+//total alt: -93.5
