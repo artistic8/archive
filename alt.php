@@ -88,7 +88,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     sort($allValues);
-    if(!empty($allValues)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
+    if(!empty($allValues)) {
+        $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
+        $wp = array_intersect($allValues, $favorites);
+        if(!empty($wp)) $racetext .= "\t\t'wp' => '" . implode(", ", $wp) . "',\n";
+    }
     $place = array_intersect($place, $favorites);
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     $racetext .= "\t],\n";
