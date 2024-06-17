@@ -58,7 +58,8 @@ return [
 		'set' => '3, 7, 9',
 		'set' => '4, 7, 9',
 		'all values' => '1, 3, 4, 7, 9',//count:5
-		'wp' => '1, 7',
+		'win($10)' => '1, 7',
+		'total bets' => 20,
 		'all place' => '7',
 	],
 	'4' => [
@@ -78,7 +79,8 @@ return [
 		],
 		'set' => '1, 3, 4',
 		'all values' => '1, 3, 4',//count:3
-		'wp' => '1, 4',
+		'win($10)' => '1, 4',
+		'total bets' => 20,
 		'all place' => '4',
 	],
 	'5' => [
@@ -118,7 +120,9 @@ return [
 		'set' => '2, 3, 5',
 		'set' => '2, 3, 9',
 		'all values' => '2, 3, 5, 9',//count:4
-		'wp' => '3',
+		'win($10)' => '3',
+		'total bets' => 10,
+		'1 won(win bet)' => 43.5,
 	],
 	'7' => [
 		/**
@@ -154,7 +158,8 @@ return [
 		'set' => '4, 5, 6',
 		'set' => '4, 6, 8',
 		'all values' => '4, 5, 6, 8',//count:4
-		'wp' => '5, 8',
+		'win($10)' => '5, 8',
+		'total bets' => 20,
 		'all place' => '8',
 	],
 	'9' => [
@@ -179,7 +184,11 @@ return [
 		'set' => '2, 4, 9',
 		'set' => '3, 5, 8',
 		'all values' => '1, 2, 3, 4, 5, 8, 9',//count:7
-		'wp' => '1, 5, 9',
+		'win($10)' => '1, 5, 9',
+		'total bets' => 30,
 		'all place' => '5, 9',
 	],
 ];
+//total alt win: -56.5
+//total alt place: 0
+//total: 0

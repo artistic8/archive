@@ -117,5 +117,5 @@ $outtext .= "//total alt win: $totalWin\n";
 $outtext .= "//total alt place: $totalPlace\n";
 // $outtext .= "//total qin: $totalQin\n";
 // $outtext .= "//total trio: $totalTrio\n";
-$outtext .= "//total: $total\n";
+$outtext .= "//total alt: $total\n";
 file_put_contents($outFile, $outtext);
