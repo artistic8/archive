@@ -85,7 +85,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             }
         }
     }
-    if(!empty($allValues)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',\n";
+    sort($allValues);
+    if(!empty($allValues)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
     $racetext .= "\t],\n";
     $outtext .= $racetext;
 }
