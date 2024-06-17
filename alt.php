@@ -88,10 +88,23 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     sort($allValues);
+    $unitBet = 10;
     if(!empty($allValues)) {
         $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
         $wp = array_intersect($allValues, $favorites);
-        if(!empty($wp)) $racetext .= "\t\t'wp' => '" . implode(", ", $wp) . "',\n";
+        if(!empty($wp)) {
+            $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
+            $totalBets[$raceNumber] += 1 * $unitBet * count($wp);
+            $totalWin -= 1 * $unitBet * count($wp);
+            if(isset($officialWin)){
+                $totalRace[$raceNumber] -= $totalBets[$raceNumber];
+                $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
+                if(in_array($officialWin[0], $wp)){
+                    $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+                    $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                    $totalWin += ($unitBet / 10) * $winAmount;
+                }
+        }
     }
     $place = array_intersect($place, $favorites);
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
@@ -99,9 +112,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-// $outtext .= "//total win: $totalWin\n";
-// $outtext .= "//total place: $totalPlace\n";
+$outtext .= "//total alt win: $totalWin\n";
+$outtext .= "//total alt place: $totalPlace\n";
 // $outtext .= "//total qin: $totalQin\n";
 // $outtext .= "//total trio: $totalTrio\n";
-// $outtext .= "//total: $total\n";
+$outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
