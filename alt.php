@@ -102,8 +102,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!empty($place)) $racetext .= "\t\t'all place' => '" . implode(", ", $place) . "',\n";
     sort($allValues);
     $unitBet = 10;
-    if(!empty($allValues)) {
-        $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
+    if(!empty($allValues)) $racetext .= "\t\t'all values' => '" . implode(", ", $allValues) . "',//count:" . count($allValues) . "\n";
+    if(count($allValues) > 5){
         $racetext .= "\t\t'trio($10)' => '" . implode(", ", $allValues) . "',\n"; 
         $totalBets[$raceNumber] += 10 * combination(3, count($allValues));
         $totalTrio -= 10 * combination(3, count($allValues));

@@ -21,9 +21,9 @@ return [
 		'set' => '1, 6, 7',
 		'all place' => '8, 10, 7',
 		'all values' => '1, 4, 6, 7, 8, 10',//count:6
-		'win($10)' => '1, 3, 10',
-		'total bets' => 30,
-		'total won in race' => -30,
+		'trio($10)' => '1, 4, 6, 7, 8, 10',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 	'2' => [
 		/**
@@ -43,7 +43,9 @@ return [
 		'set' => '2, 4, 7',
 		'all place' => '7',
 		'all values' => '2, 4, 7',//count:3
-		'total won in race' => 0,
+		'trio($10)' => '2, 4, 7',
+		'total bets' => 10,
+		'total won in race' => -10,
 	],
 	'3' => [
 		/**
@@ -65,7 +67,10 @@ return [
 		'set' => '4, 7, 9',
 		'all place' => '7, 9',
 		'all values' => '1, 3, 4, 7, 9',//count:5
-		'total won in race' => 0,
+		'trio($10)' => '1, 3, 4, 7, 9',
+		'total bets' => 100,
+		'5 won(trio bet)' => 826,
+		'total won in race' => 726,
 	],
 	'4' => [
 		/**
@@ -86,7 +91,7 @@ return [
 		'set' => '1, 4, 5',
 		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
-		'win($10)' => '1, 6, 8, 11',
+		'trio($10)' => '1, 3, 4, 5',
 		'total bets' => 40,
 		'total won in race' => -40,
 	],
@@ -109,7 +114,9 @@ return [
 		'set' => '1, 3, 7',
 		'all place' => '5, 7',
 		'all values' => '1, 3, 5, 7',//count:4
-		'total won in race' => 0,
+		'trio($10)' => '1, 3, 5, 7',
+		'total bets' => 40,
+		'total won in race' => -40,
 	],
 	'6' => [
 		/**
@@ -130,10 +137,9 @@ return [
 		'set' => '2, 3, 9',
 		'all place' => '5, 9',
 		'all values' => '2, 3, 5, 9',//count:4
-		'win($10)' => '2, 6, 12',
-		'total bets' => 30,
-		'1 won(win bet)' => 35.5,
-		'total won in race' => 5.5,
+		'trio($10)' => '2, 3, 5, 9',
+		'total bets' => 40,
+		'total won in race' => -40,
 	],
 	'7' => [
 		/**
@@ -150,7 +156,6 @@ return [
 			3 => 19,
 			6 => 25,
 		],
-		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -172,10 +177,9 @@ return [
 		'set' => '4, 6, 8',
 		'all place' => '8, 6',
 		'all values' => '3, 4, 5, 6, 8',//count:5
-		'win($10)' => '1, 5, 7',
-		'total bets' => 30,
-		'1 won(win bet)' => 47.5,
-		'total won in race' => 17.5,
+		'trio($10)' => '3, 4, 5, 6, 8',
+		'total bets' => 100,
+		'total won in race' => -100,
 	],
 	'9' => [
 		/**
@@ -200,7 +204,9 @@ return [
 		'set' => '3, 5, 8',
 		'all place' => '5, 8, 9',
 		'all values' => '1, 2, 3, 4, 5, 8, 9',//count:7
-		'total won in race' => 0,
+		'trio($10)' => '1, 2, 3, 4, 5, 8, 9',
+		'total bets' => 350,
+		'total won in race' => -350,
 	],
 	'10' => [
 		/**
@@ -217,9 +223,9 @@ return [
 			9 => 17.5,
 			4 => 31.5,
 		],
-		'total won in race' => 0,
 	],
 ];
-//total alt win: -47
+//total alt win: 0
 //total alt place: 0
-//total alt: -47
+//total alt trio: -54
+//total alt: -54

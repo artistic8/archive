@@ -21,7 +21,9 @@ return [
 		'set' => '1, 6, 7',
 		'all place' => '8, 10, 7',
 		'all values' => '1, 4, 6, 7, 8, 10',//count:6
-		'total won in race' => 0,
+		'trio($10)' => '1, 4, 6, 7, 8, 10',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 	'2' => [
 		/**
@@ -38,7 +40,6 @@ return [
 			1 => 34.5,
 			11 => 22,
 		],
-		'total won in race' => 0,
 	],
 	'3' => [
 		/**
@@ -60,9 +61,9 @@ return [
 		'set' => '4, 7, 9',
 		'all place' => '7, 9',
 		'all values' => '1, 3, 4, 7, 9',//count:5
-		'win($10)' => '2, 3, 8',
-		'total bets' => 30,
-		'total won in race' => -30,
+		'trio($10)' => '1, 3, 4, 7, 9',
+		'total bets' => 100,
+		'total won in race' => -100,
 	],
 	'4' => [
 		/**
@@ -83,7 +84,7 @@ return [
 		'set' => '1, 4, 5',
 		'all place' => '4, 5',
 		'all values' => '1, 3, 4, 5',//count:4
-		'win($10)' => '2, 4, 6, 8',
+		'trio($10)' => '1, 3, 4, 5',
 		'total bets' => 40,
 		'total won in race' => -40,
 	],
@@ -106,10 +107,9 @@ return [
 		'set' => '1, 3, 7',
 		'all place' => '5, 7',
 		'all values' => '1, 3, 5, 7',//count:4
-		'win($10)' => '2, 3, 7, 8, 9',
-		'total bets' => 50,
-		'1 won(win bet)' => 29.5,
-		'total won in race' => -20.5,
+		'trio($10)' => '1, 3, 5, 7',
+		'total bets' => 40,
+		'total won in race' => -40,
 	],
 	'6' => [
 		/**
@@ -126,7 +126,6 @@ return [
 			1 => 27,
 			7 => 16,
 		],
-		'total won in race' => 0,
 	],
 	'7' => [
 		/**
@@ -143,7 +142,6 @@ return [
 			11 => 13,
 			1 => 14.5,
 		],
-		'total won in race' => 0,
 	],
 	'8' => [
 		/**
@@ -165,10 +163,9 @@ return [
 		'set' => '4, 6, 8',
 		'all place' => '8, 6',
 		'all values' => '3, 4, 5, 6, 8',//count:5
-		'win($10)' => '2, 5, 6, 9, 11',
-		'total bets' => 50,
-		'1 won(win bet)' => 21,
-		'total won in race' => -29,
+		'trio($10)' => '3, 4, 5, 6, 8',
+		'total bets' => 100,
+		'total won in race' => -100,
 	],
 	'9' => [
 		/**
@@ -190,12 +187,12 @@ return [
 		'set' => '3, 5, 8',
 		'all place' => '9, 8',
 		'all values' => '2, 3, 4, 5, 8, 9',//count:6
-		'win($10)' => '1, 3, 5, 6, 11',
-		'total bets' => 50,
-		'1 won(win bet)' => 35,
-		'total won in race' => -15,
+		'trio($10)' => '2, 3, 4, 5, 8, 9',
+		'total bets' => 200,
+		'total won in race' => -200,
 	],
 ];
-//total alt win: -134.5
+//total alt win: 0
 //total alt place: 0
-//total alt: -134.5
+//total alt trio: -680
+//total alt: -680
