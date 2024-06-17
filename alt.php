@@ -84,9 +84,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                             $racetext .= "\t\t'set' => '" . implode(", ", $set) . "',\n";
                             $allValues = array_values(array_unique(array_merge($allValues, $set)));
                             if(!in_array($three, $place)) $place[] = $three;
-                            if(!in_array($ones, $one)) $ones[] = $one;
-                            if(!in_array($twos, $two)) $twos[] = $two;
-                            if(!in_array($threes, $one)) $threes[] = $three;
+                            if(!in_array($one, $ones)) $ones[] = $one;
+                            if(!in_array($two, $twos)) $twos[] = $two;
+                            if(!in_array($three, $threes)) $threes[] = $three;
                         }
                     }
                 }
