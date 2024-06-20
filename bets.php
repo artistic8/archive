@@ -20,9 +20,6 @@ $totalWin = 0;
 $totalPlace = 0;
 $totalQin = 0;
 $totalTrio = 0;
-$totalFavoriteWin = 0;
-$totalFavoriteQin = 0;
-$totalFavoriteTrio = 0;
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
@@ -197,9 +194,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
-        if(in_array($officialWin[0], $favorites)) $totalFavoriteWin += $winAmount;
-        if(count(array_intersect(array_slice($officialWin, 0, 2), $favorites)) === 2) $totalFavoriteQin += $qinAmount;
-        if(count(array_intersect(array_slice($officialWin, 0, 3), $favorites)) === 3) $totalFavoriteTrio += $trioAmount;
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
@@ -207,9 +201,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total favorite win: $totalFavoriteWin\n";
-$outtext .= "//total favorite qin: $totalFavoriteQin\n";
-$outtext .= "//total favorite trio: $totalFavoriteTrio\n";
 $outtext .= "//total win: $totalWin\n";
 $outtext .= "//total place: $totalPlace\n";
 $outtext .= "//total qin: $totalQin\n";

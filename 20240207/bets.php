@@ -188,9 +188,9 @@ return [
 		'total won in race' => 360,
 	],
 ];
-//total favorite win: 0
-//total favorite qin: 0
-//total favorite trio: 0
+//total favorite win: -147.5
+//total favorite qin: -160
+//total favorite trio: -40
 //total win: 350
 //total place: 850
 //total qin: 0

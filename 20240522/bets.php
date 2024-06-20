@@ -173,9 +173,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];
-//total favorite win: 0
-//total favorite qin: 0
-//total favorite trio: 0
+//total favorite win: -250
+//total favorite qin: -290
+//total favorite trio: -180
 //total win: 0
 //total place: 0
 //total qin: 0
