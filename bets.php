@@ -74,6 +74,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
+    $totalFavoriteWin -= 10 * count($favorites);
+    $totalFavoriteQin -= 10 * combination(2, count($favorites));
+    $totalFavoriteTrio -= 10 * combination(3, count($favorites));
     sort($runners);
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
     if(isset($officialWin)){
@@ -194,6 +197,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
+        if(in_array($officialWin[0], $favorites)) $totalFavoriteWin += $winAmount;
+        if(count(array_intersect(array_slice($officialWin, 0, 2), $favorites)) === 2) $totalFavoriteQin += $qinAmount;
+        if(count(array_intersect(array_slice($officialWin, 0, 3), $favorites)) === 3) $totalFavoriteTrio += $trioAmount;
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
