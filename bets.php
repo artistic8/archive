@@ -20,6 +20,9 @@ $totalWin = 0;
 $totalPlace = 0;
 $totalQin = 0;
 $totalTrio = 0;
+$totalFavoriteWin = 0;
+$totalFavoriteQin = 0;
+$totalFavoriteTrio = 0;
 $step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
@@ -198,6 +201,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
+$outtext .= "//total favorite win: $totalFavoriteWin\n";
+$outtext .= "//total favorite qin: $totalFavoriteQin\n";
+$outtext .= "//total favorite trio: $totalFavoriteTrio\n";
 $outtext .= "//total win: $totalWin\n";
 $outtext .= "//total place: $totalPlace\n";
 $outtext .= "//total qin: $totalQin\n";
