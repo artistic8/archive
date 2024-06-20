@@ -71,9 +71,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
-    $totalFavoriteWin -= 10 * count($favorites);
-    $totalFavoriteQin -= 10 * combination(2, count($favorites));
-    $totalFavoriteTrio -= 10 * combination(3, count($favorites));
     sort($runners);
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
     if(isset($officialWin)){
