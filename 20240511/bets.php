@@ -18,6 +18,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 21,
+		'count qin sets' => 107,
+		'count trio sets' => 107,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'2' => [
@@ -37,6 +39,8 @@ return [
 		],
 		'win inter' => '3, 5',
 		'count win sets' => 10,
+		'count qin sets' => 73,
+		'count trio sets' => 73,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'3' => [
@@ -56,6 +60,8 @@ return [
 		],
 		'win inter' => '1',
 		'count win sets' => 4,
+		'count qin sets' => 74,
+		'count trio sets' => 74,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 	],
 	'4' => [
@@ -75,6 +81,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 11,
+		'count qin sets' => 57,
+		'count trio sets' => 57,
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
 	],
 	'5' => [
@@ -94,6 +102,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 2,
+		'count qin sets' => 43,
+		'count trio sets' => 43,
 		'allValues' => '1, 3, 4, 5, 10, 11',
 	],
 	'6' => [
@@ -113,6 +123,8 @@ return [
 		],
 		'win inter' => '1',
 		'count win sets' => 7,
+		'count qin sets' => 119,
+		'count trio sets' => 119,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
@@ -132,6 +144,8 @@ return [
 		],
 		'win inter' => '2',
 		'count win sets' => 16,
+		'count qin sets' => 83,
+		'count trio sets' => 83,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
 	'8' => [
@@ -151,6 +165,8 @@ return [
 		],
 		'win inter' => '3',
 		'count win sets' => 12,
+		'count qin sets' => 92,
+		'count trio sets' => 92,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 	'9' => [
@@ -170,6 +186,8 @@ return [
 		],
 		'win inter' => '8',
 		'count win sets' => 8,
+		'count qin sets' => 140,
+		'count trio sets' => 140,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11',
 	],
 	'10' => [
@@ -189,6 +207,8 @@ return [
 		],
 		'win inter' => '10',
 		'count win sets' => 0,
+		'count qin sets' => 1,
+		'count trio sets' => 1,
 		'allValues' => '',
 	],
 ];

@@ -18,6 +18,8 @@ return [
 		],
 		'win inter' => '8',
 		'count win sets' => 21,
+		'count qin sets' => 86,
+		'count trio sets' => 86,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'2' => [
@@ -37,6 +39,8 @@ return [
 		],
 		'win inter' => '6',
 		'count win sets' => 10,
+		'count qin sets' => 86,
+		'count trio sets' => 86,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'3' => [
@@ -56,6 +60,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 4,
+		'count qin sets' => 85,
+		'count trio sets' => 85,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 	],
 	'4' => [
@@ -75,6 +81,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 1,
+		'count qin sets' => 24,
+		'count trio sets' => 24,
 		'allValues' => '1, 2, 3, 4',
 	],
 	'5' => [
@@ -94,6 +102,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 2,
+		'count qin sets' => 43,
+		'count trio sets' => 43,
 		'allValues' => '1, 3, 4, 5, 10, 11',
 	],
 	'6' => [
@@ -113,6 +123,8 @@ return [
 		],
 		'win inter' => '3',
 		'count win sets' => 6,
+		'count qin sets' => 73,
+		'count trio sets' => 73,
 		'allValues' => '1, 3, 7, 8, 9, 10',
 	],
 	'7' => [
@@ -132,6 +144,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 11,
+		'count qin sets' => 94,
+		'count trio sets' => 94,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
 	'8' => [
@@ -151,6 +165,8 @@ return [
 		],
 		'win inter' => '3, 4',
 		'count win sets' => 7,
+		'count qin sets' => 44,
+		'count trio sets' => 44,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
 	'9' => [
@@ -170,6 +186,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 12,
+		'count qin sets' => 101,
+		'count trio sets' => 101,
 		'allValues' => '1, 3, 4, 5, 6, 7, 8, 10, 11',
 	],
 	'10' => [
@@ -189,6 +207,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 0,
+		'count qin sets' => 4,
+		'count trio sets' => 4,
 		'allValues' => '',
 	],
 	'11' => [
@@ -208,6 +228,8 @@ return [
 		],
 		'win inter' => '',
 		'count win sets' => 0,
+		'count qin sets' => 0,
+		'count trio sets' => 0,
 		'allValues' => '',
 	],
 ];
