@@ -17,7 +17,7 @@ return [
 			5 => 44,
 		],
 		'win inter' => '4',
-		'count sets' => 1,
+		'count win sets' => 1,
 		'allValues' => '1, 5, 6, 7',
 	],
 	'2' => [
@@ -36,7 +36,7 @@ return [
 			8 => 29.5,
 		],
 		'win inter' => '6',
-		'count sets' => 3,
+		'count win sets' => 3,
 		'allValues' => '2, 3, 4, 5, 6, 8, 9',
 	],
 	'3' => [
@@ -55,7 +55,7 @@ return [
 			4 => 25.5,
 		],
 		'win inter' => '3, 9',
-		'count sets' => 4,
+		'count win sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 	],
 	'4' => [
@@ -74,7 +74,7 @@ return [
 			9 => 26,
 		],
 		'win inter' => '1',
-		'count sets' => 10,
+		'count win sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
 	],
 	'5' => [
@@ -93,7 +93,7 @@ return [
 			3 => 43,
 		],
 		'win inter' => '',
-		'count sets' => 1,
+		'count win sets' => 1,
 		'allValues' => '1, 3, 4, 5',
 	],
 	'6' => [
@@ -112,7 +112,7 @@ return [
 			3 => 27.5,
 		],
 		'win inter' => '4',
-		'count sets' => 7,
+		'count win sets' => 7,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
@@ -131,7 +131,7 @@ return [
 			4 => 29,
 		],
 		'win inter' => '',
-		'count sets' => 12,
+		'count win sets' => 12,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
 	'8' => [
@@ -150,7 +150,7 @@ return [
 			10 => 34.5,
 		],
 		'win inter' => '4',
-		'count sets' => 12,
+		'count win sets' => 12,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 	'9' => [
@@ -169,7 +169,7 @@ return [
 			3 => 16.5,
 		],
 		'win inter' => '1',
-		'count sets' => 15,
+		'count win sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];
