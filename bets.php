@@ -109,22 +109,38 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $unitBet = 100;
     $allValues = [];
     $winSets = [];
+    $qinSets = [];
+    $trioSets = [];
     foreach($runners  as $one){
         foreach($runners as $two){
             if($two > $one){
                 foreach($runners as $three){
                     if($three > $two){
                         $set = [$one, $two, $three];
-                        $temp = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
-                        $temp = array_intersect($set, $temp);
+                        $temp1 = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
+                        $temp2 = array_intersect($history[$raceNumber][$one]["qin"], $history[$raceNumber][$two]["qin"], $history[$raceNumber][$three]["qin"], $runners);
+                        $temp3 = array_intersect($history[$raceNumber][$one]["trio"], $history[$raceNumber][$two]["trio"], $history[$raceNumber][$three]["trio"], $runners);
+                        $temp1 = array_intersect($set, $temp1);
+                        $temp2 = array_intersect($set, $temp2);
+                        $temp3 = array_intersect($set, $temp3);
                         foreach($runners as $four){
                             if($four > $three){
                                 $set = [$one, $two, $three, $four];
-                                $temp = array_intersect($temp, $history[$raceNumber][$four]["win"]);
-                                $temp = array_intersect($set, $temp);
-                                if(count($temp) >= 2){
+                                $temp1 = array_intersect($temp1, $history[$raceNumber][$four]["win"]);
+                                $temp2 = array_intersect($temp2, $history[$raceNumber][$four]["qin"]);
+                                $temp3 = array_intersect($temp3, $history[$raceNumber][$four]["trio"]);
+                                $temp1 = array_intersect($set, $temp1);
+                                $temp2 = array_intersect($set, $temp2);
+                                $temp3 = array_intersect($set, $temp3);
+                                if(count($temp1) >= 2){
                                     $allValues = array_values(array_unique(array_merge($allValues, $set)));
                                     $winSets[] = $set;
+                                }
+                                if(count($temp2) >= 2){
+                                    $qinSets[] = $set;
+                                }
+                                if(count($temp2) >= 2){
+                                    $trioSets[] = $set;
                                 }
                             }
                         }
@@ -134,6 +150,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $racetext .= "\t\t'count win sets' => " . count($winSets) . ",\n"; 
+    $racetext .= "\t\t'count qin sets' => " . count($qinSets) . ",\n"; 
+    $racetext .= "\t\t'count trio sets' => " . count($trioSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
     if(count($favorites) >= 3 && count($winInter) >= 3){
