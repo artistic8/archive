@@ -57,7 +57,6 @@ return [
 		'win inter' => '',
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 5, 6, 7, 9, 11',
-		'no place' => '12',
 	],
 	'4' => [
 		/**

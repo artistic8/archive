@@ -80,7 +80,6 @@ return [
 		'win inter' => '',
 		'count sets' => 3,
 		'allValues' => '1, 2, 4, 5, 6',
-		'no place' => '3, 9, 10, 11',
 	],
 	'5' => [
 		/**

@@ -171,7 +171,6 @@ return [
 		'win inter' => '',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'no place' => '5',
 	],
 ];
 //total win: 0

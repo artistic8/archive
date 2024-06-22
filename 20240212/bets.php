@@ -57,7 +57,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'no place' => '14',
 	],
 	'4' => [
 		/**
@@ -96,7 +95,6 @@ return [
 		'win inter' => '',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
-		'no place' => '14',
 	],
 	'6' => [
 		/**
@@ -135,7 +133,6 @@ return [
 		'win inter' => '4',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'no place' => '13',
 	],
 	'8' => [
 		/**
@@ -154,7 +151,6 @@ return [
 		'win inter' => '6',
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5, 6',
-		'no place' => '3, 6',
 	],
 	'9' => [
 		/**
@@ -174,7 +170,6 @@ return [
 		'win inter' => '12',
 		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'no place' => '14',
 	],
 	'10' => [
 		/**

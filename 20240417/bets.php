@@ -133,7 +133,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 9,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'no place' => '6, 8, 9',
 		'win($100)' => '1, 2, 3, 4, 5, 6',
 		'total bets' => 600,
 		'2 won(win bet)' => 790,
@@ -176,7 +175,6 @@ return [
 		'win inter' => '4',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'no place' => '5',
 	],
 ];
 //total win: 190

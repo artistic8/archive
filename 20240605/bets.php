@@ -19,7 +19,6 @@ return [
 		'win inter' => '4',
 		'count sets' => 19,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'no place' => '2, 3, 4, 5, 7, 9, 10, 11, 12',
 		'win($100)' => '4, 5, 8',
 		'win($100)' => '4, 5, 8',
 		'place($200)' => '8',
@@ -180,7 +179,6 @@ return [
 		'win inter' => '2',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'no place' => '5',
 	],
 ];
 //total win: 610
