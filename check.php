@@ -10,9 +10,9 @@ $smallestFavoriteWin = [];
 $biggestFavoriteWin = [];
 $smallestFavoritePlace = [];
 $biggestFavoritePlace = [];
-$place = [];
-$placeKeys = [];
-for($k = 1; $k <= 14; $k ++) $place[$k] = [];
+$nonPlace = [];
+$nonPlaceKeys = [];
+for($k = 1; $k <= 14; $k ++) $nonPlace[$k] = [];
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "condition.php";
 $outtext = "<?php\n\n\n";
@@ -69,18 +69,18 @@ foreach ($dir as $fileinfo) {
             }
             else $allValuesTrio[$expr] = false;
             for($k = 1; $k <= 14; $k++){
-                if(in_array($k, array_slice($winners, 0, 3))){
-                    if(!isset($place[$k][$expr])) $place[$k][$expr] = true;
+                if(!in_array($k, array_slice($winners, 0, 3))){
+                    if(!isset($nonPlace[$k][$expr])) $nonPlace[$k][$expr] = true;
                 }
-                else $place[$k][$expr] = false;
+                else $nonPlace[$k][$expr] = false;
             }
         }
     }
 }
 
 for($k = 1; $k <= 14; $k++){
-    foreach($place[$k] as $key => $value){
-        if($value === false || empty($key)) unset($place[$k][$key]);
+    foreach($nonPlace[$k] as $key => $value){
+        if($value === false || empty($key)) unset($nonPlace[$k][$key]);
     }
 }
 foreach($favoritesWin as $key => $value){
@@ -124,8 +124,8 @@ $smallestFavoriteWinKeys = array_filter(array_keys($smallestFavoriteWin));
 $biggestFavoritePlaceKeys = array_filter(array_keys($biggestFavoritePlace));
 $smallestFavoritePlaceKeys = array_filter(array_keys($smallestFavoritePlace));
 for($k = 1; $k <= 14; $k++){
-    $placeKeys[$k] = array_filter(array_keys($place[$k]));
-    sort($placeKeys[$k]);
+    $nonPlaceKeys[$k] = array_filter(array_keys($nonPlace[$k]));
+    sort($nonPlaceKeys[$k]);
 }
 sort($favoritesWinKeys);
 sort($favoritesPlaceKeys);
@@ -147,8 +147,8 @@ $outtext .= '$smallestFavoriteWin =' . " [" . implode(", ", array_filter($smalle
 $outtext .= '$biggestFavoriteWin =' . " [" . implode(", ", array_filter($biggestFavoriteWinKeys)) . "];\n";
 $outtext .= '$smallestFavoritePlace =' . " [" . implode(", ", array_filter($smallestFavoritePlaceKeys)) . "];\n";
 $outtext .= '$biggestFavoritePlace =' . " [" . implode(", ", array_filter($biggestFavoritePlaceKeys)) . "];\n";
-$outtext .= '$placeCondition' . " = [\n";
-for($k = 1; $k <= 14; $k++) $outtext .= "\t$k => [" . implode(", ", array_filter($placeKeys[$k])) . "],\n";
+$outtext .= '$nonPlaceCondition' . " = [\n";
+for($k = 1; $k <= 14; $k++) $outtext .= "\t$k => [" . implode(", ", array_filter($nonPlaceKeys[$k])) . "],\n";
 $outtext .= "];\n";
 $outtext .="\n?>\n";
 file_put_contents($outFile, $outtext);

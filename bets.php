@@ -136,6 +136,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($sets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    $noPlace = [];
+    foreach($runners as $horse){
+        if(isset($nonPlaceCondition[$horse]) && in_array(count($sets), $nonPlaceCondition[$horse])){
+            $noPlace[] = $horse;
+        }
+    }
+    if(!empty($noPlace)) $racetext .= "\t\t'no place' => '" . implode(", ", $noPlace) . "',\n";
     if(count($favorites) >= 3 && count($winInter) >= 3){
         $racetext .= "\t\t'place($" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;
