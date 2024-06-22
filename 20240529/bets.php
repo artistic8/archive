@@ -113,6 +113,7 @@ return [
 		'win inter' => '11',
 		'count sets' => 6,
 		'allValues' => '1, 3, 7, 8, 9, 10',
+		'no place' => '13, 14',
 	],
 	'7' => [
 		/**

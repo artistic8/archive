@@ -19,6 +19,7 @@ return [
 		'win inter' => '',
 		'count sets' => 3,
 		'allValues' => '1, 4, 5, 6, 7, 8, 9',
+		'no place' => '3, 9, 10, 12',
 		'win($100)' => '1, 2',
 		'total bets' => 200,
 		'2 won(win bet)' => 590,
@@ -98,6 +99,7 @@ return [
 		'win inter' => '',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
+		'no place' => '14',
 	],
 	'6' => [
 		/**
@@ -174,6 +176,7 @@ return [
 		'win inter' => '',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'no place' => '5',
 	],
 	'10' => [
 		/**

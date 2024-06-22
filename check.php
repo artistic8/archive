@@ -10,9 +10,6 @@ $smallestFavoriteWin = [];
 $biggestFavoriteWin = [];
 $smallestFavoritePlace = [];
 $biggestFavoritePlace = [];
-$nonPlace = [];
-$nonPlaceKeys = [];
-for($k = 1; $k <= 14; $k ++) $nonPlace[$k] = [];
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "condition.php";
 $outtext = "<?php\n\n\n";
@@ -68,21 +65,10 @@ foreach ($dir as $fileinfo) {
                 if(!isset($allValuesTrio[$expr])) $allValuesTrio[$expr] = true;
             }
             else $allValuesTrio[$expr] = false;
-            for($k = 1; $k <= 14; $k++){
-                if(!in_array($k, array_slice($winners, 0, 3))){
-                    if(!isset($nonPlace[$k][$expr])) $nonPlace[$k][$expr] = true;
-                }
-                else $nonPlace[$k][$expr] = false;
-            }
         }
     }
 }
 
-for($k = 1; $k <= 14; $k++){
-    foreach($nonPlace[$k] as $key => $value){
-        if($value === false || empty($key)) unset($nonPlace[$k][$key]);
-    }
-}
 foreach($favoritesWin as $key => $value){
     if($value === false || empty($key)) unset($favoritesWin[$key]);
 }
@@ -123,10 +109,6 @@ $biggestFavoriteWinKeys = array_filter(array_keys($biggestFavoriteWin));
 $smallestFavoriteWinKeys = array_filter(array_keys($smallestFavoriteWin));
 $biggestFavoritePlaceKeys = array_filter(array_keys($biggestFavoritePlace));
 $smallestFavoritePlaceKeys = array_filter(array_keys($smallestFavoritePlace));
-for($k = 1; $k <= 14; $k++){
-    $nonPlaceKeys[$k] = array_filter(array_keys($nonPlace[$k]));
-    sort($nonPlaceKeys[$k]);
-}
 sort($favoritesWinKeys);
 sort($favoritesPlaceKeys);
 sort($allValuesWinKeys);
@@ -147,9 +129,6 @@ $outtext .= '$smallestFavoriteWin =' . " [" . implode(", ", array_filter($smalle
 $outtext .= '$biggestFavoriteWin =' . " [" . implode(", ", array_filter($biggestFavoriteWinKeys)) . "];\n";
 $outtext .= '$smallestFavoritePlace =' . " [" . implode(", ", array_filter($smallestFavoritePlaceKeys)) . "];\n";
 $outtext .= '$biggestFavoritePlace =' . " [" . implode(", ", array_filter($biggestFavoritePlaceKeys)) . "];\n";
-$outtext .= '$nonPlaceCondition' . " = [\n";
-for($k = 1; $k <= 14; $k++) $outtext .= "\t$k => [" . implode(", ", array_filter($nonPlaceKeys[$k])) . "],\n";
-$outtext .= "];\n";
 $outtext .="\n?>\n";
 file_put_contents($outFile, $outtext);
 ?>
