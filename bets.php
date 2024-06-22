@@ -115,14 +115,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 foreach($runners as $three){
                     if($three > $two){
                         $set = [$one, $two, $three];
-                        $temp = array_intersect($history[$raceNumber][$one]["qin"], $history[$raceNumber][$two]["qin"], $history[$raceNumber][$three]["qin"], $runners);
+                        $temp = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
                         $temp = array_intersect($set, $temp);
                         foreach($runners as $four){
                             if($four > $three){
                                 $set = [$one, $two, $three, $four];
                                 $temp = array_intersect($temp, $history[$raceNumber][$four]["win"]);
                                 $temp = array_intersect($set, $temp);
-                                if(count($temp) >= 4){
+                                if(count($temp) >= 2){
                                     $allValues = array_values(array_unique(array_merge($allValues, $set)));
                                     $winSets[] = $set;
                                 }
