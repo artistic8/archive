@@ -165,11 +165,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalPlace -= 2 * $unitBet;
         }
     }
-    if(!$winBetDone){
-        $racetext .= "\t\t'win($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
-        $totalBets[$raceNumber] += 10 * count($nonFavorites);
-        $totalWin -= 10 * count($nonFavorites);
-    }
+    // if(!$winBetDone){
+    //     $racetext .= "\t\t'win($10)' => '" . implode(", ", $nonFavorites) . "',\n"; 
+    //     $totalBets[$raceNumber] += 10 * count($nonFavorites);
+    //     $totalWin -= 10 * count($nonFavorites);
+    // }
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
@@ -199,11 +199,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalPlace += (2 * $unitBet / 10) * $placeAmount[end($wp)];
             }
         }
-        if(!$winBetDone && in_array($officialWin[0], $nonFavorites)){
-            $totalRace[$raceNumber] += $winAmount;
-            $racetext .= "\t\t'3 won(win bet)' => " . $winAmount . ",\n";
-            $totalWin += $winAmount;
-        }
+        // if(!$winBetDone && in_array($officialWin[0], $nonFavorites)){
+        //     $totalRace[$raceNumber] += $winAmount;
+        //     $racetext .= "\t\t'3 won(win bet)' => " . $winAmount . ",\n";
+        //     $totalWin += $winAmount;
+        // }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
     }
