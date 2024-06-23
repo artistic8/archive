@@ -22,7 +22,6 @@ foreach ($dir as $fileinfo) {
         foreach($bets as $raceNumber => $data){
             if(!isset($data['official win']) || empty($data['official win'])) continue;
             $favorites = array_filter(explode(", ", $data['favorites']));
-            $nonFavorites = array_filter(explode(", ", $data['non favorites']));
             $allValues = array_filter(explode(", ", $data['allValues']));
             $expr =  $data['count sets'];
             $winners = array_filter(explode(", ", $data['official win']));
