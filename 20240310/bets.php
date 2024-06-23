@@ -154,7 +154,7 @@ return [
 		'allValues' => '1, 3, 4, 5, 6, 7',
 		'win($10)' => '2',
 		'total bets' => 10,
-		'2 won(win bet)' => 110,
+		'3 won(win bet)' => 110,
 		'total won in race' => 100,
 	],
 	'8' => [

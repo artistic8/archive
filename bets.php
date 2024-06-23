@@ -74,6 +74,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
+    $racetext .= "\t\t'non favorites' => '" . implode(", ", $nonFavorites) . "',\n"; 
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }

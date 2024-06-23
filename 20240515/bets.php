@@ -132,7 +132,7 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 		'win($10)' => '1, 2, 3, 5, 7, 8',
 		'total bets' => 60,
-		'2 won(win bet)' => 110.5,
+		'3 won(win bet)' => 110.5,
 		'total won in race' => 50.5,
 	],
 	'7' => [
