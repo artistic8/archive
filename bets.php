@@ -107,10 +107,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     sort($winInter);
-    $nonFavInter = array_intersect($winInter, $nonFavorites);
     $winInter = array_intersect($favorites, $winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
-    $racetext .= "\t\t'win & non fav inter' => '" . implode(", ", $nonFavInter) . "',\n";
     $unitBet = 100;
     $allValues = [];
     $winSets = [];
