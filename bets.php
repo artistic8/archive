@@ -137,7 +137,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    if(count($allValues) === 5 || count($nonFavorites) === 12){
+    if(count($nonFavorites) === 12){
         $racetext .= "\t\t'win($10)' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 10 * count($favorites);
         $totalWin -= 10 * count($favorites);
@@ -195,7 +195,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalPlace += (2 * $unitBet / 10) * $placeAmount[end($wp)];
             }
         }
-        if((count($allValues) === 5 || count($nonFavorites) === 12) && in_array($officialWin[0], $favorites)){
+        if(count($nonFavorites) === 12 && in_array($officialWin[0], $favorites)){
             $totalRace[$raceNumber] += $winAmount;
                 $racetext .= "\t\t'2 won(win bet)' => " . $winAmount . ",\n";
                 $totalWin += $winAmount;

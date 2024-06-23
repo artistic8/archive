@@ -7,8 +7,6 @@ return [
 		*/
 		'favorites' => '6, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 2, 3, 4, 5',//count: 5 
 		'official win' => '6, 7, 4, 2',
 		'win amount' => 89,
 		'qin amount' => 49,
@@ -28,8 +26,6 @@ return [
 		*/
 		'favorites' => '2, 4, 10, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 3, 5, 6, 7, 8, 9',//count: 7 
 		'official win' => '7, 1, 5, 11',
 		'win amount' => 525,
 		'qin amount' => 4228,
@@ -49,8 +45,6 @@ return [
 		*/
 		'favorites' => '9, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 11 
 		'official win' => '9, 10, 13, 1',
 		'win amount' => 43,
 		'qin amount' => 505.5,
@@ -70,8 +64,6 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 2',//count: 2 
 		'official win' => '3, 4, 10, 5',
 		'win amount' => 27.5,
 		'qin amount' => 34,
@@ -91,8 +83,6 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 2, 3, 4',//count: 4 
 		'official win' => '5, 6, 12, 9',
 		'win amount' => 23,
 		'qin amount' => 106.5,
@@ -112,8 +102,6 @@ return [
 		*/
 		'favorites' => '3, 5, 9, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 2, 4, 6, 7, 8, 10, 11, 12, 13',//count: 10 
 		'official win' => '6, 11, 12, 14',
 		'win amount' => 75.5,
 		'qin amount' => 656.5,
@@ -133,8 +121,6 @@ return [
 		*/
 		'favorites' => '3, 7, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 2, 4, 5, 6, 8',//count: 6 
 		'official win' => '6, 9, 3, 12',
 		'win amount' => 381,
 		'qin amount' => 1684,
@@ -154,8 +140,6 @@ return [
 		*/
 		'favorites' => '2, 3, 6, 7, 8',
 		'runners' => '1, 2, 3, 5, 6, 7, 8',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 5',//count: 2 
 		'official win' => '6, 8, 3, 7',
 		'win amount' => 35,
 		'qin amount' => 46,
@@ -175,8 +159,6 @@ return [
 		*/
 		'favorites' => '2, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1',//count: 1 
 		'official win' => '8, 3, 9, 6',
 		'win amount' => 91,
 		'qin amount' => 111,
@@ -196,8 +178,6 @@ return [
 		*/
 		'favorites' => '1, 6, 10, 13, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '2, 3, 4, 5, 7, 8, 9, 11, 12',//count: 9 
 		'official win' => '10, 2, 8, 12',
 		'win amount' => 89,
 		'qin amount' => 1102,
@@ -217,8 +197,6 @@ return [
 		*/
 		'favorites' => '2, 5, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		//if count(non favorites) = 12 then favorites win?
-		'non favorites' => '1, 3, 4, 6, 7, 8',//count: 6 
 		'official win' => '5, 6, 1, 9',
 		'win amount' => 88,
 		'qin amount' => 2260,
