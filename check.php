@@ -1,7 +1,6 @@
 <?php
 
 $favoritesWin = [];
-$nonFavoritesWin = [];
 $favoritesPlace = [];
 $allValuesWin = [];
 $allValuesPlace = [];
@@ -31,10 +30,6 @@ foreach ($dir as $fileinfo) {
                 if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
             }
             else $favoritesWin[$expr] = false;
-            if(in_array($winners[0], $nonFavorites)){
-                if(!isset($nonFavoritesWin[$expr])) $nonFavoritesWin[$expr] = true;
-            }
-            else $nonFavoritesWin[$expr] = false;
             if(!empty(array_intersect($favorites, array_slice($winners, 0, 3)))){
                 if(!isset($favoritesPlace[$expr])) $favoritesPlace[$expr] = true;
             }
@@ -78,9 +73,6 @@ foreach ($dir as $fileinfo) {
 foreach($favoritesWin as $key => $value){
     if($value === false || empty($key)) unset($favoritesWin[$key]);
 }
-foreach($nonFavoritesWin as $key => $value){
-    if($value === false || empty($key)) unset($nonFavoritesWin[$key]);
-}
 foreach($favoritesPlace as $key => $value){
     if($value === false || empty($key)) unset($favoritesPlace[$key]);
 }
@@ -109,7 +101,6 @@ foreach($biggestFavoritePlace as $key => $value){
     if($value === false || empty($key)) unset($biggestFavoritePlace[$key]);
 }
 $favoritesWinKeys = array_filter(array_keys($favoritesWin));
-$nonFavoritesWinKeys = array_filter(array_keys($nonFavoritesWin));
 $favoritesPlaceKeys = array_filter(array_keys($favoritesPlace));
 $allValuesWinKeys = array_filter(array_keys($allValuesWin));
 $allValuesPlaceKeys = array_filter(array_keys($allValuesPlace));
@@ -120,7 +111,6 @@ $smallestFavoriteWinKeys = array_filter(array_keys($smallestFavoriteWin));
 $biggestFavoritePlaceKeys = array_filter(array_keys($biggestFavoritePlace));
 $smallestFavoritePlaceKeys = array_filter(array_keys($smallestFavoritePlace));
 sort($favoritesWinKeys);
-sort($nonFavoritesWinKeys);
 sort($favoritesPlaceKeys);
 sort($allValuesWinKeys);
 sort($allValuesPlaceKeys);
@@ -131,7 +121,6 @@ sort($biggestFavoriteWinKeys);
 sort($smallestFavoritePlaceKeys);
 sort($biggestFavoritePlaceKeys);
 $outtext .= '$favoriteWin = ' . "[" . implode(", ", array_filter($favoritesWinKeys)) . "];\n";
-$outtext .= '$nonFavoriteWin = ' . "[" . implode(", ", array_filter($nonFavoritesWinKeys)) . "];\n";
 $outtext .= '$favoritePlace = ' . "[" . implode(", ", array_filter($favoritesPlaceKeys)) . "];\n";
 $outtext .= '$allValuesWin = ' . "[" . implode(", ", array_filter($allValuesWinKeys)) . "];\n";
 $outtext .= '$allValuesPlace = ' . "[" . implode(", ", array_filter($allValuesPlaceKeys)) . "];\n";
