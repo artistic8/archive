@@ -200,7 +200,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         if(!$winBetDone && in_array($officialWin[0], $nonFavorites)){
             $totalRace[$raceNumber] += $winAmount;
-            $racetext .= "\t\t'2 won(win bet)' => " . $winAmount . ",\n";
+            $racetext .= "\t\t'3 won(win bet)' => " . $winAmount . ",\n";
             $totalWin += $winAmount;
         }
         $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
