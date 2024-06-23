@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'official win' => '3, 10, 5, 12',
 		'win amount' => 49.5,
 		'qin amount' => 247,
@@ -30,6 +31,7 @@ return [
 		*/
 		'favorites' => '1, 3, 6, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '2, 4, 5, 7, 8, 10, 11',
 		'official win' => '6, 2, 9, 7',
 		'win amount' => 59,
 		'qin amount' => 246,
@@ -52,6 +54,7 @@ return [
 		*/
 		'favorites' => '3, 6, 8, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '1, 2, 4, 5, 7, 10, 11',
 		'official win' => '12, 8, 2, 10',
 		'win amount' => 70.5,
 		'qin amount' => 166,
@@ -74,6 +77,7 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '1, 2, 3, 4',
 		'official win' => '2, 5, 9, 3',
 		'win amount' => 116,
 		'qin amount' => 128,
@@ -97,6 +101,7 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'non favorites' => '1, 2, 3, 4',
 		'official win' => '5, 2, 6, 1',
 		'win amount' => 17.5,
 		'qin amount' => 91,
@@ -119,6 +124,7 @@ return [
 		*/
 		'favorites' => '2, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		'non favorites' => '1, 3, 4, 5, 6, 7, 8',
 		'official win' => '2, 11, 3, 1',
 		'win amount' => 26,
 		'qin amount' => 713.5,
@@ -141,6 +147,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'non favorites' => '1, 2',
 		'official win' => '10, 1, 4, 3',
 		'win amount' => 115.5,
 		'qin amount' => 404,
@@ -163,6 +170,7 @@ return [
 		*/
 		'favorites' => '2, 5, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'non favorites' => '1, 3, 4, 6',
 		'official win' => '4, 9, 3, 8',
 		'win amount' => 89,
 		'qin amount' => 788.5,
@@ -187,6 +195,7 @@ return [
 		*/
 		'favorites' => '1',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '',
 		'official win' => '1, 6, 11, 7',
 		'win amount' => 17.5,
 		'qin amount' => 129,

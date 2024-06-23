@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '2, 5, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'non favorites' => '1, 3, 4, 6, 7',
 		'official win' => '8, 9, 5, 4',
 		'win amount' => 16,
 		'qin amount' => 89.5,
@@ -29,6 +30,7 @@ return [
 		*/
 		'favorites' => '1, 6, 7, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'non favorites' => '2, 3, 4, 5, 8',
 		'official win' => '8, 6, 10, 7',
 		'win amount' => 69,
 		'qin amount' => 121,
@@ -52,6 +54,7 @@ return [
 		*/
 		'favorites' => '4, 6, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '1, 2, 3, 5, 7, 8, 9, 10, 11',
 		'official win' => '7, 12, 4, 10',
 		'win amount' => 194.5,
 		'qin amount' => 2475,
@@ -75,6 +78,7 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 4, 5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'non favorites' => '',
 		'official win' => '4, 7, 2, 3',
 		'win amount' => 61.5,
 		'qin amount' => 2228.5,
@@ -95,6 +99,7 @@ return [
 		*/
 		'favorites' => '1, 5, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'non favorites' => '2, 3, 4, 6, 7, 8, 9, 10, 11',
 		'official win' => '5, 2, 13, 7',
 		'win amount' => 26,
 		'qin amount' => 87,
@@ -117,6 +122,7 @@ return [
 		*/
 		'favorites' => '3, 5, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'non favorites' => '1, 2, 4, 6, 7, 8',
 		'official win' => '2, 7, 9, 6',
 		'win amount' => 107,
 		'qin amount' => 437.5,
@@ -140,6 +146,7 @@ return [
 		*/
 		'favorites' => '1, 4, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'non favorites' => '2, 3, 5, 7',
 		'official win' => '3, 8, 4, 12',
 		'win amount' => 712,
 		'qin amount' => 1089,
@@ -163,6 +170,7 @@ return [
 		*/
 		'favorites' => '3, 4, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',
+		'non favorites' => '1, 2, 5, 6, 7, 9, 10',
 		'official win' => '7, 4, 11, 5',
 		'win amount' => 223,
 		'qin amount' => 315.5,
@@ -186,6 +194,7 @@ return [
 		*/
 		'favorites' => '2, 3, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'non favorites' => '1, 4, 5, 7',
 		'official win' => '8, 4, 2, 6',
 		'win amount' => 64.5,
 		'qin amount' => 353,
@@ -208,6 +217,7 @@ return [
 		*/
 		'favorites' => '8, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'non favorites' => '1, 2, 3, 4, 5, 6, 7, 10',
 		'official win' => '8, 3, 11, 5',
 		'win amount' => 14,
 		'qin amount' => 47,
@@ -230,6 +240,7 @@ return [
 		*/
 		'favorites' => '8, 9, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'non favorites' => '1, 2, 3, 4, 5, 6, 7, 10',
 		'official win' => '5, 3, 1, 8',
 		'win amount' => 105,
 		'qin amount' => 159,
