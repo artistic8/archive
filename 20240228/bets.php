@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8 
 		'official win' => '3, 10, 5, 12',
 		'win amount' => 49.5,
@@ -27,6 +28,7 @@ return [
 		*/
 		'favorites' => '1, 3, 6, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '2, 4, 5, 7, 8, 10, 11',//count: 7 
 		'official win' => '6, 2, 9, 7',
 		'win amount' => 59,
@@ -47,6 +49,7 @@ return [
 		*/
 		'favorites' => '3, 6, 8, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 2, 4, 5, 7, 10, 11',//count: 7 
 		'official win' => '12, 8, 2, 10',
 		'win amount' => 70.5,
@@ -67,6 +70,7 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 2, 3, 4',//count: 4 
 		'official win' => '2, 5, 9, 3',
 		'win amount' => 116,
@@ -87,6 +91,7 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 2, 3, 4',//count: 4 
 		'official win' => '5, 2, 6, 1',
 		'win amount' => 17.5,
@@ -107,6 +112,7 @@ return [
 		*/
 		'favorites' => '2, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 3, 4, 5, 6, 7, 8',//count: 7 
 		'official win' => '2, 11, 3, 1',
 		'win amount' => 26,
@@ -127,6 +133,7 @@ return [
 		*/
 		'favorites' => '3, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 2',//count: 2 
 		'official win' => '10, 1, 4, 3',
 		'win amount' => 115.5,
@@ -147,6 +154,7 @@ return [
 		*/
 		'favorites' => '2, 5, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '1, 3, 4, 6',//count: 4 
 		'official win' => '4, 9, 3, 8',
 		'win amount' => 89,
@@ -172,6 +180,7 @@ return [
 		*/
 		'favorites' => '1',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		//if count(non favorites) = 12 then favorites win?
 		'non favorites' => '',//count: 0 
 		'official win' => '1, 6, 11, 7',
 		'win amount' => 17.5,
