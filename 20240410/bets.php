@@ -20,10 +20,6 @@ return [
 		'win inter' => '6',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win($10)' => '1, 2, 3, 4',
-		'total bets' => 40,
-		'3 won(win bet)' => 73,
-		'total won in race' => 33,
 	],
 	'2' => [
 		/**
@@ -44,9 +40,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win($10)' => '1, 2',
-		'total bets' => 20,
-		'total won in race' => -20,
 	],
 	'3' => [
 		/**
@@ -67,9 +60,6 @@ return [
 		'win inter' => '2',
 		'count sets' => 1,
 		'allValues' => '1, 3, 6, 7',
-		'win($10)' => '1, 4, 6, 7',
-		'total bets' => 40,
-		'total won in race' => -40,
 	],
 	'4' => [
 		/**
@@ -90,7 +80,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
-		'win($10)' => '',
 	],
 	'5' => [
 		/**
@@ -111,10 +100,6 @@ return [
 		'win inter' => '',
 		'count sets' => 1,
 		'allValues' => '1, 3, 10, 11',
-		'win($10)' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
-		'total bets' => 90,
-		'3 won(win bet)' => 387,
-		'total won in race' => 297,
 	],
 	'6' => [
 		/**
@@ -135,9 +120,6 @@ return [
 		'win inter' => '2',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
-		'win($10)' => '1, 3, 4, 5, 7, 8',
-		'total bets' => 60,
-		'total won in race' => -60,
 	],
 	'7' => [
 		/**
@@ -158,9 +140,6 @@ return [
 		'win inter' => '10',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win($10)' => '1, 3, 4, 5, 6, 7, 8, 9',
-		'total bets' => 80,
-		'total won in race' => -80,
 	],
 	'8' => [
 		/**
@@ -181,9 +160,6 @@ return [
 		'win inter' => '3, 4',
 		'count sets' => 12,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'win($10)' => '1, 5, 6',
-		'total bets' => 30,
-		'total won in race' => -30,
 	],
 	'9' => [
 		/**
@@ -204,14 +180,10 @@ return [
 		'win inter' => '2, 9',
 		'count sets' => 12,
 		'allValues' => '1, 3, 4, 5, 6, 7, 8, 10, 11',
-		'win($10)' => '1, 3, 4, 5, 6, 7, 8',
-		'total bets' => 70,
-		'3 won(win bet)' => 42,
-		'total won in race' => -28,
 	],
 ];
-//total win: 72
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 72
+//total: 0

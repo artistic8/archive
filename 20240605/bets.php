@@ -48,9 +48,6 @@ return [
 		'win inter' => '2, 6',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win($10)' => '3, 4, 5',
-		'total bets' => 30,
-		'total won in race' => -30,
 	],
 	'3' => [
 		/**
@@ -71,9 +68,6 @@ return [
 		'win inter' => '7',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'win($10)' => '1, 2, 3, 5, 6',
-		'total bets' => 50,
-		'total won in race' => -50,
 	],
 	'4' => [
 		/**
@@ -94,10 +88,6 @@ return [
 		'win inter' => '5',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
-		'win($10)' => '1, 2, 3, 4, 6',
-		'total bets' => 50,
-		'3 won(win bet)' => 310,
-		'total won in race' => 260,
 	],
 	'5' => [
 		/**
@@ -118,10 +108,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
-		'win($10)' => '2, 4, 5, 6, 7, 8, 10, 11',
-		'total bets' => 80,
-		'3 won(win bet)' => 65.5,
-		'total won in race' => -14.5,
 	],
 	'6' => [
 		/**
@@ -142,9 +128,6 @@ return [
 		'win inter' => '',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
-		'win($10)' => '1, 5, 6, 7, 8, 10',
-		'total bets' => 60,
-		'total won in race' => -60,
 	],
 	'7' => [
 		/**
@@ -165,9 +148,6 @@ return [
 		'win inter' => '',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win($10)' => '1, 2, 3, 5, 7, 8, 9',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 	'8' => [
 		/**
@@ -188,10 +168,6 @@ return [
 		'win inter' => '',
 		'count sets' => 12,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'win($10)' => '1, 2, 4, 5, 7, 8, 9, 10, 11',
-		'total bets' => 90,
-		'3 won(win bet)' => 490.5,
-		'total won in race' => 400.5,
 	],
 	'9' => [
 		/**
@@ -212,14 +188,10 @@ return [
 		'win inter' => '2',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win($10)' => '1, 5, 6, 7, 8, 9, 10',
-		'total bets' => 70,
-		'3 won(win bet)' => 47.5,
-		'total won in race' => -22.5,
 	],
 ];
-//total win: 1023.5
+//total win: 610
 //total place: 280
 //total qin: 0
 //total trio: 0
-//total: 1303.5
+//total: 890

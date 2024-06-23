@@ -20,10 +20,6 @@ return [
 		'win inter' => '',
 		'count sets' => 11,
 		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win($10)' => '1, 3, 4, 5, 6, 7, 8',
-		'total bets' => 70,
-		'3 won(win bet)' => 221.5,
-		'total won in race' => 151.5,
 	],
 	'2' => [
 		/**
@@ -44,10 +40,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win($10)' => '1, 2, 4, 5, 6, 7',
-		'total bets' => 60,
-		'3 won(win bet)' => 57.5,
-		'total won in race' => -2.5,
 	],
 	'3' => [
 		/**
@@ -68,9 +60,6 @@ return [
 		'win inter' => '1, 7',
 		'count sets' => 1,
 		'allValues' => '1, 3, 6, 7',
-		'win($10)' => '2, 3, 4, 6',
-		'total bets' => 40,
-		'total won in race' => -40,
 	],
 	'4' => [
 		/**
@@ -91,9 +80,6 @@ return [
 		'win inter' => '1, 11',
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 4, 6, 8, 10, 11, 12',
-		'win($10)' => '2, 3, 6, 7, 8, 9, 10',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 	'5' => [
 		/**
@@ -114,10 +100,6 @@ return [
 		'win inter' => '4',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
-		'win($10)' => '1, 2, 3',
-		'total bets' => 30,
-		'3 won(win bet)' => 52,
-		'total won in race' => 22,
 	],
 	'6' => [
 		/**
@@ -138,9 +120,6 @@ return [
 		'win inter' => '1, 3',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
-		'win($10)' => '2, 4, 5, 6',
-		'total bets' => 40,
-		'total won in race' => -40,
 	],
 	'7' => [
 		/**
@@ -161,10 +140,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win($10)' => '1, 2, 4',
-		'total bets' => 30,
-		'3 won(win bet)' => 206.5,
-		'total won in race' => 176.5,
 	],
 	'8' => [
 		/**
@@ -209,13 +184,10 @@ return [
 		'win inter' => '',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win($10)' => '2, 3, 4, 6, 7, 8, 10',
-		'total bets' => 70,
-		'total won in race' => -70,
 	],
 ];
-//total win: 1217.5
+//total win: 1090
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 1217.5
+//total: 1090
