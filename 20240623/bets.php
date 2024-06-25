@@ -16,6 +16,9 @@ return [
 			10 => 20.5,
 			1 => 12.5,
 		],
+		'win inter' => '',
+		'count sets' => 21,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'2' => [
 		/**
@@ -32,6 +35,9 @@ return [
 			4 => 13,
 			1 => 19.5,
 		],
+		'win inter' => '2',
+		'count sets' => 10,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'3' => [
 		/**
@@ -48,6 +54,9 @@ return [
 			2 => 22.5,
 			11 => 32,
 		],
+		'win inter' => '',
+		'count sets' => 4,
+		'allValues' => '1, 2, 3, 5, 6, 7',
 	],
 	'4' => [
 		/**
@@ -64,6 +73,9 @@ return [
 			9 => 36.5,
 			5 => 26.5,
 		],
+		'win inter' => '',
+		'count sets' => 11,
+		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -80,6 +92,9 @@ return [
 			8 => 15,
 			4 => 11.5,
 		],
+		'win inter' => '',
+		'count sets' => 2,
+		'allValues' => '1, 3, 4, 5, 10, 11',
 	],
 	'6' => [
 		/**
@@ -96,6 +111,9 @@ return [
 			12 => 57.5,
 			10 => 58,
 		],
+		'win inter' => '1',
+		'count sets' => 7,
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
 		/**
@@ -112,6 +130,9 @@ return [
 			8 => 14.5,
 			4 => 25.5,
 		],
+		'win inter' => '3',
+		'count sets' => 16,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
 	'8' => [
 		/**
@@ -128,9 +149,9 @@ return [
 			1 => 12,
 			4 => 16,
 		],
-		'win($100)' => '1, 6, 7',
-		'total bets' => 300,
-		'total won in race' => -300,
+		'win inter' => '3',
+		'count sets' => 7,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
 	'9' => [
 		/**
@@ -147,6 +168,9 @@ return [
 			1 => 39,
 			3 => 20.5,
 		],
+		'win inter' => '3',
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 	'10' => [
 		/**
@@ -163,6 +187,9 @@ return [
 			5 => 11.5,
 			8 => 29,
 		],
+		'win inter' => '',
+		'count sets' => 0,
+		'allValues' => '',
 	],
 	'11' => [
 		/**
@@ -179,10 +206,13 @@ return [
 			4 => 20,
 			7 => 64,
 		],
+		'win inter' => '',
+		'count sets' => 0,
+		'allValues' => '',
 	],
 ];
-//total win: -300
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: -300
+//total: 0
