@@ -27,12 +27,12 @@ $condition = [
 		'allValuesWin' => [2, 5, 7, 8],
 	],
 	7 => [
-		'favoriteWin' => [5, 7, 16, 18],
-		'allValuesWin' => [5, 7, 10, 11, 14, 15, 16, 18, 19],
+		'favoriteWin' => [5, 7, 18],
+		'allValuesWin' => [5, 7, 10, 11, 14, 15, 18, 19],
 	],
 	8 => [
-		'favoriteWin' => [7, 13],
-		'allValuesWin' => [4, 7, 10, 12, 13],
+		'favoriteWin' => [13],
+		'allValuesWin' => [4, 10, 12, 13],
 	],
 	9 => [
 		'favoriteWin' => [5, 6, 8],
