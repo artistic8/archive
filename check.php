@@ -15,6 +15,7 @@ foreach ($dir as $fileinfo) {
             if(!isset($data['official win']) || empty($data['official win'])) continue;
             $favorites = array_filter(explode(", ", $data['favorites']));
             $runners = array_filter(explode(", ", $data['runners']));
+            $allValues = array_filter(explode(", ", $data['allValues']));
             $expr =  $data['count sets']; 
             $winners = array_filter(explode(", ", $data['official win']));
             if(in_array($winners[0], $favorites)){
