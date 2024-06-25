@@ -99,6 +99,7 @@ return [
 		'win($100)' => '1, 3, 4, 5, 10, 11',
 		'total bets' => 600,
 		'1 won(win bet)' => 700,
+		//Won allValues bet
 		'total won in race' => 100,
 	],
 	'6' => [
@@ -121,6 +122,7 @@ return [
 		'allValues' => '1, 3, 6, 7, 8, 9, 10',
 		'win($100)' => '1, 3, 6, 7, 8, 9, 10',
 		'total bets' => 700,
+		//Lost allValues bet
 		'total won in race' => -700,
 	],
 	'7' => [
@@ -162,6 +164,7 @@ return [
 		'allValues' => '2, 3, 4, 6, 7, 8',
 		'win($100)' => '2, 3, 4, 6, 7, 8',
 		'total bets' => 600,
+		//Lost allValues bet
 		'total won in race' => -600,
 	],
 	'9' => [
