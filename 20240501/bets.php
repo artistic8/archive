@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '1, 4',
 		'count sets' => 21,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count: 10
 	],
 	'2' => [
 		/**
@@ -37,11 +37,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 8,
-		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9',
-		'win($100)' => '1, 2, 3, 4, 5',
-		'total bets' => 500,
-		'2 won(win bet)' => 545,
-		'total won in race' => 45,
+		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9',//count: 8
 	],
 	'3' => [
 		/**
@@ -60,7 +56,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 4,
-		'allValues' => '1, 2, 3, 5, 6, 7',
+		'allValues' => '1, 2, 3, 5, 6, 7',//count: 6
 	],
 	'4' => [
 		/**
@@ -79,7 +75,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 7,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',//count: 9
 	],
 	'5' => [
 		/**
@@ -98,7 +94,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 2,
-		'allValues' => '1, 3, 4, 5, 10, 11',
+		'allValues' => '1, 3, 4, 5, 10, 11',//count: 6
 	],
 	'6' => [
 		/**
@@ -117,7 +113,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 10,
-		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',//count: 9
 	],
 	'7' => [
 		/**
@@ -136,7 +132,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 22,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
 	],
 	'8' => [
 		/**
@@ -155,7 +151,7 @@ return [
 		],
 		'win inter' => '3, 4',
 		'count sets' => 15,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
 	],
 	'9' => [
 		/**
@@ -174,11 +170,11 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 7,
-		'allValues' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',//count: 10
 	],
 ];
-//total win: 45
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 45
+//total: 0

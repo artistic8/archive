@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 11,
-		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9, 10',//count: 9
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		],
 		'win inter' => '3',
 		'count sets' => 10,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		],
 		'win inter' => '1, 7',
 		'count sets' => 1,
-		'allValues' => '1, 3, 6, 7',
+		'allValues' => '1, 3, 6, 7',//count: 4
 	],
 	'4' => [
 		/**
@@ -75,11 +75,7 @@ return [
 		],
 		'win inter' => '1, 11',
 		'count sets' => 11,
-		'allValues' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',
-		'win($100)' => '1, 4, 11',
-		'total bets' => 300,
-		'2 won(win bet)' => 450,
-		'total won in race' => 150,
+		'allValues' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',//count: 10
 	],
 	'5' => [
 		/**
@@ -98,7 +94,7 @@ return [
 		],
 		'win inter' => '4',
 		'count sets' => 2,
-		'allValues' => '1, 3, 4, 5, 10, 11',
+		'allValues' => '1, 3, 4, 5, 10, 11',//count: 6
 	],
 	'6' => [
 		/**
@@ -117,7 +113,7 @@ return [
 		],
 		'win inter' => '1, 3',
 		'count sets' => 10,
-		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',//count: 9
 	],
 	'7' => [
 		/**
@@ -136,11 +132,7 @@ return [
 		],
 		'win inter' => '3',
 		'count sets' => 14,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win($100)' => '1, 2, 3, 4, 5',
-		'total bets' => 500,
-		'2 won(win bet)' => 2065,
-		'total won in race' => 1565,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
 	],
 	'8' => [
 		/**
@@ -159,7 +151,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 12,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
 	],
 	'9' => [
 		/**
@@ -178,11 +170,11 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 16,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 	],
 ];
-//total win: 1715
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 1715
+//total: 0

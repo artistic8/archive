@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '4',
 		'count sets' => 1,
-		'allValues' => '1, 5, 6, 7',
+		'allValues' => '1, 5, 6, 7',//count: 4
 	],
 	'2' => [
 		/**
@@ -37,10 +37,7 @@ return [
 		],
 		'win inter' => '6',
 		'count sets' => 3,
-		'allValues' => '2, 3, 4, 5, 6, 8, 9',
-		'win($100)' => '1, 6, 7',
-		'total bets' => 300,
-		'total won in race' => -300,
+		'allValues' => '2, 3, 4, 5, 6, 8, 9',//count: 7
 	],
 	'3' => [
 		/**
@@ -59,7 +56,7 @@ return [
 		],
 		'win inter' => '3, 9',
 		'count sets' => 4,
-		'allValues' => '1, 2, 3, 5, 6, 7',
+		'allValues' => '1, 2, 3, 5, 6, 7',//count: 6
 	],
 	'4' => [
 		/**
@@ -78,11 +75,7 @@ return [
 		],
 		'win inter' => '1',
 		'count sets' => 14,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'win($100)' => '1, 5, 11',
-		'total bets' => 300,
-		'2 won(win bet)' => 400,
-		'total won in race' => 100,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 11
 	],
 	'5' => [
 		/**
@@ -101,7 +94,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 1,
-		'allValues' => '1, 3, 4, 5',
+		'allValues' => '1, 3, 4, 5',//count: 4
 	],
 	'6' => [
 		/**
@@ -120,7 +113,7 @@ return [
 		],
 		'win inter' => '4',
 		'count sets' => 8,
-		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',//count: 9
 	],
 	'7' => [
 		/**
@@ -139,7 +132,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 18,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
 	],
 	'8' => [
 		/**
@@ -158,7 +151,7 @@ return [
 		],
 		'win inter' => '4',
 		'count sets' => 15,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
 	],
 	'9' => [
 		/**
@@ -177,11 +170,11 @@ return [
 		],
 		'win inter' => '1',
 		'count sets' => 16,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 	],
 ];
-//total win: -200
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: -200
+//total: 0

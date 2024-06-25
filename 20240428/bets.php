@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '7',
 		'count sets' => 21,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count: 10
 	],
 	'2' => [
 		/**
@@ -37,7 +37,7 @@ return [
 		],
 		'win inter' => '2',
 		'count sets' => 8,
-		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9',//count: 8
 	],
 	'3' => [
 		/**
@@ -56,7 +56,7 @@ return [
 		],
 		'win inter' => '1',
 		'count sets' => 1,
-		'allValues' => '2, 3, 5, 6',
+		'allValues' => '2, 3, 5, 6',//count: 4
 	],
 	'4' => [
 		/**
@@ -75,7 +75,7 @@ return [
 		],
 		'win inter' => '1, 4, 5',
 		'count sets' => 15,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 11
 		'place($200)' => '5',
 		'total bets' => 200,
 		'1 won(place bet)' => 300,
@@ -98,7 +98,7 @@ return [
 		],
 		'win inter' => '1, 3, 5',
 		'count sets' => 2,
-		'allValues' => '1, 3, 4, 5, 10, 11',
+		'allValues' => '1, 3, 4, 5, 10, 11',//count: 6
 		'place($200)' => '5',
 		'total bets' => 200,
 		'1 won(place bet)' => 360,
@@ -121,7 +121,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 10,
-		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',//count: 9
 	],
 	'7' => [
 		/**
@@ -140,7 +140,7 @@ return [
 		],
 		'win inter' => '1',
 		'count sets' => 22,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
 	],
 	'8' => [
 		/**
@@ -159,7 +159,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 15,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
 	],
 	'9' => [
 		/**
@@ -178,7 +178,7 @@ return [
 		],
 		'win inter' => '8',
 		'count sets' => 16,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
 	],
 	'10' => [
 		/**
@@ -197,7 +197,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 0,
-		'allValues' => '',
+		'allValues' => '',//count: 0
 	],
 ];
 //total win: 0
