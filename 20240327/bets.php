@@ -74,8 +74,8 @@ return [
 			1 => 50,
 		],
 		'win inter' => '11',
-		'count sets' => 11,
-		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -112,8 +112,8 @@ return [
 			10 => 28.5,
 		],
 		'win inter' => '3',
-		'count sets' => 6,
-		'allValues' => '1, 3, 7, 8, 9, 10',
+		'count sets' => 9,
+		'allValues' => '1, 3, 6, 7, 8, 9, 10',
 	],
 	'7' => [
 		/**
@@ -131,8 +131,8 @@ return [
 			4 => 19.5,
 		],
 		'win inter' => '6',
-		'count sets' => 16,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'count sets' => 22,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'8' => [
 		/**
