@@ -35,7 +35,7 @@ foreach ($dir as $fileinfo) {
 $outtext .= '$condition = [' . "\n";
 for($raceNumber = 1; $raceNumber < 14; $raceNumber ++){
     if(!isset($condition[$raceNumber]['favoritesWin']) || !isset($condition[$raceNumber]['allValuesWin'])) continue;
-    $outtext .= "\t'$raceNumber' => [\n";
+    $outtext .= "\t$raceNumber => [\n";
     foreach($condition[$raceNumber]['favoritesWin'] as $key => $value){
         if($value === false || empty($key)) unset($condition[$raceNumber]['favoritesWin'][$key]);
     }
