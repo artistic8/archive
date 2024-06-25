@@ -18,7 +18,13 @@ return [
 		],
 		'win inter' => '4',
 		'count sets' => 19,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count: 10
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'win($100)' => '4, 5, 8',
+		'place($200)' => '8',
+		'total bets' => 500,
+		'2 won(win bet)' => 605,
+		'2 won(place bet)' => 480,
+		'total won in race' => 585,
 	],
 	'2' => [
 		/**
@@ -37,7 +43,7 @@ return [
 		],
 		'win inter' => '2, 6',
 		'count sets' => 10,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'3' => [
 		/**
@@ -56,7 +62,7 @@ return [
 		],
 		'win inter' => '7',
 		'count sets' => 4,
-		'allValues' => '1, 2, 3, 5, 6, 7',//count: 6
+		'allValues' => '1, 2, 3, 5, 6, 7',
 	],
 	'4' => [
 		/**
@@ -75,7 +81,7 @@ return [
 		],
 		'win inter' => '5',
 		'count sets' => 12,
-		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',//count: 10
+		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -94,7 +100,7 @@ return [
 		],
 		'win inter' => '3',
 		'count sets' => 2,
-		'allValues' => '1, 3, 4, 5, 10, 11',//count: 6
+		'allValues' => '1, 3, 4, 5, 10, 11',
 	],
 	'6' => [
 		/**
@@ -113,7 +119,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 10,
-		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',//count: 9
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
 		/**
@@ -132,7 +138,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 22,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count: 9
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'8' => [
 		/**
@@ -151,7 +157,7 @@ return [
 		],
 		'win inter' => '',
 		'count sets' => 15,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',//count: 8
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 	'9' => [
 		/**
@@ -170,11 +176,11 @@ return [
 		],
 		'win inter' => '2',
 		'count sets' => 16,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count: 11
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];
-//total win: 0
-//total place: 0
+//total win: 305
+//total place: 280
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 585
