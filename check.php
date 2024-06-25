@@ -14,8 +14,9 @@ foreach ($dir as $fileinfo) {
         foreach($bets as $raceNumber => $data){
             if(!isset($data['official win']) || empty($data['official win'])) continue;
             $favorites = array_filter(explode(", ", $data['favorites']));
+            $runners = array_filter(explode(", ", $data['runners']));
             $allValues = array_filter(explode(", ", $data['allValues']));
-            $expr =  $data['count sets'];
+            $expr =  $data['count sets'] * count($runners);
             $winners = array_filter(explode(", ", $data['official win']));
             if(in_array($winners[0], $favorites)){
                 if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
