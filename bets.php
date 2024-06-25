@@ -135,7 +135,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
-    $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',//count: " . count($allValues) . "\n";
     if(count($favorites) >= 3 && count($winInter) >= 3 && end($favorites) > 3 && end($favorites) < 11){
         $racetext .= "\t\t'place($" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;
