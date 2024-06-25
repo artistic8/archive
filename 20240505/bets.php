@@ -57,6 +57,10 @@ return [
 		'win inter' => '',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 5, 6, 7',
+		'total bets' => 600,
+		'1 won(win bet)' => 1945,
+		'total won in race' => 1345,
 	],
 	'4' => [
 		/**
@@ -76,6 +80,10 @@ return [
 		'win inter' => '',
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 4, 5, 6, 7',
+		'total bets' => 700,
+		'1 won(win bet)' => 615,
+		'total won in race' => -85,
 	],
 	'5' => [
 		/**
@@ -95,6 +103,10 @@ return [
 		'win inter' => '',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
+		'win($100)' => '1, 3, 4, 5, 10, 11',
+		'total bets' => 600,
+		'1 won(win bet)' => 260,
+		'total won in race' => -340,
 	],
 	'6' => [
 		/**
@@ -114,6 +126,9 @@ return [
 		'win inter' => '3',
 		'count sets' => 9,
 		'allValues' => '1, 3, 6, 7, 8, 9, 10',
+		'win($100)' => '1, 3, 6, 7, 8, 9, 10',
+		'total bets' => 700,
+		'total won in race' => -700,
 	],
 	'7' => [
 		/**
@@ -133,10 +148,12 @@ return [
 		'win inter' => '',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 4, 5, 6, 7',
 		'win($100)' => '1, 4, 6',
 		'place($200)' => '6',
-		'total bets' => 500,
-		'total won in race' => -500,
+		'total bets' => 1200,
+		'1 won(win bet)' => 7120,
+		'total won in race' => 5920,
 	],
 	'8' => [
 		/**
@@ -156,6 +173,10 @@ return [
 		'win inter' => '3, 4',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 4, 5, 6, 7',
+		'total bets' => 700,
+		'1 won(win bet)' => 2230,
+		'total won in race' => 1530,
 	],
 	'9' => [
 		/**
@@ -194,6 +215,7 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
+		'win($100)' => '',
 	],
 	'11' => [
 		/**
@@ -213,10 +235,11 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
+		'win($100)' => '',
 	],
 ];
-//total win: -300
+//total win: 7870
 //total place: -200
 //total qin: 0
 //total trio: 0
-//total: -500
+//total: 7670
