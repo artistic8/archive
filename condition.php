@@ -1,7 +1,7 @@
 <?php
 
 
-$favoriteWin = [19, 20];
-$allValuesWin = [3, 5, 9, 13, 14, 19, 20];
+$favoriteWin = [2, 32, 36, 38, 39, 41, 44, 47];
+$allValuesWin = [2, 3, 36];
 
 ?>
