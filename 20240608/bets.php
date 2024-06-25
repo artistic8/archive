@@ -56,10 +56,10 @@ return [
 			2 => 14,
 			5 => 25.5,
 		],
-		'win($100)' => '1, 2, 7, 8, 9, 10',
-		'total bets' => 600,
+		'win($100)' => '1, 8, 9, 10',
+		'total bets' => 400,
 		'1 won(win bet)' => 215,
-		'total won in race' => -385,
+		'total won in race' => -185,
 	],
 	'4' => [
 		/**
@@ -76,7 +76,7 @@ return [
 			8 => 21,
 			2 => 28,
 		],
-		'win($100)' => '1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'win($100)' => '1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'total bets' => 1300,
 		'1 won(win bet)' => 120,
 		'total won in race' => -1180,
@@ -96,10 +96,10 @@ return [
 			10 => 14,
 			3 => 35,
 		],
-		'win($100)' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14',
-		'total bets' => 1200,
+		'win($100)' => '1, 2, 3, 4, 5, 6, 11, 12, 13, 14',
+		'total bets' => 1000,
 		'1 won(win bet)' => 545,
-		'total won in race' => -655,
+		'total won in race' => -455,
 	],
 	'6' => [
 		/**
@@ -156,7 +156,7 @@ return [
 			6 => 48.5,
 			8 => 30,
 		],
-		'win($100)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
+		'win($100)' => '1, 0, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'total bets' => 1300,
 		'1 won(win bet)' => 305,
 		'total won in race' => -995,
@@ -201,8 +201,8 @@ return [
 		'total won in race' => -800,
 	],
 ];
-//total win: -7220
+//total win: -6820
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: -7220
+//total: -6820
