@@ -3,40 +3,40 @@
 
 $condition = [
 	1 => [
-		'favoriteWin' => [2, 15, 21, 38, 48, 56, 57, 60, 80, 84],
-		'allValuesWin' => [2, 6, 9, 15, 16, 21, 22, 38, 48, 56, 57, 60, 80, 84],
+		'favoriteWin' => [1, 3, 12, 14, 15, 19, 20],
+		'allValuesWin' => [1, 2, 3, 9, 11, 12, 14, 15, 16, 19, 20],
 	],
 	2 => [
-		'favoriteWin' => [12, 21, 27, 30, 50],
-		'allValuesWin' => [4, 9, 10, 12, 14, 16, 21, 27, 50],
+		'favoriteWin' => [4, 5, 9],
+		'allValuesWin' => [2, 3, 4, 5, 7, 9],
 	],
 	3 => [
-		'favoriteWin' => [5, 20, 24],
-		'allValuesWin' => [4, 6, 48],
+		'favoriteWin' => [],
+		'allValuesWin' => [2, 8],
 	],
 	4 => [
-		'favoriteWin' => [11, 12, 18, 21, 26, 28, 33, 42, 50],
-		'allValuesWin' => [11, 12, 14, 15, 18, 21, 24, 26, 28, 33, 39, 42, 45, 50, 52, 60, 65, 75],
+		'favoriteWin' => [3, 6, 10, 11, 14],
+		'allValuesWin' => [3, 6, 7, 10, 11, 12, 13, 14],
 	],
 	5 => [
-		'favoriteWin' => [3, 5],
-		'allValuesWin' => [1, 2],
+		'favoriteWin' => [],
+		'allValuesWin' => [],
 	],
 	6 => [
-		'favoriteWin' => [6, 42, 50],
-		'allValuesWin' => [6, 16, 28, 42],
+		'favoriteWin' => [2, 5],
+		'allValuesWin' => [2, 5, 7, 8],
 	],
 	7 => [
-		'favoriteWin' => [15, 20, 21, 54, 80, 88],
-		'allValuesWin' => [15, 20, 21, 28, 30, 40, 45, 54, 57, 80],
+		'favoriteWin' => [5, 7, 16, 18],
+		'allValuesWin' => [5, 7, 10, 11, 14, 15, 16, 18, 19],
 	],
 	8 => [
-		'favoriteWin' => [21, 24, 40, 65],
-		'allValuesWin' => [4, 15, 18, 21, 30, 36, 40, 65],
+		'favoriteWin' => [7, 13],
+		'allValuesWin' => [4, 7, 10, 12, 13],
 	],
 	9 => [
-		'favoriteWin' => [14, 25, 35, 42, 52, 60, 65, 80],
-		'allValuesWin' => [16, 18, 21, 25, 26, 28, 30, 32, 35, 39, 42, 45, 48, 52, 60, 65],
+		'favoriteWin' => [5, 6, 8],
+		'allValuesWin' => [5, 6, 8, 9, 13, 14, 15],
 	],
 	10 => [
 		'favoriteWin' => [],
