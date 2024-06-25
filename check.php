@@ -1,7 +1,9 @@
 <?php
 
-$favoritesWin = [];
-$allValuesWin = [];
+$condition = [];
+for($raceNumber = 1; $raceNumber <= 11; $raceNumber ++){
+    $condition[$raceNumber] = ['favoritesWin' => [], 'allValuesWin' => []];
+}
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "condition.php";
 $outtext = "<?php\n\n\n";
@@ -19,29 +21,38 @@ foreach ($dir as $fileinfo) {
             $expr =  $data['count sets']; 
             $winners = array_filter(explode(", ", $data['official win']));
             if(in_array($winners[0], $favorites)){
-                if(!isset($favoritesWin[$expr])) $favoritesWin[$expr] = true;
+                if(!isset($condition[$raceNumber]['favoritesWin'][$expr])) $condition[$raceNumber]['favoritesWin'][$expr] = true;
             }
-            else $favoritesWin[$expr] = false;
+            else $condition[$raceNumber]['favoritesWin'][$expr] = false;
             if(in_array($winners[0], $allValues)){
-                if(!isset($allValuesWin[$expr])) $allValuesWin[$expr] = true;
+                if(!isset($condition[$raceNumber]['allValuesWin'][$expr])) $condition[$raceNumber]['allValuesWin'][$expr] = true;
             }
-            else $allValuesWin[$expr] = false;
+            else $condition[$raceNumber]['allValuesWin'][$expr] = false;
         }
     }
 }
 
-foreach($favoritesWin as $key => $value){
-    if($value === false || empty($key)) unset($favoritesWin[$key]);
+$outtext .= '$condition = [' . "\n";
+for($raceNumber = 1; $raceNumber < 14; $raceNumber ++){
+    if(!isset($condition[$raceNumber]['favoritesWin']) || !isset($condition[$raceNumber]['allValuesWin'])) continue;
+    $outtext .= "\t'$raceNumber' => [\n";
+    foreach($condition[$raceNumber]['favoritesWin'] as $key => $value){
+        if($value === false || empty($key)) unset($condition[$raceNumber]['favoritesWin'][$key]);
+    }
+    foreach($condition[$raceNumber]['allValuesWin'] as $key => $value){
+        if($value === false || empty($key)) unset($condition[$raceNumber]['allValuesWin'][$key]);
+    }
+    $favoritesWinKeys = array_filter(array_keys($condition[$raceNumber]['favoritesWin']));
+    $allValuesWinKeys = array_filter(array_keys($condition[$raceNumber]['allValuesWin']));
+    sort($favoritesWinKeys);
+    sort($allValuesWinKeys);
+    $outtext .= "\t\t'favoriteWin' => [" . implode(", ", array_filter($favoritesWinKeys)) . "],\n";
+    $outtext .= "\t\t'allValuesWin' => [" . implode(", ", array_filter($allValuesWinKeys)) . "],\n";
+    $outtext .= "\t],\n";
 }
-foreach($allValuesWin as $key => $value){
-    if($value === false || empty($key)) unset($allValuesWin[$key]);
-}
-$favoritesWinKeys = array_filter(array_keys($favoritesWin));
-$allValuesWinKeys = array_filter(array_keys($allValuesWin));
-sort($favoritesWinKeys);
-sort($allValuesWinKeys);
-$outtext .= '$favoriteWin = ' . "[" . implode(", ", array_filter($favoritesWinKeys)) . "];\n";
-$outtext .= '$allValuesWin = ' . "[" . implode(", ", array_filter($allValuesWinKeys)) . "];\n";
+$outtext .= "];\n";
+
+
 $outtext .="\n?>\n";
 file_put_contents($outFile, $outtext);
 ?>
