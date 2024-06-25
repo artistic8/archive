@@ -16,10 +16,6 @@ return [
 			4 => 31.5,
 			9 => 31,
 		],
-		'win($100)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'total bets' => 1000,
-		'1 won(win bet)' => 1260,
-		'total won in race' => 260,
 	],
 	'2' => [
 		/**
@@ -36,10 +32,6 @@ return [
 			1 => 24,
 			6 => 58.5,
 		],
-		'win($100)' => '2, 3, 4, 5, 6, 7, 8, 9',
-		'total bets' => 800,
-		'1 won(win bet)' => 560,
-		'total won in race' => -240,
 	],
 	'3' => [
 		/**
@@ -56,10 +48,6 @@ return [
 			1 => 49,
 			5 => 21,
 		],
-		'win($100)' => '1, 0, 4, 5, 6, 7, 8, 9',
-		'total bets' => 800,
-		'1 won(win bet)' => 390,
-		'total won in race' => -410,
 	],
 	'4' => [
 		/**
@@ -78,8 +66,7 @@ return [
 		],
 		'win($100)' => '1, 2, 8, 9, 10, 11, 12',
 		'total bets' => 700,
-		'1 won(win bet)' => 520,
-		'total won in race' => -180,
+		'total won in race' => -700,
 	],
 	'5' => [
 		/**
@@ -96,10 +83,6 @@ return [
 			6 => 48.5,
 			7 => 20.5,
 		],
-		'win($100)' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'total bets' => 1000,
-		'1 won(win bet)' => 725,
-		'total won in race' => -275,
 	],
 	'6' => [
 		/**
@@ -116,10 +99,6 @@ return [
 			3 => 36.5,
 			9 => 28,
 		],
-		'win($100)' => '4, 5, 6, 7, 8, 9, 10',
-		'total bets' => 700,
-		'1 won(win bet)' => 1105,
-		'total won in race' => 405,
 	],
 	'7' => [
 		/**
@@ -136,10 +115,6 @@ return [
 			4 => 19,
 			6 => 44,
 		],
-		'win($100)' => '1, 2, 5, 6, 7, 8, 9, 10, 11',
-		'total bets' => 900,
-		'1 won(win bet)' => 620,
-		'total won in race' => -280,
 	],
 	'8' => [
 		/**
@@ -156,10 +131,6 @@ return [
 			9 => 24.5,
 			8 => 97,
 		],
-		'win($100)' => '1, 0, 5, 6, 7, 8, 9, 10, 11, 12',
-		'total bets' => 1000,
-		'1 won(win bet)' => 385,
-		'total won in race' => -615,
 	],
 	'9' => [
 		/**
@@ -176,14 +147,10 @@ return [
 			9 => 16,
 			7 => 44,
 		],
-		'win($100)' => '2, 3, 4, 5, 6, 7, 8, 9',
-		'total bets' => 800,
-		'1 won(win bet)' => 280,
-		'total won in race' => -520,
 	],
 ];
-//total win: -1855
+//total win: -700
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: -1855
+//total: -700
