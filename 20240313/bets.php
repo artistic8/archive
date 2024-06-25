@@ -57,6 +57,9 @@ return [
 		'win inter' => '',
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 5, 6, 7, 9, 11',
+		'win favorite($100)' => '2, 4, 6, 7, 11, 12',
+		'total bets' => 600,
+		'total won in race' => -600,
 	],
 	'4' => [
 		/**
@@ -173,8 +176,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];
-//total win: 0
+//total win: -600
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: -600
