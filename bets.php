@@ -143,7 +143,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalPlace -= 2 * $unitBet;
     }
     if(in_array($expr, $favoriteWin)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
+        $racetext .= "\t\t'win favorite($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);
     }
