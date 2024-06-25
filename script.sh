@@ -8,5 +8,6 @@ for f in *; do
         php bets1.php $f;
         git checkout history.php;
         git checkout condition.php;
+        git checkout condition1.php;
     fi
 done
