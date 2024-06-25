@@ -98,7 +98,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $winSets = [];
     
     if($range <= 5){
-        $toBet = array_merge(range(1, min($favorites)), range(max($favorites), count($runners)));
+        $toBet = array_merge(range(1, min($favorites) - 1), range(max($favorites) + 1, count($runners)));
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" .  implode(", ", $toBet)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet * count($toBet);
         $totalWin -= $unitBet * count($toBet);
