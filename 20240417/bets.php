@@ -76,7 +76,7 @@ return [
 		'win inter' => '12',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
-		'win($100)' => '2, 6, 7, 11, 12',
+		'win favorite($100)' => '2, 6, 7, 11, 12',
 		'total bets' => 500,
 		'1 won(win bet)' => 1345,
 		'total won in race' => 845,
