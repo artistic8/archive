@@ -114,10 +114,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 9,
 		'allValues' => '1, 3, 6, 7, 8, 9, 10',
-		'win($100)' => '1, 2, 3, 4, 5',
-		'total bets' => 500,
-		'2 won(win bet)' => 1070,
-		'total won in race' => 570,
 	],
 	'7' => [
 		/**
@@ -137,6 +133,10 @@ return [
 		'win inter' => '',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win($100)' => '1, 4, 6',
+		'place($200)' => '6',
+		'total bets' => 500,
+		'total won in race' => -500,
 	],
 	'8' => [
 		/**
@@ -215,8 +215,8 @@ return [
 		'allValues' => '',
 	],
 ];
-//total win: 570
-//total place: 0
+//total win: -300
+//total place: -200
 //total qin: 0
 //total trio: 0
-//total: 570
+//total: -500
