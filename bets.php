@@ -136,10 +136,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    if(in_array($officialWin[0], $allValues)){
-         $search = array_search($officialWin[0], $allValues);
-        $racetext .= "\t\t//position: $search\n";
-    }
     if(count($allValues) <= 7){
         $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
