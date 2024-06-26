@@ -23,6 +23,7 @@ return [
 		'qin($10)' => '1, 3, 5, 7, 8, 9',
 		'total bets' => 750,
 		'3 won(win bet)' => 645,
+		//position: 0
 		'total won in race' => -105,
 	],
 	'2' => [
@@ -66,6 +67,7 @@ return [
 		'qin($10)' => '1, 2, 3, 5, 6, 7',
 		'total bets' => 750,
 		'3 won(win bet)' => 2170,
+		//position: 4
 		'3 won(qin bet)' => 929,
 		'total won in race' => 2349,
 	],
