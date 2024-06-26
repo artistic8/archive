@@ -176,6 +176,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
                 $racetext .= "\t\t'3 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
+                $search = array_search($officialWin[0], $allValues);
+                $racetext .= "\t\t//position: $search\n";
             }
             if(count(array_intersect($allValues, array_slice($officialWin, 0, 2))) === 2) {
                 $totalRace[$raceNumber] += $qinAmount;
