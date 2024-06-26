@@ -177,17 +177,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(count($allValues) <= 7){
             if(in_array($officialWin[0], $allValues)){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                $racetext .= "\t\t'3 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
             if(count(array_intersect($allValues, array_slice($officialWin, 0, 2))) === 2) {
                 $totalRace[$raceNumber] += $qinAmount;
-                $racetext .= "\t\t'1 won(win bet)' => " . $qinAmount . ",\n";
+                $racetext .= "\t\t'3 won(qin bet)' => " . $qinAmount . ",\n";
                 $totalQin += $qinAmount;
             }
             if(count(array_intersect($allValues, array_slice($officialWin, 0, 3))) === 3) {
                 $totalRace[$raceNumber] += $trioAmount;
-                $racetext .= "\t\t'1 won(win bet)' => " . $trioAmount . ",\n";
+                $racetext .= "\t\t'3 won(trio bet)' => " . $trioAmount . ",\n";
                 $totalTrio += $trioAmount;
             }
         }

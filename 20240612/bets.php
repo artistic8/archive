@@ -42,8 +42,8 @@ return [
 		'qin($10)' => '1, 2, 3, 4, 5, 6, 7',
 		'trio($10)' => '1, 2, 3, 4, 5, 6, 7',
 		'total bets' => 1260,
-		'1 won(win bet)' => 465,
-		'1 won(win bet)' => 288.5,
+		'3 won(win bet)' => 465,
+		'3 won(qin bet)' => 288.5,
 		'total won in race' => -506.5,
 	],
 	'3' => [
