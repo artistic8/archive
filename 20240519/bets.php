@@ -139,7 +139,7 @@ return [
 			1 => 54.5,
 			14 => 20.5,
 		],
-		'win inter' => '',
+		'win inter' => '3',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		//position: 7
