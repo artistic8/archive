@@ -136,12 +136,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    if(in_array($officialWin[0], $allValues)){
-         $search = array_search($officialWin[0], $allValues);
-        $racetext .= "\t\t//position: $search\n";
-    }
     if(count($allValues) <= 7){
-        $allValues = array_slice($allValues, 0, 6);
+        // $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($allValues);
         $totalWin -= 1 * $unitBet * count($allValues);
@@ -179,7 +175,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(count($allValues) <= 7){
             if(in_array($officialWin[0], $allValues)){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-                $racetext .= "\t\t'3 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                $racetext .= "\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
             if(count(array_intersect($allValues, array_slice($officialWin, 0, 2))) === 2) {
