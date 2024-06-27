@@ -19,6 +19,7 @@ return [
 		'win inter' => '5',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		//position: 4
 	],
 	'2' => [
 		/**
@@ -38,6 +39,7 @@ return [
 		'win inter' => '',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		//position: 0
 	],
 	'3' => [
 		/**
@@ -57,6 +59,10 @@ return [
 		'win inter' => '',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 5, 6, 7',
+		'qin($10)' => '1, 2, 3, 5, 6, 7',
+		'total bets' => 750,
+		'total won in race' => -750,
 	],
 	'4' => [
 		/**
@@ -74,8 +80,9 @@ return [
 			10 => 47.5,
 		],
 		'win inter' => '12',
-		'count sets' => 8,
-		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11',
+		'count sets' => 10,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		//position: 9
 	],
 	'5' => [
 		/**
@@ -95,6 +102,13 @@ return [
 		'win inter' => '7',
 		'count sets' => 1,
 		'allValues' => '1, 3, 4, 5',
+		//position: 1
+		'win($100)' => '1, 3, 4, 5',
+		'qin($10)' => '1, 3, 4, 5',
+		'total bets' => 460,
+		'3 won(win bet)' => 485,
+		'3 won(qin bet)' => 72,
+		'total won in race' => 97,
 	],
 	'6' => [
 		/**
@@ -112,8 +126,13 @@ return [
 			12 => 36,
 		],
 		'win inter' => '1, 3',
-		'count sets' => 4,
+		'count sets' => 5,
 		'allValues' => '1, 2, 3, 5, 6, 7, 9, 10',
+		//position: 2
+		'win($100)' => '1, 2, 3, 10',
+		'total bets' => 400,
+		'1 won(win bet)' => 1735,
+		'total won in race' => 1335,
 	],
 	'7' => [
 		/**
@@ -130,13 +149,10 @@ return [
 			6 => 12,
 			10 => 24,
 		],
-		'win inter' => '3',
-		'count sets' => 9,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win($100)' => '1, 2, 3, 4, 5, 6',
-		'total bets' => 600,
-		'2 won(win bet)' => 790,
-		'total won in race' => 190,
+		'win inter' => '3, 6',
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		//position: 1
 	],
 	'8' => [
 		/**
@@ -154,8 +170,9 @@ return [
 			7 => 63.5,
 		],
 		'win inter' => '6, 8',
-		'count sets' => 12,
+		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		//position: 7
 	],
 	'9' => [
 		/**
@@ -173,12 +190,13 @@ return [
 			6 => 15,
 		],
 		'win inter' => '4',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		//position: 10
 	],
 ];
-//total win: 190
+//total win: 820
 //total place: 0
-//total qin: 0
+//total qin: -138
 //total trio: 0
-//total: 190
+//total: 682

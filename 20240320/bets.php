@@ -19,6 +19,7 @@ return [
 		'win inter' => '6',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		//position: 3
 	],
 	'2' => [
 		/**
@@ -38,6 +39,7 @@ return [
 		'win inter' => '',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		//position: 3
 	],
 	'3' => [
 		/**
@@ -57,6 +59,10 @@ return [
 		'win inter' => '',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 5, 6, 7',
+		'qin($10)' => '1, 2, 3, 5, 6, 7',
+		'total bets' => 750,
+		'total won in race' => -750,
 	],
 	'4' => [
 		/**
@@ -74,8 +80,9 @@ return [
 			3 => 33.5,
 		],
 		'win inter' => '11',
-		'count sets' => 11,
-		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		//position: 9
 	],
 	'5' => [
 		/**
@@ -95,6 +102,13 @@ return [
 		'win inter' => '',
 		'count sets' => 1,
 		'allValues' => '1, 3, 4, 5',
+		//position: 0
+		'win($100)' => '1, 3, 4, 5',
+		'qin($10)' => '1, 3, 4, 5',
+		'total bets' => 460,
+		'3 won(win bet)' => 455,
+		'3 won(qin bet)' => 198.5,
+		'total won in race' => 193.5,
 	],
 	'6' => [
 		/**
@@ -112,8 +126,9 @@ return [
 			12 => 32,
 		],
 		'win inter' => '',
-		'count sets' => 7,
+		'count sets' => 10,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		//position: 1
 	],
 	'7' => [
 		/**
@@ -131,8 +146,8 @@ return [
 			1 => 66,
 		],
 		'win inter' => '6',
-		'count sets' => 16,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'count sets' => 22,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'8' => [
 		/**
@@ -150,8 +165,9 @@ return [
 			1 => 28,
 		],
 		'win inter' => '5, 6',
-		'count sets' => 12,
+		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		//position: 7
 	],
 	'9' => [
 		/**
@@ -169,12 +185,13 @@ return [
 			7 => 36,
 		],
 		'win inter' => '',
-		'count sets' => 6,
+		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		//position: 4
 	],
 ];
-//total win: 0
+//total win: -545
 //total place: 0
-//total qin: 0
+//total qin: -11.5
 //total trio: 0
-//total: 0
+//total: -556.5
