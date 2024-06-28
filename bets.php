@@ -1,6 +1,10 @@
 <?php
 
-include 'condition.php';
+$revision = "";
+
+include "condition$revision.php";
+$step = "bets$revision";
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
 
 function factorial($n){
     if($n <= 0) return 1;
@@ -20,7 +24,6 @@ $totalWin = 0;
 $totalPlace = 0;
 $totalQin = 0;
 $totalTrio = 0;
-$step = "bets";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
@@ -28,7 +31,6 @@ $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
 if(file_exists($winOddsFile)) $allWinOdds = include($winOddsFile);
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
