@@ -38,11 +38,11 @@ return [
 		'win inter' => '2',
 		'count sets' => 8,
 		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9',
-		'win($50)' => '2, 3, 7',
-		'place($100)' => '7',
-		'total bets' => 250,
-		'2 won(place bet)' => 165,
-		'total won in race 2' => -85,
+		'win($100)' => '2, 3, 7',
+		'place($200)' => '7',
+		'total bets' => 500,
+		'2 won(place bet)' => 330,
+		'total won in race' => -170,
 	],
 	'3' => [
 		/**
@@ -62,6 +62,11 @@ return [
 		'win inter' => '1',
 		'count sets' => 1,
 		'allValues' => '2, 3, 5, 6',
+		'win($100)' => '2, 3, 5, 6',
+		'qin($10)' => '2, 3, 5, 6',
+		'total bets' => 460,
+		'1 won(win bet)' => 435,
+		'total won in race' => -25,
 	],
 	'4' => [
 		/**
@@ -79,12 +84,12 @@ return [
 			5 => 15,
 		],
 		'win inter' => '1, 4, 5',
-		'count sets' => 7,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
-		'place($100)' => '5',
-		'total bets' => 100,
-		'1 won(place bet)' => 150,
-		'total won in race 4' => 50,
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'place($200)' => '5',
+		'total bets' => 200,
+		'1 won(place bet)' => 300,
+		'total won in race' => 100,
 	],
 	'5' => [
 		/**
@@ -104,10 +109,14 @@ return [
 		'win inter' => '1, 3, 5',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'place($100)' => '5',
-		'total bets' => 100,
-		'1 won(place bet)' => 180,
-		'total won in race 5' => 80,
+		'win($100)' => '1, 2, 3, 4, 5, 10, 11',
+		'qin($10)' => '1, 2, 3, 4, 5, 10, 11',
+		'place($200)' => '5',
+		'total bets' => 1110,
+		'1 won(win bet)' => 690,
+		'3 won(qin bet)' => 77,
+		'1 won(place bet)' => 360,
+		'total won in race' => 17,
 	],
 	'6' => [
 		/**
@@ -125,8 +134,8 @@ return [
 			14 => 91,
 		],
 		'win inter' => '',
-		'count sets' => 9,
-		'allValues' => '1, 3, 6, 7, 8, 9, 10',
+		'count sets' => 10,
+		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
 		/**
@@ -203,11 +212,12 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($50)' => '',
+		'win($100)' => '',
+		'qin($10)' => '',
 	],
 ];
-//total win: -150
-//total place: 195
-//total qin: 0
+//total win: -275
+//total place: 390
+//total qin: -193
 //total trio: 0
-//total: 45
+//total: -78

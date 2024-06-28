@@ -18,7 +18,8 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($50)' => '',
+		'win($100)' => '',
+		'qin($10)' => '',
 	],
 	'2' => [
 		/**
@@ -57,6 +58,11 @@ return [
 		'win inter' => '7',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 5, 6, 7',
+		'qin($10)' => '1, 2, 3, 5, 6, 7',
+		'total bets' => 750,
+		'1 won(win bet)' => 600,
+		'total won in race' => -150,
 	],
 	'4' => [
 		/**
@@ -74,8 +80,8 @@ return [
 			11 => 56.5,
 		],
 		'win inter' => '',
-		'count sets' => 7,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -95,10 +101,13 @@ return [
 		'win inter' => '',
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5',
-		'win($50)' => '1, 2, 3, 4, 5',
-		'total bets' => 250,
-		'2 won(win bet)' => 185,
-		'total won in race 5' => -65,
+		'win($100)' => '1, 2, 3, 4, 5',
+		'qin($10)' => '1, 2, 3, 4, 5',
+		'win($100)' => '1, 2, 3, 4, 5',
+		'total bets' => 1100,
+		'1 won(win bet)' => 370,
+		'2 won(win bet)' => 370,
+		'total won in race' => -360,
 	],
 	'6' => [
 		/**
@@ -118,6 +127,10 @@ return [
 		'win inter' => '11',
 		'count sets' => 9,
 		'allValues' => '1, 3, 6, 7, 8, 9, 10',
+		'win($100)' => '1, 3, 6, 7, 8, 9, 10',
+		'qin($10)' => '1, 3, 6, 7, 8, 9, 10',
+		'total bets' => 910,
+		'total won in race' => -910,
 	],
 	'7' => [
 		/**
@@ -137,10 +150,12 @@ return [
 		'win inter' => '',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win($50)' => '1, 2, 3, 4, 5, 6',
-		'total bets' => 300,
-		'1 won(win bet)' => 220,
-		'total won in race 7' => -80,
+		'win($100)' => '1, 2, 3, 4, 5, 6, 7',
+		'qin($10)' => '1, 2, 3, 4, 5, 6, 7',
+		'total bets' => 910,
+		'1 won(win bet)' => 440,
+		'3 won(qin bet)' => 180,
+		'total won in race' => -290,
 	],
 	'8' => [
 		/**
@@ -162,8 +177,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 ];
-//total win: -145
+//total win: -1220
 //total place: 0
-//total qin: 0
+//total qin: -490
 //total trio: 0
-//total: -145
+//total: -1710
