@@ -62,7 +62,7 @@ return [
 		'total bets' => 750,
 		'1 won(win bet)' => 475,
 		'3 won(qin bet)' => 241.5,
-		'total won in race' => -33.5,
+		'total won in race 3' => -33.5,
 	],
 	'4' => [
 		/**
@@ -106,7 +106,7 @@ return [
 		'total bets' => 910,
 		'1 won(win bet)' => 2550,
 		'3 won(qin bet)' => 690.5,
-		'total won in race' => 2330.5,
+		'total won in race 5' => 2330.5,
 	],
 	'6' => [
 		/**

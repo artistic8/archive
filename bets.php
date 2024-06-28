@@ -210,7 +210,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalPlace += (2 * $unitBet / 10) * $placeAmount[end($wp)];
             }
         }
-        $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
+        $racetext .= "\t\t'total won in race $raceNumber' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
     }
     $racetext .= "\t],\n";

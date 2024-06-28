@@ -60,7 +60,7 @@ return [
 		'win($100)' => '1, 2, 3, 5, 6, 7',
 		'qin($10)' => '1, 2, 3, 5, 6, 7',
 		'total bets' => 750,
-		'total won in race' => -750,
+		'total won in race 3' => -750,
 	],
 	'4' => [
 		/**
@@ -85,7 +85,7 @@ return [
 		'total bets' => 910,
 		'1 won(win bet)' => 365,
 		'3 won(qin bet)' => 181,
-		'total won in race' => -364,
+		'total won in race 4' => -364,
 	],
 	'5' => [
 		/**
@@ -108,7 +108,7 @@ return [
 		'win($100)' => '1, 2, 3, 4, 5',
 		'qin($10)' => '1, 2, 3, 4, 5',
 		'total bets' => 600,
-		'total won in race' => -600,
+		'total won in race 5' => -600,
 	],
 	'6' => [
 		/**
@@ -132,7 +132,7 @@ return [
 		'qin($10)' => '1, 2, 3, 5, 6, 7, 8',
 		'total bets' => 910,
 		'1 won(win bet)' => 510,
-		'total won in race' => -400,
+		'total won in race 6' => -400,
 	],
 	'7' => [
 		/**
