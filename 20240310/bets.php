@@ -57,10 +57,6 @@ return [
 		'win inter' => '2, 3',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'win($100)' => '1, 2, 3, 5, 6, 7',
-		'qin($10)' => '1, 2, 3, 5, 6, 7',
-		'total bets' => 750,
-		'total won in race' => -750,
 	],
 	'4' => [
 		/**
@@ -99,11 +95,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'win($100)' => '1, 2, 3, 4, 5, 10, 11',
-		'qin($10)' => '1, 2, 3, 4, 5, 10, 11',
-		'total bets' => 910,
-		'1 won(win bet)' => 210,
-		'total won in race' => -700,
 	],
 	'6' => [
 		/**
@@ -142,11 +133,11 @@ return [
 		'win inter' => '1, 3',
 		'count sets' => 12,
 		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9',
-		'win($100)' => '1, 2, 3',
-		'place($200)' => '3',
-		'total bets' => 500,
-		'2 won(win bet)' => 1100,
-		'total won in race' => 600,
+		'win($30)' => '1, 2, 3',
+		'place($60)' => '3',
+		'total bets' => 150,
+		'2 won(win bet)' => 330,
+		'total won in race 7' => 180,
 	],
 	'8' => [
 		/**
@@ -166,10 +157,10 @@ return [
 		'win inter' => '4, 6, 8',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'place($200)' => '8',
-		'total bets' => 200,
-		'1 won(place bet)' => 400,
-		'total won in race' => 200,
+		'place($60)' => '8',
+		'total bets' => 60,
+		'1 won(place bet)' => 120,
+		'total won in race 8' => 60,
 	],
 	'9' => [
 		/**
@@ -189,12 +180,12 @@ return [
 		'win inter' => '5',
 		'count sets' => 14,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win($100)' => '2, 3, 5',
-		'place($200)' => '5',
-		'total bets' => 500,
-		'2 won(win bet)' => 770,
-		'2 won(place bet)' => 940,
-		'total won in race' => 1210,
+		'win($30)' => '2, 3, 5',
+		'place($60)' => '5',
+		'total bets' => 150,
+		'2 won(win bet)' => 231,
+		'2 won(place bet)' => 282,
+		'total won in race 9' => 363,
 	],
 	'10' => [
 		/**
@@ -214,12 +205,11 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($100)' => '',
-		'qin($10)' => '',
+		'win($30)' => '',
 	],
 ];
-//total win: 180
-//total place: 740
-//total qin: -360
+//total win: 381
+//total place: 222
+//total qin: 0
 //total trio: 0
-//total: 560
+//total: 603
