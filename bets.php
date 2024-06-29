@@ -1,9 +1,6 @@
 <?php
 
-$raceDate = trim($argv[1]);
-
-if(isset($argv[2])) $revision = trim($argv[2]);
-else $revision = "";
+$revision = "";
 
 include "condition$revision.php";
 $step = "bets$revision";
@@ -28,7 +25,7 @@ $totalPlace = 0;
 $totalWP = 0;
 $totalQin = 0;
 $totalTrio = 0;
-
+$raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
@@ -54,6 +51,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $totalRace[$raceNumber] = 0;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
+        if(isset($oldData[$raceNumber]['wps'])) $oldWPs = array_filter(explode(", ", $oldData[$raceNumber]['wps']));
         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
         if(isset($oldData[$raceNumber]['win amount'])) $winAmount = $oldData[$raceNumber]['win amount'];
         if(isset($oldData[$raceNumber]['qin amount'])) $qinAmount = $oldData[$raceNumber]['qin amount'];
@@ -62,6 +60,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
+    if(isset($oldWPs)) $wps = $oldWPs;
+    else $wps = [];
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
@@ -148,7 +148,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     asort($pOdds);
     $sortedValues = array_keys($pOdds);
     $racetext .= "\t\t'allValues sorted by place odds' => '" . implode(", ", $sortedValues) . "',\n";
-    
+    if(isset($sortedValues[4])) {
+        $test = $sortedValues[4];
+        if(!in_array($test, $wps)) $wps[] = $test;
+        $racetext .= "\t\t'place wp($" . $unitBet . ")' => '" . implode(", ", $wps) . "',\n"; 
+        $totalBets[$raceNumber] += $unitBet * count($wps);
+        $totalWP -= $unitBet * count($wps);
+    }
+    $racetext .= "\t\t'wps' => '" . implode(", ", $wps) . "',\n"; 
     if(!in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
         $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
@@ -182,6 +189,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
+        if(!empty($wps)){
+            if(!empty(array_intersect($wps, array_slice($officialWin, 0, 3)))){
+                $selected = array_intersect($wps, array_slice($officialWin, 0, 3));
+                foreach($selected as $placer){
+                    if(!isset( $placeAmount[$placer])) continue;
+                    $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$placer];
+                    $racetext .= "\t\t'4 won(wp place bet)' => " . ($unitBet / 10) * $placeAmount[$placer] . ",\n";
+                    $totalWP += ($unitBet / 10) * $placeAmount[$placer];
+                }
+            }
+        }
         if(!in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
             if(in_array($officialWin[0], $allValues)){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
