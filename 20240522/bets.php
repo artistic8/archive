@@ -19,6 +19,11 @@ return [
 		'win inter' => '',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues sorted by place odds' => '4, 5, 10, 2, 8, 1, 3, 9, 6, 7',
+		'wp($30)' => '8',
+		'wps' => '8',
+		'total bets' => 60,
+		'total won in race 1' => -60,
 	],
 	'2' => [
 		/**
@@ -38,6 +43,11 @@ return [
 		'win inter' => '',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues sorted by place odds' => '6, 7, 9, 5, 1, 2, 4, 3, 8',
+		'wp($30)' => '1',
+		'wps' => '1',
+		'total bets' => 60,
+		'total won in race 2' => -60,
 	],
 	'3' => [
 		/**
@@ -57,6 +67,13 @@ return [
 		'win inter' => '3',
 		'count sets' => 2,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'allValues sorted by place odds' => '5, 3, 6, 2, 1, 7',
+		'wp($30)' => '1',
+		'wps' => '1',
+		'total bets' => 60,
+		'4 won(wp win bet)' => 826.5,
+		'4 won(wp place bet)' => 600,
+		'total won in race 3' => 1366.5,
 	],
 	'4' => [
 		/**
@@ -76,6 +93,11 @@ return [
 		'win inter' => '10',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'allValues sorted by place odds' => '10, 11, 1, 12, 4, 7, 5, 3, 6, 8, 2',
+		'wp($30)' => '4',
+		'wps' => '4',
+		'total bets' => 60,
+		'total won in race 4' => -60,
 	],
 	'5' => [
 		/**
@@ -95,6 +117,11 @@ return [
 		'win inter' => '8',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
+		'allValues sorted by place odds' => '3, 11, 5, 1, 4, 2, 10',
+		'wp($30)' => '4',
+		'wps' => '4',
+		'total bets' => 60,
+		'total won in race 5' => -60,
 	],
 	'6' => [
 		/**
@@ -114,6 +141,13 @@ return [
 		'win inter' => '1',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'allValues sorted by place odds' => '10, 1, 2, 9, 8, 6, 7, 3, 5',
+		'wp($30)' => '8',
+		'wps' => '8',
+		'total bets' => 60,
+		'4 won(wp win bet)' => 193.5,
+		'4 won(wp place bet)' => 123,
+		'total won in race 6' => 256.5,
 	],
 	'7' => [
 		/**
@@ -133,6 +167,11 @@ return [
 		'win inter' => '1',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues sorted by place odds' => '1, 8, 7, 3, 5, 9, 4, 6, 2',
+		'wp($30)' => '5',
+		'wps' => '5',
+		'total bets' => 60,
+		'total won in race 7' => -60,
 	],
 	'8' => [
 		/**
@@ -152,6 +191,12 @@ return [
 		'win inter' => '4',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues sorted by place odds' => '4, 7, 6, 1, 3, 2, 8, 5',
+		'wp($30)' => '3',
+		'wps' => '3',
+		'total bets' => 60,
+		'4 won(wp place bet)' => 270,
+		'total won in race 8' => 210,
 	],
 	'9' => [
 		/**
@@ -171,10 +216,18 @@ return [
 		'win inter' => '5',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues sorted by place odds' => '7, 4, 5, 9, 8, 11, 2, 1, 10, 6, 3',
+		'wp($30)' => '8',
+		'wps' => '8',
+		'total bets' => 60,
+		'4 won(wp win bet)' => 162,
+		'4 won(wp place bet)' => 129,
+		'total won in race 9' => 231,
 	],
 ];
+//total wp: 1764
 //total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 0
+//total: 1764
