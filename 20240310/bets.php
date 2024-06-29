@@ -167,7 +167,7 @@ return [
 		'allValues sorted by place odds' => '4, 6, 8, 7, 1, 2, 3, 5',
 		'place($60)' => '8',
 		'total bets' => 60,
-		'1 won(place bet)' => 120,
+		'1 won(place bet8)' => 120,
 		'total won in race 8' => 60,
 	],
 	'9' => [

@@ -197,7 +197,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(count($favorites) >= 3 && count($winInter) >= 3) {
             if(in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
                 $totalRace[$raceNumber] += 2/10 * $unitBet * $placeAmount[end($favorites)];
-                $racetext .= "\t\t'1 won(place bet)' => " . 2/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
+                $racetext .= "\t\t'1 won(place bet" . end($favorites) . ")' => " . 2/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
                 $totalPlace += 2/10 * $unitBet * $placeAmount[end($favorites)];
             }
         }
