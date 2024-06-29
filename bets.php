@@ -1,6 +1,9 @@
 <?php
 
-$revision = "";
+$raceDate = trim($argv[1]);
+
+if(isset($argv[2])) $revision = trim($argv[2]);
+else $revision = "";
 
 include "condition$revision.php";
 $step = "bets$revision";
@@ -25,7 +28,7 @@ $totalPlace = 0;
 $totalWP = 0;
 $totalQin = 0;
 $totalTrio = 0;
-$raceDate = trim($argv[1]);
+
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
