@@ -167,7 +167,7 @@ return [
 		'allValues sorted by place odds' => '4, 6, 8, 7, 1, 2, 3, 5',
 		'place($60)' => '8',
 		'total bets' => 60,
-		'1 won(place bet8)' => 120,
+		'1 won(place bet 8)' => 120,
 		'total won in race 8' => 60,
 	],
 	'9' => [
@@ -193,7 +193,7 @@ return [
 		'place($60)' => '5',
 		'total bets' => 150,
 		'2 won(win bet)' => 231,
-		'2 won(place bet)' => 282,
+		'2 won(place bet 5)' => 282,
 		'total won in race 9' => 363,
 	],
 	'10' => [
