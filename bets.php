@@ -141,6 +141,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(!empty($potential)){
         $racetext .= "\t\t'potential' => '" . implode(", ", $potential) . "',\n"; 
+        $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
