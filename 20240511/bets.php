@@ -19,7 +19,6 @@ return [
 		'win inter' => '',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'allValues sorted by place odds' => '8, 4, 3, 6, 9, 2, 1, 7, 5, 10',
 	],
 	'2' => [
 		/**
@@ -39,7 +38,6 @@ return [
 		'win inter' => '3, 5',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'allValues sorted by place odds' => '5, 3, 2, 1, 8, 4, 9, 6, 7',
 	],
 	'3' => [
 		/**
@@ -59,7 +57,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'allValues sorted by place odds' => '1, 2, 5, 3, 6, 7',
 	],
 	'4' => [
 		/**
@@ -79,7 +76,6 @@ return [
 		'win inter' => '',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'allValues sorted by place odds' => '1, 8, 6, 10, 3, 5, 7, 2, 12, 4, 11',
 	],
 	'5' => [
 		/**
@@ -99,7 +95,6 @@ return [
 		'win inter' => '',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'allValues sorted by place odds' => '3, 10, 5, 2, 11, 1, 4',
 	],
 	'6' => [
 		/**
@@ -119,7 +114,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
-		'allValues sorted by place odds' => '1, 3, 7, 5, 6, 8, 9, 2, 10',
 	],
 	'7' => [
 		/**
@@ -139,7 +133,6 @@ return [
 		'win inter' => '2',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'allValues sorted by place odds' => '7, 2, 4, 5, 6, 3, 8, 1, 9',
 	],
 	'8' => [
 		/**
@@ -159,7 +152,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'allValues sorted by place odds' => '3, 7, 2, 5, 4, 8, 6, 1',
 	],
 	'9' => [
 		/**
@@ -179,7 +171,6 @@ return [
 		'win inter' => '8',
 		'count sets' => 9,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'allValues sorted by place odds' => '4, 8, 2, 5, 9, 11, 1, 3, 7, 10, 6',
 	],
 	'10' => [
 		/**
@@ -199,8 +190,6 @@ return [
 		'win inter' => '10',
 		'count sets' => 0,
 		'allValues' => '',
-		'allValues sorted by place odds' => '',
-		'win($30)' => '',
 	],
 ];
 //total wp: 0

@@ -19,7 +19,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 9,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10',
-		'allValues sorted by place odds' => '1, 4, 3, 6, 5, 10, 2, 7, 8',
 	],
 	'2' => [
 		/**
@@ -39,8 +38,7 @@ return [
 		'win inter' => '',
 		'count sets' => 8,
 		'allValues' => '1, 2, 4, 5, 6, 7, 8, 9',
-		'allValues sorted by place odds' => '7, 5, 1, 9, 4, 6, 2, 8',
-		'win($30)' => '1, 2, 3, 4, 5, 6, 7',
+		'win(wp, 30)' => '1, 2, 3, 4, 5, 6, 7',
 		'total bets' => 210,
 		'2 won(win bet)' => 121.5,
 		'total won in race 2' => -88.5,
@@ -62,7 +60,6 @@ return [
 		'win inter' => '',
 		'count sets' => 1,
 		'allValues' => '1, 3, 5, 6',
-		'allValues sorted by place odds' => '5, 6, 3, 1',
 	],
 	'4' => [
 		/**
@@ -82,7 +79,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'allValues sorted by place odds' => '1, 8, 2, 4, 5, 12, 3, 11, 7, 6, 10',
 	],
 	'5' => [
 		/**
@@ -102,7 +98,6 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'allValues sorted by place odds' => '',
 	],
 	'6' => [
 		/**
@@ -122,7 +117,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
-		'allValues sorted by place odds' => '10, 3, 6, 1, 5, 2, 7, 8, 9',
 	],
 	'7' => [
 		/**
@@ -142,7 +136,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'allValues sorted by place odds' => '8, 3, 4, 7, 1, 5, 6, 9, 2',
 	],
 	'8' => [
 		/**
@@ -162,7 +155,6 @@ return [
 		'win inter' => '1',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'allValues sorted by place odds' => '1, 7, 4, 8, 2, 5, 3, 6',
 	],
 	'9' => [
 		/**
@@ -182,7 +174,6 @@ return [
 		'win inter' => '6',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'allValues sorted by place odds' => '4, 6, 3, 5, 11, 1, 9, 2, 10, 7, 8',
 	],
 	'10' => [
 		/**
@@ -202,8 +193,6 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'allValues sorted by place odds' => '',
-		'win($30)' => '',
 	],
 ];
 //total wp: 0

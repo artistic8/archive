@@ -19,7 +19,6 @@ return [
 		'win inter' => '',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'allValues sorted by place odds' => '2, 4, 3, 1, 10, 9, 6, 8, 5, 7',
 	],
 	'2' => [
 		/**
@@ -39,7 +38,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'allValues sorted by place odds' => '3, 1, 4, 2, 5, 8, 6, 7',
 	],
 	'3' => [
 		/**
@@ -59,7 +57,6 @@ return [
 		'win inter' => '',
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 5, 6, 7, 9, 11',
-		'allValues sorted by place odds' => '7, 2, 6, 5, 11, 1, 3, 9',
 	],
 	'4' => [
 		/**
@@ -79,12 +76,11 @@ return [
 		'win inter' => '1',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'allValues sorted by place odds' => '3, 8, 1, 2, 10, 12, 4, 5, 6, 7, 11',
-		'win($30)' => '1, 2, 3',
-		'place($60)' => '3',
+		'win(wp, 30)' => '1, 2, 3',
+		'place(end-wp, $60)' => '3',
 		'total bets' => 150,
 		'2 won(win bet)' => 72,
-		'2 won(place bet 3)' => 75,
+		'2 won(place bet)' => 75,
 		'total won in race 4' => -3,
 	],
 	'5' => [
@@ -105,7 +101,6 @@ return [
 		'win inter' => '',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'allValues sorted by place odds' => '10, 5, 2, 4, 1, 11, 3',
 	],
 	'6' => [
 		/**
@@ -125,7 +120,6 @@ return [
 		'win inter' => '1, 3',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9',
-		'allValues sorted by place odds' => '1, 3, 7, 2, 9, 8, 6, 5',
 	],
 	'7' => [
 		/**
@@ -145,7 +139,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'allValues sorted by place odds' => '4, 6, 5, 7, 8, 3, 9, 2, 1',
 	],
 	'8' => [
 		/**
@@ -165,7 +158,6 @@ return [
 		'win inter' => '',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'allValues sorted by place odds' => '7, 4, 1, 2, 8, 3, 6, 5',
 	],
 	'9' => [
 		/**
@@ -185,7 +177,6 @@ return [
 		'win inter' => '',
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'allValues sorted by place odds' => '5, 7, 8, 4, 2, 6, 9, 3, 1, 11, 10',
 	],
 ];
 //total wp: 0
