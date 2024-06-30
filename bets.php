@@ -166,6 +166,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin -= 1 * $unitBet * count($wp);
         }
         if(count($wp) === 3){
+            $racetext .= "\t\t'win(end-wp, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
+            $totalBets[$raceNumber] += $unitBet;
+            $totalWin -= $unitBet;
             $racetext .= "\t\t'place(end-wp, $" . 2 * $unitBet . ")' => '" . end($wp) . "',\n"; 
             $totalBets[$raceNumber] += 2 * $unitBet;
             $totalPlace -= 2 * $unitBet;
@@ -202,6 +205,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalWin += ($unitBet / 10) * $winAmount;
             }
             if(count($wp) === 3 && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
+                if($officialWin[0] == end($wp)){
+                    $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+                    $racetext .= "\t\t'3 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+                    $totalWin += ($unitBet / 10) * $winAmount;
+                }
                 $totalRace[$raceNumber] += (2 * $unitBet / 10) * $placeAmount[end($wp)];
                 $racetext .= "\t\t'2 won(place bet)' => " . (2 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
                 $totalPlace += (2 * $unitBet / 10) * $placeAmount[end($wp)];
