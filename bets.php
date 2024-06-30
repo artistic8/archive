@@ -113,6 +113,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $unitBet = 30;
     $allValues = [];
     $winSets = [];
+    $potential = [];
     foreach($runners  as $one){
         foreach($runners as $two){
             if($two > $one){
@@ -121,6 +122,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                         $set = [$one, $two, $three];
                         $temp = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
                         $temp = array_intersect($set, $temp);
+                        if(count($temp) >= 3 && !in_array($three, $potential)) $potential[] = $three;
                         foreach($runners as $four){
                             if($four > $three){
                                 $set = [$one, $two, $three, $four];
@@ -136,6 +138,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 }
             }
         }
+    }
+    if(!empty($potential)){
+        $racetext .= "\t\t'potential' => '" . implode(", ", $potential) . "',\n"; 
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
