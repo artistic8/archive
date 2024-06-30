@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '7',
 		'potential' => '8',
-		'pot int fav' => '',
+		'pot int fav' => '',//count: 0
 		'favorites' => '6, 7',
 		'official win' => '6, 7, 4, 2',
 		'count sets' => 11,
@@ -45,7 +45,7 @@ return [
 		],
 		'win inter' => '',
 		'potential' => '9',
-		'pot int fav' => '',
+		'pot int fav' => '',//count: 0
 		'favorites' => '2, 4, 10, 11',
 		'official win' => '7, 1, 5, 11',
 		'count sets' => 10,
@@ -68,7 +68,7 @@ return [
 		],
 		'win inter' => '',
 		'potential' => '7, 11, 9',
-		'pot int fav' => '9',
+		'pot int fav' => '9',//count: 1
 		'favorites' => '9, 13',
 		'official win' => '9, 10, 13, 1',
 		'count sets' => 4,
@@ -91,7 +91,7 @@ return [
 		],
 		'win inter' => '4',
 		'potential' => '5',
-		'pot int fav' => '',
+		'pot int fav' => '',//count: 0
 		'favorites' => '3, 4',
 		'official win' => '3, 4, 10, 5',
 		'count sets' => 6,
@@ -114,7 +114,7 @@ return [
 		],
 		'win inter' => '5',
 		'potential' => '5, 7',
-		'pot int fav' => '5',
+		'pot int fav' => '5',//count: 1
 		'favorites' => '5',
 		'official win' => '5, 6, 12, 9',
 		'count sets' => 5,
@@ -137,7 +137,7 @@ return [
 		],
 		'win inter' => '',
 		'potential' => '6, 5, 9',
-		'pot int fav' => '5, 9',
+		'pot int fav' => '5, 9',//count: 2
 		'favorites' => '3, 5, 9, 14',
 		'official win' => '6, 11, 12, 14',
 		'count sets' => 7,
@@ -203,7 +203,7 @@ return [
 		],
 		'win inter' => '2, 3',
 		'potential' => '5, 8, 9, 10',
-		'pot int fav' => '',
+		'pot int fav' => '',//count: 0
 		'favorites' => '2, 3',
 		'official win' => '8, 3, 9, 6',
 		'count sets' => 16,
