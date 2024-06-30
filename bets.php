@@ -141,6 +141,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(!empty($potential)){
         $racetext .= "\t\t'potential' => '" . implode(", ", $potential) . "',\n"; 
+        $pif = array_intersect($potential, $favorites);
+        $racetext .= "\t\t'pot int fav' => '" . implode(", ", $pif) . "',\n"; 
         $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
