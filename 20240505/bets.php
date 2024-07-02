@@ -16,12 +16,12 @@ return [
 			9 => 23,
 			5 => 12,
 		],
-		'win inter' => '8',
+		'win inter' => '5, 8',
 		'potential' => '8, 10, 7',
 		'pot int fav' => '8',//count: 1
 		'favorites' => '2, 5, 8',
 		'official win' => '8, 9, 5, 4',
-		'count sets' => 21,
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'2' => [
@@ -40,7 +40,7 @@ return [
 			10 => 39.5,
 		],
 		'win inter' => '6',
-		'potential' => '7, 9',
+		'potential' => '7, 9, 10',
 		'pot int fav' => '7, 9',//count: 2
 		'favorites' => '1, 6, 7, 9',
 		'official win' => '8, 6, 10, 7',
@@ -128,12 +128,12 @@ return [
 			9 => 19.5,
 		],
 		'win inter' => '3',
-		'potential' => '6, 9',
+		'potential' => '6, 8, 9',
 		'pot int fav' => '9',//count: 1
 		'favorites' => '3, 5, 9',
 		'official win' => '2, 7, 9, 6',
-		'count sets' => 9,
-		'allValues' => '1, 3, 6, 7, 8, 9, 10',
+		'count sets' => 21,
+		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
 	],
 	'7' => [
 		/**
@@ -154,12 +154,9 @@ return [
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'win(allValues, $30)' => '1, 2, 3, 4, 5, 6',
-		'win(wp, 30)' => '1, 4, 6',
-		'win(end-wp, $30)' => '6',
-		'place(end-wp, $60)' => '6',
-		'total bets' => 360,
+		'total bets' => 180,
 		'1 won(win bet)' => 2136,
-		'total won in race 7' => 1776,
+		'total won in race 7' => 1956,
 	],
 	'8' => [
 		/**
@@ -183,6 +180,9 @@ return [
 		'official win' => '7, 4, 11, 5',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win(wp, 30)' => '1, 2, 3, 4',
+		'total bets' => 120,
+		'total won in race 8' => -120,
 	],
 	'9' => [
 		/**
@@ -248,7 +248,7 @@ return [
 ];
 //total wp: 0
 //total win: 1836
-//total place: -60
+//total place: 0
 //total qin: 0
 //total trio: 0
-//total: 1776
+//total: 1836

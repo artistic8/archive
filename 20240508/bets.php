@@ -40,12 +40,12 @@ return [
 			1 => 23,
 		],
 		'win inter' => '5',
-		'potential' => '7, 9',
-		'pot int fav' => '',//count: 0
+		'potential' => '7, 9, 10',
+		'pot int fav' => '10',//count: 1
 		'favorites' => '5, 8, 10, 12',
 		'official win' => '12, 8, 1, 11',
-		'count sets' => 10,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'count sets' => 11,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 	'3' => [
 		/**
@@ -136,8 +136,8 @@ return [
 		'pot int fav' => '6',//count: 1
 		'favorites' => '2, 3, 4, 6, 7, 8, 10',
 		'official win' => '1, 7, 5, 8',
-		'count sets' => 1,
-		'allValues' => '2, 3, 5, 6',
+		'count sets' => 8,
+		'allValues' => '1, 2, 3, 4, 5, 6, 8, 9, 10',
 	],
 	'7' => [
 		/**

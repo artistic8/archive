@@ -21,7 +21,7 @@ return [
 		'pot int fav' => '',//count: 0
 		'favorites' => '4, 5, 12',
 		'official win' => '10, 4, 3, 5',
-		'count sets' => 21,
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'2' => [
@@ -40,12 +40,12 @@ return [
 			12 => 28,
 		],
 		'win inter' => '',
-		'potential' => '7, 9',
-		'pot int fav' => '9',//count: 1
+		'potential' => '7, 9, 10',
+		'pot int fav' => '9, 10',//count: 2
 		'favorites' => '6, 9, 10',
 		'official win' => '10, 5, 12, 6',
-		'count sets' => 10,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'count sets' => 11,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 	'3' => [
 		/**
@@ -132,12 +132,12 @@ return [
 			12 => 49.5,
 		],
 		'win inter' => '1',
-		'potential' => '6, 5, 9',
+		'potential' => '6, 8, 5, 9',
 		'pot int fav' => '9',//count: 1
 		'favorites' => '1, 2, 9, 10',
 		'official win' => '8, 1, 12, 11',
-		'count sets' => 10,
-		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'count sets' => 18,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
 		/**
