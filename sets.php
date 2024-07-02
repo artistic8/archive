@@ -20,17 +20,13 @@ function getAllValues($runners, $raceNumber){
                         $set = [$one, $two, $three];
                         $temp = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
                         $temp = array_intersect($set, $temp);
-                        foreach($runners as $four){
-                            if($four > $three){
-                                $set = [$one, $two, $three, $four];
-                                $temp = array_intersect($temp, $history[$raceNumber][$four]["win"]);
-                                $temp = array_intersect($set, $temp);
+                        
                                 if(count($temp) >= 3){
                                     $allValues = array_values(array_unique(array_merge($allValues, $set)));
                                     $allValues[] = $three * 100;
                                 }
-                            }
-                        }
+                            
+                        
                     }
                 }
             }
