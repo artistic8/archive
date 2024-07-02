@@ -25,7 +25,7 @@ function getAllValues($runners, $raceNumber){
                                 $set = [$one, $two, $three, $four];
                                 $temp = array_intersect($temp, $history[$raceNumber][$four]["win"]);
                                 $temp = array_intersect($set, $temp);
-                                if(count($temp) >= 3){
+                                if(count($temp) >= 2){
                                     $allValues = array_values(array_unique(array_merge($allValues, $set)));
                                 }
                             }
