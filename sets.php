@@ -25,7 +25,7 @@ function getAllValues($runners, $raceNumber){
                                 $set = [$one, $two, $three, $four];
                                 $temp = array_intersect($temp, $history[$raceNumber][$four]["win"]);
                                 $temp = array_intersect($set, $temp);
-                                if(count($temp) >= 4){
+                                if(count($temp) >= 3){
                                     $allValues = array_values(array_unique(array_merge($allValues, $set)));
                                 }
                             }
@@ -161,7 +161,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     sort($values);
-    if(!empty($values)) $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
+    if(!empty($values)) {
+        $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
