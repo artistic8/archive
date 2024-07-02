@@ -189,7 +189,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 foreach($intersection as $placed){
                     if(isset($placeAmount[$placed])){
                         $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$placed];
-                        $racetext .= "\t\t'4 won(placed bet)' => " . ($unitBet / 10) * $placeAmount[$placed] . ",\n";
+                        $racetext .= "\t\t'4 won(placed bet $placed)' => " . ($unitBet / 10) * $placeAmount[$placed] . ",\n";
                         $totalPlace += ($unitBet / 10) * $placeAmount[$placed];
                     }
                 }
