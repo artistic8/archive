@@ -136,8 +136,8 @@ return [
 		'win/place(allValues, $30)' => '1, 2, 3, 4, 5, 6',
 		'total bets' => 360,
 		'1 won(win bet)' => 2136,
-		'4 won(placed bet)' => 484.5,
-		'4 won(placed bet)' => 63,
+		'4 won(placed bet 3)' => 484.5,
+		'4 won(placed bet 4)' => 63,
 		'total won in race 7' => 2323.5,
 	],
 	'8' => [
