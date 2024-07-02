@@ -163,6 +163,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($values);
     if(!empty($values)) {
         $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
+        $intersection = array_intersect($values, $favorites);
+        $union = array_values(array_unique(array_merge($values, $favorites)));
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+        $racetext .= "\t\t'intersection' => '" . implode(", ", $intersection) . "',\n";
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $racetext .= "\t],\n";
