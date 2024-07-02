@@ -16,6 +16,8 @@ return [
 			3 => 37,
 		],
 		'values' => '1, 5, 7, 8, 9, 10',
+		'union' => '1, 5, 7, 8, 9, 10, 2',
+		'intersection' => '5, 8',
 		'official win' => '8, 5, 3, 4',
 	],
 	'2' => [
@@ -33,6 +35,8 @@ return [
 			1 => 18.5,
 		],
 		'values' => '2, 4, 7, 8, 10, 11',
+		'union' => '2, 4, 7, 8, 10, 11, 5, 6',
+		'intersection' => '10',
 		'official win' => '5, 9, 1, 3',
 	],
 	'3' => [
@@ -50,6 +54,8 @@ return [
 			7 => 25,
 		],
 		'values' => '2, 3, 5, 6',
+		'union' => '2, 3, 5, 6, 1',
+		'intersection' => '6',
 		'official win' => '1, 11, 7, 2',
 	],
 	'4' => [
@@ -67,6 +73,8 @@ return [
 			6 => 59,
 		],
 		'values' => '5, 6, 7, 11, 12',
+		'union' => '5, 6, 7, 11, 12, 2',
+		'intersection' => '12',
 		'official win' => '3, 2, 6, 7',
 	],
 	'5' => [
@@ -84,6 +92,8 @@ return [
 			5 => 12.5,
 		],
 		'values' => '1, 3, 4, 7',
+		'union' => '1, 3, 4, 7, 2, 5',
+		'intersection' => '1',
 		'official win' => '2, 1, 5, 8',
 	],
 	'6' => [
@@ -101,6 +111,8 @@ return [
 			3 => 22,
 		],
 		'values' => '6, 8, 9, 10',
+		'union' => '6, 8, 9, 10, 5',
+		'intersection' => '',
 		'official win' => '5, 2, 3, 8',
 	],
 	'7' => [
@@ -118,6 +130,8 @@ return [
 			1 => 16.5,
 		],
 		'values' => '1, 3, 4, 5',
+		'union' => '1, 3, 4, 5, 10',
+		'intersection' => '3',
 		'official win' => '3, 6, 1, 10',
 	],
 	'8' => [
@@ -135,6 +149,8 @@ return [
 			2 => 21,
 		],
 		'values' => '4, 6, 7, 8',
+		'union' => '4, 6, 7, 8, 2, 3, 5, 9, 12',
+		'intersection' => '8',
 		'official win' => '12, 6, 2, 3',
 	],
 	'9' => [
