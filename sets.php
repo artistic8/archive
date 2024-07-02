@@ -27,6 +27,7 @@ function getAllValues($runners, $raceNumber){
                                 $temp = array_intersect($set, $temp);
                                 if(count($temp) >= 3){
                                     $allValues = array_values(array_unique(array_merge($allValues, $set)));
+                                    $allValues[] = $four * 100;
                                 }
                             }
                         }
