@@ -15,7 +15,9 @@ return [
 			4 => 31,
 			6 => 34.5,
 		],
-		'values' => '1, 4, 5, 6, 7, 8, 9, 10',
+		'values' => '1, 4, 5, 6, 7, 9, 10',//count values: 7
+		'heroes' => '12, 11',//count heroes: 2
+		'intersection' => '12',//count intersection: 1
 	],
 	'2' => [
 		/**
@@ -31,7 +33,9 @@ return [
 			7 => 18.5,
 			1 => 25.5,
 		],
-		'values' => '3, 4, 5, 7, 8, 10, 11',
+		'values' => '2, 3, 4, 5, 7, 8, 11',//count values: 7
+		'heroes' => '6, 11',//count heroes: 2
+		'intersection' => '6',//count intersection: 1
 	],
 	'3' => [
 		/**
@@ -47,7 +51,9 @@ return [
 			5 => 28.5,
 			1 => 24.5,
 		],
-		'values' => '2, 3, 5, 6',
+		'values' => '1, 2, 3, 4, 7, 9, 12',//count values: 7
+		'heroes' => '11, 3',//count heroes: 2
+		'intersection' => '3, 11',//count intersection: 2
 	],
 	'4' => [
 		/**
@@ -63,7 +69,9 @@ return [
 			2 => 17.5,
 			7 => 36,
 		],
-		'values' => '5, 6, 7, 11, 12',
+		'values' => '1, 3, 5, 6, 7, 11, 12',//count values: 7
+		'heroes' => '2, 10, 4, 1, 9, 3',//count heroes: 6
+		'intersection' => '1, 2, 10',//count intersection: 3
 	],
 	'5' => [
 		/**
@@ -79,7 +87,9 @@ return [
 			7 => 22.5,
 			5 => 11.5,
 		],
-		'values' => '1, 3, 4, 5, 7',
+		'values' => '1, 3, 4, 7',//count values: 4
+		'heroes' => '8',//count heroes: 1
+		'intersection' => '',//count intersection: 0
 	],
 	'6' => [
 		/**
@@ -95,7 +105,9 @@ return [
 			2 => 14,
 			6 => 67.5,
 		],
-		'values' => '4, 6, 8, 9, 10',
+		'values' => '1, 3, 4, 6, 7, 8, 9',//count values: 7
+		'heroes' => '5, 1, 3, 7',//count heroes: 4
+		'intersection' => '3',//count intersection: 1
 	],
 	'7' => [
 		/**
@@ -111,6 +123,9 @@ return [
 			2 => 27,
 			9 => 38,
 		],
+		'values' => '1, 2, 3, 4, 5, 7',//count values: 6
+		'heroes' => '6, 11',//count heroes: 2
+		'intersection' => '6',//count intersection: 1
 	],
 	'8' => [
 		/**
@@ -126,6 +141,8 @@ return [
 			7 => 21,
 			4 => 17.5,
 		],
-		'values' => '1, 3, 5, 7',
+		'values' => '1, 2, 3, 4, 5, 7, 8',//count values: 7
+		'heroes' => '6, 13',//count heroes: 2
+		'intersection' => '6',//count intersection: 1
 	],
 ];

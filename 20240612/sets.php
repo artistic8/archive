@@ -15,7 +15,9 @@ return [
 			11 => 31,
 			12 => 51.5,
 		],
-		'values' => '1, 5, 7, 8, 9, 12',
+		'values' => '1, 5, 7, 8, 9, 12',//count values: 6
+		'heroes' => '11, 12',//count heroes: 2
+		'intersection' => '',//count intersection: 0
 	],
 	'2' => [
 		/**
@@ -31,7 +33,9 @@ return [
 			1 => 34.5,
 			11 => 22,
 		],
-		'values' => '3, 4, 5, 6, 7, 8, 10, 11',
+		'values' => '3, 5, 6, 8',//count values: 4
+		'heroes' => '4',//count heroes: 1
+		'intersection' => '4',//count intersection: 1
 	],
 	'3' => [
 		/**
@@ -47,7 +51,9 @@ return [
 			4 => 65.5,
 			7 => 24,
 		],
-		'values' => '2, 3, 5, 6',
+		'values' => '1, 3, 5, 6, 7, 9, 11',//count values: 7
+		'heroes' => '2',//count heroes: 1
+		'intersection' => '2',//count intersection: 1
 	],
 	'4' => [
 		/**
@@ -63,7 +69,9 @@ return [
 			12 => 43,
 			7 => 24,
 		],
-		'values' => '1, 5, 6, 7, 10, 11, 12',
+		'values' => '1, 2, 5, 6, 7, 8, 10, 11, 12',//count values: 9
+		'heroes' => '4, 8, 2, 3, 12',//count heroes: 5
+		'intersection' => '2, 4, 8',//count intersection: 3
 	],
 	'5' => [
 		/**
@@ -79,6 +87,9 @@ return [
 			9 => 20.5,
 			3 => 23.5,
 		],
+		'values' => '1, 3, 4, 5, 7, 9',//count values: 6
+		'heroes' => '8, 7',//count heroes: 2
+		'intersection' => '7, 8',//count intersection: 2
 	],
 	'6' => [
 		/**
@@ -94,7 +105,9 @@ return [
 			1 => 27,
 			7 => 16,
 		],
-		'values' => '4, 6, 8, 9, 10',
+		'values' => '2, 3, 4, 5, 6, 8, 10',//count values: 7
+		'heroes' => '1, 5, 2, 3',//count heroes: 4
+		'intersection' => '3, 5',//count intersection: 2
 	],
 	'7' => [
 		/**
@@ -110,7 +123,9 @@ return [
 			11 => 13,
 			1 => 14.5,
 		],
-		'values' => '3, 5, 8, 10',
+		'values' => '3, 5, 6, 7, 8, 10',//count values: 6
+		'heroes' => '9, 6, 7, 2',//count heroes: 4
+		'intersection' => '9',//count intersection: 1
 	],
 	'8' => [
 		/**
@@ -141,5 +156,8 @@ return [
 			9 => 79.5,
 			6 => 22,
 		],
+		'values' => '2, 3, 5, 8, 10',//count values: 5
+		'heroes' => '12, 4',//count heroes: 2
+		'intersection' => '',//count intersection: 0
 	],
 ];

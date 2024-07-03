@@ -15,7 +15,9 @@ return [
 			6 => 17.5,
 			7 => 47,
 		],
-		'values' => '1, 3, 5, 7, 8, 9',
+		'values' => '1, 3, 4, 7, 8',//count values: 5
+		'heroes' => '9, 6, 5',//count heroes: 3
+		'intersection' => '5, 6, 9',//count intersection: 3
 	],
 	'2' => [
 		/**
@@ -31,7 +33,9 @@ return [
 			6 => 32.5,
 			3 => 51,
 		],
-		'values' => '4, 7, 10, 11',
+		'values' => '1, 2, 3, 6, 7, 9',//count values: 6
+		'heroes' => '4, 5, 7',//count heroes: 3
+		'intersection' => '4',//count intersection: 1
 	],
 	'3' => [
 		/**
@@ -47,7 +51,9 @@ return [
 			1 => 33.5,
 			12 => 262.5,
 		],
-		'values' => '1, 2, 3, 5, 6',
+		'values' => '1, 2, 3, 5, 6, 8, 9, 11',//count values: 8
+		'heroes' => '7, 11, 9',//count heroes: 3
+		'intersection' => '7',//count intersection: 1
 	],
 	'4' => [
 		/**
@@ -63,7 +69,9 @@ return [
 			2 => 99.5,
 			7 => 67,
 		],
-		'values' => '6, 7, 11, 12',
+		'values' => '2, 3, 4, 5, 6, 7, 11, 12',//count values: 8
+		'heroes' => '1, 8, 10',//count heroes: 3
+		'intersection' => '1, 8',//count intersection: 2
 	],
 	'5' => [
 		/**
@@ -79,6 +87,9 @@ return [
 			13 => 26,
 			4 => 58,
 		],
+		'values' => '1, 2, 3, 4, 5, 9, 10, 12',//count values: 8
+		'heroes' => '7, 12',//count heroes: 2
+		'intersection' => '7',//count intersection: 1
 	],
 	'6' => [
 		/**
@@ -94,7 +105,9 @@ return [
 			8 => 137.5,
 			5 => 56.5,
 		],
-		'values' => '1, 2, 3, 5, 6, 8, 9, 10',
+		'values' => '1, 2, 3, 4, 5, 8, 9',//count values: 7
+		'heroes' => '7, 9',//count heroes: 2
+		'intersection' => '7',//count intersection: 1
 	],
 	'7' => [
 		/**
@@ -110,7 +123,9 @@ return [
 			6 => 50,
 			3 => 24,
 		],
-		'values' => '3, 5, 8, 10',
+		'values' => '1, 2, 3, 4, 5, 8, 10',//count values: 7
+		'heroes' => '7, 10',//count heroes: 2
+		'intersection' => '7, 10',//count intersection: 2
 	],
 	'8' => [
 		/**
@@ -126,7 +141,9 @@ return [
 			9 => 21.5,
 			2 => 26.5,
 		],
-		'values' => '1, 4, 5, 6',
+		'values' => '1, 2, 3, 4, 5, 6, 7',//count values: 7
+		'heroes' => '11, 7, 3',//count heroes: 3
+		'intersection' => '11',//count intersection: 1
 	],
 	'9' => [
 		/**
