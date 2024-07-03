@@ -102,11 +102,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
-    $allValues = getAllValues($runners, $raceNumber);
-    if(!empty($values)) {
-        $racetext .= "\t\t'values' => '" . implode(", ", $allValues) . "',\n";
+    foreach($runners as $one){
+        $runners = array_diff($runners, [$one]);
+        $allValues = getAllValues($runners, $raceNumber);
+        if(!empty($values)) {
+            $racetext .= "\t\t'values' => '" . implode(", ", $allValues) . "',\n";
+            $racetext .= "\t\t'one' => '" . $one . "',\n";
+            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n";
+        }
     }
-    $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
