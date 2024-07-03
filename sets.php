@@ -103,30 +103,30 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t],\n"; 
     }
     $allValues = getAllValues($runners, $raceNumber);
-    if(!empty($allValues) && count($allValues) <= 7) $values = $allValues;
+    if(!empty($allValues) && count($allValues) <= 4) $values = $allValues;
     else $values = [];
     $copy = $runners;
     sort($copy);
     foreach($runners as $one){
         $runners = array_diff($runners, [$one]);
         $allValues = getAllValues($runners, $raceNumber);
-        if(!empty($allValues) && count($allValues) <= 7) $values = array_values(array_unique(array_merge($values, $allValues)));
+        if(!empty($allValues) && count($allValues) <= 4) $values = array_values(array_unique(array_merge($values, $allValues)));
         foreach($runners as $two){
             $runners = array_diff($runners, [$two]);
             $allValues = getAllValues($runners, $raceNumber);
-            if(!empty($allValues) && count($allValues) <= 7) $values = array_values(array_unique(array_merge($values, $allValues)));
+            if(!empty($allValues) && count($allValues) <= 4) $values = array_values(array_unique(array_merge($values, $allValues)));
             foreach($runners as $three){
                 $runners = array_diff($runners, [$three]);
                 $allValues = getAllValues($runners, $raceNumber);
-                if(!empty($allValues) && count($allValues) <= 7) $values = array_values(array_unique(array_merge($values, $allValues)));
+                if(!empty($allValues) && count($allValues) <= 4) $values = array_values(array_unique(array_merge($values, $allValues)));
                 foreach($runners as $four){
                     $runners = array_diff($runners, [$four]);
                     $allValues = getAllValues($runners, $raceNumber);
-                    if(!empty($allValues) && count($allValues) <= 7) $values = array_values(array_unique(array_merge($values, $allValues)));
+                    if(!empty($allValues) && count($allValues) <= 4) $values = array_values(array_unique(array_merge($values, $allValues)));
                     foreach($runners as $five){
                         $runners = array_diff($runners, [$five]);
                         $allValues = getAllValues($runners, $raceNumber);
-                        if(!empty($allValues) && count($allValues) <= 7) $values = array_values(array_unique(array_merge($values, $allValues)));
+                        if(!empty($allValues) && count($allValues) <= 4) $values = array_values(array_unique(array_merge($values, $allValues)));
                     }
                 }
             }
@@ -136,7 +136,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($values);
     if(!empty($values)) {
         $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
-        // $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n";
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
