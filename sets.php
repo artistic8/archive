@@ -18,17 +18,9 @@ function getAllValues($runners, $raceNumber){
                 foreach($runners as $three){
                     if($three > $two){
                         $set = [$one, $two, $three];
-                        $temp = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $runners);
-                        $temp = array_intersect($set, $temp);
-                        foreach($runners as $four){
-                            if($four > $three){
-                                $set = [$one, $two, $three, $four];
-                                $temp = array_intersect($temp, $history[$raceNumber][$four]["win"]);
-                                $temp = array_intersect($set, $temp);
-                                if(count($temp) >= 3){
-                                    $allValues = array_values(array_unique(array_merge($allValues, $set)));
-                                }
-                            }
+                        $temp = array_intersect($history[$raceNumber][$one]["win"], $history[$raceNumber][$two]["win"], $history[$raceNumber][$three]["win"], $set);
+                        if(count($temp) >= 3){
+                            $allValues = array_values(array_unique(array_merge($allValues, $set)));
                         }
                     }
                 }
@@ -102,15 +94,21 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
+    $values = [];
     foreach($runners as $one){
-        $runners = array_diff($runners, [$one]);
-        $allValues = getAllValues($runners, $raceNumber);
-        if(!empty($values)) {
-            $racetext .= "\t\t'values' => '" . implode(", ", $allValues) . "',\n";
-            $racetext .= "\t\t'one' => '" . $one . "',\n";
-            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n";
+        foreach($runners as $two){
+            if($two != $one){
+                $runners = array_diff($runners, [$one, $two]);
+                $allValues = getAllValues($runners, $raceNumber);
+                if(!empty($allValues)) {
+                    if(!in_array($one, $values)) $values[] = $one;
+                    if(!in_array($two, $values)) $values[] = $two;
+                }
+            }
         }
     }
+    sort($values);
+    if(!empty($values)) $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
