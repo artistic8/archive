@@ -134,7 +134,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     
     sort($values);
-    if(!empty($values)) $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
+    if(!empty($values)) {
+        $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',\n";
+        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n";
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
