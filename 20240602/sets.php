@@ -15,7 +15,8 @@ return [
 			9 => 15,
 			6 => 20,
 		],
-		'values1' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',
+		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 1: 10
+		'values2' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',//count values 2: 10
 		'official win' => '7, 9, 6, 1',
 	],
 	'2' => [
@@ -31,8 +32,9 @@ return [
 			6 => 36,
 			5 => 29,
 		],
-		'values1' => '2, 3, 4, 5, 6',
-		'values2' => '3, 4, 5, 6',
+		'values1' => '2, 3, 4, 5, 6',//count values 1: 5
+		'values2' => '2, 3, 4, 5, 6',//count values 2: 5
+		'values3' => '3, 4, 5, 6',//count values 2: 4
 		'official win' => '6, 5, 2, 3',
 	],
 	'3' => [
@@ -49,8 +51,9 @@ return [
 			5 => 55,
 			3 => 22,
 		],
-		'values1' => '1, 2, 3, 4, 7, 9, 12',
-		'values2' => '1, 2, 3, 4, 6, 7, 9',
+		'values1' => '1, 2, 3, 5, 6, 7',//count values 1: 6
+		'values2' => '1, 2, 3, 4, 7, 9, 12',//count values 2: 7
+		'values3' => '1, 2, 3, 4, 6, 7, 9',//count values 2: 7
 		'official win' => '7, 5, 3, 6',
 	],
 	'4' => [
@@ -67,7 +70,8 @@ return [
 			1 => 12.5,
 			10 => 30,
 		],
-		'values2' => '3, 6, 7, 11, 12',
+		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count values 1: 11
+		'values3' => '3, 6, 7, 11, 12',//count values 2: 5
 		'official win' => '13, 1, 10, 8',
 	],
 	'5' => [
@@ -84,8 +88,9 @@ return [
 			11 => 15,
 			9 => 50.5,
 		],
-		'values1' => '1, 3, 4, 5, 7, 10, 11',
-		'values2' => '3, 4, 5, 7, 9, 12',
+		'values1' => '1, 2, 3, 4, 5, 10, 11',//count values 1: 7
+		'values2' => '1, 3, 4, 5, 7, 10, 11',//count values 2: 7
+		'values3' => '3, 4, 5, 7, 9, 12',//count values 2: 6
 		'official win' => '1, 11, 9, 3',
 	],
 	'6' => [
@@ -102,8 +107,9 @@ return [
 			6 => 26.5,
 			4 => 11,
 		],
-		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'values2' => '6, 8, 9, 10',
+		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 1: 10
+		'values2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 2: 10
+		'values3' => '6, 8, 9, 10',//count values 2: 4
 		'official win' => '9, 6, 4, 1',
 	],
 	'7' => [
@@ -120,7 +126,8 @@ return [
 			5 => 12.5,
 			3 => 30,
 		],
-		'values2' => '3, 7, 8, 10',
+		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count values 1: 9
+		'values3' => '3, 7, 8, 10',//count values 2: 4
 		'official win' => '1, 5, 3, 11',
 	],
 	'8' => [
@@ -137,7 +144,8 @@ return [
 			8 => 14,
 			1 => 24.5,
 		],
-		'values1' => '1, 2, 3, 4, 6, 7, 8',
+		'values1' => '2, 3, 4, 6, 7, 8',//count values 1: 6
+		'values2' => '1, 2, 3, 4, 6, 7, 8',//count values 2: 7
 		'official win' => '4, 8, 1, 3',
 	],
 	'9' => [
@@ -154,8 +162,9 @@ return [
 			5 => 27,
 			6 => 19.5,
 		],
-		'values1' => '2, 3, 4, 9',
-		'values2' => '1, 3, 4, 5, 6, 7',
+		'values1' => '1, 3, 4, 5, 6, 7',//count values 1: 6
+		'values2' => '2, 3, 4, 9',//count values 2: 4
+		'values3' => '1, 3, 4, 5, 6, 7',//count values 2: 6
 		'official win' => '9, 5, 6, 7',
 	],
 	'10' => [

@@ -102,19 +102,24 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
-    $values1 = getAllValues($runners, $raceNumber);
-    $values2 = [];
+    $copy = $runners;
+    sort($copy);
+    $values1 = getAllValues($copy, $raceNumber);
+    $values2 = getAllValues($runners, $raceNumber);
+    $values3 = [];
     foreach($runners as $one){
         $runners = array_diff($runners, [$one]);
         $allValues = getAllValues($runners, $raceNumber);
         if(!empty($allValues) && count($allValues) <= 7) {
-            $values2 = array_values(array_unique(array_merge($values2, $allValues)));
+            $values3 = array_values(array_unique(array_merge($values3, $allValues)));
         }
     }
     sort($values1);
     sort($values2);
-    if(!empty($values1)) $racetext .= "\t\t'values1' => '" . implode(", ", $values1) . "',\n";
-    if(!empty($values2)) $racetext .= "\t\t'values2' => '" . implode(", ", $values2) . "',\n";
+    sort($values3);
+    if(!empty($values1)) $racetext .= "\t\t'values1' => '" . implode(", ", $values1) . "',//count values 1: " . count($values1) . "\n";
+    if(!empty($values2)) $racetext .= "\t\t'values2' => '" . implode(", ", $values2) . "',//count values 2: " . count($values2) . "\n";
+    if(!empty($values3)) $racetext .= "\t\t'values3' => '" . implode(", ", $values3) . "',//count values 2: " . count($values3) . "\n";
     $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     $racetext .= "\t],\n";
     unset($oldFavorites);
