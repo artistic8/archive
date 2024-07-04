@@ -162,7 +162,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalWin -= 1 * $unitBet * count($toWin);
     }
     if(!empty($toPlace)){
-        $racetext .= "\t\t'place(count 2, $" . $unitBet . ")' => '" . implode(", ", $toPlace) . "',\n"; 
+        $racetext .= "\t\t'place(count 2, $" . $unitBet . ")' => '" . implode(", ", $toPlace) . "',//count: " . count($toPlace). "\n"; 
+        if(isset($officialWin)){
+           $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        }
         $totalBets[$raceNumber] += $unitBet * count($toPlace);
         $totalPlace -= 1 * $unitBet * count($toPlace);
     } 
