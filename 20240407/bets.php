@@ -170,7 +170,8 @@ return [
 		'win inter' => '3',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'place(count 2, $30)' => '2, 7',
+		'place(count 2, $30)' => '2, 7',//count: 2
+		'official win' => '3, 2, 6, 5',
 		'total bets' => 60,
 		'22 won(win bet)' => 138,
 		'22 won(placed bet 2)' => 34.5,

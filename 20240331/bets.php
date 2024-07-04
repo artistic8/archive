@@ -106,7 +106,8 @@ return [
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'win(count 2, $30)' => '2, 3',
-		'place(count 2, $30)' => '3',
+		'place(count 2, $30)' => '3',//count: 1
+		'official win' => '11, 4, 6, 10',
 		'total bets' => 90,
 		'total won in race 5' => -90,
 	],

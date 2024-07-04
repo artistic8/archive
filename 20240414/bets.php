@@ -22,7 +22,8 @@ return [
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'win(count 2, $30)' => '6, 7',
-		'place(count 2, $30)' => '6, 7',
+		'place(count 2, $30)' => '6, 7',//count: 2
+		'official win' => '6, 7, 4, 2',
 		'win(wp, 30)' => '1, 2, 3, 4, 5, 6, 7',
 		'total bets' => 330,
 		'22 won(win bet)' => 267,
@@ -99,7 +100,8 @@ return [
 		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'win(count 2, $30)' => '3, 4',
-		'place(count 2, $30)' => '3, 4',
+		'place(count 2, $30)' => '3, 4',//count: 2
+		'official win' => '3, 4, 10, 5',
 		'total bets' => 120,
 		'22 won(win bet)' => 82.5,
 		'22 won(placed bet 3)' => 34.5,
@@ -170,7 +172,8 @@ return [
 		'win inter' => '3, 7',
 		'count sets' => 19,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'place(count 2, $30)' => '3, 7, 9',
+		'place(count 2, $30)' => '3, 7, 9',//count: 3
+		'official win' => '6, 9, 3, 12',
 		'win(favorites, $30)' => '3, 7, 9',
 		'win(wp, 30)' => '1, 2, 3, 4, 5, 6, 7',
 		'total bets' => 390,
@@ -202,7 +205,8 @@ return [
 		'win inter' => '8',
 		'count sets' => 0,
 		'allValues' => '',
-		'place(count 2, $30)' => '2, 3, 6, 7',
+		'place(count 2, $30)' => '2, 3, 6, 7',//count: 4
+		'official win' => '6, 8, 3, 7',
 		'total bets' => 120,
 		'22 won(win bet)' => 105,
 		'22 won(placed bet 3)' => 52.5,
@@ -230,7 +234,8 @@ return [
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'win(count 2, $30)' => '2, 3',
-		'place(count 2, $30)' => '3',
+		'place(count 2, $30)' => '3',//count: 1
+		'official win' => '8, 3, 9, 6',
 		'total bets' => 90,
 		'22 won(placed bet 3)' => 34.5,
 		'total won in race 9' => -55.5,

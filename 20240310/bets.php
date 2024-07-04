@@ -139,7 +139,8 @@ return [
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win(count 2, $30)' => '3, 7',
-		'place(count 2, $30)' => '3, 7',
+		'place(count 2, $30)' => '3, 7',//count: 2
+		'official win' => '7, 2, 3, 4',
 		'total bets' => 120,
 		'22 won(win bet)' => 60,
 		'22 won(placed bet 3)' => 46.5,
@@ -220,7 +221,8 @@ return [
 		'win inter' => '5',
 		'count sets' => 14,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'place(count 2, $30)' => '2, 3',
+		'place(count 2, $30)' => '2, 3',//count: 2
+		'official win' => '3, 5, 2, 14',
 		'win(wp, 30)' => '2, 3, 5',
 		'win(end-wp, $30)' => '5',
 		'place(end-wp, $60)' => '5',
