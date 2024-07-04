@@ -106,7 +106,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $intersections[$F] = array_intersect($intersections[$F], $history[$raceNumber][$horse]["win"]);
         }
         $racetext .= "\t\t'intersections $F' => '" . implode(", ", $intersections[$F]) . "',//count: " . count($intersections[$F]) . "\n";
-        if(count($intersections[$F]) >= 2) {
+        if(count($intersections[$F]) >= 1) {
             $toWin[] = $F;
             $toRemove = array_values(array_unique(array_merge($toRemove, $intersections[$F])));
         }

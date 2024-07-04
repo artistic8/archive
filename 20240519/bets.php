@@ -185,6 +185,10 @@ return [
 		'win inter' => '1',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'place(count 2, $30)' => '1, 7, 8',
+		'total bets' => 90,
+		'22 won(placed bet 8)' => 90,
+		'total won in race 8' => 0,
 	],
 	'9' => [
 		/**
