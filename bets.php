@@ -65,6 +65,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
+    $first6 = array_slice($runners, 0, 5);
     $favorite = $runners[0];
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $favorites = array_intersect($favorites, $runners);
@@ -95,6 +96,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t\t$place => $amount,\n";
         }
         $racetext .= "\t\t],\n"; 
+    }
+    $intersections = [];
+    foreach($favorites as $F){
+        $intersections[$F] = array_intersect($history[$raceNumber][$F]["win"], $runners);
+        foreach($first6 as $horse){
+            $intersections[$F] = array_intersect($intersections[$F], $history[$raceNumber][$horse]["win"]);
+        }
+        $racetext .= "\t\t'intersections $F' => '" . implode(", ", $intersections[$F]) . "',//count: " . count($intersections[$F]) . "\n";
     }
     $firstSet = true;
     foreach($favorites as $F){

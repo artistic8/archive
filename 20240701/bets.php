@@ -16,6 +16,10 @@ return [
 			6 => 37,
 			2 => 22,
 		],
+		'intersections 2' => '',//count: 0
+		'intersections 6' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 13' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
@@ -35,6 +39,9 @@ return [
 			10 => 19.5,
 			11 => 13,
 		],
+		'intersections 9' => '',//count: 0
+		'intersections 10' => '',//count: 0
+		'intersections 11' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
@@ -54,6 +61,9 @@ return [
 			11 => 34,
 			4 => 20,
 		],
+		'intersections 1' => '',//count: 0
+		'intersections 2' => '',//count: 0
+		'intersections 4' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
@@ -73,6 +83,9 @@ return [
 			1 => 36.5,
 			2 => 20.5,
 		],
+		'intersections 3' => '',//count: 0
+		'intersections 6' => '',//count: 0
+		'intersections 12' => '',//count: 0
 		'win inter' => '3, 6',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
@@ -92,6 +105,10 @@ return [
 			11 => 46.5,
 			6 => 15,
 		],
+		'intersections 4' => '',//count: 0
+		'intersections 6' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 10' => '',//count: 0
 		'win inter' => '7',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
@@ -111,6 +128,10 @@ return [
 			3 => 139,
 			7 => 17.5,
 		],
+		'intersections 1' => '1',//count: 1
+		'intersections 4' => '1',//count: 1
+		'intersections 7' => '1',//count: 1
+		'intersections 8' => '1',//count: 1
 		'win inter' => '1',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9',
@@ -130,6 +151,9 @@ return [
 			6 => 118.5,
 			10 => 31,
 		],
+		'intersections 5' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 11' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
@@ -149,6 +173,9 @@ return [
 			8 => 15.5,
 			7 => 17,
 		],
+		'intersections 7' => '3, 4, 6, 8, 12',//count: 5
+		'intersections 8' => '3, 4, 6, 8, 12',//count: 5
+		'intersections 12' => '4, 12',//count: 2
 		'win inter' => '12',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
@@ -168,6 +195,8 @@ return [
 			9 => 47,
 			1 => 23,
 		],
+		'intersections 3' => '5, 6, 9',//count: 3
+		'intersections 6' => '5, 6, 9',//count: 3
 		'win inter' => '6',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
@@ -187,6 +216,8 @@ return [
 			5 => 11.5,
 			1 => 26,
 		],
+		'intersections 4' => '',//count: 0
+		'intersections 5' => '',//count: 0
 		'win inter' => '4',
 		'count sets' => 0,
 		'allValues' => '',
@@ -206,6 +237,10 @@ return [
 			9 => 29,
 			8 => 56.5,
 		],
+		'intersections 3' => '',//count: 0
+		'intersections 4' => '',//count: 0
+		'intersections 5' => '',//count: 0
+		'intersections 6' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
