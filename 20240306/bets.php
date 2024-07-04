@@ -23,14 +23,15 @@ return [
 		'win inter' => '',
 		'count sets' => 17,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'win(count 2, $30)' => '3, 7, 8, 10',
 		'place(count 2, $30)' => '3, 7, 8, 10',//count: 4
 		'official win' => '3, 7, 10, 2',
-		'total bets' => 120,
+		'total bets' => 240,
 		'22 won(win bet)' => 117,
 		'22 won(placed bet 3)' => 51,
 		'22 won(placed bet 7)' => 49.5,
 		'22 won(placed bet 10)' => 57,
-		'total won in race 1' => 154.5,
+		'total won in race 1' => 34.5,
 	],
 	'2' => [
 		/**
@@ -98,13 +99,14 @@ return [
 		'win inter' => '5',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win(count 2, $30)' => '2, 5, 6',
 		'place(count 2, $30)' => '2, 5, 6',//count: 3
 		'official win' => '5, 6, 1, 3',
-		'total bets' => 90,
+		'total bets' => 180,
 		'22 won(win bet)' => 109.5,
 		'22 won(placed bet 5)' => 46.5,
 		'22 won(placed bet 6)' => 90,
-		'total won in race 4' => 156,
+		'total won in race 4' => 66,
 	],
 	'5' => [
 		/**
@@ -156,18 +158,19 @@ return [
 		'win inter' => '',
 		'count sets' => 9,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'win(count 2, $30)' => '1, 5, 9',
 		'place(count 2, $30)' => '1, 5, 9',//count: 3
 		'official win' => '1, 12, 9, 6',
 		'win(wp, 30)' => '1, 5, 9',
 		'win(end-wp, $30)' => '9',
 		'place(end-wp, $60)' => '9',
-		'total bets' => 270,
+		'total bets' => 360,
 		'22 won(win bet)' => 153,
 		'22 won(placed bet 1)' => 55.5,
 		'22 won(placed bet 9)' => 55.5,
 		'2 won(win bet)' => 153,
 		'2 won(place bet)' => 111,
-		'total won in race 6' => 258,
+		'total won in race 6' => 168,
 	],
 	'7' => [
 		/**
@@ -235,8 +238,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: 441
+//total win: 141
 //total place: 138
 //total qin: 0
 //total trio: 0
-//total: 579
+//total: 279

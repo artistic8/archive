@@ -22,12 +22,13 @@ return [
 		'win inter' => '5, 8',
 		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'win(count 2, $30)' => '2, 5, 8',
 		'place(count 2, $30)' => '2, 5',//count: 2
 		'official win' => '8, 9, 5, 4',
-		'total bets' => 60,
+		'total bets' => 150,
 		'22 won(win bet)' => 48,
 		'22 won(placed bet 5)' => 36,
-		'total won in race 1' => 24,
+		'total won in race 1' => -66,
 	],
 	'2' => [
 		/**
@@ -51,11 +52,12 @@ return [
 		'win inter' => '6',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'win(count 2, $30)' => '1, 6, 7, 9',
 		'place(count 2, $30)' => '1, 6, 7, 9',//count: 4
 		'official win' => '8, 6, 10, 7',
-		'total bets' => 120,
+		'total bets' => 240,
 		'22 won(placed bet 6)' => 46.5,
-		'total won in race 2' => -73.5,
+		'total won in race 2' => -193.5,
 	],
 	'3' => [
 		/**
@@ -170,16 +172,17 @@ return [
 		'win inter' => '',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'win(count 2, $30)' => '1, 4, 6, 8',
 		'place(count 2, $30)' => '1, 4, 6, 8',//count: 4
 		'official win' => '3, 8, 4, 12',
 		'win/place(allValues, $30)' => '1, 2, 3, 4, 5, 6',
-		'total bets' => 480,
+		'total bets' => 600,
 		'22 won(placed bet 4)' => 63,
 		'22 won(placed bet 8)' => 40.5,
 		'1 won(win bet)' => 2136,
 		'4 won(placed bet 3)' => 484.5,
 		'4 won(placed bet 4)' => 63,
-		'total won in race 7' => 2307,
+		'total won in race 7' => 2187,
 	],
 	'8' => [
 		/**
@@ -228,13 +231,14 @@ return [
 		'win inter' => '',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'win(count 2, $30)' => '2, 3, 6, 8',
 		'place(count 2, $30)' => '2, 3, 6, 8',//count: 4
 		'official win' => '8, 4, 2, 6',
-		'total bets' => 120,
+		'total bets' => 240,
 		'22 won(win bet)' => 193.5,
 		'22 won(placed bet 2)' => 39,
 		'22 won(placed bet 8)' => 57,
-		'total won in race 9' => 169.5,
+		'total won in race 9' => 49.5,
 	],
 	'10' => [
 		/**
@@ -281,8 +285,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: 2077.5
+//total win: 1627.5
 //total place: 229.5
 //total qin: 0
 //total trio: 0
-//total: 2307
+//total: 1857

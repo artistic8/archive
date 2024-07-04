@@ -94,14 +94,15 @@ return [
 		'win inter' => '1, 4, 5',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'win(count 2, $30)' => '1, 4, 5',
 		'place(count 2, $30)' => '4, 5',//count: 2
 		'official win' => '1, 5, 13, 3',
 		'place(end-favorites, $60)' => '5',
-		'total bets' => 120,
+		'total bets' => 210,
 		'22 won(win bet)' => 61.5,
 		'22 won(placed bet 5)' => 117,
 		'1 won(place bet)' => 234,
-		'total won in race 4' => 292.5,
+		'total won in race 4' => 202.5,
 	],
 	'5' => [
 		/**
@@ -124,11 +125,12 @@ return [
 		'win inter' => '1',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
+		'win(count 2, $30)' => '1, 4, 11',
 		'place(count 2, $30)' => '4, 11',//count: 2
 		'official win' => '1, 7, 2, 9',
-		'total bets' => 60,
+		'total bets' => 150,
 		'22 won(win bet)' => 52.5,
-		'total won in race 5' => -7.5,
+		'total won in race 5' => -97.5,
 	],
 	'6' => [
 		/**
@@ -173,17 +175,18 @@ return [
 		'win inter' => '',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8',
+		'win(count 2, $30)' => '1, 4, 7',
 		'place(count 2, $30)' => '1, 4, 7',//count: 3
 		'official win' => '1, 3, 5, 8',
 		'win/place(allValues, $30)' => '1, 2, 3, 5, 6, 7',
-		'total bets' => 450,
+		'total bets' => 540,
 		'22 won(win bet)' => 43.5,
 		'22 won(placed bet 1)' => 33,
 		'1 won(win bet)' => 43.5,
 		'4 won(placed bet 1)' => 33,
 		'4 won(placed bet 3)' => 43.5,
 		'4 won(placed bet 5)' => 82.5,
-		'total won in race 7' => -171,
+		'total won in race 7' => -261,
 	],
 	'8' => [
 		/**
@@ -256,15 +259,16 @@ return [
 		'win inter' => '4, 10',
 		'count sets' => 0,
 		'allValues' => '',
+		'win(count 2, $30)' => '1, 3, 4, 10',
 		'place(count 2, $30)' => '1, 3, 4',//count: 3
 		'official win' => '11, 9, 10, 12',
-		'total bets' => 90,
-		'total won in race 10' => -90,
+		'total bets' => 210,
+		'total won in race 10' => -210,
 	],
 ];
 //total wp: 0
-//total win: -99
+//total win: -489
 //total place: -36
 //total qin: 0
 //total trio: 0
-//total: -135
+//total: -525
