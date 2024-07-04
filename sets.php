@@ -8,7 +8,16 @@ else $revision = "";
 include "condition$revision.php";
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
-
+function factorial($n){
+    if($n <= 0) return 1;
+    $fact = 1;
+    for($i = 1; $i <= $n; $i++) $fact *= $i;
+    return $fact;
+}
+function combination($p, $n){
+    if($n < $p) return 0;
+    return factorial($n) / (factorial($p) * factorial($n - $p));
+}
 function getAllValues($runners, $raceNumber){
     global $history;
     $allValues = [];
@@ -108,21 +117,39 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $values2 = getAllValues($runners, $raceNumber);
     $values3 = [];
     foreach($runners as $one){
-        $runners = array_diff($runners, [$one]);
-        $allValues = getAllValues($runners, $raceNumber);
+        $copyrunners = array_diff($runners, [$one]);
+        $allValues = getAllValues($copyrunners, $raceNumber);
         if(!empty($allValues) && count($allValues) <= 7) {
             $values3 = array_values(array_unique(array_merge($values3, $allValues)));
+        }
+    }
+    $values4 = [];
+    foreach($runners as $one){
+        foreach($runners as $two){
+            if($two != $one){
+                $copyrunners = array_diff($runners, [$one, $two]);
+                $allValues = getAllValues($copyrunners, $raceNumber);
+                if(!empty($allValues) && count($allValues) <= 7) {
+                    $values4 = array_values(array_unique(array_merge($values4, $allValues)));
+                }
+            }
         }
     }
     sort($values1);
     sort($values2);
     sort($values3);
+    sort($values4);
     if(!empty($values1)) $racetext .= "\t\t'values1' => '" . implode(", ", $values1) . "',//count values 1: " . count($values1) . "\n";
     if(!empty($values2)) $racetext .= "\t\t'values2' => '" . implode(", ", $values2) . "',//count values 2: " . count($values2) . "\n";
     if(!empty($values3)) $racetext .= "\t\t'values3' => '" . implode(", ", $values3) . "',//count values 3: " . count($values3) . "\n";
-    $intersection = array_intersect($values1, $values2, $values3);
-    if(!empty($intersection)) $racetext .= "\t\t'inter' => '" . implode(", ", $intersection) . "',//count intersection: " . count($intersection) . "\n";
-    $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    if(!empty($values4)) $racetext .= "\t\t'values4' => '" . implode(", ", $values4) . "',//count values 4: " . count($values4) . "\n";
+    if(!empty($values1) && !empty($values2) && !empty($values3) && !empty($values4)){
+        $intersection = array_intersect($values1, $values2, $values3, $values4);
+        $racetext .= "\t\t'inter' => '" . implode(", ", $intersection) . "',//count intersection: " . count($intersection) . "\n";
+        $trioBalance = 0 - 10 * combination(3, count($intersection));
+        if(count(array_intersect($intersection, array_slice($officialWin, 0, 3))) === 3) $trioBalance += $trioAmount;
+        $racetext .= "\t\t'trio balance' => " . $trioBalance .",\n";
+    }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);

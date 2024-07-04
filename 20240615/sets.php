@@ -16,7 +16,7 @@ return [
 			4 => 19.5,
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 1: 10
-		'official win' => '8, 7, 4, 10',
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 8, 10',//count values 4: 9
 	],
 	'2' => [
 		/**
@@ -34,9 +34,10 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count values 1: 11
 		'values2' => '1, 2, 3, 4, 5, 6, 7, 8, 10',//count values 2: 9
-		'values3' => '1, 2, 4, 6, 7, 10',//count values 3: 6
-		'inter' => '1, 2, 4, 6, 7, 10',//count intersection: 6
-		'official win' => '3, 1, 10, 4',
+		'values3' => '1, 2, 3, 4, 5, 6, 7, 8, 10',//count values 3: 9
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count values 4: 11
+		'inter' => '1, 2, 3, 4, 5, 6, 7, 8, 10',//count intersection: 9
+		'trio balance' => 68,
 	],
 	'3' => [
 		/**
@@ -54,9 +55,10 @@ return [
 		],
 		'values1' => '1, 2, 3, 5, 6, 7',//count values 1: 6
 		'values2' => '1, 2, 3, 4, 6, 7, 9',//count values 2: 7
-		'values3' => '1, 3, 5, 6, 7, 11',//count values 3: 6
-		'inter' => '1, 3, 6, 7',//count intersection: 4
-		'official win' => '9, 8, 4, 12',
+		'values3' => '1, 2, 3, 4, 5, 6, 7, 9, 11',//count values 3: 9
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 9, 11',//count values 4: 9
+		'inter' => '1, 2, 3, 6, 7',//count intersection: 5
+		'trio balance' => -100,
 	],
 	'4' => [
 		/**
@@ -74,9 +76,10 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count values 1: 11
 		'values2' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count values 2: 11
-		'values3' => '5, 6, 7, 11, 12',//count values 3: 5
-		'inter' => '5, 6, 7, 11, 12',//count intersection: 5
-		'official win' => '1, 3, 4, 12',
+		'values3' => '1, 2, 3, 4, 5, 6, 7, 11, 12',//count values 3: 9
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count values 4: 11
+		'inter' => '1, 2, 3, 4, 5, 6, 7, 11, 12',//count intersection: 9
+		'trio balance' => -742,
 	],
 	'5' => [
 		/**
@@ -94,9 +97,10 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5',//count values 1: 5
 		'values2' => '1, 2, 3, 4, 5, 6, 7, 10',//count values 2: 8
-		'values3' => '3, 4, 7, 10',//count values 3: 4
-		'inter' => '3, 4',//count intersection: 2
-		'official win' => '3, 10, 6, 5',
+		'values3' => '1, 2, 3, 4, 5, 6, 7, 10',//count values 3: 8
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12',//count values 4: 10
+		'inter' => '1, 2, 3, 4, 5',//count intersection: 5
+		'trio balance' => -100,
 	],
 	'6' => [
 		/**
@@ -114,9 +118,7 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 1: 10
 		'values2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 2: 10
-		'values3' => '4, 6, 8, 9, 10',//count values 3: 5
-		'inter' => '4, 6, 8, 9, 10',//count intersection: 5
-		'official win' => '2, 3, 10, 1',
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 4: 10
 	],
 	'7' => [
 		/**
@@ -135,8 +137,9 @@ return [
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count values 1: 9
 		'values2' => '3, 5, 7, 8, 10',//count values 2: 5
 		'values3' => '3, 5, 7, 8, 10',//count values 3: 5
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 8, 10',//count values 4: 9
 		'inter' => '3, 5, 7, 8',//count intersection: 4
-		'official win' => '10, 6, 2, 5',
+		'trio balance' => -40,
 	],
 	'8' => [
 		/**
@@ -154,7 +157,10 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8',//count values 1: 8
 		'values2' => '2, 3, 4, 5, 6, 7, 8',//count values 2: 7
-		'official win' => '5, 7, 1, 4',
+		'values3' => '1, 2, 3, 4, 5, 6, 7, 8',//count values 3: 8
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 8',//count values 4: 8
+		'inter' => '2, 3, 4, 5, 6, 7, 8',//count intersection: 7
+		'trio balance' => -350,
 	],
 	'9' => [
 		/**
@@ -172,9 +178,10 @@ return [
 		],
 		'values1' => '1, 3, 4, 5, 6, 7, 10, 11',//count values 1: 8
 		'values2' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',//count values 2: 10
-		'values3' => '2, 4, 9, 11',//count values 3: 4
-		'inter' => '4, 11',//count intersection: 2
-		'official win' => '6, 1, 2, 4',
+		'values3' => '1, 2, 3, 4, 5, 6, 9, 10, 11',//count values 3: 9
+		'values4' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',//count values 4: 10
+		'inter' => '1, 3, 4, 5, 6, 10, 11',//count intersection: 7
+		'trio balance' => -350,
 	],
 	'10' => [
 		/**
@@ -190,7 +197,6 @@ return [
 			8 => 14,
 			9 => 43.5,
 		],
-		'official win' => '7, 8, 9, 1',
 	],
 	'11' => [
 		/**
@@ -206,6 +212,5 @@ return [
 			8 => 73.5,
 			6 => 25.5,
 		],
-		'official win' => '4, 8, 6, 9',
 	],
 ];
