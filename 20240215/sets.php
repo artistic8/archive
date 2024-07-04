@@ -17,7 +17,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 1: 10
 		'values2' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count values 2: 10
-		'values3' => '1, 3, 4, 5, 6, 7, 8, 10, 12',//count values 2: 9
+		'values3' => '1, 3, 4, 5, 6, 7, 8, 10, 12',//count values 3: 9
+		'inter' => '1, 3, 4, 5, 6, 7, 8, 10',//count intersection: 8
 		'official win' => '8, 12, 4, 3',
 	],
 	'2' => [
@@ -36,7 +37,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count values 1: 11
 		'values2' => '2, 3, 4, 5, 6, 7, 8, 10, 11',//count values 2: 9
-		'values3' => '1, 2, 4, 5, 6, 7, 9, 10, 11',//count values 2: 9
+		'values3' => '1, 2, 4, 5, 6, 7, 9, 10, 11',//count values 3: 9
+		'inter' => '2, 4, 5, 6, 7, 10, 11',//count intersection: 7
 		'official win' => '2, 3, 8, 7',
 	],
 	'3' => [
@@ -55,7 +57,8 @@ return [
 		],
 		'values1' => '1, 3, 6, 7',//count values 1: 4
 		'values2' => '1, 2, 3, 6, 7, 9, 11',//count values 2: 7
-		'values3' => '2, 3, 4, 6, 7, 8, 9, 11, 12',//count values 2: 9
+		'values3' => '2, 3, 4, 6, 7, 8, 9, 11, 12',//count values 3: 9
+		'inter' => '3, 6, 7',//count intersection: 3
 		'official win' => '11, 4, 7, 2',
 	],
 	'4' => [
@@ -74,7 +77,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',//count values 1: 10
 		'values2' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',//count values 2: 10
-		'values3' => '6, 7, 11, 12',//count values 2: 4
+		'values3' => '6, 7, 11, 12',//count values 3: 4
+		'inter' => '6, 7, 11, 12',//count intersection: 4
 		'official win' => '11, 1, 10, 2',
 	],
 	'5' => [
@@ -93,7 +97,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 10, 11',//count values 1: 7
 		'values2' => '1, 2, 3, 4, 7, 10, 11',//count values 2: 7
-		'values3' => '1, 2, 3, 5, 7, 10, 11',//count values 2: 7
+		'values3' => '1, 2, 3, 5, 7, 10, 11',//count values 3: 7
+		'inter' => '1, 2, 3, 10, 11',//count intersection: 5
 		'official win' => '3, 1, 4, 8',
 	],
 	'6' => [
@@ -112,7 +117,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count values 1: 10
 		'values2' => '1, 2, 3, 4, 5, 7, 8, 10, 12',//count values 2: 9
-		'values3' => '1, 2, 4, 5, 6, 8, 9, 10, 12',//count values 2: 9
+		'values3' => '1, 2, 4, 5, 6, 8, 9, 10, 12',//count values 3: 9
+		'inter' => '1, 2, 4, 5, 8, 10',//count intersection: 6
 		'official win' => '3, 2, 9, 12',
 	],
 	'7' => [
@@ -131,7 +137,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count values 1: 9
 		'values2' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count values 2: 9
-		'values3' => '1, 2, 4, 6, 7, 9',//count values 2: 6
+		'values3' => '1, 2, 4, 6, 7, 9',//count values 3: 6
+		'inter' => '1, 2, 4, 6, 7, 9',//count intersection: 6
 		'official win' => '2, 9, 5, 7',
 	],
 	'8' => [
@@ -150,7 +157,8 @@ return [
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8',//count values 1: 8
 		'values2' => '2, 3, 4, 5, 6, 7, 8',//count values 2: 7
-		'values3' => '3, 4, 7, 11',//count values 2: 4
+		'values3' => '3, 4, 7, 11',//count values 3: 4
+		'inter' => '3, 4, 7',//count intersection: 3
 		'official win' => '3, 2, 4, 8',
 	],
 	'9' => [
@@ -168,7 +176,7 @@ return [
 			11 => 18,
 		],
 		'values1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count values 1: 11
-		'values3' => '1, 2, 3, 5, 8, 9, 10',//count values 2: 7
+		'values3' => '1, 2, 3, 5, 8, 9, 10',//count values 3: 7
 		'official win' => '12, 3, 11, 5',
 	],
 ];

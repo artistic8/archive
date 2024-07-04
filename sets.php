@@ -119,7 +119,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($values3);
     if(!empty($values1)) $racetext .= "\t\t'values1' => '" . implode(", ", $values1) . "',//count values 1: " . count($values1) . "\n";
     if(!empty($values2)) $racetext .= "\t\t'values2' => '" . implode(", ", $values2) . "',//count values 2: " . count($values2) . "\n";
-    if(!empty($values3)) $racetext .= "\t\t'values3' => '" . implode(", ", $values3) . "',//count values 2: " . count($values3) . "\n";
+    if(!empty($values3)) $racetext .= "\t\t'values3' => '" . implode(", ", $values3) . "',//count values 3: " . count($values3) . "\n";
+    $intersection = array_intersect($values1, $values2, $values3);
+    if(!empty($intersection)) $racetext .= "\t\t'inter' => '" . implode(", ", $intersection) . "',//count intersection: " . count($intersection) . "\n";
     $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     $racetext .= "\t],\n";
     unset($oldFavorites);
