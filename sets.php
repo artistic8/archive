@@ -113,9 +113,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($values1);
     sort($values2);
-    if(!empty($values1)) $racetext .= "\t\t'values1' => '" . implode(", ", $values1) . "',\n";
-    if(!empty($values2)) $racetext .= "\t\t'values2' => '" . implode(", ", $values2) . "',\n";
-    $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+    // if(!empty($values1)) $racetext .= "\t\t'values1' => '" . implode(", ", $values1) . "',\n";
+    // if(!empty($values2)) $racetext .= "\t\t'values2' => '" . implode(", ", $values2) . "',\n";
+    // $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
