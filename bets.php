@@ -206,7 +206,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $totalRace[$raceNumber] -= $totalBets[$raceNumber];
         $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
-        if(in_array($officialWin[0], $toWin)){
+        if(in_array($officialWin[0], $toWin)&& count($toWin) < 3){
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
             $racetext .= "\t\t'22 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
