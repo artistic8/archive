@@ -15,9 +15,7 @@ return [
 			13 => 25.5,
 			2 => 27,
 		],
-		'values' => '1, 4, 5, 8, 9, 10, 12',//count values: 7
-		'heroes' => '6, 8, 9, 12',//count heroes: 4
-		'intersection' => '12',//count intersection: 1
+		'diff' => '2, 6, 7',
 	],
 	'2' => [
 		/**
@@ -33,9 +31,7 @@ return [
 			14 => 63,
 			7 => 120,
 		],
-		'values' => '1, 2, 6, 7, 9',//count values: 5
-		'heroes' => '11, 1',//count heroes: 2
-		'intersection' => '',//count intersection: 0
+		'diff' => '4, 5, 10, 11',
 	],
 	'3' => [
 		/**
@@ -51,9 +47,7 @@ return [
 			4 => 18,
 			6 => 22,
 		],
-		'values' => '1, 3, 4, 5, 6, 7, 9',//count values: 7
-		'heroes' => '2, 4, 9, 8',//count heroes: 4
-		'intersection' => '2',//count intersection: 1
+		'diff' => '2',
 	],
 	'4' => [
 		/**
@@ -69,9 +63,7 @@ return [
 			8 => 18.5,
 			5 => 56,
 		],
-		'values' => '1, 2, 5, 6, 10, 11, 12',//count values: 7
-		'heroes' => '7, 3, 2',//count heroes: 3
-		'intersection' => '',//count intersection: 0
+		'diff' => '3, 4, 7, 8',
 	],
 	'5' => [
 		/**
@@ -87,9 +79,6 @@ return [
 			4 => 31.5,
 			3 => 13,
 		],
-		'values' => '1, 4, 5, 7',//count values: 4
-		'heroes' => '8',//count heroes: 1
-		'intersection' => '',//count intersection: 0
 	],
 	'6' => [
 		/**
@@ -105,9 +94,6 @@ return [
 			1 => 16,
 			2 => 15,
 		],
-		'values' => '3, 5, 6, 8',//count values: 4
-		'heroes' => '14',//count heroes: 1
-		'intersection' => '',//count intersection: 0
 	],
 	'7' => [
 		/**
@@ -123,9 +109,7 @@ return [
 			8 => 30,
 			5 => 29,
 		],
-		'values' => '3, 5, 6, 7, 8',//count values: 5
-		'heroes' => '1',//count heroes: 1
-		'intersection' => '1',//count intersection: 1
+		'diff' => '',
 	],
 	'8' => [
 		/**
@@ -141,9 +125,7 @@ return [
 			2 => 11.5,
 			6 => 49,
 		],
-		'values' => '1, 3, 4, 5, 7, 8, 11',//count values: 7
-		'heroes' => '2',//count heroes: 1
-		'intersection' => '2',//count intersection: 1
+		'diff' => '2',
 	],
 	'9' => [
 		/**
@@ -159,6 +141,7 @@ return [
 			2 => 43.5,
 			14 => 30.5,
 		],
+		'diff' => '1, 3, 4, 5, 6, 7',
 	],
 	'10' => [
 		/**

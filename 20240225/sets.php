@@ -15,6 +15,7 @@ return [
 			4 => 25,
 			12 => 31,
 		],
+		'diff' => '1, 7, 9, 12',
 	],
 	'2' => [
 		/**
@@ -29,6 +30,7 @@ return [
 			2 => 29,
 			6 => 15,
 		],
+		'diff' => '2, 3, 4, 5, 6',
 	],
 	'3' => [
 		/**
@@ -44,6 +46,7 @@ return [
 			13 => 35.5,
 			11 => 28,
 		],
+		'diff' => '1, 2, 3, 4, 7, 9, 12',
 	],
 	'4' => [
 		/**
@@ -59,9 +62,7 @@ return [
 			4 => 31,
 			6 => 26.5,
 		],
-		'values' => '1, 2, 3, 4, 5, 6, 8, 11, 12',//count values: 9
-		'heroes' => '10, 3, 13, 2',//count heroes: 4
-		'intersection' => '10',//count intersection: 1
+		'diff' => '10',
 	],
 	'5' => [
 		/**
@@ -77,9 +78,6 @@ return [
 			6 => 15.5,
 			10 => 40,
 		],
-		'values' => '1, 2, 3, 4, 5, 7, 10, 11',//count values: 8
-		'heroes' => '6, 7, 4, 13',//count heroes: 4
-		'intersection' => '4, 6',//count intersection: 2
 	],
 	'6' => [
 		/**
@@ -95,9 +93,7 @@ return [
 			6 => 44,
 			3 => 37.5,
 		],
-		'values' => '1, 2, 3, 4, 5, 6, 8, 12',//count values: 8
-		'heroes' => '10, 13, 3',//count heroes: 3
-		'intersection' => '10',//count intersection: 1
+		'diff' => '7, 9, 10',
 	],
 	'7' => [
 		/**
@@ -113,9 +109,7 @@ return [
 			2 => 14.5,
 			8 => 34,
 		],
-		'values' => '3, 5, 6, 7, 8, 10',//count values: 6
-		'heroes' => '1, 2',//count heroes: 2
-		'intersection' => '1',//count intersection: 1
+		'diff' => '1, 2, 4',
 	],
 	'8' => [
 		/**
@@ -131,9 +125,6 @@ return [
 			3 => 26.5,
 			9 => 34,
 		],
-		'values' => '1, 3, 4, 5, 6',//count values: 5
-		'heroes' => '8, 3',//count heroes: 2
-		'intersection' => '8',//count intersection: 1
 	],
 	'9' => [
 		/**
@@ -149,9 +140,6 @@ return [
 			12 => 39,
 			14 => 16,
 		],
-		'values' => '1, 4, 5, 6, 7, 8',//count values: 6
-		'heroes' => '2, 10, 8',//count heroes: 3
-		'intersection' => '',//count intersection: 0
 	],
 	'10' => [
 		/**

@@ -30,9 +30,6 @@ return [
 			10 => 42.5,
 			13 => 28,
 		],
-		'values' => '1, 2, 4, 5, 6, 7, 8, 9, 10',//count values: 9
-		'heroes' => '13, 12, 1, 11, 5, 8',//count heroes: 6
-		'intersection' => '12',//count intersection: 1
 	],
 	'3' => [
 		/**
@@ -48,9 +45,7 @@ return [
 			2 => 14,
 			5 => 25.5,
 		],
-		'values' => '1, 3, 4, 5, 6, 7, 9',//count values: 7
-		'heroes' => '2',//count heroes: 1
-		'intersection' => '2',//count intersection: 1
+		'diff' => '2',
 	],
 	'4' => [
 		/**
@@ -66,9 +61,7 @@ return [
 			8 => 21,
 			2 => 28,
 		],
-		'values' => '3, 6, 7, 11, 12',//count values: 5
-		'heroes' => '1, 4, 2, 10, 5, 9, 8, 3',//count heroes: 8
-		'intersection' => '1',//count intersection: 1
+		'diff' => '1, 2, 4, 5, 8, 10',
 	],
 	'5' => [
 		/**
@@ -84,9 +77,7 @@ return [
 			10 => 14,
 			3 => 35,
 		],
-		'values' => '1, 2, 3, 4, 5, 7, 9, 11, 12',//count values: 9
-		'heroes' => '10, 7, 12, 14',//count heroes: 4
-		'intersection' => '7, 10',//count intersection: 2
+		'diff' => '10',
 	],
 	'6' => [
 		/**
@@ -102,9 +93,7 @@ return [
 			11 => 23,
 			4 => 11,
 		],
-		'values' => '1, 3, 4, 6, 7, 8, 9, 10, 12',//count values: 9
-		'heroes' => '2, 5, 1, 7',//count heroes: 4
-		'intersection' => '2',//count intersection: 1
+		'diff' => '2',
 	],
 	'7' => [
 		/**
@@ -120,9 +109,7 @@ return [
 			3 => 31,
 			9 => 10.5,
 		],
-		'values' => '1, 2, 3, 4, 5, 6, 8',//count values: 7
-		'heroes' => '7, 3, 8',//count heroes: 3
-		'intersection' => '3, 7',//count intersection: 2
+		'diff' => '7, 9',
 	],
 	'8' => [
 		/**
@@ -138,9 +125,7 @@ return [
 			6 => 48.5,
 			8 => 30,
 		],
-		'values' => '2, 3, 4, 5, 6, 7, 8',//count values: 7
-		'heroes' => '1, 7, 2, 5',//count heroes: 4
-		'intersection' => '1, 2',//count intersection: 2
+		'diff' => '1',
 	],
 	'9' => [
 		/**
@@ -156,9 +141,7 @@ return [
 			8 => 27.5,
 			14 => 53,
 		],
-		'values' => '2, 3, 4, 5, 8, 9',//count values: 6
-		'heroes' => '1, 3',//count heroes: 2
-		'intersection' => '1, 3',//count intersection: 2
+		'diff' => '1, 6, 7',
 	],
 	'10' => [
 		/**

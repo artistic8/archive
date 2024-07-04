@@ -102,22 +102,21 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         $racetext .= "\t\t],\n"; 
     }
-    $values = [];
-    $heroes = [];
+    $values1 = getAllValues($runners, $raceNumber);
+    $values2 = [];
     foreach($runners as $one){
         $runners = array_diff($runners, [$one]);
         $allValues = getAllValues($runners, $raceNumber);
         if(!empty($allValues) && count($allValues) <= 7) {
-            $values = array_values(array_unique(array_merge($values, $allValues)));
-            $heroes[] = $one;
+            $values2 = array_values(array_unique(array_merge($values2, $allValues)));
         }
     }
-    sort($values);
-    if(!empty($values)) {
-        $racetext .= "\t\t'values' => '" . implode(", ", $values) . "',//count values: " . count($values) . "\n";
-        $racetext .= "\t\t'heroes' => '" . implode(", ", $heroes) . "',//count heroes: " . count($heroes) . "\n";
-        $intersection = array_intersect($favorites, $heroes);
-        $racetext .= "\t\t'intersection' => '" . implode(", ", $intersection) . "',//count intersection: " . count($intersection) . "\n";
+    sort($values1);
+    sort($values2);
+    if(!empty($values1)){
+        $diff = array_diff($values1, $values2);
+        sort($diff);
+        $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
