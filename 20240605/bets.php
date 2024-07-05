@@ -142,10 +142,10 @@ return [
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'win(wp, 30)' => '1, 2, 3',
-		'place(end-wp, $60)' => '3',
-		'total bets' => 150,
 		'2 won(win bet)' => 196.5,
+		'place(end-wp, $60)' => '3',
 		'2 won(place bet)' => 90,
+		'total bets' => 150,
 		'total won in race 5' => 136.5,
 	],
 	'6' => [

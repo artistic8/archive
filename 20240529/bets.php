@@ -139,8 +139,8 @@ return [
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5',
 		'win(wp, 30)' => '1, 2, 3, 4, 5',
-		'total bets' => 150,
 		'2 won(win bet)' => 111,
+		'total bets' => 150,
 		'total won in race 5' => -39,
 	],
 	'6' => [
@@ -198,8 +198,8 @@ return [
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'win(allValues, $30)' => '1, 2, 3, 4, 5, 6',
-		'total bets' => 180,
 		'1 won(win bet)' => 132,
+		'total bets' => 180,
 		'total won in race 7' => -48,
 	],
 	'8' => [

@@ -256,8 +256,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win(wp, 30)' => '2, 9, 10',
 		'place(end-wp, $60)' => '10',
-		'total bets' => 150,
 		'2 won(place bet)' => 183,
+		'total bets' => 150,
 		'total won in race 9' => 33,
 	],
 ];

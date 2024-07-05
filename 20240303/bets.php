@@ -59,10 +59,10 @@ return [
 		'count sets' => 8,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'win(wp, 30)' => '1, 2, 3',
-		'place(end-wp, $60)' => '3',
-		'total bets' => 150,
 		'2 won(win bet)' => 144,
+		'place(end-wp, $60)' => '3',
 		'2 won(place bet)' => 78,
+		'total bets' => 150,
 		'total won in race 2' => 72,
 	],
 	'3' => [

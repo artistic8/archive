@@ -202,8 +202,8 @@ return [
 		'win(count 2, $30)' => '1, 3, 5, 6, 7, 8, 9',
 		'22 won(win bet)' => 262.5,
 		'win(allValues, $30)' => '1, 2, 3, 4, 5, 6',
-		'total bets' => 390,
 		'1 won(win bet)' => 262.5,
+		'total bets' => 390,
 		'total won in race 7' => 135,
 	],
 	'8' => [

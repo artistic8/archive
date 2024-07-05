@@ -224,8 +224,8 @@ return [
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'place(end-favorites, $60)' => '7',
-		'total bets' => 60,
 		'1 won(place bet)' => 126,
+		'total bets' => 60,
 		'total won in race 8' => 66,
 	],
 ];
