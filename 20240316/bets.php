@@ -16,7 +16,7 @@ return [
 			10 => 21.5,
 			5 => 52,
 		],
-		'first6' => '1, 2, 3, 4, 8, 9, 10',
+		'first7' => '1, 2, 3, 4, 8, 9, 10',
 		'intersections 1' => '1',//count: 1
 		'intersections 2' => '1',//count: 1
 		'intersections 3' => '1',//count: 1
@@ -43,7 +43,7 @@ return [
 			10 => 27.5,
 			3 => 34.5,
 		],
-		'first6' => '1, 3, 4, 5, 6, 9, 10',
+		'first7' => '1, 3, 4, 5, 6, 9, 10',
 		'intersections 1' => '',//count: 0
 		'intersections 3' => '',//count: 0
 		'intersections 4' => '',//count: 0
@@ -70,7 +70,7 @@ return [
 			4 => 34,
 			1 => 18,
 		],
-		'first6' => '1, 2, 3, 4, 7, 8, 9',
+		'first7' => '1, 2, 3, 4, 7, 8, 9',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
@@ -97,7 +97,7 @@ return [
 			5 => 152.5,
 			1 => 13,
 		],
-		'first6' => '1, 2, 3, 6, 8, 10, 11',
+		'first7' => '1, 2, 3, 6, 8, 10, 11',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
@@ -124,7 +124,7 @@ return [
 			11 => 40,
 			10 => 18,
 		],
-		'first6' => '1, 2, 4, 7, 10, 11, 12',
+		'first7' => '1, 2, 4, 7, 10, 11, 12',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 4' => '',//count: 0
@@ -151,7 +151,7 @@ return [
 			11 => 32.5,
 			12 => 20,
 		],
-		'first6' => '1, 2, 6, 9, 10, 11, 12',
+		'first7' => '1, 2, 6, 9, 10, 11, 12',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 6' => '',//count: 0
@@ -178,7 +178,7 @@ return [
 			3 => 19,
 			6 => 25,
 		],
-		'first6' => '1, 3, 4, 6, 7, 10, 11',
+		'first7' => '1, 3, 4, 6, 7, 10, 11',
 		'intersections 1' => '',//count: 0
 		'intersections 3' => '',//count: 0
 		'intersections 4' => '',//count: 0
@@ -205,7 +205,7 @@ return [
 			4 => 24.5,
 			1 => 30,
 		],
-		'first6' => '1, 2, 5, 7, 10, 12, 14',
+		'first7' => '1, 2, 5, 7, 10, 12, 14',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 5' => '',//count: 0
@@ -238,7 +238,7 @@ return [
 			6 => 15.5,
 			8 => 22,
 		],
-		'first6' => '2, 5, 6, 7, 8, 9, 10',
+		'first7' => '2, 5, 6, 7, 8, 9, 10',
 		'intersections 2' => '',//count: 0
 		'intersections 5' => '',//count: 0
 		'intersections 6' => '',//count: 0
@@ -265,7 +265,7 @@ return [
 			9 => 17.5,
 			4 => 31.5,
 		],
-		'first6' => '1, 2, 3, 6, 7, 9, 14',
+		'first7' => '1, 2, 3, 6, 7, 9, 14',
 		'intersections 1' => '10',//count: 1
 		'intersections 2' => '10',//count: 1
 		'intersections 3' => '10',//count: 1
