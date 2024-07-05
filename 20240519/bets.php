@@ -184,7 +184,7 @@ return [
 		'intersections 7' => '4',//count: 1
 		'intersections 8' => '4',//count: 1
 		'win inter' => '1',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'win(count 2, $30)' => '1, 7, 8',
 		'place(count 2, $30)' => '1, 7, 8',//count: 3
@@ -212,7 +212,7 @@ return [
 		'intersections 4' => '1, 5',//count: 2
 		'intersections 6' => '1, 5',//count: 2
 		'win inter' => '6',
-		'count sets' => 16,
+		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'win(count 2, $30)' => '3, 4, 6',
 		'place(count 2, $30)' => '3, 4, 6',//count: 3

@@ -190,7 +190,7 @@ return [
 		'intersections 1' => '1, 3, 4',//count: 3
 		'intersections 2' => '1, 3, 4',//count: 3
 		'win inter' => '1',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'win(count 2, $30)' => '1, 2',
 		'place(count 2, $30)' => '2',//count: 1
@@ -220,8 +220,8 @@ return [
 		'intersections 9' => '8',//count: 1
 		'intersections 11' => '',//count: 0
 		'win inter' => '9',
-		'count sets' => 13,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'count sets' => 14,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win(count 2, $30)' => '1, 2, 3, 9',
 		'place(count 2, $30)' => '1, 2, 3, 9',//count: 4
 		'official win' => '3, 8, 14, 5',

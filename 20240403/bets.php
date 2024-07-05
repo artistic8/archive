@@ -118,7 +118,7 @@ return [
 		],
 		'intersections 4' => '',//count: 0
 		'intersections 5' => '',//count: 0
-		'win inter' => '5',
+		'win inter' => '4, 5',
 		'count sets' => 1,
 		'allValues' => '1, 3, 4, 5',
 	],
@@ -198,7 +198,7 @@ return [
 		'intersections 6' => '',//count: 0
 		'intersections 7' => '',//count: 0
 		'win inter' => '4, 5, 6',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'place(end-favorites, $60)' => '7',
 		'total bets' => 60,

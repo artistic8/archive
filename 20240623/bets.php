@@ -236,7 +236,7 @@ return [
 		'intersections 8' => '3, 5',//count: 2
 		'intersections 11' => '3, 5',//count: 2
 		'win inter' => '3',
-		'count sets' => 15,
+		'count sets' => 19,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'win(count 2, $30)' => '2, 3, 8, 11',
 		'place(count 2, $30)' => '2, 8, 11',//count: 3

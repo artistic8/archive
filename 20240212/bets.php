@@ -215,8 +215,12 @@ return [
 		'intersections 8' => '',//count: 0
 		'intersections 12' => '',//count: 0
 		'win inter' => '12',
-		'count sets' => 7,
+		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'win(wp, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'total bets' => 240,
+		'2 won(win bet)' => 199.5,
+		'total won in race 9' => -40.5,
 	],
 	'10' => [
 		/**
@@ -264,8 +268,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: 12
+//total win: -28.5
 //total place: -15
 //total qin: 0
 //total trio: 0
-//total: -3
+//total: -43.5

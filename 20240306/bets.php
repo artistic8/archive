@@ -211,7 +211,7 @@ return [
 		'intersections 3' => '',//count: 0
 		'intersections 8' => '',//count: 0
 		'win inter' => '3, 8',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 	'9' => [
@@ -233,7 +233,7 @@ return [
 		'intersections 7' => '',//count: 0
 		'intersections 11' => '',//count: 0
 		'win inter' => '',
-		'count sets' => 16,
+		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];

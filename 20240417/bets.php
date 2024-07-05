@@ -183,7 +183,7 @@ return [
 		'intersections 6' => '4, 6, 8, 12',//count: 4
 		'intersections 8' => '4, 6, 8, 12',//count: 4
 		'win inter' => '6, 8',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'win(count 2, $30)' => '6, 8',
 		'total bets' => 60,
@@ -207,7 +207,7 @@ return [
 		],
 		'intersections 4' => '5',//count: 1
 		'win inter' => '4',
-		'count sets' => 16,
+		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'win(count 2, $30)' => '4',
 		'place(count 2, $30)' => '4',//count: 1

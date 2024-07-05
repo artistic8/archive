@@ -172,7 +172,7 @@ return [
 		'intersections 13' => '',//count: 0
 		'intersections 14' => '',//count: 0
 		'win inter' => '',
-		'count sets' => 15,
+		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 	'9' => [
@@ -194,8 +194,8 @@ return [
 		'intersections 10' => '',//count: 0
 		'intersections 13' => '',//count: 0
 		'win inter' => '',
-		'count sets' => 13,
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'count sets' => 14,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 	],
 	'10' => [
 		/**
