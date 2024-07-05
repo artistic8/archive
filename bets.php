@@ -65,7 +65,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
-    $first6 = array_slice($runners, 0, 5);
+    $first7 = array_slice($runners, 0, 7);
     $favorite = $runners[0];
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $favorites = array_intersect($favorites, $runners);
@@ -99,19 +99,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $intersections = [];
     $toWin = [];
-    $toRemove = [];
-    foreach($favorites as $F){
+    $first7 = array_values(array_unique(array_merge($first7, $favorites)));
+    sort($first7);
+    $racetext .= "\t\t'first7' => '" . implode(", ", $first7) . "',\n";
+    foreach($first7 as $F){
         $intersections[$F] = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        foreach($first6 as $horse){
-            $intersections[$F] = array_intersect($intersections[$F], $history[$raceNumber][$horse]["win"]);
+        foreach($first7 as $horse){
+            if($horse != $F) $intersections[$F] = array_intersect($intersections[$F], $history[$raceNumber][$horse]["win"]);
         }
         $racetext .= "\t\t'intersections $F' => '" . implode(", ", $intersections[$F]) . "',//count: " . count($intersections[$F]) . "\n";
-        if(count($intersections[$F]) >= 1) {
-            $toWin[] = $F;
-            $toRemove = array_values(array_unique(array_merge($toRemove, $intersections[$F])));
-        }
+        if(count($intersections[$F]) === 2) $toWin[] = $F;
     }
-    $toPlace = array_diff($toWin, $toRemove);
     $firstSet = true;
     foreach($favorites as $F){
         $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
@@ -161,14 +159,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalBets[$raceNumber] += $unitBet * count($toWin);
         $totalWin -= 1 * $unitBet * count($toWin);
     }
-    if(!empty($toPlace)){
-        $racetext .= "\t\t'place(count 2, $" . $unitBet . ")' => '" . implode(", ", $toPlace) . "',//count: " . count($toPlace). "\n"; 
-        if(isset($officialWin)){
-           $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-        }
-        $totalBets[$raceNumber] += $unitBet * count($toPlace);
-        $totalPlace -= 1 * $unitBet * count($toPlace);
-    } 
     if(!empty($allValues) && !in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
         $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win/place(allValues, $" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
@@ -210,16 +200,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
             $racetext .= "\t\t'22 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
             $totalWin += ($unitBet / 10) * $winAmount;
-        }
-        if(!empty(array_intersect($toPlace, array_slice($officialWin, 0, 3)))){
-            $intersection = array_intersect($toPlace, array_slice($officialWin, 0, 3));
-            foreach($intersection as $placed){
-                if(isset($placeAmount[$placed])){
-                    $totalRace[$raceNumber] += ($unitBet / 10) * $placeAmount[$placed];
-                    $racetext .= "\t\t'22 won(placed bet $placed)' => " . ($unitBet / 10) * $placeAmount[$placed] . ",\n";
-                    $totalPlace += ($unitBet / 10) * $placeAmount[$placed];
-                }
-            }
         }
         if(!in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
             if(in_array($officialWin[0], $allValues)){

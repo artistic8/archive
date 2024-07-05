@@ -16,20 +16,18 @@ return [
 			10 => 20.5,
 			1 => 12.5,
 		],
-		'intersections 1' => '8',//count: 1
-		'intersections 11' => '8',//count: 1
-		'intersections 14' => '8',//count: 1
+		'first6' => '1, 3, 4, 7, 10, 11, 12, 14',
+		'intersections 1' => '',//count: 0
+		'intersections 3' => '',//count: 0
+		'intersections 4' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 10' => '',//count: 0
+		'intersections 11' => '',//count: 0
+		'intersections 12' => '',//count: 0
+		'intersections 14' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win(count 2, $30)' => '1, 11, 14',
-		'place(count 2, $30)' => '1, 11, 14',//count: 3
-		'official win' => '11, 10, 1, 7',
-		'total bets' => 180,
-		'22 won(win bet)' => 133.5,
-		'22 won(placed bet 1)' => 37.5,
-		'22 won(placed bet 11)' => 52.5,
-		'total won in race 1' => 43.5,
 	],
 	'2' => [
 		/**
@@ -46,10 +44,15 @@ return [
 			4 => 13,
 			1 => 19.5,
 		],
+		'first6' => '1, 2, 3, 4, 5, 7, 8, 9',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
 		'intersections 4' => '',//count: 0
+		'intersections 5' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 8' => '',//count: 0
+		'intersections 9' => '',//count: 0
 		'win inter' => '2',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
@@ -69,9 +72,14 @@ return [
 			2 => 22.5,
 			11 => 32,
 		],
+		'first6' => '2, 3, 7, 8, 9, 11, 12, 14',
+		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
 		'intersections 7' => '',//count: 0
+		'intersections 8' => '',//count: 0
+		'intersections 9' => '',//count: 0
 		'intersections 11' => '',//count: 0
+		'intersections 12' => '',//count: 0
 		'intersections 14' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 4,
@@ -92,7 +100,14 @@ return [
 			9 => 36.5,
 			5 => 26.5,
 		],
+		'first6' => '1, 4, 5, 6, 7, 8, 12',
+		'intersections 1' => '',//count: 0
+		'intersections 4' => '',//count: 0
+		'intersections 5' => '',//count: 0
 		'intersections 6' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 8' => '',//count: 0
+		'intersections 12' => '',//count: 0
 		'win inter' => '6',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
@@ -112,7 +127,13 @@ return [
 			8 => 15,
 			4 => 11.5,
 		],
+		'first6' => '1, 4, 5, 6, 7, 8, 14',
+		'intersections 1' => '',//count: 0
 		'intersections 4' => '',//count: 0
+		'intersections 5' => '',//count: 0
+		'intersections 6' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 8' => '',//count: 0
 		'intersections 14' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 5,
@@ -133,22 +154,18 @@ return [
 			12 => 57.5,
 			10 => 58,
 		],
-		'intersections 1' => '1',//count: 1
-		'intersections 2' => '1',//count: 1
-		'intersections 3' => '1',//count: 1
-		'intersections 5' => '1',//count: 1
-		'intersections 6' => '1',//count: 1
-		'intersections 8' => '1',//count: 1
+		'first6' => '1, 2, 3, 5, 6, 8, 10, 13',
+		'intersections 1' => '',//count: 0
+		'intersections 2' => '',//count: 0
+		'intersections 3' => '',//count: 0
+		'intersections 5' => '',//count: 0
+		'intersections 6' => '',//count: 0
+		'intersections 8' => '',//count: 0
+		'intersections 10' => '',//count: 0
+		'intersections 13' => '',//count: 0
 		'win inter' => '1',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win(count 2, $30)' => '1, 2, 3, 5, 6, 8',
-		'place(count 2, $30)' => '2, 3, 5, 6, 8',//count: 5
-		'official win' => '6, 12, 10, 5',
-		'total bets' => 330,
-		'22 won(win bet)' => 172.5,
-		'22 won(placed bet 6)' => 58.5,
-		'total won in race 6' => -99,
 	],
 	'7' => [
 		/**
@@ -165,26 +182,25 @@ return [
 			8 => 14.5,
 			4 => 25.5,
 		],
+		'first6' => '1, 3, 5, 6, 7, 8, 9',
+		'intersections 1' => '2, 3',//count: 2
 		'intersections 3' => '2, 3',//count: 2
 		'intersections 5' => '2, 3',//count: 2
 		'intersections 6' => '2, 3',//count: 2
 		'intersections 7' => '2, 3',//count: 2
 		'intersections 8' => '2, 3',//count: 2
+		'intersections 9' => '2, 3',//count: 2
 		'win inter' => '3',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win(count 2, $30)' => '3, 5, 6, 7, 8',
-		'place(count 2, $30)' => '5, 6, 7, 8',//count: 4
-		'official win' => '6, 8, 4, 2',
+		'win(count 2, $30)' => '1, 3, 5, 6, 7, 8, 9',
 		'win/place(allValues, $30)' => '1, 2, 3, 4, 5, 6',
-		'total bets' => 630,
+		'total bets' => 570,
 		'22 won(win bet)' => 262.5,
-		'22 won(placed bet 6)' => 85.5,
-		'22 won(placed bet 8)' => 43.5,
 		'1 won(win bet)' => 262.5,
 		'4 won(placed bet 4)' => 76.5,
 		'4 won(placed bet 6)' => 85.5,
-		'total won in race 7' => 186,
+		'total won in race 7' => 117,
 	],
 	'8' => [
 		/**
@@ -201,20 +217,17 @@ return [
 			1 => 12,
 			4 => 16,
 		],
+		'first6' => '1, 2, 3, 4, 5, 6, 7',
 		'intersections 1' => '4',//count: 1
+		'intersections 2' => '4',//count: 1
 		'intersections 3' => '4',//count: 1
+		'intersections 4' => '4',//count: 1
 		'intersections 5' => '4',//count: 1
+		'intersections 6' => '4',//count: 1
+		'intersections 7' => '4',//count: 1
 		'win inter' => '3',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win(count 2, $30)' => '1, 3, 5',
-		'place(count 2, $30)' => '1, 3, 5',//count: 3
-		'official win' => '5, 1, 4, 6',
-		'total bets' => 180,
-		'22 won(win bet)' => 93,
-		'22 won(placed bet 1)' => 36,
-		'22 won(placed bet 5)' => 39,
-		'total won in race 8' => -12,
 	],
 	'9' => [
 		/**
@@ -231,20 +244,17 @@ return [
 			1 => 39,
 			3 => 20.5,
 		],
-		'intersections 2' => '3, 5',//count: 2
-		'intersections 3' => '3, 5',//count: 2
-		'intersections 8' => '3, 5',//count: 2
-		'intersections 11' => '3, 5',//count: 2
+		'first6' => '2, 3, 4, 5, 8, 10, 11',
+		'intersections 2' => '5',//count: 1
+		'intersections 3' => '5',//count: 1
+		'intersections 4' => '5',//count: 1
+		'intersections 5' => '5',//count: 1
+		'intersections 8' => '5',//count: 1
+		'intersections 10' => '5',//count: 1
+		'intersections 11' => '5',//count: 1
 		'win inter' => '3',
 		'count sets' => 19,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win(count 2, $30)' => '2, 3, 8, 11',
-		'place(count 2, $30)' => '2, 8, 11',//count: 3
-		'official win' => '2, 1, 3, 8',
-		'total bets' => 210,
-		'22 won(win bet)' => 94.5,
-		'22 won(placed bet 2)' => 45,
-		'total won in race 9' => -70.5,
 	],
 	'10' => [
 		/**
@@ -261,9 +271,14 @@ return [
 			5 => 11.5,
 			8 => 29,
 		],
+		'first6' => '1, 2, 3, 4, 5, 7, 8',
+		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
+		'intersections 4' => '',//count: 0
 		'intersections 5' => '',//count: 0
+		'intersections 7' => '',//count: 0
+		'intersections 8' => '',//count: 0
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
@@ -283,7 +298,12 @@ return [
 			4 => 20,
 			7 => 64,
 		],
+		'first6' => '1, 2, 3, 4, 6, 9, 10, 12, 14',
+		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
+		'intersections 3' => '',//count: 0
+		'intersections 4' => '',//count: 0
+		'intersections 6' => '',//count: 0
 		'intersections 9' => '',//count: 0
 		'intersections 10' => '',//count: 0
 		'intersections 12' => '',//count: 0
@@ -294,8 +314,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: 208.5
-//total place: -160.5
+//total win: 135
+//total place: -18
 //total qin: 0
 //total trio: 0
-//total: 48
+//total: 117
