@@ -177,8 +177,8 @@ return [
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win(count 2, $30)' => '1, 2, 3, 5, 7, 8, 10',
-		'total bets' => 210,
 		'22 won(win bet)' => 43.5,
+		'total bets' => 210,
 		'total won in race 6' => -166.5,
 	],
 	'7' => [

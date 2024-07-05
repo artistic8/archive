@@ -158,6 +158,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win(count 2, $" . $unitBet . ")' => '" . implode(", ", $toWin) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet * count($toWin);
         $totalWin -= 1 * $unitBet * count($toWin);
+        if(isset($officialWin) && in_array($officialWin[0], $toWin)){
+            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
+            $racetext .= "\t\t'22 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
+            $totalWin += ($unitBet / 10) * $winAmount;
+        }
     }
     if(!empty($allValues) && !in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
         $allValues = array_slice($allValues, 0, 6);
@@ -187,11 +192,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $totalRace[$raceNumber] -= $totalBets[$raceNumber];
     $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
-        if(in_array($officialWin[0], $toWin)){
-            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-            $racetext .= "\t\t'22 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-            $totalWin += ($unitBet / 10) * $winAmount;
-        }
         if(!in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
             if(in_array($officialWin[0], $allValues)){
                 $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
