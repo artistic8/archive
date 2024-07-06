@@ -1,5 +1,7 @@
 <?php
 
+if(!isset($argv[1])) die("Race Date Not Entered!!\n");
+
 $raceDate = trim($argv[1]);
 
 if(isset($argv[2])) $revision = trim($argv[2]);
@@ -19,8 +21,6 @@ function combination($p, $n){
     if($n < $p) return 0;
     return factorial($n) / (factorial($p) * factorial($n - $p));
 }
-
-if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
 $totalWin = 0;
@@ -153,6 +153,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    $diff = array_diff($allValues, $winInter);
+    $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     $racetext .= "\t\t'bets' => [\n";
     if(!empty($toWin)){
         $racetext .= "\t\t\t'win(count 2, $" . $unitBet . ")' => '" . implode(", ", $toWin) . "',\n"; 
@@ -175,8 +177,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin += ($unitBet / 10) * $winAmount;
         }
     }
-    $diff = array_diff($allValues, $winInter);
-    $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     if(count($favorites) >= 3 && count($winInter) >= 3 && !in_array(end($favorites), $diff)){
         $racetext .= "\t\t\t'place(end-favorites, $" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;

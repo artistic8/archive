@@ -19,8 +19,8 @@ return [
 		'win inter' => '1, 4',
 		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'bets' => [
 		'diff' => '2, 3, 5, 6, 7, 8, 9, 10',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -42,8 +42,8 @@ return [
 		'win inter' => '',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -65,8 +65,8 @@ return [
 		'win inter' => '1, 2, 3, 4, 9, 10',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'bets' => [
 		'diff' => '5, 6, 7',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -88,8 +88,8 @@ return [
 		'win inter' => '2, 6',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
-		'bets' => [
 		'diff' => '1, 3, 4, 5, 7, 11, 12',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -111,8 +111,8 @@ return [
 		'win inter' => '1, 7, 8, 11',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'bets' => [
 		'diff' => '2, 3, 4, 5, 10',
+		'bets' => [
 			'place(end-favorites, $60)' => '6',
 		],
 		'total bets' => 60,
@@ -136,8 +136,8 @@ return [
 		'win inter' => '1',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'bets' => [
 		'diff' => '2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -159,8 +159,8 @@ return [
 		'win inter' => '10',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'bets' => [
 		'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -182,8 +182,8 @@ return [
 		'win inter' => '3, 4',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'bets' => [
 		'diff' => '1, 2, 5, 6, 7, 8',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -205,8 +205,8 @@ return [
 		'win inter' => '5, 6, 8, 9',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '1, 2, 3, 4, 10, 11',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],

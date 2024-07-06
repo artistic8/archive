@@ -19,8 +19,8 @@ return [
 		'win inter' => '1',
 		'count sets' => 17,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'bets' => [
 		'diff' => '2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -42,8 +42,8 @@ return [
 		'win inter' => '2, 3, 5, 7, 8, 9',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '1, 4, 6, 10, 11',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -65,8 +65,8 @@ return [
 		'win inter' => '',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'bets' => [
 		'diff' => '1, 2, 3, 5, 6, 7',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -88,8 +88,8 @@ return [
 		'win inter' => '4, 5',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'bets' => [
 		'diff' => '1, 2, 3, 6, 7',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -111,8 +111,8 @@ return [
 		'win inter' => '1, 3, 5',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 4, 5',
-		'bets' => [
 		'diff' => '2, 4',
+		'bets' => [
 			'place(end-favorites, $60)' => '7',
 			'1 won(place bet)' => 84,
 		],
@@ -137,8 +137,8 @@ return [
 		'win inter' => '3, 6',
 		'count sets' => 9,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'bets' => [
 		'diff' => '1, 2, 4, 5, 7, 8, 9, 10',
+		'bets' => [
 			'win(wp, 30)' => '1, 5, 9',
 			'2 won(win bet)' => 153,
 			'place(end-wp, $60)' => '9',
@@ -165,8 +165,8 @@ return [
 		'win inter' => '3, 7',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'bets' => [
 		'diff' => '1, 2, 4, 5, 6, 8, 9',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -188,8 +188,8 @@ return [
 		'win inter' => '3, 4, 6, 8, 12',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'bets' => [
 		'diff' => '1, 2, 5, 7',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -211,8 +211,8 @@ return [
 		'win inter' => '1, 5, 6',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '2, 3, 4, 7, 8, 9, 10, 11',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],

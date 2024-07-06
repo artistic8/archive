@@ -18,8 +18,8 @@ return [
 		'win inter' => '1, 2',
 		'count sets' => 0,
 		'allValues' => '',
-		'bets' => [
 		'diff' => '',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -41,8 +41,8 @@ return [
 		'win inter' => '2',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -64,8 +64,8 @@ return [
 		'win inter' => '1, 3, 4, 5, 6, 7, 9, 11',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'bets' => [
 		'diff' => '2',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -87,8 +87,8 @@ return [
 		'win inter' => '',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'bets' => [
 		'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -110,8 +110,8 @@ return [
 		'win inter' => '',
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5',
-		'bets' => [
 		'diff' => '1, 2, 3, 4, 5',
+		'bets' => [
 			'win(wp, 30)' => '1, 2, 3, 4, 5',
 			'2 won(win bet)' => 111,
 		],
@@ -136,8 +136,8 @@ return [
 		'win inter' => '11',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
-		'bets' => [
 		'diff' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -159,10 +159,10 @@ return [
 		'win inter' => '2, 6',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'diff' => '1, 3, 4, 5, 7',
 		'bets' => [
 			'win(allValues, $30)' => '1, 2, 3, 4, 5, 6',
 			'1 won(win bet)' => 132,
-		'diff' => '1, 3, 4, 5',
 		],
 		'total bets' => 180,
 		'total won in race 7' => -48,
@@ -185,8 +185,8 @@ return [
 		'win inter' => '3, 4',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'bets' => [
 		'diff' => '1, 2, 5, 6, 7, 8',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],

@@ -19,8 +19,8 @@ return [
 		'win inter' => '1, 4, 6, 7, 8, 10, 11',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10',
-		'bets' => [
 		'diff' => '2, 3, 5',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -42,8 +42,8 @@ return [
 		'win inter' => '4',
 		'count sets' => 9,
 		'allValues' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '1, 2, 5, 6, 7, 8, 9, 10, 11',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -64,8 +64,8 @@ return [
 		'win inter' => '',
 		'count sets' => 1,
 		'allValues' => '1, 3, 5, 6',
-		'bets' => [
 		'diff' => '1, 3, 5, 6',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -87,8 +87,8 @@ return [
 		'win inter' => '1, 3, 4, 5, 10, 11',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'bets' => [
 		'diff' => '2, 6, 7, 8, 12',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -110,8 +110,8 @@ return [
 		'win inter' => '11',
 		'count sets' => 0,
 		'allValues' => '',
-		'bets' => [
 		'diff' => '',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -133,8 +133,8 @@ return [
 		'win inter' => '1, 3, 6, 7',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'bets' => [
 		'diff' => '2, 4, 5, 8, 9, 10',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -156,8 +156,8 @@ return [
 		'win inter' => '2, 3',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'bets' => [
 		'diff' => '1, 4, 5, 6, 7, 8, 9',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -179,8 +179,8 @@ return [
 		'win inter' => '1, 3, 4',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'bets' => [
 		'diff' => '2, 5, 6, 7, 8',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
@@ -202,8 +202,8 @@ return [
 		'win inter' => '1, 5, 6, 7, 8, 9',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'bets' => [
 		'diff' => '2, 3, 4, 10, 11',
+		'bets' => [
 			'place(end-favorites, $60)' => '6',
 			'1 won(place bet)' => 105,
 		],
@@ -228,8 +228,8 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'bets' => [
 		'diff' => '',
+		'bets' => [
 		],
 		'total bets' => 0,
 	],
