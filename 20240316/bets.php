@@ -16,7 +16,6 @@ return [
 			10 => 21.5,
 			5 => 52,
 		],
-		'first7' => '1, 2, 3, 4, 8, 9, 10',
 		'intersections 1' => '1',//count: 1
 		'intersections 2' => '1',//count: 1
 		'intersections 3' => '1',//count: 1
@@ -27,6 +26,8 @@ return [
 		'win inter' => '1, 3',
 		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'2' => [
@@ -44,7 +45,6 @@ return [
 			10 => 27.5,
 			3 => 34.5,
 		],
-		'first7' => '1, 3, 4, 5, 6, 9, 10',
 		'intersections 1' => '',//count: 0
 		'intersections 3' => '',//count: 0
 		'intersections 4' => '',//count: 0
@@ -55,6 +55,8 @@ return [
 		'win inter' => '4, 9',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'3' => [
@@ -72,7 +74,6 @@ return [
 			4 => 34,
 			1 => 18,
 		],
-		'first7' => '1, 2, 3, 4, 7, 8, 9',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
@@ -83,6 +84,8 @@ return [
 		'win inter' => '1, 3',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'4' => [
@@ -100,7 +103,6 @@ return [
 			5 => 152.5,
 			1 => 13,
 		],
-		'first7' => '1, 2, 3, 6, 8, 10, 11',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 3' => '',//count: 0
@@ -111,6 +113,8 @@ return [
 		'win inter' => '11',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'5' => [
@@ -128,7 +132,6 @@ return [
 			11 => 40,
 			10 => 18,
 		],
-		'first7' => '1, 2, 4, 7, 10, 11, 12',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 4' => '',//count: 0
@@ -139,6 +142,8 @@ return [
 		'win inter' => '',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'6' => [
@@ -156,7 +161,6 @@ return [
 			11 => 32.5,
 			12 => 20,
 		],
-		'first7' => '1, 2, 6, 9, 10, 11, 12',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 6' => '',//count: 0
@@ -167,6 +171,8 @@ return [
 		'win inter' => '',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'7' => [
@@ -184,7 +190,6 @@ return [
 			3 => 19,
 			6 => 25,
 		],
-		'first7' => '1, 3, 4, 6, 7, 10, 11',
 		'intersections 1' => '',//count: 0
 		'intersections 3' => '',//count: 0
 		'intersections 4' => '',//count: 0
@@ -195,6 +200,8 @@ return [
 		'win inter' => '',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'8' => [
@@ -212,7 +219,6 @@ return [
 			4 => 24.5,
 			1 => 30,
 		],
-		'first7' => '1, 2, 5, 7, 10, 12, 14',
 		'intersections 1' => '',//count: 0
 		'intersections 2' => '',//count: 0
 		'intersections 5' => '',//count: 0
@@ -223,9 +229,11 @@ return [
 		'win inter' => '1',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'win(wp, 30)' => '1, 5, 7',
-		'2 won(win bet)' => 142.5,
-		'place(end-wp, $60)' => '7',
+		'bets' => [
+			'win(wp, 30)' => '1, 5, 7',
+			'2 won(win bet)' => 142.5,
+			'place(end-wp, $60)' => '7',
+		],
 		'total bets' => 150,
 		'total won in race 8' => -7.5,
 	],
@@ -244,7 +252,6 @@ return [
 			6 => 15.5,
 			8 => 22,
 		],
-		'first7' => '2, 5, 6, 7, 8, 9, 10',
 		'intersections 2' => '',//count: 0
 		'intersections 5' => '',//count: 0
 		'intersections 6' => '',//count: 0
@@ -255,6 +262,8 @@ return [
 		'win inter' => '5',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 	'10' => [
@@ -272,7 +281,6 @@ return [
 			9 => 17.5,
 			4 => 31.5,
 		],
-		'first7' => '1, 2, 3, 6, 7, 9, 14',
 		'intersections 1' => '10',//count: 1
 		'intersections 2' => '10',//count: 1
 		'intersections 3' => '10',//count: 1
@@ -283,6 +291,8 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
+		'bets' => [
+		],
 		'total bets' => 0,
 	],
 ];
