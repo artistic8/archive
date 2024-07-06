@@ -106,7 +106,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         foreach($first7 as $horse){
             if($horse != $F) $intersections[$F] = array_intersect($intersections[$F], $history[$raceNumber][$horse]["win"]);
         }
-        $racetext .= "\t\t'intersections $F' => '" . implode(", ", $intersections[$F]) . "',//count: " . count($intersections[$F]) . "\n";
+        // $racetext .= "\t\t'intersections $F' => '" . implode(", ", $intersections[$F]) . "',//count: " . count($intersections[$F]) . "\n";
         if(count($intersections[$F]) === 2) $toWin[] = $F;
     }
     $firstSet = true;
@@ -121,7 +121,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     sort($winInter);
-    $winInter = array_intersect($favorites, $winInter);
+    // $winInter = array_intersect($favorites, $winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $unitBet = 30;
     $allValues = [];
@@ -175,7 +175,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin += ($unitBet / 10) * $winAmount;
         }
     }
-    if(count($favorites) >= 3 && count($winInter) >= 3){
+    $diff = array_diff($allValues, $winInter);
+    $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+    if(count($favorites) >= 3 && count($winInter) >= 3 && !in_array(end($favorites), $diff)){
         $racetext .= "\t\t\t'place(end-favorites, $" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;
         $totalPlace -= 2 * $unitBet;
