@@ -185,11 +185,8 @@ return [
 		'allValues' => '3, 4, 5, 6, 7, 8',
 		'diff' => '4, 5, 7',
 		'bets' => [
-			'win(wp, 30)' => '1, 2, 3, 4, 5',
-			'2 won(win bet)' => 267,
 		],
-		'total bets' => 150,
-		'total won in race 8' => 117,
+		'total bets' => 0,
 	],
 	'9' => [
 		/**
@@ -219,8 +216,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -172.5
+//total win: -289.5
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: -172.5
+//total: -289.5
