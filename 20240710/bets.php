@@ -19,7 +19,6 @@ return [
 		'win inter' => '1, 3, 4, 6, 7, 8, 10',
 		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'diff' => '2, 5, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -42,7 +41,6 @@ return [
 		'win inter' => '6, 7',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'diff' => '1, 2, 3, 4, 5, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -65,7 +63,6 @@ return [
 		'win inter' => '1, 3, 5',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'diff' => '2, 6, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -88,7 +85,6 @@ return [
 		'win inter' => '1, 11',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'diff' => '2, 3, 4, 5, 6, 7, 8, 10, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -111,7 +107,6 @@ return [
 		'win inter' => '2',
 		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'diff' => '1, 3, 4, 5, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -134,11 +129,10 @@ return [
 		'win inter' => '1, 2, 5, 6',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'diff' => '3, 4, 7, 8, 9, 10',
 		'bets' => [
-			'win(count 2, $30)' => '1, 2, 3, 5, 6, 8, 9',
+			'win(count , $30)' => '1, 2, 3, 5, 6, 8, 9',
 			'22 won(win bet)' => 343.5,
-			'place(end-favorites, $60)' => '6',
+			'place(end-favorites , $60)' => '6',
 			'1 won(place bet)' => 129,
 		],
 		'total bets' => 270,
@@ -162,9 +156,8 @@ return [
 		'win inter' => '2, 3, 10',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff' => '1, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'place(end-favorites, $60)' => '10',
+			'place(end-favorites , $60)' => '10',
 		],
 		'total bets' => 60,
 		'total won in race 7' => -60,
@@ -187,7 +180,6 @@ return [
 		'win inter' => '3',
 		'count sets' => 8,
 		'allValues' => '1, 3, 4, 5, 7, 8',
-		'diff' => '1, 4, 5, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -210,7 +202,6 @@ return [
 		'win inter' => '3, 5',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'diff' => '1, 2, 4, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
