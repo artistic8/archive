@@ -185,10 +185,10 @@ return [
 			4 => 20,
 			10 => 34.5,
 		],
-		'win inter' => '3, 4, 6, 8, 12',
-		'count sets' => 16,
+		'win inter' => '3, 4, 5, 6, 8, 12',
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'diff' => '1, 2, 5, 7',
+		'diff' => '1, 2, 7',
 		'bets' => [
 		],
 		'total bets' => 0,

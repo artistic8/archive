@@ -183,7 +183,7 @@ return [
 			1 => 18.5,
 		],
 		'win inter' => '8, 12',
-		'count sets' => 16,
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [

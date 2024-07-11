@@ -180,7 +180,7 @@ return [
 			8 => 30,
 		],
 		'win inter' => '1, 3, 4, 8',
-		'count sets' => 16,
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff' => '2, 5, 6, 7',
 		'bets' => [

@@ -178,7 +178,7 @@ return [
 			7 => 17,
 		],
 		'win inter' => '2, 4, 8, 12',
-		'count sets' => 16,
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff' => '1, 3, 5, 6, 7',
 		'bets' => [

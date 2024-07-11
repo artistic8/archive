@@ -176,10 +176,10 @@ return [
 			11 => 58,
 			8 => 30,
 		],
-		'win inter' => '1, 3, 4, 8',
-		'count sets' => 16,
+		'win inter' => '1, 3, 4, 5, 8',
+		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'diff' => '2, 5, 6, 7',
+		'diff' => '2, 6, 7',
 		'bets' => [
 			'place(end-favorites, $60)' => '8',
 			'1 won(place bet)' => 180,
