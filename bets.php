@@ -171,6 +171,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $wp = array_intersect($allValues, $favorites);
     if(count($wp) === 3){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . 2 * $unitBet . ")' => '" . end($wp) . "',\n"; 
+        if(count($favorites) >= 3 && count($winInter) >= 3 && end($wp) == end($favorites)) {
+            $racetext .= "\t\t\t'sure bet' => 'sure place " . end($wp) . "',\n" ;
+        }
         $totalBets[$raceNumber] += 2 * $unitBet;
         $totalPlace -= 2 * $unitBet;
         if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){

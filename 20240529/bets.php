@@ -172,6 +172,7 @@ return [
 		'bets' => [
 			'place(end-favorites , $60)' => '5',
 			'place(end-wp , $60)' => '5',
+			'sure bet' => 'sure place 5',
 		],
 		'total bets' => 120,
 		'total won in race 8' => -120,
