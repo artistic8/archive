@@ -131,6 +131,7 @@ return [
 			'22 won(win bet)' => 343.5,
 			'place(end-favorites , $60)' => '6',
 			'1 won(place bet)' => 129,
+			'super sure bet' => 'super sure place 6',
 		],
 		'total bets' => 270,
 		'total won in race 6' => 202.5,

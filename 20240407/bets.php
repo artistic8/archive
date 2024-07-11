@@ -43,7 +43,6 @@ return [
 			'place(end-favorites , $60)' => '10',
 			'1 won(place bet)' => 210,
 			'place(end-wp , $60)' => '10',
-			'sure bet' => 'sure place 10',
 			'2 won(place bet)' => 210,
 		],
 		'total bets' => 120,
@@ -133,7 +132,6 @@ return [
 			'place(end-favorites , $60)' => '4',
 			'1 won(place bet)' => 75,
 			'place(end-wp , $60)' => '4',
-			'sure bet' => 'sure place 4',
 			'2 won(place bet)' => 75,
 		],
 		'total bets' => 120,
@@ -180,7 +178,6 @@ return [
 		'bets' => [
 			'place(end-favorites , $60)' => '7',
 			'place(end-wp , $60)' => '7',
-			'sure bet' => 'sure place 7',
 		],
 		'total bets' => 120,
 		'total won in race 8' => -120,
