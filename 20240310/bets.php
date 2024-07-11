@@ -17,7 +17,6 @@ return [
 			5 => 40.5,
 		],
 		'win inter' => '',
-		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -39,13 +38,11 @@ return [
 			14 => 31,
 		],
 		'win inter' => '4, 7, 9, 10',
-		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites , $60)' => '5',
 			'1 won(place bet)' => 108,
 			'place(end-wp , $60)' => '5',
-		//SURE SHIT 
 			'2 won(place bet)' => 108,
 		],
 		'total bets' => 120,
@@ -67,7 +64,6 @@ return [
 			4 => 32,
 		],
 		'win inter' => '2, 3, 7, 9, 11',
-		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 		],
@@ -89,7 +85,6 @@ return [
 			6 => 20.5,
 		],
 		'win inter' => '1, 2, 4, 5, 6',
-		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 		],
@@ -111,7 +106,6 @@ return [
 			2 => 36,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7',
-		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'bets' => [
 		],
@@ -133,7 +127,6 @@ return [
 			3 => 15.5,
 		],
 		'win inter' => '1, 3, 9',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -155,7 +148,6 @@ return [
 			9 => 41,
 		],
 		'win inter' => '1, 3, 10',
-		'count sets' => 12,
 		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -177,13 +169,11 @@ return [
 			4 => 16,
 		],
 		'win inter' => '4, 5, 6, 8, 12',
-		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-favorites , $60)' => '8',
 			'1 won(place bet)' => 120,
 			'place(end-wp , $60)' => '8',
-		//SURE SHIT 
 			'2 won(place bet)' => 120,
 		],
 		'total bets' => 120,
@@ -205,13 +195,11 @@ return [
 			2 => 23.5,
 		],
 		'win inter' => '5, 8, 9, 10',
-		'count sets' => 20,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites , $60)' => '5',
 			'1 won(place bet)' => 282,
 			'place(end-wp , $60)' => '5',
-		//SURE SHIT 
 			'2 won(place bet)' => 282,
 		],
 		'total bets' => 120,
@@ -233,7 +221,6 @@ return [
 			11 => 19,
 		],
 		'win inter' => '1',
-		'count sets' => 0,
 		'allValues' => '',
 		'bets' => [
 		],

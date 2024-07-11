@@ -17,13 +17,11 @@ return [
 			7 => 20.5,
 		],
 		'win inter' => '1, 4, 8, 10',
-		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $60)' => '10',
 			'1 won(place bet)' => 93,
 			'place(end-wp , $60)' => '10',
-		//SURE SHIT 
 			'2 won(place bet)' => 93,
 		],
 		'total bets' => 120,
@@ -45,7 +43,6 @@ return [
 			5 => 17,
 		],
 		'win inter' => '5, 7',
-		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-wp , $60)' => '10',
@@ -69,7 +66,6 @@ return [
 			8 => 80,
 		],
 		'win inter' => '2, 4, 9',
-		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 			'place(end-favorites , $60)' => '5',
@@ -93,7 +89,6 @@ return [
 			1 => 18.5,
 		],
 		'win inter' => '',
-		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 		],
@@ -115,7 +110,6 @@ return [
 			8 => 32,
 		],
 		'win inter' => '',
-		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'bets' => [
 		],
@@ -137,13 +131,11 @@ return [
 			3 => 44.5,
 		],
 		'win inter' => '1, 5, 6, 8',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $60)' => '8',
 			'1 won(place bet)' => 108,
 			'place(end-wp , $60)' => '8',
-		//SURE SHIT 
 			'2 won(place bet)' => 108,
 		],
 		'total bets' => 120,
@@ -165,7 +157,6 @@ return [
 			12 => 27,
 		],
 		'win inter' => '',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -187,7 +178,6 @@ return [
 			1 => 22,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 8, 11, 12',
-		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 			'win(count , $30)' => '1, 2, 3, 4, 6, 7, 12',
@@ -212,7 +202,6 @@ return [
 			2 => 41.5,
 		],
 		'win inter' => '1, 4, 5, 6, 7, 8, 9',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -234,7 +223,6 @@ return [
 			3 => 10.1,
 		],
 		'win inter' => '',
-		'count sets' => 0,
 		'allValues' => '',
 		'bets' => [
 		],

@@ -16,7 +16,6 @@ return [
 			5 => 16.5,
 		],
 		'win inter' => '1, 2',
-		'count sets' => 0,
 		'allValues' => '',
 		'bets' => [
 		],
@@ -38,7 +37,6 @@ return [
 			4 => 33.5,
 		],
 		'win inter' => '2',
-		'count sets' => 11,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-wp , $60)' => '9',
@@ -63,7 +61,6 @@ return [
 			10 => 15.5,
 		],
 		'win inter' => '1, 3, 4, 5, 6, 7, 9, 11',
-		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 		],
@@ -85,7 +82,6 @@ return [
 			11 => 56.5,
 		],
 		'win inter' => '',
-		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-wp , $60)' => '7',
@@ -109,7 +105,6 @@ return [
 			9 => 24,
 		],
 		'win inter' => '',
-		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5',
 		'bets' => [
 		],
@@ -131,7 +126,6 @@ return [
 			13 => 28.5,
 		],
 		'win inter' => '11',
-		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -153,7 +147,6 @@ return [
 			6 => 41.5,
 		],
 		'win inter' => '2, 6',
-		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
 		],
@@ -175,12 +168,10 @@ return [
 			4 => 19,
 		],
 		'win inter' => '3, 4, 8',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-favorites , $60)' => '5',
 			'place(end-wp , $60)' => '5',
-		//SURE SHIT 
 		],
 		'total bets' => 120,
 		'total won in race 8' => -120,

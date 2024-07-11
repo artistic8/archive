@@ -17,7 +17,6 @@ return [
 			2 => 22,
 		],
 		'win inter' => '',
-		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-wp , $60)' => '7',
@@ -41,7 +40,6 @@ return [
 			11 => 13,
 		],
 		'win inter' => '',
-		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -63,7 +61,6 @@ return [
 			4 => 20,
 		],
 		'win inter' => '7, 9',
-		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 		],
@@ -85,7 +82,6 @@ return [
 			2 => 20.5,
 		],
 		'win inter' => '3, 6',
-		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-wp , $60)' => '12',
@@ -109,7 +105,6 @@ return [
 			6 => 15,
 		],
 		'win inter' => '1, 7',
-		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'bets' => [
 		],
@@ -131,7 +126,6 @@ return [
 			7 => 17.5,
 		],
 		'win inter' => '1',
-		'count sets' => 5,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-wp , $60)' => '8',
@@ -156,7 +150,6 @@ return [
 			10 => 31,
 		],
 		'win inter' => '6',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -178,7 +171,6 @@ return [
 			7 => 17,
 		],
 		'win inter' => '2, 4, 8, 12',
-		'count sets' => 23,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-favorites , $60)' => '12',
@@ -202,7 +194,6 @@ return [
 			1 => 23,
 		],
 		'win inter' => '1, 4, 5, 6, 8, 9',
-		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -224,7 +215,6 @@ return [
 			1 => 26,
 		],
 		'win inter' => '3, 4',
-		'count sets' => 0,
 		'allValues' => '',
 		'bets' => [
 		],
@@ -246,7 +236,6 @@ return [
 			8 => 56.5,
 		],
 		'win inter' => '',
-		'count sets' => 0,
 		'allValues' => '',
 		'bets' => [
 		],
