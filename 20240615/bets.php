@@ -42,12 +42,10 @@ return [
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'win(wp , 30)' => '3, 5, 6',
-			'2 won(win bet)' => 168,
 			'place(end-wp , $60)' => '6',
 		],
-		'total bets' => 150,
-		'total won in race 2' => 18,
+		'total bets' => 60,
+		'total won in race 2' => -60,
 	],
 	'3' => [
 		/**
@@ -162,8 +160,10 @@ return [
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
+			'place(end-wp , $60)' => '9',
 		],
-		'total bets' => 0,
+		'total bets' => 60,
+		'total won in race 7' => -60,
 	],
 	'8' => [
 		/**
@@ -213,13 +213,12 @@ return [
 			'22 won(win bet)' => 121.5,
 			'place(end-favorites , $60)' => '6',
 			'1 won(place bet)' => 87,
-			'win(wp , 30)' => '1, 3, 6',
-			'2 won(win bet)' => 121.5,
 			'place(end-wp , $60)' => '6',
+		//SURE SHIT 
 			'2 won(place bet)' => 87,
 		],
-		'total bets' => 420,
-		'total won in race 9' => -3,
+		'total bets' => 330,
+		'total won in race 9' => -34.5,
 	],
 	'10' => [
 		/**
@@ -267,8 +266,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -195
-//total place: 150
+//total win: -304.5
+//total place: 90
 //total qin: 0
 //total trio: 0
-//total: -45
+//total: -214.5

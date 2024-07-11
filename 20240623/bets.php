@@ -179,13 +179,12 @@ return [
 		'bets' => [
 			'place(end-favorites , $60)' => '5',
 			'1 won(place bet)' => 78,
-			'win(wp , 30)' => '1, 3, 5',
-			'2 won(win bet)' => 93,
 			'place(end-wp , $60)' => '5',
+		//SURE SHIT 
 			'2 won(place bet)' => 78,
 		],
-		'total bets' => 210,
-		'total won in race 8' => 39,
+		'total bets' => 120,
+		'total won in race 8' => 36,
 	],
 	'9' => [
 		/**
@@ -255,8 +254,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: 55.5
+//total win: 52.5
 //total place: 36
 //total qin: 0
 //total trio: 0
-//total: 91.5
+//total: 88.5
