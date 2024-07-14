@@ -170,7 +170,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $wp = array_intersect($allValues, $favorites);
-    if(count($wp) === 3 && count($winInter) > 1 && !empty(array_intersect($favorites, $winInter))){
+    if(count($wp) === 3){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . 2 * $unitBet . ")' => '" . end($wp) . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;
         $totalPlace -= 2 * $unitBet;
