@@ -151,6 +151,7 @@ return [
 			'win(count , $30)' => '1, 3, 4, 5, 6, 7, 8, 10',
 			'22 won(win bet)' => 406.5,
 			'place(end-favorites , $60)' => '6',
+			'place/win/qin/trio ' => '1, 2, 3, 10',
 		],
 		'total bets' => 300,
 		'total won in race 7' => 106.5,

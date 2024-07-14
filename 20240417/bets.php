@@ -125,6 +125,7 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7, 9, 10',
 		'bets' => [
 			'place(end-favorites , $60)' => '10',
+			'place/win/qin/trio ' => '1, 3, 6',
 		],
 		'total bets' => 60,
 		'total won in race 6' => -60,

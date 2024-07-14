@@ -85,10 +85,8 @@ return [
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
-			'place(end-wp , $60)' => '11',
 		],
-		'total bets' => 60,
-		'total won in race 4' => -60,
+		'total bets' => 0,
 	],
 	'5' => [
 		/**
@@ -204,7 +202,7 @@ return [
 ];
 //total wp: 0
 //total win: 0
-//total place: 195
+//total place: 255
 //total qin: 0
 //total trio: 0
-//total: 195
+//total: 255

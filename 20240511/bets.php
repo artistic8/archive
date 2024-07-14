@@ -83,10 +83,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $60)' => '8',
-			'place(end-wp , $60)' => '8',
 		],
-		'total bets' => 120,
-		'total won in race 4' => -120,
+		'total bets' => 60,
+		'total won in race 4' => -60,
 	],
 	'5' => [
 		/**
@@ -217,7 +216,7 @@ return [
 ];
 //total wp: 0
 //total win: 0
-//total place: -120
+//total place: -60
 //total qin: 0
 //total trio: 0
-//total: -120
+//total: -60

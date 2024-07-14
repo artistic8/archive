@@ -20,6 +20,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $60)' => '7',
+			'place/win/qin/trio ' => '1, 5, 6',
 			'place(end-wp , $60)' => '7',
 		],
 		'total bets' => 120,
@@ -128,6 +129,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $60)' => '9',
+			'place/win/qin/trio ' => '1, 2, 6, 8, 11',
 			'1 won(place bet)' => 90,
 			'place(end-wp , $60)' => '9',
 			'2 won(place bet)' => 90,
@@ -177,6 +179,7 @@ return [
 			'win(count , $30)' => '1, 2, 3, 4, 5, 7, 8',
 			'22 won(win bet)' => 261,
 			'place(end-favorites , $60)' => '7',
+			'place/win/qin/trio ' => '3, 4, 6, 12',
 		],
 		'total bets' => 270,
 		'total won in race 8' => -9,
