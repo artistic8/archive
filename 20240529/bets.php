@@ -105,7 +105,7 @@ return [
 			9 => 24,
 		],
 		'win inter' => '',
-		'allValues' => '1, 2, 3, 4, 5',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,

@@ -106,13 +106,15 @@ return [
 			7 => 35.5,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7',
-		'allValues' => '1, 2, 3, 4, 5, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
+			'win(count , $30)' => '1, 2, 3, 4, 5, 7, 8',
+			'22 won(win bet)' => 210,
 			'place(end-favorites , $60)' => '4',
 			'place(end-wp , $60)' => '4',
 			'super sure bet' => 'super sure place 4',
 		],
-		'total bets' => 120,
+		'total bets' => 330,
 		'total won in race 5' => -120,
 	],
 	'6' => [

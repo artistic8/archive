@@ -58,7 +58,7 @@ return [
 			1 => 49,
 			5 => 21,
 		],
-		'win inter' => '1, 2, 3, 4, 9',
+		'win inter' => '1, 2, 3, 4, 7, 9',
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 		],
@@ -103,7 +103,7 @@ return [
 			7 => 20.5,
 		],
 		'win inter' => '1',
-		'allValues' => '1, 2, 3, 4, 5, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 			'place(end-wp , $60)' => '11',
 			'2 won(place bet)' => 141,
@@ -195,11 +195,11 @@ return [
 			9 => 16,
 			7 => 44,
 		],
-		'win inter' => '3, 4, 8, 9, 10',
+		'win inter' => '3, 4, 8, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites , $60)' => '9',
-			'place/win/qin/trio ' => '3, 4, 8, 9, 10',
+			'place/win/qin/trio ' => '3, 4, 8, 9, 10, 12',
 			'1 won(place bet)' => 96,
 			'place(end-wp , $60)' => '9',
 			'2 won(place bet)' => 96,
