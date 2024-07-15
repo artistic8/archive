@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '1, 4, 6, 7, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'count' => '2',
+		'count' => '4, 2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -40,7 +40,7 @@ return [
 		],
 		'win inter' => '7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'count' => '5',
+		'count' => '1, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -62,7 +62,7 @@ return [
 		],
 		'win inter' => '11',
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'count' => '1',
+		'count' => '0, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -84,7 +84,7 @@ return [
 		],
 		'win inter' => '1, 2, 5, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'count' => '2',
+		'count' => '5, 2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -106,7 +106,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 7, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
-		'count' => '1',
+		'count' => '6, 1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -128,13 +128,10 @@ return [
 		],
 		'win inter' => '1, 2, 3, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'count' => '1',
+		'count' => '3, 2',
 		'bets' => [
-			'win(count , $100)' => '2, 3, 5, 7, 8, 9, 12',
-			'22 won(win bet)' => 1300,
 		],
-		'total bets' => 700,
-		'total won in race 6' => 600,
+		'total bets' => 0,
 	],
 	'7' => [
 		/**
@@ -153,7 +150,7 @@ return [
 		],
 		'win inter' => '6, 10, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'count' => '1',
+		'count' => '1, 2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -175,7 +172,7 @@ return [
 		],
 		'win inter' => '4, 5, 6, 8, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'count' => '2',
+		'count' => '4, 2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -197,15 +194,15 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'count' => '5',
+		'count' => '0, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
 //total wp: 0
-//total win: 600
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
-//total: 600
+//total: 0

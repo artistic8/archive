@@ -18,7 +18,7 @@ return [
 		],
 		'win inter' => '1, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'count' => '3',
+		'count' => '3, 3',
 		'bets' => [
 			'place(end-favorites , $200)' => '8',
 			'place/win/qin/trio ' => '1, 5, 8',
@@ -48,7 +48,7 @@ return [
 		],
 		'win inter' => '2, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'count' => '4',
+		'count' => '2, 4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -70,7 +70,7 @@ return [
 		],
 		'win inter' => '2, 5',
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'count' => '1',
+		'count' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -92,7 +92,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'count' => '6',
+		'count' => '0, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -114,7 +114,7 @@ return [
 		],
 		'win inter' => '2, 3, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
-		'count' => '2',
+		'count' => '3, 3',
 		'bets' => [
 			'place(end-favorites , $200)' => '12',
 		],
@@ -138,7 +138,7 @@ return [
 		],
 		'win inter' => '1, 3, 6, 9',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
-		'count' => '2',
+		'count' => '4, 3',
 		'bets' => [
 			'place(end-favorites , $200)' => '9',
 			'place/win/qin/trio ' => '1, 3, 6, 9',
@@ -165,7 +165,7 @@ return [
 		],
 		'win inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'count' => '3',
+		'count' => '1, 4',
 		'bets' => [
 			'place(end-wp , $200)' => '6',
 		],
@@ -189,7 +189,7 @@ return [
 		],
 		'win inter' => '3, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'count' => '2',
+		'count' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -211,7 +211,7 @@ return [
 		],
 		'win inter' => '5, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'count' => '4',
+		'count' => '1, 4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -233,7 +233,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '',
-		'count' => '0',
+		'count' => '0, 2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -255,7 +255,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '',
-		'count' => '0',
+		'count' => '0, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
