@@ -60,10 +60,10 @@ return [
 		'win inter' => '',
 		'allValues' => '1, 3, 5, 6',
 		'bets' => [
-			'place(end-wp , $60)' => '6',
+			'place(end-wp , $200)' => '6',
 		],
-		'total bets' => 60,
-		'total won in race 3' => -60,
+		'total bets' => 200,
+		'total won in race 3' => -200,
 	],
 	'4' => [
 		/**
@@ -146,11 +146,11 @@ return [
 		'win inter' => '2, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'place(end-wp , $60)' => '8',
-			'2 won(place bet)' => 87,
+			'place(end-wp , $200)' => '8',
+			'2 won(place bet)' => 290,
 		],
-		'total bets' => 60,
-		'total won in race 7' => 27,
+		'total bets' => 200,
+		'total won in race 7' => 90,
 	],
 	'8' => [
 		/**
@@ -170,14 +170,15 @@ return [
 		'win inter' => '1, 3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
-			'place(end-favorites , $60)' => '8',
+			'place(end-favorites , $200)' => '8',
 			'place/win/qin/trio ' => '1, 3, 4, 5, 8',
-			'1 won(place bet)' => 180,
-			'place(end-wp , $60)' => '8',
-			'2 won(place bet)' => 180,
+			'3 won(place bet)' => 300,
+			'1 won(place bet)' => 600,
+			'place(end-wp , $200)' => '8',
+			'2 won(place bet)' => 600,
 		],
-		'total bets' => 120,
-		'total won in race 8' => 240,
+		'total bets' => 900,
+		'total won in race 8' => 600,
 	],
 	'9' => [
 		/**
@@ -197,15 +198,15 @@ return [
 		'win inter' => '1, 5, 6, 7, 8, 9, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'win(count , $30)' => '1, 3, 4, 5, 6, 9, 11',
-			'22 won(win bet)' => 78,
-			'place(end-favorites , $60)' => '6',
-			'1 won(place bet)' => 105,
-			'place(end-wp , $60)' => '6',
-			'2 won(place bet)' => 105,
+			'win(count , $100)' => '1, 3, 4, 5, 6, 9, 11',
+			'22 won(win bet)' => 260,
+			'place(end-favorites , $200)' => '6',
+			'1 won(place bet)' => 350,
+			'place(end-wp , $200)' => '6',
+			'2 won(place bet)' => 350,
 		],
-		'total bets' => 330,
-		'total won in race 9' => -42,
+		'total bets' => 1100,
+		'total won in race 9' => -140,
 	],
 	'10' => [
 		/**
@@ -230,8 +231,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -132
-//total place: 297
+//total win: -440
+//total place: 790
 //total qin: 0
 //total trio: 0
-//total: 165
+//total: 350

@@ -40,11 +40,11 @@ return [
 		'win inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'place(end-wp , $60)' => '10',
-			'2 won(place bet)' => 69,
+			'place(end-wp , $200)' => '10',
+			'2 won(place bet)' => 230,
 		],
-		'total bets' => 60,
-		'total won in race 2' => 9,
+		'total bets' => 200,
+		'total won in race 2' => 30,
 	],
 	'3' => [
 		/**
@@ -64,10 +64,10 @@ return [
 		'win inter' => '2, 3',
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
-			'place(end-wp , $60)' => '6',
+			'place(end-wp , $200)' => '6',
 		],
-		'total bets' => 60,
-		'total won in race 3' => -60,
+		'total bets' => 200,
+		'total won in race 3' => -200,
 	],
 	'4' => [
 		/**
@@ -129,10 +129,10 @@ return [
 		'win inter' => '1, 3, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
-			'place(end-favorites , $60)' => '10',
+			'place(end-favorites , $200)' => '10',
 		],
-		'total bets' => 60,
-		'total won in race 6' => -60,
+		'total bets' => 200,
+		'total won in race 6' => -200,
 	],
 	'7' => [
 		/**
@@ -173,10 +173,10 @@ return [
 		'win inter' => '4, 8, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
-			'place(end-favorites , $60)' => '7',
+			'place(end-favorites , $200)' => '7',
 		],
-		'total bets' => 60,
-		'total won in race 8' => -60,
+		'total bets' => 200,
+		'total won in race 8' => -200,
 	],
 	'9' => [
 		/**
@@ -196,18 +196,18 @@ return [
 		'win inter' => '1, 5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'place(end-favorites , $60)' => '7',
-			'1 won(place bet)' => 123,
-			'place(end-wp , $60)' => '7',
-			'2 won(place bet)' => 123,
+			'place(end-favorites , $200)' => '7',
+			'1 won(place bet)' => 410,
+			'place(end-wp , $200)' => '7',
+			'2 won(place bet)' => 410,
 		],
-		'total bets' => 120,
-		'total won in race 9' => 126,
+		'total bets' => 400,
+		'total won in race 9' => 420,
 	],
 ];
 //total wp: 0
 //total win: 0
-//total place: -45
+//total place: -150
 //total qin: 0
 //total trio: 0
-//total: -45
+//total: -150
