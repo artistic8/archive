@@ -164,14 +164,23 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t\t'place/win/qin/trio $revision' => '" . implode(", ", $winInter) . "',\n"; 
             $totalBets[$raceNumber] += $unitBet * count($winInter);
             $totalPlace -= $unitBet * count($winInter);
-            if(isset($officialWin) && !empty(array_intersect($winInter, array_slice($officialWin, 0, 3)))){
-                $selected = array_intersect($winInter, array_slice($officialWin, 0, 3));
-                foreach($selected as $placed){
-                    if(isset($placeAmount[$placed])){
-                        $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[$placed];
-                        $racetext .= "\t\t\t'3 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[$placed] . ",\n";
-                        $totalPlace += 1/10 * $unitBet * $placeAmount[$placed];
+            $totalBets[$raceNumber] += 10 * combination(2, count($winInter));
+            $totalQin -= 10 * combination(2, count($winInter));
+            if(isset($officialWin)){
+                if(!empty(array_intersect($winInter, array_slice($officialWin, 0, 3)))){
+                    $selected = array_intersect($winInter, array_slice($officialWin, 0, 3));
+                    foreach($selected as $placed){
+                        if(isset($placeAmount[$placed])){
+                            $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[$placed];
+                            $racetext .= "\t\t\t'3 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[$placed] . ",\n";
+                            $totalPlace += 1/10 * $unitBet * $placeAmount[$placed];
+                        }
                     }
+                }
+                if(!empty(array_intersect($winInter, array_slice($officialWin, 0, 2)))){
+                    $totalRace[$raceNumber] += $qinAmount;
+                    $racetext .= "\t\t\t'3 won(place bet)' => " . $qinAmount . ",\n";
+                    $totalQin +=$qinAmount;
                 }
             }
         }

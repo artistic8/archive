@@ -69,10 +69,11 @@ return [
 			'3 won(place bet)' => 225,
 			'3 won(place bet)' => 200,
 			'3 won(place bet)' => 1130,
+			'3 won(place bet)' => 199,
 			'1 won(place bet)' => 400,
 		],
-		'total bets' => 600,
-		'total won in race 3' => 1355,
+		'total bets' => 660,
+		'total won in race 3' => 1494,
 	],
 	'4' => [
 		/**
@@ -246,6 +247,6 @@ return [
 //total wp: 0
 //total win: 0
 //total place: 1555
-//total qin: 0
+//total qin: 139
 //total trio: 0
-//total: 1555
+//total: 1694

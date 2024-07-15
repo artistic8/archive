@@ -180,9 +180,10 @@ return [
 			'place(end-favorites , $200)' => '4',
 			'place/win/qin/trio ' => '3, 4, 8',
 			'3 won(place bet)' => 185,
+			'3 won(place bet)' => 282.5,
 		],
-		'total bets' => 500,
-		'total won in race 8' => -315,
+		'total bets' => 530,
+		'total won in race 8' => -62.5,
 	],
 	'9' => [
 		/**
@@ -209,6 +210,6 @@ return [
 //total wp: 0
 //total win: 0
 //total place: -595
-//total qin: 0
+//total qin: 252.5
 //total trio: 0
-//total: -595
+//total: -342.5
