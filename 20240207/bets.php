@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1, 6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'count' => '3',
 		'bets' => [
 			'place(end-favorites , $200)' => '7',
 			'place/win/qin/trio ' => '1, 6, 11',
@@ -25,8 +26,8 @@ return [
 			'place(end-wp , $200)' => '7',
 			'2 won(place bet)' => 390,
 		],
-		'total bets' => 730,
-		'total won in race 1' => 50,
+		'total bets' => 740,
+		'total won in race 1' => 40,
 	],
 	'2' => [
 		/**
@@ -45,6 +46,7 @@ return [
 		],
 		'win inter' => '2, 4, 9',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11',
+		'count' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -66,6 +68,7 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5, 6, 7, 9, 11',
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'count' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -87,6 +90,7 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'count' => '3',
 		'bets' => [
 			'place(end-wp , $200)' => '11',
 		],
@@ -110,6 +114,7 @@ return [
 		],
 		'win inter' => '1, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'count' => '3',
 		'bets' => [
 			'place(end-wp , $200)' => '7',
 		],
@@ -133,6 +138,7 @@ return [
 		],
 		'win inter' => '5, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'count' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -154,6 +160,7 @@ return [
 		],
 		'win inter' => '1, 2, 5, 7, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'count' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -175,6 +182,7 @@ return [
 		],
 		'win inter' => '3, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'count' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -196,6 +204,7 @@ return [
 		],
 		'win inter' => '1, 3, 5, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'count' => '3',
 		'bets' => [
 			'place(end-favorites , $200)' => '5',
 			'1 won(place bet)' => 530,
@@ -211,5 +220,5 @@ return [
 //total win: 0
 //total place: 340
 //total qin: -30
-//total trio: 0
-//total: 310
+//total trio: -10
+//total: 300

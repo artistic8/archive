@@ -147,6 +147,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    $racetext .= "\t\t'count' => '" . count(array_intersect($allValues, $favorites)) . "',\n";
+
     $racetext .= "\t\t'bets' => [\n";
     if(!empty($toWin)){
         $racetext .= "\t\t\t'win(count $revision, $" . $unitBet . ")' => '" . implode(", ", $toWin) . "',\n"; 
@@ -166,6 +168,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalPlace -= $unitBet * count($winInter);
             $totalBets[$raceNumber] += 10 * combination(2, count($winInter));
             $totalQin -= 10 * combination(2, count($winInter));
+            $totalBets[$raceNumber] += 10 * combination(3, count($winInter));
+            $totalTrio -= 10 * combination(3, count($winInter));
             if(isset($officialWin)){
                 if(!empty(array_intersect($winInter, array_slice($officialWin, 0, 3)))){
                     $selected = array_intersect($winInter, array_slice($officialWin, 0, 3));
@@ -177,10 +181,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                         }
                     }
                 }
-                if(!empty(array_intersect($winInter, array_slice($officialWin, 0, 2)))){
+                if(count(array_intersect($winInter, array_slice($officialWin, 0, 2))) === 2){
                     $totalRace[$raceNumber] += $qinAmount;
-                    $racetext .= "\t\t\t'3 won(place bet)' => " . $qinAmount . ",\n";
+                    $racetext .= "\t\t\t'3 won(qin bet)' => " . $qinAmount . ",\n";
                     $totalQin +=$qinAmount;
+                }
+                if(count(array_intersect($winInter, array_slice($officialWin, 0, 3))) === 3){
+                    $totalRace[$raceNumber] += $trioAmount;
+                    $racetext .= "\t\t\t'3 won(trio bet)' => " . $trioAmount . ",\n";
+                    $totalTrio +=$trioAmount;
                 }
             }
         }

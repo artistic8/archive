@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'count' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -39,6 +40,7 @@ return [
 		],
 		'win inter' => '2, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'count' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -60,6 +62,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 7, 9',
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'count' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -81,6 +84,7 @@ return [
 		],
 		'win inter' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'count' => '3',
 		'bets' => [
 			'place(end-wp , $200)' => '7',
 		],
@@ -104,6 +108,7 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'count' => '3',
 		'bets' => [
 			'place(end-wp , $200)' => '11',
 			'2 won(place bet)' => 470,
@@ -128,6 +133,7 @@ return [
 		],
 		'win inter' => '1, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'count' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -149,6 +155,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'count' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -170,18 +177,18 @@ return [
 		],
 		'win inter' => '3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'count' => '3',
 		'bets' => [
 			'place(end-favorites , $200)' => '4',
 			'place/win/qin/trio ' => '3, 4, 5, 8',
 			'3 won(place bet)' => 175,
 			'3 won(place bet)' => 970,
-			'3 won(place bet)' => 124.5,
 			'1 won(place bet)' => 350,
 			'place(end-wp , $200)' => '4',
 			'2 won(place bet)' => 350,
 		],
-		'total bets' => 860,
-		'total won in race 8' => 1109.5,
+		'total bets' => 900,
+		'total won in race 8' => 945,
 	],
 	'9' => [
 		/**
@@ -200,22 +207,22 @@ return [
 		],
 		'win inter' => '3, 4, 8, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'count' => '3',
 		'bets' => [
 			'place(end-favorites , $200)' => '9',
 			'place/win/qin/trio ' => '3, 4, 8, 9, 10, 12',
 			'3 won(place bet)' => 160,
-			'3 won(place bet)' => 65.5,
 			'1 won(place bet)' => 320,
 			'place(end-wp , $200)' => '9',
 			'2 won(place bet)' => 320,
 		],
-		'total bets' => 1150,
-		'total won in race 9' => -284.5,
+		'total bets' => 1350,
+		'total won in race 9' => -550,
 	],
 ];
 //total wp: 0
 //total win: 0
 //total place: 915
-//total qin: -20
-//total trio: 0
-//total: 895
+//total qin: -210
+//total trio: -240
+//total: 465
