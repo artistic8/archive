@@ -49,8 +49,8 @@ return [
 			'place(end-wp , $200)' => '10',
 			'2 won(place bet)' => 700,
 		],
-		'total bets' => 740,
-		'total won in race 2' => 1860,
+		'total bets' => 710,
+		'total won in race 2' => 1890,
 	],
 	'3' => [
 		/**
@@ -237,9 +237,8 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total wp: 0
 //total win: 0
 //total place: 1600
-//total qin: -30
+//total qin: 0
 //total trio: -10
-//total: 1560
+//total: 1590

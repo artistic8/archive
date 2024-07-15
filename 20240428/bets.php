@@ -243,7 +243,6 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total wp: 0
 //total win: 0
 //total place: 430
 //total qin: 0

@@ -214,7 +214,6 @@ return [
 		'total won in race 9' => 420,
 	],
 ];
-//total wp: 0
 //total win: 0
 //total place: -150
 //total qin: 0

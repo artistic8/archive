@@ -24,7 +24,6 @@ function combination($p, $n){
 $total = 0;
 $totalWin = 0;
 $totalPlace = 0;
-$totalWP = 0;
 $totalQin = 0;
 $totalTrio = 0;
 
@@ -145,8 +144,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t\t'place/win/qin/trio $revision' => '" . implode(", ", $winInter) . "',\n"; 
             $totalBets[$raceNumber] += $unitBet * count($winInter);
             $totalPlace -= $unitBet * count($winInter);
-            $totalBets[$raceNumber] += 10 * combination(2, count($winInter));
-            $totalQin -= 10 * combination(2, count($winInter));
             $totalBets[$raceNumber] += 10 * combination(3, count($winInter));
             $totalTrio -= 10 * combination(3, count($winInter));
             if(isset($officialWin)){
@@ -159,11 +156,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                             $totalPlace += 1/10 * $unitBet * $placeAmount[$placed];
                         }
                     }
-                }
-                if(count(array_intersect($winInter, array_slice($officialWin, 0, 2))) === 2){
-                    $totalRace[$raceNumber] += $qinAmount;
-                    $racetext .= "\t\t\t'3 won(qin bet)' => " . $qinAmount . ",\n";
-                    $totalQin +=$qinAmount;
                 }
                 if(count(array_intersect($winInter, array_slice($officialWin, 0, 3))) === 3){
                     $totalRace[$raceNumber] += $trioAmount;
@@ -207,7 +199,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $outtext .= $racetext;
 }
 $outtext .= "];\n";
-$outtext .= "//total wp: $totalWP\n";
 $outtext .= "//total win: $totalWin\n";
 $outtext .= "//total place: $totalPlace\n";
 $outtext .= "//total qin: $totalQin\n";
