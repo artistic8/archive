@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -39,6 +40,7 @@ return [
 		],
 		'win inter' => '2, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'X' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -60,6 +62,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 7, 9',
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'X' => '1, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -81,11 +84,12 @@ return [
 		],
 		'win inter' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'X' => '6',
 		'bets' => [
-			'place(end-wp , $200)' => '7',
+			'place(end-wp , $100)' => '7',
 		],
-		'total bets' => 200,
-		'total won in race 4' => -200,
+		'total bets' => 100,
+		'total won in race 4' => -100,
 	],
 	'5' => [
 		/**
@@ -104,12 +108,13 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'X' => '',
 		'bets' => [
-			'place(end-wp , $200)' => '11',
-			'2 won(place bet)' => 470,
+			'place(end-wp , $100)' => '11',
+			'2 won(place bet)' => 235,
 		],
-		'total bets' => 200,
-		'total won in race 5' => 270,
+		'total bets' => 100,
+		'total won in race 5' => 135,
 	],
 	'6' => [
 		/**
@@ -128,6 +133,7 @@ return [
 		],
 		'win inter' => '1, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -149,6 +155,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -170,17 +177,17 @@ return [
 		],
 		'win inter' => '3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '3, 4',
 		'bets' => [
-			'place(end-favorites , $200)' => '4',
-			'place/win/qin/trio ' => '3, 4, 5, 8',
-			'3 won(place bet)' => 175,
+			'place(end-favorites , $100)' => '4',
+			'1 won(place bet)' => 175,
+			'place ' => '3, 5, 8',
 			'3 won(place bet)' => 970,
-			'1 won(place bet)' => 350,
-			'place(end-wp , $200)' => '4',
-			'2 won(place bet)' => 350,
+			'place(end-wp , $100)' => '4',
+			'2 won(place bet)' => 175,
 		],
-		'total bets' => 840,
-		'total won in race 8' => 1005,
+		'total bets' => 500,
+		'total won in race 8' => 820,
 	],
 	'9' => [
 		/**
@@ -199,20 +206,16 @@ return [
 		],
 		'win inter' => '3, 4, 8, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'X' => '3, 9',
 		'bets' => [
-			'place(end-favorites , $200)' => '9',
-			'place/win/qin/trio ' => '3, 4, 8, 9, 10, 12',
-			'3 won(place bet)' => 160,
-			'1 won(place bet)' => 320,
-			'place(end-wp , $200)' => '9',
-			'2 won(place bet)' => 320,
+			'place(end-wp , $100)' => '9',
+			'2 won(place bet)' => 160,
 		],
-		'total bets' => 1200,
-		'total won in race 9' => -400,
+		'total bets' => 100,
+		'total won in race 9' => 60,
 	],
 ];
-//total win: 0
-//total place: 915
-//total qin: 0
-//total trio: -240
-//total: 675
+//total major place favorites: 75
+//total major place wp: 170
+//total minor place: 670
+//total: 915

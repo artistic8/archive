@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -39,6 +40,7 @@ return [
 		],
 		'win inter' => '2, 3, 5, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -60,6 +62,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 5, 6, 7, 9, 11',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -81,12 +84,13 @@ return [
 		],
 		'win inter' => '1, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'X' => '1',
 		'bets' => [
-			'place(end-wp , $200)' => '3',
-			'2 won(place bet)' => 250,
+			'place(end-wp , $100)' => '3',
+			'2 won(place bet)' => 125,
 		],
-		'total bets' => 200,
-		'total won in race 4' => 50,
+		'total bets' => 100,
+		'total won in race 4' => 25,
 	],
 	'5' => [
 		/**
@@ -105,12 +109,13 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'X' => '',
 		'bets' => [
-			'place(end-wp , $200)' => '10',
-			'2 won(place bet)' => 290,
+			'place(end-wp , $100)' => '10',
+			'2 won(place bet)' => 145,
 		],
-		'total bets' => 200,
-		'total won in race 5' => 90,
+		'total bets' => 100,
+		'total won in race 5' => 45,
 	],
 	'6' => [
 		/**
@@ -129,6 +134,7 @@ return [
 		],
 		'win inter' => '1, 3, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '1, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -150,6 +156,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 7, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -171,6 +178,7 @@ return [
 		],
 		'win inter' => '3, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -192,13 +200,13 @@ return [
 		],
 		'win inter' => '8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
-//total win: 0
-//total place: 140
-//total qin: 0
-//total trio: 0
-//total: 140
+//total major place favorites: 0
+//total major place wp: 70
+//total minor place: 0
+//total: 70

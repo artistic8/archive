@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1, 2, 4, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -39,11 +40,12 @@ return [
 		],
 		'win inter' => '4, 5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
+		'X' => '4',
 		'bets' => [
-			'place(end-favorites , $200)' => '8',
+			'place(end-favorites , $100)' => '8',
 		],
-		'total bets' => 200,
-		'total won in race 2' => -200,
+		'total bets' => 100,
+		'total won in race 2' => -100,
 	],
 	'3' => [
 		/**
@@ -62,6 +64,7 @@ return [
 		],
 		'win inter' => '2, 3',
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'X' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -83,6 +86,7 @@ return [
 		],
 		'win inter' => '11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -104,6 +108,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -125,6 +130,7 @@ return [
 		],
 		'win inter' => '1, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -146,6 +152,7 @@ return [
 		],
 		'win inter' => '10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -167,11 +174,12 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '',
 		'bets' => [
-			'place(end-wp , $200)' => '6',
+			'place(end-wp , $100)' => '6',
 		],
-		'total bets' => 200,
-		'total won in race 8' => -200,
+		'total bets' => 100,
+		'total won in race 8' => -100,
 	],
 	'9' => [
 		/**
@@ -190,15 +198,15 @@ return [
 		],
 		'win inter' => '5, 9, 12',
 		'allValues' => '1, 2, 3, 4, 5, 8, 9, 10, 11',
+		'X' => '5',
 		'bets' => [
-			'place(end-favorites , $200)' => '11',
+			'place(end-favorites , $100)' => '11',
 		],
-		'total bets' => 200,
-		'total won in race 9' => -200,
+		'total bets' => 100,
+		'total won in race 9' => -100,
 	],
 ];
-//total win: 0
-//total place: -600
-//total qin: 0
-//total trio: 0
-//total: -600
+//total major place favorites: -200
+//total major place wp: -100
+//total minor place: 0
+//total: -300

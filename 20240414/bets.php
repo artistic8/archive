@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1, 2, 5, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -39,6 +40,7 @@ return [
 		],
 		'win inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -60,6 +62,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -81,6 +84,7 @@ return [
 		],
 		'win inter' => '1, 2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'X' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -102,6 +106,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'X' => '5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -123,11 +128,12 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '',
 		'bets' => [
-			'place(end-wp , $200)' => '9',
+			'place(end-wp , $100)' => '9',
 		],
-		'total bets' => 200,
-		'total won in race 6' => -200,
+		'total bets' => 100,
+		'total won in race 6' => -100,
 	],
 	'7' => [
 		/**
@@ -146,14 +152,15 @@ return [
 		],
 		'win inter' => '2, 3, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '3, 7',
 		'bets' => [
-			'place(end-favorites , $200)' => '9',
-			'place/win/qin/trio ' => '2, 3, 7',
+			'place(end-favorites , $100)' => '9',
+			'1 won(place bet)' => 275,
+			'place ' => '2, 3, 7',
 			'3 won(place bet)' => 200,
-			'1 won(place bet)' => 550,
 		],
-		'total bets' => 510,
-		'total won in race 7' => 240,
+		'total bets' => 400,
+		'total won in race 7' => 75,
 	],
 	'8' => [
 		/**
@@ -172,6 +179,7 @@ return [
 		],
 		'win inter' => '8',
 		'allValues' => '1, 3, 5, 6, 7, 8',
+		'X' => '8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -193,6 +201,7 @@ return [
 		],
 		'win inter' => '2, 3, 4, 5, 6, 8, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'X' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -214,6 +223,7 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -235,13 +245,13 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
-//total win: 0
-//total place: 50
-//total qin: 0
-//total trio: -10
-//total: 40
+//total major place favorites: 175
+//total major place wp: -100
+//total minor place: -100
+//total: -25

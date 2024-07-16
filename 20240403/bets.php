@@ -18,6 +18,7 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -39,6 +40,7 @@ return [
 		],
 		'win inter' => '4, 5, 7, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'X' => '10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -60,6 +62,7 @@ return [
 		],
 		'win inter' => '1, 9, 11',
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -81,11 +84,12 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
+		'X' => '',
 		'bets' => [
-			'place(end-wp , $200)' => '12',
+			'place(end-wp , $100)' => '12',
 		],
-		'total bets' => 200,
-		'total won in race 4' => -200,
+		'total bets' => 100,
+		'total won in race 4' => -100,
 	],
 	'5' => [
 		/**
@@ -104,6 +108,7 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5',
 		'allValues' => '1, 3, 4, 5, 6, 7, 8',
+		'X' => '4, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -125,6 +130,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 6, 9',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
+		'X' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -146,11 +152,12 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'X' => '',
 		'bets' => [
-			'place(end-wp , $200)' => '8',
+			'place(end-wp , $100)' => '8',
 		],
-		'total bets' => 200,
-		'total won in race 7' => -200,
+		'total bets' => 100,
+		'total won in race 7' => -100,
 	],
 	'8' => [
 		/**
@@ -169,17 +176,17 @@ return [
 		],
 		'win inter' => '4, 5, 6, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'X' => '4, 5, 6',
 		'bets' => [
-			'place(end-favorites , $200)' => '7',
-			'1 won(place bet)' => 420,
+			'place(end-favorites , $100)' => '7',
+			'1 won(place bet)' => 210,
 			'super sure bet' => 'super sure place 7',
 		],
-		'total bets' => 200,
-		'total won in race 8' => 220,
+		'total bets' => 100,
+		'total won in race 8' => 110,
 	],
 ];
-//total win: 0
-//total place: -180
-//total qin: 0
-//total trio: 0
-//total: -180
+//total major place favorites: 110
+//total major place wp: -200
+//total minor place: 0
+//total: -90
