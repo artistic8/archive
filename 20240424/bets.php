@@ -185,14 +185,10 @@ return [
 		'X' => '4, 8',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
-		//start
-			'place ' => '3, 4, 5',
-			'3 won(place bet)' => 130,
-		//finish
 			'place(end-wp , $100)' => '8',
 		],
-		'total bets' => 500,
-		'total won in race 8' => -370,
+		'total bets' => 200,
+		'total won in race 8' => -200,
 	],
 	'9' => [
 		/**
@@ -222,5 +218,5 @@ return [
 ];
 //total major place favorites: -200
 //total major place wp: -200
-//total minor place: -170
-//total: -570
+//total minor place: 0
+//total: -400
