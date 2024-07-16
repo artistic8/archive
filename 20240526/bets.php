@@ -88,6 +88,9 @@ return [
 		'win inter' => '1, 4, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'X' => '1, 4, 5',
+		//sure fav win
+		'favorites' => '1, 4, 5',
+		'official win' => '1, 5, 13, 3',
 		'bets' => [
 			'place(end-favorites , $100)' => '5',
 			'1 won(place bet)' => 390,

@@ -143,6 +143,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'X' => '5',
 		//sure fav win
+		'favorites' => '5',
 		'official win' => '5, 2, 3, 8',
 		'bets' => [
 		],

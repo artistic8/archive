@@ -86,6 +86,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'X' => '6',
 		//sure fav win
+		'favorites' => '6',
 		'official win' => '6, 9, 5, 1',
 		'bets' => [
 		],

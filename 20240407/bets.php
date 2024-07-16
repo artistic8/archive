@@ -71,6 +71,7 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'X' => '2',
 		//sure fav win
+		'favorites' => '2',
 		'official win' => '2, 4, 6, 7',
 		'bets' => [
 		],
@@ -165,6 +166,9 @@ return [
 		'win inter' => '1, 2, 3, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'X' => '1, 3',
+		//sure fav win
+		'favorites' => '1, 3',
+		'official win' => '1, 8, 5, 3',
 		'bets' => [
 		],
 		'total bets' => 0,

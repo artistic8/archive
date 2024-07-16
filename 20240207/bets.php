@@ -70,6 +70,7 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'X' => '7',
 		//sure fav win
+		'favorites' => '7',
 		'official win' => '7, 11, 2, 9',
 		'bets' => [
 		],
@@ -207,6 +208,9 @@ return [
 		'win inter' => '1, 3, 5, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'X' => '1, 3, 5',
+		//sure fav win
+		'favorites' => '1, 3, 5',
+		'official win' => '8, 5, 9, 3',
 		'bets' => [
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 265,
