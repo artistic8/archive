@@ -107,6 +107,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    if(count($winInter) >= 5 && count($favorites) >= 2){
+        $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+        if(isset($officialWin)){
+          $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        }
+    }
     $unitBet = 100;
     $allValues = [];
     foreach($runners  as $one){
