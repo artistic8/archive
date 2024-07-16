@@ -162,6 +162,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
         if(count(array_intersect($favorites, $winInter)) === 2) {
             $minorPlaceBet = array_diff($winInter, [end($favorites)]);
+            $racetext .= "\t\t//start\n";
             $racetext .= "\t\t\t'place $revision' => '" . implode(", ", $minorPlaceBet) . "',\n"; 
             $totalBets[$raceNumber] += $unitBet * count($minorPlaceBet);
             $totalMinorPlace -= $unitBet * count($minorPlaceBet);
@@ -177,6 +178,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                     }
                 }
             }
+            $racetext .= "\t\t//finish\n";
         }
     }
     $wp = array_intersect($allValues, $favorites);
