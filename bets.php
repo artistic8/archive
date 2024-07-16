@@ -136,8 +136,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
     $X = array_intersect($winInter, $allValues, $favorites);
     $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
-    if(count($X) === 1 && count($favorites) === 1) {
+    if(count($X) === count($favorites)) {
         $racetext .= "\t\t//sure fav win\n";
+        $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
         if(isset($officialWin)){
            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         }
