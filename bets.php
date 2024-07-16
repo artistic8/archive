@@ -143,6 +143,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         }
     }
+    if(empty($X) && !empty($winInter)) {
+        $diff = array_diff($runners, $winInter);
+        $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n"; 
+        if(isset($officialWin)){
+           $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        }
+    }
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
