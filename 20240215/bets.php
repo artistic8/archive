@@ -63,6 +63,8 @@ return [
 			7 => 21,
 		],
 		'win inter' => '1, 3, 4, 7, 9, 11',
+		'win inter' => '1, 3, 4, 7, 9, 11',
+		'official win' => '11, 4, 7, 2',
 		'allValues' => '1, 3, 6, 7',
 		'X' => '1, 7',
 		//sure fav win
@@ -160,6 +162,8 @@ return [
 			5 => 15.5,
 		],
 		'win inter' => '1, 3, 6, 8, 10',
+		'win inter' => '1, 3, 6, 8, 10',
+		'official win' => '2, 9, 5, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'X' => '3',
 		'bets' => [

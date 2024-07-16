@@ -136,6 +136,8 @@ return [
 			6 => 67.5,
 		],
 		'win inter' => '1, 2, 3, 6, 9',
+		'win inter' => '1, 2, 3, 6, 9',
+		'official win' => '5, 2, 6, 8',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
 		'X' => '2, 3',
 		//sure fav win

@@ -69,6 +69,8 @@ return [
 			7 => 25,
 		],
 		'win inter' => '1, 2, 3, 7, 11',
+		'win inter' => '1, 2, 3, 7, 11',
+		'official win' => '1, 11, 7, 2',
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'X' => '1',
 		'bets' => [
