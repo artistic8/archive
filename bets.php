@@ -160,26 +160,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t\t'1 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
             $totalMajorPlaceF += 1/10 * $unitBet * $placeAmount[end($favorites)];
         }
-        if(count(array_intersect($favorites, $winInter)) === 2) {
-            $minorPlaceBet = array_diff($winInter, [end($favorites)]);
-            $racetext .= "\t\t//start\n";
-            $racetext .= "\t\t\t'place $revision' => '" . implode(", ", $minorPlaceBet) . "',\n"; 
-            $totalBets[$raceNumber] += $unitBet * count($minorPlaceBet);
-            $totalMinorPlace -= $unitBet * count($minorPlaceBet);
-            if(isset($officialWin)){
-                if(!empty(array_intersect($minorPlaceBet, array_slice($officialWin, 0, 3)))){
-                    $selected = array_intersect($minorPlaceBet, array_slice($officialWin, 0, 3));
-                    foreach($selected as $placed){
-                        if(isset($placeAmount[$placed])){
-                            $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[$placed];
-                            $racetext .= "\t\t\t'3 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[$placed] . ",\n";
-                            $totalMinorPlace += 1/10 * $unitBet * $placeAmount[$placed];
-                        }
-                    }
-                }
-            }
-            $racetext .= "\t\t//finish\n";
-        }
     }
     $wp = array_intersect($allValues, $favorites);
     if(count($wp) === 3){
