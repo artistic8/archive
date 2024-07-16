@@ -19,6 +19,8 @@ return [
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'X' => '',
+		'diff' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'official win' => '12, 4, 6, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -63,6 +65,8 @@ return [
 		'win inter' => '1, 9, 11',
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'X' => '',
+		'diff' => '2, 3, 4, 5, 6, 7, 8, 12',
+		'official win' => '3, 5, 1, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
