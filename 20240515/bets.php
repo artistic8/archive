@@ -186,8 +186,10 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '4',
 			'1 won(place bet)' => 175,
+		//start
 			'place ' => '3, 5, 8',
 			'3 won(place bet)' => 970,
+		//finish
 			'place(end-wp , $100)' => '4',
 			'2 won(place bet)' => 175,
 		],

@@ -21,7 +21,9 @@ return [
 		'X' => '5, 6',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
+		//start
 			'place ' => '1, 5, 6, 11',
+		//finish
 			'place(end-wp , $100)' => '7',
 		],
 		'total bets' => 600,
@@ -146,9 +148,11 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '9',
 			'1 won(place bet)' => 150,
+		//start
 			'place ' => '1, 2, 6, 8, 11',
 			'3 won(place bet)' => 410,
 			'3 won(place bet)' => 645,
+		//finish
 			'place(end-wp , $100)' => '9',
 			'2 won(place bet)' => 150,
 		],
@@ -199,9 +203,11 @@ return [
 		'X' => '3, 4',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
+		//start
 			'place ' => '3, 4, 6, 12',
 			'3 won(place bet)' => 125,
 			'3 won(place bet)' => 865,
+		//finish
 		],
 		'total bets' => 500,
 		'total won in race 8' => 490,

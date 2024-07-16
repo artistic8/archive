@@ -45,7 +45,9 @@ return [
 		'X' => '5, 6',
 		'bets' => [
 			'place(end-favorites , $100)' => '6',
+		//start
 			'place ' => '5, 7',
+		//finish
 			'place(end-wp , $100)' => '6',
 		],
 		'total bets' => 400,

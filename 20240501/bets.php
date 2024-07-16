@@ -194,8 +194,10 @@ return [
 		'X' => '3, 4',
 		'bets' => [
 			'place(end-favorites , $100)' => '4',
+		//start
 			'place ' => '3, 8',
 			'3 won(place bet)' => 185,
+		//finish
 		],
 		'total bets' => 300,
 		'total won in race 8' => -115,
