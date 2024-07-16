@@ -159,6 +159,8 @@ return [
 		'win inter' => '1, 2, 3, 6, 10, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'X' => '6',
+		//sure fav win
+		'official win' => '6, 7, 4, 9',
 		'bets' => [
 		],
 		'total bets' => 0,

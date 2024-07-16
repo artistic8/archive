@@ -154,6 +154,8 @@ return [
 		'win inter' => '1, 2, 3, 4, 7, 10, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'X' => '4',
+		//sure fav win
+		'official win' => '4, 9, 8, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -175,6 +177,8 @@ return [
 		'win inter' => '4, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6',
 		'X' => '6',
+		//sure fav win
+		'official win' => '4, 6, 2, 1',
 		'bets' => [
 		],
 		'total bets' => 0,
