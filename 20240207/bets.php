@@ -18,7 +18,6 @@ return [
 		],
 		'win inter' => '1, 6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'X' => '1, 6',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'1 won(place bet)' => 195,
@@ -45,7 +44,6 @@ return [
 		],
 		'win inter' => '2, 4, 9',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11',
-		'X' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -67,10 +65,6 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5, 6, 7, 9, 11',
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'X' => '7',
-		//sure fav win
-		'favorites' => '7',
-		'official win' => '7, 11, 2, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -92,7 +86,6 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'X' => '1',
 		'bets' => [
 			'place(end-wp , $100)' => '11',
 		],
@@ -116,7 +109,6 @@ return [
 		],
 		'win inter' => '1, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
-		'X' => '1',
 		'bets' => [
 			'place(end-wp , $100)' => '7',
 		],
@@ -140,9 +132,6 @@ return [
 		],
 		'win inter' => '5, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'X' => '',
-		'diff' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 12',
-		'official win' => '12, 2, 11, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -163,10 +152,7 @@ return [
 			5 => 27,
 		],
 		'win inter' => '1, 2, 5, 7, 10',
-		'win inter' => '1, 2, 5, 7, 10',
-		'official win' => '9, 3, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'X' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -188,9 +174,6 @@ return [
 		],
 		'win inter' => '3, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'X' => '',
-		'diff' => '1, 2, 4, 5, 6, 8, 9, 10, 11, 12',
-		'official win' => '4, 5, 9, 2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -211,13 +194,7 @@ return [
 			9 => 50.5,
 		],
 		'win inter' => '1, 3, 5, 9, 10, 12',
-		'win inter' => '1, 3, 5, 9, 10, 12',
-		'official win' => '8, 5, 9, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'X' => '1, 3, 5',
-		//sure fav win
-		'favorites' => '1, 3, 5',
-		'official win' => '8, 5, 9, 3',
 		'bets' => [
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 265,

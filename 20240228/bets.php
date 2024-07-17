@@ -18,9 +18,6 @@ return [
 		],
 		'win inter' => '1, 5, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'X' => '',
-		'diff' => '2, 3, 4, 6, 9, 10, 11, 12',
-		'official win' => '3, 10, 5, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -42,7 +39,6 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -64,7 +60,6 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 5, 6, 7',
-		'X' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -86,10 +81,6 @@ return [
 		],
 		'win inter' => '1, 4, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'X' => '5',
-		//sure fav win
-		'favorites' => '5',
-		'official win' => '2, 5, 9, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -111,10 +102,6 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'X' => '5',
-		//sure fav win
-		'favorites' => '5',
-		'official win' => '5, 2, 6, 1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -135,13 +122,7 @@ return [
 			3 => 20.5,
 		],
 		'win inter' => '1, 2, 3, 6, 8, 9, 11',
-		'win inter' => '1, 2, 3, 6, 8, 9, 11',
-		'official win' => '2, 11, 3, 1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'X' => '2, 9',
-		//sure fav win
-		'favorites' => '2, 9',
-		'official win' => '2, 11, 3, 1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -162,10 +143,7 @@ return [
 			4 => 15.5,
 		],
 		'win inter' => '1, 2, 3, 7, 10',
-		'win inter' => '1, 2, 3, 7, 10',
-		'official win' => '10, 1, 4, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'X' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -186,12 +164,7 @@ return [
 			3 => 20,
 		],
 		'win inter' => '1, 2, 3, 6, 8',
-		'win inter' => '1, 2, 3, 6, 8',
-		'official win' => '4, 9, 3, 8',
 		'allValues' => '1, 3, 4, 5, 6, 7, 8',
-		'X' => '',
-		'diff' => '4, 5, 7, 9, 10',
-		'official win' => '4, 9, 3, 8',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 		],
@@ -215,10 +188,6 @@ return [
 		],
 		'win inter' => '1, 3, 5, 6, 8, 9, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'X' => '1',
-		//sure fav win
-		'favorites' => '1',
-		'official win' => '1, 6, 11, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
