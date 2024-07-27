@@ -7,7 +7,7 @@ $outtext .= "return [\n";
 $history = [];
 for($r = 1; $r <= 11; $r++){
     $history[$r] = [];
-    for($f = 1; $f <= 30; $f++){
+    for($f = 1; $f <= 14; $f++){
         $history[$r][$f] = ["win" => [], "qin" => [], "trio" => []];
     }
 }
@@ -34,7 +34,7 @@ foreach ($dir as $fileinfo) {
 }
 for($r = 1; $r <= 11; $r++){
     $outtext .= "\t$r => [\n";
-    for($f = 1; $f <= 30; $f++){
+    for($f = 1; $f <= 14; $f++){
         $outtext .= "\t\t$f => [\n";
         $outtext .= "\t\t\t'win' => [" . implode(", ", $history[$r][$f]["win"]) . "],\n";
         $outtext .= "\t\t\t'qin' => [" . implode(", ", $history[$r][$f]["qin"]) . "],\n";
