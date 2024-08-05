@@ -140,6 +140,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
+        $racetext .= "\t\t\t'history' => '" .  implode(", ", $history[$raceNumber][end($favorites)]['win'])  . "',\n"; 
+        $racetext .= "\t\t\t'inter' => '" .  implode(", ", array_intersect($favorites, $history[$raceNumber][end($favorites)]['win']))  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceF -= $unitBet;
         if(isset($officialWin) && in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
@@ -151,6 +153,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $wp = array_intersect($allValues, $favorites);
     if(count($wp) === 3){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
+        $racetext .= "\t\t\t'history' => '" .  implode(", ", $history[$raceNumber][end($wp)]['win'])  . "',\n"; 
+        $racetext .= "\t\t\t'inter' => '" .  implode(", ", array_intersect($favorites, $history[$raceNumber][end($wp)]['win']))  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceW -= $unitBet;
         if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
