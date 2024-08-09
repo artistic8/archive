@@ -20,8 +20,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-wp , $100)' => '7',
-			'history' => '1, 2, 3, 5, 6, 7, 8, 14',
-			'inter' => '5, 6, 7',
 			'2 won(place bet)' => 200,
 		],
 		'total bets' => 100,
@@ -67,8 +65,6 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
-			'history' => '1, 3, 4, 5, 6, 7, 9, 11',
-			'inter' => '1, 3, 7',
 			'1 won(place bet)' => 200,
 		],
 		'total bets' => 100,

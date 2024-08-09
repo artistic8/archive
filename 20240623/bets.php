@@ -167,12 +167,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
 			'place(end-favorites , $100)' => '5',
-			'history' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 12',
-			'inter' => '1, 3, 5',
 			'1 won(place bet)' => 130,
 			'place(end-wp , $100)' => '5',
-			'history' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 12',
-			'inter' => '1, 3, 5',
 			'2 won(place bet)' => 130,
 		],
 		'total bets' => 200,

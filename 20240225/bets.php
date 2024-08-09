@@ -20,8 +20,6 @@ return [
 		'allValues' => '1, 2, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-wp , $100)' => '8',
-			'history' => '3, 4, 5, 8',
-			'inter' => '3, 8',
 		],
 		'total bets' => 100,
 		'total won in race 1' => -100,

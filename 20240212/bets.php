@@ -83,8 +83,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-wp , $100)' => '10',
-			'history' => '1, 2, 5, 10, 13',
-			'inter' => '1, 2, 10',
 			'2 won(place bet)' => 160,
 		],
 		'total bets' => 100,
