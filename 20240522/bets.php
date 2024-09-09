@@ -62,7 +62,7 @@ return [
 			3 => 19,
 		],
 		'win inter' => '2, 3',
-		'allValues' => '1, 2, 3, 5, 6, 7',
+		'allValues' => '1, 2, 3, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-wp , $100)' => '6',
 		],

@@ -62,7 +62,7 @@ return [
 			11 => 113,
 		],
 		'win inter' => '3, 7, 9, 11',
-		'allValues' => '1, 2, 3, 5, 6, 7',
+		'allValues' => '1, 2, 3, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'1 won(place bet)' => 200,
