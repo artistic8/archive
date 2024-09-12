@@ -171,7 +171,7 @@ return [
 			3 => 45,
 		],
 		'win inter' => '4, 8, 12',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 		],

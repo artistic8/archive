@@ -16,7 +16,7 @@ return [
 			10 => 21.5,
 			5 => 52,
 		],
-		'win inter' => '1, 3, 4',
+		'win inter' => '1, 3, 4, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
@@ -64,7 +64,7 @@ return [
 			1 => 18,
 		],
 		'win inter' => '1, 2, 3, 4, 7, 10, 11',
-		'allValues' => '1, 2, 3, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -175,7 +175,7 @@ return [
 			1 => 30,
 		],
 		'win inter' => '1, 3, 4, 5, 8',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'place(end-wp , $100)' => '7',
