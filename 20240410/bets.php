@@ -16,11 +16,12 @@ return [
 			4 => 29.5,
 			3 => 26,
 		],
-		'win inter' => '1, 5, 6, 11',
+		'win inter' => '1, 5, 6, 7, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'place(end-wp , $100)' => '7',
+			'super sure bet' => 'super sure place 7',
 		],
 		'total bets' => 200,
 		'total won in race 1' => -200,
