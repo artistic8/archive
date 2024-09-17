@@ -20,8 +20,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
-			'place(end-wp , $100)' => '7',
 			'super sure bet' => 'super sure place 7',
+			'place(end-wp , $100)' => '7',
 		],
 		'total bets' => 300,
 		'total won in race 1' => -300,

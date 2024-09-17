@@ -21,10 +21,10 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
 			'1 won(place bet)' => 155,
-			'place(end-wp , $100)' => '10',
-			'2 won(place bet)' => 155,
 			'super sure bet' => 'super sure place 10',
 			'5 won(place bet)' => 155,
+			'place(end-wp , $100)' => '10',
+			'2 won(place bet)' => 155,
 		],
 		'total bets' => 300,
 		'total won in race 1' => 165,
