@@ -2,7 +2,7 @@
 $total = 0;
 $totalMajorPlaceF = 0;
 $totalMajorPlaceW = 0;
-$totalMinorPlace = 0;
+$totalSurePlace = 0;
 $HV = ["20240207", "20240215", "20240221", "20240228", "20240306", "20240313", "20240320", "20240327", "20240410", "20240417", "20240424", "20240501", "20240508", 
         "20240515", "20240522", "20240605", "20240612", "20240626", "20240704", "20240710", "20240911",
     ];
@@ -26,7 +26,7 @@ foreach ($dir as $fileinfo) {
         $parts = explode(": ", $contents[1]);
         $totalMajorPlaceW += (float)$parts[1];
         $parts = explode(": ", $contents[2]);
-        $totalMinorPlace += (float)$parts[1];
+        $totalSurePlace += (float)$parts[1];
         $parts = explode(": ", $contents[3]);
         $total += (float)$parts[1];
         if(in_array($fileinfo->getFilename(), $HV)) $totalHV += (float)$parts[1];
@@ -42,7 +42,7 @@ foreach($monthly as $key => $value){
 }
 echo "Total major place favorites: " . $totalMajorPlaceF . "\n";
 echo "Total major place wp: " . $totalMajorPlaceW . "\n";
-echo "Total minor place: " . $totalMinorPlace . "\n";
+echo "Total sure place: " . $totalSurePlace . "\n";
 echo "Total Shatin: " . $totalST . "\n";
 echo "Total Happy Valley: " . $totalHV . "\n";
 echo "Total: " . $total . "\n";

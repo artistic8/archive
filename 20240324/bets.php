@@ -228,5 +228,5 @@ return [
 ];
 //total major place favorites: 125
 //total major place wp: 140
-//total minor place: 0
+//total sure place: 0
 //total: 265

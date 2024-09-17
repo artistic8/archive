@@ -176,9 +176,10 @@ return [
 			'place(end-wp , $100)' => '8',
 			'2 won(place bet)' => 200,
 			'super sure bet' => 'super sure place 8',
+			'5 won(place bet)' => 200,
 		],
-		'total bets' => 200,
-		'total won in race 8' => 200,
+		'total bets' => 300,
+		'total won in race 8' => 300,
 	],
 	'9' => [
 		/**
@@ -228,5 +229,5 @@ return [
 ];
 //total major place favorites: 180
 //total major place wp: 550
-//total minor place: 0
-//total: 730
+//total sure place: 100
+//total: 830
