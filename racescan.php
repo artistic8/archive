@@ -3,7 +3,7 @@ if(isset($argv[1])) $type = trim($argv[1]);
 else $type = "favorites";
 $searchType = "place(end-$type";
 
-$outFile = __DIR__ . DIRECTORY_SEPARATOR . "historyrace$type.php";
+$outFile = __DIR__ . DIRECTORY_SEPARATOR . "historyraces$type.php";
 
 $HV = ["20240207", "20240215", "20240221", "20240228", "20240306", "20240313", "20240320", "20240327", "20240410", "20240417", "20240424", "20240501", "20240508", 
         "20240515", "20240522", "20240605", "20240612", "20240626", "20240704", "20240710", "20240911", "20240918",
