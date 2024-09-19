@@ -18,7 +18,7 @@ $outtext .= "return [\n";
 
 $history = [];
 for($f = 1; $f <= 14; $f++){
-    $history[$f] = ['HV' => [], 'ST' => []];
+    $history[$f] = ['HV' => ['history' => []], 'ST' => ['history' => []]];
 }
 
 $dir = new DirectoryIterator(__DIR__);
@@ -33,10 +33,10 @@ foreach ($dir as $fileinfo) {
                 foreach($bets as $key => $details){
                     if(strpos($key, $searchType) === 0){
                         if(in_array($fileinfo->getFilename(), $HV)){
-                            $history[$details]['HV'][] = $data['official win'];
+                            $history[$details]['HV']['history'][] = $data['official win'];
                         }
                         elseif(in_array($fileinfo->getFilename(), $ST)){
-                            $history[$details]['ST'][] = $data['official win'];
+                            $history[$details]['ST']['history'][] = $data['official win'];
                         }
                     }
                 }
@@ -45,15 +45,47 @@ foreach ($dir as $fileinfo) {
     }
 }
 for($f = 1; $f <= 14; $f++){
-    sort($history[$f]['HV']);
-    sort($history[$f]['ST']);
+    $venues = ['HV', 'ST'];
+    foreach($venues as $venue){
+        if(!empty($history[$f][$venue]['history'])){
+            $winners = [];
+            $first2 = [];
+            $first3 = [];
+            foreach($history[$f][$venue]['history'] as $selected){
+                $results = explode(", ", $selected);
+                if(!in_array($results[0], $winners)) $winners[] = $results[0];
+                $first2 = array_values(array_unique(array_merge($first2, array_slice($results, 0, 2))));
+                $first3 = array_values(array_unique(array_merge($first3, array_slice($results, 0, 3))));
+            }
+            sort($winners);
+            sort($first2);
+            sort($first3);
+            $history[$f][$venue]['winners'] = implode(", ", $winners);
+            $history[$f][$venue]['first2'] = implode(", ", $first2);
+            $history[$f][$venue]['first3'] = implode(", ", $first3);
+        }
+    }
+}
+for($f = 1; $f <= 14; $f++){
+    sort($history[$f]['HV']['history']);
+    sort($history[$f]['ST']['history']);
     $outtext .= "\t$f => [\n";
-    $outtext .= "\t\t'HV' => [\n";
-    foreach($history[$f]['HV'] as $mystring) $outtext .= "\t\t\t\t'" . $mystring . "',\n";
+    $outtext .= "\t'HV' => [\n";
+    $outtext .= "\t\t'history' => [\n";
+    foreach($history[$f]['HV']['history'] as $mystring) $outtext .= "\t\t\t'" . $mystring . "',\n";
     $outtext .= "\t\t],\n";
-    $outtext .= "\t\t'ST' => [\n";
-    foreach($history[$f]['ST'] as $mystring) $outtext .= "\t\t\t\t'" . $mystring . "',\n";
+    if(isset($history[$f]['HV']['winners'])) $outtext .= "\t\t'winners' => '" . $history[$f]['HV']['winners'] . "',\n";
+    if(isset($history[$f]['HV']['first2'])) $outtext .= "\t\t'first2'  => '" . $history[$f]['HV']['first2'] . "',\n";
+    if(isset($history[$f]['HV']['first3'])) $outtext .= "\t\t'first3'  => '" . $history[$f]['HV']['first3'] . "',\n";
+    $outtext .= "\t],\n";
+    $outtext .= "\t'ST' => [\n";
+    $outtext .= "\t\t'history' => [\n";
+    foreach($history[$f]['ST']['history'] as $mystring) $outtext .= "\t\t\t'" . $mystring . "',\n";
     $outtext .= "\t\t],\n";
+    if(isset($history[$f]['ST']['winners'])) $outtext .= "\t\t'winners' => '" . $history[$f]['ST']['winners'] . "',\n";
+    if(isset($history[$f]['ST']['first2'])) $outtext .= "\t\t'first2'  => '" . $history[$f]['ST']['first2'] . "',\n";
+    if(isset($history[$f]['ST']['first3'])) $outtext .= "\t\t'first3'  => '" . $history[$f]['ST']['first3'] . "',\n";
+    $outtext .= "\t],\n";
     $outtext .= "\t],\n";
 }
 $outtext .= "];\n?>\n";
