@@ -45,6 +45,8 @@ foreach ($dir as $fileinfo) {
     }
 }
 for($f = 1; $f <= 14; $f++){
+    sort($history[$f]['HV']);
+    sort($history[$f]['ST']);
     $outtext .= "\t$f => [\n";
     $outtext .= "\t\t'HV' => [\n";
     foreach($history[$f]['HV'] as $mystring) $outtext .= "\t\t\t\t'" . $mystring . "',\n";
