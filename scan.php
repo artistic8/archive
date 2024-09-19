@@ -86,6 +86,14 @@ for($f = 1; $f <= 14; $f++){
     if(isset($history[$f]['ST']['first2'])) $outtext .= "\t\t\t'first2'  => '" . $history[$f]['ST']['first2'] . "',\n";
     if(isset($history[$f]['ST']['first3'])) $outtext .= "\t\t\t'first3'  => '" . $history[$f]['ST']['first3'] . "',\n";
     $outtext .= "\t\t],\n";
+    if(isset($history[$f]['HV']['first3']) && isset($history[$f]['ST']['first3'])){
+        $hvFirst3= explode(", ", $history[$f]['HV']['first3']);
+        $stFirst3= explode(", ", $history[$f]['ST']['first3']);
+        $inter = array_intersect($hvFirst3, $stFirst3);
+        if(!empty($inter)){
+            $outtext .= "\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
+        }
+    }
     $outtext .= "\t],\n";
 }
 $outtext .= "];\n?>\n";

@@ -93,6 +93,14 @@ for($r = 1; $r <= 11; $r++){
         if(isset($history[$r][$f]['ST']['first2'])) $outtext .= "\t\t\t\t'first2'  => '" . $history[$r][$f]['ST']['first2'] . "',\n";
         if(isset($history[$r][$f]['ST']['first3'])) $outtext .= "\t\t\t\t'first3'  => '" . $history[$r][$f]['ST']['first3'] . "',\n";
         $outtext .= "\t\t\t],\n";
+        if(isset($history[$r][$f]['HV']['first3']) && isset($history[$r][$f]['ST']['first3'])){
+            $hvFirst3= explode(", ", $history[$r][$f]['HV']['first3']);
+            $stFirst3= explode(", ", $history[$r][$f]['ST']['first3']);
+            $inter = array_intersect($hvFirst3, $stFirst3);
+            if(!empty($inter)){
+                $outtext .= "\t\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
+            }
+        }
         $outtext .= "\t\t],\n";
     }
     $outtext .= "\t],\n";
