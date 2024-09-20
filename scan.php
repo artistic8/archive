@@ -94,13 +94,13 @@ for($f = 1; $f <= 14; $f++){
         $stFirst3= explode(", ", $history[$f]['ST']['first3']);
         $inter = array_intersect($hvFirst3, $stFirst3);
         if(!empty($inter)){
-            $outtext .= "\t\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
+            $outtext .= "\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
         }
         $union = array_unique(array_values(array_merge($hvFirst3, $stFirst3)));
     }
     if(!empty($union)){
         sort($union);
-        $outtext .= "\t\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
+        $outtext .= "\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
     }
     $outtext .= "\t],\n";
 }
