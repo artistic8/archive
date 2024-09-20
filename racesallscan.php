@@ -91,6 +91,9 @@ for($r = 1; $r <= 11; $r++){
         if(isset($history[$r][$f]['ST']['first2'])) $outtext .= "\t\t\t\t'first2'  => '" . $history[$r][$f]['ST']['first2'] . "',\n";
         if(isset($history[$r][$f]['ST']['first3'])) $outtext .= "\t\t\t\t'first3'  => '" . $history[$r][$f]['ST']['first3'] . "',\n";
         $outtext .= "\t\t\t],\n";
+        $union = [];
+        if(isset($history[$r][$f]['HV']['first3']) && !isset($history[$r][$f]['ST']['first3'])) $union = explode(", ", $history[$r][$f]['HV']['first3']);
+        if(!isset($history[$r][$f]['HV']['first3']) && isset($history[$r][$f]['ST']['first3'])) $union = explode(", ", $history[$r][$f]['ST']['first3']);
         if(isset($history[$r][$f]['HV']['first3']) && isset($history[$r][$f]['ST']['first3'])){
             $hvFirst3= explode(", ", $history[$r][$f]['HV']['first3']);
             $stFirst3= explode(", ", $history[$r][$f]['ST']['first3']);
@@ -99,9 +102,10 @@ for($r = 1; $r <= 11; $r++){
                 $outtext .= "\t\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
             }
             $union = array_unique(array_values(array_merge($hvFirst3, $stFirst3)));
-            if(!empty($union)){
-                $outtext .= "\t\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
-            }
+        }
+        if(!empty($union)){
+            sort($union);
+            $outtext .= "\t\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
         }
         $outtext .= "\t\t],\n";
     }
