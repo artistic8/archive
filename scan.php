@@ -86,25 +86,22 @@ for($f = 1; $f <= 14; $f++){
     if(isset($history[$f]['ST']['first2'])) $outtext .= "\t\t\t'first2'  => '" . $history[$f]['ST']['first2'] . "',\n";
     if(isset($history[$f]['ST']['first3'])) $outtext .= "\t\t\t'first3'  => '" . $history[$f]['ST']['first3'] . "',\n";
     $outtext .= "\t\t],\n";
-    if(isset($history[$f]['ST']['winners'])) $outtext .= "\t\t\t\t'winners' => '" . $history[$f]['ST']['winners'] . "',\n";
-        if(isset($history[$f]['ST']['first2'])) $outtext .= "\t\t\t\t'first2'  => '" . $history[$f]['ST']['first2'] . "',\n";
-        if(isset($history[$f]['ST']['first3'])) $outtext .= "\t\t\t\t'first3'  => '" . $history[$f]['ST']['first3'] . "',\n";
-        $union = [];
-        if(isset($history[$f]['HV']['first3']) && !isset($history[$f]['ST']['first3'])) $union = explode(", ", $history[$f]['HV']['first3']);
-        if(!isset($history[$f]['HV']['first3']) && isset($history[$f]['ST']['first3'])) $union = explode(", ", $history[$f]['ST']['first3']);
-        if(isset($history[$f]['HV']['first3']) && isset($history[$f]['ST']['first3'])){
-            $hvFirst3= explode(", ", $history[$f]['HV']['first3']);
-            $stFirst3= explode(", ", $history[$f]['ST']['first3']);
-            $inter = array_intersect($hvFirst3, $stFirst3);
-            if(!empty($inter)){
-                $outtext .= "\t\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
-            }
-            $union = array_unique(array_values(array_merge($hvFirst3, $stFirst3)));
+    $union = [];
+    if(isset($history[$f]['HV']['first3']) && !isset($history[$f]['ST']['first3'])) $union = explode(", ", $history[$f]['HV']['first3']);
+    if(!isset($history[$f]['HV']['first3']) && isset($history[$f]['ST']['first3'])) $union = explode(", ", $history[$f]['ST']['first3']);
+    if(isset($history[$f]['HV']['first3']) && isset($history[$f]['ST']['first3'])){
+        $hvFirst3= explode(", ", $history[$f]['HV']['first3']);
+        $stFirst3= explode(", ", $history[$f]['ST']['first3']);
+        $inter = array_intersect($hvFirst3, $stFirst3);
+        if(!empty($inter)){
+            $outtext .= "\t\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
         }
-        if(!empty($union)){
-            sort($union);
-            $outtext .= "\t\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
-        }
+        $union = array_unique(array_values(array_merge($hvFirst3, $stFirst3)));
+    }
+    if(!empty($union)){
+        sort($union);
+        $outtext .= "\t\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
+    }
     $outtext .= "\t],\n";
 }
 $outtext .= "];\n?>\n";

@@ -9,6 +9,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -18,6 +19,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -27,6 +29,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -44,6 +47,7 @@ return [
 				'winners' => '4',
 				'first2'  => '1, 4',
 				'first3'  => '1, 2, 4',
+			],
 			'inter first3 HV & ST' => '4',
 			'union first3 HV & ST' => '1, 2, 3, 4, 9',
 		],
@@ -55,6 +59,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		6 => [
 			'HV' => [
@@ -68,6 +73,7 @@ return [
 				'winners' => '6',
 				'first2'  => '1, 6',
 				'first3'  => '1, 4, 6',
+			],
 			'union first3 HV & ST' => '1, 4, 6',
 		],
 		7 => [
@@ -90,6 +96,7 @@ return [
 				'winners' => '1, 5, 11',
 				'first2'  => '1, 2, 5, 6, 7, 11',
 				'first3'  => '1, 2, 5, 6, 7, 11, 12',
+			],
 			'inter first3 HV & ST' => '2, 7',
 			'union first3 HV & ST' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		],
@@ -110,6 +117,7 @@ return [
 				'winners' => '8',
 				'first2'  => '8, 9',
 				'first3'  => '5, 8, 9',
+			],
 			'inter first3 HV & ST' => '5, 8',
 			'union first3 HV & ST' => '3, 5, 8, 9, 12',
 		],
@@ -126,6 +134,7 @@ return [
 				'winners' => '1, 14',
 				'first2'  => '1, 2, 6, 14',
 				'first3'  => '1, 2, 6, 7, 14',
+			],
 			'union first3 HV & ST' => '1, 2, 6, 7, 14',
 		],
 		10 => [
@@ -147,6 +156,7 @@ return [
 				'winners' => '4, 7, 10',
 				'first2'  => '4, 7, 9, 10, 13',
 				'first3'  => '4, 5, 6, 7, 9, 10, 13',
+			],
 			'inter first3 HV & ST' => '4, 9',
 			'union first3 HV & ST' => '4, 5, 6, 7, 8, 9, 10, 12, 13',
 		],
@@ -158,6 +168,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -167,6 +178,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		13 => [
 			'HV' => [
@@ -176,6 +188,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -185,6 +198,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	2 => [
@@ -196,6 +210,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -205,6 +220,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -214,6 +230,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -223,6 +240,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		5 => [
 			'HV' => [
@@ -237,6 +255,7 @@ return [
 				'winners' => '5, 6',
 				'first2'  => '5, 6, 10, 11',
 				'first3'  => '2, 5, 6, 10, 11, 14',
+			],
 			'union first3 HV & ST' => '2, 5, 6, 10, 11, 14',
 		],
 		6 => [
@@ -257,6 +276,7 @@ return [
 				'winners' => '3, 6',
 				'first2'  => '1, 3, 6, 9',
 				'first3'  => '1, 3, 6, 9, 10',
+			],
 			'inter first3 HV & ST' => '1, 6, 9, 10',
 			'union first3 HV & ST' => '1, 3, 4, 5, 6, 9, 10',
 		],
@@ -278,6 +298,7 @@ return [
 				'winners' => '6, 9',
 				'first2'  => '6, 7, 9, 12',
 				'first3'  => '3, 6, 7, 9, 10, 12',
+			],
 			'inter first3 HV & ST' => '3, 9',
 			'union first3 HV & ST' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 		],
@@ -293,6 +314,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '1, 2, 11',
 		],
 		9 => [
@@ -309,6 +331,7 @@ return [
 				'winners' => '2, 8, 9',
 				'first2'  => '2, 3, 6, 8, 9',
 				'first3'  => '2, 3, 4, 6, 8, 9, 10, 14',
+			],
 			'union first3 HV & ST' => '2, 3, 4, 6, 8, 9, 10, 14',
 		],
 		10 => [
@@ -330,6 +353,7 @@ return [
 				'winners' => '10, 12',
 				'first2'  => '2, 10, 12, 14',
 				'first3'  => '2, 5, 7, 10, 12, 14',
+			],
 			'inter first3 HV & ST' => '5, 10, 12',
 			'union first3 HV & ST' => '1, 2, 5, 7, 8, 9, 10, 12, 14',
 		],
@@ -341,6 +365,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -350,6 +375,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		13 => [
 			'HV' => [
@@ -359,6 +385,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -368,6 +395,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	3 => [
@@ -379,6 +407,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -388,6 +417,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -397,6 +427,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -411,6 +442,7 @@ return [
 				'winners' => '2, 9',
 				'first2'  => '2, 8, 9, 11',
 				'first3'  => '2, 4, 8, 9, 11',
+			],
 			'union first3 HV & ST' => '2, 4, 8, 9, 11',
 		],
 		5 => [
@@ -425,6 +457,7 @@ return [
 				'winners' => '4',
 				'first2'  => '4, 9',
 				'first3'  => '4, 8, 9',
+			],
 			'union first3 HV & ST' => '4, 8, 9',
 		],
 		6 => [
@@ -439,6 +472,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '1, 3, 5',
 		],
 		7 => [
@@ -457,6 +491,7 @@ return [
 				'winners' => '7',
 				'first2'  => '3, 7',
 				'first3'  => '3, 7, 11',
+			],
 			'inter first3 HV & ST' => '3, 7',
 			'union first3 HV & ST' => '3, 4, 7, 11',
 		],
@@ -475,6 +510,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '2, 3, 4, 7, 8, 9, 11, 12',
 		],
 		9 => [
@@ -485,6 +521,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		10 => [
 			'HV' => [
@@ -494,6 +531,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		11 => [
 			'HV' => [
@@ -503,6 +541,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -516,6 +555,7 @@ return [
 				'winners' => '7',
 				'first2'  => '7, 12',
 				'first3'  => '4, 7, 12',
+			],
 			'union first3 HV & ST' => '4, 7, 12',
 		],
 		13 => [
@@ -526,6 +566,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -535,6 +576,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	4 => [
@@ -546,6 +588,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -555,6 +598,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -568,6 +612,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '3, 8, 9',
 		],
 		4 => [
@@ -578,6 +623,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		5 => [
 			'HV' => [
@@ -592,6 +638,7 @@ return [
 				'winners' => '1',
 				'first2'  => '1, 4, 5',
 				'first3'  => '1, 4, 5, 13',
+			],
 			'union first3 HV & ST' => '1, 4, 5, 13',
 		],
 		6 => [
@@ -606,6 +653,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '1, 5, 6',
 		],
 		7 => [
@@ -624,6 +672,7 @@ return [
 				'winners' => '12',
 				'first2'  => '3, 12',
 				'first3'  => '3, 11, 12',
+			],
 			'inter first3 HV & ST' => '3',
 			'union first3 HV & ST' => '1, 3, 9, 11, 12',
 		],
@@ -639,6 +688,7 @@ return [
 				'winners' => '11',
 				'first2'  => '1, 11',
 				'first3'  => '1, 4, 11',
+			],
 			'union first3 HV & ST' => '1, 4, 11',
 		],
 		9 => [
@@ -649,6 +699,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		10 => [
 			'HV' => [
@@ -663,6 +714,7 @@ return [
 				'winners' => '1, 10',
 				'first2'  => '1, 4, 10',
 				'first3'  => '1, 3, 4, 10',
+			],
 			'union first3 HV & ST' => '1, 3, 4, 10',
 		],
 		11 => [
@@ -684,6 +736,7 @@ return [
 				'winners' => '13',
 				'first2'  => '2, 13',
 				'first3'  => '2, 3, 13',
+			],
 			'inter first3 HV & ST' => '2',
 			'union first3 HV & ST' => '1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13',
 		],
@@ -705,6 +758,7 @@ return [
 				'winners' => '6, 12',
 				'first2'  => '1, 4, 6, 12',
 				'first3'  => '1, 2, 4, 6, 10, 12',
+			],
 			'inter first3 HV & ST' => '4, 12',
 			'union first3 HV & ST' => '1, 2, 4, 5, 6, 10, 12',
 		],
@@ -716,6 +770,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -725,6 +780,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	5 => [
@@ -736,6 +792,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -745,6 +802,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -754,6 +812,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -767,6 +826,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '3, 5, 7',
 		],
 		5 => [
@@ -785,6 +845,7 @@ return [
 				'winners' => '5',
 				'first2'  => '1, 5',
 				'first3'  => '1, 5, 9',
+			],
 			'inter first3 HV & ST' => '1, 5',
 			'union first3 HV & ST' => '1, 2, 5, 9',
 		],
@@ -806,6 +867,7 @@ return [
 				'winners' => '1, 12',
 				'first2'  => '1, 6, 10, 12',
 				'first3'  => '1, 6, 8, 10, 12',
+			],
 			'inter first3 HV & ST' => '1, 10, 12',
 			'union first3 HV & ST' => '1, 2, 3, 6, 8, 9, 10, 12',
 		],
@@ -822,6 +884,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '1, 2, 4, 7, 10',
 		],
 		8 => [
@@ -836,6 +899,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '4, 7, 8',
 		],
 		9 => [
@@ -846,6 +910,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		10 => [
 			'HV' => [
@@ -865,6 +930,7 @@ return [
 				'winners' => '1, 2, 3',
 				'first2'  => '1, 2, 3, 10, 11',
 				'first3'  => '1, 2, 3, 6, 10, 11',
+			],
 			'inter first3 HV & ST' => '10, 11',
 			'union first3 HV & ST' => '1, 2, 3, 4, 6, 10, 11',
 		],
@@ -884,6 +950,7 @@ return [
 				'winners' => '1',
 				'first2'  => '1, 7',
 				'first3'  => '1, 2, 7',
+			],
 			'inter first3 HV & ST' => '7',
 			'union first3 HV & ST' => '1, 2, 6, 7, 11',
 		],
@@ -899,6 +966,7 @@ return [
 				'winners' => '5',
 				'first2'  => '2, 5',
 				'first3'  => '2, 5, 13',
+			],
 			'union first3 HV & ST' => '2, 5, 13',
 		],
 		13 => [
@@ -909,6 +977,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -918,6 +987,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	6 => [
@@ -929,6 +999,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -938,6 +1009,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -947,6 +1019,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -960,6 +1033,7 @@ return [
 				'winners' => '4',
 				'first2'  => '1, 4',
 				'first3'  => '1, 2, 4',
+			],
 			'union first3 HV & ST' => '1, 2, 4',
 		],
 		5 => [
@@ -970,6 +1044,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		6 => [
 			'HV' => [
@@ -983,6 +1058,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '5, 6, 9',
 		],
 		7 => [
@@ -993,6 +1069,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		8 => [
 			'HV' => [
@@ -1007,6 +1084,7 @@ return [
 				'winners' => '8, 11',
 				'first2'  => '3, 8, 11',
 				'first3'  => '3, 7, 8, 11',
+			],
 			'union first3 HV & ST' => '3, 7, 8, 11',
 		],
 		9 => [
@@ -1028,6 +1106,7 @@ return [
 				'winners' => '2, 6, 11',
 				'first2'  => '2, 6, 7, 9, 11',
 				'first3'  => '2, 6, 7, 9, 11, 12, 13',
+			],
 			'inter first3 HV & ST' => '9, 11, 12',
 			'union first3 HV & ST' => '1, 2, 6, 7, 9, 11, 12, 13',
 		],
@@ -1053,6 +1132,7 @@ return [
 				'winners' => '3, 7, 12',
 				'first2'  => '3, 7, 10, 12',
 				'first3'  => '3, 5, 6, 7, 10, 12, 14',
+			],
 			'inter first3 HV & ST' => '3, 5, 7, 10, 12',
 			'union first3 HV & ST' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14',
 		],
@@ -1064,6 +1144,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -1082,6 +1163,7 @@ return [
 				'winners' => '2',
 				'first2'  => '2, 11',
 				'first3'  => '2, 4, 11, 12',
+			],
 			'inter first3 HV & ST' => '12',
 			'union first3 HV & ST' => '2, 3, 4, 5, 11, 12',
 		],
@@ -1093,6 +1175,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -1102,6 +1185,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	7 => [
@@ -1113,6 +1197,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -1122,6 +1207,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -1131,6 +1217,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -1140,6 +1227,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		5 => [
 			'HV' => [
@@ -1149,6 +1237,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		6 => [
 			'HV' => [
@@ -1167,6 +1256,7 @@ return [
 				'winners' => '1, 3',
 				'first2'  => '1, 3, 5, 8',
 				'first3'  => '1, 3, 4, 5, 8',
+			],
 			'inter first3 HV & ST' => '3, 5',
 			'union first3 HV & ST' => '1, 3, 4, 5, 8, 10',
 		],
@@ -1187,6 +1277,7 @@ return [
 				'winners' => '7, 11',
 				'first2'  => '1, 3, 7, 11',
 				'first3'  => '1, 3, 6, 7, 11',
+			],
 			'inter first3 HV & ST' => '6, 7',
 			'union first3 HV & ST' => '1, 3, 6, 7, 8, 11',
 		],
@@ -1207,6 +1298,7 @@ return [
 				'winners' => '8, 12',
 				'first2'  => '1, 2, 8, 12',
 				'first3'  => '1, 2, 8, 9, 12, 14',
+			],
 			'inter first3 HV & ST' => '2',
 			'union first3 HV & ST' => '1, 2, 6, 8, 9, 10, 12, 14',
 		],
@@ -1224,6 +1316,7 @@ return [
 				'winners' => '6, 7, 10',
 				'first2'  => '3, 6, 7, 9, 10',
 				'first3'  => '2, 3, 6, 7, 9, 10',
+			],
 			'union first3 HV & ST' => '2, 3, 6, 7, 9, 10',
 		],
 		10 => [
@@ -1239,6 +1332,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '3, 4, 5, 11',
 		],
 		11 => [
@@ -1249,6 +1343,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -1258,6 +1353,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		13 => [
 			'HV' => [
@@ -1267,6 +1363,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -1276,6 +1373,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	8 => [
@@ -1287,6 +1385,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -1296,6 +1395,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -1305,6 +1405,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -1319,6 +1420,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '1, 3, 4, 8, 9, 10',
 		],
 		5 => [
@@ -1334,6 +1436,7 @@ return [
 				'winners' => '1, 5',
 				'first2'  => '1, 3, 5',
 				'first3'  => '1, 3, 4, 5',
+			],
 			'union first3 HV & ST' => '1, 3, 4, 5',
 		],
 		6 => [
@@ -1352,6 +1455,7 @@ return [
 				'winners' => '6',
 				'first2'  => '1, 6',
 				'first3'  => '1, 5, 6',
+			],
 			'inter first3 HV & ST' => '1, 6',
 			'union first3 HV & ST' => '1, 5, 6, 10',
 		],
@@ -1374,6 +1478,7 @@ return [
 				'winners' => '3, 5, 12',
 				'first2'  => '2, 3, 4, 5, 7, 12',
 				'first3'  => '1, 2, 3, 4, 5, 6, 7, 12',
+			],
 			'inter first3 HV & ST' => '1, 3, 6, 12',
 			'union first3 HV & ST' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
 		],
@@ -1397,6 +1502,7 @@ return [
 				'winners' => '4, 6, 8, 14',
 				'first2'  => '4, 6, 8, 11, 12, 14',
 				'first3'  => '1, 4, 6, 8, 11, 12, 14',
+			],
 			'inter first3 HV & ST' => '4, 11, 12',
 			'union first3 HV & ST' => '1, 2, 4, 6, 8, 9, 10, 11, 12, 14',
 		],
@@ -1408,6 +1514,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		10 => [
 			'HV' => [
@@ -1426,6 +1533,7 @@ return [
 				'winners' => '3',
 				'first2'  => '3, 9',
 				'first3'  => '3, 6, 9',
+			],
 			'inter first3 HV & ST' => '3, 9',
 			'union first3 HV & ST' => '2, 3, 4, 6, 8, 9',
 		],
@@ -1441,6 +1549,7 @@ return [
 				'winners' => '1',
 				'first2'  => '1, 4',
 				'first3'  => '1, 4, 9',
+			],
 			'union first3 HV & ST' => '1, 4, 9',
 		],
 		12 => [
@@ -1456,6 +1565,7 @@ return [
 				'winners' => '2, 11',
 				'first2'  => '2, 3, 8, 11',
 				'first3'  => '2, 3, 7, 8, 9, 11',
+			],
 			'union first3 HV & ST' => '2, 3, 7, 8, 9, 11',
 		],
 		13 => [
@@ -1466,6 +1576,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -1475,6 +1586,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	9 => [
@@ -1486,6 +1598,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -1495,6 +1608,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -1504,6 +1618,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -1517,6 +1632,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '2, 3, 9',
 		],
 		5 => [
@@ -1535,6 +1651,7 @@ return [
 				'winners' => '3',
 				'first2'  => '3, 5',
 				'first3'  => '2, 3, 5',
+			],
 			'inter first3 HV & ST' => '5',
 			'union first3 HV & ST' => '2, 3, 5, 8, 9',
 		],
@@ -1555,6 +1672,7 @@ return [
 				'winners' => '4, 6',
 				'first2'  => '1, 3, 4, 6',
 				'first3'  => '1, 2, 3, 4, 6',
+			],
 			'inter first3 HV & ST' => '4',
 			'union first3 HV & ST' => '1, 2, 3, 4, 5, 6, 8',
 		],
@@ -1570,6 +1688,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '7, 8, 9',
 		],
 		8 => [
@@ -1584,6 +1703,7 @@ return [
 				'winners' => '8',
 				'first2'  => '4, 8',
 				'first3'  => '2, 4, 8',
+			],
 			'union first3 HV & ST' => '2, 4, 8',
 		],
 		9 => [
@@ -1602,6 +1722,7 @@ return [
 				'winners' => '9',
 				'first2'  => '1, 9',
 				'first3'  => '1, 3, 9',
+			],
 			'inter first3 HV & ST' => '9',
 			'union first3 HV & ST' => '1, 2, 3, 7, 9',
 		],
@@ -1620,6 +1741,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 			'union first3 HV & ST' => '2, 4, 5, 7, 8, 9, 10, 11, 12',
 		],
 		11 => [
@@ -1643,6 +1765,7 @@ return [
 				'winners' => '1, 2, 3',
 				'first2'  => '1, 2, 3, 5, 8',
 				'first3'  => '1, 2, 3, 5, 8, 11, 14',
+			],
 			'inter first3 HV & ST' => '1, 11',
 			'union first3 HV & ST' => '1, 2, 3, 4, 5, 6, 8, 9, 11, 14',
 		],
@@ -1654,6 +1777,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		13 => [
 			'HV' => [
@@ -1663,6 +1787,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -1672,6 +1797,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	10 => [
@@ -1683,6 +1809,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -1692,6 +1819,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -1701,6 +1829,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -1710,6 +1839,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		5 => [
 			'HV' => [
@@ -1719,6 +1849,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		6 => [
 			'HV' => [
@@ -1728,6 +1859,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		7 => [
 			'HV' => [
@@ -1737,6 +1869,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		8 => [
 			'HV' => [
@@ -1746,6 +1879,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		9 => [
 			'HV' => [
@@ -1755,6 +1889,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		10 => [
 			'HV' => [
@@ -1764,6 +1899,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		11 => [
 			'HV' => [
@@ -1773,6 +1909,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -1782,6 +1919,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		13 => [
 			'HV' => [
@@ -1791,6 +1929,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -1800,6 +1939,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 	11 => [
@@ -1811,6 +1951,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		2 => [
 			'HV' => [
@@ -1820,6 +1961,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		3 => [
 			'HV' => [
@@ -1829,6 +1971,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		4 => [
 			'HV' => [
@@ -1838,6 +1981,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		5 => [
 			'HV' => [
@@ -1847,6 +1991,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		6 => [
 			'HV' => [
@@ -1856,6 +2001,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		7 => [
 			'HV' => [
@@ -1865,6 +2011,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		8 => [
 			'HV' => [
@@ -1874,6 +2021,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		9 => [
 			'HV' => [
@@ -1883,6 +2031,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		10 => [
 			'HV' => [
@@ -1892,6 +2041,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		11 => [
 			'HV' => [
@@ -1901,6 +2051,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		12 => [
 			'HV' => [
@@ -1910,6 +2061,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		13 => [
 			'HV' => [
@@ -1919,6 +2071,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 		14 => [
 			'HV' => [
@@ -1928,6 +2081,7 @@ return [
 			'ST' => [
 				'history' => [
 				],
+			],
 		],
 	],
 ];
