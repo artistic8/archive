@@ -96,7 +96,6 @@ for($r = 1; $r <= 11; $r++){
         if(isset($history[$r][$f]['ST']['winners'])) $outtext .= "\t\t\t\t'winners' => '" . $history[$r][$f]['ST']['winners'] . "',\n";
         if(isset($history[$r][$f]['ST']['first2'])) $outtext .= "\t\t\t\t'first2'  => '" . $history[$r][$f]['ST']['first2'] . "',\n";
         if(isset($history[$r][$f]['ST']['first3'])) $outtext .= "\t\t\t\t'first3'  => '" . $history[$r][$f]['ST']['first3'] . "',\n";
-        $outtext .= "\t\t\t],\n";
         $union = [];
         if(isset($history[$r][$f]['HV']['first3']) && !isset($history[$r][$f]['ST']['first3'])) $union = explode(", ", $history[$r][$f]['HV']['first3']);
         if(!isset($history[$r][$f]['HV']['first3']) && isset($history[$r][$f]['ST']['first3'])) $union = explode(", ", $history[$r][$f]['ST']['first3']);

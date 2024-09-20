@@ -89,7 +89,6 @@ for($f = 1; $f <= 14; $f++){
     if(isset($history[$f]['ST']['winners'])) $outtext .= "\t\t\t\t'winners' => '" . $history[$f]['ST']['winners'] . "',\n";
         if(isset($history[$f]['ST']['first2'])) $outtext .= "\t\t\t\t'first2'  => '" . $history[$f]['ST']['first2'] . "',\n";
         if(isset($history[$f]['ST']['first3'])) $outtext .= "\t\t\t\t'first3'  => '" . $history[$f]['ST']['first3'] . "',\n";
-        $outtext .= "\t\t\t],\n";
         $union = [];
         if(isset($history[$f]['HV']['first3']) && !isset($history[$f]['ST']['first3'])) $union = explode(", ", $history[$f]['HV']['first3']);
         if(!isset($history[$f]['HV']['first3']) && isset($history[$f]['ST']['first3'])) $union = explode(", ", $history[$f]['ST']['first3']);
