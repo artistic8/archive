@@ -98,6 +98,10 @@ for($r = 1; $r <= 11; $r++){
             if(!empty($inter)){
                 $outtext .= "\t\t\t'inter first3 HV & ST' => '" . implode(", ", $inter) ."',\n";
             }
+            $union = array_unique(array_values(array_merge($hvFirst3, $stFirst3)));
+            if(!empty($union)){
+                $outtext .= "\t\t\t'union first3 HV & ST' => '" . implode(", ", $union) ."',\n";
+            }
         }
         $outtext .= "\t\t],\n";
     }

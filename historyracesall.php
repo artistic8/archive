@@ -49,6 +49,7 @@ return [
 				'first3'  => '1, 2, 4',
 			],
 			'inter first3 HV & ST' => '4',
+			'union first3 HV & ST' => '3, 4, 9, 1, 2',
 		],
 		5 => [
 			'HV' => [
@@ -96,6 +97,7 @@ return [
 				'first3'  => '1, 2, 5, 6, 7, 11, 12',
 			],
 			'inter first3 HV & ST' => '2, 7',
+			'union first3 HV & ST' => '2, 3, 4, 7, 8, 9, 1, 5, 6, 11, 12',
 		],
 		8 => [
 			'HV' => [
@@ -116,6 +118,7 @@ return [
 				'first3'  => '5, 8, 9',
 			],
 			'inter first3 HV & ST' => '5, 8',
+			'union first3 HV & ST' => '3, 5, 8, 12, 9',
 		],
 		9 => [
 			'HV' => [
@@ -153,6 +156,7 @@ return [
 				'first3'  => '4, 5, 6, 7, 9, 10, 13',
 			],
 			'inter first3 HV & ST' => '4, 9',
+			'union first3 HV & ST' => '4, 8, 9, 12, 5, 6, 7, 10, 13',
 		],
 		11 => [
 			'HV' => [
@@ -271,6 +275,7 @@ return [
 				'first3'  => '1, 3, 6, 9, 10',
 			],
 			'inter first3 HV & ST' => '1, 6, 9, 10',
+			'union first3 HV & ST' => '1, 4, 5, 6, 9, 10, 3',
 		],
 		7 => [
 			'HV' => [
@@ -292,6 +297,7 @@ return [
 				'first3'  => '3, 6, 7, 9, 10, 12',
 			],
 			'inter first3 HV & ST' => '3, 9',
+			'union first3 HV & ST' => '2, 3, 4, 5, 8, 9, 6, 7, 10, 12',
 		],
 		8 => [
 			'HV' => [
@@ -344,6 +350,7 @@ return [
 				'first3'  => '2, 5, 7, 10, 12, 14',
 			],
 			'inter first3 HV & ST' => '5, 10, 12',
+			'union first3 HV & ST' => '1, 5, 8, 9, 10, 12, 2, 7, 14',
 		],
 		11 => [
 			'HV' => [
@@ -478,6 +485,7 @@ return [
 				'first3'  => '3, 7, 11',
 			],
 			'inter first3 HV & ST' => '3, 7',
+			'union first3 HV & ST' => '3, 4, 7, 11',
 		],
 		8 => [
 			'HV' => [
@@ -653,6 +661,7 @@ return [
 				'first3'  => '3, 11, 12',
 			],
 			'inter first3 HV & ST' => '3',
+			'union first3 HV & ST' => '1, 3, 9, 11, 12',
 		],
 		8 => [
 			'HV' => [
@@ -714,6 +723,7 @@ return [
 				'first3'  => '2, 3, 13',
 			],
 			'inter first3 HV & ST' => '2',
+			'union first3 HV & ST' => '1, 2, 5, 6, 7, 9, 10, 11, 12, 3, 13',
 		],
 		12 => [
 			'HV' => [
@@ -735,6 +745,7 @@ return [
 				'first3'  => '1, 2, 4, 6, 10, 12',
 			],
 			'inter first3 HV & ST' => '4, 12',
+			'union first3 HV & ST' => '4, 5, 12, 1, 2, 6, 10',
 		],
 		13 => [
 			'HV' => [
@@ -820,6 +831,7 @@ return [
 				'first3'  => '1, 5, 9',
 			],
 			'inter first3 HV & ST' => '1, 5',
+			'union first3 HV & ST' => '1, 2, 5, 9',
 		],
 		6 => [
 			'HV' => [
@@ -841,6 +853,7 @@ return [
 				'first3'  => '1, 6, 8, 10, 12',
 			],
 			'inter first3 HV & ST' => '1, 10, 12',
+			'union first3 HV & ST' => '1, 2, 3, 9, 10, 12, 6, 8',
 		],
 		7 => [
 			'HV' => [
@@ -901,6 +914,7 @@ return [
 				'first3'  => '1, 2, 3, 6, 10, 11',
 			],
 			'inter first3 HV & ST' => '10, 11',
+			'union first3 HV & ST' => '4, 10, 11, 1, 2, 3, 6',
 		],
 		11 => [
 			'HV' => [
@@ -920,6 +934,7 @@ return [
 				'first3'  => '1, 2, 7',
 			],
 			'inter first3 HV & ST' => '7',
+			'union first3 HV & ST' => '6, 7, 11, 1, 2',
 		],
 		12 => [
 			'HV' => [
@@ -1071,6 +1086,7 @@ return [
 				'first3'  => '2, 6, 7, 9, 11, 12, 13',
 			],
 			'inter first3 HV & ST' => '9, 11, 12',
+			'union first3 HV & ST' => '1, 9, 11, 12, 2, 6, 7, 13',
 		],
 		10 => [
 			'HV' => [
@@ -1096,6 +1112,7 @@ return [
 				'first3'  => '3, 5, 6, 7, 10, 12, 14',
 			],
 			'inter first3 HV & ST' => '3, 5, 7, 10, 12',
+			'union first3 HV & ST' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 6, 14',
 		],
 		11 => [
 			'HV' => [
@@ -1126,6 +1143,7 @@ return [
 				'first3'  => '2, 4, 11, 12',
 			],
 			'inter first3 HV & ST' => '12',
+			'union first3 HV & ST' => '3, 5, 12, 2, 4, 11',
 		],
 		13 => [
 			'HV' => [
@@ -1218,6 +1236,7 @@ return [
 				'first3'  => '1, 3, 4, 5, 8',
 			],
 			'inter first3 HV & ST' => '3, 5',
+			'union first3 HV & ST' => '3, 5, 10, 1, 4, 8',
 		],
 		7 => [
 			'HV' => [
@@ -1238,6 +1257,7 @@ return [
 				'first3'  => '1, 3, 6, 7, 11',
 			],
 			'inter first3 HV & ST' => '6, 7',
+			'union first3 HV & ST' => '6, 7, 8, 1, 3, 11',
 		],
 		8 => [
 			'HV' => [
@@ -1258,6 +1278,7 @@ return [
 				'first3'  => '1, 2, 8, 9, 12, 14',
 			],
 			'inter first3 HV & ST' => '2',
+			'union first3 HV & ST' => '2, 6, 10, 1, 8, 9, 12, 14',
 		],
 		9 => [
 			'HV' => [
@@ -1410,6 +1431,7 @@ return [
 				'first3'  => '1, 5, 6',
 			],
 			'inter first3 HV & ST' => '1, 6',
+			'union first3 HV & ST' => '1, 6, 10, 5',
 		],
 		7 => [
 			'HV' => [
@@ -1432,6 +1454,7 @@ return [
 				'first3'  => '1, 2, 3, 4, 5, 6, 7, 12',
 			],
 			'inter first3 HV & ST' => '1, 3, 6, 12',
+			'union first3 HV & ST' => '1, 3, 6, 8, 12, 2, 4, 5, 7',
 		],
 		8 => [
 			'HV' => [
@@ -1455,6 +1478,7 @@ return [
 				'first3'  => '1, 4, 6, 8, 11, 12, 14',
 			],
 			'inter first3 HV & ST' => '4, 11, 12',
+			'union first3 HV & ST' => '2, 4, 9, 10, 11, 12, 1, 6, 8, 14',
 		],
 		9 => [
 			'HV' => [
@@ -1485,6 +1509,7 @@ return [
 				'first3'  => '3, 6, 9',
 			],
 			'inter first3 HV & ST' => '3, 9',
+			'union first3 HV & ST' => '2, 3, 4, 8, 9, 6',
 		],
 		11 => [
 			'HV' => [
@@ -1599,6 +1624,7 @@ return [
 				'first3'  => '2, 3, 5',
 			],
 			'inter first3 HV & ST' => '5',
+			'union first3 HV & ST' => '5, 8, 9, 2, 3',
 		],
 		6 => [
 			'HV' => [
@@ -1619,6 +1645,7 @@ return [
 				'first3'  => '1, 2, 3, 4, 6',
 			],
 			'inter first3 HV & ST' => '4',
+			'union first3 HV & ST' => '4, 5, 8, 1, 2, 3, 6',
 		],
 		7 => [
 			'HV' => [
@@ -1666,6 +1693,7 @@ return [
 				'first3'  => '1, 3, 9',
 			],
 			'inter first3 HV & ST' => '9',
+			'union first3 HV & ST' => '2, 7, 9, 1, 3',
 		],
 		10 => [
 			'HV' => [
@@ -1707,6 +1735,7 @@ return [
 				'first3'  => '1, 2, 3, 5, 8, 11, 14',
 			],
 			'inter first3 HV & ST' => '1, 11',
+			'union first3 HV & ST' => '1, 4, 6, 9, 11, 2, 3, 5, 8, 14',
 		],
 		12 => [
 			'HV' => [
