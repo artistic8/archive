@@ -37,7 +37,7 @@ return [
 			5 => 28,
 			8 => 29.5,
 		],
-		'win inter' => '6, 8, 9',
+		'win inter' => '4, 6, 8, 9',
 		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
@@ -150,7 +150,7 @@ return [
 			7 => 25,
 			4 => 29,
 		],
-		'win inter' => '',
+		'win inter' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],

@@ -212,7 +212,7 @@ return [
 			11 => 13,
 			2 => 304.5,
 		],
-		'win inter' => '',
+		'win inter' => '7',
 		'allValues' => '',
 		'bets' => [
 		],
