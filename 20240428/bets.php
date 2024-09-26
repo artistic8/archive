@@ -1,5 +1,5 @@
 <?php
-//restart at 20240501
+
 return [
 	'1' => [
 		/**
@@ -88,7 +88,7 @@ return [
 			5 => 15,
 		],
 		'win inter' => '1, 2, 4, 5',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $100)' => '5',
 			'1 won(place bet)' => 150,

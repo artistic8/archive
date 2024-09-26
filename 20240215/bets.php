@@ -80,7 +80,7 @@ return [
 			10 => 41.5,
 		],
 		'win inter' => '1, 2, 11',
-		'allValues' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',
+		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $100)' => '11',
 			'1 won(place bet)' => 170,
