@@ -16,13 +16,11 @@ return [
 			4 => 31.5,
 			9 => 31,
 		],
-		'win inter' => '1, 3, 8',
+		'win inter' => '1, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
-			'place(end-favorites , $100)' => '10',
 		],
-		'total bets' => 100,
-		'total won in race 1' => -100,
+		'total bets' => 0,
 	],
 	'2' => [
 		/**
@@ -84,7 +82,7 @@ return [
 			9 => 114,
 			1 => 29.5,
 		],
-		'win inter' => '6',
+		'win inter' => '6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-wp , $100)' => '7',
@@ -131,7 +129,7 @@ return [
 			3 => 36.5,
 			9 => 28,
 		],
-		'win inter' => '1, 2, 6, 7',
+		'win inter' => '1, 2, 6, 7, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
@@ -175,7 +173,7 @@ return [
 			9 => 24.5,
 			8 => 97,
 		],
-		'win inter' => '3, 4, 5, 7, 8',
+		'win inter' => '3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $100)' => '4',
@@ -211,7 +209,7 @@ return [
 		'total won in race 9' => 60,
 	],
 ];
-//total major place favorites: -225
+//total major place favorites: -125
 //total major place wp: 170
 //total sure place: -100
-//total: -155
+//total: -55
