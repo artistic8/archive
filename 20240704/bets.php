@@ -10,8 +10,10 @@ return [
 		'official win' => '1, 7, 2, 4',
 		'suggestions' => [
 			'win' => '1',
+			'inter' => '1',//count: 1
 			'qin' => '1, 7, 8',
 			'trio' => '1, 4, 5, 7, 8',
+			'diff' => '2, 3, 6, 9, 10, 11, 12',
 		],
 		'win amount' => 59,
 		'qin amount' => 293,
@@ -36,8 +38,10 @@ return [
 		'official win' => '1, 3, 6, 2',
 		'suggestions' => [
 			'win' => '4, 6, 7, 8, 11',
+			'inter' => '6',//count: 1
 			'qin' => '4, 5, 6, 7, 8, 9, 11, 14',
 			'trio' => '2, 4, 5, 6, 7, 8, 9, 10, 11, 14',
+			'diff' => '1, 3',
 		],
 		'win amount' => 71.5,
 		'qin amount' => 280,
@@ -62,8 +66,10 @@ return [
 		'official win' => '5, 2, 1, 11',
 		'suggestions' => [
 			'win' => '2, 7',
+			'inter' => '2',//count: 1
 			'qin' => '2, 4, 7, 9',
 			'trio' => '2, 4, 7, 9',
+			'diff' => '1, 3, 5, 6, 8, 10, 11, 12',
 		],
 		'win amount' => 49,
 		'qin amount' => 84.5,
@@ -90,6 +96,7 @@ return [
 			'win' => '',
 			'qin' => '',
 			'trio' => '',
+			'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		],
 		'win amount' => 103.5,
 		'qin amount' => 229.5,
@@ -114,8 +121,10 @@ return [
 		'official win' => '4, 7, 8, 6',
 		'suggestions' => [
 			'win' => '3',
+			'inter' => '3',//count: 1
 			'qin' => '3, 8',
 			'trio' => '3, 8, 9',
+			'diff' => '1, 2, 4, 5, 6, 7, 10, 11, 12',
 		],
 		'win amount' => 30.5,
 		'qin amount' => 580.5,
@@ -145,6 +154,7 @@ return [
 			'win' => '',
 			'qin' => '',
 			'trio' => '',
+			'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		],
 		'win amount' => 30.5,
 		'qin amount' => 238.5,
@@ -174,6 +184,7 @@ return [
 			'win' => '',
 			'qin' => '',
 			'trio' => '',
+			'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		],
 		'win amount' => 135.5,
 		'qin amount' => 196,
@@ -200,8 +211,10 @@ return [
 		'official win' => '2, 5, 1, 8',
 		'suggestions' => [
 			'win' => '1',
+			'inter' => '',//count: 0
 			'qin' => '1, 5',
 			'trio' => '1, 5, 9',
+			'diff' => '2, 3, 4, 6, 7, 8, 10, 11, 12',
 		],
 		'win amount' => 28.5,
 		'qin amount' => 91.5,
@@ -226,8 +239,10 @@ return [
 		'official win' => '2, 12, 11, 4',
 		'suggestions' => [
 			'win' => '3',
+			'inter' => '3',//count: 1
 			'qin' => '3, 11',
 			'trio' => '3, 11, 5',
+			'diff' => '1, 2, 4, 6, 7, 8, 9, 10, 12',
 		],
 		'win amount' => 236,
 		'qin amount' => 1645,

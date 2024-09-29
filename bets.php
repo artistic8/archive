@@ -85,8 +85,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $racetext .= "\t\t'suggestions' => [\n";
     $racetext .= "\t\t\t'win' => '" . implode(", ", $suggestions["win"]) . "',\n";
+    if(!empty($suggestions["win"])){
+        $inter = array_intersect($suggestions["win"], $favorites);
+        $racetext .= "\t\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
+    }
     $racetext .= "\t\t\t'qin' => '" . implode(", ", $suggestions["qin"]) . "',\n";
     $racetext .= "\t\t\t'trio' => '" . implode(", ", $suggestions["trio"]) . "',\n";
+    $diff = array_diff($runners, $suggestions["trio"]);
+    $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
