@@ -84,11 +84,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
     $racetext .= "\t\t'suggestions' => [\n";
-    $racetext .= "\t\t\t'win' => '" . implode(", ", $suggestions["win"]) . "',\n";
-    $racetext .= "\t\t\t'qin' => '" . implode(", ", $suggestions["qin"]) . "',\n";
-    $racetext .= "\t\t\t'trio' => '" . implode(", ", $suggestions["trio"]) . "',\n";
-    $diff = array_diff($runners, $suggestions["trio"]);
-    $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+    $racetext .= "\t\t\t'win' => '" . implode(", ", array_intersect($runners, $suggestions["win"])) . "',\n";
+    $racetext .= "\t\t\t'qin' => '" . implode(", ", array_intersect($runners, $suggestions["qin"])) . "',\n";
+    $racetext .= "\t\t\t'trio' => '" . implode(", ", array_intersect($runners, $suggestions["trio"])) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
@@ -120,6 +118,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    if(!empty($suggestions["trio"])){
+        $union = array_values(array_unique(array_merge($suggestions["trio"], $winInter)));
+        sort($union);
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+    }
     $unitBet = 100;
     $allValues = [];
     foreach($runners  as $one){
