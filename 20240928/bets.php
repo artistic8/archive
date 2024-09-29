@@ -18,6 +18,11 @@ return [
 		],
 		'win inter' => '1, 6, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'suggestions' => [
+			'win' => '1, 5',
+			'qin' => '1, 4, 5, 8',
+			'trio' => '1, 4, 5, 8',
+		],
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'place(end-wp , $100)' => '7',
@@ -42,6 +47,11 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 6, 7, 8, 9',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9',
+		'suggestions' => [
+			'win' => '1, 4, 6, 7, 8, 11',
+			'qin' => '1, 3, 4, 5, 6, 7, 8, 9, 11, 14',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14',
+		],
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -63,6 +73,11 @@ return [
 		],
 		'win inter' => '3, 7, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'suggestions' => [
+			'win' => '5',
+			'qin' => '5, 7',
+			'trio' => '5, 7, 8',
+		],
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'1 won(place bet)' => 170,
@@ -87,6 +102,11 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'suggestions' => [
+			'win' => '11',
+			'qin' => '11, 1',
+			'trio' => '11, 1, 10',
+		],
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -108,6 +128,11 @@ return [
 		],
 		'win inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'suggestions' => [
+			'win' => '2',
+			'qin' => '2, 7, 12',
+			'trio' => '2, 4, 7, 12',
+		],
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -129,6 +154,11 @@ return [
 		],
 		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'suggestions' => [
+			'win' => '9',
+			'qin' => '9, 8',
+			'trio' => '9, 8, 1',
+		],
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -150,6 +180,11 @@ return [
 		],
 		'win inter' => '1, 2, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'suggestions' => [
+			'win' => '1, 2, 6, 12',
+			'qin' => '1, 2, 4, 6, 9, 12',
+			'trio' => '1, 2, 4, 6, 9, 10, 12',
+		],
 		'bets' => [
 			'place(end-favorites , $100)' => '6',
 			'place(end-wp , $100)' => '6',
@@ -174,6 +209,11 @@ return [
 		],
 		'win inter' => '4, 6, 8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'suggestions' => [
+			'win' => '1, 2, 11',
+			'qin' => '1, 2, 5, 6, 8, 11',
+			'trio' => '1, 2, 3, 5, 6, 8, 9, 11',
+		],
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
 			'place(end-wp , $100)' => '8',
@@ -198,6 +238,11 @@ return [
 		],
 		'win inter' => '1, 2, 5, 8, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'suggestions' => [
+			'win' => '1, 11',
+			'qin' => '1, 6, 10, 11',
+			'trio' => '1, 6, 7, 8, 10, 11',
+		],
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
 			'super sure bet' => 'super sure place 8',
@@ -222,6 +267,11 @@ return [
 		],
 		'win inter' => '10',
 		'allValues' => '',
+		'suggestions' => [
+			'win' => '3, 5, 6, 8, 9, 10, 11',
+			'qin' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
+			'trio' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
+		],
 		'bets' => [
 		],
 		'total bets' => 0,

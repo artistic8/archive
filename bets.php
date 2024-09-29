@@ -9,6 +9,7 @@ else $revision = "";
 
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
+$favhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "favhistory.php");
 
 function factorial($n){
     if($n <= 0) return 1;
@@ -66,6 +67,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
+    $suggestions = $favhistory[implode(", ", $favorites)];
     sort($runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
@@ -137,6 +139,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    $racetext .= "\t\t'suggestions' => [\n";
+    $racetext .= "\t\t\t'win' => '" . implode(", ", $suggestions["win"]) . "',\n";
+    $racetext .= "\t\t\t'qin' => '" . implode(", ", $suggestions["qin"]) . "',\n";
+    $racetext .= "\t\t\t'trio' => '" . implode(", ", $suggestions["trio"]) . "',\n";
+    $racetext .= "\t\t],\n";
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
