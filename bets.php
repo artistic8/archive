@@ -68,7 +68,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     if(isset($favhistory[implode(", ", $favorites)])) $suggestions = $favhistory[implode(", ", $favorites)];
-    else $suggestions = ["win" => [], "qin" => [], "trio => []"];
+    else $suggestions = ["win" => [], "qin" => [], "trio" => []];
     sort($runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
