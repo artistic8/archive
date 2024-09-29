@@ -179,8 +179,8 @@ return [
 		'suggestions' => [
 			'win' => '5',
 			'inter' => '5',//count: 1
-			'qin' => '5, 2',
-			'trio' => '5, 2, 7',
+			'qin' => '2, 5',
+			'trio' => '2, 5, 7',
 			'diff' => '1, 3, 4, 6, 8, 9, 10, 11, 12',
 		],
 		'win amount' => 44,

@@ -207,8 +207,8 @@ return [
 		'suggestions' => [
 			'win' => '7',
 			'inter' => '7',//count: 1
-			'qin' => '7, 1',
-			'trio' => '7, 1, 11',
+			'qin' => '1, 7',
+			'trio' => '1, 7, 11',
 			'diff' => '2, 3, 4, 5, 6, 8, 9, 10',
 		],
 		'win amount' => 89,

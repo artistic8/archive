@@ -160,8 +160,8 @@ return [
 		'suggestions' => [
 			'win' => '8',
 			'inter' => '8',//count: 1
-			'qin' => '8, 3',
-			'trio' => '8, 3, 11',
+			'qin' => '3, 8',
+			'trio' => '3, 8, 11',
 			'diff' => '1, 2, 4, 5, 6, 7, 9, 10, 12',
 		],
 		'win amount' => 101.5,

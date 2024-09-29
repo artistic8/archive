@@ -20,6 +20,8 @@ foreach ($dir as $fileinfo) {
                         "qin" => array_slice($winners, 0, 2),
                         "trio" => array_slice($winners, 0, 3),
                 ];
+                sort($history[$favorites]["qin"]);
+                sort($history[$favorites]["trio"]);
             }
             else{
                 $history[$favorites]["win"] = array_values(array_unique(array_merge($history[$favorites]["win"], array_slice($winners, 0, 1))));

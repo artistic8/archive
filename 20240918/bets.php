@@ -39,8 +39,8 @@ return [
 		'suggestions' => [
 			'win' => '8',
 			'inter' => '',//count: 0
-			'qin' => '8, 3',
-			'trio' => '8, 3, 12',
+			'qin' => '3, 8',
+			'trio' => '3, 8, 12',
 			'diff' => '1, 2, 4, 5, 6, 7, 9, 10',
 		],
 		'win amount' => 28,
@@ -124,8 +124,8 @@ return [
 		'suggestions' => [
 			'win' => '9',
 			'inter' => '9',//count: 1
-			'qin' => '9, 5',
-			'trio' => '9, 5, 2',
+			'qin' => '5, 9',
+			'trio' => '2, 5, 9',
 			'diff' => '1, 3, 4, 6, 7, 8, 10',
 		],
 		'win amount' => 52.5,
@@ -153,7 +153,7 @@ return [
 			'win' => '5',
 			'inter' => '',//count: 0
 			'qin' => '5, 7',
-			'trio' => '5, 7, 2',
+			'trio' => '2, 5, 7',
 			'diff' => '1, 3, 4, 6, 8, 9, 10, 11, 12',
 		],
 		'win amount' => 79,
@@ -183,8 +183,8 @@ return [
 		'suggestions' => [
 			'win' => '7',
 			'inter' => '7',//count: 1
-			'qin' => '7, 2',
-			'trio' => '7, 2, 1',
+			'qin' => '2, 7',
+			'trio' => '1, 2, 7',
 			'diff' => '3, 4, 5, 6, 8, 9, 10',
 		],
 		'win amount' => 56,

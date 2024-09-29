@@ -12,7 +12,7 @@ return [
 			'win' => '8',
 			'inter' => '8',//count: 1
 			'qin' => '8, 9',
-			'trio' => '8, 9, 5',
+			'trio' => '5, 8, 9',
 			'diff' => '1, 2, 3, 4, 6, 7, 10',
 		],
 		'win amount' => 24.5,
@@ -187,8 +187,8 @@ return [
 		'suggestions' => [
 			'win' => '10',
 			'inter' => '10',//count: 1
-			'qin' => '10, 3',
-			'trio' => '10, 3, 6',
+			'qin' => '3, 10',
+			'trio' => '3, 6, 10',
 			'diff' => '1, 4, 5, 7, 8, 9',
 		],
 		'win amount' => 18,
