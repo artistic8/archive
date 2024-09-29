@@ -82,6 +82,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
+    $racetext .= "\t\t'suggestions' => [\n";
+    $racetext .= "\t\t\t'win' => '" . implode(", ", $suggestions["win"]) . "',\n";
+    $racetext .= "\t\t\t'qin' => '" . implode(", ", $suggestions["qin"]) . "',\n";
+    $racetext .= "\t\t\t'trio' => '" . implode(", ", $suggestions["trio"]) . "',\n";
+    $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
     }
@@ -139,11 +144,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    // $racetext .= "\t\t'suggestions' => [\n";
-    // $racetext .= "\t\t\t'win' => '" . implode(", ", $suggestions["win"]) . "',\n";
-    // $racetext .= "\t\t\t'qin' => '" . implode(", ", $suggestions["qin"]) . "',\n";
-    // $racetext .= "\t\t\t'trio' => '" . implode(", ", $suggestions["trio"]) . "',\n";
-    // $racetext .= "\t\t],\n";
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
