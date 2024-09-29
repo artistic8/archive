@@ -10,7 +10,6 @@ return [
 		'official win' => '7, 13, 2, 4',
 		'suggestions' => [
 			'win' => '12',
-			'inter' => '12',//count: 1
 			'qin' => '7, 12',
 			'trio' => '6, 7, 12',
 			'diff' => '1, 2, 3, 4, 5, 8, 9, 10, 11, 13, 14',
@@ -38,7 +37,6 @@ return [
 		'official win' => '10, 14, 7, 5',
 		'suggestions' => [
 			'win' => '4',
-			'inter' => '4',//count: 1
 			'qin' => '4, 5',
 			'trio' => '4, 5, 11',
 			'diff' => '1, 2, 3, 6, 7, 9, 10, 12, 13, 14',
@@ -71,7 +69,6 @@ return [
 		'official win' => '2, 4, 6, 7',
 		'suggestions' => [
 			'win' => '2',
-			'inter' => '2',//count: 1
 			'qin' => '1, 2, 3',
 			'trio' => '1, 2, 3, 7, 10, 13',
 			'diff' => '4, 5, 6, 8, 9',
@@ -99,7 +96,6 @@ return [
 		'official win' => '2, 8, 5, 4',
 		'suggestions' => [
 			'win' => '1, 3',
-			'inter' => '',//count: 0
 			'qin' => '1, 3, 4, 8',
 			'trio' => '1, 3, 4, 8, 9',
 			'diff' => '2, 5, 6, 7, 10, 11, 12, 13, 14',
@@ -127,7 +123,6 @@ return [
 		'official win' => '1, 4, 3, 2',
 		'suggestions' => [
 			'win' => '1, 2, 4, 6, 7',
-			'inter' => '6',//count: 1
 			'qin' => '1, 2, 3, 4, 6, 7, 8, 9, 11',
 			'trio' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 			'diff' => '5',
@@ -155,7 +150,6 @@ return [
 		'official win' => '4, 1, 2, 8',
 		'suggestions' => [
 			'win' => '2',
-			'inter' => '2',//count: 1
 			'qin' => '2, 11',
 			'trio' => '2, 4, 11',
 			'diff' => '1, 3, 5, 6, 7, 8, 9, 10, 12, 13, 14',
@@ -188,7 +182,6 @@ return [
 		'official win' => '1, 8, 5, 3',
 		'suggestions' => [
 			'win' => '1, 2, 3, 7, 9',
-			'inter' => '1, 3',//count: 2
 			'qin' => '1, 2, 3, 4, 7, 8, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
 			'diff' => '6, 11',
@@ -216,7 +209,6 @@ return [
 		'official win' => '3, 2, 6, 5',
 		'suggestions' => [
 			'win' => '8',
-			'inter' => '',//count: 0
 			'qin' => '2, 8',
 			'trio' => '2, 3, 8',
 			'diff' => '1, 4, 5, 6, 7, 9, 10, 11, 12, 13',
@@ -247,7 +239,6 @@ return [
 		'official win' => '7, 2, 14, 4',
 		'suggestions' => [
 			'win' => '3, 4, 6',
-			'inter' => '4',//count: 1
 			'qin' => '3, 4, 6, 7, 10',
 			'trio' => '1, 3, 4, 6, 7, 8, 10',
 			'diff' => '2, 5, 9, 11, 12, 13, 14',

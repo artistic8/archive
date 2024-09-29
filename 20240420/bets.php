@@ -129,7 +129,6 @@ return [
 		'official win' => '1, 10, 8, 12',
 		'suggestions' => [
 			'win' => '11',
-			'inter' => '',//count: 0
 			'qin' => '6, 11',
 			'trio' => '6, 7, 11',
 			'diff' => '1, 2, 3, 4, 5, 8, 9, 10, 12, 13, 14',
@@ -159,7 +158,6 @@ return [
 		'official win' => '11, 8, 3, 2',
 		'suggestions' => [
 			'win' => '1, 2',
-			'inter' => '2',//count: 1
 			'qin' => '1, 2, 5, 6',
 			'trio' => '1, 2, 5, 6, 9',
 			'diff' => '3, 4, 7, 8, 10, 11, 12',
@@ -219,7 +217,6 @@ return [
 		'official win' => '4, 6, 1, 7',
 		'suggestions' => [
 			'win' => '1, 4, 6, 7',
-			'inter' => '7',//count: 1
 			'qin' => '1, 4, 6, 7, 8, 11',
 			'trio' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',
 			'diff' => '5, 9',
@@ -247,7 +244,6 @@ return [
 		'official win' => '7, 8, 2, 6',
 		'suggestions' => [
 			'win' => '1, 4, 6, 8, 11',
-			'inter' => '6',//count: 1
 			'qin' => '1, 3, 4, 5, 6, 7, 8, 9, 11, 14',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14',
 			'diff' => '12, 13',
@@ -275,7 +271,6 @@ return [
 		'official win' => '14, 1, 3, 10',
 		'suggestions' => [
 			'win' => '7',
-			'inter' => '',//count: 0
 			'qin' => '4, 7',
 			'trio' => '4, 7, 11',
 			'diff' => '1, 2, 3, 5, 6, 8, 9, 10, 12, 13, 14',
