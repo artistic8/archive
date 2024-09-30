@@ -1,5 +1,16 @@
 <?php
 
+function get2Sets($array){
+    $result = [];
+    sort($array);
+    foreach($array as $one){
+        foreach($array as $two){
+            if($two > $one) $result[] = "$one, $two";
+        }
+    }
+    return $result;
+}
+
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $raceDate = trim($argv[1]);
@@ -67,8 +78,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
-    if(isset($favhistory[implode(", ", $favorites)])) $suggestions = $favhistory[implode(", ", $favorites)];
-    else $suggestions = ["win" => [], "qin" => [], "trio" => []];
+    $_2sets = get2Sets($favorites);
+    $suggestions = ["win" => [], "qin" => [], "trio" => []];
+    foreach($_2sets as $example){
+        if(isset($favhistory[$raceNumber][$example])) {
+            $suggestions["win"] = array_values(array_unique(array_merge($suggestions["win"], $favhistory[$raceNumber][$example]["win"])));
+            $suggestions["qin"] = array_values(array_unique(array_merge($suggestions["qin"], $favhistory[$raceNumber][$example]["qin"])));
+            $suggestions["trio"] = array_values(array_unique(array_merge($suggestions["trio"], $favhistory[$raceNumber][$example]["trio"])));
+        }
+    }
+    
     sort($runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
@@ -88,11 +107,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t\t'qin' => '" . implode(", ", array_intersect($runners, $suggestions["qin"])) . "',\n";
     $racetext .= "\t\t\t'trio' => '" . implode(", ", array_intersect($runners, $suggestions["trio"])) . "',\n";
     $diff = array_intersect($runners, array_diff($suggestions["trio"], $suggestions["win"]));
-    if(!empty($diff)) $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
-    if(count(array_intersect($runners, $suggestions["win"])) > 1 && count($favorites) >= 3){
-        $inter = array_intersect($diff, $favorites);
-        if(!empty($inter)) $racetext .= "\t\t'inter' => '" . implode(", ", $inter) . "',//count: " . count($inter) . "\n";
-    }
+    if(!empty($diff)) $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
