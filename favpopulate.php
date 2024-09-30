@@ -1,15 +1,6 @@
 <?php
 
-function get2Sets($array){
-    $result = [];
-    sort($array);
-    foreach($array as $one){
-        foreach($array as $two){
-            if($two > $one) $result[] = "$one, $two";
-        }
-    }
-    return $result;
-}
+require 'functions.php';
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "favhistory.php";
 $outtext = "<?php\n";

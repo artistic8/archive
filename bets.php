@@ -1,15 +1,6 @@
 <?php
 
-function get2Sets($array){
-    $result = [];
-    sort($array);
-    foreach($array as $one){
-        foreach($array as $two){
-            if($two > $one) $result[] = "$one, $two";
-        }
-    }
-    return $result;
-}
+require 'functions.php';
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 

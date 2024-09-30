@@ -26,7 +26,7 @@ if (!file_exists($outDir)) {
     mkdir($outDir, 0777, true);
 }
 
-$outFile =$outDir . DIRECTORY_SEPARATOR . "odds.php";
+$outFile =$outDir . DIRECTORY_SEPARATOR . "winodds.php";
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
@@ -38,7 +38,7 @@ for($r = 1; $r <= $totalRaces; $r++){
 
     $outtext .= "\t$r => [\n";
 
-    $odds = getPlaceOdds($raceDateFormat, $venue, $r);
+    $odds = getPlaceOdds($raceDateFormat, $venue, $r, "WIN");
 
     foreach($odds as $runner => $currentOdds){
         if($currentOdds !== "SCR" && $currentOdds != 0){
