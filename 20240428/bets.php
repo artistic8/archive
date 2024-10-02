@@ -244,7 +244,7 @@ return [
 			9 => 151,
 		],
 		'win inter' => '3, 4, 8',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites , $100)' => '11',
 			'place(end-wp , $100)' => '11',

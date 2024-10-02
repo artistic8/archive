@@ -226,7 +226,7 @@ return [
 			1 => 16.5,
 		],
 		'win inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-wp , $100)' => '8',
 			'2 won(place bet)' => 255,
@@ -270,10 +270,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 8, 10, 6',
 		'suggestions' => [
-			'win' => '7',
-			'qin' => '5, 7',
-			'trio' => '2, 5, 7',//count trio: 3
-			'diff' => '2, 5',//count diff: 2
+			'win' => '7, 9',
+			'qin' => '1, 5, 7, 9',
+			'trio' => '1, 2, 5, 7, 9',//count trio: 5
+			'diff' => '1, 2, 5',//count diff: 3
 			'inter' => '5',
 		],
 		'win amount' => 36.5,

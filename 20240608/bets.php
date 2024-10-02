@@ -9,11 +9,11 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '6, 1, 4, 5',
 		'suggestions' => [
-			'win' => '1, 2, 7, 11',
-			'qin' => '1, 2, 4, 6, 7, 8, 9, 10, 11',
+			'win' => '1, 2, 5, 7, 11',
+			'qin' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count trio: 11
-			'diff' => '3, 4, 5, 6, 8, 9, 10',//count diff: 7
-			'inter' => '5, 6',
+			'diff' => '3, 4, 6, 8, 9, 10',//count diff: 6
+			'inter' => '6',
 		],
 		'win amount' => 53.5,
 		'qin amount' => 139.5,
@@ -68,11 +68,11 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '7, 2, 5, 1',
 		'suggestions' => [
-			'win' => '5, 7',
-			'qin' => '3, 5, 7',
-			'trio' => '1, 3, 4, 5, 7, 8',//count trio: 6
-			'diff' => '1, 3, 4, 8',//count diff: 4
-			'inter' => '',
+			'win' => '5, 7, 8',
+			'qin' => '2, 3, 5, 7, 8',
+			'trio' => '1, 2, 3, 4, 5, 7, 8, 9',//count trio: 8
+			'diff' => '1, 2, 3, 4, 9',//count diff: 5
+			'inter' => '2',
 		],
 		'win amount' => 21.5,
 		'qin amount' => 29,
@@ -82,7 +82,7 @@ return [
 			2 => 14,
 			5 => 25.5,
 		],
-		'win inter' => '3, 5, 7, 9',
+		'win inter' => '3, 5, 7, 8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
@@ -229,7 +229,7 @@ return [
 			8 => 30,
 		],
 		'win inter' => '1, 3, 4, 8',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -273,11 +273,11 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '10, 12, 1, 3',
 		'suggestions' => [
-			'win' => '2, 3, 7',
+			'win' => '2, 3, 7, 9',
 			'qin' => '1, 2, 3, 7, 8, 9, 10',
-			'trio' => '1, 2, 3, 4, 7, 8, 9, 10',//count trio: 8
-			'diff' => '1, 4, 8, 9, 10',//count diff: 5
-			'inter' => '4, 9',
+			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10',//count trio: 9
+			'diff' => '1, 4, 5, 8, 10',//count diff: 5
+			'inter' => '4',
 		],
 		'win amount' => 133,
 		'qin amount' => 1390.5,
