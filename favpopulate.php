@@ -52,7 +52,7 @@ foreach($history as $r => $racecontents){
         $outtext .= "\t\t\t'trio' => [" . implode(", ", $contents["trio"]) . "],\n";
         $outtext .= "\t\t],\n";
     }
-    $outtext .= "],\n";
+    $outtext .= "\t],\n";
 }
 $outtext .= "];\n?>\n";
 file_put_contents($outFile, $outtext);
