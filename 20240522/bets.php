@@ -259,6 +259,7 @@ return [
 		'official win' => '6, 1, 3, 4',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
+		'official win' => '6, 1, 3, 4',
 			'super sure bet' => 'super sure place 7',
 		],
 		'total bets' => 200,

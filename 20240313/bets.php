@@ -295,6 +295,7 @@ return [
 		'official win' => '5, 4, 8, 6',
 		'bets' => [
 			'place(end-favorites , $100)' => '6',
+		'official win' => '5, 4, 8, 6',
 		],
 		'total bets' => 100,
 		'total won in race 9' => -100,

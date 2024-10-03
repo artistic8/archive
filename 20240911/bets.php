@@ -31,7 +31,9 @@ return [
 		'official win' => '8, 2, 3, 5',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
+		'official win' => '8, 2, 3, 5',
 			'place(end-wp , $100)' => '7',
+		'official win' => '8, 2, 3, 5',
 		],
 		'total bets' => 200,
 		'total won in race 1' => -200,
