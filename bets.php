@@ -172,7 +172,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $diff2 = array_diff($runners, $suggestions["trio"]);
     $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
     if(!empty($allValues) && !empty($suggestions["trio"]) && (count($diff1) <= 2 || count($diff2) <= 2))
-        $racetext .= "\t\t'win bet' => '" . implode(", ", $suggestions["qin"]) . "',\n"; 
+        $racetext .= "\t\t'win bet' => '" . implode(", ", array_intersect($allValues, $suggestions["qin"])) . "',\n"; 
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
    }
