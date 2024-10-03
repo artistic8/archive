@@ -24,6 +24,8 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'diff1' => '2, 6, 7, 9, 10',
+		'official win' => '8, 11, 2, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -52,6 +54,8 @@ return [
 		],
 		'win inter' => '4, 6, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'diff1' => '1, 2, 3, 5, 8, 9, 10, 11',
+		'official win' => '9, 12, 3, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 		],
@@ -82,6 +86,8 @@ return [
 		],
 		'win inter' => '2, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
+		'diff1' => '1, 4, 5, 6, 7',
+		'official win' => '1, 8, 7, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -110,6 +116,8 @@ return [
 		],
 		'win inter' => '1, 2, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'diff1' => '3, 4, 6, 7, 8, 9, 10, 11, 12',
+		'official win' => '1, 4, 10, 2',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
 			'1 won(place bet)' => 490,
@@ -142,6 +150,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8, 10, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'diff1' => '6',
+		'official win' => '4, 10, 11, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -170,6 +180,8 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'diff1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'official win' => '12, 3, 5, 11',
 		'bets' => [
 			'place(end-wp , $100)' => '10',
 		],
@@ -199,6 +211,8 @@ return [
 		],
 		'win inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'diff1' => '1, 3, 4, 5, 6, 7, 8',
+		'official win' => '2, 4, 5, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -227,6 +241,8 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'diff1' => '2, 6, 9, 10, 11, 12',
+		'official win' => '13, 8, 1, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -254,6 +270,8 @@ return [
 		],
 		'win inter' => '1, 5, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'diff1' => '2, 3, 4, 6, 7, 8, 9, 10, 11',
+		'official win' => '2, 5, 8, 6',
 		'bets' => [
 			'place(end-favorites , $100)' => '11',
 		],
@@ -284,6 +302,8 @@ return [
 		],
 		'win inter' => '1, 3, 7',
 		'allValues' => '',
+		'diff1' => '',
+		'official win' => '1, 5, 9, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
