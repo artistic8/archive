@@ -160,9 +160,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    $diff1 = array_diff($allValues, $winInter);
+    $diff1 = array_diff($runners, $allValues);
     $racetext .= "\t\t'diff1' => '" . implode(", ", $diff1) . "',\n";
-   if(isset($officialWin)){
+    $diff2 = array_diff($runners, $suggestions["trio"]);
+    $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
+    if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
    }
     $racetext .= "\t\t'bets' => [\n";
