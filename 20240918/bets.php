@@ -25,7 +25,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff1' => '4, 5, 6, 7, 9',
+		'diff1' => '',
+		'diff2' => '5, 7, 9',
 		'official win' => '5, 2, 8, 7',
 		'bets' => [
 		],
@@ -55,7 +56,8 @@ return [
 		],
 		'win inter' => '2, 7, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff1' => '1, 3, 4, 5, 6, 8',
+		'diff1' => '10',
+		'diff2' => '',
 		'official win' => '4, 3, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
@@ -87,7 +89,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 5, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'diff1' => '4, 6, 8',
+		'diff1' => '9',
+		'diff2' => '6, 7, 9',
 		'official win' => '1, 8, 9, 3',
 		'bets' => [
 		],
@@ -117,7 +120,8 @@ return [
 		],
 		'win inter' => '2, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'diff1' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 12',
+		'diff1' => '',
+		'diff2' => '',
 		'official win' => '1, 4, 5, 11',
 		'bets' => [
 		],
@@ -147,7 +151,8 @@ return [
 		],
 		'win inter' => '2, 3, 5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'diff1' => '1, 4, 6, 7, 8',
+		'diff1' => '9, 10',
+		'diff2' => '1, 4, 6, 8, 10',
 		'official win' => '5, 2, 9, 1',
 		'bets' => [
 		],
@@ -177,7 +182,8 @@ return [
 		],
 		'win inter' => '1, 3, 6, 8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'diff1' => '2, 4, 5, 7, 10',
+		'diff1' => '11, 12',
+		'diff2' => '4',
 		'official win' => '2, 5, 8, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
@@ -210,7 +216,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff1' => '4, 7, 8, 9',
+		'diff1' => '10',
+		'diff2' => '',
 		'official win' => '6, 8, 7, 4',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
@@ -245,7 +252,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 6, 8, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'diff1' => '5, 7, 9, 10, 11',
+		'diff1' => '',
+		'diff2' => '10',
 		'official win' => '9, 12, 11, 6',
 		'bets' => [
 			'place(end-wp , $100)' => '8',
