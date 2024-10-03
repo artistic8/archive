@@ -164,6 +164,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'diff1' => '" . implode(", ", $diff1) . "',\n";
     $diff2 = array_diff($runners, $suggestions["trio"]);
     $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
+    if(!empty($allValues) && !empty($suggestions["trio"]) && (count($diff1) <= 2 || count($diff2) <= 2))
+        $racetext .= "\t\t'win bet' => '" . implode(", ", $suggestions["win"]) . "',\n"; 
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
    }
