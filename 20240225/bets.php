@@ -58,7 +58,7 @@ return [
 		'allValues' => '2, 3, 4, 5, 6',
 		'diff1' => '1',
 		'diff2' => '4',
-		'win bet' => '1, 2, 3, 5, 6',
+		'win bet' => '2, 3, 5, 6',
 		'official win' => '2, 6, 3, 5',
 		'bets' => [
 		],
@@ -212,7 +212,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11',
 		'diff2' => '4',
-		'win bet' => '1, 2, 3, 6, 8, 10, 11',
+		'win bet' => '1, 2, 3, 6, 8',
 		'official win' => '1, 2, 8, 3',
 		'bets' => [
 		],

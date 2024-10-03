@@ -93,7 +93,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff1' => '9, 10, 11, 12',
 		'diff2' => '6, 10',
-		'win bet' => '1, 2, 3, 4, 5, 8, 9, 11, 12',
+		'win bet' => '1, 2, 3, 4, 5, 8',
 		'official win' => '3, 8, 9, 5',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
