@@ -13,7 +13,7 @@ return [
 			'qin' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count trio: 11
 			'diff' => '3, 4, 6, 8, 9, 10',//count diff: 6
-			'inter' => '6',
+			'inter' => '1, 5',
 		],
 		'win amount' => 53.5,
 		'qin amount' => 139.5,
@@ -44,7 +44,7 @@ return [
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 9, 12, 13',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13',//count trio: 11
 			'diff' => '1, 2, 3, 7, 10',//count diff: 5
-			'inter' => '3, 7',
+			'inter' => '12',
 		],
 		'win amount' => 27.5,
 		'qin amount' => 227.5,
@@ -72,7 +72,7 @@ return [
 			'qin' => '2, 3, 5, 7, 8',
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9',//count trio: 8
 			'diff' => '1, 2, 3, 4, 9',//count diff: 5
-			'inter' => '2',
+			'inter' => '7',
 		],
 		'win amount' => 21.5,
 		'qin amount' => 29,
@@ -155,7 +155,7 @@ return [
 			'qin' => '1, 2, 3, 4, 6, 7, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',//count trio: 11
 			'diff' => '5, 6, 7, 10, 12',//count diff: 5
-			'inter' => '12',
+			'inter' => '2, 4',
 		],
 		'win amount' => 30.5,
 		'qin amount' => 117,
@@ -185,7 +185,7 @@ return [
 			'qin' => '3, 5, 6, 8, 9',
 			'trio' => '2, 3, 4, 5, 6, 7, 8, 9',//count trio: 8
 			'diff' => '2, 4, 5, 7, 8, 9',//count diff: 6
-			'inter' => '7, 9',
+			'inter' => '3',
 		],
 		'win amount' => 30.5,
 		'qin amount' => 204.5,
@@ -218,7 +218,7 @@ return [
 			'qin' => '1, 3, 8, 10, 12',
 			'trio' => '1, 3, 4, 8, 10, 12',//count trio: 6
 			'diff' => '4, 10, 12',//count diff: 3
-			'inter' => '',
+			'inter' => '1',
 		],
 		'win amount' => 30.5,
 		'qin amount' => 321.5,
@@ -246,7 +246,7 @@ return [
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'diff' => '7',//count diff: 1
-			'inter' => '',
+			'inter' => '1, 2, 3, 9, 11',
 		],
 		'win amount' => 67.5,
 		'qin amount' => 275.5,
@@ -277,7 +277,7 @@ return [
 			'qin' => '1, 2, 3, 7, 8, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10',//count trio: 9
 			'diff' => '1, 4, 5, 8, 10',//count diff: 5
-			'inter' => '4',
+			'inter' => '2, 7, 9',
 		],
 		'win amount' => 133,
 		'qin amount' => 1390.5,

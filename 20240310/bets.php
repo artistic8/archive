@@ -13,7 +13,7 @@ return [
 			'qin' => '1, 4, 6, 7, 9, 10, 11, 12',
 			'trio' => '1, 4, 6, 7, 9, 10, 11, 12',//count trio: 8
 			'diff' => '1, 4, 9, 10',//count diff: 4
-			'inter' => '1',
+			'inter' => '6, 11',
 		],
 		'win amount' => 63,
 		'qin amount' => 142,
@@ -41,7 +41,7 @@ return [
 			'qin' => '1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 14',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 14',//count trio: 12
 			'diff' => '1, 3, 5, 11, 14',//count diff: 5
-			'inter' => '5',
+			'inter' => '2, 4',
 		],
 		'win amount' => 50.5,
 		'qin amount' => 812,
@@ -74,7 +74,7 @@ return [
 			'qin' => '2, 3, 4, 5, 7, 8, 9, 11',
 			'trio' => '2, 3, 4, 5, 7, 8, 9, 11',//count trio: 8
 			'diff' => '4, 8',//count diff: 2
-			'inter' => '',
+			'inter' => '2, 3',
 		],
 		'win amount' => 61.5,
 		'qin amount' => 58.5,
@@ -156,7 +156,7 @@ return [
 			'qin' => '1, 2, 3, 7, 9, 11',
 			'trio' => '1, 2, 3, 5, 6, 7, 9, 11',//count trio: 8
 			'diff' => '2, 5, 6, 7, 11',//count diff: 5
-			'inter' => '7',
+			'inter' => '3',
 		],
 		'win amount' => 20,
 		'qin amount' => 85,
@@ -184,7 +184,7 @@ return [
 			'qin' => '1, 2, 3, 6, 8, 10',
 			'trio' => '1, 2, 3, 5, 6, 7, 8, 10',//count trio: 8
 			'diff' => '2, 3, 5, 7, 8',//count diff: 5
-			'inter' => '3',
+			'inter' => '1',
 		],
 		'win amount' => 110,
 		'qin amount' => 572.5,
@@ -212,7 +212,7 @@ return [
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 11
 			'diff' => '1, 3, 7, 9, 10',//count diff: 5
-			'inter' => '',
+			'inter' => '4, 6, 8',
 		],
 		'win amount' => 65.5,
 		'qin amount' => 159,
@@ -243,7 +243,7 @@ return [
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count trio: 13
 			'diff' => '4, 7, 9, 11, 14',//count diff: 5
-			'inter' => '',
+			'inter' => '2, 3, 5',
 		],
 		'win amount' => 77,
 		'qin amount' => 733,
@@ -274,7 +274,7 @@ return [
 			'qin' => '1, 4, 5, 7, 14',
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 14',//count trio: 8
 			'diff' => '2, 3, 5, 8',//count diff: 4
-			'inter' => '3, 5',
+			'inter' => '',
 		],
 		'win amount' => 92,
 		'qin amount' => 478,
