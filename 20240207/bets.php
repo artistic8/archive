@@ -295,6 +295,7 @@ return [
 		'official win' => '8, 5, 9, 3',
 		'bets' => [
 			'place(end-wp , $100)' => '5',
+		'official win' => '8, 5, 9, 3',
 			'2 won(place bet)' => 265,
 		],
 		'total bets' => 100,

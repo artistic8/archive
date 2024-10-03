@@ -252,6 +252,7 @@ return [
 		'official win' => '4, 9, 3, 8',
 		'bets' => [
 			'place(end-wp , $100)' => '7',
+		'official win' => '4, 9, 3, 8',
 		],
 		'total bets' => 100,
 		'total won in race 8' => -100,

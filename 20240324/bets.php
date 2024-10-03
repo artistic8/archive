@@ -122,6 +122,7 @@ return [
 		'official win' => '12, 1, 10, 11',
 		'bets' => [
 			'place(end-wp , $100)' => '12',
+		'official win' => '12, 1, 10, 11',
 			'2 won(place bet)' => 135,
 		],
 		'total bets' => 100,
@@ -157,8 +158,10 @@ return [
 		'official win' => '2, 10, 6, 7',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
+		'official win' => '2, 10, 6, 7',
 			'1 won(place bet)' => 120,
 			'place(end-wp , $100)' => '10',
+		'official win' => '2, 10, 6, 7',
 			'2 won(place bet)' => 120,
 		],
 		'total bets' => 200,
@@ -225,6 +228,7 @@ return [
 		'official win' => '7, 1, 11, 4',
 		'bets' => [
 			'place(end-wp , $100)' => '7',
+		'official win' => '7, 1, 11, 4',
 			'2 won(place bet)' => 185,
 		],
 		'total bets' => 100,
@@ -292,6 +296,7 @@ return [
 		'official win' => '1, 2, 11, 9',
 		'bets' => [
 			'place(end-favorites , $100)' => '11',
+		'official win' => '1, 2, 11, 9',
 			'1 won(place bet)' => 205,
 		],
 		'total bets' => 100,
