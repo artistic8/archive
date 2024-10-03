@@ -93,6 +93,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
+    $suggestions["win"] = array_intersect($runners, $suggestions["win"]);
+    sort($suggestions["win"]);
+    $suggestions["qin"] = array_intersect($runners, $suggestions["qin"]);
+    sort($suggestions["qin"]);
+    $suggestions["trio"] = array_intersect($runners, $suggestions["trio"]);
+    sort($suggestions["trio"]);
+    
     $racetext .= "\t\t'suggestions' => [\n";
     $racetext .= "\t\t\t'win' => '" . implode(", ", array_intersect($runners, $suggestions["win"])) . "',\n";
     $racetext .= "\t\t\t'qin' => '" . implode(", ", array_intersect($runners, $suggestions["qin"])) . "',\n";
@@ -165,7 +172,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $diff2 = array_diff($runners, $suggestions["trio"]);
     $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
     if(!empty($allValues) && !empty($suggestions["trio"]) && (count($diff1) <= 2 || count($diff2) <= 2))
-        $racetext .= "\t\t'win bet' => '" . implode(", ", $suggestions["win"]) . "',\n"; 
+        $racetext .= "\t\t'win bet' => '" . implode(", ", $suggestions["qin"]) . "',\n"; 
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
    }
