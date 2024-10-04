@@ -155,7 +155,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'diff1' => '9, 12',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'possible place' => '9',
+		'possible place' => '1, 2, 3, 4, 5, 9',
 		'official win' => '5, 6, 12, 9',
 		'bets' => [
 		],
