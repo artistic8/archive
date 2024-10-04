@@ -172,7 +172,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $diff2 = array_diff($runners, $suggestions["trio"]);
     $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
     if(!empty($winInter) && !empty($diff1) && !empty($diff2)){
-        $myPlace = array_intersect($winInter, $diff1, $diff2);
+        $myPlace = array_intersect($winInter, array_merge($diff1, $diff2));
         $racetext .= "\t\t'possible place' => '" . implode(", ", $myPlace) . "',\n"; 
         if(isset($officialWin)){
           $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
