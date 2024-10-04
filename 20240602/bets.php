@@ -27,6 +27,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
 		'diff2' => '6, 11',
+		'possible place' => '',
+		'official win' => '7, 9, 6, 1',
 		'win bet' => '2, 3, 4, 5, 7, 8, 9',
 		'inter fav' => '7, 9',
 		'bets' => [
@@ -61,6 +63,8 @@ return [
 		'allValues' => '2, 3, 4, 5, 6',
 		'diff1' => '1',
 		'diff2' => '5',
+		'possible place' => '',
+		'official win' => '6, 5, 2, 3',
 		'win bet' => '2, 3, 4, 6',
 		'inter fav' => '2, 3',
 		'bets' => [
@@ -93,6 +97,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff1' => '9, 10, 11, 12, 13, 14',
 		'diff2' => '1, 3, 5, 6, 7, 10, 11, 13, 14',
+		'possible place' => '',
+		'official win' => '7, 5, 3, 6',
 		'win bet' => '8',
 		'inter fav' => '',
 		'bets' => [
@@ -125,6 +131,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'diff1' => '13, 14',
 		'diff2' => '6, 8, 9, 12, 13, 14',
+		'possible place' => '',
+		'official win' => '13, 1, 10, 8',
 		'win bet' => '1, 2, 4, 5, 10, 11',
 		'inter fav' => '1, 10',
 		'bets' => [
@@ -186,6 +194,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11',
 		'diff2' => '6, 8, 10',
+		'possible place' => '',
+		'official win' => '9, 6, 4, 1',
 		'win bet' => '1, 2, 4, 7, 9',
 		'inter fav' => '2, 4',
 		'bets' => [
@@ -218,6 +228,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11, 12, 13, 14',
 		'diff2' => '7, 13, 14',
+		'possible place' => '',
+		'official win' => '1, 5, 3, 11',
 		'win bet' => '1, 2, 3, 4, 5, 6, 8',
 		'inter fav' => '1, 5, 6',
 		'bets' => [
@@ -284,6 +296,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'diff1' => '9',
 		'diff2' => '1, 5, 6',
+		'possible place' => '',
+		'official win' => '9, 5, 6, 7',
 		'win bet' => '2, 3, 4',
 		'inter fav' => '2',
 		'bets' => [
@@ -315,6 +329,8 @@ return [
 		'allValues' => '',
 		'diff1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'possible place' => '3, 10',
+		'official win' => '5, 4, 12, 3',
 		'bets' => [
 		],
 		'total bets' => 0,

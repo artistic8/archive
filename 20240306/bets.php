@@ -27,6 +27,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
 		'diff2' => '11',
+		'possible place' => '',
+		'official win' => '3, 7, 10, 2',
 		'win bet' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
 		'inter fav' => '3, 7, 8, 10',
 		'sure win ??' => '3, 7, 8, 10',
@@ -64,6 +66,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
 		'diff2' => '2, 5, 6, 7, 10, 11, 12',
+		'possible place' => '',
+		'official win' => '5, 6, 4, 7',
 		'win bet' => '3, 4, 8, 9',
 		'inter fav' => '3, 4',
 		'bets' => [
@@ -194,6 +198,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
 		'diff2' => '4, 5',
+		'possible place' => '',
+		'official win' => '1, 12, 9, 6',
 		'win bet' => '1, 2, 3, 6, 7, 8, 9',
 		'inter fav' => '1, 9',
 		'bets' => [
@@ -292,6 +298,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
 		'diff2' => '10, 12',
+		'possible place' => '',
+		'official win' => '9, 11, 1, 3',
 		'win bet' => '1, 2, 3, 5, 6, 8, 9, 11',
 		'inter fav' => '3, 11',
 		'bets' => [
