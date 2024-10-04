@@ -28,13 +28,10 @@ return [
 		'diff1' => '',
 		'diff2' => '',
 		'win bet' => '1, 2, 3, 4, 5, 6, 7, 9',
-		'official win' => '8, 2, 3, 5',
+		'inter fav' => '2, 3, 7',
 		'bets' => [
-			'place(end-favorites , $100)' => '7',
-			'place(end-wp , $100)' => '7',
 		],
-		'total bets' => 200,
-		'total won in race 1' => -200,
+		'total bets' => 0,
 	],
 	'2' => [
 		/**
@@ -63,7 +60,7 @@ return [
 		'diff1' => '',
 		'diff2' => '1, 4, 5, 6, 7',
 		'win bet' => '2, 3',
-		'official win' => '3, 6, 8, 5',
+		'inter fav' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -95,7 +92,7 @@ return [
 		'diff1' => '',
 		'diff2' => '1, 6, 7, 8',
 		'win bet' => '2, 3, 4',
-		'official win' => '1, 8, 4, 2',
+		'inter fav' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -127,7 +124,7 @@ return [
 		'diff1' => '10',
 		'diff2' => '',
 		'win bet' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'official win' => '2, 10, 7, 4',
+		'inter fav' => '1, 2, 3, 5, 7, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -157,7 +154,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'diff1' => '9, 12',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'official win' => '3, 6, 1, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -189,7 +185,7 @@ return [
 		'diff1' => '11, 12',
 		'diff2' => '2, 3, 4, 5, 7, 8, 11',
 		'win bet' => '1, 6',
-		'official win' => '11, 1, 10, 6',
+		'inter fav' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -221,10 +217,9 @@ return [
 		'diff1' => '10, 11',
 		'diff2' => '6, 7',
 		'win bet' => '1, 2, 3, 4, 8',
-		'official win' => '4, 5, 11, 10',
+		'inter fav' => '4',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
-		'official win' => '4, 5, 11, 10',
 		],
 		'total bets' => 100,
 		'total won in race 7' => -100,
@@ -256,13 +251,13 @@ return [
 		'diff1' => '10, 11, 12',
 		'diff2' => '',
 		'win bet' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'official win' => '8, 1, 6, 9',
+		'inter fav' => '3, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
-//total major place favorites: -200
-//total major place wp: -100
+//total major place favorites: -100
+//total major place wp: 0
 //total sure place: 0
-//total: -300
+//total: -100

@@ -26,7 +26,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'official win' => '3, 9, 8, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -56,7 +55,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'official win' => '1, 12, 6, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -86,7 +84,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff1' => '9, 10, 11',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'official win' => '4, 9, 5, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -118,10 +115,9 @@ return [
 		'diff1' => '13',
 		'diff2' => '8, 13',
 		'win bet' => '1, 2, 3, 4, 5, 7, 9, 10, 11, 12',
-		'official win' => '13, 2, 3, 7',
+		'inter fav' => '2, 4, 11',
 		'bets' => [
 			'place(end-wp , $100)' => '11',
-		'official win' => '13, 2, 3, 7',
 		],
 		'total bets' => 100,
 		'total won in race 4' => -100,
@@ -153,10 +149,9 @@ return [
 		'diff1' => '9, 12',
 		'diff2' => '7, 9',
 		'win bet' => '1, 2, 4, 8, 10, 11',
-		'official win' => '12, 6, 1, 7',
+		'inter fav' => '1, 2',
 		'bets' => [
 			'place(end-wp , $100)' => '6',
-		'official win' => '12, 6, 1, 7',
 			'2 won(place bet)' => 305,
 		],
 		'total bets' => 100,
@@ -189,7 +184,7 @@ return [
 		'diff1' => '11, 12',
 		'diff2' => '2, 4, 5, 6, 7, 10, 12',
 		'win bet' => '1, 3, 8, 9',
-		'official win' => '7, 11, 4, 12',
+		'inter fav' => '9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -219,7 +214,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'official win' => '4, 8, 3, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -251,15 +245,12 @@ return [
 		'diff1' => '',
 		'diff2' => '',
 		'win bet' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'inter fav' => '3, 4, 5, 6',
+		'sure win ??' => '3, 4, 5, 6',
 		'official win' => '6, 1, 5, 4',
 		'bets' => [
-			'place(end-favorites , $100)' => '6',
-			'1 won(place bet)' => 215,
-			'super sure bet' => 'super sure place 6',
-			'5 won(place bet)' => 215,
 		],
-		'total bets' => 200,
-		'total won in race 8' => 230,
+		'total bets' => 0,
 	],
 	'9' => [
 		/**
@@ -288,6 +279,8 @@ return [
 		'diff1' => '12, 13, 14',
 		'diff2' => '',
 		'win bet' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'inter fav' => '1, 2, 4, 6',
+		'sure win ??' => '1, 2, 4, 6, 14',
 		'official win' => '4, 6, 5, 2',
 		'bets' => [
 		],
@@ -319,13 +312,12 @@ return [
 		'allValues' => '',
 		'diff1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'diff2' => '1, 3, 6, 10, 11, 12',
-		'official win' => '2, 5, 12, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
-//total major place favorites: 115
+//total major place favorites: 0
 //total major place wp: 105
-//total sure place: 115
-//total: 335
+//total sure place: 0
+//total: 105
