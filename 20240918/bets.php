@@ -93,7 +93,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff1' => '9',
 		'diff2' => '6, 7, 9',
-		'possible place' => '7',
+		'possible place' => '',
 		'official win' => '1, 8, 9, 3',
 		'win bet' => '1, 2, 3, 4, 5, 8',
 		'inter fav' => '3',

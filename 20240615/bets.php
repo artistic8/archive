@@ -159,7 +159,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'diff1' => '9, 12',
 		'diff2' => '4, 8, 11, 12',
-		'possible place' => '4',
+		'possible place' => '',
 		'official win' => '3, 10, 6, 5',
 		'win bet' => '1, 2, 3, 5, 7, 10',
 		'inter fav' => '1, 3, 10',
