@@ -183,6 +183,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win bet' => '" . implode(", ", $experimental) . "',\n";
         $favInter = array_intersect($experimental, $favorites);
         $racetext .= "\t\t'inter fav' => '" . implode(", ", $favInter) . "',\n";
+        $interx = array_intersect($favInter, $diff);
+        $racetext .= "\t\t'interx' => '" . implode(", ", $interx) . "',\n";
+      
         if(Count($favInter) >= 4 && count($favorites) < 6) {
             $racetext .= "\t\t'sure win ??' => '" . implode(", ", $favorites) . "',\n";
             if(isset($officialWin)){
