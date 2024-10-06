@@ -181,16 +181,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t\t'1 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
             $totalMajorPlaceF += 1/10 * $unitBet * $placeAmount[end($favorites)];
         }
-        if(count($favorites) >= 3 && count(array_intersect($winInter, $favorites)) >= 3) {
-            $racetext .= "\t\t\t'super sure bet' => 'super sure place " . end($favorites) . "',\n" ;
-            $totalBets[$raceNumber] += $unitBet;
-            $totalSurePlace -= $unitBet;
-            if(isset($officialWin) && in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
-                $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($favorites)];
-                $totalSurePlace += (1 * $unitBet / 10) * $placeAmount[end($favorites)];
-                $racetext .= "\t\t\t'5 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($favorites)] . ",\n";
-            }
-        }
     }
     $wp = array_intersect($allValues, $favorites);
     if(!empty($diff1) && !empty($diff2) && count($wp) === 3){
@@ -202,6 +192,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $racetext .= "\t\t\t'2 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
             $totalMajorPlaceW += (1 * $unitBet / 10) * $placeAmount[end($wp)];
         }
+    }
+    if(count($favorites) >= 3 && count(array_intersect($winInter, $favorites)) >= 3) {
+            $racetext .= "\t\t\t'super sure bet' => 'super sure place " . end($favorites) . "',\n" ;
+            $totalBets[$raceNumber] += $unitBet;
+            $totalSurePlace -= $unitBet;
+            if(isset($officialWin) && in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
+                $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($favorites)];
+                $totalSurePlace += (1 * $unitBet / 10) * $placeAmount[end($favorites)];
+                $racetext .= "\t\t\t'5 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($favorites)] . ",\n";
+            }
     }
     $racetext .= "\t\t],\n";
     $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
