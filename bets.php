@@ -142,7 +142,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $exp = array_values(array_unique(array_merge($winInter, $favorites)));
-    $exp2 = array_diff($exp, $winInter);
+    $exp2 = array_intersect($favorites, array_diff($exp, $winInter));
     sort($exp);
     sort($exp2);
         $racetext .= "\t\t'test' => '" . implode(", ", $exp) . "',\n";
