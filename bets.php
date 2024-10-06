@@ -143,12 +143,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $exp = array_values(array_unique(array_merge($winInter, $favorites)));
     sort($exp);
-    if(!empty($winInter) && count($exp) === 5){
         $racetext .= "\t\t'test' => '" . implode(", ", $exp) . "',\n";
         if(isset($officialWin)){
           $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         }
-    }
+    
     $unitBet = 100;
     $allValues = [];
     foreach($runners  as $one){
