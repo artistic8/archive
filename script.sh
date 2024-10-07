@@ -8,5 +8,7 @@ for f in *; do
         git checkout history.php;
         git checkout favhistory.php;
     fi
-    git checkout $f/;
+    if [ $f != "bets.php" ]; then
+        git checkout $f;
+    fi
 done
