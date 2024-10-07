@@ -9,9 +9,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '8, 5, 3, 4',
 		'suggestions' => [
-			'win' => '1, 5, 8',
-			'qin' => '1, 2, 4, 5, 8, 9',
-			'trio' => '1, 2, 4, 5, 7, 8, 9',//count trio: 7
+			'win' => '5, 8',
+			'qin' => '2, 5, 8, 9',
+			'trio' => '2, 5, 7, 8, 9',//count trio: 5
 			'inter' => '5, 8',
 		],
 		'win amount' => 24.5,
@@ -28,7 +28,7 @@ return [
 		'official win' => '8, 5, 3, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '',
-		'diff2' => '3, 6, 10',
+		'diff2' => '1, 3, 4, 6, 10',
 			'diff' => '2, 5',
 		'bets' => [
 		],
@@ -42,10 +42,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '5, 9, 1, 3',
 		'suggestions' => [
-			'win' => '3, 4, 5, 7, 9, 10, 12',
-			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 11
-			'inter' => '5, 10',
+			'win' => '10',
+			'qin' => '5, 7, 10',
+			'trio' => '1, 5, 7, 10, 12',//count trio: 5
+			'inter' => '10',
 		],
 		'win amount' => 21.5,
 		'qin amount' => 74.5,
@@ -61,8 +61,8 @@ return [
 		'official win' => '5, 9, 1, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
-		'diff2' => '11',
-			'diff' => '6',
+		'diff2' => '2, 3, 4, 6, 8, 9, 11',
+			'diff' => '6, 5',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
 			'place(end-wp , $100)' => '10',
@@ -144,10 +144,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '2, 1, 5, 8',
 		'suggestions' => [
-			'win' => '1, 2, 4, 5, 9, 12',
-			'qin' => '1, 2, 4, 5, 6, 7, 9, 10, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 11
-			'inter' => '1, 2, 5',
+			'win' => '1, 9',
+			'qin' => '1, 2, 5, 9',
+			'trio' => '1, 2, 5, 8, 9',//count trio: 5
+			'inter' => '1',
 		],
 		'win amount' => 42,
 		'qin amount' => 197.5,
@@ -163,8 +163,8 @@ return [
 		'official win' => '2, 1, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'diff1' => '9, 12',
-		'diff2' => '11',
-			'diff' => '',
+		'diff2' => '3, 4, 6, 7, 10, 11, 12',
+			'diff' => '2, 5',
 		'bets' => [
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 125,
@@ -246,10 +246,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '12, 6, 2, 3',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
-			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
-			'inter' => '2, 3, 5, 8, 9',
+			'win' => '2, 10',
+			'qin' => '2, 3, 10, 12',
+			'trio' => '2, 3, 9, 10, 12',//count trio: 5
+			'inter' => '2',
 		],
 		'win amount' => 53,
 		'qin amount' => 600,
@@ -265,8 +265,8 @@ return [
 		'official win' => '12, 6, 2, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'diff1' => '',
-		'diff2' => '',
-			'diff' => '2, 12',
+		'diff2' => '1, 4, 5, 6, 7, 8, 11',
+			'diff' => '2, 12, 3, 5, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -279,10 +279,10 @@ return [
 		'runners' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '10, 9, 11, 1',
 		'suggestions' => [
-			'win' => '1, 2, 3, 5, 6, 8, 9, 11, 12',
-			'qin' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',
-			'trio' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 11
-			'inter' => '1, 2, 3, 9',
+			'win' => '',
+			'qin' => '8',
+			'trio' => '8, 10',//count trio: 2
+			'inter' => '',
 		],
 		'win amount' => 85.5,
 		'qin amount' => 84.5,
@@ -298,14 +298,17 @@ return [
 		'official win' => '10, 9, 11, 1',
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
-		'diff2' => '',
-			'diff' => '10',
+		'diff2' => '1, 2, 3, 5, 6, 7, 9, 11, 12',
+			'diff' => '9, 1, 10, 2, 3',
 		'bets' => [
+			'place(end-favorites , $100)' => '10',
+			'1 won(place bet)' => 200,
 		],
-		'total bets' => 0,
+		'total bets' => 100,
+		'total won in race 9' => 100,
 	],
 ];
-//total major place favorites: -100
+//total major place favorites: 0
 //total major place wp: -75
 //total sure place: 0
-//total: -175
+//total: -75

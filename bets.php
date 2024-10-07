@@ -75,9 +75,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $suggestions = ["win" => [], "qin" => [], "trio" => []];
     foreach($_2sets as $example){
         if(isset($favhistory[$raceNumber][$example])) {
-            $suggestions["win"] = array_values(array_unique(array_merge($suggestions["win"], $favhistory[$raceNumber][$example]["win"])));
-            $suggestions["qin"] = array_values(array_unique(array_merge($suggestions["qin"], $favhistory[$raceNumber][$example]["qin"])));
-            $suggestions["trio"] = array_values(array_unique(array_merge($suggestions["trio"], $favhistory[$raceNumber][$example]["trio"])));
+            $suggestions["win"] = array_intersect($runners, $favhistory[$raceNumber][$example]["win"]);
+            $suggestions["qin"] = array_intersect($runners, $favhistory[$raceNumber][$example]["qin"]);
+            $suggestions["trio"] = array_intersect($runners, $favhistory[$raceNumber][$example]["trio"]);
             $diff = array_values(array_unique(array_merge($diff, array_diff(explode(", ", $example), $suggestions["win"]))));
         }
     }
@@ -96,11 +96,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
     }
-    $suggestions["win"] = array_intersect($runners, $suggestions["win"]);
     sort($suggestions["win"]);
-    $suggestions["qin"] = array_intersect($runners, $suggestions["qin"]);
     sort($suggestions["qin"]);
-    $suggestions["trio"] = array_intersect($runners, $suggestions["trio"]);
     sort($suggestions["trio"]);
     
     $racetext .= "\t\t'suggestions' => [\n";
