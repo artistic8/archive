@@ -8,4 +8,5 @@ for f in *; do
         git checkout history.php;
         git checkout favhistory.php;
     fi
+    git checkout $f/;
 done

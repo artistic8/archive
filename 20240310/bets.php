@@ -14,7 +14,6 @@ return [
 			'trio' => '1, 4, 6, 7, 9, 10, 11, 12',//count trio: 8
 			'inter' => '6, 11',
 			'diff' => '1',
-			'whatever' => '6, 11',
 		],
 		'win amount' => 63,
 		'qin amount' => 142,
@@ -48,7 +47,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 14',//count trio: 12
 			'inter' => '2, 4',
 			'diff' => '5',
-			'whatever' => '2, 4',
 		],
 		'win amount' => 50.5,
 		'qin amount' => 812,
@@ -87,7 +85,6 @@ return [
 			'trio' => '2, 3, 4, 5, 7, 8, 9, 11',//count trio: 8
 			'inter' => '2, 3',
 			'diff' => '',
-			'whatever' => '2, 3',
 		],
 		'win amount' => 61.5,
 		'qin amount' => 58.5,
@@ -121,7 +118,6 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
-			'whatever' => '5',
 		],
 		'win amount' => 23.5,
 		'qin amount' => 342,
@@ -155,7 +151,6 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
-			'whatever' => '1',
 		],
 		'win amount' => 21,
 		'qin amount' => 70,
@@ -189,7 +184,6 @@ return [
 			'trio' => '1, 2, 3, 5, 6, 7, 9, 11',//count trio: 8
 			'inter' => '3',
 			'diff' => '7',
-			'whatever' => '3',
 		],
 		'win amount' => 20,
 		'qin amount' => 85,
@@ -223,7 +217,6 @@ return [
 			'trio' => '1, 2, 3, 5, 6, 7, 8, 10',//count trio: 8
 			'inter' => '1',
 			'diff' => '3',
-			'whatever' => '1',
 		],
 		'win amount' => 110,
 		'qin amount' => 572.5,
@@ -257,7 +250,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 11
 			'inter' => '4, 6, 8',
 			'diff' => '4, 8',
-			'whatever' => '6',
 		],
 		'win amount' => 65.5,
 		'qin amount' => 159,
@@ -294,7 +286,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count trio: 13
 			'inter' => '2, 3, 5',
 			'diff' => '',
-			'whatever' => '2, 3, 5',
 		],
 		'win amount' => 77,
 		'qin amount' => 733,
@@ -331,7 +322,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 13, 14',//count trio: 9
 			'inter' => '',
 			'diff' => '3, 5, 11',
-			'whatever' => '',
 		],
 		'win amount' => 92,
 		'qin amount' => 478,

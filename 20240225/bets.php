@@ -14,7 +14,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 11
 			'inter' => '1, 2, 3, 8, 10',
 			'diff' => '2, 3',
-			'whatever' => '1, 8, 10',
 		],
 		'win amount' => 59,
 		'qin amount' => 255,
@@ -48,7 +47,6 @@ return [
 			'trio' => '1, 2, 3, 5, 6',//count trio: 5
 			'inter' => '3, 6',
 			'diff' => '',
-			'whatever' => '3, 6',
 		],
 		'win amount' => 80.5,
 		'qin amount' => 100,
@@ -81,7 +79,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 11, 12',//count trio: 10
 			'inter' => '12',
 			'diff' => '2, 8, 12',
-			'whatever' => '13',
 		],
 		'win amount' => 68,
 		'qin amount' => 414,
@@ -115,7 +112,6 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
-			'whatever' => '6, 10',
 		],
 		'win amount' => 24,
 		'qin amount' => 117.5,
@@ -149,7 +145,6 @@ return [
 			'trio' => '1, 2, 3, 4, 6, 8, 9, 10, 11, 12',//count trio: 10
 			'inter' => '4',
 			'diff' => '6',
-			'whatever' => '4',
 		],
 		'win amount' => 45,
 		'qin amount' => 72.5,
@@ -183,7 +178,6 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
-			'whatever' => '10',
 		],
 		'win amount' => 56.5,
 		'qin amount' => 527.5,
@@ -217,7 +211,6 @@ return [
 			'trio' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11',//count trio: 10
 			'inter' => '1',
 			'diff' => '3',
-			'whatever' => '1',
 		],
 		'win amount' => 16.5,
 		'qin amount' => 33,
@@ -251,7 +244,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count trio: 11
 			'inter' => '4, 8, 12',
 			'diff' => '8, 9',
-			'whatever' => '4, 12',
 		],
 		'win amount' => 195.5,
 		'qin amount' => 871,
@@ -285,7 +277,6 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
-			'whatever' => '3, 14',
 		],
 		'win amount' => 16,
 		'qin amount' => 113.5,
@@ -319,7 +310,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14',//count trio: 12
 			'inter' => '1, 4',
 			'diff' => '1, 3, 4, 5',
-			'whatever' => '',
 		],
 		'win amount' => 51,
 		'qin amount' => 92.5,

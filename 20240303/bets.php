@@ -14,7 +14,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count trio: 11
 			'inter' => '7, 8',
 			'diff' => '5, 7, 9',
-			'whatever' => '8',
 		],
 		'win amount' => 58,
 		'qin amount' => 307,
@@ -48,7 +47,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13',//count trio: 11
 			'inter' => '9',
 			'diff' => '2, 3',
-			'whatever' => '9',
 		],
 		'win amount' => 48,
 		'qin amount' => 55,
@@ -84,7 +82,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9',//count trio: 8
 			'inter' => '7',
 			'diff' => '6, 7, 9',
-			'whatever' => '',
 		],
 		'win amount' => 95.5,
 		'qin amount' => 922,
@@ -118,7 +115,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13',//count trio: 11
 			'inter' => '4, 11, 12',
 			'diff' => '9',
-			'whatever' => '4, 11, 12',
 		],
 		'win amount' => 50,
 		'qin amount' => 190.5,
@@ -152,7 +148,6 @@ return [
 			'trio' => '1, 6, 11',//count trio: 3
 			'inter' => '',
 			'diff' => '6, 10',
-			'whatever' => '',
 		],
 		'win amount' => 424,
 		'qin amount' => 897,
@@ -186,7 +181,6 @@ return [
 			'trio' => '1, 3, 4, 5, 7, 8, 9, 10',//count trio: 8
 			'inter' => '',
 			'diff' => '6, 7, 10',
-			'whatever' => '',
 		],
 		'win amount' => 41,
 		'qin amount' => 343,
@@ -223,7 +217,6 @@ return [
 			'trio' => '1, 2, 4, 5',//count trio: 4
 			'inter' => '2',
 			'diff' => '1',
-			'whatever' => '2',
 		],
 		'win amount' => 16.5,
 		'qin amount' => 397,
@@ -257,7 +250,6 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 11, 12',//count trio: 9
 			'inter' => '5',
 			'diff' => '4',
-			'whatever' => '5',
 		],
 		'win amount' => 97,
 		'qin amount' => 313,
@@ -291,7 +283,6 @@ return [
 			'trio' => '2, 4, 5, 6, 7, 8, 10, 11, 12',//count trio: 9
 			'inter' => '2',
 			'diff' => '6',
-			'whatever' => '2',
 		],
 		'win amount' => 91.5,
 		'qin amount' => 237,
@@ -325,7 +316,6 @@ return [
 			'trio' => '1, 2, 5, 7, 9',//count trio: 5
 			'inter' => '',
 			'diff' => '6, 11',
-			'whatever' => '',
 		],
 		'win amount' => 36.5,
 		'qin amount' => 51.5,
