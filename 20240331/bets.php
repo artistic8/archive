@@ -324,19 +324,22 @@ return [
 			2 => 42,
 			8 => 24,
 		],
-		'win inter' => '7',
-		'test' => '1, 7, 8',
+		'win inter' => '2, 7',
+		'test' => '1, 2, 7, 8',
 		'tes2' => '1, 8',
 		'official win' => '7, 2, 8, 13',
-		'allValues' => '',
-		'diff1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
+		'allValues' => '1, 2, 5, 7, 8, 10, 11, 13, 14',
+		'diff1' => '3, 4, 6, 9, 12',
 		'diff2' => '1, 3, 4, 5, 6, 10, 11, 12, 14',
 		'bets' => [
+			'place(end-wp , $100)' => '8',
+			'2 won(place bet)' => 240,
 		],
-		'total bets' => 0,
+		'total bets' => 100,
+		'total won in race 10' => 140,
 	],
 ];
 //total major place favorites: 90
-//total major place wp: -10
+//total major place wp: 130
 //total sure place: 90
-//total: 170
+//total: 310
