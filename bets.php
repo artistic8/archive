@@ -71,12 +71,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     $_2sets = get2Sets($favorites);
+    $diff = [];
     $suggestions = ["win" => [], "qin" => [], "trio" => []];
     foreach($_2sets as $example){
         if(isset($favhistory[$raceNumber][$example])) {
             $suggestions["win"] = array_values(array_unique(array_merge($suggestions["win"], $favhistory[$raceNumber][$example]["win"])));
             $suggestions["qin"] = array_values(array_unique(array_merge($suggestions["qin"], $favhistory[$raceNumber][$example]["qin"])));
             $suggestions["trio"] = array_values(array_unique(array_merge($suggestions["trio"], $favhistory[$raceNumber][$example]["trio"])));
+            $diff = array_values(array_unique(array_merge($diff, array_diff(explode(", ", $example), $suggestions["win"]))));
         }
     }
     
@@ -106,10 +108,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t\t'qin' => '" . implode(", ", array_intersect($runners, $suggestions["qin"])) . "',\n";
     $select = array_intersect($runners, $suggestions["trio"]);
     $racetext .= "\t\t\t'trio' => '" . implode(", ", $select) . "',//count trio: " . count($select) . "\n";
-    $diff = array_intersect($runners, array_diff($suggestions["trio"], $suggestions["win"]));
-    if(!empty($diff)) $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',//count diff: " . count($diff) . "\n";
     $inter = array_intersect($favorites, $suggestions["win"]);
     $racetext .= "\t\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
