@@ -110,7 +110,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t\t'trio' => '" . implode(", ", $select) . "',//count trio: " . count($select) . "\n";
     $inter = array_intersect($favorites, $suggestions["win"]);
     $racetext .= "\t\t\t'inter' => '" . implode(", ", $inter) . "',\n";
-    $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+    
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
@@ -183,6 +183,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'diff1' => '" . implode(", ", $diff1) . "',\n";
     $diff2 = array_diff($runners, $suggestions["trio"]);
     $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
+    $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
     $racetext .= "\t\t'bets' => [\n";
     if(!empty($diff1) && !empty($diff2) && count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
