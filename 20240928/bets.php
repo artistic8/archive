@@ -14,6 +14,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count trio: 9
 			'inter' => '1, 5, 7',
 			'diff' => '1, 5',
+			'whatever' => '7',
 		],
 		'win amount' => 50.5,
 		'qin amount' => 264.5,
@@ -47,6 +48,7 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
+			'whatever' => '6',
 		],
 		'win amount' => 58.5,
 		'qin amount' => 49.5,
@@ -80,6 +82,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10',//count trio: 9
 			'inter' => '2, 3, 5, 7',
 			'diff' => '5',
+			'whatever' => '2, 3, 7',
 		],
 		'win amount' => 21,
 		'qin amount' => 62,
@@ -116,6 +119,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '2, 3, 6, 11',
 			'diff' => '6',
+			'whatever' => '2, 3, 11',
 		],
 		'win amount' => 110.5,
 		'qin amount' => 705.5,
@@ -149,6 +153,7 @@ return [
 			'trio' => '1, 2, 3, 4, 8, 9, 10, 11',//count trio: 8
 			'inter' => '',
 			'diff' => '2, 7, 12',
+			'whatever' => '',
 		],
 		'win amount' => 26,
 		'qin amount' => 63,
@@ -182,6 +187,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '3, 6, 8, 10, 12',
 			'diff' => '3',
+			'whatever' => '6, 8, 10, 12',
 		],
 		'win amount' => 364.5,
 		'qin amount' => 1798,
@@ -215,6 +221,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 8',//count trio: 7
 			'inter' => '1, 2, 6',
 			'diff' => '',
+			'whatever' => '1, 2, 6',
 		],
 		'win amount' => 58,
 		'qin amount' => 33,
@@ -248,6 +255,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count trio: 9
 			'inter' => '6, 8',
 			'diff' => '2',
+			'whatever' => '6, 8',
 		],
 		'win amount' => 24,
 		'qin amount' => 203,
@@ -284,6 +292,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count trio: 13
 			'inter' => '1, 2, 6, 8',
 			'diff' => '8',
+			'whatever' => '1, 2, 6',
 		],
 		'win amount' => 145.5,
 		'qin amount' => 268,
@@ -317,6 +326,7 @@ return [
 			'trio' => '5, 8',//count trio: 2
 			'inter' => '',
 			'diff' => '2, 3',
+			'whatever' => '',
 		],
 		'win amount' => 37.5,
 		'qin amount' => 485.5,

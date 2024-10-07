@@ -14,6 +14,7 @@ return [
 			'trio' => '1, 7, 12',//count trio: 3
 			'inter' => '',
 			'diff' => '7, 12',
+			'whatever' => '',
 		],
 		'win amount' => 44.5,
 		'qin amount' => 159.5,
@@ -47,6 +48,7 @@ return [
 			'trio' => '1, 2, 4, 5, 6, 7, 9, 10, 12, 14',//count trio: 10
 			'inter' => '4, 5',
 			'diff' => '10',
+			'whatever' => '4, 5',
 		],
 		'win amount' => 124,
 		'qin amount' => 1458.5,
@@ -85,6 +87,7 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
+			'whatever' => '2',
 		],
 		'win amount' => 20,
 		'qin amount' => 56,
@@ -118,6 +121,7 @@ return [
 			'trio' => '4, 5, 7, 12',//count trio: 4
 			'inter' => '',
 			'diff' => '4, 8',
+			'whatever' => '',
 		],
 		'win amount' => 75,
 		'qin amount' => 210,
@@ -151,6 +155,7 @@ return [
 			'trio' => '3, 6, 9',//count trio: 3
 			'inter' => '6',
 			'diff' => '3',
+			'whatever' => '6',
 		],
 		'win amount' => 57,
 		'qin amount' => 359.5,
@@ -184,6 +189,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count trio: 13
 			'inter' => '1, 2',
 			'diff' => '1, 2, 4',
+			'whatever' => '',
 		],
 		'win amount' => 26.5,
 		'qin amount' => 72,
@@ -222,6 +228,7 @@ return [
 			'trio' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11',//count trio: 10
 			'inter' => '1',
 			'diff' => '3',
+			'whatever' => '1',
 		],
 		'win amount' => 20,
 		'qin amount' => 126,
@@ -255,6 +262,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count trio: 13
 			'inter' => '3, 7',
 			'diff' => '2, 7',
+			'whatever' => '3',
 		],
 		'win amount' => 46,
 		'qin amount' => 49,
@@ -288,6 +296,7 @@ return [
 			'trio' => '1, 6, 7, 8, 9',//count trio: 5
 			'inter' => '7',
 			'diff' => '4',
+			'whatever' => '7',
 		],
 		'win amount' => 22,
 		'qin amount' => 196,
@@ -321,6 +330,7 @@ return [
 			'trio' => '2, 3, 4, 5, 9, 10, 11',//count trio: 7
 			'inter' => '',
 			'diff' => '1, 3, 9',
+			'whatever' => '',
 		],
 		'win amount' => 88,
 		'qin amount' => 307,

@@ -110,7 +110,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t\t'trio' => '" . implode(", ", $select) . "',//count trio: " . count($select) . "\n";
     $inter = array_intersect($favorites, $suggestions["win"]);
     $racetext .= "\t\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    $whatever = array_diff($favorites, $diff);
     $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+    $racetext .= "\t\t\t'whatever' => '" . implode(", ", $whatever) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 

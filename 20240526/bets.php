@@ -14,6 +14,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',//count trio: 12
 			'inter' => '1, 7',
 			'diff' => '2, 12',
+			'whatever' => '1, 7',
 		],
 		'win amount' => 25.5,
 		'qin amount' => 99,
@@ -50,6 +51,7 @@ return [
 			'trio' => '1, 2, 5, 7, 11, 12, 13, 14',//count trio: 8
 			'inter' => '2, 13',
 			'diff' => '2, 10, 14',
+			'whatever' => '13',
 		],
 		'win amount' => 40,
 		'qin amount' => 119.5,
@@ -83,6 +85,7 @@ return [
 			'trio' => '5, 7, 8',//count trio: 3
 			'inter' => '5',
 			'diff' => '7',
+			'whatever' => '5',
 		],
 		'win amount' => 94.5,
 		'qin amount' => 220.5,
@@ -116,6 +119,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count trio: 11
 			'inter' => '1, 4, 5',
 			'diff' => '',
+			'whatever' => '1, 4, 5',
 		],
 		'win amount' => 20.5,
 		'qin amount' => 165.5,
@@ -156,6 +160,7 @@ return [
 			'trio' => '2, 3, 4, 5, 6, 7, 11, 13',//count trio: 8
 			'inter' => '4, 11',
 			'diff' => '1, 11',
+			'whatever' => '4',
 		],
 		'win amount' => 17.5,
 		'qin amount' => 52.5,
@@ -191,6 +196,7 @@ return [
 			'trio' => '1, 2, 3, 4, 7, 8, 9, 11, 12',//count trio: 9
 			'inter' => '1, 4',
 			'diff' => '1, 9',
+			'whatever' => '4',
 		],
 		'win amount' => 77.5,
 		'qin amount' => 239.5,
@@ -229,6 +235,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8',//count trio: 8
 			'inter' => '',
 			'diff' => '1, 4, 7',
+			'whatever' => '',
 		],
 		'win amount' => 14.5,
 		'qin amount' => 41.5,
@@ -262,6 +269,7 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 			'diff' => '',
+			'whatever' => '7, 11',
 		],
 		'win amount' => 1650,
 		'qin amount' => 11266,
@@ -295,6 +303,7 @@ return [
 			'trio' => '6, 7, 9',//count trio: 3
 			'inter' => '7',
 			'diff' => '6',
+			'whatever' => '7, 9',
 		],
 		'win amount' => 15,
 		'qin amount' => 60,
@@ -331,6 +340,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 8, 10, 13, 14',//count trio: 9
 			'inter' => '4, 10',
 			'diff' => '1, 3',
+			'whatever' => '4, 10',
 		],
 		'win amount' => 404.5,
 		'qin amount' => 4495,
