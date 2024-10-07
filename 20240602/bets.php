@@ -9,9 +9,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '7, 9, 6, 1',
 		'suggestions' => [
-			'win' => '8',
-			'qin' => '8, 9',
-			'trio' => '8, 9, 12',//count trio: 3
+			'win' => '3, 5, 8, 14',
+			'qin' => '2, 3, 4, 5, 7, 8, 9, 14',
+			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 14',//count trio: 11
 			'inter' => '',
 		],
 		'win amount' => 40,
@@ -28,7 +28,7 @@ return [
 		'official win' => '7, 9, 6, 1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
-		'diff2' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
+		'diff2' => '6, 11',
 			'diff' => '7, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '10',
@@ -45,9 +45,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6',
 		'official win' => '6, 5, 2, 3',
 		'suggestions' => [
-			'win' => '2, 4, 6',
-			'qin' => '1, 2, 3, 4, 6',
-			'trio' => '1, 2, 3, 4, 6',//count trio: 5
+			'win' => '2, 4, 6, 9, 13',
+			'qin' => '1, 2, 3, 4, 6, 7, 9, 13',
+			'trio' => '1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14',//count trio: 11
 			'inter' => '2',
 		],
 		'win amount' => 80,
@@ -209,10 +209,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '1, 5, 3, 11',
 		'suggestions' => [
-			'win' => '6, 12',
-			'qin' => '2, 6, 8, 12',
-			'trio' => '2, 4, 6, 8, 9, 12',//count trio: 6
-			'inter' => '6',
+			'win' => '2, 3, 5, 6, 10, 12',
+			'qin' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',//count trio: 11
+			'inter' => '5, 6',
 		],
 		'win amount' => 26,
 		'qin amount' => 38.5,
@@ -228,7 +228,7 @@ return [
 		'official win' => '1, 5, 3, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11, 12, 13, 14',
-		'diff2' => '1, 3, 5, 7, 10, 11, 13, 14',
+		'diff2' => '7, 13, 14',
 			'diff' => '1, 5',
 		'bets' => [
 			'place(end-wp , $100)' => '6',
@@ -244,10 +244,10 @@ return [
 		'runners' => '1, 2, 3, 4, 6, 7, 8',
 		'official win' => '4, 8, 1, 3',
 		'suggestions' => [
-			'win' => '4, 6',
-			'qin' => '4, 6, 7, 8',
-			'trio' => '3, 4, 6, 7, 8',//count trio: 5
-			'inter' => '4',
+			'win' => '2, 4, 5, 6, 8, 9, 11, 12, 14',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 14',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count trio: 13
+			'inter' => '4, 8',
 		],
 		'win amount' => 23.5,
 		'qin amount' => 35,
@@ -263,16 +263,11 @@ return [
 		'official win' => '4, 8, 1, 3',
 		'allValues' => '2, 3, 4, 6, 7, 8',
 		'diff1' => '1',
-		'diff2' => '1, 2',
-			'diff' => '4, 7, 8',
+		'diff2' => '',
+			'diff' => '4, 7',
 		'bets' => [
-			'place(end-favorites , $100)' => '8',
-			'1 won(place bet)' => 140,
-			'place(end-wp , $100)' => '8',
-			'2 won(place bet)' => 140,
 		],
-		'total bets' => 200,
-		'total won in race 8' => 80,
+		'total bets' => 0,
 	],
 	'9' => [
 		/**
@@ -282,9 +277,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 9',
 		'official win' => '9, 5, 6, 7',
 		'suggestions' => [
-			'win' => '2, 3, 4',
-			'qin' => '2, 3, 4, 9',
-			'trio' => '2, 3, 4, 7, 9',//count trio: 5
+			'win' => '2, 3, 4, 8, 10',
+			'qin' => '2, 3, 4, 8, 9, 10',
+			'trio' => '2, 3, 4, 7, 8, 9, 10, 11, 14',//count trio: 9
 			'inter' => '2',
 		],
 		'win amount' => 17,
@@ -348,9 +343,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '14, 7, 6, 4',
 		'suggestions' => [
-			'win' => '4, 12',
-			'qin' => '4, 8, 11, 12',
-			'trio' => '1, 4, 6, 8, 11, 12',//count trio: 6
+			'win' => '1, 4, 12',
+			'qin' => '1, 4, 8, 9, 11, 12',
+			'trio' => '1, 4, 6, 8, 9, 11, 12',//count trio: 7
 			'inter' => '4',
 		],
 		'win amount' => 86.5,
@@ -367,14 +362,14 @@ return [
 		'official win' => '14, 7, 6, 4',
 		'allValues' => '',
 		'diff1' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'diff2' => '2, 3, 5, 7, 9, 10, 13, 14',
+		'diff2' => '2, 3, 5, 7, 10, 13, 14',
 			'diff' => '4, 6, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
-//total major place favorites: -60
-//total major place wp: -160
+//total major place favorites: -100
+//total major place wp: -200
 //total sure place: 0
-//total: -220
+//total: -300
