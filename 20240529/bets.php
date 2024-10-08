@@ -9,9 +9,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5',
 		'official win' => '4, 5, 1',
 		'suggestions' => [
-			'win' => '5, 8, 10',
-			'qin' => '2, 4, 5, 8, 10',
-			'trio' => '2, 3, 4, 5, 8, 9, 10, 12',//count trio: 8
+			'win' => '5',
+			'qin' => '2, 4, 5',
+			'trio' => '2, 3, 4, 5',//count trio: 4
 			'inter' => '5',
 		],
 		'win amount' => 17.5,
@@ -185,7 +185,7 @@ return [
 		'suggestions' => [
 			'win' => '2, 6, 7, 8, 11, 12',
 			'qin' => '1, 2, 3, 4, 6, 7, 8, 9, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count trio: 13
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '7, 8',
 		],
 		'win amount' => 44,

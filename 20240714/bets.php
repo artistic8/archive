@@ -42,9 +42,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7',
 		'official win' => '7, 5, 2, 1',
 		'suggestions' => [
-			'win' => '3, 4, 5, 9',
-			'qin' => '1, 3, 4, 5, 6, 9, 12',
-			'trio' => '1, 3, 4, 5, 6, 9, 10, 12',//count trio: 8
+			'win' => '3, 4, 5',
+			'qin' => '1, 3, 4, 5, 6',
+			'trio' => '1, 3, 4, 5, 6',//count trio: 5
 			'inter' => '5',
 		],
 		'win amount' => 82,

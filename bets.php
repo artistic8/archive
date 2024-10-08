@@ -86,6 +86,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $suggestions["trio"] = array_values(array_unique(array_merge($suggestions["trio"], $favhistory[$raceNumber][$example]["trio"])));
         }
     }
+    $suggestions["win"] = array_intersect($suggestions["win"], $runners);
+    $suggestions["qin"] = array_intersect($suggestions["qin"], $runners);
+    $suggestions["trio"] = array_intersect($suggestions["trio"], $runners);
     sort($runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
