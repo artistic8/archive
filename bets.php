@@ -209,6 +209,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $racetext .= "\t\t],\n";
     $racetext .= "\t\t'total bets' => $totalBets[$raceNumber],\n";
+    $racetext .= "\t\t'wp' => '" . implode(", ", $wp) . "',\n";
     $totalRace[$raceNumber] -= $totalBets[$raceNumber];
     if(isset($officialWin) && $totalBets[$raceNumber] > 0){
         $racetext .= "\t\t'total won in race $raceNumber' => " . $totalRace[$raceNumber] . ",\n";
