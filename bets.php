@@ -175,12 +175,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    $diff1 = array_diff($runners, $allValues);
-    $racetext .= "\t\t'diff1' => '" . implode(", ", $diff1) . "',\n";
-    $diff2 = array_diff($runners, $suggestions["trio"]);
-    $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
     $racetext .= "\t\t'bets' => [\n";
-    if(!empty($winInter2) && !empty($diff1) && !empty($diff2) && count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
+    if(!empty($winInter2) && count($favorites) >= 3){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceF -= $unitBet;
@@ -201,7 +197,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $wp = array_intersect($allValues, $favorites);
-    if(!empty($winInter2) && !empty($diff1) && !empty($diff2) && count($wp) === 3){
+    if(!empty($winInter2) && count($wp) === 3){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceW -= $unitBet;

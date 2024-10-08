@@ -24,8 +24,6 @@ return [
 		'win inter' => '1, 2, 5',
 		'win inter 2' => '5, 8, 10',
 		'allValues' => '1, 2, 3, 4',
-		'diff1' => '5',
-		'diff2' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -53,8 +51,6 @@ return [
 		],
 		'win inter' => '2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'diff1' => '12',
-		'diff2' => '3, 5, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -82,8 +78,6 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5, 6, 7, 8, 9, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff1' => '10, 11, 12',
-		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -111,8 +105,6 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'diff1' => '13, 14',
-		'diff2' => '8, 14',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -140,8 +132,6 @@ return [
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'diff1' => '9, 10, 11, 12',
-		'diff2' => '4, 6, 10, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -169,8 +159,6 @@ return [
 		],
 		'win inter' => '11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
-		'diff1' => '11, 14',
-		'diff2' => '4, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -199,11 +187,11 @@ return [
 		'win inter' => '2, 6, 7',
 		'win inter 2' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff1' => '10, 11, 12',
-		'diff2' => '',
 		'bets' => [
+			'place(end-favorites , $100)' => '9',
 		],
-		'total bets' => 0,
+		'total bets' => 100,
+		'total won in race 7' => -100,
 	],
 	'8' => [
 		/**
@@ -229,8 +217,6 @@ return [
 		'win inter' => '3, 4, 5, 8',
 		'win inter 2' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'diff1' => '13, 14',
-		'diff2' => '13, 14',
 		'bets' => [
 			'place(end-favorites , $100)' => '5',
 			'place(end-wp , $100)' => '5',
@@ -239,7 +225,7 @@ return [
 		'total won in race 8' => -200,
 	],
 ];
-//total major place favorites: -100
+//total major place favorites: -200
 //total major place wp: -100
 //total sure place: 0
-//total: -200
+//total: -300
