@@ -25,9 +25,12 @@ return [
 		'win inter' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
+			'place(wp , $100)' => '1',
+			'3 won(place bet)' => 125,
 		],
-		'total bets' => 0,
-		'wp' => '1',
+		'total bets' => 100,
+		'wp' => '1',//count wp: 1
+		'total won in race 1' => 25,
 	],
 	'2' => [
 		/**
@@ -55,7 +58,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 3, 4',
+		'wp' => '1, 2, 3, 4',//count wp: 4
 	],
 	'3' => [
 		/**
@@ -83,7 +86,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 7',
+		'wp' => '3, 7',//count wp: 2
 	],
 	'4' => [
 		/**
@@ -111,7 +114,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '6',
+		'wp' => '6',//count wp: 1
 	],
 	'5' => [
 		/**
@@ -139,7 +142,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4',
+		'wp' => '4',//count wp: 1
 	],
 	'6' => [
 		/**
@@ -167,7 +170,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 3, 5, 6, 8',
+		'wp' => '1, 2, 3, 5, 6, 8',//count wp: 6
 	],
 	'7' => [
 		/**
@@ -195,7 +198,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 5, 6, 7, 8',
+		'wp' => '3, 5, 6, 7, 8',//count wp: 5
 	],
 	'8' => [
 		/**
@@ -223,7 +226,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 3, 5',
+		'wp' => '1, 3, 5',//count wp: 3
 	],
 	'9' => [
 		/**
@@ -253,7 +256,7 @@ return [
 			'place(end-favorites , $100)' => '11',
 		],
 		'total bets' => 100,
-		'wp' => '2, 3, 8, 11',
+		'wp' => '2, 3, 8, 11',//count wp: 4
 		'total won in race 9' => -100,
 	],
 	'10' => [
@@ -282,7 +285,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 5',
+		'wp' => '2, 5',//count wp: 2
 	],
 	'11' => [
 		/**
@@ -312,11 +315,11 @@ return [
 			'place(end-favorites , $100)' => '14',
 		],
 		'total bets' => 100,
-		'wp' => '',
+		'wp' => '',//count wp: 0
 		'total won in race 11' => -100,
 	],
 ];
 //total major place favorites: -200
-//total major place wp: 0
+//total major place wp: 25
 //total sure place: 0
-//total: -200
+//total: -175

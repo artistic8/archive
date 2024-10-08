@@ -31,7 +31,7 @@ return [
 			'2 won(place bet)' => 200,
 		],
 		'total bets' => 200,
-		'wp' => '5, 6, 7',
+		'wp' => '5, 6, 7',//count wp: 3
 		'total won in race 1' => 0,
 	],
 	'2' => [
@@ -61,7 +61,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '5, 6',
+		'wp' => '5, 6',//count wp: 2
 	],
 	'3' => [
 		/**
@@ -89,7 +89,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 3, 7',
+		'wp' => '1, 2, 3, 7',//count wp: 4
 	],
 	'4' => [
 		/**
@@ -118,7 +118,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 9',
+		'wp' => '4, 9',//count wp: 2
 	],
 	'5' => [
 		/**
@@ -146,7 +146,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 4, 6',
+		'wp' => '1, 4, 6',//count wp: 3
 	],
 	'6' => [
 		/**
@@ -174,10 +174,12 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites , $100)' => '13',
+			'place(wp , $100)' => '7',
+			'3 won(place bet)' => 170,
 		],
-		'total bets' => 100,
-		'wp' => '7',
-		'total won in race 6' => -100,
+		'total bets' => 200,
+		'wp' => '7',//count wp: 1
+		'total won in race 6' => -30,
 	],
 	'7' => [
 		/**
@@ -205,7 +207,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2',
+		'wp' => '2',//count wp: 1
 	],
 	'8' => [
 		/**
@@ -233,7 +235,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4',
+		'wp' => '4',//count wp: 1
 	],
 	'9' => [
 		/**
@@ -261,7 +263,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 5, 6, 10',
+		'wp' => '2, 5, 6, 10',//count wp: 4
 	],
 	'10' => [
 		/**
@@ -287,9 +289,11 @@ return [
 		'win inter' => '10',
 		'allValues' => '1, 2, 5, 7, 8, 10, 11',
 		'bets' => [
+			'place(wp , $100)' => '7',
 		],
-		'total bets' => 0,
-		'wp' => '7',
+		'total bets' => 100,
+		'wp' => '7',//count wp: 1
+		'total won in race 10' => -100,
 	],
 	'11' => [
 		/**
@@ -317,10 +321,10 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',
+		'wp' => '',//count wp: 0
 	],
 ];
 //total major place favorites: -200
-//total major place wp: 100
+//total major place wp: 70
 //total sure place: 0
-//total: -100
+//total: -130

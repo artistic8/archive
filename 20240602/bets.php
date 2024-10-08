@@ -27,7 +27,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '7, 9, 10',
+		'wp' => '7, 9, 10',//count wp: 3
 	],
 	'2' => [
 		/**
@@ -55,7 +55,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3',
+		'wp' => '2, 3',//count wp: 2
 	],
 	'3' => [
 		/**
@@ -84,7 +84,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3',
+		'wp' => '3',//count wp: 1
 	],
 	'4' => [
 		/**
@@ -113,7 +113,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 10',
+		'wp' => '1, 10',//count wp: 2
 	],
 	'5' => [
 		/**
@@ -141,7 +141,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1',
+		'wp' => '1',//count wp: 1
 	],
 	'6' => [
 		/**
@@ -170,7 +170,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 4',
+		'wp' => '2, 4',//count wp: 2
 	],
 	'7' => [
 		/**
@@ -198,7 +198,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 5, 6',
+		'wp' => '1, 5, 6',//count wp: 3
 	],
 	'8' => [
 		/**
@@ -231,7 +231,7 @@ return [
 			'2 won(place bet)' => 140,
 		],
 		'total bets' => 200,
-		'wp' => '4, 7, 8',
+		'wp' => '4, 7, 8',//count wp: 3
 		'total won in race 8' => 80,
 	],
 	'9' => [
@@ -261,7 +261,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2',
+		'wp' => '2',//count wp: 1
 	],
 	'10' => [
 		/**
@@ -289,7 +289,7 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '13',
+		'wp' => '13',//count wp: 1
 	],
 	'11' => [
 		/**
@@ -319,7 +319,7 @@ return [
 			'place(end-favorites , $100)' => '13',
 		],
 		'total bets' => 100,
-		'wp' => '',
+		'wp' => '',//count wp: 0
 		'total won in race 11' => -100,
 	],
 ];
