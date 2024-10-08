@@ -22,10 +22,10 @@ return [
 			5 => 16.5,
 		],
 		'win inter' => '1, 2, 5',
+		'win inter 2' => '5, 8, 10',
 		'allValues' => '1, 2, 3, 4',
 		'diff1' => '5',
 		'diff2' => '1',
-			'diff' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -55,13 +55,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
 		'diff2' => '3, 5, 11, 12',
-			'diff' => '1, 8, 9',
 		'bets' => [
-			'place(end-wp , $100)' => '9',
-			'2 won(place bet)' => 160,
 		],
-		'total bets' => 100,
-		'total won in race 2' => 60,
+		'total bets' => 0,
 	],
 	'3' => [
 		/**
@@ -88,7 +84,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11, 12',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-			'diff' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -118,12 +113,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'diff1' => '13, 14',
 		'diff2' => '8, 14',
-			'diff' => '2, 6, 7',
 		'bets' => [
-			'place(end-wp , $100)' => '7',
 		],
-		'total bets' => 100,
-		'total won in race 4' => -100,
+		'total bets' => 0,
 	],
 	'5' => [
 		/**
@@ -150,7 +142,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff1' => '9, 10, 11, 12',
 		'diff2' => '4, 6, 10, 12',
-			'diff' => '3, 9, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -180,7 +171,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'diff1' => '11, 14',
 		'diff2' => '4, 13',
-			'diff' => '8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -207,10 +197,10 @@ return [
 			6 => 41.5,
 		],
 		'win inter' => '2, 6, 7',
+		'win inter 2' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11, 12',
 		'diff2' => '',
-			'diff' => '5, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -237,10 +227,10 @@ return [
 			4 => 19,
 		],
 		'win inter' => '3, 4, 5, 8',
+		'win inter 2' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'diff1' => '13, 14',
 		'diff2' => '13, 14',
-			'diff' => '2',
 		'bets' => [
 			'place(end-favorites , $100)' => '5',
 			'place(end-wp , $100)' => '5',
@@ -250,6 +240,6 @@ return [
 	],
 ];
 //total major place favorites: -100
-//total major place wp: -140
+//total major place wp: -100
 //total sure place: 0
-//total: -240
+//total: -200

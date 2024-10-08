@@ -23,10 +23,10 @@ return [
 			12 => 51.5,
 		],
 		'win inter' => '1, 2, 4, 5, 12',
+		'win inter 2' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
 		'diff2' => '1, 3, 5, 7, 8, 9, 10, 11, 12',
-			'diff' => '3, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -53,10 +53,10 @@ return [
 			11 => 22,
 		],
 		'win inter' => '4, 5, 9',
+		'win inter 2' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
 		'diff1' => '8, 9, 12',
 		'diff2' => '11, 12',
-			'diff' => '2, 8',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
 		],
@@ -85,10 +85,10 @@ return [
 			7 => 24,
 		],
 		'win inter' => '2, 3, 8, 12',
+		'win inter 2' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11, 12',
 		'diff2' => '6',
-			'diff' => '8',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
 			'super sure bet' => 'super sure place 8',
@@ -122,7 +122,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'diff1' => '',
 		'diff2' => '',
-			'diff' => '2, 6, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -152,7 +151,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'diff1' => '9, 10',
 		'diff2' => '',
-			'diff' => '2, 3, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -182,7 +180,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
 		'diff2' => '4',
-			'diff' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -212,7 +209,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff1' => '10, 11, 12',
 		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-			'diff' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -242,7 +238,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '',
 		'diff2' => '',
-			'diff' => '11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -272,7 +267,6 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff1' => '12',
 		'diff2' => '',
-			'diff' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
