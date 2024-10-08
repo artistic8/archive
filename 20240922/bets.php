@@ -284,15 +284,12 @@ return [
 		'win inter' => '',
 		'allValues' => '1, 2, 7, 8',
 		'bets' => [
-			'place(wp , $100)' => '2',
-			'3 won(place bet)' => 160,
 		],
-		'total bets' => 100,
+		'total bets' => 0,
 		'wp' => '2',//count wp: 1
-		'total won in race 10' => 60,
 	],
 ];
 //total major place favorites: -100
-//total major place wp: -40
+//total major place wp: -100
 //total sure place: 0
-//total: -140
+//total: -200
