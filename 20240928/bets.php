@@ -196,10 +196,11 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '6',
 			'place(end-wp , $100)' => '6',
+			'super sure bet' => 'super sure place 6',
 		],
-		'total bets' => 200,
+		'total bets' => 300,
 		'wp' => '1, 2, 6',//count wp: 3
-		'total won in race 7' => -200,
+		'total won in race 7' => -300,
 	],
 	'8' => [
 		/**
@@ -228,10 +229,11 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
 			'place(end-wp , $100)' => '8',
+			'super sure bet' => 'super sure place 8',
 		],
-		'total bets' => 200,
+		'total bets' => 300,
 		'wp' => '2, 6, 8',//count wp: 3
-		'total won in race 8' => -200,
+		'total won in race 8' => -300,
 	],
 	'9' => [
 		/**
@@ -297,5 +299,5 @@ return [
 ];
 //total major place favorites: -300
 //total major place wp: -200
-//total sure place: -100
-//total: -600
+//total sure place: -300
+//total: -800

@@ -265,13 +265,15 @@ return [
 			'1 won(place bet)' => 305,
 			'place(end-wp , $100)' => '10',
 			'2 won(place bet)' => 305,
+			'super sure bet' => 'super sure place 10',
+			'5 won(place bet)' => 305,
 		],
-		'total bets' => 200,
+		'total bets' => 300,
 		'wp' => '2, 9, 10',//count wp: 3
-		'total won in race 9' => 410,
+		'total won in race 9' => 615,
 	],
 ];
 //total major place favorites: 160
 //total major place wp: 160
-//total sure place: 0
-//total: 320
+//total sure place: 205
+//total: 525

@@ -113,10 +113,10 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '5',
 			'1 won(place bet)' => 150,
-			'super sure bet' => 'super sure place 5',
-			'5 won(place bet)' => 150,
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 150,
+			'super sure bet' => 'super sure place 5',
+			'5 won(place bet)' => 150,
 		],
 		'total bets' => 300,
 		'wp' => '1, 4, 5',//count wp: 3

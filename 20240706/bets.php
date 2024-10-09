@@ -28,10 +28,10 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '4',
 			'1 won(place bet)' => 140,
-			'super sure bet' => 'super sure place 4',
-			'5 won(place bet)' => 140,
 			'place(end-wp , $100)' => '4',
 			'2 won(place bet)' => 140,
+			'super sure bet' => 'super sure place 4',
+			'5 won(place bet)' => 140,
 		],
 		'total bets' => 300,
 		'wp' => '1, 3, 4',//count wp: 3
