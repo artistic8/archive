@@ -175,8 +175,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    $diff1 = array_diff($runners, $allValues);
-    $diff2 = array_diff($runners, $suggestions["trio"]);
     $condition1 = !empty($winInter2);
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
