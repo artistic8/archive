@@ -147,6 +147,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     if(!empty($winInter2)){
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
+        $diff = array_diff($winInter2, $favorites);
+        $racetext .= "\t\t'diff' => '" . implode(", ", $diff) . "',\n";
+        if(isset($officialWin)){
+           $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        }
     }
     $unitBet = 100;
     $allValues = [];
