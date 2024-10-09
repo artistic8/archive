@@ -199,6 +199,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalMajorPlaceW += (1 * $unitBet / 10) * $placeAmount[end($wp)];
         }
     }
+    if(count($winInter2) === 1 && count($wp) === 1){
+        $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
+        $totalBets[$raceNumber] += $unitBet;
+        $totalMajorPlaceW -= $unitBet;
+        if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
+            $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($wp)];
+            $racetext .= "\t\t\t'2 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
+            $totalMajorPlaceW += (1 * $unitBet / 10) * $placeAmount[end($wp)];
+        }
+    }
     if(count($favorites) >= 3 && count(array_intersect($winInter, $favorites)) >= 2 && $condition1) {
         $racetext .= "\t\t\t'super sure bet' => 'super sure place " . end($favorites) . "',\n" ;
         $totalBets[$raceNumber] += $unitBet;
