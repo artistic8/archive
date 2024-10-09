@@ -191,7 +191,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $wp = array_intersect($allValues, $favorites);
-    if($condition1 && count($wp) === 3){
+    if($condition1 && $condition2 && count($wp) === 3){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceW -= $unitBet;
