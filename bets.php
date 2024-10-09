@@ -178,9 +178,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $diff1 = array_diff($runners, $allValues);
     $diff2 = array_diff($runners, $suggestions["trio"]);
     $condition1 = !empty($winInter2);
-    $condition2 = !empty($diff1) && !empty($diff2);
+    $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
-    if($condition1 && count($favorites) >= 3){
+    if($condition1 && $condition2 && count($favorites) >= 3){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceF -= $unitBet;
