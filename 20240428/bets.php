@@ -37,7 +37,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '6, 7, 10, 8',
 		'suggestions' => [
-			'win' => '2, 4, 6, 7, 8, 9',
+			'win' => '2, 4, 6, 7, 8, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',//count trio: 11
 			'inter' => '2, 7',
@@ -144,11 +144,19 @@ return [
 			9 => 29,
 		],
 		'win inter' => '1, 2, 3, 4, 5',
+		'win inter 2' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
+			'place(end-favorites , $100)' => '5',
+			'1 won(place bet)' => 180,
+			'place(end-wp , $100)' => '5',
+			'2 won(place bet)' => 180,
+			'super sure bet' => 'super sure place 5',
+			'5 won(place bet)' => 180,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '1, 3, 5',//count wp: 3
+		'total won in race 5' => 240,
 	],
 	'6' => [
 		/**
@@ -214,10 +222,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '1, 4, 9, 10',
 		'suggestions' => [
-			'win' => '4, 5, 8',
-			'qin' => '1, 2, 4, 5, 7, 8, 11',
+			'win' => '4, 5, 8, 11',
+			'qin' => '1, 2, 4, 5, 7, 8, 10, 11',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',//count trio: 10
-			'inter' => '8',
+			'inter' => '8, 11',
 		],
 		'win amount' => 19,
 		'qin amount' => 47.5,
@@ -227,16 +235,12 @@ return [
 			4 => 16.5,
 			9 => 151,
 		],
-		'win inter' => '3, 4, 8',
-		'win inter 2' => '8',
+		'win inter' => '3, 4, 8, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'place(end-favorites , $100)' => '11',
-			'place(end-wp , $100)' => '11',
 		],
-		'total bets' => 200,
+		'total bets' => 0,
 		'wp' => '1, 8, 11',//count wp: 3
-		'total won in race 8' => -200,
 	],
 	'9' => [
 		/**
@@ -299,8 +303,8 @@ return [
 		'total won in race 10' => 585,
 	],
 ];
-//total place end favorites: 535
-//total place end wp: -50
+//total place end favorites: 715
+//total place end wp: 130
 //total place wp: 0
-//total sure place: 50
-//total: 535
+//total sure place: 130
+//total: 975

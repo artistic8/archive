@@ -201,13 +201,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     if(!empty($suggestions["win"]) && count($winInter2) === 1 && count($wp) === 1){
-        $racetext .= "\t\t\t'place(wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
-        $totalBets[$raceNumber] += $unitBet;
-        $totalPlaceW -= $unitBet;
+        $wpBet = 3 * $unitBet;
+        $racetext .= "\t\t\t'place(wp $revision, $" . $wpBet . ")' => '" . end($wp) . "',\n"; 
+        $totalBets[$raceNumber] += $wpBet;
+        $totalPlaceW -= $wpBet;
         if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
-            $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($wp)];
-            $racetext .= "\t\t\t'3 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
-            $totalPlaceW += (1 * $unitBet / 10) * $placeAmount[end($wp)];
+            $totalRace[$raceNumber] += (1 * $wpBet / 10) * $placeAmount[end($wp)];
+            $racetext .= "\t\t\t'3 won(place bet)' => " . (1 * $wpBet / 10) * $placeAmount[end($wp)] . ",\n";
+            $totalPlaceW += (1 * $wpBet / 10) * $placeAmount[end($wp)];
         }
     }
     if(count($favorites) >= 3 && count(array_intersect($winInter, $favorites)) >= 2 && $condition1) {

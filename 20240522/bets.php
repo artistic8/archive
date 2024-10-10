@@ -50,12 +50,18 @@ return [
 			5 => 58,
 			12 => 28,
 		],
-		'win inter' => '4',
+		'win inter' => '4, 10',
+		'win inter 2' => '10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
+			'place(end-favorites , $100)' => '10',
+			'1 won(place bet)' => 115,
+			'place(end-wp , $100)' => '10',
+			'2 won(place bet)' => 115,
 		],
-		'total bets' => 0,
+		'total bets' => 200,
 		'wp' => '6, 9, 10',//count wp: 3
+		'total won in race 2' => 30,
 	],
 	'3' => [
 		/**
@@ -268,8 +274,8 @@ return [
 		'total won in race 9' => 315,
 	],
 ];
-//total place end favorites: 5
-//total place end wp: 5
+//total place end favorites: 20
+//total place end wp: 20
 //total place wp: 0
 //total sure place: 5
-//total: 15
+//total: 45

@@ -38,8 +38,8 @@ return [
 		'official win' => '10, 7, 1, 12',
 		'suggestions' => [
 			'win' => '5, 10',
-			'qin' => '5, 9, 10',
-			'trio' => '1, 5, 9, 10, 12',//count trio: 5
+			'qin' => '2, 5, 9, 10',
+			'trio' => '1, 2, 5, 9, 10, 12',//count trio: 6
 			'inter' => '10',
 		],
 		'win amount' => 42,
