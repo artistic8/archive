@@ -236,7 +236,8 @@ return [
 		'total won in race 8' => 220,
 	],
 ];
-//total major place favorites: 110
-//total major place wp: 0
+//total place end favorites: 110
+//total place end wp: 0
+//total place wp: 0
 //total sure place: 110
 //total: 220

@@ -330,7 +330,8 @@ return [
 		'wp' => '',//count wp: 0
 	],
 ];
-//total major place favorites: 205
-//total major place wp: 205
+//total place end favorites: 205
+//total place end wp: 205
+//total place wp: 0
 //total sure place: 160
 //total: 570

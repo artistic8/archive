@@ -1,8 +1,9 @@
 <?php
 $total = 0;
-$totalMajorPlaceF = 0;
-$totalMajorPlaceW = 0;
+$totalPlaceF = 0;
+$totalPlaceEndW = 0;
 $totalSurePlace = 0;
+$totalPlaceW = 0;
 $HV = ["20240207", "20240215", "20240221", "20240228", "20240306", "20240313", "20240320", "20240327", "20240410", "20240417", "20240424", "20240501", "20240508", 
         "20240515", "20240522", "20240605", "20240612", "20240626", "20240704", "20240710", "20240911", "20240918", "20240925", "20241009",
     ];
@@ -21,14 +22,16 @@ foreach ($dir as $fileinfo) {
         $month = substr($fileinfo->getFilename(), 0, 6);
         $contents = file_get_contents($betsFile);
         $contents = explode("\n", $contents);
-        $contents = array_slice($contents, -5);
+        $contents = array_slice($contents, -6);
         $parts = explode(": ", $contents[0]);
-        $totalMajorPlaceF += (float)$parts[1];
+        $totalPlaceF += (float)$parts[1];
         $parts = explode(": ", $contents[1]);
-        $totalMajorPlaceW += (float)$parts[1];
+        $totalPlaceEndW += (float)$parts[1];
         $parts = explode(": ", $contents[2]);
-        $totalSurePlace += (float)$parts[1];
+        $totalPlaceW += (float)$parts[1];
         $parts = explode(": ", $contents[3]);
+        $totalSurePlace += (float)$parts[1];
+        $parts = explode(": ", $contents[4]);
         $total += (float)$parts[1];
         if(in_array($fileinfo->getFilename(), $HV)) $totalHV += (float)$parts[1];
         elseif(in_array($fileinfo->getFilename(), $ST)) $totalST += (float)$parts[1];
@@ -41,9 +44,11 @@ ksort($monthly);
 foreach($monthly as $key => $value){
     echo "Total $key: $value \n";
 }
-echo "Total major place favorites: " . $totalMajorPlaceF . "\n";
-echo "Total major place wp: " . $totalMajorPlaceW . "\n";
+echo "Total place end favorites: " . $totalPlaceF . "\n";
+echo "Total place end wp: " . $totalPlaceEndW . "\n";
+echo "Total place wp: " . $totalPlaceW . "\n";
 echo "Total sure place: " . $totalSurePlace . "\n";
+echo "Total win: " . $totalPlaceW . "\n";
 echo "Total Shatin: " . $totalST . "\n";
 echo "Total Happy Valley: " . $totalHV . "\n";
 echo "Total: " . $total . "\n";
