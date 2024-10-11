@@ -87,6 +87,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
+			'win/qin/qpl(?) ' => '2, 3, 8',
 			'place(end-wp , $100)' => '8',
 			'super sure bet' => 'super sure place 8',
 		],

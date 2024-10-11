@@ -115,6 +115,7 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '11',
 			'1 won(place bet)' => 170,
+			'win/qin/qpl(?) ' => '1, 4, 11',
 			'place(end-wp , $100)' => '11',
 			'2 won(place bet)' => 170,
 			'super sure bet' => 'super sure place 11',

@@ -225,6 +225,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
+			'win/qin/qpl(?) ' => '2, 5, 7',
 			'place(end-wp , $100)' => '7',
 			'super sure bet' => 'super sure place 7',
 		],

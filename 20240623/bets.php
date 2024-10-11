@@ -221,6 +221,7 @@ return [
 		'win inter' => '3, 4, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
+			'win/qin/qpl(?) ' => '1, 3, 5',
 		],
 		'total bets' => 0,
 		'wp' => '1, 3, 5',//count wp: 3

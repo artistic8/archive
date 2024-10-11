@@ -113,6 +113,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
+			'win/qin/qpl(?) ' => '1, 6, 8',
 			'place(end-wp , $100)' => '8',
 		],
 		'total bets' => 200,
