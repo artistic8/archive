@@ -229,9 +229,9 @@ return [
 			'place(end-wp , $100)' => '7',
 			'super sure bet' => 'super sure place 7',
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '2, 5, 7',//count wp: 3
-		'total won in race 8' => -300,
+		'total won in race 8' => -600,
 	],
 	'9' => [
 		/**
@@ -266,4 +266,4 @@ return [
 //total place end wp: -100
 //total place wp: 0
 //total sure place: -100
-//total: -300
+//total: -600

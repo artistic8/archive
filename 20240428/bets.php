@@ -27,8 +27,9 @@ return [
 		'bets' => [
 			'win/qin/qpl(?) ' => '6, 7, 9',
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '6, 7, 9',//count wp: 3
+		'total won in race 1' => -300,
 	],
 	'2' => [
 		/**
@@ -55,9 +56,11 @@ return [
 		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'win/qin/qpl(?) ' => '2, 3, 7',
+			'2 won(place bet)' => 1110,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '2, 3, 7',//count wp: 3
+		'total won in race 2' => 810,
 	],
 	'3' => [
 		/**
@@ -116,14 +119,15 @@ return [
 			'place(end-favorites , $100)' => '5',
 			'1 won(place bet)' => 150,
 			'win/qin/qpl(?) ' => '1, 4, 5',
+			'2 won(place bet)' => 615,
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 150,
 			'super sure bet' => 'super sure place 5',
 			'5 won(place bet)' => 150,
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '1, 4, 5',//count wp: 3
-		'total won in race 4' => 150,
+		'total won in race 4' => 465,
 	],
 	'5' => [
 		/**
@@ -153,14 +157,15 @@ return [
 			'place(end-favorites , $100)' => '5',
 			'1 won(place bet)' => 180,
 			'win/qin/qpl(?) ' => '1, 3, 5',
+			'2 won(place bet)' => 690,
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 180,
 			'super sure bet' => 'super sure place 5',
 			'5 won(place bet)' => 180,
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '1, 3, 5',//count wp: 3
-		'total won in race 5' => 240,
+		'total won in race 5' => 630,
 	],
 	'6' => [
 		/**
@@ -187,9 +192,11 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'win/qin/qpl(?) ' => '2, 8, 10',
+			'2 won(place bet)' => 645,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '2, 8, 10',//count wp: 3
+		'total won in race 6' => 345,
 	],
 	'7' => [
 		/**
@@ -244,9 +251,11 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'win/qin/qpl(?) ' => '1, 8, 11',
+			'2 won(place bet)' => 190,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '1, 8, 11',//count wp: 3
+		'total won in race 8' => -110,
 	],
 	'9' => [
 		/**
@@ -313,4 +322,4 @@ return [
 //total place end wp: 130
 //total place wp: 0
 //total sure place: 130
-//total: 975
+//total: 2425

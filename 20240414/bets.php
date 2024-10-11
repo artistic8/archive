@@ -170,8 +170,9 @@ return [
 		'bets' => [
 			'win/qin/qpl(?) ' => '3, 5, 9',
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '3, 5, 9',//count wp: 3
+		'total won in race 6' => -300,
 	],
 	'7' => [
 		/**
@@ -201,14 +202,15 @@ return [
 			'place(end-favorites , $100)' => '9',
 			'1 won(place bet)' => 275,
 			'win/qin/qpl(?) ' => '3, 7, 9',
+			'2 won(place bet)' => 3810,
 			'place(end-wp , $100)' => '9',
 			'2 won(place bet)' => 275,
 			'super sure bet' => 'super sure place 9',
 			'5 won(place bet)' => 275,
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '3, 7, 9',//count wp: 3
-		'total won in race 7' => 525,
+		'total won in race 7' => 4035,
 	],
 	'8' => [
 		/**
@@ -329,4 +331,4 @@ return [
 //total place end wp: 175
 //total place wp: 0
 //total sure place: 175
-//total: 525
+//total: 3735

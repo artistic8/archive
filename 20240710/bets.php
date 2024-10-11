@@ -116,9 +116,11 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'win/qin/qpl(?) ' => '4, 8, 12',
+			'2 won(place bet)' => 265,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '4, 8, 12',//count wp: 3
+		'total won in race 4' => -35,
 	],
 	'5' => [
 		/**
@@ -271,4 +273,4 @@ return [
 //total place end wp: 0
 //total place wp: 195
 //total sure place: 115
-//total: 425
+//total: 390
