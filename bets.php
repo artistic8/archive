@@ -195,7 +195,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t\t'win/qin/qpl(?) $revision' => '" . implode(", ", $wp) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet * count($wp);
         $totalWin -= $unitBet * count($wp);
-        if(isset($officialWin) && !empty(array_intersect($wp, array_slice($officialWin, 0, 3)))){
+        if(isset($officialWin) && !empty(array_intersect($wp, array_slice($officialWin, 0, 1)))){
             $totalRace[$raceNumber] += (1 * $unitBet / 10) * $winAmount;
             $racetext .= "\t\t\t'2 won(win bet)' => " . (1 * $unitBet / 10) * $winAmount . ",\n";
             $totalWin += (1 * $unitBet / 10) * $winAmount;
