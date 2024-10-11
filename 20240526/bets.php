@@ -26,7 +26,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'win/qin/qpl(?) ' => '1, 2, 7',
-			'2 won(place bet)' => 255,
+			'2 won(win bet)' => 255,
 		],
 		'total bets' => 300,
 		'wp' => '1, 2, 7',//count wp: 3
@@ -117,7 +117,7 @@ return [
 			'place(end-favorites , $100)' => '5',
 			'1 won(place bet)' => 390,
 			'win/qin/qpl(?) ' => '1, 4, 5',
-			'2 won(place bet)' => 205,
+			'2 won(win bet)' => 205,
 			'place(end-wp , $100)' => '5',
 			'2 won(place bet)' => 390,
 			'super sure bet' => 'super sure place 5',
@@ -152,7 +152,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 			'win/qin/qpl(?) ' => '1, 4, 11',
-			'2 won(place bet)' => 175,
+			'2 won(win bet)' => 175,
 		],
 		'total bets' => 300,
 		'wp' => '1, 4, 11',//count wp: 3
@@ -186,7 +186,7 @@ return [
 			'place(end-favorites , $100)' => '9',
 			'1 won(place bet)' => 255,
 			'win/qin/qpl(?) ' => '1, 4, 9',
-			'2 won(place bet)' => 775,
+			'2 won(win bet)' => 775,
 			'place(end-wp , $100)' => '9',
 			'2 won(place bet)' => 255,
 		],
@@ -221,7 +221,7 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '7',
 			'win/qin/qpl(?) ' => '1, 4, 7',
-			'2 won(place bet)' => 145,
+			'2 won(win bet)' => 145,
 			'place(end-wp , $100)' => '7',
 		],
 		'total bets' => 500,
@@ -284,7 +284,7 @@ return [
 			'place(end-favorites , $100)' => '9',
 			'1 won(place bet)' => 101,
 			'win/qin/qpl(?) ' => '6, 7, 9',
-			'2 won(place bet)' => 150,
+			'2 won(win bet)' => 150,
 			'place(end-wp , $100)' => '9',
 			'2 won(place bet)' => 101,
 		],
@@ -325,4 +325,5 @@ return [
 //total place end wp: 346
 //total place wp: 0
 //total sure place: 290
+//total win: -95
 //total: 887

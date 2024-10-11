@@ -266,4 +266,5 @@ return [
 //total place end wp: -100
 //total place wp: 0
 //total sure place: -100
+//total win: -300
 //total: -600

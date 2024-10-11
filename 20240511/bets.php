@@ -114,7 +114,7 @@ return [
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
 			'win/qin/qpl(?) ' => '1, 6, 8',
-			'2 won(place bet)' => 2850,
+			'2 won(win bet)' => 2850,
 			'place(end-wp , $100)' => '8',
 		],
 		'total bets' => 500,
@@ -299,4 +299,5 @@ return [
 //total place end wp: -100
 //total place wp: 0
 //total sure place: 0
+//total win: 2550
 //total: 2350

@@ -250,5 +250,6 @@ $outtext .= "//total place end favorites: $totalPlaceEndF\n";
 $outtext .= "//total place end wp: $totalPlaceEndW\n";
 $outtext .= "//total place wp: $totalPlaceW\n";
 $outtext .= "//total sure place: $totalSurePlace\n";
+$outtext .= "//total win: $totalWin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
