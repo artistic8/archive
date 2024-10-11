@@ -191,24 +191,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $wp = array_intersect($allValues, $favorites);
-    if(count($wp) === 3){
-        $racetext .= "\t\t\t'win/qin/qpl(?) $revision' => '" . implode(", ", $wp) . "',\n"; 
-        $totalBets[$raceNumber] += $unitBet * count($wp);
-        $totalWin -= $unitBet * count($wp);
-        if(isset($officialWin) && !empty(array_intersect($wp, array_slice($officialWin, 0, 1)))){
-            $totalRace[$raceNumber] += (1 * $unitBet / 10) * $winAmount;
-            $racetext .= "\t\t\t'2 won(win bet)' => " . (1 * $unitBet / 10) * $winAmount . ",\n";
-            $totalWin += (1 * $unitBet / 10) * $winAmount;
-        }
-        if($condition1 && $condition2){
-            $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
-            $totalBets[$raceNumber] += $unitBet;
-            $totalPlaceEndW -= $unitBet;
-            if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
-                $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($wp)];
-                $racetext .= "\t\t\t'2 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
-                $totalPlaceEndW += (1 * $unitBet / 10) * $placeAmount[end($wp)];
-            }
+    if(count($wp) === 3 && $condition1 && $condition2){
+        $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
+        $totalBets[$raceNumber] += $unitBet;
+        $totalPlaceEndW -= $unitBet;
+        if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
+            $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($wp)];
+            $racetext .= "\t\t\t'2 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
+            $totalPlaceEndW += (1 * $unitBet / 10) * $placeAmount[end($wp)];
         }
     }
     if(!empty($suggestions["win"]) && count($winInter2) === 1 && count($wp) === 1){

@@ -87,13 +87,12 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites , $100)' => '8',
-			'win/qin/qpl(?) ' => '2, 3, 8',
 			'place(end-wp , $100)' => '8',
 			'super sure bet' => 'super sure place 8',
 		],
-		'total bets' => 600,
+		'total bets' => 300,
 		'wp' => '2, 3, 8',//count wp: 3
-		'total won in race 3' => -600,
+		'total won in race 3' => -300,
 	],
 	'4' => [
 		/**
@@ -268,5 +267,5 @@ return [
 //total place end wp: -100
 //total place wp: 0
 //total sure place: -100
-//total win: -300
-//total: -700
+//total win: 0
+//total: -400
