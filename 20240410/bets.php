@@ -201,7 +201,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(wp , $300)' => '2',
-			'3 won(place bet)' => 495,
+			'3 won(place bet 2)' => 495,
 		],
 		'total bets' => 300,
 		'wp' => '2',//count wp: 1

@@ -203,13 +203,18 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(!empty($suggestions["win"]) && count($winInter2) === 1 && count($wp) === 1){
         $wpBet = 3 * $unitBet;
-        $racetext .= "\t\t\t'place(wp $revision, $" . $wpBet . ")' => '" . end($wp) . "',\n"; 
-        $totalBets[$raceNumber] += $wpBet;
-        $totalPlaceW -= $wpBet;
-        if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
-            $totalRace[$raceNumber] += (1 * $wpBet / 10) * $placeAmount[end($wp)];
-            $racetext .= "\t\t\t'3 won(place bet)' => " . (1 * $wpBet / 10) * $placeAmount[end($wp)] . ",\n";
-            $totalPlaceW += (1 * $wpBet / 10) * $placeAmount[end($wp)];
+        $racetext .= "\t\t\t'place(wp $revision, $" . $wpBet . ")' => '" . implode(", ", $wp) . "',\n"; 
+        $totalBets[$raceNumber] += $wpBet * count($wp);
+        $totalPlaceW -= $wpBet * count($wp);
+        if(isset($officialWin) && !empty(array_intersect($wp, array_slice($officialWin, 0, 3)))){
+            $jackpot = array_intersect($wp, array_slice($officialWin, 0, 3));
+            foreach($jackpot as $jacky){
+                if(isset($placeAmount[$jacky])){
+                    $totalRace[$raceNumber] += (1 * $wpBet / 10) * $placeAmount[$jacky];
+                    $racetext .= "\t\t\t'3 won(place bet $jacky)' => " . (1 * $wpBet / 10) * $placeAmount[$jacky] . ",\n";
+                    $totalPlaceW += (1 * $wpBet / 10) * $placeAmount[$jacky];
+                }
+            }
         }
     }
     if(count($favorites) >= 3 && count(array_intersect($winInter, $favorites)) >= 2 && $condition1) {
