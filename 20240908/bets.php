@@ -82,9 +82,9 @@ return [
 		'win inter 2' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'place(end-favorites , $100)' => '8',
+			'place(end-favorites )' => '8',
 			'1 won(place bet)' => 130,
-			'place(end-wp , $100)' => '8',
+			'place(end-wp )' => '8',
 			'2 won(place bet)' => 130,
 		],
 		'total bets' => 200,
@@ -116,9 +116,9 @@ return [
 		'win inter 2' => '1, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites , $100)' => '10',
+			'place(end-favorites )' => '10',
 			'1 won(place bet)' => 490,
-			'place(end-wp , $100)' => '10',
+			'place(end-wp )' => '10',
 			'2 won(place bet)' => 490,
 			'super sure bet' => 'super sure place 10',
 			'5 won(place bet)' => 490,
@@ -291,7 +291,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 7',
 		'win inter 2' => '1, 7',
-		'allValues' => '1, 2, 5, 7, 8, 10, 11, 13, 14',
+		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
 		'bets' => [
 		],
 		'total bets' => 0,

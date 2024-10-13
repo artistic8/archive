@@ -111,9 +111,9 @@ return [
 		'win inter 2' => '1, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites , $100)' => '5',
+			'place(end-favorites )' => '5',
 			'1 won(place bet)' => 390,
-			'place(end-wp , $100)' => '5',
+			'place(end-wp )' => '5',
 			'2 won(place bet)' => 390,
 			'super sure bet' => 'super sure place 5',
 			'5 won(place bet)' => 390,
@@ -175,9 +175,9 @@ return [
 		'win inter 2' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'bets' => [
-			'place(end-favorites , $100)' => '9',
+			'place(end-favorites )' => '9',
 			'1 won(place bet)' => 255,
-			'place(end-wp , $100)' => '9',
+			'place(end-wp )' => '9',
 			'2 won(place bet)' => 255,
 		],
 		'total bets' => 200,
@@ -209,8 +209,8 @@ return [
 		'win inter 2' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
-			'place(end-favorites , $100)' => '7',
-			'place(end-wp , $100)' => '7',
+			'place(end-favorites )' => '7',
+			'place(end-wp )' => '7',
 		],
 		'total bets' => 200,
 		'wp' => '1, 4, 7',//count wp: 3
@@ -269,9 +269,9 @@ return [
 		'win inter 2' => '7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'place(end-favorites , $100)' => '9',
+			'place(end-favorites )' => '9',
 			'1 won(place bet)' => 101,
-			'place(end-wp , $100)' => '9',
+			'place(end-wp )' => '9',
 			'2 won(place bet)' => 101,
 		],
 		'total bets' => 200,

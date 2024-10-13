@@ -68,8 +68,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
-    $favorite = $runners[0];
-    if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
+    if(isset($allWinOdds)){
+        $tmpwinsArray = $allWinOdds[$raceNumber];
+        asort($tmpwinsArray);
+        $tmprunners = array_keys($tmpwinsArray);
+        if(!in_array($tmprunners[0], $favorites)) $favorites[] = $tmprunners[0];
+    }
+    if(!in_array($runners[0], $favorites)) $favorites[] = $runners[0];
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     $_2sets = get2Sets($favorites);
@@ -181,7 +186,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
     if($condition1 && $condition2 && count($favorites) >= 3){
-        $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
+        $racetext .= "\t\t\t'place(end-favorites $revision)' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalPlaceEndF -= $unitBet;
         if(isset($officialWin) && in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
@@ -192,7 +197,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $wp = array_intersect($allValues, $favorites);
     if(count($wp) === 3 && $condition1 && $condition2){
-        $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
+        $racetext .= "\t\t\t'place(end-wp $revision)' => '" . end($wp) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalPlaceEndW -= $unitBet;
         if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
@@ -203,7 +208,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(!empty($suggestions["win"]) && count($winInter2) === 1 && count($wp) === 1){
         $wpBet = 3 * $unitBet;
-        $racetext .= "\t\t\t'place(wp $revision, $" . $wpBet . ")' => '" . implode(", ", $wp) . "',\n"; 
+        $racetext .= "\t\t\t'place(wp $revision)' => '" . implode(", ", $wp) . "',\n"; 
         $totalBets[$raceNumber] += $wpBet * count($wp);
         $totalPlaceW -= $wpBet * count($wp);
         if(isset($officialWin) && !empty(array_intersect($wp, array_slice($officialWin, 0, 3)))){
@@ -248,3 +253,4 @@ $outtext .= "//total sure place: $totalSurePlace\n";
 $outtext .= "//total win: $totalWin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
+?>

@@ -111,9 +111,9 @@ return [
 		'win inter 2' => '2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites , $100)' => '3',
+			'place(end-favorites )' => '3',
 			'1 won(place bet)' => 125,
-			'place(end-wp , $100)' => '3',
+			'place(end-wp )' => '3',
 			'2 won(place bet)' => 125,
 			'super sure bet' => 'super sure place 3',
 			'5 won(place bet)' => 125,

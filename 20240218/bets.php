@@ -282,7 +282,7 @@ return [
 		'win inter 2' => '10',
 		'allValues' => '1, 2, 7, 8, 10, 11',
 		'bets' => [
-			'place(wp , $300)' => '2',
+			'place(wp )' => '2',
 			'3 won(place bet 2)' => 645,
 		],
 		'total bets' => 300,

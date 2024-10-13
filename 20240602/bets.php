@@ -225,9 +225,9 @@ return [
 		'win inter 2' => '6',
 		'allValues' => '2, 3, 4, 6, 7, 8',
 		'bets' => [
-			'place(end-favorites , $100)' => '8',
+			'place(end-favorites )' => '8',
 			'1 won(place bet)' => 140,
-			'place(end-wp , $100)' => '8',
+			'place(end-wp )' => '8',
 			'2 won(place bet)' => 140,
 			'super sure bet' => 'super sure place 8',
 			'5 won(place bet)' => 140,
