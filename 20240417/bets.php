@@ -80,6 +80,7 @@ return [
 		],
 		'win inter' => '8',
 		'union' => '4, 8, 9, 10',
+		'favorites' => '4, 9, 10',
 		'official win' => '4, 1, 6, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		'bets' => [

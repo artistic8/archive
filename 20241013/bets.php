@@ -165,6 +165,7 @@ return [
 		],
 		'win inter' => '3, 12',
 		'union' => '3, 5, 12, 13',
+		'favorites' => '5, 13',
 		'official win' => '5, 14, 2, 8',
 		'win inter 2' => '12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
@@ -285,6 +286,7 @@ return [
 		],
 		'win inter' => '3',
 		'union' => '3, 6, 12',
+		'favorites' => '6, 12',
 		'official win' => '6, 12, 8, 11',
 		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
 		'bets' => [

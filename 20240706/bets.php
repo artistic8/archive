@@ -92,6 +92,7 @@ return [
 		],
 		'win inter' => '2, 5, 7, 9',
 		'union' => '1, 2, 5, 7, 9, 12',
+		'favorites' => '1, 12',
 		'official win' => '1, 14, 8, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
@@ -264,6 +265,7 @@ return [
 		],
 		'win inter' => '1, 3, 4, 8, 10, 12',
 		'union' => '1, 3, 4, 5, 8, 9, 10, 12',
+		'favorites' => '5, 9',
 		'official win' => '9, 5, 2, 6',
 		'win inter 2' => '1, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',

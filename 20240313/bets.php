@@ -24,6 +24,7 @@ return [
 		],
 		'win inter' => '1, 5',
 		'union' => '1, 2, 3, 4, 5, 6',
+		'favorites' => '2, 3, 4, 6',
 		'official win' => '2, 6, 4, 1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
@@ -147,6 +148,7 @@ return [
 		],
 		'win inter' => '1, 4',
 		'union' => '1, 4, 5, 8, 10',
+		'favorites' => '5, 8, 10',
 		'official win' => '4, 11, 10, 2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
@@ -235,6 +237,7 @@ return [
 		],
 		'win inter' => '3, 5, 8',
 		'union' => '3, 4, 5, 7, 8, 10',
+		'favorites' => '4, 7, 10',
 		'official win' => '2, 8, 9, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [

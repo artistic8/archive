@@ -24,6 +24,7 @@ return [
 		],
 		'win inter' => '1, 8',
 		'union' => '1, 3, 8, 12',
+		'favorites' => '3, 12',
 		'official win' => '12, 4, 6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
