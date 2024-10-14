@@ -157,6 +157,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+        $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
         if(isset($officialWin)){
             $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         }
