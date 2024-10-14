@@ -292,7 +292,7 @@ return [
 		],
 		'win inter' => '7, 9',
 		'win inter 2' => '7, 9',
-		'allValues' => '1, 2, 5, 7, 8, 10, 11, 13, 14',
+		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
 		'bets' => [
 		],
 		'total bets' => 0,

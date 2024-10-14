@@ -30,12 +30,13 @@ return [
 			'1 won(place bet)' => 215,
 			'place(end-wp )' => '10',
 			'2 won(place bet)' => 215,
+			'win(wp )' => '1, 3, 10',
 			'super sure bet' => 'super sure place 10',
 			'5 won(place bet)' => 215,
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '1, 3, 10',//count wp: 3
-		'total won in race 1' => 345,
+		'total won in race 1' => 45,
 	],
 	'2' => [
 		/**
@@ -237,9 +238,12 @@ return [
 		'win inter' => '1, 3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
+			'win(wp )' => '1, 5, 7',
+			'3 won(win bet)' => 475,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '1, 5, 7',//count wp: 3
+		'total won in race 8' => 175,
 	],
 	'9' => [
 		/**
@@ -292,7 +296,7 @@ return [
 			4 => 31.5,
 		],
 		'win inter' => '3, 10',
-		'allValues' => '',
+		'allValues' => '1, 3, 4, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -303,5 +307,5 @@ return [
 //total place end wp: 115
 //total place wp: 0
 //total sure place: 115
-//total win: 0
-//total: 145
+//total win: -125
+//total: 20

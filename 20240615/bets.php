@@ -56,11 +56,13 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '6',
 			'place(end-wp )' => '6',
+			'win(wp )' => '3, 5, 6',
+			'3 won(win bet)' => 560,
 			'super sure bet' => 'super sure place 6',
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '3, 5, 6',//count wp: 3
-		'total won in race 2' => -300,
+		'total won in race 2' => -40,
 	],
 	'3' => [
 		/**
@@ -147,12 +149,14 @@ return [
 			'1 won(place bet)' => 360,
 			'place(end-wp )' => '10',
 			'2 won(place bet)' => 360,
+			'win(wp )' => '1, 3, 10',
+			'3 won(win bet)' => 645,
 			'super sure bet' => 'super sure place 10',
 			'5 won(place bet)' => 360,
 		],
-		'total bets' => 300,
+		'total bets' => 600,
 		'wp' => '1, 3, 10',//count wp: 3
-		'total won in race 5' => 780,
+		'total won in race 5' => 1125,
 	],
 	'6' => [
 		/**
@@ -234,9 +238,12 @@ return [
 		'win inter' => '4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
+			'win(wp )' => '1, 4, 5, 6',
+			'3 won(win bet)' => 535,
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 		'wp' => '1, 4, 5, 6',//count wp: 4
+		'total won in race 8' => 135,
 	],
 	'9' => [
 		/**
@@ -280,9 +287,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '7, 8, 9, 1',
 		'suggestions' => [
-			'win' => '2, 7, 8, 10, 13',
-			'qin' => '2, 5, 7, 8, 10, 12, 13',
-			'trio' => '1, 2, 5, 7, 8, 10, 12, 13',//count trio: 8
+			'win' => '2, 3, 7, 8, 10, 13',
+			'qin' => '1, 2, 3, 5, 7, 8, 10, 12, 13',
+			'trio' => '1, 2, 3, 5, 7, 8, 10, 12, 13',//count trio: 9
 			'inter' => '2, 7, 8',
 		],
 		'win amount' => 30,
@@ -294,11 +301,14 @@ return [
 			9 => 43.5,
 		],
 		'win inter' => '2, 7',
-		'allValues' => '1, 2, 5, 7, 8, 10, 11, 13, 14',
+		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
 		'bets' => [
+			'win(wp )' => '1, 2, 7, 8',
+			'3 won(win bet)' => 300,
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 		'wp' => '1, 2, 7, 8',//count wp: 4
+		'total won in race 10' => -100,
 	],
 	'11' => [
 		/**
@@ -334,5 +344,5 @@ return [
 //total place end wp: 205
 //total place wp: 0
 //total sure place: 160
-//total win: 0
-//total: 570
+//total win: 640
+//total: 1210
