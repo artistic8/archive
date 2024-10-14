@@ -23,6 +23,8 @@ return [
 			6 => 34.5,
 		],
 		'win inter' => '1, 8',
+		'union' => '1, 3, 8, 12',
+		'official win' => '12, 4, 6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'win(union)' => '1, 3, 8, 12',

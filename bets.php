@@ -153,6 +153,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
+        $union = array_values(array_unique(array_merge($winInter, $favorites)));
+        sort($union);
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
+        if(isset($officialWin)){
+            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        }
+    }
     if(!empty($winInter2)){
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
     }
@@ -189,7 +197,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);
-        if(count($union) === 4){
+        if(in_array(count($union), [3, 4])){
             $racetext .= "\t\t\t'win(union)' => '" . implode(", ", $union) . "',\n"; 
             $totalBets[$raceNumber] += $unitBet * count($union);
             $totalWin -= $unitBet * count($union);

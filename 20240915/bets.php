@@ -107,6 +107,8 @@ return [
 			3 => 40,
 		],
 		'win inter' => '12',
+		'union' => '2, 4, 11, 12, 13',
+		'official win' => '13, 2, 3, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -285,6 +287,8 @@ return [
 			12 => 156,
 		],
 		'win inter' => '7',
+		'union' => '2, 7, 8, 10',
+		'official win' => '2, 5, 12, 6',
 		'allValues' => '1, 3, 4, 5',
 		'bets' => [
 			'win(union)' => '2, 7, 8, 10',

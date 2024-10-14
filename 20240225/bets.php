@@ -250,11 +250,16 @@ return [
 			14 => 16,
 		],
 		'win inter' => '4',
+		'union' => '3, 4, 14',
+		'official win' => '3, 12, 14, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
+			'win(union)' => '3, 4, 14',
+			'1 won(win bet)' => 160,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '3',//count wp: 1
+		'total won in race 9' => -140,
 	],
 	'10' => [
 		/**
@@ -289,5 +294,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: 0
-//total: 0
+//total win: -140
+//total: -140
