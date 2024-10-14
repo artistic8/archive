@@ -25,11 +25,9 @@ return [
 		'win inter' => '1, 2, 3, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'win(wp )' => '2, 3, 7',
 		],
-		'total bets' => 300,
+		'total bets' => 0,
 		'wp' => '2, 3, 7',//count wp: 3
-		'total won in race 1' => -300,
 	],
 	'2' => [
 		/**
@@ -81,7 +79,7 @@ return [
 			8 => 42.5,
 			4 => 11,
 		],
-		'win inter' => '2, 3, 4, 7',
+		'win inter' => '2, 3, 4, 5, 7',
 		'win inter 2' => '2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
@@ -235,5 +233,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: -300
-//total: -300
+//total win: 0
+//total: 0

@@ -37,9 +37,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '1, 6, 9, 2',
 		'suggestions' => [
-			'win' => '2, 4, 6, 10',
-			'qin' => '1, 2, 4, 6, 9, 10',
-			'trio' => '1, 2, 4, 6, 7, 9, 10, 11',//count trio: 8
+			'win' => '2, 4, 5, 6, 10',
+			'qin' => '1, 2, 4, 5, 6, 9, 10',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',//count trio: 10
 			'inter' => '2, 6',
 		],
 		'win amount' => 61.5,
@@ -83,11 +83,11 @@ return [
 			10 => 19,
 		],
 		'win inter' => '5, 11',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 6',//count wp: 2
+		'wp' => '2, 6, 11',//count wp: 3
 	],
 	'4' => [
 		/**
@@ -97,10 +97,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '3, 11, 8, 10',
 		'suggestions' => [
-			'win' => '2, 5, 10, 11',
-			'qin' => '1, 2, 5, 10, 11',
-			'trio' => '1, 2, 4, 5, 7, 10, 11',//count trio: 7
-			'inter' => '',
+			'win' => '2, 5, 6, 10, 11',
+			'qin' => '1, 2, 3, 5, 6, 10, 11',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 10, 11',//count trio: 9
+			'inter' => '6',
 		],
 		'win amount' => 117,
 		'qin amount' => 673,
@@ -110,7 +110,7 @@ return [
 			11 => 33,
 			8 => 11,
 		],
-		'win inter' => '',
+		'win inter' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],
@@ -228,7 +228,7 @@ return [
 			11 => 155.5,
 			2 => 19,
 		],
-		'win inter' => '3, 4, 5, 8',
+		'win inter' => '1, 3, 4, 5, 8',
 		'win inter 2' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -236,19 +236,17 @@ return [
 			'1 won(place bet)' => 190,
 			'place(end-wp )' => '5',
 			'2 won(place bet)' => 190,
-			'win(wp )' => '1, 4, 5',
-			'3 won(win bet)' => 525,
 			'super sure bet' => 'super sure place 5',
 			'5 won(place bet)' => 190,
 		],
-		'total bets' => 600,
+		'total bets' => 300,
 		'wp' => '1, 4, 5',//count wp: 3
-		'total won in race 8' => 495,
+		'total won in race 8' => 270,
 	],
 ];
 //total place end favorites: 120
 //total place end wp: -10
 //total place wp: 0
 //total sure place: 90
-//total win: 225
-//total: 425
+//total win: 0
+//total: 200
