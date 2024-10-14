@@ -206,7 +206,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $racetext .= "\t\t\t'1 won(win bet)' => " . 1/10 * $unitBet * $winAmount . ",\n";
                 $totalWin += 1/10 * $unitBet * $winAmount;
             }
-}
+        }
     }
     if($condition1 && $condition2 && count($favorites) >= 3){
         $racetext .= "\t\t\t'place(end-favorites $revision)' => '" .  end($favorites)  . "',\n"; 
