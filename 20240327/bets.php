@@ -250,9 +250,6 @@ return [
 			11 => 14,
 		],
 		'win inter' => '1, 2, 5, 6, 9, 12',
-		//fav + winInter win, qin, trio??
-		'union' => '1, 2, 5, 6, 9, 12, 4, 11',
-		'official win' => '2, 4, 11, 7',
 		'win inter 2' => '1, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [

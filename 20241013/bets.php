@@ -164,15 +164,15 @@ return [
 			2 => 30,
 		],
 		'win inter' => '3, 12',
-		//fav + winInter win, qin, trio??
-		'union' => '3, 12, 5, 13',
-		'official win' => '5, 14, 2, 8',
 		'win inter 2' => '12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'bets' => [
+			'win(union)' => '3, 5, 12, 13',
+			'1 won(win bet)' => 260,
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 		'wp' => '5, 13',//count wp: 2
+		'total won in race 6' => -140,
 	],
 	'7' => [
 		/**
@@ -282,9 +282,6 @@ return [
 			8 => 24.5,
 		],
 		'win inter' => '3',
-		//fav + winInter win, qin, trio??
-		'union' => '3, 6, 12',
-		'official win' => '6, 12, 8, 11',
 		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
 		'bets' => [
 		],
@@ -296,5 +293,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: 0
-//total: 0
+//total win: -140
+//total: -140

@@ -23,14 +23,14 @@ return [
 			1 => 12.5,
 		],
 		'win inter' => '8',
-		//fav + winInter win, qin, trio??
-		'union' => '8, 1, 11, 14',
-		'official win' => '11, 10, 1, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
+			'win(union)' => '1, 8, 11, 14',
+			'1 won(win bet)' => 445,
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 		'wp' => '1',//count wp: 1
+		'total won in race 1' => 45,
 	],
 	'2' => [
 		/**
@@ -322,5 +322,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: -100
-//total win: 0
-//total: -200
+//total win: 45
+//total: -155

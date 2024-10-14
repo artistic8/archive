@@ -229,9 +229,6 @@ return [
 			9 => 38.5,
 		],
 		'win inter' => '1, 3, 7, 8',
-		//fav + winInter win, qin, trio??
-		'union' => '1, 3, 7, 8, 4, 11',
-		'official win' => '4, 5, 9, 2',
 		'win inter 2' => '7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [

@@ -292,19 +292,18 @@ return [
 			11 => 19,
 		],
 		'win inter' => '1',
-		//fav + winInter win, qin, trio??
-		'union' => '1, 3, 5, 11',
-		'official win' => '12, 3, 11, 5',
 		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
 		'bets' => [
+			'win(union)' => '1, 3, 5, 11',
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 		'wp' => '3, 5, 11',//count wp: 3
+		'total won in race 10' => -400,
 	],
 ];
 //total place end favorites: 450
 //total place end wp: 450
 //total place wp: 0
 //total sure place: 80
-//total win: 0
-//total: 980
+//total win: -400
+//total: 580
