@@ -140,6 +140,8 @@ return [
 			11 => 14.5,
 		],
 		'win inter' => '1, 3',
+		//fav + winInter win, qin, trio??
+		'official win' => '1, 9, 11, 10',
 		'win inter 2' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [

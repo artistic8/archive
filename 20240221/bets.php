@@ -165,6 +165,8 @@ return [
 			1 => 54,
 		],
 		'win inter' => '1, 3, 8, 9',
+		//fav + winInter win, qin, trio??
+		'official win' => '5, 7, 1, 11',
 		'win inter 2' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [

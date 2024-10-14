@@ -153,6 +153,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
+        $racetext .= "\t\t//fav + winInter win, qin, trio??\n";
+        if(isset($officialWin)){
+            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        }
+    }
     if(!empty($winInter2)){
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
     }
