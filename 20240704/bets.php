@@ -80,8 +80,6 @@ return [
 			1 => 20,
 		],
 		'win inter' => '8, 11, 12',
-		//fav + winInter win, qin, trio??
-		'official win' => '5, 2, 1, 11',
 		'win inter 2' => '12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		'bets' => [

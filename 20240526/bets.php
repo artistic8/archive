@@ -23,8 +23,6 @@ return [
 			12 => 24.5,
 		],
 		'win inter' => '8',
-		//fav + winInter win, qin, trio??
-		'official win' => '1, 7, 12, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -208,8 +206,6 @@ return [
 			5 => 27.5,
 		],
 		'win inter' => '2, 3',
-		//fav + winInter win, qin, trio??
-		'official win' => '1, 3, 5, 8',
 		'win inter 2' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
@@ -270,8 +266,6 @@ return [
 			3 => 19,
 		],
 		'win inter' => '1, 8',
-		//fav + winInter win, qin, trio??
-		'official win' => '9, 1, 3, 13',
 		'win inter 2' => '7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [

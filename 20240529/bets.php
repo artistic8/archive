@@ -54,8 +54,6 @@ return [
 			4 => 33.5,
 		],
 		'win inter' => '2, 4',
-		//fav + winInter win, qin, trio??
-		'official win' => '9, 2, 4, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
