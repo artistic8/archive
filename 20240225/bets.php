@@ -50,7 +50,7 @@ return [
 			6 => 15,
 		],
 		'win inter' => '2, 3, 4, 5, 6',
-		'win inter 2' => '3, 5, 6, 9, 10',
+		'win inter 2' => '3, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6',
 		'bets' => [
 		],

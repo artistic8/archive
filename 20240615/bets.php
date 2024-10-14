@@ -322,7 +322,7 @@ return [
 			6 => 25.5,
 		],
 		'win inter' => '',
-		'win inter 2' => '12, 14',
+		'win inter 2' => '12',
 		'allValues' => '',
 		'bets' => [
 		],

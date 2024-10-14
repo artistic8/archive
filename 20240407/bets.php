@@ -140,7 +140,7 @@ return [
 			3 => 13,
 		],
 		'win inter' => '1, 4, 6, 7, 8',
-		'win inter 2' => '6, 10',
+		'win inter 2' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
