@@ -148,9 +148,6 @@ return [
 			8 => 32,
 		],
 		'win inter' => '4',
-		'union' => '1, 2, 4, 6, 8',
-		'favorites' => '1, 2, 6, 8',
-		'official win' => '1, 10, 8, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
 		'bets' => [
 		],

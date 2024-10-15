@@ -51,9 +51,6 @@ return [
 			2 => 16,
 		],
 		'win inter' => '4, 5',
-		'union' => '4, 5, 8, 10',
-		'favorites' => '8, 10',
-		'official win' => '4, 9, 2, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'win(union)' => '4, 5, 8, 10',

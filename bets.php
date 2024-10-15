@@ -153,15 +153,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
-    if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
-        $union = array_values(array_unique(array_merge($winInter, $favorites)));
-        sort($union);
-        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n"; 
-        $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
-        if(isset($officialWin)){
-            $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-        }
-    }
     if(!empty($winInter2)){
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
     }

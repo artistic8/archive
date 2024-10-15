@@ -180,9 +180,6 @@ return [
 			12 => 20,
 		],
 		'win inter' => '1, 4, 9, 11',
-		'union' => '1, 2, 4, 6, 9, 11, 12',
-		'favorites' => '2, 6, 12',
-		'official win' => '2, 11, 12, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -296,9 +293,6 @@ return [
 			4 => 31.5,
 		],
 		'win inter' => '3, 10',
-		'union' => '3, 7, 9, 10, 14',
-		'favorites' => '7, 9, 14',
-		'official win' => '2, 9, 4, 1',
 		'allValues' => '1, 3, 4, 5',
 		'bets' => [
 		],
