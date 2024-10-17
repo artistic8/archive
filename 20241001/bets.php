@@ -143,7 +143,7 @@ return [
 		],
 		'win inter' => '1, 3',
 		'win inter 2' => '1',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -232,12 +232,12 @@ return [
 			5 => 12,
 			8 => 10.1,
 		],
-		'win inter' => '2, 3, 9',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'win inter' => '2, 3, 5, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 7, 8',//count wp: 3
+		'wp' => '2, 7, 8, 9',//count wp: 4
 	],
 	'9' => [
 		/**

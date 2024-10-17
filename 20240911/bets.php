@@ -137,7 +137,7 @@ return [
 			1 => 20.5,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 12',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -222,11 +222,11 @@ return [
 			6 => 92.5,
 		],
 		'win inter' => '3',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 8',//count wp: 2
+		'wp' => '3, 8, 10',//count wp: 3
 	],
 ];
 //total place end favorites: 0
