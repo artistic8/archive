@@ -122,6 +122,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t\t'trio' => '" . implode(", ", $suggestions["trio"]) . "',//count trio: " . count($suggestions["trio"]) . "\n";
     $inter = array_intersect($favorites, $suggestions["win"]);
     $racetext .= "\t\t\t'inter' => '" . implode(", ", $inter) . "',\n";
+    $diff = array_diff($runners, $suggestions["trio"]);
+    $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',//count diff: " . count($diff) . "\n";
     
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
