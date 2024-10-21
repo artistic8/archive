@@ -101,7 +101,7 @@ return [
 		'official win' => '12, 4, 6, 11',
 		'suggestions' => [
 			'win' => '1, 2, 4, 6, 11, 12, 13',
-			'qin' => '1, 2, 4, 5, 6, 9, 10, 11, 12, 13',
+			'qin' => '1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13',
 			'trio' => '1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13',//count trio: 11
 			'inter' => '4, 11, 12',
 		],
@@ -113,7 +113,7 @@ return [
 			4 => 21,
 			6 => 22,
 		],
-		'win inter' => '3',
+		'win inter' => '2, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -128,10 +128,10 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '11, 5, 3, 10',
 		'suggestions' => [
-			'win' => '1',
-			'qin' => '1, 11',
-			'trio' => '1, 6, 11',//count trio: 3
-			'inter' => '',
+			'win' => '1, 10',
+			'qin' => '1, 4, 10, 11',
+			'trio' => '1, 4, 6, 10, 11',//count trio: 5
+			'inter' => '10',
 		],
 		'win amount' => 424,
 		'qin amount' => 897,
@@ -141,8 +141,8 @@ return [
 			5 => 20,
 			3 => 59.5,
 		],
-		'win inter' => '1, 4, 7',
-		'win inter 2' => '1',
+		'win inter' => '1, 4, 7, 10',
+		'win inter 2' => '1, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -276,9 +276,9 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '1, 11, 2, 6',
 		'suggestions' => [
-			'win' => '7, 9',
-			'qin' => '1, 5, 7, 9',
-			'trio' => '1, 2, 5, 7, 9',//count trio: 5
+			'win' => '1, 7, 9',
+			'qin' => '1, 5, 7, 9, 11',
+			'trio' => '1, 2, 5, 7, 9, 11',//count trio: 6
 			'inter' => '',
 		],
 		'win amount' => 36.5,
@@ -289,20 +289,19 @@ return [
 			11 => 13,
 			2 => 304.5,
 		],
-		'win inter' => '7, 9',
-		'win inter 2' => '7, 9',
-		'allValues' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 13, 14',
+		'win inter' => '1, 7, 9',
+		'win inter 2' => '1, 7, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14',
 		'bets' => [
-			'win(union)' => '6, 7, 9, 11',
 		],
-		'total bets' => 400,
-		'wp' => '11',//count wp: 1
-		'total won in race 10' => -400,
+		'total bets' => 0,
+		'wp' => '6, 11',//count wp: 2
 	],
 ];
 //total place end favorites: -300
 //total place end wp: -200
 //total place wp: 0
 //total sure place: 0
-//total win: -400
-//total: -900
+//total win: 0
+//total place union: 0
+//total: -500

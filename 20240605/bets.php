@@ -10,7 +10,7 @@ return [
 		'official win' => '8, 5, 12, 3',
 		'suggestions' => [
 			'win' => '4, 5, 8, 10',
-			'qin' => '2, 4, 5, 8, 9, 10',
+			'qin' => '2, 3, 4, 5, 8, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10',//count trio: 9
 			'inter' => '4, 5, 8',
 		],
@@ -280,4 +280,5 @@ return [
 //total place wp: 0
 //total sure place: 185
 //total win: 0
+//total place union: 0
 //total: 455

@@ -67,7 +67,7 @@ return [
 		'suggestions' => [
 			'win' => '2, 4',
 			'qin' => '2, 3, 4, 9',
-			'trio' => '2, 3, 4, 5, 8, 9',//count trio: 6
+			'trio' => '1, 2, 3, 4, 5, 8, 9',//count trio: 7
 			'inter' => '4',
 		],
 		'win amount' => 179.5,
@@ -283,11 +283,11 @@ return [
 			2 => 16,
 		],
 		'win inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 7, 8',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 5',//count wp: 2
+		'wp' => '2, 5, 6',//count wp: 3
 	],
 ];
 //total place end favorites: -100
@@ -295,4 +295,5 @@ return [
 //total place wp: 0
 //total sure place: -100
 //total win: 0
+//total place union: 0
 //total: -300

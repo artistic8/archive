@@ -266,4 +266,5 @@ return [
 //total place wp: 0
 //total sure place: -100
 //total win: 0
+//total place union: 0
 //total: -300

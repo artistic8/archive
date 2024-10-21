@@ -22,7 +22,7 @@ return [
 			2 => 13,
 			3 => 17,
 		],
-		'win inter' => '1, 2, 3, 5',
+		'win inter' => '1, 2, 3, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -68,7 +68,7 @@ return [
 		'suggestions' => [
 			'win' => '2, 4',
 			'qin' => '2, 3, 4',
-			'trio' => '2, 3, 4, 5',//count trio: 4
+			'trio' => '1, 2, 3, 4, 5',//count trio: 5
 			'inter' => '4',
 		],
 		'win amount' => 13,
@@ -234,4 +234,5 @@ return [
 //total place wp: 0
 //total sure place: 0
 //total win: 0
+//total place union: 0
 //total: 0

@@ -38,7 +38,7 @@ return [
 		'official win' => '1, 6, 9, 2',
 		'suggestions' => [
 			'win' => '2, 4, 5, 6, 10',
-			'qin' => '1, 2, 4, 5, 6, 9, 10',
+			'qin' => '1, 2, 4, 5, 6, 7, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',//count trio: 10
 			'inter' => '2, 6',
 		],
@@ -215,7 +215,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '5, 11, 2, 7',
 		'suggestions' => [
-			'win' => '1, 3, 4, 5, 6, 8, 10, 12',
+			'win' => '1, 2, 3, 4, 5, 6, 8, 10, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 4, 5',
@@ -228,7 +228,7 @@ return [
 			11 => 155.5,
 			2 => 19,
 		],
-		'win inter' => '1, 3, 4, 5, 8',
+		'win inter' => '1, 2, 3, 4, 5, 8',
 		'win inter 2' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -249,4 +249,5 @@ return [
 //total place wp: 0
 //total sure place: 90
 //total win: 0
+//total place union: 0
 //total: 200

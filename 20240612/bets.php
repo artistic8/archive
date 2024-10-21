@@ -130,7 +130,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '8, 9, 3, 6',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 7, 9',
+			'win' => '1, 2, 3, 4, 5, 7, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 7, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count trio: 10
 			'inter' => '2, 3, 7, 9',
@@ -268,4 +268,5 @@ return [
 //total place wp: 0
 //total sure place: -100
 //total win: 0
+//total place union: 0
 //total: -400

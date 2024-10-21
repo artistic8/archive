@@ -110,7 +110,7 @@ return [
 			10 => 41.5,
 		],
 		'win inter' => '1, 2, 3, 11',
-		'win inter 2' => '1',
+		'win inter 2' => '1, 2',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '11',
@@ -276,4 +276,5 @@ return [
 //total place wp: 0
 //total sure place: -30
 //total win: 0
+//total place union: 0
 //total: -90

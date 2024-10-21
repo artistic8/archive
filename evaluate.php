@@ -4,6 +4,7 @@ $totalPlaceF = 0;
 $totalPlaceEndW = 0;
 $totalSurePlace = 0;
 $totalPlaceW = 0;
+$totalPlaceUnion = 0;
 $totalWin = 0;
 $HV = ["20240207", "20240215", "20240221", "20240228", "20240306", "20240313", "20240320", "20240327", "20240410", "20240417", "20240424", "20240501", "20240508", 
         "20240515", "20240522", "20240605", "20240612", "20240626", "20240704", "20240710", "20240911", "20240918", "20240925", "20241009",
@@ -23,7 +24,7 @@ foreach ($dir as $fileinfo) {
         $month = substr($fileinfo->getFilename(), 0, 6);
         $contents = file_get_contents($betsFile);
         $contents = explode("\n", $contents);
-        $contents = array_slice($contents, -7);
+        $contents = array_slice($contents, -8);
         $parts = explode(": ", $contents[0]);
         $totalPlaceF += (float)$parts[1];
         $parts = explode(": ", $contents[1]);
@@ -35,6 +36,8 @@ foreach ($dir as $fileinfo) {
         $parts = explode(": ", $contents[4]);
         $totalWin += (float)$parts[1];
         $parts = explode(": ", $contents[5]);
+        $totalPlaceUnion += (float)$parts[1];
+        $parts = explode(": ", $contents[6]);
         $total += (float)$parts[1];
         if(in_array($fileinfo->getFilename(), $HV)) $totalHV += (float)$parts[1];
         elseif(in_array($fileinfo->getFilename(), $ST)) $totalST += (float)$parts[1];
@@ -51,6 +54,7 @@ echo "Total place end favorites: " . $totalPlaceF . "\n";
 echo "Total place end wp: " . $totalPlaceEndW . "\n";
 echo "Total place wp: " . $totalPlaceW . "\n";
 echo "Total sure place: " . $totalSurePlace . "\n";
+echo "Total place union: " . $totalPlaceUnion . "\n";
 echo "Total win: " . $totalWin . "\n";
 echo "Total Shatin: " . $totalST . "\n";
 echo "Total Happy Valley: " . $totalHV . "\n";

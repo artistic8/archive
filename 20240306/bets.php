@@ -201,10 +201,12 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'win(union)' => '3, 4, 7, 9',
+			'7 won(place bet 3)' => 180,
+			'7 won(place bet 4)' => 135,
 		],
-		'total bets' => 400,
+		'total bets' => 800,
 		'wp' => '4, 9',//count wp: 2
-		'total won in race 7' => -400,
+		'total won in race 7' => -485,
 	],
 	'8' => [
 		/**
@@ -275,4 +277,5 @@ return [
 //total place wp: 0
 //total sure place: 0
 //total win: -400
-//total: 330
+//total place union: -85
+//total: 245

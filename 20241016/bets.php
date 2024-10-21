@@ -229,7 +229,7 @@ return [
 			6 => 29.5,
 			4 => 46.5,
 		],
-		'win inter' => '4',
+		'win inter' => '2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -242,4 +242,5 @@ return [
 //total place wp: 0
 //total sure place: 185
 //total win: 0
+//total place union: 0
 //total: 455

@@ -96,7 +96,7 @@ return [
 		'official win' => '11, 7, 1, 8',
 		'suggestions' => [
 			'win' => '2, 5, 10, 11',
-			'qin' => '1, 2, 5, 9, 10, 11, 12',
+			'qin' => '1, 2, 3, 5, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 5, 7, 9, 10, 11, 12',//count trio: 9
 			'inter' => '2, 11',
 		],
@@ -221,7 +221,7 @@ return [
 			12 => 19,
 			3 => 20.5,
 		],
-		'win inter' => '',
+		'win inter' => '2',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -263,4 +263,5 @@ return [
 //total place wp: 0
 //total sure place: 0
 //total win: 0
+//total place union: 0
 //total: 0

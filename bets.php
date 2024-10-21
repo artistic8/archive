@@ -29,6 +29,7 @@ $total = 0;
 $totalPlaceEndF = 0;
 $totalPlaceEndW = 0;
 $totalPlaceW = 0;
+$totalPlaceUnion = 0;
 $totalSurePlace = 0;
 $totalWin = 0;
 
@@ -189,14 +190,25 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);
-        if(in_array(count($union), [3, 4])){
+        if(count($union) === 4){
             $racetext .= "\t\t\t'win(union)' => '" . implode(", ", $union) . "',\n"; 
-            $totalBets[$raceNumber] += $unitBet * count($union);
+            $totalBets[$raceNumber] += 2 * $unitBet * count($union);
             $totalWin -= $unitBet * count($union);
+            $totalPlaceUnion -= $unitBet * count($union);
             if(isset($officialWin) && in_array($officialWin[0], $union)){
                 $totalRace[$raceNumber] += 1/10 * $unitBet * $winAmount;
                 $racetext .= "\t\t\t'1 won(win bet)' => " . 1/10 * $unitBet * $winAmount . ",\n";
                 $totalWin += 1/10 * $unitBet * $winAmount;
+            }
+            if(isset($officialWin) && !empty(array_intersect($union, array_slice($officialWin, 0, 3)))){
+                $jackpot = array_intersect($union, array_slice($officialWin, 0, 3));
+                foreach($jackpot as $jacky){
+                    if(isset($placeAmount[$jacky])){
+                        $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[$jacky];
+                        $racetext .= "\t\t\t'7 won(place bet $jacky)' => " . (1 * $unitBet / 10) * $placeAmount[$jacky] . ",\n";
+                        $totalPlaceUnion += (1 * $unitBet / 10) * $placeAmount[$jacky];
+                    }
+                }
             }
         }
     }
@@ -266,6 +278,7 @@ $outtext .= "//total place end wp: $totalPlaceEndW\n";
 $outtext .= "//total place wp: $totalPlaceW\n";
 $outtext .= "//total sure place: $totalSurePlace\n";
 $outtext .= "//total win: $totalWin\n";
+$outtext .= "//total place union: $totalPlaceUnion\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
 ?>
