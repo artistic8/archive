@@ -193,12 +193,16 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($allfavhistory[$raceNumber][implode(", ", $favorites)])){
         $racetext .= "\t\t\t'all fav history' => [" ;
         $position = 0;
+        $allfavhistoryValues = [];
         foreach($allfavhistory[$raceNumber][implode(", ", $favorites)] as $occurence) {
+            $allfavhistoryValues = array_values(array_unique(array_merge($allfavhistoryValues, $occurence)));
             if($position < count($allfavhistory[$raceNumber][implode(", ", $favorites)]) - 1) $racetext .= "[" . implode(", ", $occurence) ."], ";
             $position ++;
         }
         $racetext .= "[" . implode(", ", end($allfavhistory[$raceNumber][implode(", ", $favorites)])) ."]";
         $racetext .= "],\n" ;
+        sort($allfavhistoryValues);
+        $racetext .= "\t\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
     }
     if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));

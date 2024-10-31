@@ -27,6 +27,8 @@ return [
 		'win inter 2' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
+			'all fav history' => [[8, 5, 3, 4]],
+			'all fav history values' => '3, 4, 5, 8',
 			'place(end-favorites )' => '8',
 			'1 won(place bet)' => 130,
 			'place(end-wp )' => '8',
