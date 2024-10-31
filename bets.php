@@ -200,6 +200,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "],\n" ;
         sort($allfavhistoryValues);
         $racetext .= "\t\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
+        $racetext .= "\t\t\t'all inter fav' => '" . implode(", ", array_intersect($favorites, $allfavhistoryValues)) . "',\n" ;;
     }
     $condition1 = !empty($winInter2);
     $condition2 = !empty($winInter);

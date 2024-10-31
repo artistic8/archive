@@ -115,6 +115,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 			'all fav history' => [[6, 8, 11]],
 			'all fav history values' => '6, 8, 11',
+			'all inter fav' => '',
 		'bets' => [
 		],
 		'total bets' => 0,

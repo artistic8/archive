@@ -114,6 +114,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'all fav history' => [[5, 3, 6]],
 			'all fav history values' => '3, 5, 6',
+			'all inter fav' => '5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -145,6 +146,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 			'all fav history' => [[5, 6, 12]],
 			'all fav history values' => '5, 6, 12',
+			'all inter fav' => '5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -207,6 +209,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 			'all fav history' => [[3, 12, 5], [7, 4, 6]],
 			'all fav history values' => '3, 4, 5, 6, 7, 12',
+			'all inter fav' => '3, 4',
 		'bets' => [
 		],
 		'total bets' => 0,

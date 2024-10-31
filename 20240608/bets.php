@@ -115,6 +115,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'all fav history' => [[1, 12, 7], [1, 3, 4], [5, 11, 1]],
 			'all fav history values' => '1, 3, 4, 5, 7, 11, 12',
+			'all inter fav' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -206,6 +207,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 			'all fav history' => [[6, 9, 3]],
 			'all fav history values' => '3, 6, 9',
+			'all inter fav' => '3, 9',
 		'bets' => [
 			'place(end-favorites )' => '9',
 			'1 won(place bet)' => 105,
