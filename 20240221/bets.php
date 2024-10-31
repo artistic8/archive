@@ -113,8 +113,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
-			'all fav history' => [[6, 8, 11, 3]],
-			'all fav history values' => '3, 6, 8, 11',
+			'all fav history' => [[6, 8, 11]],
+			'all fav history values' => '6, 8, 11',
 		'bets' => [
 		],
 		'total bets' => 0,

@@ -259,8 +259,8 @@ return [
 		'win inter' => '1, 2, 4, 5, 6, 7, 8, 9, 12',
 		'win inter 2' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-			'all fav history' => [[4, 3, 6, 5]],
-			'all fav history values' => '3, 4, 5, 6',
+			'all fav history' => [[4, 3, 6]],
+			'all fav history values' => '3, 4, 6',
 		'bets' => [
 			'place(end-favorites )' => '6',
 			'place(end-wp )' => '6',
