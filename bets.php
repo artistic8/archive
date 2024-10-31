@@ -187,9 +187,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    $condition1 = !empty($winInter2);
-    $condition2 = !empty($winInter);
-    $racetext .= "\t\t'bets' => [\n";
     if(isset($allfavhistory[$raceNumber][implode(", ", $favorites)])){
         $racetext .= "\t\t\t'all fav history' => [" ;
         $position = 0;
@@ -204,6 +201,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         sort($allfavhistoryValues);
         $racetext .= "\t\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
     }
+    $condition1 = !empty($winInter2);
+    $condition2 = !empty($winInter);
+    $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);

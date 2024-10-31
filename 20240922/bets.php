@@ -236,9 +236,9 @@ return [
 		'win inter' => '1, 2, 3, 4, 5, 6, 8, 12',
 		'win inter 2' => '3, 5, 6, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'bets' => [
 			'all fav history' => [[3, 13, 14, 2]],
 			'all fav history values' => '2, 3, 13, 14',
+		'bets' => [
 		],
 		'total bets' => 0,
 		'wp' => '3, 7',//count wp: 2
