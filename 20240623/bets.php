@@ -72,11 +72,11 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '1, 2, 11, 9',
 		'suggestions' => [
-			'win' => '3, 5, 7, 9, 11',
+			'win' => '3, 5, 7, 8, 9, 11',
 			'qin' => '3, 5, 7, 8, 9, 11, 12',
-			'trio' => '1, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count trio: 10
+			'trio' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 11
 			'inter' => '3, 7, 11',
-			'diff' => '2, 6, 13, 14',//count diff: 4
+			'diff' => '2, 13, 14',//count diff: 3
 		],
 		'win amount' => 348,
 		'qin amount' => 2046,
@@ -145,7 +145,7 @@ return [
 			4 => 11.5,
 		],
 		'win inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -188,7 +188,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '6, 8, 4, 2',
 		'suggestions' => [
-			'win' => '1, 2, 3, 5, 6, 7, 8, 10, 11, 12',
+			'win' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count trio: 13
 			'inter' => '3, 5, 6, 7, 8',
@@ -231,12 +231,20 @@ return [
 			1 => 12,
 			4 => 16,
 		],
-		'win inter' => '1, 3, 4, 5',
+		'win inter' => '1, 2, 3, 4, 5',
+		'win inter 2' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
+			'place(end-favorites )' => '5',
+			'1 won(place bet)' => 130,
+			'place(end-wp )' => '5',
+			'2 won(place bet)' => 130,
+			'super sure bet' => 'super sure place 5',
+			'5 won(place bet)' => 130,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '1, 3, 5',//count wp: 3
+		'total won in race 8' => 90,
 	],
 	'9' => [
 		/**
@@ -331,10 +339,10 @@ return [
 		'wp' => '',//count wp: 0
 	],
 ];
-//total place end favorites: -100
-//total place end wp: 0
+//total place end favorites: -70
+//total place end wp: 30
 //total place wp: 0
-//total sure place: -100
+//total sure place: -70
 //total win: 45
 //total place union: -100
-//total: -255
+//total: -165

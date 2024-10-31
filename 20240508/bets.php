@@ -142,7 +142,7 @@ return [
 		],
 		'win inter' => '1, 4, 6, 12',
 		'win inter 2' => '1, 12',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '6',
 			'place(end-wp )' => '6',
