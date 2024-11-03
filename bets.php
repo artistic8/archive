@@ -188,7 +188,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
     if(isset($allfavhistory[$raceNumber][implode(", ", $favorites)])){
-        $racetext .= "\t\t\t'all fav history' => [" ;
+        $racetext .= "\t\t'all fav history' => [" ;
         $position = 0;
         $allfavhistoryValues = [];
         foreach($allfavhistory[$raceNumber][implode(", ", $favorites)] as $occurence) {
@@ -199,8 +199,23 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "[" . implode(", ", end($allfavhistory[$raceNumber][implode(", ", $favorites)])) ."]";
         $racetext .= "],\n" ;
         sort($allfavhistoryValues);
-        $racetext .= "\t\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
-        $racetext .= "\t\t\t'all inter fav' => '" . implode(", ", array_intersect($favorites, $allfavhistoryValues)) . "',\n" ;;
+        $racetext .= "\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
+        $racetext .= "\t\t'all inter fav' => '" . implode(", ", array_intersect($favorites, $allfavhistoryValues)) . "',\n" ;;
+    }
+    if(isset($allfavhistory['all races'][implode(", ", $favorites)])){
+        $racetext .= "\t\t'all races history' => [" ;
+        $position = 0;
+        $allfavhistoryValues = [];
+        foreach($allfavhistory['all races'][implode(", ", $favorites)] as $occurence) {
+            $allfavhistoryValues = array_values(array_unique(array_merge($allfavhistoryValues, $occurence)));
+            if($position < count($allfavhistory['all races'][implode(", ", $favorites)]) - 1) $racetext .= "[" . implode(", ", $occurence) ."], ";
+            $position ++;
+        }
+        $racetext .= "[" . implode(", ", end($allfavhistory['all races'][implode(", ", $favorites)])) ."]";
+        $racetext .= "],\n" ;
+        sort($allfavhistoryValues);
+        $racetext .= "\t\t'all races history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
+        $racetext .= "\t\t'all races inter fav' => '" . implode(", ", array_intersect($favorites, $allfavhistoryValues)) . "',\n" ;;
     }
     $condition1 = !empty($winInter2);
     $condition2 = !empty($winInter);
