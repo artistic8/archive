@@ -6,7 +6,6 @@ $outtext .= "return [\n";
 
 $history = [];
 for($r = 1; $r <=11; $r++) $history[$r] = [];
-$history['all races'] = [];
 
 $dir = new DirectoryIterator(__DIR__);
 foreach ($dir as $fileinfo) {
@@ -20,8 +19,6 @@ foreach ($dir as $fileinfo) {
             $winners = implode(", ", $winnersList);
             if(!isset($history[$raceNumber][$favorites])) $history[$raceNumber][$favorites] = [$winners];
             else $history[$raceNumber][$favorites][] = $winners;
-            if(!isset($history['all races'][$favorites])) $history['all races'][$favorites] = [$winners];
-            else $history['all races'][$favorites][] = $winners;
         }
     }
 }
