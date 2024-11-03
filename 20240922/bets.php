@@ -54,9 +54,6 @@ return [
 		],
 		'win inter' => '2, 5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'all races history' => [[3, 8, 4]],
-		'all races history values' => '3, 4, 8',
-		'all races inter fav' => '4, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -87,9 +84,6 @@ return [
 		'win inter' => '1, 2, 3, 4, 5, 8, 9',
 		'win inter 2' => '2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'all races history' => [[4, 7, 5], [4, 5, 1], [4, 5, 1], [5, 10, 4], [8, 5, 10]],
-		'all races history values' => '1, 4, 5, 7, 8, 10',
-		'all races inter fav' => '4, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -120,9 +114,6 @@ return [
 		'win inter' => '1, 2, 4, 5, 6',
 		'win inter 2' => '1, 2, 4, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[10, 1, 3], [11, 1, 10]],
-		'all races history values' => '1, 3, 10, 11',
-		'all races inter fav' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -152,9 +143,6 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 6, 8, 9, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[2, 4, 6], [2, 3, 10], [2, 1, 7], [2, 11, 9], [2, 1, 4]],
-		'all races history values' => '1, 2, 3, 4, 6, 7, 9, 10, 11',
-		'all races inter fav' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -214,9 +202,6 @@ return [
 		'win inter' => '1, 2, 3, 6',
 		'win inter 2' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'all races history' => [[2, 5, 8], [9, 7, 11], [7, 9, 4]],
-		'all races history values' => '2, 4, 5, 7, 8, 9, 11',
-		'all races inter fav' => '7',
 		'bets' => [
 			'place(end-favorites )' => '7',
 			'place(end-wp )' => '7',
@@ -254,9 +239,6 @@ return [
 		'all fav history' => [[3, 13, 14]],
 		'all fav history values' => '3, 13, 14',
 		'all inter fav' => '3',
-		'all races history' => [[7, 2, 3], [3, 13, 14], [9, 11, 6], [12, 13, 4]],
-		'all races history values' => '2, 3, 4, 6, 7, 9, 11, 12, 13, 14',
-		'all races inter fav' => '3, 7',
 		'bets' => [
 		],
 		'total bets' => 0,

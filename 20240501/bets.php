@@ -29,9 +29,6 @@ return [
 		'all fav history' => [[4, 1, 2]],
 		'all fav history values' => '1, 2, 4',
 		'all inter fav' => '1, 4',
-		'all races history' => [[5, 3, 7], [9, 2, 3], [4, 9, 8], [4, 1, 2]],
-		'all races history values' => '1, 2, 3, 4, 5, 7, 8, 9',
-		'all races inter fav' => '1, 3, 4',
 		'bets' => [
 			'place(end-favorites )' => '4',
 			'1 won(place bet)' => 195,
@@ -97,9 +94,6 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[4, 3, 9], [2, 5, 9], [5, 2, 6], [5, 3, 6], [7, 11, 5], [5, 6, 12], [5, 7, 6], [5, 2, 3], [2, 7, 3]],
-		'all races history values' => '2, 3, 4, 5, 6, 7, 9, 11, 12',
-		'all races inter fav' => '5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -130,9 +124,6 @@ return [
 		'win inter' => '1, 2, 3, 6, 11',
 		'win inter 2' => '1, 2, 3, 6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[3, 5, 1]],
-		'all races history values' => '1, 3, 5',
-		'all races inter fav' => '3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -162,9 +153,6 @@ return [
 		],
 		'win inter' => '1, 4, 6, 7, 8, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[4, 3, 6], [13, 8, 9]],
-		'all races history values' => '3, 4, 6, 8, 9, 13',
-		'all races inter fav' => '3, 4, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -260,9 +248,6 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[9, 4, 1]],
-		'all races history values' => '1, 4, 9',
-		'all races inter fav' => '1, 4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -292,9 +277,6 @@ return [
 		],
 		'win inter' => '5, 6, 8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'all races history' => [[1, 3, 7], [13, 8, 1], [11, 4, 7]],
-		'all races history values' => '1, 3, 4, 7, 8, 11, 13',
-		'all races inter fav' => '1, 7',
 		'bets' => [
 		],
 		'total bets' => 0,

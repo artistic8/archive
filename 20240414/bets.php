@@ -26,9 +26,6 @@ return [
 		'win inter' => '1, 2, 5, 7, 9',
 		'win inter 2' => '2, 5, 7, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all races history' => [[10, 7, 6]],
-		'all races history values' => '6, 7, 10',
-		'all races inter fav' => '6, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -117,9 +114,6 @@ return [
 		'win inter' => '1, 2, 4',
 		'win inter 2' => '1, 2, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all races history' => [[10, 1, 4], [8, 4, 3], [3, 12, 5], [7, 4, 6], [5, 6, 4]],
-		'all races history values' => '1, 3, 4, 5, 6, 7, 8, 10, 12',
-		'all races inter fav' => '3, 4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -152,9 +146,6 @@ return [
 		'all fav history' => [[5, 2, 6]],
 		'all fav history values' => '2, 5, 6',
 		'all inter fav' => '5',
-		'all races history' => [[4, 3, 9], [2, 5, 9], [5, 2, 6], [5, 3, 6], [7, 11, 5], [5, 7, 6], [6, 5, 2], [5, 2, 3], [2, 7, 3]],
-		'all races history values' => '2, 3, 4, 5, 6, 7, 9, 11',
-		'all races inter fav' => '5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -218,9 +209,6 @@ return [
 		'all fav history' => [[7, 3, 9]],
 		'all fav history values' => '3, 7, 9',
 		'all inter fav' => '3, 7, 9',
-		'all races history' => [[7, 3, 9]],
-		'all races history values' => '3, 7, 9',
-		'all races inter fav' => '3, 7, 9',
 		'bets' => [
 			'place(end-favorites )' => '9',
 			'1 won(place bet)' => 275,
@@ -287,9 +275,6 @@ return [
 		'win inter' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 12',
 		'win inter 2' => '2, 3, 5, 6, 8, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'all races history' => [[10, 3, 4], [11, 4, 6], [5, 2, 6], [6, 5, 2], [5, 1, 3], [5, 2, 8], [3, 5, 8], [9, 3, 5]],
-		'all races history values' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
-		'all races inter fav' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -349,9 +334,6 @@ return [
 		'win inter' => '',
 		'win inter 2' => '9',
 		'allValues' => '',
-		'all races history' => [[9, 2, 5]],
-		'all races history values' => '2, 5, 9',
-		'all races inter fav' => '2, 5, 9',
 		'bets' => [
 		],
 		'total bets' => 0,

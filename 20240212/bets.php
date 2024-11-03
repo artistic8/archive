@@ -91,9 +91,6 @@ return [
 		'all fav history' => [[1, 8, 9]],
 		'all fav history values' => '1, 8, 9',
 		'all inter fav' => '',
-		'all races history' => [[2, 6, 3], [1, 4, 3], [6, 3, 12], [4, 11, 12], [7, 9, 1], [1, 8, 9]],
-		'all races history values' => '1, 2, 3, 4, 6, 7, 8, 9, 11, 12',
-		'all races inter fav' => '3, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -124,9 +121,6 @@ return [
 		'win inter' => '1, 2, 5, 13',
 		'win inter 2' => '1, 2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[2, 10, 6]],
-		'all races history values' => '2, 6, 10',
-		'all races inter fav' => '2, 10',
 		'bets' => [
 			'place(end-favorites )' => '10',
 			'1 won(place bet)' => 160,
@@ -167,9 +161,6 @@ return [
 		'all fav history' => [[3, 11, 10]],
 		'all fav history values' => '3, 10, 11',
 		'all inter fav' => '10',
-		'all races history' => [[3, 11, 10], [12, 1, 10]],
-		'all races history values' => '1, 3, 10, 11, 12',
-		'all races inter fav' => '10, 12',
 		'bets' => [
 			'place(end-favorites )' => '12',
 			'place(end-wp )' => '12',
@@ -206,9 +197,6 @@ return [
 		'all fav history' => [[7, 2, 3]],
 		'all fav history values' => '2, 3, 7',
 		'all inter fav' => '3, 7',
-		'all races history' => [[12, 13, 4], [7, 2, 3], [3, 13, 14], [7, 2, 4]],
-		'all races history values' => '2, 3, 4, 7, 12, 13, 14',
-		'all races inter fav' => '3, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -241,9 +229,6 @@ return [
 		'all fav history' => [[4, 11, 8]],
 		'all fav history values' => '4, 8, 11',
 		'all inter fav' => '4',
-		'all races history' => [[5, 6, 3], [5, 1, 4], [4, 11, 8], [11, 4, 6], [4, 1, 6], [4, 10, 11], [4, 9, 5], [3, 1, 4]],
-		'all races history values' => '1, 3, 4, 5, 6, 8, 9, 10, 11',
-		'all races inter fav' => '4',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -272,9 +257,6 @@ return [
 		],
 		'win inter' => '2, 4, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6',
-		'all races history' => [[6, 5, 7], [6, 7, 4], [7, 8, 2], [6, 9, 5], [1, 3, 6], [11, 14, 10], [8, 6, 7], [1, 3, 6]],
-		'all races history values' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14',
-		'all races inter fav' => '6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -334,9 +316,6 @@ return [
 		'win inter' => '2',
 		'win inter 2' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
-		'all races history' => [[5, 14, 2]],
-		'all races history values' => '2, 5, 14',
-		'all races inter fav' => '5',
 		'bets' => [
 			'place(wp )' => '5',
 			'3 won(place bet 5)' => 315,

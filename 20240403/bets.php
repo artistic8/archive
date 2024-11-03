@@ -25,9 +25,6 @@ return [
 		],
 		'win inter' => '1, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'all races history' => [[2, 7, 12], [7, 5, 3]],
-		'all races history values' => '2, 3, 5, 7, 12',
-		'all races inter fav' => '3, 12',
 		'bets' => [
 			'win(union)' => '1, 3, 8, 12',
 			'1 won(win bet)' => 715,
@@ -62,9 +59,6 @@ return [
 		'win inter' => '4, 5, 7, 10',
 		'win inter 2' => '5, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[10, 4, 6], [4, 7, 8], [6, 1, 8], [11, 5, 3]],
-		'all races history values' => '1, 3, 4, 5, 6, 7, 8, 10, 11',
-		'all races inter fav' => '6, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -95,9 +89,6 @@ return [
 		'win inter' => '1, 4, 5, 9, 11, 12',
 		'win inter 2' => '1, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
-		'all races history' => [[1, 4, 11]],
-		'all races history values' => '1, 4, 11',
-		'all races inter fav' => '11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -160,9 +151,6 @@ return [
 		'win inter' => '1, 3, 4, 5',
 		'win inter 2' => '5',
 		'allValues' => '1, 3, 4, 5, 6, 7, 8',
-		'all races history' => [[4, 5, 1], [4, 5, 1], [7, 2, 5], [5, 10, 4], [8, 5, 10]],
-		'all races history values' => '1, 2, 4, 5, 7, 8, 10',
-		'all races inter fav' => '4, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -193,9 +181,6 @@ return [
 		'win inter' => '1, 2, 3, 5, 6, 8, 9',
 		'win inter 2' => '1, 2, 3, 6, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'all races history' => [[10, 3, 4], [11, 4, 6], [8, 3, 9], [6, 5, 2], [5, 1, 3], [5, 2, 8], [3, 5, 8], [9, 3, 5]],
-		'all races history values' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
-		'all races inter fav' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -255,9 +240,6 @@ return [
 		'win inter' => '2, 4, 5, 6, 8',
 		'win inter 2' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all races history' => [[7, 6, 9]],
-		'all races history values' => '6, 7, 9',
-		'all races inter fav' => '6, 7',
 		'bets' => [
 			'place(end-favorites )' => '7',
 			'1 won(place bet)' => 210,
