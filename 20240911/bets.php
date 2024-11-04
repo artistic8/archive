@@ -9,7 +9,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'official win' => '8, 2, 3, 5',
 		'suggestions' => [
-			'win' => '1, 2, 3, 5',
+			'win' => '1, 2, 3, 5, 9',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 9',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9',//count trio: 9
 			'inter' => '2, 3',
@@ -23,9 +23,12 @@ return [
 			2 => 13,
 			3 => 17,
 		],
-		'win inter' => '1, 2, 3, 5, 8',
-		'win inter 2' => '5',
+		'win inter' => '1, 2, 3, 5, 8, 9',
+		'win inter 2' => '5, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'all fav history' => [[9, 3, 7]],
+		'all fav history values' => '3, 7, 9',
+		'all inter fav' => '3, 7',
 		'bets' => [
 			'place(end-favorites )' => '7',
 			'place(end-wp )' => '7',
@@ -181,7 +184,7 @@ return [
 			1 => 17,
 			10 => 50,
 		],
-		'win inter' => '1, 3, 6',
+		'win inter' => '1, 3, 6, 11',
 		'win inter 2' => '1, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [

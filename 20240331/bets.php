@@ -232,9 +232,9 @@ return [
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 8, 10',
 			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',//count trio: 11
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 4, 10',
-			'diff' => '6, 13, 14',//count diff: 3
+			'diff' => '13, 14',//count diff: 2
 		],
 		'win amount' => 228.5,
 		'qin amount' => 3248.5,
