@@ -54,6 +54,7 @@ return [
 		],
 		'win inter' => '2, 3, 4, 5, 6, 7, 9',
 		'win inter 2' => '2, 3, 5, 9',
+		'inter inter' => '3, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -84,6 +85,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 9',
 		'win inter 2' => '2, 4',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -114,6 +116,7 @@ return [
 		],
 		'win inter' => '1, 3, 5, 6, 10, 11',
 		'win inter 2' => '6, 10',
+		'inter inter' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '8',
@@ -148,6 +151,7 @@ return [
 		],
 		'win inter' => '1, 4, 6, 7, 8, 10, 11, 12',
 		'win inter 2' => '1, 10',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'all fav history' => [[1, 4, 3]],
 		'all fav history values' => '1, 3, 4',
@@ -210,6 +214,7 @@ return [
 		],
 		'win inter' => '1, 2, 4, 5, 7',
 		'win inter 2' => '2, 7',
+		'inter inter' => '2, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -240,6 +245,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
 		'win inter 2' => '3, 5, 6, 7, 8',
+		'inter inter' => '3, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'all fav history' => [[7, 2, 4]],
 		'all fav history values' => '2, 4, 7',
@@ -273,6 +279,7 @@ return [
 		],
 		'win inter' => '2, 5, 8, 11, 12',
 		'win inter 2' => '12',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -303,6 +310,7 @@ return [
 		],
 		'win inter' => '2, 7, 10',
 		'win inter 2' => '2, 7',
+		'inter inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],

@@ -25,6 +25,7 @@ return [
 		],
 		'win inter' => '1, 5, 8',
 		'win inter 2' => '8',
+		'inter inter' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'all fav history' => [[8, 5, 3]],
 		'all fav history values' => '3, 5, 8',
@@ -94,16 +95,12 @@ return [
 		],
 		'win inter' => '1, 2, 5',
 		'win inter 2' => '5',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites )' => '12',
-			'1 won(place bet)' => 825,
-			'place(end-wp )' => '12',
-			'2 won(place bet)' => 825,
 		],
-		'total bets' => 200,
+		'total bets' => 0,
 		'wp' => '4, 6, 12',//count wp: 3
-		'total won in race 3' => 1450,
 	],
 	'4' => [
 		/**
@@ -158,14 +155,12 @@ return [
 		],
 		'win inter' => '2, 3, 4',
 		'win inter 2' => '2',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites )' => '12',
-			'place(end-wp )' => '12',
 		],
-		'total bets' => 200,
+		'total bets' => 0,
 		'wp' => '1, 5, 12',//count wp: 3
-		'total won in race 5' => -200,
 	],
 	'6' => [
 		/**
@@ -191,6 +186,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 6, 9, 11',
 		'win inter 2' => '3, 6',
+		'inter inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'bets' => [
 			'place(end-favorites )' => '9',
@@ -286,6 +282,7 @@ return [
 		],
 		'win inter' => '1, 2, 5, 11, 12',
 		'win inter 2' => '2',
+		'inter inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites )' => '8',
@@ -319,6 +316,7 @@ return [
 		],
 		'win inter' => '1, 2, 7',
 		'win inter 2' => '1',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],
@@ -355,10 +353,10 @@ return [
 		'wp' => '',//count wp: 0
 	],
 ];
-//total place end favorites: 840
-//total place end wp: 750
+//total place end favorites: 215
+//total place end wp: 125
 //total place wp: 0
 //total sure place: 125
 //total win: 0
 //total place union: 0
-//total: 1715
+//total: 465

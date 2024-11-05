@@ -159,6 +159,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     if(!empty($winInter2)){
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
+        $racetext .= "\t\t'inter inter' => '" . implode(", ", array_intersect($inter, $winInter, $winInter2)) . "',\n";
     }
     $unitBet = 100;
     $allValues = [];
@@ -202,7 +203,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
         $racetext .= "\t\t'all inter fav' => '" . implode(", ", array_intersect($favorites, $allfavhistoryValues)) . "',\n" ;;
     }
-    $condition1 = !empty($winInter2);
+    $condition1 = !empty(array_intersect($inter, $winInter, $winInter2));
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {

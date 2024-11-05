@@ -25,6 +25,7 @@ return [
 		],
 		'win inter' => '1, 8',
 		'win inter 2' => '1',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'win(union)' => '1, 7, 8, 12',
@@ -119,6 +120,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 5, 11, 12',
 		'win inter 2' => '5, 12',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -149,6 +151,7 @@ return [
 		],
 		'win inter' => '1, 4, 6, 7, 8',
 		'win inter 2' => '6',
+		'inter inter' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'all fav history' => [[6, 3, 12]],
 		'all fav history values' => '3, 6, 12',
@@ -211,8 +214,9 @@ return [
 		],
 		'win inter' => '1, 2, 3, 5, 6, 10',
 		'win inter 2' => '1, 2, 6, 10',
+		'inter inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all fav history' => [[1, 2, 8], [2, 10, 9]],
+		'all fav history' => [[2, 10, 9], [1, 2, 8]],
 		'all fav history values' => '1, 2, 8, 9, 10',
 		'all inter fav' => '1',
 		'bets' => [
@@ -244,15 +248,12 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
 		'win inter 2' => '6, 8',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites )' => '7',
-			'place(end-wp )' => '7',
-			'super sure bet' => 'super sure place 7',
 		],
-		'total bets' => 300,
+		'total bets' => 0,
 		'wp' => '2, 3, 7',//count wp: 3
-		'total won in race 8' => -300,
 	],
 	'9' => [
 		/**
@@ -278,6 +279,7 @@ return [
 		],
 		'win inter' => '1, 5, 6, 7, 8, 9',
 		'win inter 2' => '6, 7, 8',
+		'inter inter' => '7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'all fav history' => [[6, 7, 1]],
 		'all fav history values' => '1, 6, 7',
@@ -317,10 +319,10 @@ return [
 		'wp' => '1, 3',//count wp: 2
 	],
 ];
-//total place end favorites: -100
-//total place end wp: -100
+//total place end favorites: 0
+//total place end wp: 0
 //total place wp: 210
-//total sure place: -100
+//total sure place: 0
 //total win: 45
 //total place union: -230
-//total: -275
+//total: 25

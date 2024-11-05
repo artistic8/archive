@@ -25,6 +25,7 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5',
 		'win inter 2' => '1, 3, 4, 5',
+		'inter inter' => '1, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'all fav history' => [[1, 7, 2]],
 		'all fav history values' => '1, 2, 7',
@@ -58,15 +59,12 @@ return [
 		],
 		'win inter' => '4, 6, 7, 8, 9',
 		'win inter 2' => '8',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'place(end-favorites )' => '7',
-			'place(end-wp )' => '7',
-			'super sure bet' => 'super sure place 7',
 		],
-		'total bets' => 300,
+		'total bets' => 0,
 		'wp' => '1, 6, 7',//count wp: 3
-		'total won in race 2' => -300,
 	],
 	'3' => [
 		/**
@@ -121,6 +119,7 @@ return [
 		],
 		'win inter' => '1, 2, 6',
 		'win inter 2' => '1, 2, 6',
+		'inter inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '11',
@@ -183,6 +182,7 @@ return [
 		],
 		'win inter' => '1, 2, 4, 7, 8, 9, 11',
 		'win inter 2' => '1, 4, 8',
+		'inter inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -282,10 +282,10 @@ return [
 		'wp' => '1, 3, 4',//count wp: 3
 	],
 ];
-//total place end favorites: -200
-//total place end wp: -200
+//total place end favorites: -100
+//total place end wp: -100
 //total place wp: 0
-//total sure place: -100
+//total sure place: 0
 //total win: -35
 //total place union: 0
-//total: -535
+//total: -235

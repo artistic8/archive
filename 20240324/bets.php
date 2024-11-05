@@ -57,18 +57,17 @@ return [
 		],
 		'win inter' => '10',
 		'win inter 2' => '10',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'win(union)' => '1, 2, 10, 14',
 			'1 won(win bet)' => 550,
 			'7 won(place bet 2)' => 180,
 			'7 won(place bet 14)' => 165,
-			'place(end-favorites )' => '14',
-			'1 won(place bet)' => 165,
 		],
-		'total bets' => 900,
+		'total bets' => 800,
 		'wp' => '1, 2',//count wp: 2
-		'total won in race 2' => 160,
+		'total won in race 2' => 95,
 	],
 	'3' => [
 		/**
@@ -123,16 +122,12 @@ return [
 		],
 		'win inter' => '1, 2',
 		'win inter 2' => '2',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
-			'place(end-favorites )' => '12',
-			'1 won(place bet)' => 135,
-			'place(end-wp )' => '12',
-			'2 won(place bet)' => 135,
 		],
-		'total bets' => 200,
+		'total bets' => 0,
 		'wp' => '4, 10, 12',//count wp: 3
-		'total won in race 4' => 70,
 	],
 	'5' => [
 		/**
@@ -187,6 +182,7 @@ return [
 		],
 		'win inter' => '1, 3, 4, 11',
 		'win inter 2' => '11',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'bets' => [
 		],
@@ -217,6 +213,7 @@ return [
 		],
 		'win inter' => '1, 2, 4',
 		'win inter 2' => '2',
+		'inter inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites )' => '7',
@@ -252,6 +249,7 @@ return [
 		],
 		'win inter' => '2, 4, 5, 6, 8, 9',
 		'win inter 2' => '2, 5, 6, 9',
+		'inter inter' => '2, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -311,6 +309,7 @@ return [
 		],
 		'win inter' => '1, 2, 7, 13',
 		'win inter 2' => '1, 2, 7, 13',
+		'inter inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14',
 		'bets' => [
 		],
@@ -318,10 +317,10 @@ return [
 		'wp' => '2, 8',//count wp: 2
 	],
 ];
-//total place end favorites: 185
-//total place end wp: 120
+//total place end favorites: 85
+//total place end wp: 85
 //total place wp: 0
 //total sure place: 0
 //total win: 150
 //total place union: -55
-//total: 400
+//total: 265
