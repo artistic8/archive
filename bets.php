@@ -80,20 +80,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
 
-    $sumPlaOdds = 0;
-    foreach ($runners as $kvalue) {
-        $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
-    }
-
-    $avgPlaOdds = $sumPlaOdds / count($runners);
-
-    $firstHalf = [];
-    $secondHalf = [];
-    foreach($runners as $kvalue){
-        if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstHalf[] = $kvalue;
-        if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $secondHalf[] = $kvalue;
-    }
-
     $_2sets = get2Sets($favorites);
     $suggestions = ["win" => [], "qin" => [], "trio" => []];
     $firstShit = true;
@@ -124,6 +110,17 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
     foreach($runners as $runner){
         if(!isset($history[$raceNumber][$runner])) $history[$raceNumber][$runner] =  ["win" => [], "qin" => [], "trio" => []];
+    }
+    $sumPlaOdds = 0;
+    foreach ($runners as $kvalue) {
+        $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
+    }
+    $avgPlaOdds = $sumPlaOdds / count($runners);
+    $firstHalf = [];
+    $secondHalf = [];
+    foreach($runners as $kvalue){
+        if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstHalf[] = $kvalue;
+        if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $secondHalf[] = $kvalue;
     }
     if(isset($officialWin)){
         $racetext .= "\t\t'first half' => '" . implode(", ", $firstHalf) . "',\n"; 
