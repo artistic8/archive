@@ -124,6 +124,19 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(isset($officialWin)){
         $racetext .= "\t\t'first half' => '" . implode(", ", $firstHalf) . "',\n"; 
+        $sumPlaOdds = 0;
+        foreach ($firstHalf as $kvalue) {
+            $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
+        }
+        $avgPlaOdds = $sumPlaOdds / count($runners);
+        $firstfirstHalf = [];
+        $firstsecondHalf = [];
+        foreach($firstHalf as $kvalue){
+            if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstfirstHalf[] = $kvalue;
+            if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $firstsecondHalf[] = $kvalue;
+        }
+        $racetext .= "\t\t'first first half' => '" . implode(", ", $firstfirstHalf) . "',\n"; 
+        $racetext .= "\t\t'first second half' => '" . implode(", ", $firstsecondHalf) . "',\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         $racetext .= "\t\t'seconf half' => '" . implode(", ", $secondHalf) . "',\n"; 
     }

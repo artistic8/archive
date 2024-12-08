@@ -8,6 +8,8 @@ return [
 		'favorites' => '3, 5, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'first half' => '1, 2, 3, 5, 7, 8, 9, 10',
+		'first first half' => '3',
+		'first second half' => '1, 2, 5, 7, 8, 9, 10',
 		'official win' => '8, 3, 5, 13',
 		'seconf half' => '4, 6, 11, 12, 13',
 		'suggestions' => [
@@ -39,6 +41,8 @@ return [
 		'favorites' => '2, 6, 7, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 14',
+		'first first half' => '4, 6, 8, 12',
+		'first second half' => '1, 2, 5, 7, 9, 10, 14',
 		'official win' => '14, 7, 5, 4',
 		'seconf half' => '3, 11, 13',
 		'suggestions' => [
@@ -70,10 +74,12 @@ return [
 		'favorites' => '1, 2, 4, 5, 8',
 		'runners' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 8, 12, 14',
+		'first first half' => '1, 2',
+		'first second half' => '3, 4, 8, 12, 14',
 		'official win' => '2, 14, 1, 8',
 		'seconf half' => '5, 7, 9, 10, 11, 13',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
+			'win' => '1, 2, 3, 4, 5, 7, 8, 10, 11',
 			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',
 			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',//count trio: 12
 			'inter' => '1, 2, 4, 5, 8',
@@ -101,6 +107,8 @@ return [
 		'favorites' => '1, 2, 3, 4, 10, 11, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 6, 9, 10, 11, 14',
+		'first first half' => '1, 3, 4, 11',
+		'first second half' => '2, 6, 9, 10, 14',
 		'official win' => '2, 3, 13, 11',
 		'seconf half' => '5, 7, 8, 12, 13',
 		'suggestions' => [
@@ -132,6 +140,8 @@ return [
 		'favorites' => '4, 5, 6, 8, 9, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '1, 6, 7, 8, 10, 11, 12',
+		'first first half' => '6, 10',
+		'first second half' => '1, 7, 8, 11, 12',
 		'official win' => '10, 4, 6, 3',
 		'seconf half' => '2, 3, 4, 5, 9',
 		'suggestions' => [
@@ -163,6 +173,8 @@ return [
 		'favorites' => '2, 4, 5, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 4, 5, 7, 9, 10, 12, 13',
+		'first first half' => '1, 2, 5',
+		'first second half' => '4, 7, 9, 10, 12, 13',
 		'official win' => '13, 5, 1, 8',
 		'seconf half' => '3, 6, 8, 11, 14',
 		'suggestions' => [
@@ -194,6 +206,8 @@ return [
 		'favorites' => '2, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'first half' => '1, 2, 3, 4, 6, 7, 8, 11, 13',
+		'first first half' => '1, 2, 7, 8',
+		'first second half' => '3, 4, 6, 11, 13',
 		'official win' => '2, 11, 1, 8',
 		'seconf half' => '5, 9, 10, 12',
 		'suggestions' => [
@@ -227,11 +241,13 @@ return [
 		'favorites' => '1, 2, 5, 12',
 		'runners' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '2, 5, 6, 8, 9, 10, 11, 12, 13, 14',
+		'first first half' => '2, 5, 12, 13',
+		'first second half' => '6, 8, 9, 10, 11, 14',
 		'official win' => '2, 12, 13, 1',
 		'seconf half' => '1, 4, 7',
 		'suggestions' => [
 			'win' => '1, 2, 4, 5, 6, 8, 9, 10, 12',
-			'qin' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'qin' => '1, 2, 4, 5, 6, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 11
 			'inter' => '1, 2, 5, 12',
 			'diff' => '13, 14',//count diff: 2
@@ -258,6 +274,8 @@ return [
 		'favorites' => '3, 4, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '3, 4, 5, 6, 7, 9, 14',
+		'first first half' => '',
+		'first second half' => '3, 4, 5, 6, 7, 9, 14',
 		'official win' => '13, 8, 9, 5',
 		'seconf half' => '1, 2, 8, 10, 11, 12, 13',
 		'suggestions' => [
@@ -298,6 +316,8 @@ return [
 		'favorites' => '1, 2, 6, 8, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 6, 8, 9, 11',
+		'first first half' => '',
+		'first second half' => '1, 2, 3, 4, 6, 8, 9, 11',
 		'official win' => '1, 11, 2, 3',
 		'seconf half' => '5, 7, 10, 12, 13, 14',
 		'suggestions' => [
