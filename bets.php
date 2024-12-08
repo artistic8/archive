@@ -128,7 +128,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         foreach ($firstHalf as $kvalue) {
             $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
         }
-        $avgPlaOdds = $sumPlaOdds / count($runners);
+        $avgPlaOdds = $sumPlaOdds / count($firstHalf);
         $firstfirstHalf = [];
         $firstsecondHalf = [];
         foreach($firstHalf as $kvalue){
