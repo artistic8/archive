@@ -7,11 +7,11 @@ return [
 		*/
 		'favorites' => '1, 2, 3, 8, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '1, 2, 3, 4, 6, 8, 11, 12',
 		'chosen' => '1, 2, 4, 8',
 		'atari set' => '1, 4',
 		'atari count' => 2,
 		'official win' => '1, 4, 12, 8',
+		'atari net balance' => 65,
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 8, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
@@ -40,11 +40,11 @@ return [
 		*/
 		'favorites' => '3, 6',
 		'runners' => '1, 2, 3, 4, 5, 6',
-		'first half' => '2, 3, 4, 5, 6',
 		'chosen' => '3, 5, 6',
 		'atari set' => '3, 6',
 		'atari count' => 2,
 		'official win' => '2, 6, 3, 5',
+		'atari net balance' => -150,
 		'suggestions' => [
 			'win' => '3, 5, 6',
 			'qin' => '1, 2, 3, 5, 6',
@@ -74,11 +74,11 @@ return [
 		*/
 		'favorites' => '2, 8, 12, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
-		'first half' => '1, 2, 3, 4, 5, 8, 9, 11, 12, 13',
 		'chosen' => '2, 3, 4, 8, 11, 12',
 		'atari set' => '2, 11',
 		'atari count' => 2,
 		'official win' => '2, 13, 11, 12',
+		'atari net balance' => -45,
 		'suggestions' => [
 			'win' => '2, 3, 5, 9, 11, 12',
 			'qin' => '2, 3, 4, 5, 8, 9, 11, 12',
@@ -107,11 +107,11 @@ return [
 		*/
 		'favorites' => '6, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'first half' => '1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13',
 		'chosen' => '1, 2, 8, 9, 11, 12',
 		'atari set' => '',
 		'atari count' => 0,
 		'official win' => '10, 4, 6, 3',
+		'atari net balance' => -600,
 		'suggestions' => [
 			'win' => '6',
 			'qin' => '3, 6',
@@ -142,11 +142,11 @@ return [
 		*/
 		'favorites' => '4, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'first half' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13',
 		'chosen' => '1, 3, 4, 5, 6, 7, 10, 13',
 		'atari set' => '6, 7, 10',
 		'atari count' => 3,
 		'official win' => '7, 6, 10, 5',
+		'atari net balance' => -70,
 		'suggestions' => [
 			'win' => '1, 4, 8, 10',
 			'qin' => '1, 3, 4, 8, 10, 11, 12',
@@ -177,11 +177,11 @@ return [
 		*/
 		'favorites' => '10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'first half' => '1, 2, 3, 4, 5, 6, 8, 10, 12, 13',
 		'chosen' => '1, 4, 10, 12, 13',
 		'atari set' => '12',
 		'atari count' => 1,
 		'official win' => '12, 6, 3, 1',
+		'atari net balance' => -280,
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -210,11 +210,11 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'first half' => '1, 2, 3, 4, 6, 8, 10',
 		'chosen' => '1, 2, 3, 6',
 		'atari set' => '1, 2',
 		'atari count' => 2,
 		'official win' => '1, 2, 8, 3',
+		'atari net balance' => -140,
 		'suggestions' => [
 			'win' => '1, 2, 6, 10',
 			'qin' => '1, 2, 3, 6, 8, 10, 11',
@@ -248,11 +248,11 @@ return [
 		*/
 		'favorites' => '4, 8, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
-		'first half' => '2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		'chosen' => '3, 4, 6, 8, 12',
 		'atari set' => '3',
 		'atari count' => 1,
 		'official win' => '2, 3, 9, 12',
+		'atari net balance' => -235,
 		'suggestions' => [
 			'win' => '4, 5, 6, 8, 10, 11, 12',
 			'qin' => '2, 4, 5, 6, 8, 10, 11, 12',
@@ -281,11 +281,11 @@ return [
 		*/
 		'favorites' => '3, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'first half' => '2, 3, 6, 7, 8, 9, 10, 12, 14',
 		'chosen' => '2, 3, 7, 9, 12, 14',
 		'atari set' => '3, 12, 14',
 		'atari count' => 3,
 		'official win' => '3, 12, 14, 7',
+		'atari net balance' => 51,
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -314,11 +314,11 @@ return [
 		*/
 		'favorites' => '1, 3, 4, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'first half' => '1, 3, 4, 5, 7, 8, 9, 12, 13',
 		'chosen' => '1, 3, 4, 5, 7',
 		'atari set' => '3, 4, 5',
 		'atari count' => 3,
 		'official win' => '4, 5, 3, 9',
+		'atari net balance' => 40,
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 10, 11, 12, 14',
 			'qin' => '1, 2, 3, 4, 5, 9, 10, 11, 12, 14',

@@ -133,13 +133,18 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(count($firstfirstHalf) >= count($firstsecondHalf)) $chosen = $firstfirstHalf;
     else $chosen = $firstsecondHalf;
+    $racetext .= "\t\t'chosen' => '" . implode(", ", $chosen) . "',\n"; 
+    $unitBet = 100;
     if(isset($officialWin)){
-        $racetext .= "\t\t'first half' => '" . implode(", ", $firstHalf) . "',\n"; 
-        $racetext .= "\t\t'chosen' => '" . implode(", ", $chosen) . "',\n"; 
         $atari = array_intersect($chosen, array_slice($officialWin, 0, 3));
         $racetext .= "\t\t'atari set' => '" . implode(", ", $atari) . "',\n"; 
-        $racetext .= "\t\t'atari count' => " . count($atari) . ",\n"; 
+        $racetext .= "\t\t'atari count' => " . count($atari) . ",\n";  $unitBet = 100;
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        $netAtariBalance = 0 - count($chosen) * $unitBet;
+        foreach($atari as $friend){
+            if(isset($placeAmount[$friend])) $netAtariBalance += $unitBet / 10 * $placeAmount[$friend];
+        }
+        $racetext .= "\t\t'atari net balance' => " . $netAtariBalance . ",\n";
     }
     sort($suggestions["win"]);
     sort($suggestions["qin"]);
@@ -189,7 +194,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
         $racetext .= "\t\t'inter inter' => '" . implode(", ", array_intersect($inter, $winInter, $winInter2)) . "',\n";
     }
-    $unitBet = 100;
+   
     $allValues = [];
     foreach($runners  as $one){
         foreach($runners as $two){

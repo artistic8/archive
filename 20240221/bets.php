@@ -7,11 +7,11 @@ return [
 		*/
 		'favorites' => '1, 9, 10, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '1, 5, 8, 9, 10, 11, 12',
 		'chosen' => '5, 8, 10, 11',
 		'atari set' => '8',
 		'atari count' => 1,
 		'official win' => '8, 9, 12, 4',
+		'atari net balance' => -30,
 		'suggestions' => [
 			'win' => '1, 3, 4, 7, 8, 9, 10',
 			'qin' => '1, 3, 4, 7, 8, 9, 10',
@@ -40,11 +40,11 @@ return [
 		*/
 		'favorites' => '2, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7',
-		'first half' => '2, 3, 4, 5, 7',
 		'chosen' => '3, 5, 7',
 		'atari set' => '5, 7',
 		'atari count' => 2,
 		'official win' => '7, 2, 5, 1',
+		'atari net balance' => 100,
 		'suggestions' => [
 			'win' => '2, 4, 5, 7',
 			'qin' => '1, 2, 3, 4, 5, 6, 7',
@@ -75,11 +75,11 @@ return [
 		*/
 		'favorites' => '3, 4, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '2, 3, 4, 5, 6, 8, 9, 12',
 		'chosen' => '3, 4, 8, 12',
 		'atari set' => '3, 8',
 		'atari count' => 2,
 		'official win' => '3, 8, 9, 5',
+		'atari net balance' => 35,
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 8, 9, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 8, 9, 11, 12',
@@ -108,11 +108,11 @@ return [
 		*/
 		'favorites' => '3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'first half' => '3, 5, 6, 7, 8',
 		'chosen' => '5, 6, 7',
 		'atari set' => '6, 7',
 		'atari count' => 2,
 		'official win' => '8, 6, 7, 3',
+		'atari net balance' => 75,
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -144,11 +144,11 @@ return [
 		*/
 		'favorites' => '4, 10',
 		'runners' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '4, 5, 6, 7, 10, 11, 12',
 		'chosen' => '4, 6, 10, 12',
 		'atari set' => '4, 10',
 		'atari count' => 2,
 		'official win' => '4, 7, 10, 9',
+		'atari net balance' => 0,
 		'suggestions' => [
 			'win' => '1, 3, 10',
 			'qin' => '1, 3, 4, 10, 11',
@@ -179,11 +179,11 @@ return [
 		*/
 		'favorites' => '2, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '1, 2, 3, 4, 5, 6, 7, 10',
 		'chosen' => '2, 5, 6, 7, 10',
 		'atari set' => '5, 7',
 		'atari count' => 2,
 		'official win' => '5, 7, 1, 11',
+		'atari net balance' => -130,
 		'suggestions' => [
 			'win' => '1',
 			'qin' => '1, 7',
@@ -214,11 +214,11 @@ return [
 		*/
 		'favorites' => '1, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '1, 4, 5, 8, 9, 12',
 		'chosen' => '4, 5, 8, 9',
 		'atari set' => '5, 9',
 		'atari count' => 2,
 		'official win' => '5, 9, 12, 8',
+		'atari net balance' => 200,
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -247,11 +247,11 @@ return [
 		*/
 		'favorites' => '1, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '1, 3, 5, 6, 7, 11, 12',
 		'chosen' => '1, 3, 5, 6, 7',
 		'atari set' => '3, 5, 7',
 		'atari count' => 3,
 		'official win' => '7, 3, 5, 6',
+		'atari net balance' => 160,
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5',
 			'qin' => '1, 2, 3, 4, 5, 7, 9, 10',
@@ -282,11 +282,11 @@ return [
 		*/
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'first half' => '1, 2, 3, 5, 9, 10',
 		'chosen' => '3, 5, 9',
 		'atari set' => '3, 9',
 		'atari count' => 2,
 		'official win' => '4, 3, 9, 5',
+		'atari net balance' => 75,
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
