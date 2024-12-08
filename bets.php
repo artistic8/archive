@@ -79,7 +79,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!in_array($runners[0], $favorites)) $favorites[] = $runners[0];
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
-
     $_2sets = get2Sets($favorites);
     $suggestions = ["win" => [], "qin" => [], "trio" => []];
     $firstShit = true;
@@ -111,40 +110,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     foreach($runners as $runner){
         if(!isset($history[$raceNumber][$runner])) $history[$raceNumber][$runner] =  ["win" => [], "qin" => [], "trio" => []];
     }
-    $sumPlaOdds = 0;
-    foreach ($runners as $kvalue) {
-        $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
-    }
-    $avgPlaOdds = $sumPlaOdds / count($runners);
-    $firstHalf = [];
-    foreach($runners as $kvalue){
-        if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstHalf[] = $kvalue;
-    }
-    $sumPlaOdds = 0;
-    foreach ($firstHalf as $kvalue) {
-        $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
-    }
-    $avgPlaOdds = $sumPlaOdds / count($firstHalf);
-    $firstfirstHalf = [];
-    $firstsecondHalf = [];
-    foreach($firstHalf as $kvalue){
-        if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstfirstHalf[] = $kvalue;
-        if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $firstsecondHalf[] = $kvalue;
-    }
-    if(count($firstfirstHalf) >= count($firstsecondHalf)) $chosen = $firstfirstHalf;
-    else $chosen = $firstsecondHalf;
-    $racetext .= "\t\t'chosen' => '" . implode(", ", $chosen) . "',\n"; 
-    $unitBet = 100;
     if(isset($officialWin)){
-        $atari = array_intersect($chosen, array_slice($officialWin, 0, 3));
-        $racetext .= "\t\t'atari set' => '" . implode(", ", $atari) . "',\n"; 
-        $racetext .= "\t\t'atari count' => " . count($atari) . ",\n";  $unitBet = 100;
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-        $netAtariBalance = 0 - count($chosen) * $unitBet;
-        foreach($atari as $friend){
-            if(isset($placeAmount[$friend])) $netAtariBalance += $unitBet / 10 * $placeAmount[$friend];
-        }
-        $racetext .= "\t\t'atari net balance' => " . $netAtariBalance . ",\n";
     }
     sort($suggestions["win"]);
     sort($suggestions["qin"]);
@@ -194,7 +161,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
         $racetext .= "\t\t'inter inter' => '" . implode(", ", array_intersect($inter, $winInter, $winInter2)) . "',\n";
     }
-   
+    $unitBet = 100;
     $allValues = [];
     foreach($runners  as $one){
         foreach($runners as $two){
