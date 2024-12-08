@@ -138,7 +138,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(count($firstfirstHalf) >= count($firstsecondHalf)) $chosen = $firstfirstHalf;
         else $chosen = $firstsecondHalf;
         $racetext .= "\t\t'chosen' => '" . implode(", ", $chosen) . "',\n"; 
-        $racetext .= "\t\t'atari' => " . count(array_intersect($chosen, array_slice($officialWin, 0, 3))) . ",\n"; 
+        $atari = array_intersect($chosen, array_slice($officialWin, 0, 3));
+        $racetext .= "\t\t'atari set' => '" . implode(", ", $atari) . "',\n"; 
+        $racetext .= "\t\t'atari count' => " . count($atari) . ",\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         $racetext .= "\t\t'seconf half' => '" . implode(", ", $secondHalf) . "',\n"; 
     }
