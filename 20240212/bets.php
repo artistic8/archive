@@ -8,8 +8,7 @@ return [
 		'favorites' => '4, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '4, 5, 6, 7, 8, 10, 11, 12, 13',
-		'first first half' => '4, 6, 12, 13',
-		'first second half' => '5, 7, 8, 10, 11',
+		'chosen' => '5, 7, 8, 10, 11',
 		'official win' => '10, 12, 4, 1',
 		'seconf half' => '1, 2, 3, 9, 14',
 		'suggestions' => [
@@ -46,8 +45,7 @@ return [
 		'favorites' => '2, 3, 12, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',
-		'first first half' => '2, 3, 5, 7, 9, 11, 12, 13',
-		'first second half' => '1, 4, 8, 10',
+		'chosen' => '2, 3, 5, 7, 9, 11, 12, 13',
 		'official win' => '13, 1, 12, 2',
 		'seconf half' => '6, 14',
 		'suggestions' => [
@@ -79,8 +77,7 @@ return [
 		'favorites' => '3, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 6, 8, 9, 10, 12, 14',
-		'first first half' => '1, 3, 6, 12',
-		'first second half' => '2, 8, 9, 10, 14',
+		'chosen' => '2, 8, 9, 10, 14',
 		'official win' => '1, 3, 10, 14',
 		'seconf half' => '4, 5, 7, 11, 13',
 		'suggestions' => [
@@ -117,8 +114,7 @@ return [
 		'favorites' => '1, 2, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 13',
-		'first first half' => '1, 2, 3, 6, 7, 10',
-		'first second half' => '4, 5, 11, 13',
+		'chosen' => '1, 2, 3, 6, 7, 10',
 		'official win' => '10, 4, 3, 7',
 		'seconf half' => '8, 9, 12, 14',
 		'suggestions' => [
@@ -159,8 +155,7 @@ return [
 		'favorites' => '4, 10, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 14',
-		'first first half' => '2, 4, 6, 10, 12, 13',
-		'first second half' => '1, 3, 9, 11, 14',
+		'chosen' => '2, 4, 6, 10, 12, 13',
 		'official win' => '2, 11, 13, 14',
 		'seconf half' => '5, 7, 8',
 		'suggestions' => [
@@ -197,8 +192,7 @@ return [
 		'favorites' => '3, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 		'first half' => '1, 3, 4, 6, 7, 8, 9, 11, 12, 14',
-		'first first half' => '3, 4, 7, 8, 9',
-		'first second half' => '1, 6, 11, 12, 14',
+		'chosen' => '3, 4, 7, 8, 9',
 		'official win' => '9, 11, 6, 8',
 		'seconf half' => '2, 5, 10',
 		'suggestions' => [
@@ -235,8 +229,7 @@ return [
 		'favorites' => '4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '2, 3, 4, 6, 8, 9, 10, 14',
-		'first first half' => '2, 3, 4, 8, 9, 10',
-		'first second half' => '6, 14',
+		'chosen' => '2, 3, 4, 8, 9, 10',
 		'official win' => '4, 9, 8, 3',
 		'seconf half' => '1, 5, 7, 11, 12, 13',
 		'suggestions' => [
@@ -271,8 +264,7 @@ return [
 		'favorites' => '6',
 		'runners' => '1, 2, 3, 4, 5, 6',
 		'first half' => '2, 4, 6',
-		'first first half' => '4, 6',
-		'first second half' => '2',
+		'chosen' => '4, 6',
 		'official win' => '4, 6, 2, 1',
 		'seconf half' => '1, 3, 5',
 		'suggestions' => [
@@ -303,8 +295,7 @@ return [
 		'favorites' => '1, 8, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 3, 5, 6, 7, 8, 9, 11, 12, 13',
-		'first first half' => '1, 5, 6, 8, 12',
-		'first second half' => '3, 7, 9, 11, 13',
+		'chosen' => '1, 5, 6, 8, 12',
 		'official win' => '5, 1, 6, 7',
 		'seconf half' => '2, 4, 10, 14',
 		'suggestions' => [
@@ -336,8 +327,7 @@ return [
 		'favorites' => '5, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'first half' => '1, 2, 3, 4, 5, 6, 8, 13',
-		'first first half' => '2, 4, 5, 13',
-		'first second half' => '1, 3, 6, 8',
+		'chosen' => '2, 4, 5, 13',
 		'official win' => '3, 5, 11, 1',
 		'seconf half' => '7, 9, 10, 11, 12',
 		'suggestions' => [
@@ -374,8 +364,7 @@ return [
 		'favorites' => '4, 5, 6, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 4, 5, 6, 7, 13',
-		'first first half' => '6, 7, 13',
-		'first second half' => '1, 2, 4, 5',
+		'chosen' => '1, 2, 4, 5',
 		'official win' => '12, 11, 1, 13',
 		'seconf half' => '3, 8, 9, 10, 11, 12, 14',
 		'suggestions' => [

@@ -135,8 +135,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstfirstHalf[] = $kvalue;
             if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $firstsecondHalf[] = $kvalue;
         }
-        $racetext .= "\t\t'first first half' => '" . implode(", ", $firstfirstHalf) . "',\n"; 
-        $racetext .= "\t\t'first second half' => '" . implode(", ", $firstsecondHalf) . "',\n"; 
+        if(count($firstfirstHalf) >= count($firstsecondHalf)) $chosen = $firstfirstHalf;
+        else $chosen = $firstsecondHalf;
+        $racetext .= "\t\t'chosen' => '" . implode(", ", $chosen) . "',\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
         $racetext .= "\t\t'seconf half' => '" . implode(", ", $secondHalf) . "',\n"; 
     }
