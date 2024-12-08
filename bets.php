@@ -79,7 +79,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(!in_array($runners[0], $favorites)) $favorites[] = $runners[0];
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
-
     $_2sets = get2Sets($favorites);
     $suggestions = ["win" => [], "qin" => [], "trio" => []];
     $firstShit = true;
@@ -111,34 +110,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     foreach($runners as $runner){
         if(!isset($history[$raceNumber][$runner])) $history[$raceNumber][$runner] =  ["win" => [], "qin" => [], "trio" => []];
     }
-    $sumPlaOdds = 0;
-    foreach ($runners as $kvalue) {
-        $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
-    }
-    $avgPlaOdds = $sumPlaOdds / count($runners);
-    $firstHalf = [];
-    $secondHalf = [];
-    foreach($runners as $kvalue){
-        if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstHalf[] = $kvalue;
-        if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $secondHalf[] = $kvalue;
-    }
     if(isset($officialWin)){
-        $racetext .= "\t\t'first half' => '" . implode(", ", $firstHalf) . "',\n"; 
-        $sumPlaOdds = 0;
-        foreach ($firstHalf as $kvalue) {
-            $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
-        }
-        $avgPlaOdds = $sumPlaOdds / count($firstHalf);
-        $firstfirstHalf = [];
-        $firstsecondHalf = [];
-        foreach($firstHalf as $kvalue){
-            if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstfirstHalf[] = $kvalue;
-            if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $firstsecondHalf[] = $kvalue;
-        }
-        $racetext .= "\t\t'first first half' => '" . implode(", ", $firstfirstHalf) . "',\n"; 
-        $racetext .= "\t\t'first second half' => '" . implode(", ", $firstsecondHalf) . "',\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-        $racetext .= "\t\t'seconf half' => '" . implode(", ", $secondHalf) . "',\n"; 
     }
     sort($suggestions["win"]);
     sort($suggestions["qin"]);
