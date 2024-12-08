@@ -12,7 +12,6 @@ return [
 		'atari set' => '12',
 		'atari count' => 1,
 		'official win' => '8, 12, 4, 3',
-		'seconf half' => '6, 8, 10, 11',
 		'suggestions' => [
 			'win' => '3',
 			'qin' => '3, 9',
@@ -48,7 +47,6 @@ return [
 		'atari set' => '2, 3, 8',
 		'atari count' => 3,
 		'official win' => '2, 3, 8, 7',
-		'seconf half' => '1, 5, 10, 12',
 		'suggestions' => [
 			'win' => '2, 3',
 			'qin' => '2, 3, 6, 10',
@@ -87,7 +85,6 @@ return [
 		'atari set' => '4',
 		'atari count' => 1,
 		'official win' => '11, 4, 7, 2',
-		'seconf half' => '2, 3, 9, 10',
 		'suggestions' => [
 			'win' => '1, 7, 11',
 			'qin' => '1, 3, 7, 11',
@@ -126,7 +123,6 @@ return [
 		'atari set' => '10',
 		'atari count' => 1,
 		'official win' => '11, 1, 10, 2',
-		'seconf half' => '7, 12',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 6, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 6, 7, 10, 11, 12',
@@ -169,7 +165,6 @@ return [
 		'atari set' => '1',
 		'atari count' => 1,
 		'official win' => '3, 1, 4, 8',
-		'seconf half' => '2, 5, 7',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -206,7 +201,6 @@ return [
 		'atari set' => '3',
 		'atari count' => 1,
 		'official win' => '3, 2, 9, 12',
-		'seconf half' => '6, 11',
 		'suggestions' => [
 			'win' => '1, 3, 6, 7, 8, 9, 11',
 			'qin' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
@@ -240,7 +234,6 @@ return [
 		'atari set' => '9',
 		'atari count' => 1,
 		'official win' => '2, 9, 5, 7',
-		'seconf half' => '1, 2, 4, 10, 11, 12',
 		'suggestions' => [
 			'win' => '6, 8, 10',
 			'qin' => '1, 6, 8, 10, 11',
@@ -276,7 +269,6 @@ return [
 		'atari set' => '4',
 		'atari count' => 1,
 		'official win' => '3, 2, 4, 8',
-		'seconf half' => '1, 3, 6, 7, 9',
 		'suggestions' => [
 			'win' => '2, 5, 7, 8',
 			'qin' => '1, 2, 5, 6, 7, 8, 9',
@@ -310,7 +302,6 @@ return [
 		'atari set' => '11, 12',
 		'atari count' => 2,
 		'official win' => '12, 3, 11, 5',
-		'seconf half' => '2, 5, 7, 10',
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 5, 7, 8, 9, 10, 11, 12',

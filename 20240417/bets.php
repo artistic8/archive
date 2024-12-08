@@ -12,7 +12,6 @@ return [
 		'atari set' => '5',
 		'atari count' => 1,
 		'official win' => '5, 7, 6, 3',
-		'seconf half' => '2, 4, 7, 9, 10',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -49,7 +48,6 @@ return [
 		'atari set' => '6',
 		'atari count' => 1,
 		'official win' => '1, 8, 6, 10',
-		'seconf half' => '3, 4, 5, 9, 12',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -83,7 +81,6 @@ return [
 		'atari set' => '1, 4, 6',
 		'atari count' => 3,
 		'official win' => '4, 1, 6, 10',
-		'seconf half' => '3, 5, 7, 12',
 		'suggestions' => [
 			'win' => '4, 9',
 			'qin' => '3, 4, 8, 9',
@@ -117,7 +114,6 @@ return [
 		'atari set' => '9',
 		'atari count' => 1,
 		'official win' => '11, 9, 10, 8',
-		'seconf half' => '4, 5, 8, 10',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',
@@ -151,7 +147,6 @@ return [
 		'atari set' => '3, 4',
 		'atari count' => 2,
 		'official win' => '3, 4, 10, 9',
-		'seconf half' => '2, 6, 8',
 		'suggestions' => [
 			'win' => '1, 4, 5, 6',
 			'qin' => '1, 3, 4, 5, 6, 7',
@@ -187,7 +182,6 @@ return [
 		'atari set' => '1',
 		'atari count' => 1,
 		'official win' => '3, 1, 12, 10',
-		'seconf half' => '5, 6, 7, 9',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',
@@ -221,7 +215,6 @@ return [
 		'atari set' => '6',
 		'atari count' => 1,
 		'official win' => '2, 6, 10, 3',
-		'seconf half' => '4, 7, 9',
 		'suggestions' => [
 			'win' => '3, 6, 7, 8, 10',
 			'qin' => '1, 2, 3, 5, 6, 7, 8, 10',
@@ -261,7 +254,6 @@ return [
 		'atari set' => '3, 8',
 		'atari count' => 2,
 		'official win' => '8, 3, 7, 2',
-		'seconf half' => '5, 7, 9, 11, 12',
 		'suggestions' => [
 			'win' => '2, 5, 6',
 			'qin' => '2, 5, 6, 8',
@@ -297,7 +289,6 @@ return [
 		'atari set' => '4, 11',
 		'atari count' => 2,
 		'official win' => '11, 4, 6, 10',
-		'seconf half' => '1, 6, 7, 8, 9',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',

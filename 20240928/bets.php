@@ -12,7 +12,6 @@ return [
 		'atari set' => '1',
 		'atari count' => 1,
 		'official win' => '1, 8, 5, 9',
-		'seconf half' => '2, 5',
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 6, 7, 8, 9',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
@@ -46,7 +45,6 @@ return [
 		'atari set' => '6, 8',
 		'atari count' => 2,
 		'official win' => '8, 6, 7, 3',
-		'seconf half' => '1, 4',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -83,7 +81,6 @@ return [
 		'atari set' => '5, 7',
 		'atari count' => 2,
 		'official win' => '5, 7, 8, 10',
-		'seconf half' => '1, 4, 6, 8',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
@@ -117,7 +114,6 @@ return [
 		'atari set' => '1, 10, 11',
 		'atari count' => 3,
 		'official win' => '11, 1, 10, 3',
-		'seconf half' => '2, 5, 7, 8, 9',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -151,7 +147,6 @@ return [
 		'atari set' => '2, 7, 12',
 		'atari count' => 3,
 		'official win' => '2, 12, 7, 10',
-		'seconf half' => '1, 3, 4, 5, 6, 10',
 		'suggestions' => [
 			'win' => '1, 4, 6, 8',
 			'qin' => '1, 3, 4, 6, 8, 9, 10, 11',
@@ -185,7 +180,6 @@ return [
 		'atari set' => '8',
 		'atari count' => 1,
 		'official win' => '9, 8, 1, 10',
-		'seconf half' => '1, 4, 9, 10, 12',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -219,7 +213,6 @@ return [
 		'atari set' => '1, 2',
 		'atari count' => 2,
 		'official win' => '2, 1, 4, 9',
-		'seconf half' => '3, 4, 5, 7',
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 6',
 			'qin' => '1, 2, 3, 4, 5, 6, 8',
@@ -259,7 +252,6 @@ return [
 		'atari set' => '2',
 		'atari count' => 1,
 		'official win' => '2, 5, 1, 10',
-		'seconf half' => '7, 9, 10',
 		'suggestions' => [
 			'win' => '4, 5, 6, 7, 8, 9',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
@@ -299,7 +291,6 @@ return [
 		'atari set' => '6, 7',
 		'atari count' => 2,
 		'official win' => '11, 6, 7, 12',
-		'seconf half' => '1, 3, 4, 5, 8, 10, 11, 12, 13',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 8, 10, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
@@ -338,7 +329,6 @@ return [
 		'atari set' => '3',
 		'atari count' => 1,
 		'official win' => '3, 5, 8, 4',
-		'seconf half' => '4, 5, 7, 9, 10, 11',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '5',

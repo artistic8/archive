@@ -117,32 +117,29 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $avgPlaOdds = $sumPlaOdds / count($runners);
     $firstHalf = [];
-    $secondHalf = [];
     foreach($runners as $kvalue){
         if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstHalf[] = $kvalue;
-        if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $secondHalf[] = $kvalue;
     }
+    $sumPlaOdds = 0;
+    foreach ($firstHalf as $kvalue) {
+        $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
+    }
+    $avgPlaOdds = $sumPlaOdds / count($firstHalf);
+    $firstfirstHalf = [];
+    $firstsecondHalf = [];
+    foreach($firstHalf as $kvalue){
+        if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstfirstHalf[] = $kvalue;
+        if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $firstsecondHalf[] = $kvalue;
+    }
+    if(count($firstfirstHalf) >= count($firstsecondHalf)) $chosen = $firstfirstHalf;
+    else $chosen = $firstsecondHalf;
     if(isset($officialWin)){
         $racetext .= "\t\t'first half' => '" . implode(", ", $firstHalf) . "',\n"; 
-        $sumPlaOdds = 0;
-        foreach ($firstHalf as $kvalue) {
-            $sumPlaOdds += $allRacesOdds[$raceNumber][$kvalue];
-        }
-        $avgPlaOdds = $sumPlaOdds / count($firstHalf);
-        $firstfirstHalf = [];
-        $firstsecondHalf = [];
-        foreach($firstHalf as $kvalue){
-            if($allRacesOdds[$raceNumber][$kvalue] <= $avgPlaOdds) $firstfirstHalf[] = $kvalue;
-            if($allRacesOdds[$raceNumber][$kvalue] >= $avgPlaOdds) $firstsecondHalf[] = $kvalue;
-        }
-        if(count($firstfirstHalf) >= count($firstsecondHalf)) $chosen = $firstfirstHalf;
-        else $chosen = $firstsecondHalf;
         $racetext .= "\t\t'chosen' => '" . implode(", ", $chosen) . "',\n"; 
         $atari = array_intersect($chosen, array_slice($officialWin, 0, 3));
         $racetext .= "\t\t'atari set' => '" . implode(", ", $atari) . "',\n"; 
         $racetext .= "\t\t'atari count' => " . count($atari) . ",\n"; 
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-        $racetext .= "\t\t'seconf half' => '" . implode(", ", $secondHalf) . "',\n"; 
     }
     sort($suggestions["win"]);
     sort($suggestions["qin"]);

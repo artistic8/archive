@@ -12,7 +12,6 @@ return [
 		'atari set' => '2, 3, 4',
 		'atari count' => 3,
 		'official win' => '2, 4, 3, 10',
-		'seconf half' => '1, 6, 8',
 		'suggestions' => [
 			'win' => '1, 5, 6, 7, 8, 9, 11',
 			'qin' => '1, 2, 5, 6, 7, 8, 9, 11',
@@ -52,7 +51,6 @@ return [
 		'atari set' => '5',
 		'atari count' => 1,
 		'official win' => '5, 6, 10, 11',
-		'seconf half' => '4, 6, 7, 10, 11',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -86,7 +84,6 @@ return [
 		'atari set' => '2, 3, 8',
 		'atari count' => 3,
 		'official win' => '3, 8, 2, 1',
-		'seconf half' => '4, 6, 7',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 7, 8',
 			'qin' => '1, 2, 3, 4, 5, 7, 8',
@@ -120,7 +117,6 @@ return [
 		'atari set' => '7',
 		'atari count' => 1,
 		'official win' => '1, 12, 7, 10',
-		'seconf half' => '2, 4, 5, 6, 11',
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -157,7 +153,6 @@ return [
 		'atari set' => '9',
 		'atari count' => 1,
 		'official win' => '1, 9, 11, 10',
-		'seconf half' => '1, 2, 4, 6',
 		'suggestions' => [
 			'win' => '2, 3',
 			'qin' => '2, 3, 7',
@@ -193,7 +188,6 @@ return [
 		'atari set' => '9',
 		'atari count' => 1,
 		'official win' => '9, 11, 1, 6',
-		'seconf half' => '1, 5, 7, 8, 10, 12',
 		'suggestions' => [
 			'win' => '1, 2, 5, 6, 8, 9, 11',
 			'qin' => '1, 2, 3, 5, 6, 7, 8, 9, 11, 12',
@@ -227,7 +221,6 @@ return [
 		'atari set' => '2, 4',
 		'atari count' => 2,
 		'official win' => '2, 9, 4, 6',
-		'seconf half' => '3, 8, 9, 11',
 		'suggestions' => [
 			'win' => '5',
 			'qin' => '5, 7',
@@ -266,7 +259,6 @@ return [
 		'atari set' => '3',
 		'atari count' => 1,
 		'official win' => '8, 3, 12, 4',
-		'seconf half' => '6, 9, 10, 11, 12',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 9, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
@@ -302,7 +294,6 @@ return [
 		'atari set' => '2',
 		'atari count' => 1,
 		'official win' => '8, 2, 9, 6',
-		'seconf half' => '1, 3, 5, 6, 7, 10, 11, 12',
 		'suggestions' => [
 			'win' => '2, 3, 4, 9, 10, 11',
 			'qin' => '2, 3, 4, 5, 8, 9, 10, 11',
