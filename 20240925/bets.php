@@ -9,6 +9,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'first half' => '1, 3, 4, 7, 10',
 		'chosen' => '1, 4, 7',
+		'atari' => 1,
 		'official win' => '3, 4, 10, 1',
 		'seconf half' => '2, 5, 6, 8, 9',
 		'suggestions' => [
@@ -41,6 +42,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '1, 2, 5, 6, 7, 8, 9, 10, 11',
 		'chosen' => '5, 7, 9, 10, 11',
+		'atari' => 1,
 		'official win' => '1, 6, 9, 2',
 		'seconf half' => '3, 4, 12',
 		'suggestions' => [
@@ -75,6 +77,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '1, 2, 3, 5, 6, 7, 10, 12',
 		'chosen' => '1, 2, 6, 10',
+		'atari' => 1,
 		'official win' => '12, 3, 10, 9',
 		'seconf half' => '4, 8, 9, 11',
 		'suggestions' => [
@@ -107,6 +110,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'first half' => '2, 3, 4, 6, 8, 9',
 		'chosen' => '2, 3, 4, 6',
+		'atari' => 1,
 		'official win' => '3, 11, 8, 10',
 		'seconf half' => '1, 5, 7, 10, 11',
 		'suggestions' => [
@@ -139,6 +143,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '2, 3, 4, 5, 6, 12',
 		'chosen' => '3, 4, 6, 12',
+		'atari' => 3,
 		'official win' => '4, 12, 6, 11',
 		'seconf half' => '1, 7, 8, 9, 10, 11',
 		'suggestions' => [
@@ -178,6 +183,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'first half' => '1, 3, 4, 5, 8, 9, 10, 11',
 		'chosen' => '1, 3, 5, 9, 10',
+		'atari' => 2,
 		'official win' => '1, 8, 9, 11',
 		'seconf half' => '2, 6, 7',
 		'suggestions' => [
@@ -212,6 +218,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '1, 2, 5, 6, 7, 8, 10',
 		'chosen' => '1, 2, 6, 7',
+		'atari' => 1,
 		'official win' => '7, 10, 5, 2',
 		'seconf half' => '3, 4, 9, 11, 12',
 		'suggestions' => [
@@ -246,6 +253,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '1, 2, 4, 5, 9',
 		'chosen' => '2, 5, 9',
+		'atari' => 2,
 		'official win' => '5, 11, 2, 7',
 		'seconf half' => '3, 6, 7, 8, 10, 11, 12',
 		'suggestions' => [

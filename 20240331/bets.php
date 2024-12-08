@@ -9,6 +9,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '3, 5, 7, 8, 9, 10, 11, 12, 13, 14',
 		'chosen' => '3, 5, 7, 8, 14',
+		'atari' => 1,
 		'official win' => '8, 10, 13, 3',
 		'seconf half' => '1, 2, 4, 6',
 		'suggestions' => [
@@ -41,6 +42,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 5, 6, 7, 8, 9, 11, 13, 14',
 		'chosen' => '1, 2, 6, 7, 11, 14',
+		'atari' => 1,
 		'official win' => '6, 9, 10, 11',
 		'seconf half' => '4, 10, 12',
 		'suggestions' => [
@@ -85,6 +87,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7',
 		'first half' => '1, 2, 4, 5, 7',
 		'chosen' => '1, 4, 5, 7',
+		'atari' => 3,
 		'official win' => '5, 1, 4, 2',
 		'seconf half' => '3, 6',
 		'suggestions' => [
@@ -120,6 +123,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 3, 4, 5, 7, 9, 10, 14',
 		'chosen' => '3, 4, 7, 10, 14',
+		'atari' => 2,
 		'official win' => '14, 4, 9, 5',
 		'seconf half' => '2, 6, 8, 11, 12, 13',
 		'suggestions' => [
@@ -152,6 +156,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 5, 9, 10, 11, 12, 13',
 		'chosen' => '2, 3, 4, 5, 10, 12',
+		'atari' => 1,
 		'official win' => '11, 4, 6, 10',
 		'seconf half' => '6, 7, 8, 14',
 		'suggestions' => [
@@ -186,6 +191,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 3, 5, 6, 8, 9, 10, 11, 12, 14',
 		'chosen' => '1, 6, 8, 9, 10, 12',
+		'atari' => 2,
 		'official win' => '3, 8, 10, 1',
 		'seconf half' => '2, 4, 7, 13',
 		'suggestions' => [
@@ -218,6 +224,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'first half' => '1, 2, 3, 4, 7, 8, 11, 12',
 		'chosen' => '1, 2, 4, 8, 11',
+		'atari' => 3,
 		'official win' => '4, 11, 8, 5',
 		'seconf half' => '5, 6, 9, 10',
 		'suggestions' => [
@@ -253,6 +260,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 3, 4, 5, 6, 7, 10, 13, 14',
 		'chosen' => '1, 2, 4, 6, 13, 14',
+		'atari' => 1,
 		'official win' => '3, 9, 6, 4',
 		'seconf half' => '8, 9, 11, 12',
 		'suggestions' => [
@@ -285,6 +293,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 3, 5, 6, 8, 9, 10, 11, 12, 13',
 		'chosen' => '1, 3, 8, 9, 10, 13',
+		'atari' => 2,
 		'official win' => '3, 5, 8, 13',
 		'seconf half' => '2, 4, 7, 14',
 		'suggestions' => [
@@ -319,6 +328,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'first half' => '1, 2, 7, 8, 12, 13',
 		'chosen' => '1, 7, 8',
+		'atari' => 2,
 		'official win' => '7, 2, 8, 13',
 		'seconf half' => '3, 4, 5, 6, 9, 10, 11, 14',
 		'suggestions' => [
