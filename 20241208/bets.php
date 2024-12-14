@@ -10,10 +10,11 @@ return [
 		'suggestions' => [
 			'win' => '1, 2, 5, 8, 9',
 			'qin' => '1, 2, 3, 4, 5, 6, 8, 9, 10',
-			'trio' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',//count trio: 11
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '2, 5',
+			'diff' => '13, 14',//count diff: 2
 		],
-		'win inter' => '8',
+		'win inter' => '8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -31,9 +32,11 @@ return [
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 11
 			'inter' => '3, 6',
+			'diff' => '11, 13, 14',//count diff: 3
 		],
 		'win inter' => '2, 4, 5, 6, 7, 8, 9, 10',
 		'win inter 2' => '6, 10',
+		'inter inter' => '6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '6',
@@ -53,9 +56,11 @@ return [
 			'qin' => '1, 2, 3, 4, 8, 11, 14',
 			'trio' => '1, 2, 3, 4, 5, 8, 11, 14',//count trio: 8
 			'inter' => '1, 4',
+			'diff' => '6, 7, 9, 10, 12, 13',//count diff: 6
 		],
 		'win inter' => '2, 9',
 		'win inter 2' => '1, 2, 4',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -73,6 +78,7 @@ return [
 			'qin' => '',
 			'trio' => '',//count trio: 0
 			'inter' => '',
+			'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count diff: 13
 		],
 		'win inter' => '12, 13',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -92,11 +98,13 @@ return [
 			'qin' => '',
 			'trio' => '',//count trio: 0
 			'inter' => '',
+			'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',//count diff: 14
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 7, 12, 13',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all fav history' => [[1, 8, 2], [3, 6, 1]],
+		'all fav history' => [[3, 6, 1], [1, 8, 2]],
 		'all fav history values' => '1, 2, 3, 6, 8',
+		'all inter fav' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -113,12 +121,15 @@ return [
 			'qin' => '1, 2, 5, 11, 12, 14',
 			'trio' => '1, 2, 5, 8, 11, 12, 13, 14',//count trio: 8
 			'inter' => '',
+			'diff' => '3, 4, 6, 7, 9, 10',//count diff: 6
 		],
 		'win inter' => '5, 11, 12, 14',
 		'win inter 2' => '5, 12, 14',
+		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'all fav history' => [[12, 2, 11]],
 		'all fav history values' => '2, 11, 12',
+		'all inter fav' => '11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -135,9 +146,11 @@ return [
 			'qin' => '1, 2, 3, 4, 6, 7, 8, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '2, 6',
+			'diff' => '13, 14',//count diff: 2
 		],
 		'win inter' => '2, 7',
 		'win inter 2' => '2',
+		'inter inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites )' => '8',
@@ -157,12 +170,15 @@ return [
 			'qin' => '1, 2, 3, 5, 6, 8, 9, 10, 11',
 			'trio' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',//count trio: 10
 			'inter' => '1, 2',
+			'diff' => '7',//count diff: 1
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8',
 		'win inter 2' => '1, 2, 3, 5, 8',
+		'inter inter' => '1, 2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'all fav history' => [[1, 6, 8]],
 		'all fav history values' => '1, 6, 8',
+		'all inter fav' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -179,6 +195,7 @@ return [
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count trio: 13
 			'inter' => '3, 5, 6, 12, 13',
+			'diff' => '14',//count diff: 1
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
@@ -198,6 +215,7 @@ return [
 			'qin' => '2, 5, 6, 7, 10, 12',
 			'trio' => '2, 5, 6, 7, 8, 10, 12, 13',//count trio: 8
 			'inter' => '6, 10',
+			'diff' => '1, 3, 4, 9, 11, 14',//count diff: 6
 		],
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14',
@@ -212,4 +230,5 @@ return [
 //total place wp: 0
 //total sure place: 0
 //total win: 0
+//total place union: 0
 //total: 0
