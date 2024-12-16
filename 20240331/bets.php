@@ -38,8 +38,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '6, 9, 10, 11',
 		'suggestions' => [
-			'win' => '1, 2, 4, 5, 6, 8, 9, 10, 14',
-			'qin' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
+			'win' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 14',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',//count trio: 13
 			'inter' => '1, 2, 6',
 			'diff' => '13',//count diff: 1
@@ -125,12 +125,17 @@ return [
 			4 => 29.5,
 			9 => 51.5,
 		],
-		'win inter' => '6',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'win inter' => '4, 6',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'bets' => [
+			'win(union)' => '3, 4, 6, 14',
+			'1 won(win bet)' => 430,
+			'7 won(place bet 4)' => 295,
+			'7 won(place bet 14)' => 170,
 		],
-		'total bets' => 0,
+		'total bets' => 800,
 		'wp' => '3',//count wp: 1
+		'total won in race 4' => 95,
 	],
 	'5' => [
 		/**
@@ -214,7 +219,7 @@ return [
 			11 => 14.5,
 			8 => 27,
 		],
-		'win inter' => '1, 2, 3, 4, 7, 10, 11',
+		'win inter' => '1, 2, 3, 4, 7, 8, 10, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'all fav history' => [[4, 9, 8]],
 		'all fav history values' => '4, 8, 9',
@@ -278,7 +283,7 @@ return [
 		'win inter' => '',
 		'win inter 2' => '5',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -309,7 +314,7 @@ return [
 		'win inter' => '2, 7',
 		'win inter 2' => '7',
 		'inter inter' => '7',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14',
 		'bets' => [
 			'place(end-favorites )' => '8',
 			'1 won(place bet)' => 240,
@@ -325,6 +330,6 @@ return [
 //total place end wp: 230
 //total place wp: 0
 //total sure place: 90
-//total win: 0
-//total place union: 0
-//total: 550
+//total win: 30
+//total place union: 65
+//total: 645

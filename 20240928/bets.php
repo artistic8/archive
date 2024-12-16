@@ -113,7 +113,7 @@ return [
 			1 => 36,
 			10 => 32,
 		],
-		'win inter' => '1, 3',
+		'win inter' => '1, 3, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -142,7 +142,7 @@ return [
 			12 => 18,
 			7 => 20.5,
 		],
-		'win inter' => '3, 4',
+		'win inter' => '3, 4, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -201,17 +201,11 @@ return [
 			4 => 69.5,
 		],
 		'win inter' => '1, 2, 5',
-		'win inter 2' => '1',
-		'inter inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'place(end-favorites )' => '6',
-			'place(end-wp )' => '6',
-			'super sure bet' => 'super sure place 6',
 		],
-		'total bets' => 300,
+		'total bets' => 0,
 		'wp' => '1, 2, 6',//count wp: 3
-		'total won in race 7' => -300,
 	],
 	'8' => [
 		/**
@@ -256,7 +250,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'official win' => '11, 6, 7, 12',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 6, 8, 10, 12',
+			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',//count trio: 13
 			'inter' => '1, 2, 6, 8',
@@ -270,10 +264,10 @@ return [
 			6 => 16.5,
 			7 => 16.5,
 		],
-		'win inter' => '1, 2, 5, 8, 12',
-		'win inter 2' => '2',
+		'win inter' => '1, 2, 5, 7, 8, 12',
+		'win inter 2' => '2, 7',
 		'inter inter' => '2',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '8',
 			'super sure bet' => 'super sure place 8',
@@ -304,18 +298,18 @@ return [
 			5 => 44.5,
 			8 => 41.5,
 		],
-		'win inter' => '10',
-		'allValues' => '2, 5, 7, 8, 10, 11',
+		'win inter' => '3, 10',
+		'allValues' => '2, 5, 7, 8, 10, 11, 12, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
 		'wp' => '2',//count wp: 1
 	],
 ];
-//total place end favorites: -300
-//total place end wp: -200
+//total place end favorites: -200
+//total place end wp: -100
 //total place wp: 0
-//total sure place: -300
+//total sure place: -200
 //total win: 0
 //total place union: 0
-//total: -800
+//total: -500

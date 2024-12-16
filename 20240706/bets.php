@@ -128,7 +128,7 @@ return [
 			8 => 21.5,
 			11 => 20.5,
 		],
-		'win inter' => '1, 2, 3, 4, 6, 8, 11',
+		'win inter' => '1, 2, 3, 4, 6, 8, 10, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'all fav history' => [[8, 6, 7]],
 		'all fav history values' => '6, 7, 8',
@@ -289,7 +289,7 @@ return [
 		'win inter' => '1, 3, 4, 8, 10, 12',
 		'win inter 2' => '1, 12',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,

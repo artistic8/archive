@@ -9,8 +9,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '3, 4, 10, 1',
 		'suggestions' => [
-			'win' => '1, 3, 4, 5, 7, 8, 9, 10',
-			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
+			'win' => '1, 3, 4, 5, 6, 7, 8, 9, 10',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count trio: 10
 			'inter' => '1, 4, 7, 10',
 			'diff' => '',//count diff: 0
@@ -69,8 +69,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '12, 3, 10, 9',
 		'suggestions' => [
-			'win' => '2, 4, 5, 9, 11',
-			'qin' => '2, 3, 4, 5, 8, 9, 11, 12',
+			'win' => '1, 2, 4, 5, 9, 11',
+			'qin' => '1, 2, 3, 4, 5, 8, 9, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '2, 11',
 			'diff' => '',//count diff: 0
@@ -141,7 +141,7 @@ return [
 			12 => 23,
 			6 => 21,
 		],
-		'win inter' => '4',
+		'win inter' => '4, 6',
 		'win inter 2' => '4',
 		'inter inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -150,10 +150,12 @@ return [
 			'1 won(place bet)' => 230,
 			'place(end-wp )' => '12',
 			'2 won(place bet)' => 230,
+			'super sure bet' => 'super sure place 12',
+			'5 won(place bet)' => 230,
 		],
-		'total bets' => 200,
+		'total bets' => 300,
 		'wp' => '4, 6, 12',//count wp: 3
-		'total won in race 5' => 260,
+		'total won in race 5' => 390,
 	],
 	'6' => [
 		/**
@@ -177,7 +179,7 @@ return [
 			8 => 15.5,
 			9 => 41.5,
 		],
-		'win inter' => '1, 6, 8, 9, 11',
+		'win inter' => '1, 6, 7, 8, 9, 11',
 		'win inter 2' => '1, 8',
 		'inter inter' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
@@ -195,10 +197,10 @@ return [
 		'official win' => '7, 10, 5, 2',
 		'suggestions' => [
 			'win' => '2, 3, 6, 12',
-			'qin' => '2, 3, 6, 8, 12',
-			'trio' => '2, 3, 4, 6, 8, 9, 10, 12',//count trio: 8
+			'qin' => '1, 2, 3, 6, 8, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 12',//count trio: 10
 			'inter' => '6',
-			'diff' => '1, 5, 7, 11',//count diff: 4
+			'diff' => '7, 11',//count diff: 2
 		],
 		'win amount' => 43,
 		'qin amount' => 228,
@@ -259,7 +261,7 @@ return [
 //total place end favorites: 220
 //total place end wp: 220
 //total place wp: 0
-//total sure place: 90
+//total sure place: 220
 //total win: 0
 //total place union: 0
-//total: 530
+//total: 660

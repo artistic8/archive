@@ -9,8 +9,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 4, 9, 5',
 		'suggestions' => [
-			'win' => '1, 3, 4, 5, 7, 8, 9, 10',
-			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
+			'win' => '1, 3, 4, 5, 6, 7, 8, 9, 10',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 7, 8, 10',
 			'diff' => '',//count diff: 0
@@ -68,7 +68,7 @@ return [
 		'official win' => '7, 1, 5, 6',
 		'suggestions' => [
 			'win' => '1, 3, 4, 7, 9',
-			'qin' => '1, 3, 4, 7, 8, 9',
+			'qin' => '1, 3, 4, 5, 7, 8, 9',
 			'trio' => '1, 3, 4, 5, 7, 8, 9',//count trio: 7
 			'inter' => '1, 3',
 			'diff' => '2, 6',//count diff: 2
@@ -115,7 +115,7 @@ return [
 			9 => 114,
 			1 => 29.5,
 		],
-		'win inter' => '1, 6, 11',
+		'win inter' => '1, 4, 6, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
@@ -202,11 +202,11 @@ return [
 			4 => 19,
 			6 => 44,
 		],
-		'win inter' => '1, 2, 3, 10',
+		'win inter' => '1, 2, 3, 8, 10',
 		'win inter 2' => '3, 10',
 		'inter inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all fav history' => [[10, 1, 4], [3, 12, 5]],
+		'all fav history' => [[3, 12, 5], [10, 1, 4]],
 		'all fav history values' => '1, 3, 4, 5, 10, 12',
 		'all inter fav' => '3, 4',
 		'bets' => [
@@ -277,7 +277,7 @@ return [
 		'win inter' => '1, 3, 4, 8, 9, 10, 11, 12',
 		'win inter 2' => '3, 10, 11',
 		'inter inter' => '3',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '9',
 			'1 won(place bet)' => 160,
