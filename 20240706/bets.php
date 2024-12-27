@@ -10,7 +10,7 @@ return [
 		'official win' => '4, 1, 2, 9',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 9, 10',
-			'qin' => '1, 2, 3, 4, 5, 6, 7, 9, 10',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12',//count trio: 11
 			'inter' => '1, 3, 4',
 			'diff' => '8',//count diff: 1
@@ -26,7 +26,7 @@ return [
 		'win inter' => '1, 3, 4, 5, 8, 9',
 		'win inter 2' => '4, 5',
 		'inter inter' => '4',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'all fav history' => [[4, 3, 9]],
 		'all fav history values' => '3, 4, 9',
 		'all inter fav' => '3, 4',
@@ -50,8 +50,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '6, 11, 2, 1',
 		'suggestions' => [
-			'win' => '2, 4, 5, 6, 9, 10, 12',
-			'qin' => '2, 4, 5, 6, 7, 9, 10, 12',
+			'win' => '2, 3, 4, 5, 6, 9, 10, 12',
+			'qin' => '2, 3, 4, 5, 6, 7, 9, 10, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '2, 5',
 			'diff' => '',//count diff: 0
@@ -160,7 +160,7 @@ return [
 			12 => 37,
 			2 => 16,
 		],
-		'win inter' => '1, 2, 3, 6, 12',
+		'win inter' => '1, 2, 3, 5, 6, 12',
 		'win inter 2' => '1, 2, 6, 12',
 		'inter inter' => '1, 2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -192,7 +192,7 @@ return [
 			10 => 27.5,
 		],
 		'win inter' => '1, 2, 4, 5, 6, 7, 8, 9, 11',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'all fav history' => [[1, 3, 6]],
 		'all fav history values' => '1, 3, 6',
 		'all inter fav' => '6',
@@ -223,10 +223,10 @@ return [
 			1 => 53.5,
 			3 => 17,
 		],
-		'win inter' => '1, 2, 5, 7, 9, 10',
+		'win inter' => '1, 2, 3, 5, 7, 9, 10',
 		'win inter 2' => '5, 9, 10',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'all fav history' => [[9, 3, 5]],
 		'all fav history values' => '3, 5, 9',
 		'all inter fav' => '3',

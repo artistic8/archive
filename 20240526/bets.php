@@ -24,7 +24,7 @@ return [
 			12 => 24.5,
 		],
 		'win inter' => '8',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -38,11 +38,11 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '10, 9, 2, 6',
 		'suggestions' => [
-			'win' => '2, 7, 10, 12, 13, 14',
-			'qin' => '1, 2, 6, 7, 10, 12, 13, 14',
-			'trio' => '1, 2, 5, 6, 7, 8, 10, 11, 12, 13, 14',//count trio: 11
+			'win' => '1, 2, 7, 10, 12, 13, 14',
+			'qin' => '1, 2, 3, 6, 7, 10, 12, 13, 14',
+			'trio' => '1, 2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 14',//count trio: 12
 			'inter' => '2, 10, 13, 14',
-			'diff' => '3, 4, 9',//count diff: 3
+			'diff' => '4, 9',//count diff: 2
 		],
 		'win amount' => 40,
 		'qin amount' => 119.5,
@@ -99,7 +99,7 @@ return [
 		'official win' => '1, 5, 13, 3',
 		'suggestions' => [
 			'win' => '1, 2, 4, 5, 6, 11',
-			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13',//count trio: 12
 			'inter' => '1, 4, 5',
 			'diff' => '12, 14',//count diff: 2
@@ -115,7 +115,7 @@ return [
 		'win inter' => '1, 2, 4, 5',
 		'win inter 2' => '1, 4',
 		'inter inter' => '1, 4',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'all fav history' => [[1, 4, 5]],
 		'all fav history values' => '1, 4, 5',
 		'all inter fav' => '1, 4, 5',
@@ -182,10 +182,10 @@ return [
 			9 => 25.5,
 			13 => 41,
 		],
-		'win inter' => '1, 6, 8, 11',
+		'win inter' => '1, 2, 6, 8, 11',
 		'win inter 2' => '8',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -213,7 +213,7 @@ return [
 			3 => 14.5,
 			5 => 27.5,
 		],
-		'win inter' => '2, 3',
+		'win inter' => '2, 3, 6',
 		'win inter 2' => '2',
 		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
@@ -273,7 +273,7 @@ return [
 			1 => 21.5,
 			3 => 19,
 		],
-		'win inter' => '1, 8',
+		'win inter' => '1, 4, 8',
 		'win inter 2' => '7',
 		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',

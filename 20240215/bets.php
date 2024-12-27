@@ -26,7 +26,7 @@ return [
 		'win inter' => '1, 3, 5, 8, 9, 12',
 		'win inter 2' => '3, 12',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -54,7 +54,7 @@ return [
 			3 => 19,
 			8 => 15,
 		],
-		'win inter' => '2, 3, 4, 5, 9, 11',
+		'win inter' => '1, 2, 3, 4, 5, 9, 11',
 		'win inter 2' => '2, 3, 11',
 		'inter inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -75,10 +75,10 @@ return [
 		'official win' => '11, 4, 7, 2',
 		'suggestions' => [
 			'win' => '1, 7, 11',
-			'qin' => '1, 3, 7, 11',
-			'trio' => '1, 3, 7, 10, 11',//count trio: 5
+			'qin' => '1, 3, 7, 8, 11',
+			'trio' => '1, 2, 3, 7, 8, 10, 11',//count trio: 7
 			'inter' => '1, 7',
-			'diff' => '2, 4, 6, 8, 9, 12',//count diff: 6
+			'diff' => '4, 6, 9, 12',//count diff: 4
 		],
 		'win amount' => 58,
 		'qin amount' => 216.5,
@@ -178,7 +178,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 2, 9, 12',
 		'suggestions' => [
-			'win' => '1, 3, 6, 7, 8, 9, 11',
+			'win' => '1, 2, 3, 6, 7, 8, 9, 11',
 			'qin' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 3, 7, 8',
@@ -193,7 +193,7 @@ return [
 			9 => 23,
 		],
 		'win inter' => '1, 3, 8',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -224,7 +224,7 @@ return [
 		'win inter' => '1, 2, 3, 6, 7, 8, 9, 10',
 		'win inter 2' => '6, 8, 10',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -239,7 +239,7 @@ return [
 		'official win' => '3, 2, 4, 8',
 		'suggestions' => [
 			'win' => '2, 5, 7, 8',
-			'qin' => '1, 2, 5, 6, 7, 8, 9',
+			'qin' => '1, 2, 4, 5, 6, 7, 8, 9',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count trio: 10
 			'inter' => '5, 8',
 			'diff' => '11',//count diff: 1
