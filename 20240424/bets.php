@@ -23,7 +23,7 @@ return [
 			7 => 22.5,
 			5 => 44,
 		],
-		'win inter' => '1, 3, 4, 5',
+		'win inter' => '1, 2, 3, 4, 5',
 		'win inter 2' => '1, 3, 4, 5',
 		'inter inter' => '1, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
@@ -209,7 +209,7 @@ return [
 			4 => 29,
 		],
 		'win inter' => '5',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'win(union)' => '2, 5, 7, 12',
 			'1 won(win bet)' => 365,

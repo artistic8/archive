@@ -145,11 +145,11 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '11, 4, 6, 10',
 		'suggestions' => [
-			'win' => '3, 5, 6, 8',
-			'qin' => '3, 4, 5, 6, 8, 9',
-			'trio' => '3, 4, 5, 6, 8, 9, 12',//count trio: 7
-			'inter' => '3',
-			'diff' => '1, 2, 7, 10, 11, 13, 14',//count diff: 7
+			'win' => '2, 3, 5, 6, 8',
+			'qin' => '2, 3, 4, 5, 6, 8, 9',
+			'trio' => '1, 2, 3, 4, 5, 6, 8, 9, 12',//count trio: 9
+			'inter' => '2, 3',
+			'diff' => '7, 10, 11, 13, 14',//count diff: 5
 		],
 		'win amount' => 255,
 		'qin amount' => 690.5,
@@ -160,9 +160,12 @@ return [
 			6 => 157.5,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 8, 10, 12',
-		'win inter 2' => '3, 5, 6, 8',
-		'inter inter' => '3',
+		'win inter 2' => '2, 3, 5, 6, 8',
+		'inter inter' => '2, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'all fav history' => [[2, 9, 1]],
+		'all fav history values' => '1, 2, 9',
+		'all inter fav' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -220,7 +223,7 @@ return [
 			8 => 27,
 		],
 		'win inter' => '1, 2, 3, 4, 6, 7, 8, 10, 11',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'all fav history' => [[4, 9, 8]],
 		'all fav history values' => '4, 8, 9',
 		'all inter fav' => '4',
@@ -311,7 +314,7 @@ return [
 			2 => 42,
 			8 => 24,
 		],
-		'win inter' => '2, 7',
+		'win inter' => '1, 2, 7',
 		'win inter 2' => '7',
 		'inter inter' => '7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14',
@@ -320,16 +323,18 @@ return [
 			'1 won(place bet)' => 240,
 			'place(end-wp )' => '8',
 			'2 won(place bet)' => 240,
+			'super sure bet' => 'super sure place 8',
+			'5 won(place bet)' => 240,
 		],
-		'total bets' => 200,
+		'total bets' => 300,
 		'wp' => '1, 7, 8',//count wp: 3
-		'total won in race 10' => 280,
+		'total won in race 10' => 420,
 	],
 ];
 //total place end favorites: 230
 //total place end wp: 230
 //total place wp: 0
-//total sure place: 90
+//total sure place: 230
 //total win: 30
 //total place union: 65
-//total: 645
+//total: 785

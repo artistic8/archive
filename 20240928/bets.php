@@ -23,7 +23,7 @@ return [
 			8 => 30.5,
 			5 => 41,
 		],
-		'win inter' => '1, 5, 6, 7, 8, 9',
+		'win inter' => '1, 2, 5, 6, 7, 8, 9',
 		'win inter 2' => '5',
 		'inter inter' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
@@ -291,10 +291,10 @@ return [
 		'official win' => '3, 5, 8, 4',
 		'suggestions' => [
 			'win' => '4',
-			'qin' => '4, 5, 10',
-			'trio' => '4, 5, 8, 10',//count trio: 4
+			'qin' => '4, 5, 10, 11',
+			'trio' => '4, 5, 7, 8, 10, 11',//count trio: 6
 			'inter' => '',
-			'diff' => '2, 3, 6, 7, 9, 11, 12, 13',//count diff: 8
+			'diff' => '2, 3, 6, 9, 12, 13',//count diff: 6
 		],
 		'win amount' => 37.5,
 		'qin amount' => 485.5,

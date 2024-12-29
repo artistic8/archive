@@ -223,7 +223,7 @@ return [
 		'win inter' => '2, 6',
 		'win inter 2' => '6',
 		'inter inter' => '6',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 			'place(end-favorites )' => '8',
 			'1 won(place bet)' => 135,

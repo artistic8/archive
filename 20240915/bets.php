@@ -220,7 +220,7 @@ return [
 			3 => 44,
 		],
 		'win inter' => '1, 2, 3, 5, 6, 7, 8, 11',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'all fav history' => [[6, 4, 7]],
 		'all fav history values' => '4, 6, 7',
 		'all inter fav' => '7',
@@ -312,11 +312,11 @@ return [
 			12 => 156,
 		],
 		'win inter' => '4, 7',
-		'allValues' => '1, 2, 3, 4, 5, 6',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2',//count wp: 1
+		'wp' => '2, 8',//count wp: 2
 	],
 ];
 //total place end favorites: 245
