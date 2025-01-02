@@ -144,8 +144,8 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all fav history' => [[5, 6, 12]],
-		'all fav history values' => '5, 6, 12',
+		'all fav history' => [[5, 6, 12], [3, 2, 1]],
+		'all fav history values' => '1, 2, 3, 5, 6, 12',
 		'all inter fav' => '5',
 		'bets' => [
 		],

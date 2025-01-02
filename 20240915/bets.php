@@ -311,12 +311,12 @@ return [
 			5 => 87.5,
 			12 => 156,
 		],
-		'win inter' => '4, 7',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'win inter' => '1, 4, 7',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 8',//count wp: 2
+		'wp' => '2, 8, 10',//count wp: 3
 	],
 ];
 //total place end favorites: 245

@@ -199,7 +199,7 @@ return [
 		'official win' => '7, 8, 9, 1',
 		'suggestions' => [
 			'win' => '2, 3, 7',
-			'qin' => '1, 2, 3, 4, 7',
+			'qin' => '1, 2, 3, 4, 5, 7',
 			'trio' => '1, 2, 3, 4, 5, 7',//count trio: 6
 			'inter' => '2, 7',
 			'diff' => '6, 8, 9, 10',//count diff: 4
@@ -308,7 +308,7 @@ return [
 			4 => 66,
 			9 => 38.5,
 		],
-		'win inter' => '2, 4, 7, 10',
+		'win inter' => '1, 2, 4, 7, 10',
 		'win inter 2' => '2, 7',
 		'inter inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
