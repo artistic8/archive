@@ -159,10 +159,10 @@ return [
 		'official win' => '10, 3, 6, 4',
 		'suggestions' => [
 			'win' => '1, 2, 3, 9, 12',
-			'qin' => '1, 2, 3, 5, 7, 8, 9, 12',
-			'trio' => '1, 2, 3, 5, 7, 8, 9, 12',//count trio: 8
+			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 12',
+			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 12, 14',//count trio: 10
 			'inter' => '3',
-			'diff' => '4, 6, 10, 11, 13, 14',//count diff: 6
+			'diff' => '6, 10, 11, 13',//count diff: 4
 		],
 		'win amount' => 24,
 		'qin amount' => 74.5,
