@@ -8,6 +8,7 @@ return [
 		'favorites' => '4, 5, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 5, 12, 3',
+		'interFW' => '5, 8',//count: 2
 		'suggestions' => [
 			'win' => '4, 5, 8, 9, 10',
 			'qin' => '2, 3, 4, 5, 8, 9, 10',
@@ -46,6 +47,7 @@ return [
 		'favorites' => '1, 2, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '6, 4, 1, 8',
+		'interFW' => '1, 6',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 4, 5, 6, 7, 8, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -87,6 +89,7 @@ return [
 		'favorites' => '4, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '4, 10, 8, 1',
+		'interFW' => '4',//count: 1
 		'suggestions' => [
 			'win' => '5, 8',
 			'qin' => '2, 5, 8, 12',
@@ -118,6 +121,7 @@ return [
 		'favorites' => '5, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '6, 11, 9, 10',
+		'interFW' => '',//count: 0
 		'suggestions' => [
 			'win' => '2, 4',
 			'qin' => '2, 4, 6, 10',
@@ -149,6 +153,7 @@ return [
 		'favorites' => '1, 3, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '2, 9, 3, 12',
+		'interFW' => '3, 9',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 8',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -180,6 +185,7 @@ return [
 		'favorites' => '2, 3, 4, 9, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '11, 9, 3, 2',
+		'interFW' => '3, 9, 11',//count: 3
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
@@ -209,6 +215,7 @@ return [
 		'favorites' => '4, 6, 10, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '10, 4, 11, 8',
+		'interFW' => '4, 10, 11',//count: 3
 		'suggestions' => [
 			'win' => '3, 4, 6, 10, 11',
 			'qin' => '2, 3, 4, 5, 6, 8, 10, 11',
@@ -238,6 +245,7 @@ return [
 		'favorites' => '3, 6, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '4, 12, 1, 5',
+		'interFW' => '12',//count: 1
 		'suggestions' => [
 			'win' => '6, 9, 12',
 			'qin' => '1, 6, 7, 8, 9, 12',
@@ -267,6 +275,7 @@ return [
 		'favorites' => '2, 3, 4, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '6, 11, 4, 8',
+		'interFW' => '4, 11',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',

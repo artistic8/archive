@@ -112,6 +112,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
+        $interFW = array_intersect($favorites, array_slice($officialWin, 0, 3));
+        $racetext .= "\t\t'interFW' => '" . implode(", ", $interFW) . "',//count: " . count($interFW) . "\n"; 
     }
     sort($suggestions["win"]);
     sort($suggestions["qin"]);

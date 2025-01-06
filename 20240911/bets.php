@@ -8,6 +8,7 @@ return [
 		'favorites' => '2, 3, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'official win' => '8, 2, 3, 5',
+		'interFW' => '2, 3',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 6, 9',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 9',
@@ -42,6 +43,7 @@ return [
 		'favorites' => '3, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'official win' => '3, 6, 8, 5',
+		'interFW' => '3, 8',//count: 2
 		'suggestions' => [
 			'win' => '2',
 			'qin' => '2, 3, 7',
@@ -76,6 +78,7 @@ return [
 		'favorites' => '1, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'official win' => '1, 8, 4, 2',
+		'interFW' => '1, 4',//count: 2
 		'suggestions' => [
 			'win' => '2, 4',
 			'qin' => '2, 3, 4',
@@ -107,6 +110,7 @@ return [
 		'favorites' => '1, 2, 3, 5, 7, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '2, 10, 7, 4',
+		'interFW' => '2, 7',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 8, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
@@ -136,6 +140,7 @@ return [
 		'favorites' => '1',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 6, 1, 9',
+		'interFW' => '1',//count: 1
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -168,6 +173,7 @@ return [
 		'favorites' => '1, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '11, 1, 10, 6',
+		'interFW' => '1',//count: 1
 		'suggestions' => [
 			'win' => '1, 6',
 			'qin' => '1, 6, 12',
@@ -199,6 +205,7 @@ return [
 		'favorites' => '4, 5, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '4, 5, 11, 10',
+		'interFW' => '4, 5',//count: 2
 		'suggestions' => [
 			'win' => '2, 3, 8, 10',
 			'qin' => '1, 2, 3, 4, 8, 9, 10, 11',
@@ -228,6 +235,7 @@ return [
 		'favorites' => '3, 8, 10, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 1, 6, 9',
+		'interFW' => '8',//count: 1
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 6, 7, 8, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',

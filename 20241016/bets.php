@@ -8,6 +8,7 @@ return [
 		'favorites' => '5, 7, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 9, 7, 11',
+		'interFW' => '7, 8',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 8, 11',
 			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 11',
@@ -46,6 +47,7 @@ return [
 		'favorites' => '5, 7, 12',
 		'runners' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '9, 7, 5, 6',
+		'interFW' => '5, 7',//count: 2
 		'suggestions' => [
 			'win' => '2, 4, 5, 7, 9, 12',
 			'qin' => '2, 4, 5, 6, 7, 8, 9, 10, 12',
@@ -75,6 +77,7 @@ return [
 		'favorites' => '6, 8, 9, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '4, 8, 6, 2',
+		'interFW' => '6, 8',//count: 2
 		'suggestions' => [
 			'win' => '1, 3, 5, 8, 9, 11, 12',
 			'qin' => '1, 3, 4, 5, 7, 8, 9, 11, 12',
@@ -104,6 +107,7 @@ return [
 		'favorites' => '11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '10, 5, 2, 11',
+		'interFW' => '',//count: 0
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -133,6 +137,7 @@ return [
 		'favorites' => '2, 3, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 4, 8, 9',
+		'interFW' => '3',//count: 1
 		'suggestions' => [
 			'win' => '1, 2, 3, 5, 6, 8, 9, 11',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
@@ -168,6 +173,7 @@ return [
 		'favorites' => '6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '1, 3, 6, 5',
+		'interFW' => '6',//count: 1
 		'suggestions' => [
 			'win' => '',
 			'qin' => '',
@@ -200,6 +206,7 @@ return [
 		'favorites' => '2, 4, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '10, 8, 4, 12',
+		'interFW' => '4',//count: 1
 		'suggestions' => [
 			'win' => '2, 4, 10',
 			'qin' => '1, 2, 4, 7, 9, 10',
@@ -233,6 +240,7 @@ return [
 		'favorites' => '1, 5, 6, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '5, 6, 4, 11',
+		'interFW' => '5, 6',//count: 2
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',

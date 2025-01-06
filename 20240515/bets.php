@@ -8,6 +8,7 @@ return [
 		'favorites' => '1, 7, 8, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 4, 9, 5',
+		'interFW' => '8',//count: 1
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
@@ -37,6 +38,7 @@ return [
 		'favorites' => '2, 4, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '4, 1, 6, 9',
+		'interFW' => '4',//count: 1
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 7, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
@@ -66,6 +68,7 @@ return [
 		'favorites' => '1, 3',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'official win' => '7, 1, 5, 6',
+		'interFW' => '1',//count: 1
 		'suggestions' => [
 			'win' => '1, 3, 4, 7, 9',
 			'qin' => '1, 3, 4, 5, 7, 8, 9',
@@ -85,7 +88,7 @@ return [
 		'win inter 2' => '1, 3, 4, 7, 9',
 		'inter inter' => '1, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all fav history' => [[9, 4, 1], [3, 8, 1]],
+		'all fav history' => [[3, 8, 1], [9, 4, 1]],
 		'all fav history values' => '1, 3, 4, 8, 9',
 		'all inter fav' => '1, 3',
 		'bets' => [
@@ -100,6 +103,7 @@ return [
 		'favorites' => '3, 6, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 9, 1, 2',
+		'interFW' => '3',//count: 1
 		'suggestions' => [
 			'win' => '1, 2, 4, 6, 11, 12',
 			'qin' => '1, 2, 3, 4, 6, 7, 9, 10, 11, 12',
@@ -129,6 +133,7 @@ return [
 		'favorites' => '2, 4, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '11, 6, 7, 3',
+		'interFW' => '11',//count: 1
 		'suggestions' => [
 			'win' => '1, 5, 6, 8, 11',
 			'qin' => '1, 3, 4, 5, 6, 7, 8, 11',
@@ -158,6 +163,7 @@ return [
 		'favorites' => '4, 6, 9, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 3, 9, 2',
+		'interFW' => '9',//count: 1
 		'suggestions' => [
 			'win' => '1, 4, 6, 7, 8, 9, 11',
 			'qin' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11',
@@ -187,6 +193,7 @@ return [
 		'favorites' => '3, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '7, 4, 6, 9',
+		'interFW' => '4',//count: 1
 		'suggestions' => [
 			'win' => '3, 10',
 			'qin' => '1, 3, 10, 11',
@@ -206,7 +213,7 @@ return [
 		'win inter 2' => '3, 10',
 		'inter inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'all fav history' => [[3, 12, 5], [10, 1, 4]],
+		'all fav history' => [[10, 1, 4], [3, 12, 5]],
 		'all fav history values' => '1, 3, 4, 5, 10, 12',
 		'all inter fav' => '3, 4',
 		'bets' => [
@@ -221,6 +228,7 @@ return [
 		'favorites' => '1, 3, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '4, 9, 8, 10',
+		'interFW' => '4',//count: 1
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
@@ -259,6 +267,7 @@ return [
 		'favorites' => '2, 3, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '2, 9, 7, 10',
+		'interFW' => '2, 9',//count: 2
 		'suggestions' => [
 			'win' => '2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
