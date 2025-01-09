@@ -92,7 +92,7 @@ return [
 		'win inter' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 12',
 		'win inter 2' => '1, 2, 8, 12',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'all fav history' => [[1, 8, 9]],
 		'all fav history values' => '1, 8, 9',
 		'all inter fav' => '',

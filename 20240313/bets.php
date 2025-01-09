@@ -144,11 +144,11 @@ return [
 		'official win' => '4, 11, 10, 2',
 		'interFW' => '10',//count: 1
 		'suggestions' => [
-			'win' => '2, 8, 10',
-			'qin' => '2, 3, 4, 8, 9, 10',
-			'trio' => '2, 3, 4, 6, 8, 9, 10',//count trio: 7
-			'inter' => '8, 10',
-			'diff' => '1, 5, 7, 11, 12',//count diff: 5
+			'win' => '2, 5, 8, 10',
+			'qin' => '2, 3, 4, 5, 8, 9, 10',
+			'trio' => '2, 3, 4, 5, 6, 8, 9, 10, 11',//count trio: 9
+			'inter' => '5, 8, 10',
+			'diff' => '1, 7, 12',//count diff: 3
 		],
 		'win amount' => 130,
 		'qin amount' => 1882,

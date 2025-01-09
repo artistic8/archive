@@ -79,8 +79,8 @@ return [
 		'official win' => '4, 8, 6, 2',
 		'interFW' => '6, 8',//count: 2
 		'suggestions' => [
-			'win' => '1, 3, 5, 8, 9, 11, 12',
-			'qin' => '1, 3, 4, 5, 7, 8, 9, 11, 12',
+			'win' => '1, 2, 3, 5, 8, 9, 11, 12',
+			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '8, 9, 11',
 			'diff' => '',//count diff: 0
@@ -154,8 +154,8 @@ return [
 			8 => 98,
 		],
 		'win inter' => '1, 2, 4, 5, 6, 10',
-		'win inter 2' => '2',
-		'inter inter' => '2',
+		'win inter 2' => '2, 5',
+		'inter inter' => '2, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites )' => '5',

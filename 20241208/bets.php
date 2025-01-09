@@ -93,11 +93,11 @@ return [
 		'win inter' => '2, 9',
 		'win inter 2' => '1, 2, 4',
 		'inter inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 4',//count wp: 2
+		'wp' => '1, 4, 13',//count wp: 3
 	],
 	'4' => [
 		/**
@@ -154,7 +154,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 7, 12, 13',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all fav history' => [[3, 6, 1], [1, 8, 2]],
+		'all fav history' => [[1, 8, 2], [3, 6, 1]],
 		'all fav history values' => '1, 2, 3, 6, 8',
 		'all inter fav' => '1',
 		'bets' => [
