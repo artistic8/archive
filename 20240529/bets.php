@@ -55,7 +55,7 @@ return [
 			2 => 65,
 			4 => 33.5,
 		],
-		'win inter' => '2, 3, 4',
+		'win inter' => '2, 3, 4, 8',
 		'win inter 2' => '3',
 		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',

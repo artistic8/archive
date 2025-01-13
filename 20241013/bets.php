@@ -43,10 +43,10 @@ return [
 		'official win' => '5, 2, 3, 8',
 		'interFW' => '2, 5',//count: 2
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 6, 7',
+			'win' => '1, 2, 3, 4, 5, 6, 7, 8',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8',//count trio: 8
-			'inter' => '1, 2, 4, 5',
+			'inter' => '1, 2, 4, 5, 8',
 			'diff' => '',//count diff: 0
 		],
 		'win amount' => 34.5,

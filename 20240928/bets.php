@@ -25,8 +25,8 @@ return [
 			5 => 41,
 		],
 		'win inter' => '1, 2, 5, 6, 7, 8, 9',
-		'win inter 2' => '5',
-		'inter inter' => '5',
+		'win inter 2' => '5, 7',
+		'inter inter' => '5, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites )' => '7',
