@@ -201,7 +201,7 @@ return [
 		'win inter' => '1, 3, 5, 7, 8, 10, 12',
 		'win inter 2' => '1, 3, 7',
 		'inter inter' => '3, 7',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'all fav history' => [[7, 2, 3]],
 		'all fav history values' => '2, 3, 7',
 		'all inter fav' => '3, 7',
@@ -284,11 +284,11 @@ return [
 		'official win' => '5, 1, 6, 7',
 		'interFW' => '1',//count: 1
 		'suggestions' => [
-			'win' => '1, 2, 5, 7, 11, 12',
-			'qin' => '1, 2, 3, 5, 6, 7, 10, 11, 12',
-			'trio' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 11
+			'win' => '1, 2, 4, 5, 7, 11, 12',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 12',
-			'diff' => '4, 13, 14',//count diff: 3
+			'diff' => '13, 14',//count diff: 2
 		],
 		'win amount' => 66.5,
 		'qin amount' => 134.5,
