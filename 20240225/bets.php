@@ -307,7 +307,7 @@ return [
 			5 => 17,
 			3 => 19,
 		],
-		'win inter' => '3, 4',
+		'win inter' => '3, 4, 11',
 		'win inter 2' => '3',
 		'inter inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14',

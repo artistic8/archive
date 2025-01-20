@@ -95,8 +95,11 @@ return [
 			3 => 19,
 			4 => 36.5,
 		],
-		'win inter' => '1, 2, 3, 4, 5, 7',
+		'win inter' => '1, 2, 3, 4, 5, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'all fav history' => [[8, 13, 6]],
+		'all fav history values' => '6, 8, 13',
+		'all inter fav' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -144,7 +147,7 @@ return [
 		'interFW' => '12',//count: 1
 		'suggestions' => [
 			'win' => '2, 3, 4, 5, 6, 10',
-			'qin' => '2, 3, 4, 5, 6, 7, 10, 11, 12',
+			'qin' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13',//count trio: 11
 			'inter' => '4, 5',
 			'diff' => '8, 9, 14',//count diff: 3

@@ -155,7 +155,7 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 9, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all fav history' => [[3, 2, 1], [5, 2, 6]],
+		'all fav history' => [[5, 2, 6], [3, 2, 1]],
 		'all fav history values' => '1, 2, 3, 5, 6',
 		'all inter fav' => '5',
 		'bets' => [
@@ -246,7 +246,7 @@ return [
 		'official win' => '6, 8, 3, 7',
 		'interFW' => '3, 6, 8',//count: 3
 		'suggestions' => [
-			'win' => '2, 3, 5, 6, 7, 8',
+			'win' => '1, 2, 3, 5, 6, 7, 8',
 			'qin' => '1, 2, 3, 5, 6, 7, 8',
 			'trio' => '1, 2, 3, 5, 6, 7, 8',//count trio: 7
 			'inter' => '2, 3, 6, 7, 8',

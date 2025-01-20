@@ -225,7 +225,7 @@ return [
 		'official win' => '4, 8, 12, 9',
 		'interFW' => '8',//count: 1
 		'suggestions' => [
-			'win' => '5, 6, 7, 8, 12',
+			'win' => '1, 5, 6, 7, 8, 12',
 			'qin' => '1, 4, 5, 6, 7, 8, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 12',//count trio: 10
 			'inter' => '8',
@@ -240,7 +240,7 @@ return [
 			12 => 40,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 12',
-		'win inter 2' => '5, 6, 7, 8, 12',
+		'win inter 2' => '1, 5, 6, 7, 8, 12',
 		'inter inter' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'all fav history' => [[8, 4, 10]],

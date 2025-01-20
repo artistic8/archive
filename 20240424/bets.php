@@ -121,7 +121,7 @@ return [
 			2 => 27,
 			9 => 26,
 		],
-		'win inter' => '1, 2, 6',
+		'win inter' => '1, 2, 6, 10',
 		'win inter 2' => '6',
 		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
