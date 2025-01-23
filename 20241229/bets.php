@@ -9,13 +9,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '2, 1, 14, 10',
 		'interFW' => '1',//count: 1
-		'suggestions' => [
-			'win' => '1, 3, 4, 5, 7, 8, 10',
-			'qin' => '1, 3, 4, 5, 7, 8, 9, 10, 11, 13',
-			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',//count trio: 12
-			'inter' => '1, 3, 10',
-			'diff' => '6, 14',//count diff: 2
-		],
 		'minmax history' => [
 			'max win' => '',
 			'max qin' => '',
@@ -53,13 +46,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '14, 6, 4, 8',
 		'interFW' => '6',//count: 1
-		'suggestions' => [
-			'win' => '2, 3, 5, 6, 7, 9, 10',
-			'qin' => '1, 2, 3, 5, 6, 7, 9, 10, 12',
-			'trio' => '1, 2, 3, 5, 6, 7, 9, 10, 12',//count trio: 9
-			'inter' => '3, 6',
-			'diff' => '4, 8, 11, 13, 14',//count diff: 5
-		],
 		'minmax history' => [
 			'max win' => '1, 8, 10',
 			'max qin' => '1, 3, 5, 6, 7, 8, 10',
@@ -93,13 +79,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'official win' => '9, 7, 5, 8',
 		'interFW' => '9',//count: 1
-		'suggestions' => [
-			'win' => '7, 9',
-			'qin' => '3, 7, 8, 9',
-			'trio' => '3, 4, 7, 8, 9',//count trio: 5
-			'inter' => '9',
-			'diff' => '1, 2, 5, 6, 10',//count diff: 5
-		],
 		'minmax history' => [
 			'max win' => '9',
 			'max qin' => '9, 10',
@@ -130,13 +109,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '2, 5, 6, 10',
 		'interFW' => '2',//count: 1
-		'suggestions' => [
-			'win' => '1, 2, 3, 4, 11',
-			'qin' => '1, 2, 3, 4, 7, 8, 10, 11',
-			'trio' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13',//count trio: 11
-			'inter' => '2, 3',
-			'diff' => '5, 12, 14',//count diff: 3
-		],
 		'minmax history' => [
 			'max win' => '1, 2, 3, 6, 8, 10, 14',
 			'max qin' => '1, 2, 3, 4, 6, 8, 9, 10, 14',
@@ -167,13 +139,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '2, 9, 1, 11',
 		'interFW' => '2',//count: 1
-		'suggestions' => [
-			'win' => '3, 5, 6, 8, 11',
-			'qin' => '3, 4, 5, 6, 8, 9, 11',
-			'trio' => '3, 4, 5, 6, 8, 9, 11, 12',//count trio: 8
-			'inter' => '3',
-			'diff' => '1, 2, 7, 10, 13, 14',//count diff: 6
-		],
 		'minmax history' => [
 			'max win' => '3, 4, 5, 6, 10, 12',
 			'max qin' => '3, 4, 5, 6, 7, 10, 12, 13',
@@ -207,13 +172,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '10, 6, 1, 8',
 		'interFW' => '1, 6',//count: 2
-		'suggestions' => [
-			'win' => '2, 6',
-			'qin' => '2, 6, 12',
-			'trio' => '2, 3, 6, 10, 12',//count trio: 5
-			'inter' => '6',
-			'diff' => '1, 4, 5, 7, 8, 9, 11',//count diff: 7
-		],
 		'minmax history' => [
 			'max win' => '1, 5, 7, 11',
 			'max qin' => '1, 3, 5, 7, 8, 11, 14',
@@ -244,13 +202,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '2, 8, 11, 1',
 		'interFW' => '11',//count: 1
-		'suggestions' => [
-			'win' => '1, 2, 3, 6, 7, 10, 12',
-			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
-			'inter' => '1, 3',
-			'diff' => '13, 14',//count diff: 2
-		],
 		'minmax history' => [
 			'max win' => '',
 			'max qin' => '',
@@ -281,13 +232,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '14, 6, 5, 1',
 		'interFW' => '6',//count: 1
-		'suggestions' => [
-			'win' => '4, 7, 8, 9',
-			'qin' => '4, 7, 8, 9, 12',
-			'trio' => '1, 4, 7, 8, 9, 12',//count trio: 6
-			'inter' => '',
-			'diff' => '2, 3, 5, 6, 10, 11, 13, 14',//count diff: 8
-		],
 		'minmax history' => [
 			'max win' => '',
 			'max qin' => '',
@@ -316,13 +260,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 11, 5, 6',
 		'interFW' => '3',//count: 1
-		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
-			'diff' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count diff: 12
-		],
 		'minmax history' => [
 			'max win' => '2, 3, 4, 5, 7, 9, 10, 12, 13',
 			'max qin' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
@@ -351,13 +288,6 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '1, 11, 7, 2',
 		'interFW' => '1, 7',//count: 2
-		'suggestions' => [
-			'win' => '1, 2, 3, 4, 7, 10, 11, 12, 13',
-			'qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',
-			'trio' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',//count trio: 12
-			'inter' => '1, 2, 3, 7',
-			'diff' => '6, 14',//count diff: 2
-		],
 		'minmax history' => [
 			'max win' => '2, 14',
 			'max qin' => '2, 9, 11, 14',
