@@ -81,6 +81,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     $_2sets = get2Sets($favorites);
+    $suggestions = ["win" => [], "qin" => [], "trio" => []];
     $firstShit = true;
     $winInter2 = [];
     foreach($_2sets as $example){
@@ -90,9 +91,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $firstShit = false;
             }
             else $winInter2 = array_intersect($winInter2, $favhistory[$raceNumber][$example]["win"]);
+            $suggestions["win"] = array_values(array_unique(array_merge($suggestions["win"], $favhistory[$raceNumber][$example]["win"])));
+            $suggestions["qin"] = array_values(array_unique(array_merge($suggestions["qin"], $favhistory[$raceNumber][$example]["qin"])));
+            $suggestions["trio"] = array_values(array_unique(array_merge($suggestions["trio"], $favhistory[$raceNumber][$example]["trio"])));
         }
     }
     $winInter2 = array_intersect($winInter2, $runners);
+    $suggestions["win"] = array_intersect($suggestions["win"], $runners);
+    $suggestions["qin"] = array_intersect($suggestions["qin"], $runners);
+    $suggestions["trio"] = array_intersect($suggestions["trio"], $runners);
     sort($runners);
     $racetext = "";
     $racetext .= "\t'$raceNumber' => [\n";
@@ -110,6 +117,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $interFW = array_intersect($favorites, array_slice($officialWin, 0, 3));
         $racetext .= "\t\t'interFW' => '" . implode(", ", $interFW) . "',//count: " . count($interFW) . "\n"; 
     }
+    sort($suggestions["win"]);
+    sort($suggestions["qin"]);
+    sort($suggestions["trio"]);
+    
+    
+    $inter = array_intersect($favorites, $suggestions["win"]);
+    
     $racetext .= "\t\t'minmax history' => [\n";
     $racetext .= "\t\t\t'max win' => '" . implode(", ", $maxhistory[$raceNumber][$max]["win"]) . "',\n";
     $racetext .= "\t\t\t'max qin' => '" . implode(", ", $maxhistory[$raceNumber][$max]["qin"]) . "',\n";
