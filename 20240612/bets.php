@@ -16,6 +16,14 @@ return [
 			'inter' => '',
 			'diff' => '1, 3, 5, 7, 8, 10, 11',//count diff: 7
 		],
+		'minmax history' => [
+			'min win' => '3, 7, 8, 9, 12',
+			'max win' => '4, 6, 12, 14',
+			'min qin' => '3, 4, 7, 8, 9, 11, 12',
+			'max qin' => '1, 2, 4, 6, 7, 12, 14',
+			'min trio' => '3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'max trio' => '1, 2, 4, 6, 7, 8, 12, 14',
+		],
 		'win amount' => 103,
 		'qin amount' => 462.5,
 		'trio amount' => 2906,
@@ -47,6 +55,14 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count trio: 10
 			'inter' => '2, 4',
 			'diff' => '11, 12',//count diff: 2
+		],
+		'minmax history' => [
+			'min win' => '1, 2, 4, 5, 6, 7, 10, 12, 13, 14',
+			'max win' => '4',
+			'min qin' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14',
+			'max qin' => '4, 9',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14',
+			'max trio' => '2, 4, 9',
 		],
 		'win amount' => 46.5,
 		'qin amount' => 288.5,
@@ -84,6 +100,14 @@ return [
 			'inter' => '2, 3, 8',
 			'diff' => '',//count diff: 0
 		],
+		'minmax history' => [
+			'min win' => '1, 2, 3, 5, 7, 8, 9, 10, 12',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 13',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
+			'max trio' => '',
+		],
 		'win amount' => 153.5,
 		'qin amount' => 1333,
 		'trio amount' => 3531,
@@ -120,6 +144,14 @@ return [
 			'inter' => '2, 4, 6',
 			'diff' => '',//count diff: 0
 		],
+		'minmax history' => [
+			'min win' => '2, 3, 5, 11, 12, 13',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 6, 7, 9, 11, 12, 13',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13',
+			'max trio' => '',
+		],
 		'win amount' => 131.5,
 		'qin amount' => 1130,
 		'trio amount' => 3066,
@@ -149,6 +181,14 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count trio: 10
 			'inter' => '2, 3, 7, 8, 9',
 			'diff' => '',//count diff: 0
+		],
+		'minmax history' => [
+			'min win' => '2, 3, 4, 5, 6, 8, 9, 10, 11',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
+			'max trio' => '',
 		],
 		'win amount' => 29.5,
 		'qin amount' => 72.5,
@@ -180,6 +220,14 @@ return [
 			'inter' => '3, 5, 7, 9',
 			'diff' => '',//count diff: 0
 		],
+		'minmax history' => [
+			'min win' => '1, 2, 3, 5, 6, 7, 9, 10, 12',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
+			'max trio' => '',
+		],
 		'win amount' => 53,
 		'qin amount' => 255.5,
 		'trio amount' => 312,
@@ -209,6 +257,14 @@ return [
 			'trio' => '1, 2, 3, 6, 7, 8, 11',//count trio: 7
 			'inter' => '',
 			'diff' => '4, 5, 9, 10, 12',//count diff: 5
+		],
+		'minmax history' => [
+			'min win' => '1, 2, 3, 5, 6, 7, 10, 11',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'max trio' => '',
 		],
 		'win amount' => 449,
 		'qin amount' => 490.5,
@@ -242,6 +298,14 @@ return [
 			'inter' => '2, 5, 6, 9, 11',
 			'diff' => '',//count diff: 0
 		],
+		'minmax history' => [
+			'min win' => '2, 4, 6, 7, 8, 9, 12',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+			'max trio' => '',
+		],
 		'win amount' => 21,
 		'qin amount' => 788.5,
 		'trio amount' => 2303,
@@ -271,6 +335,14 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 3, 5, 6, 11',
 			'diff' => '',//count diff: 0
+		],
+		'minmax history' => [
+			'min win' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
+			'max win' => '',
+			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
+			'max qin' => '',
+			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
+			'max trio' => '',
 		],
 		'win amount' => 35,
 		'qin amount' => 655,
