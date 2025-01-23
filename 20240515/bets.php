@@ -17,11 +17,8 @@ return [
 			'diff' => '',//count diff: 0
 		],
 		'minmax history' => [
-			'min win' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 			'max win' => '',
-			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13',
 			'max qin' => '',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 			'max trio' => '',
 		],
 		'win amount' => 126,
@@ -55,11 +52,8 @@ return [
 			'diff' => '',//count diff: 0
 		],
 		'minmax history' => [
-			'min win' => '1, 2, 4, 5, 6, 7, 10, 12, 13, 14',
 			'max win' => '1, 4',
-			'min qin' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14',
 			'max qin' => '1, 2, 4, 10',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14',
 			'max trio' => '1, 2, 4, 9, 10, 11',
 		],
 		'win amount' => 56,
@@ -93,11 +87,8 @@ return [
 			'diff' => '2, 6',//count diff: 2
 		],
 		'minmax history' => [
-			'min win' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
 			'max win' => '1, 3, 4, 5, 7, 8, 12',
-			'min qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14',
 			'max qin' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 			'max trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		],
 		'win amount' => 39,
@@ -112,7 +103,7 @@ return [
 		'win inter 2' => '1, 3, 4, 7, 9',
 		'inter inter' => '1, 3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'all fav history' => [[9, 4, 1], [3, 8, 1]],
+		'all fav history' => [[3, 8, 1], [9, 4, 1]],
 		'all fav history values' => '1, 3, 4, 8, 9',
 		'all inter fav' => '1, 3',
 		'bets' => [
@@ -136,11 +127,8 @@ return [
 			'diff' => '8',//count diff: 1
 		],
 		'minmax history' => [
-			'min win' => '1, 2, 3, 6, 8, 10, 14',
 			'max win' => '',
-			'min qin' => '1, 2, 3, 4, 6, 8, 10, 14',
 			'max qin' => '',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14',
 			'max trio' => '',
 		],
 		'win amount' => 52,
@@ -174,11 +162,8 @@ return [
 			'diff' => '9, 10',//count diff: 2
 		],
 		'minmax history' => [
-			'min win' => '2, 3, 4, 5, 6, 8, 9, 10, 11',
 			'max win' => '',
-			'min qin' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13',
 			'max qin' => '',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 			'max trio' => '',
 		],
 		'win amount' => 72.5,
@@ -212,11 +197,8 @@ return [
 			'diff' => '',//count diff: 0
 		],
 		'minmax history' => [
-			'min win' => '1, 2, 4, 6, 7, 9',
 			'max win' => '12',
-			'min qin' => '1, 2, 4, 6, 7, 8, 9, 10, 11',
 			'max qin' => '6, 12',
-			'min trio' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11',
 			'max trio' => '3, 6, 12',
 		],
 		'win amount' => 110.5,
@@ -250,11 +232,8 @@ return [
 			'diff' => '2, 6, 7, 8, 9',//count diff: 5
 		],
 		'minmax history' => [
-			'min win' => '2, 3, 6, 7, 8, 10, 14',
 			'max win' => '2, 3, 4, 8, 10, 11',
-			'min qin' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 			'max qin' => '2, 3, 4, 5, 6, 8, 9, 10, 11',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 			'max trio' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11',
 		],
 		'win amount' => 62,
@@ -293,11 +272,8 @@ return [
 			'diff' => '',//count diff: 0
 		],
 		'minmax history' => [
-			'min win' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14',
 			'max win' => '2, 4, 6, 7, 8, 12',
-			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 			'max qin' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 			'max trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 		],
 		'win amount' => 38.5,
@@ -340,11 +316,8 @@ return [
 			'diff' => '',//count diff: 0
 		],
 		'minmax history' => [
-			'min win' => '2, 3, 4, 5, 6, 8, 9, 11, 12',
 			'max win' => '',
-			'min qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'max qin' => '',
-			'min trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 			'max trio' => '',
 		],
 		'win amount' => 28,
