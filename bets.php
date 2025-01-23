@@ -12,6 +12,8 @@ else $revision = "";
 
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
+$minhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "minhistory.php");
+$maxhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "maxhistory.php");
 $favhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "favhistory.php");
 $allfavhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "allfavhistory.php");
 
@@ -107,6 +109,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
+    $max = max($favorites);
+    $min = min($favorites);
     foreach($runners as $runner){
         if(!isset($history[$raceNumber][$runner])) $history[$raceNumber][$runner] =  ["win" => [], "qin" => [], "trio" => []];
     }
@@ -128,6 +132,14 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $diff = array_diff($runners, $suggestions["trio"]);
     $racetext .= "\t\t\t'diff' => '" . implode(", ", $diff) . "',//count diff: " . count($diff) . "\n";
     
+    $racetext .= "\t\t],\n";
+    $racetext .= "\t\t'minmax history' => [\n";
+    $racetext .= "\t\t\t'min win' => '" . implode(", ", $minhistory[$raceNumber][$min]["win"]) . "',\n";
+    $racetext .= "\t\t\t'max win' => '" . implode(", ", $minhistory[$raceNumber][$max]["win"]) . "',\n";
+    $racetext .= "\t\t\t'min qin' => '" . implode(", ", $minhistory[$raceNumber][$min]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'max qin' => '" . implode(", ", $minhistory[$raceNumber][$max]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'min trio' => '" . implode(", ", $minhistory[$raceNumber][$min]["trio"]) . "',\n";
+    $racetext .= "\t\t\t'max trio' => '" . implode(", ", $minhistory[$raceNumber][$max]["trio"]) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 

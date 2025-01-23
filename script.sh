@@ -2,6 +2,8 @@ for f in *; do
     if [ -d "$f" ] && [ $f != "archive" ] && [ $f != "oldFavorites" ]; then
         rm -Rf $f;
         php populate.php;
+        php maxpopulate.php;
+        php minpopulate.php;
         php favpopulate.php;
         php allfavpopulate.php;
         git checkout $f/;
