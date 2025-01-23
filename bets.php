@@ -132,9 +132,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     
     $racetext .= "\t\t],\n";
     $racetext .= "\t\t'minmax history' => [\n";
-    $racetext .= "\t\t\t'max win' => '" . implode(", ", $minhistory[$raceNumber][$max]["win"]) . "',\n";
-    $racetext .= "\t\t\t'max qin' => '" . implode(", ", $minhistory[$raceNumber][$max]["qin"]) . "',\n";
-    $racetext .= "\t\t\t'max trio' => '" . implode(", ", $minhistory[$raceNumber][$max]["trio"]) . "',\n";
+    $racetext .= "\t\t\t'max win' => '" . implode(", ", $maxhistory[$raceNumber][$max]["win"]) . "',\n";
+    $racetext .= "\t\t\t'max qin' => '" . implode(", ", $maxhistory[$raceNumber][$max]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'max trio' => '" . implode(", ", $maxhistory[$raceNumber][$max]["trio"]) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
