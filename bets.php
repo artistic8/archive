@@ -12,7 +12,8 @@ else $revision = "";
 
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
-$maxhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "minhistory.php");
+$minhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "minhistory.php");
+$maxhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "maxhistory.php");
 $favhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "favhistory.php");
 $allfavhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "allfavhistory.php");
 
@@ -108,6 +109,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t*/\n";
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
+    $min = min($favorites);
     $max = max($favorites);
     foreach($runners as $runner){
         if(!isset($history[$raceNumber][$runner])) $history[$raceNumber][$runner] =  ["win" => [], "qin" => [], "trio" => []];
@@ -121,13 +123,21 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($suggestions["qin"]);
     sort($suggestions["trio"]);
     
-    
     $inter = array_intersect($favorites, $suggestions["win"]);
     
     $racetext .= "\t\t'minmax history' => [\n";
-    $racetext .= "\t\t\t'max win' => '" . implode(", ", $maxhistory[$raceNumber][$max]["win"]) . "',\n";
-    $racetext .= "\t\t\t'max qin' => '" . implode(", ", $maxhistory[$raceNumber][$max]["qin"]) . "',\n";
-    $racetext .= "\t\t\t'max trio' => '" . implode(", ", $maxhistory[$raceNumber][$max]["trio"]) . "',\n";
+    $racetext .= "\t\t\t'min history(min, win)' => '" . implode(", ", $minhistory[$raceNumber][$min]["win"]) . "',\n";
+    $racetext .= "\t\t\t'min history(max, win)' => '" . implode(", ", $minhistory[$raceNumber][$max]["win"]) . "',\n";
+    $racetext .= "\t\t\t'max history(min, win)' => '" . implode(", ", $maxhistory[$raceNumber][$min]["win"]) . "',\n";
+    $racetext .= "\t\t\t'max history(max, win)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["win"]) . "',\n";
+    $racetext .= "\t\t\t'min history(min, qin)' => '" . implode(", ", $minhistory[$raceNumber][$min]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'min history(max, qin)' => '" . implode(", ", $minhistory[$raceNumber][$max]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'max history(min, qin)' => '" . implode(", ", $maxhistory[$raceNumber][$min]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'max history(max, qin)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["qin"]) . "',\n";
+    $racetext .= "\t\t\t'min history(min, trio)' => '" . implode(", ", $minhistory[$raceNumber][$min]["trio"]) . "',\n";
+    $racetext .= "\t\t\t'min history(max, trio)' => '" . implode(", ", $minhistory[$raceNumber][$max]["trio"]) . "',\n";
+    $racetext .= "\t\t\t'max history(min, trio)' => '" . implode(", ", $maxhistory[$raceNumber][$min]["trio"]) . "',\n";
+    $racetext .= "\t\t\t'max history(max, trio)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["trio"]) . "',\n";
     $racetext .= "\t\t],\n";
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
