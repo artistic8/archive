@@ -136,10 +136,10 @@ return [
 		'official win' => '9, 2, 5, 1',
 		'interFW' => '2, 5, 9',//count: 3
 		'suggestions' => [
-			'win' => '1, 2, 3, 5, 6, 8, 10',
+			'win' => '1, 2, 3, 5, 6, 8, 9, 10',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
-			'inter' => '2, 5',
+			'inter' => '2, 5, 9',
 			'diff' => '',//count diff: 0
 		],
 		'win amount' => 35.5,

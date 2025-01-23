@@ -66,7 +66,7 @@ return [
 			8 => 11.5,
 			4 => 22.5,
 		],
-		'win inter' => '2, 4, 8, 9',
+		'win inter' => '1, 2, 4, 8, 9',
 		'win inter 2' => '2, 4',
 		'inter inter' => '4',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11',
