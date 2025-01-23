@@ -124,9 +124,12 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $inter = array_intersect($favorites, $suggestions["win"]);
 
     $racetext .= "\t\t\t'min history(min, win)' => '" . implode(", ", $minhistory[$raceNumber][$min]["win"]) . "',\n";
-    if(isset($officialWin)){
-        $exists = in_array($officialWin[0], $minhistory[$raceNumber][$min]["win"]);
-        if(!$exists) $racetext .= "\t\t\t//NO EXISTS\n";
+    $racetext .= "\t\t\t'max history(max, win)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["win"]) . "',\n";
+    $potential = array_intersect($maxhistory[$raceNumber][$max]["win"], $minhistory[$raceNumber][$min]["win"]);
+    if(!empty($potential)) {
+        $racetext .= "\t\t'potential place' => '" . implode(", ", $potential) . "',\n";
+        $potential = array_intersect($favorites, $potential);
+        if(count($potential) >= 2) $racetext .= "\t\t'potential win' => '" . implode(", ", $minhistory[$raceNumber][$min]["win"]) . "',\n";
     }
     
     if(isset($winAmount)){
