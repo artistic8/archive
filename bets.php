@@ -12,7 +12,7 @@ else $revision = "";
 
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
-$maxhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "maxhistory.php");
+$maxhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "minhistory.php");
 $favhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "favhistory.php");
 $allfavhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "allfavhistory.php");
 
