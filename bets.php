@@ -116,29 +116,19 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     if(isset($officialWin)){
         $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-        $interFW = array_intersect($favorites, array_slice($officialWin, 0, 3));
-        $racetext .= "\t\t'interFW' => '" . implode(", ", $interFW) . "',//count: " . count($interFW) . "\n"; 
     }
     sort($suggestions["win"]);
     sort($suggestions["qin"]);
     sort($suggestions["trio"]);
     
     $inter = array_intersect($favorites, $suggestions["win"]);
-    
-    $racetext .= "\t\t'minmax history' => [\n";
+
     $racetext .= "\t\t\t'min history(min, win)' => '" . implode(", ", $minhistory[$raceNumber][$min]["win"]) . "',\n";
-    $racetext .= "\t\t\t'min history(max, win)' => '" . implode(", ", $minhistory[$raceNumber][$max]["win"]) . "',\n";
-    $racetext .= "\t\t\t'max history(min, win)' => '" . implode(", ", $maxhistory[$raceNumber][$min]["win"]) . "',\n";
-    $racetext .= "\t\t\t'max history(max, win)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["win"]) . "',\n";
-    $racetext .= "\t\t\t'min history(min, qin)' => '" . implode(", ", $minhistory[$raceNumber][$min]["qin"]) . "',\n";
-    $racetext .= "\t\t\t'min history(max, qin)' => '" . implode(", ", $minhistory[$raceNumber][$max]["qin"]) . "',\n";
-    $racetext .= "\t\t\t'max history(min, qin)' => '" . implode(", ", $maxhistory[$raceNumber][$min]["qin"]) . "',\n";
-    $racetext .= "\t\t\t'max history(max, qin)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["qin"]) . "',\n";
-    $racetext .= "\t\t\t'min history(min, trio)' => '" . implode(", ", $minhistory[$raceNumber][$min]["trio"]) . "',\n";
-    $racetext .= "\t\t\t'min history(max, trio)' => '" . implode(", ", $minhistory[$raceNumber][$max]["trio"]) . "',\n";
-    $racetext .= "\t\t\t'max history(min, trio)' => '" . implode(", ", $maxhistory[$raceNumber][$min]["trio"]) . "',\n";
-    $racetext .= "\t\t\t'max history(max, trio)' => '" . implode(", ", $maxhistory[$raceNumber][$max]["trio"]) . "',\n";
-    $racetext .= "\t\t],\n";
+    if(isset($officialWin)){
+        $exists = in_array($officialWin[0], $minhistory[$raceNumber][$min]["win"]);
+        if(!$exists) $racetext .= "\t\t\t//NO EXISTS\n";
+    }
+    
     if(isset($winAmount)){
         $racetext .= "\t\t'win amount' => " . $winAmount . ",\n"; 
     }
