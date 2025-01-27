@@ -23,6 +23,7 @@ return [
 		'placesWP($30)' => '10, 1, 9',
 		'unions($10)' => '1, 4, 5, 9, 10',
 		'union + favorites' => '1, 2, 4, 5, 9, 10',
+		'official win' => '10, 12, 8, 9',
 		'place(end-wp 1006)' => '9',
 	],
 	'3' => [
@@ -50,6 +51,7 @@ return [
 		'placesWP($30)' => '1',
 		'unions($10)' => '1, 4, 5, 8',
 		'union + favorites' => '1, 3, 4, 5, 8, 11',
+		'official win' => '2, 3, 10, 11',
 	],
 	'6' => [
 		/**
@@ -70,6 +72,7 @@ return [
 		'win(union )' => '5, 6, 8, 11',
 		'unions($10)' => '5, 6, 8, 11',
 		'union + favorites' => '5, 6, 8, 11',
+		'official win' => '9, 10, 11, 3',
 	],
 	'8' => [
 		/**
@@ -78,5 +81,6 @@ return [
 		'favorites' => '(F) 1, 2, 3, 5, 9, 10',
 		'unions($10)' => '3, 5, 8, 10',
 		'union + favorites' => '1, 2, 3, 5, 8, 9, 10',
+		'official win' => '2, 9, 3, 4',
 	],
 ];
