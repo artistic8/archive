@@ -77,7 +77,7 @@ return [
 			9 => 26,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8',
-		'win inter 2' => '1, 2, 3, 8',
+		'win inter 2' => '1, 2, 3, 4, 8',
 		'inter inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'all fav history' => [[3, 10, 8], [1, 3, 10]],

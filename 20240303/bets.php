@@ -194,7 +194,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '8, 5, 10, 3',
 			'min history(min, win)' => '2, 4, 6, 7, 8, 12',
-			'max history(max, win)' => '1, 2, 5',
+			'max history(max, win)' => '1, 2, 3, 5',
 		'potential place' => '2',
 		'win amount' => 97,
 		'qin amount' => 313,

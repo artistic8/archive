@@ -62,8 +62,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '3, 8, 9, 5',
 			'min history(min, win)' => '1, 3, 4, 5, 7, 8, 12',
-			'max history(max, win)' => '1, 2, 3, 8, 11',
-		'potential place' => '1, 3, 8',
+			'max history(max, win)' => '1, 2, 3, 4, 8, 11',
+		'potential place' => '1, 3, 4, 8',
 		'potential win' => '1, 3, 4, 5, 7, 8, 12',
 		'win amount' => 57,
 		'qin amount' => 154,
@@ -74,11 +74,20 @@ return [
 			9 => 35.5,
 		],
 		'win inter' => '1, 2, 4, 5, 8',
+		'win inter 2' => '4',
+		'inter inter' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
+			'place(end-favorites )' => '8',
+			'1 won(place bet)' => 225,
+			'place(end-wp )' => '8',
+			'2 won(place bet)' => 225,
+			'super sure bet' => 'super sure place 8',
+			'5 won(place bet)' => 225,
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 		'wp' => '3, 4, 8',//count wp: 3
+		'total won in race 3' => 375,
 	],
 	'4' => [
 		/**
@@ -239,10 +248,10 @@ return [
 		'wp' => '5',//count wp: 1
 	],
 ];
-//total place end favorites: 0
-//total place end wp: 0
+//total place end favorites: 125
+//total place end wp: 125
 //total place wp: 0
-//total sure place: 0
+//total sure place: 125
 //total win: 0
 //total place union: 0
-//total: 0
+//total: 375

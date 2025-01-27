@@ -119,7 +119,7 @@ return [
 		'favorites' => '1, 2, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '1, 10, 8, 12',
-			'min history(min, win)' => '1, 2, 3, 4, 5, 6, 7, 8, 12, 13',
+			'min history(min, win)' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13',
 			'max history(max, win)' => '4, 5, 6',
 		'potential place' => '4, 5, 6',
 		'win amount' => 47.5,
@@ -130,7 +130,7 @@ return [
 			10 => 34,
 			8 => 32,
 		],
-		'win inter' => '4, 6, 8',
+		'win inter' => '4, 6, 8, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],

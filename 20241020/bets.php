@@ -58,8 +58,8 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '2, 14, 1, 8',
 			'min history(min, win)' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
-			'max history(max, win)' => '1, 3, 8, 11',
-		'potential place' => '1, 3, 8, 11',
+			'max history(max, win)' => '1, 3, 4, 8, 11',
+		'potential place' => '1, 3, 4, 8, 11',
 		'potential win' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
 		'win amount' => 32.5,
 		'qin amount' => 356.5,
@@ -69,7 +69,7 @@ return [
 			14 => 52,
 			1 => 14.5,
 		],
-		'win inter' => '1, 2, 3, 5, 8',
+		'win inter' => '1, 2, 3, 4, 5, 8',
 		'allValues' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13',
 		'bets' => [
 		],
@@ -120,7 +120,7 @@ return [
 			4 => 59,
 			6 => 15,
 		],
-		'win inter' => '',
+		'win inter' => '11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
