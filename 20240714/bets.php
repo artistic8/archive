@@ -285,7 +285,7 @@ return [
 		'favorites' => '1, 4, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'official win' => '1, 2, 6, 13',
-			'min history(min, win)' => '4',
+			'min history(min, win)' => '3, 4',
 			'max history(max, win)' => '',
 		'win amount' => 22.5,
 		'qin amount' => 58,
@@ -296,6 +296,8 @@ return [
 			6 => 66.5,
 		],
 		'win inter' => '',
+		'win inter 2' => '3',
+		'inter inter' => '',
 		'allValues' => '',
 		'bets' => [
 		],

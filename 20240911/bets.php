@@ -175,7 +175,7 @@ return [
 		'favorites' => '4, 5, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'official win' => '4, 5, 11, 10',
-			'min history(min, win)' => '2, 3, 4, 8, 10, 11',
+			'min history(min, win)' => '2, 3, 4, 7, 8, 10, 11',
 			'max history(max, win)' => '2, 3, 5, 8',
 		'potential place' => '2, 3, 8',
 		'win amount' => 24,

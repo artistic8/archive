@@ -112,7 +112,7 @@ return [
 			2 => 21,
 		],
 		'win inter' => '1',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -280,7 +280,7 @@ return [
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'official win' => '8, 3, 11, 5',
 			'min history(min, win)' => '',
-			'max history(max, win)' => '1, 4, 7, 9, 12, 14',
+			'max history(max, win)' => '1, 2, 4, 7, 9, 12, 14',
 		'win amount' => 14,
 		'qin amount' => 47,
 		'trio amount' => 50,
@@ -290,7 +290,7 @@ return [
 			11 => 13.5,
 		],
 		'win inter' => '1, 2, 4, 7',
-		'win inter 2' => '1',
+		'win inter 2' => '1, 2',
 		'inter inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
