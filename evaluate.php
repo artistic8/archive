@@ -26,7 +26,7 @@ foreach ($dir as $fileinfo) {
         $month = substr($fileinfo->getFilename(), 0, 6);
         $contents = file_get_contents($betsFile);
         $contents = explode("\n", $contents);
-        $contents = array_slice($contents, -8);
+        $contents = array_slice($contents, -7);
         $parts = explode(": ", $contents[0]);
         $totalPlaceF += (float)$parts[1];
         $parts = explode(": ", $contents[1]);
@@ -38,8 +38,6 @@ foreach ($dir as $fileinfo) {
         $parts = explode(": ", $contents[4]);
         $totalWin += (float)$parts[1];
         $parts = explode(": ", $contents[5]);
-        $totalPlaceUnion += (float)$parts[1];
-        $parts = explode(": ", $contents[6]);
         $total += (float)$parts[1];
         if(in_array($fileinfo->getFilename(), $HV)) $totalHV += (float)$parts[1];
         elseif(in_array($fileinfo->getFilename(), $ST)) $totalST += (float)$parts[1];
