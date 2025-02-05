@@ -27,7 +27,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 3, 8, 10',//count wp: 5
 	],
 	'2' => [
 		/**
@@ -52,12 +51,9 @@ return [
 		'win inter' => '1, 2, 3, 4, 5, 6',
 		'win inter 2' => '3, 5, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6',
-		'all fav history' => [[14, 6, 4]],
-		'all fav history values' => '4, 6, 14',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 6',//count wp: 2
 	],
 	'3' => [
 		/**
@@ -85,7 +81,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 8, 12, 13',//count wp: 4
 	],
 	'4' => [
 		/**
@@ -114,7 +109,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '6, 10',//count wp: 2
 	],
 	'5' => [
 		/**
@@ -143,7 +137,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 6',//count wp: 2
 	],
 	'6' => [
 		/**
@@ -171,7 +164,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '10',//count wp: 1
 	],
 	'7' => [
 		/**
@@ -197,12 +189,9 @@ return [
 		'win inter' => '2, 3, 5, 6, 7, 10',
 		'win inter 2' => '2, 3, 6, 7, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'all fav history' => [[2, 10, 9]],
-		'all fav history values' => '2, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 3',//count wp: 2
 	],
 	'8' => [
 		/**
@@ -230,7 +219,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 8, 9, 12',//count wp: 4
 	],
 	'9' => [
 		/**
@@ -258,7 +246,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3',//count wp: 1
 	],
 	'10' => [
 		/**
@@ -287,17 +274,14 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '5',
 			'1 won(place bet)' => 170,
-			'super sure bet' => 'super sure place 5',
-			'5 won(place bet)' => 170,
 		],
-		'total bets' => 200,
-		'wp' => '1, 3, 4, 5',//count wp: 4
-		'total won in race 10' => 140,
+		'total bets' => 100,
+		'total won in race 10' => 70,
 	],
 ];
 //total place end favorites: 70
 //total place end wp: 0
 //total place wp: 0
-//total sure place: 70
+//total sure place: 0
 //total win: 0
-//total: 140
+//total: 70

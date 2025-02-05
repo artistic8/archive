@@ -27,7 +27,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 5',//count wp: 2
 	],
 	'2' => [
 		/**
@@ -56,12 +55,9 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '10',
 			'1 won(place bet)' => 115,
-			'place(end-wp )' => '10',
-			'2 won(place bet)' => 115,
 		],
-		'total bets' => 200,
-		'wp' => '6, 9, 10',//count wp: 3
-		'total won in race 2' => 30,
+		'total bets' => 100,
+		'total won in race 2' => 15,
 	],
 	'3' => [
 		/**
@@ -90,7 +86,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 5, 6',//count wp: 3
 	],
 	'4' => [
 		/**
@@ -118,7 +113,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '10',//count wp: 1
 	],
 	'5' => [
 		/**
@@ -147,7 +141,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '6, 8',//count wp: 2
 	],
 	'6' => [
 		/**
@@ -175,7 +168,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 9, 10',//count wp: 4
 	],
 	'7' => [
 		/**
@@ -200,12 +192,9 @@ return [
 		],
 		'win inter' => '1, 2, 3, 5, 6, 7, 10, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all fav history' => [[3, 10, 2]],
-		'all fav history values' => '2, 3, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1',//count wp: 1
 	],
 	'8' => [
 		/**
@@ -233,7 +222,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 4, 5, 6, 7',//count wp: 5
 	],
 	'9' => [
 		/**
@@ -262,19 +250,14 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '7',
 			'1 won(place bet)' => 205,
-			'place(end-wp )' => '7',
-			'2 won(place bet)' => 205,
-			'super sure bet' => 'super sure place 7',
-			'5 won(place bet)' => 205,
 		],
-		'total bets' => 300,
-		'wp' => '4, 5, 7',//count wp: 3
-		'total won in race 9' => 315,
+		'total bets' => 100,
+		'total won in race 9' => 105,
 	],
 ];
 //total place end favorites: 120
-//total place end wp: 120
+//total place end wp: 0
 //total place wp: 0
-//total sure place: 105
+//total sure place: 0
 //total win: 0
-//total: 345
+//total: 120

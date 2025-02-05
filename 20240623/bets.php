@@ -29,7 +29,6 @@ return [
 			'1 won(win bet)' => 445,
 		],
 		'total bets' => 400,
-		'wp' => '1, 11',//count wp: 2
 		'total won in race 1' => 45,
 	],
 	'2' => [
@@ -58,7 +57,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 3, 4',//count wp: 4
 	],
 	'3' => [
 		/**
@@ -87,7 +85,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 7, 11',//count wp: 3
 	],
 	'4' => [
 		/**
@@ -112,12 +109,9 @@ return [
 		],
 		'win inter' => '1, 3, 4, 5, 6, 10, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'all fav history' => [[6, 7, 9]],
-		'all fav history values' => '6, 7, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '6',//count wp: 1
 	],
 	'5' => [
 		/**
@@ -145,7 +139,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4',//count wp: 1
 	],
 	'6' => [
 		/**
@@ -173,7 +166,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 3, 5, 6, 8',//count wp: 6
 	],
 	'7' => [
 		/**
@@ -201,7 +193,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 5, 6, 7, 8',//count wp: 5
 	],
 	'8' => [
 		/**
@@ -230,7 +221,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 3, 5',//count wp: 3
 	],
 	'9' => [
 		/**
@@ -258,11 +248,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites )' => '11',
-			'super sure bet' => 'super sure place 11',
 		],
-		'total bets' => 200,
-		'wp' => '2, 3, 8, 11',//count wp: 4
-		'total won in race 9' => -200,
+		'total bets' => 100,
+		'total won in race 9' => -100,
 	],
 	'10' => [
 		/**
@@ -291,7 +279,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3, 5',//count wp: 3
 	],
 	'11' => [
 		/**
@@ -319,12 +306,11 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',//count wp: 0
 	],
 ];
 //total place end favorites: -100
 //total place end wp: 0
 //total place wp: 0
-//total sure place: -100
+//total sure place: 0
 //total win: 45
-//total: -155
+//total: -55

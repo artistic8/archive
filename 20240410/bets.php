@@ -27,12 +27,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites )' => '7',
-			'place(end-wp )' => '7',
-			'super sure bet' => 'super sure place 7',
 		],
-		'total bets' => 300,
-		'wp' => '5, 6, 7',//count wp: 3
-		'total won in race 1' => -300,
+		'total bets' => 100,
+		'total won in race 1' => -100,
 	],
 	'2' => [
 		/**
@@ -60,7 +57,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3',//count wp: 1
 	],
 	'3' => [
 		/**
@@ -89,7 +85,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3, 5, 8',//count wp: 4
 	],
 	'4' => [
 		/**
@@ -114,12 +109,9 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 8, 10, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all fav history' => [[1, 8, 2], [1, 3, 4], [5, 11, 1]],
-		'all fav history values' => '1, 2, 3, 4, 5, 8, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1',//count wp: 1
 	],
 	'5' => [
 		/**
@@ -148,7 +140,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '5, 11',//count wp: 2
 	],
 	'6' => [
 		/**
@@ -176,7 +167,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 6, 9',//count wp: 3
 	],
 	'7' => [
 		/**
@@ -205,7 +195,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 10',//count wp: 2
 	],
 	'8' => [
 		/**
@@ -234,7 +223,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3, 4, 7',//count wp: 4
 	],
 	'9' => [
 		/**
@@ -260,17 +248,14 @@ return [
 		'win inter' => '1, 2, 3, 4, 9, 10, 11, 12',
 		'win inter 2' => '2, 3, 4, 9, 10, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'all fav history' => [[9, 5, 6]],
-		'all fav history values' => '5, 6, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 9',//count wp: 2
 	],
 ];
 //total place end favorites: -100
-//total place end wp: -100
+//total place end wp: 0
 //total place wp: 0
-//total sure place: -100
+//total sure place: 0
 //total win: 0
-//total: -300
+//total: -100

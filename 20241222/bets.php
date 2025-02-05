@@ -28,7 +28,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 5',//count wp: 2
 	],
 	'2' => [
 		/**
@@ -58,7 +57,6 @@ return [
 			'place(end-favorites )' => '14',
 		],
 		'total bets' => 100,
-		'wp' => '2, 3',//count wp: 2
 		'total won in race 2' => -100,
 	],
 	'3' => [
@@ -87,7 +85,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2',//count wp: 1
 	],
 	'4' => [
 		/**
@@ -115,7 +112,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 5, 10, 11, 13',//count wp: 5
 	],
 	'5' => [
 		/**
@@ -144,7 +140,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3, 4',//count wp: 3
 	],
 	'6' => [
 		/**
@@ -172,12 +167,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'bets' => [
 			'place(end-favorites )' => '8',
-			'place(end-wp )' => '8',
-			'super sure bet' => 'super sure place 8',
 		],
-		'total bets' => 300,
-		'wp' => '1, 6, 8',//count wp: 3
-		'total won in race 6' => -300,
+		'total bets' => 100,
+		'total won in race 6' => -100,
 	],
 	'7' => [
 		/**
@@ -205,7 +197,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 7',//count wp: 2
 	],
 	'8' => [
 		/**
@@ -234,7 +225,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1',//count wp: 1
 	],
 	'9' => [
 		/**
@@ -263,12 +253,9 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '11',
 			'1 won(place bet)' => 195,
-			'place(end-wp )' => '11',
-			'2 won(place bet)' => 195,
 		],
-		'total bets' => 200,
-		'wp' => '3, 4, 11',//count wp: 3
-		'total won in race 9' => 190,
+		'total bets' => 100,
+		'total won in race 9' => 95,
 	],
 	'10' => [
 		/**
@@ -294,17 +281,14 @@ return [
 		'win inter' => '1, 2, 4, 7, 10, 11',
 		'win inter 2' => '2, 7',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14',
-		'all fav history' => [[7, 4, 9]],
-		'all fav history values' => '4, 7, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 10',//count wp: 2
 	],
 ];
 //total place end favorites: -105
-//total place end wp: -5
+//total place end wp: 0
 //total place wp: 0
-//total sure place: -100
+//total sure place: 0
 //total win: 0
-//total: -210
+//total: -105

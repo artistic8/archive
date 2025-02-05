@@ -24,12 +24,9 @@ return [
 		],
 		'win inter' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'all fav history' => [[5, 7, 6]],
-		'all fav history values' => '5, 6, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '5',//count wp: 1
 	],
 	'2' => [
 		/**
@@ -58,7 +55,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2',//count wp: 2
 	],
 	'3' => [
 		/**
@@ -83,12 +79,9 @@ return [
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
-		'all fav history' => [[4, 6, 2]],
-		'all fav history values' => '2, 4, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '6',//count wp: 1
 	],
 	'4' => [
 		/**
@@ -117,7 +110,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 10, 12',//count wp: 3
 	],
 	'5' => [
 		/**
@@ -145,7 +137,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 10',//count wp: 3
 	],
 	'6' => [
 		/**
@@ -174,7 +165,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 12',//count wp: 2
 	],
 	'7' => [
 		/**
@@ -203,14 +193,9 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '7',
 			'1 won(place bet)' => 185,
-			'place(end-wp )' => '7',
-			'2 won(place bet)' => 185,
-			'super sure bet' => 'super sure place 7',
-			'5 won(place bet)' => 185,
 		],
-		'total bets' => 300,
-		'wp' => '2, 5, 7',//count wp: 3
-		'total won in race 7' => 255,
+		'total bets' => 100,
+		'total won in race 7' => 85,
 	],
 	'8' => [
 		/**
@@ -239,7 +224,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 6',//count wp: 2
 	],
 	'9' => [
 		/**
@@ -268,12 +252,9 @@ return [
 		'bets' => [
 			'place(end-favorites )' => '11',
 			'1 won(place bet)' => 205,
-			'super sure bet' => 'super sure place 11',
-			'5 won(place bet)' => 205,
 		],
-		'total bets' => 200,
-		'wp' => '1, 2, 4, 11',//count wp: 4
-		'total won in race 9' => 210,
+		'total bets' => 100,
+		'total won in race 9' => 105,
 	],
 	'10' => [
 		/**
@@ -302,12 +283,11 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 8',//count wp: 2
 	],
 ];
 //total place end favorites: 190
-//total place end wp: 85
+//total place end wp: 0
 //total place wp: 0
-//total sure place: 190
+//total sure place: 0
 //total win: 0
-//total: 465
+//total: 190

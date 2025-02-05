@@ -27,7 +27,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '7, 9, 10',//count wp: 3
 	],
 	'2' => [
 		/**
@@ -55,7 +54,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3',//count wp: 2
 	],
 	'3' => [
 		/**
@@ -84,7 +82,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 12',//count wp: 2
 	],
 	'4' => [
 		/**
@@ -113,7 +110,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 10',//count wp: 2
 	],
 	'5' => [
 		/**
@@ -142,7 +138,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1',//count wp: 1
 	],
 	'6' => [
 		/**
@@ -171,7 +166,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 4',//count wp: 2
 	],
 	'7' => [
 		/**
@@ -199,7 +193,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 5, 6',//count wp: 3
 	],
 	'8' => [
 		/**
@@ -228,7 +221,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4, 7, 8',//count wp: 3
 	],
 	'9' => [
 		/**
@@ -254,12 +246,9 @@ return [
 		'win inter' => '1, 2, 3, 4',
 		'win inter 2' => '2, 3, 4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 9',
-		'all fav history' => [[8, 2, 9]],
-		'all fav history values' => '2, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 9',//count wp: 2
 	],
 	'10' => [
 		/**
@@ -287,7 +276,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 13',//count wp: 2
 	],
 	'11' => [
 		/**
@@ -316,7 +304,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',//count wp: 0
 	],
 ];
 //total place end favorites: 0

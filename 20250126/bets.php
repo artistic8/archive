@@ -27,7 +27,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 11',//count wp: 3
 	],
 	'2' => [
 		/**
@@ -56,7 +55,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 4, 8',//count wp: 3
 	],
 	'3' => [
 		/**
@@ -84,7 +82,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 3, 4, 5, 6, 8',//count wp: 6
 	],
 	'4' => [
 		/**
@@ -112,7 +109,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 6, 13',//count wp: 4
 	],
 	'5' => [
 		/**
@@ -140,7 +136,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '1, 2, 5, 8',//count wp: 4
 	],
 	'6' => [
 		/**
@@ -168,7 +163,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2',//count wp: 1
 	],
 	'7' => [
 		/**
@@ -196,7 +190,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 4, 7, 10, 11',//count wp: 5
 	],
 	'8' => [
 		/**
@@ -225,7 +218,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '3, 5',//count wp: 2
 	],
 	'9' => [
 		/**
@@ -253,7 +245,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '2, 5, 6, 7',//count wp: 4
 	],
 	'10' => [
 		/**
@@ -282,7 +273,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '6',//count wp: 1
 	],
 	'11' => [
 		/**
@@ -310,7 +300,6 @@ return [
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',//count wp: 0
 	],
 ];
 //total place end favorites: 0
