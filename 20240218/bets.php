@@ -18,10 +18,8 @@ return [
 		],
 		'win inter' => '5, 7, 9',
 		'bets' => [
-			'win(union )' => '5, 6, 7, 9',
 		],
-		'total bets' => 400,
-		'total won in race 1' => -400,
+		'total bets' => 0,
 	],
 	'2' => [
 		/**
@@ -160,10 +158,8 @@ return [
 		],
 		'win inter' => '1, 4, 9, 11',
 		'bets' => [
-			'win(union )' => '1, 4, 9, 11',
 		],
-		'total bets' => 400,
-		'total won in race 8' => -400,
+		'total bets' => 0,
 	],
 	'9' => [
 		/**
@@ -210,5 +206,5 @@ return [
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
-//total win: -800
-//total: -800
+//total win: 0
+//total: 0
