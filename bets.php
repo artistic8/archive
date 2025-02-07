@@ -110,17 +110,22 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     $firstSet = true;
     foreach($favorites as $F){
-        $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
-        if($firstSet) {
+      $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
+      $qincandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
+      if($firstSet) {
             $winInter = $wincandidates;
+            $qinInter = $qincandidates;
             $firstSet = false;
         }
         else {
             $winInter = array_intersect($winInter, $wincandidates);
+            $qinInter = array_intersect($qinInter, $qincandidates);
         }
     }
     sort($winInter);
+    sort($qinInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
     $unitBet = 100;
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
