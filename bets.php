@@ -131,17 +131,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
-    $diff1 = array_diff($trioInter, $winInter);
-    $diff2 = array_diff($runners, $trioInter);
-    $some = array_merge(array_slice($diff1, 0, 2), array_slice($diff2, 0, 2));
-    $racetext .= "\t\t'diff 1' => '" . implode(", ", $diff1) . "',\n";
-    $racetext .= "\t\t'diff 2' => '" . implode(", ", $diff2) . "',\n";
-    $racetext .= "\t\t'some' => '" . implode(", ", $some) . "',\n";
-    $shit = array_intersect($some, $favorites);
-    if(!empty($shit)) $racetext .= "\t\t'shit' => '" . implode(", ", $shit) . "',\n";
-    if(count($winInter) > 1 && count($qinInter) > 1 && count($favorites) > 1 && count($runners) > 6 && count(array_intersect($qinInter, $favorites)) < 2){
-        $racetext .= "\t\t//Non fav win \n";
-    }
     $unitBet = 100;
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
