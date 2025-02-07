@@ -17,6 +17,7 @@ return [
 			6 => 20,
 		],
 		'win inter' => '3',
+		'qin inter' => '3',
 		'bets' => [
 			'win(union )' => '3, 7, 9, 10',
 			'1 won(win bet)' => 400,
@@ -39,6 +40,7 @@ return [
 			5 => 29,
 		],
 		'win inter' => '1, 2, 4',
+		'qin inter' => '1, 2, 3, 4, 5, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -59,6 +61,7 @@ return [
 			3 => 22,
 		],
 		'win inter' => '1, 9',
+		'qin inter' => '1, 5, 8, 9, 10',
 		'bets' => [
 			'win(union )' => '1, 3, 9, 12',
 		],
@@ -81,6 +84,7 @@ return [
 			10 => 30,
 		],
 		'win inter' => '1, 2, 4, 6',
+		'qin inter' => '1, 2, 3, 4, 6, 8, 10, 11, 13',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -101,6 +105,7 @@ return [
 			9 => 50.5,
 		],
 		'win inter' => '11',
+		'qin inter' => '10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -121,6 +126,7 @@ return [
 			4 => 11,
 		],
 		'win inter' => '2, 3, 7, 9, 10, 11',
+		'qin inter' => '2, 3, 4, 5, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -141,6 +147,7 @@ return [
 			3 => 30,
 		],
 		'win inter' => '2, 6, 7, 10',
+		'qin inter' => '2, 3, 4, 5, 6, 7, 8, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -161,6 +168,7 @@ return [
 			1 => 24.5,
 		],
 		'win inter' => '1, 4, 7',
+		'qin inter' => '1, 4, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -181,6 +189,7 @@ return [
 			6 => 19.5,
 		],
 		'win inter' => '2, 3, 4, 9',
+		'qin inter' => '1, 2, 3, 4, 5, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -201,6 +210,7 @@ return [
 			12 => 31.5,
 		],
 		'win inter' => '2',
+		'qin inter' => '2, 5, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -221,6 +231,7 @@ return [
 			6 => 15,
 		],
 		'win inter' => '',
+		'qin inter' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
