@@ -19,6 +19,10 @@ return [
 		'win inter' => '',
 		'qin inter' => '1, 4, 7, 9, 11',
 		'trio inter' => '1, 2, 4, 5, 7, 9, 11',
+		'diff 1' => '1, 2, 4, 5, 7, 9, 11',
+		'diff 2' => '3, 6, 8, 10',
+		'some' => '1, 2, 3, 6',
+		'shit' => '6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -41,6 +45,10 @@ return [
 		'win inter' => '4, 5',
 		'qin inter' => '2, 4, 5, 6, 7, 9, 10',
 		'trio inter' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11',
+		'diff 1' => '1, 2, 6, 7, 8, 9, 10, 11',
+		'diff 2' => '3',
+		'some' => '1, 2, 3',
+		//Non fav win 
 		'bets' => [
 			'win(union )' => '4, 5, 8, 10',
 			'1 won(win bet)' => 1540,
@@ -66,6 +74,10 @@ return [
 		'win inter' => '1, 4, 7',
 		'qin inter' => '1, 2, 4, 7, 8',
 		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 9, 10',
+		'diff 1' => '2, 3, 5, 8, 9, 10',
+		'diff 2' => '6',
+		'some' => '2, 3, 6',
+		'shit' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -88,6 +100,9 @@ return [
 		'win inter' => '1, 2, 3, 4, 5, 6, 11',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
+		'diff 1' => '7, 10',
+		'diff 2' => '8, 9',
+		'some' => '7, 10, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -110,6 +125,9 @@ return [
 		'win inter' => '1, 2, 3, 8, 11',
 		'qin inter' => '1, 2, 3, 8, 9, 11',
 		'trio inter' => '1, 2, 3, 4, 8, 9, 10, 11',
+		'diff 1' => '4, 9, 10',
+		'diff 2' => '5, 6, 7, 12, 13',
+		'some' => '4, 9, 5, 6',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -132,6 +150,9 @@ return [
 		'win inter' => '7',
 		'qin inter' => '3, 7, 9, 10',
 		'trio inter' => '1, 3, 4, 6, 7, 8, 9, 10',
+		'diff 1' => '1, 3, 4, 6, 8, 9, 10',
+		'diff 2' => '2, 5, 11, 12, 13, 14',
+		'some' => '1, 3, 2, 5',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -154,6 +175,10 @@ return [
 		'win inter' => '2, 6, 7',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'diff 1' => '1, 3, 4, 5, 8',
+		'diff 2' => '9',
+		'some' => '1, 3, 9',
+		'shit' => '1',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -176,6 +201,10 @@ return [
 		'win inter' => '1, 5, 9',
 		'qin inter' => '1, 2, 5, 7, 8, 9',
 		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 9',
+		'diff 1' => '2, 3, 4, 7, 8',
+		'diff 2' => '6',
+		'some' => '2, 3, 6',
+		'shit' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -198,6 +227,9 @@ return [
 		'win inter' => '5',
 		'qin inter' => '5, 6, 7, 9',
 		'trio inter' => '1, 2, 4, 5, 6, 7, 9, 10',
+		'diff 1' => '1, 2, 4, 6, 7, 9, 10',
+		'diff 2' => '3, 8',
+		'some' => '1, 2, 3, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -220,6 +252,10 @@ return [
 		'win inter' => '',
 		'qin inter' => '5, 10',
 		'trio inter' => '1, 2, 5, 8, 10',
+		'diff 1' => '1, 2, 5, 8, 10',
+		'diff 2' => '3, 4, 6, 7, 9, 11, 12, 13, 14',
+		'some' => '1, 2, 3, 4',
+		'shit' => '2',
 		'bets' => [
 		],
 		'total bets' => 0,
