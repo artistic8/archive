@@ -17,7 +17,6 @@ return [
 			3 => 17,
 		],
 		'win inter' => '1, 3, 5, 8, 9',
-		'qin inter' => '1, 2, 3, 5, 7, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -38,7 +37,6 @@ return [
 			8 => 13.5,
 		],
 		'win inter' => '1, 2, 3, 4',
-		'qin inter' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -59,7 +57,6 @@ return [
 			4 => 11,
 		],
 		'win inter' => '2, 4, 7, 8',
-		'qin inter' => '2, 4, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -80,7 +77,6 @@ return [
 			7 => 17.5,
 		],
 		'win inter' => '2',
-		'qin inter' => '2, 3',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -101,7 +97,6 @@ return [
 			1 => 20.5,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 8, 11, 12',
-		'qin inter' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -122,7 +117,6 @@ return [
 			10 => 50,
 		],
 		'win inter' => '1, 2, 4, 6, 10',
-		'qin inter' => '1, 2, 3, 4, 6, 8, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -143,7 +137,6 @@ return [
 			11 => 29.5,
 		],
 		'win inter' => '3, 7, 10',
-		'qin inter' => '1, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -164,7 +157,6 @@ return [
 			6 => 92.5,
 		],
 		'win inter' => '7',
-		'qin inter' => '4, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
