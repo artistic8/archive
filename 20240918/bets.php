@@ -36,7 +36,7 @@ return [
 			3 => 23,
 			9 => 36,
 		],
-		'win inter' => '2, 9',
+		'win inter' => '2, 7, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -56,7 +56,7 @@ return [
 			8 => 35.5,
 			9 => 26,
 		],
-		'win inter' => '1, 3, 4, 8',
+		'win inter' => '1, 2, 3, 4, 5, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -76,7 +76,7 @@ return [
 			4 => 20,
 			5 => 44.5,
 		],
-		'win inter' => '2, 11',
+		'win inter' => '2, 3, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -116,7 +116,7 @@ return [
 			5 => 34.5,
 			8 => 20.5,
 		],
-		'win inter' => '3, 9, 10, 11',
+		'win inter' => '1, 2, 3, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -136,7 +136,7 @@ return [
 			8 => 15,
 			7 => 25,
 		],
-		'win inter' => '2, 3, 5, 6, 7',
+		'win inter' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -156,7 +156,7 @@ return [
 			12 => 65,
 			11 => 22.5,
 		],
-		'win inter' => '1, 4, 5, 7',
+		'win inter' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
