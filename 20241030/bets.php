@@ -17,7 +17,6 @@ return [
 			11 => 17.5,
 		],
 		'win inter' => '1, 2, 5, 6, 7, 11',
-		'metric' => '6:3:3',
 		'qin inter' => '1, 2, 4, 5, 6, 7, 9, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		'bets' => [
@@ -40,7 +39,6 @@ return [
 			8 => 38.5,
 		],
 		'win inter' => '4, 7, 10',
-		'metric' => '3:4:1',
 		'qin inter' => '1, 2, 4, 5, 6, 7, 9, 10, 12',
 		'trio inter' => '1, 2, 4, 5, 6, 7, 9, 10, 11, 12',
 		'bets' => [
@@ -63,7 +61,6 @@ return [
 			6 => 50,
 		],
 		'win inter' => '1, 3, 4, 5',
-		'metric' => '4:5:2',
 		'qin inter' => '1, 2, 3, 4, 5, 7, 8, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 11',
 		'bets' => [
@@ -86,7 +83,6 @@ return [
 			6 => 40.5,
 		],
 		'win inter' => '1, 2, 3, 4, 11',
-		'metric' => '5:3:3',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12',
 		'bets' => [
@@ -109,8 +105,7 @@ return [
 			10 => 21,
 		],
 		'win inter' => '1, 11',
-		'metric' => '2:5:2',
-		'qin inter' => '1, 6, 7, 9, 11',
+		'qin inter' => '1, 4, 6, 7, 9, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11',
 		'bets' => [
 		],
@@ -131,8 +126,7 @@ return [
 			6 => 15,
 			10 => 45,
 		],
-		'win inter' => '1, 2, 3, 5, 6, 9, 10, 11',
-		'metric' => '8:3:3',
+		'win inter' => '1, 2, 3, 4, 5, 6, 9, 10, 11',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -155,7 +149,6 @@ return [
 			11 => 10.5,
 		],
 		'win inter' => '2, 6, 7',
-		'metric' => '3:3:0',
 		'qin inter' => '1, 2, 4, 5, 6, 7, 8, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
@@ -178,7 +171,6 @@ return [
 			3 => 15.5,
 		],
 		'win inter' => '1, 3, 5',
-		'metric' => '3:6:3',
 		'qin inter' => '1, 2, 3, 4, 5, 7, 8, 9, 10, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -186,9 +178,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total place end favorites: 0
-//total place end wp: 0
-//total place wp: 0
-//total sure place: 0
-//total win: 0
+//total qin: 0
 //total: 0

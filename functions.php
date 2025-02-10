@@ -1,14 +1,14 @@
 <?php
 
-function get2Sets($array){
-    $result = [];
-    sort($array);
-    foreach($array as $one){
-        foreach($array as $two){
-            if($two > $one) $result[] = "$one, $two";
-        }
-    }
-    return $result;
+function factorial($n){
+    if($n <= 0) return 1;
+    $fact = 1;
+    for($i = 1; $i <= $n; $i++) $fact *= $i;
+    return $fact;
+}
+function combination($p, $n){
+    if($n < $p) return 0;
+    return factorial($n) / (factorial($p) * factorial($n - $p));
 }
 
 function getPlaceOdds($date, $venueCode, $raceNo, $type = "PLA"){

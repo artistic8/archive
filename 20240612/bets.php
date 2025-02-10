@@ -17,7 +17,6 @@ return [
 			12 => 51.5,
 		],
 		'win inter' => '1, 2, 4, 5, 7, 9, 11, 12',
-		'metric' => '8:2:0',
 		'qin inter' => '1, 2, 4, 5, 6, 7, 9, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
 		'bets' => [
@@ -40,7 +39,6 @@ return [
 			11 => 22,
 		],
 		'win inter' => '1, 2, 4, 5, 9, 12',
-		'metric' => '6:3:2',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -63,7 +61,6 @@ return [
 			7 => 24,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 8, 12',
-		'metric' => '7:3:3',
 		'qin inter' => '1, 2, 3, 4, 5, 7, 8, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -86,7 +83,6 @@ return [
 			7 => 24,
 		],
 		'win inter' => '1, 3, 5, 11, 12',
-		'metric' => '5:4:0',
 		'qin inter' => '1, 2, 3, 5, 6, 7, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12',
 		'bets' => [
@@ -109,7 +105,6 @@ return [
 			3 => 23.5,
 		],
 		'win inter' => '2, 5',
-		'metric' => '2:5:1',
 		'qin inter' => '2, 3, 4, 5, 10',
 		'trio inter' => '2, 3, 4, 5, 6, 7, 10',
 		'bets' => [
@@ -132,7 +127,6 @@ return [
 			7 => 16,
 		],
 		'win inter' => '1, 2, 9',
-		'metric' => '3:4:1',
 		'qin inter' => '1, 2, 3, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -155,7 +149,6 @@ return [
 			1 => 14.5,
 		],
 		'win inter' => '2, 6, 7, 10',
-		'metric' => '4:3:0',
 		'qin inter' => '2, 4, 5, 6, 7, 9, 10',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 12',
 		'bets' => [
@@ -178,7 +171,6 @@ return [
 			7 => 33.5,
 		],
 		'win inter' => '4',
-		'metric' => '1:5:0',
 		'qin inter' => '1, 3, 4, 5, 6, 7, 9, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
@@ -201,7 +193,6 @@ return [
 			6 => 22,
 		],
 		'win inter' => '5, 6, 9, 11, 12',
-		'metric' => '5:5:3',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 8, 9, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -209,9 +200,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total place end favorites: 0
-//total place end wp: 0
-//total place wp: 0
-//total sure place: 0
-//total win: 0
+//total qin: 0
 //total: 0

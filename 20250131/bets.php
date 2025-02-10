@@ -17,7 +17,6 @@ return [
 			14 => 95,
 		],
 		'win inter' => '1, 2, 4, 5, 6, 7, 8, 10',
-		'metric' => '8:3:3',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -40,7 +39,6 @@ return [
 			2 => 247,
 		],
 		'win inter' => '2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
-		'metric' => '10:1:1',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 		'bets' => [
@@ -63,7 +61,6 @@ return [
 			4 => 66,
 		],
 		'win inter' => '2, 4, 9',
-		'metric' => '3:3:1',
 		'qin inter' => '2, 4, 9, 10',
 		'trio inter' => '2, 3, 4, 9, 10, 11',
 		'bets' => [
@@ -86,7 +83,6 @@ return [
 			6 => 13.5,
 		],
 		'win inter' => '1, 4, 5',
-		'metric' => '3:4:1',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
 		'bets' => [
@@ -109,7 +105,6 @@ return [
 			1 => 30,
 		],
 		'win inter' => '1, 4, 6, 7, 8',
-		'metric' => '5:3:3',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -132,7 +127,6 @@ return [
 			6 => 34,
 		],
 		'win inter' => '1, 2, 4, 6, 9, 10, 11',
-		'metric' => '7:4:2',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
@@ -155,9 +149,8 @@ return [
 			1 => 18.5,
 		],
 		'win inter' => '2, 3, 6, 7, 8',
-		'metric' => '5:3:2',
-		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11',
-		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
+		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -178,7 +171,6 @@ return [
 			1 => 13,
 		],
 		'win inter' => '2, 4, 5, 6, 8',
-		'metric' => '5:4:1',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 		'bets' => [
@@ -201,7 +193,6 @@ return [
 			2 => 20,
 		],
 		'win inter' => '',
-		'metric' => '0:5:0',
 		'qin inter' => '3, 5, 6',
 		'trio inter' => '3, 5, 6, 8',
 		'bets' => [
@@ -224,7 +215,6 @@ return [
 			8 => 24,
 		],
 		'win inter' => '4',
-		'metric' => '1:4:1',
 		'qin inter' => '1, 3, 4, 5, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 8, 9, 11, 12, 14',
 		'bets' => [
@@ -247,7 +237,6 @@ return [
 			13 => 32,
 		],
 		'win inter' => '',
-		'metric' => '0:4:0',
 		'qin inter' => '',
 		'trio inter' => '1, 6, 8',
 		'bets' => [
@@ -255,9 +244,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total place end favorites: 0
-//total place end wp: 0
-//total place wp: 0
-//total sure place: 0
-//total win: 0
+//total qin: 0
 //total: 0

@@ -16,7 +16,6 @@ return [
 			5 => 16.5,
 		],
 		'win inter' => '1, 2, 5',
-		'metric' => '3:2:1',
 		'qin inter' => '1, 2, 3, 4, 5',
 		'trio inter' => '1, 2, 3, 4, 5',
 		'bets' => [
@@ -39,7 +38,6 @@ return [
 			4 => 33.5,
 		],
 		'win inter' => '1, 2, 3, 4, 8',
-		'metric' => '5:3:2',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -62,7 +60,6 @@ return [
 			10 => 15.5,
 		],
 		'win inter' => '1, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'metric' => '10:1:1',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -85,7 +82,6 @@ return [
 			11 => 56.5,
 		],
 		'win inter' => '6',
-		'metric' => '1:5:1',
 		'qin inter' => '4, 6',
 		'trio inter' => '2, 3, 4, 6',
 		'bets' => [
@@ -108,8 +104,7 @@ return [
 			9 => 24,
 		],
 		'win inter' => '2, 11',
-		'metric' => '2:4:1',
-		'qin inter' => '2, 7, 9, 11',
+		'qin inter' => '2, 4, 7, 9, 11',
 		'trio inter' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -131,7 +126,6 @@ return [
 			13 => 28.5,
 		],
 		'win inter' => '4, 7, 10, 11',
-		'metric' => '4:3:1',
 		'qin inter' => '1, 2, 3, 4, 7, 9, 10, 11, 12, 14',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14',
 		'bets' => [
@@ -154,9 +148,8 @@ return [
 			6 => 41.5,
 		],
 		'win inter' => '2, 6, 7',
-		'metric' => '3:4:1',
-		'qin inter' => '2, 4, 6, 7, 9, 11',
-		'trio inter' => '1, 2, 3, 4, 6, 7, 9, 10, 11',
+		'qin inter' => '2, 4, 6, 7, 9, 11, 12',
+		'trio inter' => '1, 2, 3, 4, 6, 7, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -177,7 +170,6 @@ return [
 			4 => 19,
 		],
 		'win inter' => '2, 3, 4, 5, 6, 7, 8',
-		'metric' => '7:3:2',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'bets' => [
@@ -185,9 +177,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total place end favorites: 0
-//total place end wp: 0
-//total place wp: 0
-//total sure place: 0
-//total win: 0
+//total qin: 0
 //total: 0

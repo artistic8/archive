@@ -17,7 +17,6 @@ return [
 			8 => 33,
 		],
 		'win inter' => '1, 2, 3, 5, 8, 9',
-		'metric' => '6:2:2',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
@@ -40,7 +39,6 @@ return [
 			9 => 36,
 		],
 		'win inter' => '2, 7, 9',
-		'metric' => '3:4:2',
 		'qin inter' => '2, 4, 5, 6, 7, 9, 10',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
@@ -63,7 +61,6 @@ return [
 			9 => 26,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 7, 8',
-		'metric' => '7:2:1',
 		'qin inter' => '1, 2, 3, 4, 5, 7, 8',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
@@ -86,7 +83,6 @@ return [
 			5 => 44.5,
 		],
 		'win inter' => '2, 3, 11',
-		'metric' => '3:5:2',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 10, 11',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10, 11, 12',
 		'bets' => [
@@ -109,7 +105,6 @@ return [
 			9 => 14.5,
 		],
 		'win inter' => '2, 3, 5, 9, 10',
-		'metric' => '5:2:2',
 		'qin inter' => '2, 3, 4, 5, 7, 9, 10',
 		'trio inter' => '2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
@@ -131,8 +126,7 @@ return [
 			5 => 34.5,
 			8 => 20.5,
 		],
-		'win inter' => '1, 2, 3, 6, 7, 8, 9, 10, 11',
-		'metric' => '9:3:3',
+		'win inter' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -155,7 +149,6 @@ return [
 			7 => 25,
 		],
 		'win inter' => '1, 2, 3, 5, 6, 7',
-		'metric' => '6:3:3',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
@@ -178,7 +171,6 @@ return [
 			11 => 22.5,
 		],
 		'win inter' => '1, 2, 3, 4, 5, 6, 7, 8, 12',
-		'metric' => '9:3:3',
 		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -186,9 +178,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total place end favorites: 0
-//total place end wp: 0
-//total place wp: 0
-//total sure place: 0
-//total win: 0
+//total qin: 0
 //total: 0
