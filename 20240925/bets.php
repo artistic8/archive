@@ -94,8 +94,10 @@ return [
 		'qin inter' => '2, 5, 6, 10',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 10',
 		'bets' => [
+			'qin(union )' => '6, 8, 9, 10',
 		],
-		'total bets' => 0,
+		'total bets' => 60,
+		'total won in race 4' => -60,
 	],
 	'5' => [
 		/**
@@ -194,5 +196,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total qin: 0
-//total: 0
+//total qin: -60
+//total: -60
