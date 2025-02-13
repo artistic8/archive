@@ -119,11 +119,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         if(isset($officialWin)){
             $placeOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 3)));
             $placeOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 3)));
-            $winOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 1)));
-            $winOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 1)));
             $qinOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 2)));
             $qinOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 2)));
-            $outcome = $placeOutcomeInter . ":" . $placeOutcomeFav . ":" . $qinOutcomeInter . ":" .  $qinOutcomeFav . ":" . $winOutcomeInter . ":" . $qinOutcomeFav;
+            $winOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 1)));
+            $winOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 1)));
+            $outcome = $placeOutcomeInter . ":" . $placeOutcomeFav . ":" . $qinOutcomeInter . ":" .  $qinOutcomeFav . ":" . $winOutcomeInter . ":" . $winOutcomeFav;
             $racetext .= "\t\t'outcome' => '$outcome',\n";
         }
     }
