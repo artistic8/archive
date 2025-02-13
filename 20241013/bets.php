@@ -132,8 +132,8 @@ return [
 		'bets' => [
 			'qin(union )' => '3, 5, 12, 13',
 		],
-		'total bets' => 600,
-		'total won in race 6' => -600,
+		'total bets' => 60,
+		'total won in race 6' => -60,
 	],
 	'7' => [
 		/**
@@ -221,11 +221,11 @@ return [
 		'trio inter' => '1, 2, 3, 5, 6, 8, 10, 11, 12',
 		'bets' => [
 			'qin(union )' => '3, 6, 10, 12',
-			'1 won(qin bet)' => 450,
+			'1 won(qin bet)' => 45,
 		],
-		'total bets' => 600,
-		'total won in race 10' => -150,
+		'total bets' => 60,
+		'total won in race 10' => -15,
 	],
 ];
-//total qin: -750
-//total: -750
+//total qin: -75
+//total: -75

@@ -242,9 +242,9 @@ return [
 		'bets' => [
 			'qin(union )' => '2, 3, 9, 10',
 		],
-		'total bets' => 600,
-		'total won in race 11' => -600,
+		'total bets' => 60,
+		'total won in race 11' => -60,
 	],
 ];
-//total qin: -600
-//total: -600
+//total qin: -60
+//total: -60
