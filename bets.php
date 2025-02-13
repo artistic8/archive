@@ -135,7 +135,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(count($favorites) > 1 && !empty($winInter)) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);
-        if(count($union) === 4){
+        if(in_array(count($union), [3, 4])){
             $racetext .= "\t\t\t'qin(union $revision)' => '" . implode(", ", $union) . "',\n"; 
             $totalBets[$raceNumber] += $unitBet * combination(2, count($union));
             $totalQin -= $unitBet * combination(2, count($union));
