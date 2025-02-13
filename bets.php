@@ -113,7 +113,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($winInter);
     sort($qinInter);
     sort($trioInter);
-    $winInter = array_intersect($winInter, $runners);
+    $metric = count($winInter) . ":" . count($favorites) . ":" . count(array_intersect($winInter, $favorites));
+    $racetext .= "\t\t'metric' => '$metric',\n";
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
