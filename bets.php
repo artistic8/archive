@@ -113,8 +113,20 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($winInter);
     sort($qinInter);
     sort($trioInter);
-    $metric = count($winInter) . ":" . count($favorites) . ":" . count(array_intersect($winInter, $favorites));
-    $racetext .= "\t\t'metric' => '$metric',\n";
+    if(count($favorites) > 1){
+        $metric = count($winInter) . ":" . count($favorites) . ":" . count(array_intersect($winInter, $favorites));
+        $racetext .= "\t\t'metric' => '$metric',\n";
+        if(isset($officialWin)){
+            $placeOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 3)));
+            $placeOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 3)));
+            $winOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 1)));
+            $winOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 1)));
+            $qinOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 2)));
+            $qinOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 2)));
+            $outcome = $placeOutcomeInter . ":" . $placeOutcomeFav . ":" . $qinOutcomeInter . ":" .  $qinOutcomeFav . ":" . $winOutcomeInter . ":" . $qinOutcomeFav;
+            $racetext .= "\t\t'outcome' => '$outcome',\n";
+        }
+    }
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
