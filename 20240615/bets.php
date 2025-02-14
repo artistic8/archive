@@ -70,6 +70,7 @@ return [
 		'qin inter' => '1, 2, 8, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 7, 8, 10, 11, 12',
 		'bets' => [
+			'qin(seven )' => '1, 2, 3, 4, 9, 11, 12',
 		],
 		'total bets' => 0,
 	],

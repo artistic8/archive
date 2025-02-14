@@ -145,6 +145,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalQin += 1/10 * $unitBet * $qinAmount;
             }
         }
+        if(count($union) === 7){
+            $racetext .= "\t\t\t'qin(seven $revision)' => '" . implode(", ", $union) . "',\n";
+        }
     }
     
     $racetext .= "\t\t],\n";
