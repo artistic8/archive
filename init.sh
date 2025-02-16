@@ -1,4 +1,4 @@
-index=1;
+index=34;
 for f in 20*; do
     if [ -d "$f" ]; then
         rm -Rf $f;
