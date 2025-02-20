@@ -39,7 +39,7 @@ return [
 			9 => 36,
 		],
 		'win inter' => '2',
-		'qin inter' => '2, 4, 6, 9',
+		'qin inter' => '2, 4, 5, 6, 9',
 		'trio inter' => '1, 2, 4, 5, 6, 8, 9',
 		'bets' => [
 			'qin(union )' => '2, 3, 4, 7',
