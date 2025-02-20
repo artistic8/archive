@@ -12,11 +12,10 @@ else $revision = "";
 
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
+$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $total = 0;
 $totalQin = 0;
-
-$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
@@ -113,20 +112,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($winInter);
     sort($qinInter);
     sort($trioInter);
-    if(count($favorites) > 1){
-        $metric = count($winInter) . ":" . count($favorites) . ":" . count(array_intersect($winInter, $favorites));
-        $racetext .= "\t\t'metric' => '$metric',\n";
-        if(isset($officialWin)){
-            $placeOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 3)));
-            $placeOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 3)));
-            $qinOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 2)));
-            $qinOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 2)));
-            $winOutcomeInter = count(array_intersect($winInter, array_slice($officialWin, 0, 1)));
-            $winOutcomeFav = count(array_intersect($favorites, array_slice($officialWin, 0, 1)));
-            $outcome = $placeOutcomeInter . ":" . $placeOutcomeFav . ":" . $qinOutcomeInter . ":" .  $qinOutcomeFav . ":" . $winOutcomeInter . ":" . $winOutcomeFav;
-            $racetext .= "\t\t'outcome' => '$outcome',\n";
-        }
-    }
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
     $racetext .= "\t\t'qin inter' => '" . implode(", ", $qinInter) . "',\n";
     $racetext .= "\t\t'trio inter' => '" . implode(", ", $trioInter) . "',\n";
@@ -135,7 +120,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(count($favorites) > 1 && !empty($winInter)) {
         $union = array_values(array_unique(array_merge($winInter, $favorites)));
         sort($union);
-        if(in_array(count($union), [3, 4])){
+        if(count($union) === 4){
             $racetext .= "\t\t\t'qin(union $revision)' => '" . implode(", ", $union) . "',\n"; 
             $totalBets[$raceNumber] += $unitBet * combination(2, count($union));
             $totalQin -= $unitBet * combination(2, count($union));
