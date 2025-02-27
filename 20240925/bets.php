@@ -85,8 +85,8 @@ return [
 			8 => 11,
 		],
 		'win inter' => '',
-		'qin inter' => '10',
-		'trio inter' => '7, 10',
+		'qin inter' => '2, 10',
+		'trio inter' => '2, 7, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -178,7 +178,7 @@ return [
 			2 => 19,
 		],
 		'win inter' => '2, 3, 4, 7',
-		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 9, 10',
+		'qin inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12',
 		'bets' => [
 		],

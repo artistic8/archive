@@ -16,8 +16,8 @@ return [
 			6 => 36.5,
 			4 => 21.5,
 		],
-		'win inter' => '8',
-		'qin inter' => '7, 8',
+		'win inter' => '4, 8',
+		'qin inter' => '4, 7, 8',
 		'trio inter' => '2, 3, 4, 5, 7, 8, 12',
 		'bets' => [
 		],
