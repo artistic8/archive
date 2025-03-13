@@ -8,6 +8,7 @@ return [
 		'favorites' => '2, 5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'official win' => '6, 2, 8, 9',
+		'union + favorites' => '1, 2, 5, 6',
 		'win amount' => 56,
 		'qin amount' => 173.5,
 		'trio amount' => 916,
