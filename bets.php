@@ -97,6 +97,8 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
       $wincandidates = array_intersect($history[$raceNumber][$F]["win"], $runners);
       $qincandidates = array_intersect($history[$raceNumber][$F]["qin"], $runners);
       $triocandidates = array_intersect($history[$raceNumber][$F]["trio"], $runners);
+      $missing = array_diff($runners, $triocandidates);
+      if(!empty($missing)) $racetext .= "\t\t'missing trio $F' => '" . implode(", ", $missing) . "',\n";
       if($firstSet) {
             $winInter = $wincandidates;
             $qinInter = $qincandidates;
