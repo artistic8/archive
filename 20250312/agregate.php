@@ -9,6 +9,8 @@ return [
 		'unions($10)' => '2, 8, 9, 10, 12',
 		'union + favorites' => '1, 2, 7, 8, 9, 10, 11, 12',
 		'count union + favorites' => '8',
+		'official win' => '1, 11, 7, 12',
+		'win amount' => 90.5,
 	],
 	'2' => [
 		/**

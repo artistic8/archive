@@ -8,10 +8,8 @@ return [
 		'favorites' => '(F) 3, 10, 12',
 		'unions($10)' => '1, 3, 8, 10, 12',
 		'union + favorites' => '1, 3, 8, 10, 12',
-		'early 4' => '',
-		'early 5' => '1, 3, 8, 10, 12',
-		'win(union 1216)' => '1, 3, 10, 12',
-		'win(union 315)' => '3, 8, 10, 12',
+		'official win' => '7, 3, 4, 12',
+		'win amount' => 53,
 	],
 	'2' => [
 		/**

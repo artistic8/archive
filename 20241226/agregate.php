@@ -8,6 +8,8 @@ return [
 		'favorites' => '(F) 1, 5, 11',
 		'unions($10)' => '1, 5, 8, 11',
 		'union + favorites' => '1, 5, 8, 11',
+		'official win' => '5, 2, 3, 11',
+		'win amount' => 34,
 	],
 	'2' => [
 		/**
