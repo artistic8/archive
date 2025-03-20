@@ -41,6 +41,7 @@ return [
 			12 => 42,
 			8 => 38.5,
 		],
+		'missing trio 2' => '8',
 		'missing trio 9' => '8, 11',
 		'missing trio 10' => '3, 4',
 		'win inter' => '7, 10',

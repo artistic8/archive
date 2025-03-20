@@ -44,7 +44,7 @@ return [
 		'missing trio 4' => '10',
 		'missing trio 8' => '10',
 		'missing trio 9' => '4',
-		'win inter' => '1, 2',
+		'win inter' => '1, 2, 3',
 		'qin inter' => '1, 2, 3, 5, 6',
 		'trio inter' => '1, 2, 3, 5, 6, 7, 8, 9',
 		'bets' => [

@@ -68,7 +68,7 @@ return [
 			3 => 31.5,
 			5 => 27.5,
 		],
-		'missing trio 1' => '2, 12',
+		'missing trio 1' => '2',
 		'missing trio 3' => '10',
 		'missing trio 4' => '11',
 		'missing trio 5' => '7, 9, 10, 11, 12',

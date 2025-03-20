@@ -68,12 +68,12 @@ return [
 			3 => 18.5,
 			10 => 39.5,
 		],
-		'missing trio 1' => '2, 12',
+		'missing trio 1' => '2',
 		'missing trio 7' => '9',
 		'missing trio 11' => '9',
 		'win inter' => '4, 7',
 		'qin inter' => '3, 4, 7, 8',
-		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 10, 11',
+		'trio inter' => '1, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -145,7 +145,7 @@ return [
 		'missing trio 6' => '2, 12',
 		'missing trio 8' => '6',
 		'win inter' => '',
-		'qin inter' => '1, 3, 9, 10',
+		'qin inter' => '1, 3, 4, 9, 10, 11',
 		'trio inter' => '1, 3, 4, 5, 7, 8, 9, 10, 11',
 		'bets' => [
 		],

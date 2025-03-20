@@ -90,6 +90,7 @@ return [
 		],
 		'missing trio 6' => '4',
 		'missing trio 7' => '8, 12',
+		'missing trio 11' => '8',
 		'missing trio 12' => '7, 8, 9, 10, 11',
 		'win inter' => '3',
 		'qin inter' => '1, 2, 3, 5, 6',

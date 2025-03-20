@@ -44,12 +44,14 @@ return [
 			2 => 13.5,
 			5 => 19,
 		],
-		'win inter' => '1, 2, 4',
+		'win inter' => '1, 2, 3, 4',
 		'qin inter' => '1, 2, 3, 4, 5, 6',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
+			'qin(union )' => '1, 2, 3, 4',
 		],
-		'total bets' => 0,
+		'total bets' => 60,
+		'total won in race 2' => -60,
 	],
 	'3' => [
 		/**
@@ -139,10 +141,11 @@ return [
 			7 => 16.5,
 			1 => 54,
 		],
-		'win inter' => '1, 2, 3, 7, 8, 10',
-		'qin inter' => '1, 2, 3, 7, 8, 9, 10, 12',
+		'win inter' => '1, 2, 3, 7, 8, 10, 11',
+		'qin inter' => '1, 2, 3, 4, 7, 8, 9, 10, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
+			'qin(seven )' => '1, 2, 3, 7, 8, 10, 11',
 		],
 		'total bets' => 0,
 	],
@@ -161,11 +164,11 @@ return [
 			9 => 22.5,
 			12 => 13,
 		],
-		'missing trio 1' => '2, 9',
+		'missing trio 1' => '9',
 		'missing trio 12' => '3, 5, 9, 11',
 		'win inter' => '10, 12',
 		'qin inter' => '1, 7, 8, 10, 12',
-		'trio inter' => '1, 4, 6, 7, 8, 10, 12',
+		'trio inter' => '1, 2, 4, 6, 7, 8, 10, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -216,5 +219,5 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total qin: 34
-//total: 34
+//total qin: -26
+//total: -26

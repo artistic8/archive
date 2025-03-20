@@ -114,7 +114,7 @@ return [
 			11 => 76.5,
 		],
 		'missing trio 8' => '5',
-		'win inter' => '2, 4, 6',
+		'win inter' => '2, 4, 6, 9',
 		'qin inter' => '1, 2, 3, 4, 6, 9, 11, 12',
 		'trio inter' => '1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
@@ -162,7 +162,6 @@ return [
 			1 => 24,
 			3 => 65.5,
 		],
-		'missing trio 1' => '2',
 		'missing trio 10' => '12',
 		'missing trio 11' => '2, 3, 7, 8',
 		'win inter' => '10',
